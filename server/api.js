@@ -1,3 +1,4 @@
+
 // Devo runnare questa riga di codice "npm install express"
 const express = require('express')
 const app = express()
@@ -7,6 +8,7 @@ const { Sequelize, DataTypes } = require("sequelize")
 // that contains some JSON in the body
 app.use(express.json())
 
+/*
 // Configurare con il postgres nel mio pc
 const database = new Sequelize("postgres://postgres:postgres@localhost:5432/ACSS")
 
@@ -81,6 +83,7 @@ const pageContentObject = {
 //     },
 // ]
 
+*/
 // Qua dentro metto tutte le API che voglio creare
 async function runMainApi() {
     //Recupero il DB e uso l'oggetto models come riferimento al DB
