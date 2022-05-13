@@ -3,6 +3,7 @@
     <div class="bg-primary text-white text-center">
       <h1>{{name}}</h1>
     </div>
+    <img src="https://www.yesabruzzo.com/wp-content/uploads/2018/10/Castello_Aragonese_Ortona_2.jpg" class="img-fluid mx-auto d-block">
     <div class="container-fluid m-0 p-0">
       Info:<br>
       <button class="prova m-0" value="prova" @click="accessibilityPrint()">Accessibility</button>
@@ -10,8 +11,9 @@
       <button class="prova m-0" value="prova" @click="getPrint()">How to get here</button>
       <button class="prova m-0" value="prova" @click="pricePrint()">Prices</button>
     </div>
-    <div id="test" class="test" >
-      jvbvbdv ds cj ecki   kxn k
+    <div id="test" class="test mt-4 p-5 bg-primary text-white rounded">
+      <h1>Jumbotron Example</h1> <br>
+      <p>      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
     </div>
   </div>
   
@@ -73,6 +75,5 @@ export default {
 }
 .test{
   border-style: solid;
-  height: 100px;
 }
 </style>

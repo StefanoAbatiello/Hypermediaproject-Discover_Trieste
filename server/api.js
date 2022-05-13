@@ -7,6 +7,9 @@ app.use(express.json())
 // Development
 const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
 
+//Exposing images
+
+
 // Production (use this code when deploying to production in Heroku)
 // const pg = require('pg')
 // pg.defaults.ssl = true
