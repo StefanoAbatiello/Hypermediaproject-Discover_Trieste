@@ -65,6 +65,10 @@ export default {
           name: 'Services',
           path: '/services',
         },
+        {
+          name: 'Points of interest',
+          path: '/pois',
+        },
          {
           name: 'About',
           path: '/about',
