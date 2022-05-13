@@ -1,4 +1,4 @@
-# ACSS
+# Final Project template
 
 ## Build Setup
 
