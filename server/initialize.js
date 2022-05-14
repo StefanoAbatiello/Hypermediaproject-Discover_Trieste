@@ -1,5 +1,4 @@
-
-
+//Here we put all the datas, according to the structure defined in api.js
 export default async (models) => {
     const locationList = [
         {
@@ -60,41 +59,42 @@ export default async (models) => {
             img: "https://st.depositphotos.com/1006880/5055/i/600/depositphotos_50556395-stock-photo-modern-city-buildings-in-the.jpg",
         },
     ]
-    await models.Cat.bulkCreate(catList)
-    await models.Itinerary.bulkCreate(itineraryList)
-
+    const itinerary0 = await models.Itinerary.create(itineraryList[0])
+    const itinerary1 = await models.Itinerary.create(itineraryList[1])
     const poiList = [
         {
             name: "Basilica San Marco",
             img: "https://images.placesonline.com/photos/424011111200302_Venezia_1232574946.jpg?quality=80&w=700",
-            itineraryId: itineraryList[0].id,
+            itineraryId: itinerary0.id,
             description: "The best church you can find in Venezia!"
         },
         {
             name: "Campidoglio",
             img: "https://i0.wp.com/www.hisour.com/wp-content/uploads/2020/06/Campidoglio-Square-Capitoline-Museums.jpg?fit=960%2C640&ssl=1&resize=1280%2C720",
-            itineraryId: itineraryList[1].id,
+            itineraryId: itinerary1.id,
             description: "The house of Mattarella"
         },
         {
             name: "Colosseo",
             img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg",
-            itineraryId: itineraryList[1].id,
+            itineraryId: itinerary1.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
             name: "Ponte Di Rialto",
             img: "https://venicewiki.org/images/thumb/3/37/Rialto_e_gondola.jpg/450px-Rialto_e_gondola.jpg",
-            itineraryId: itineraryList[0].id,
+            itineraryId: itinerary0.id,
             description: "Un ponticello carino che puoi vedere a Venezia"
         },
         {
             name: "Villa Borghese",
             img: "https://www.romegardenhotel.com/visitaroma/wp-content/uploads/2019/01/villa-borghese-roma.jpg",
-            itineraryId: itineraryList[1].id,
+            itineraryId: itinerary1.id,
             description: "Famosissima per il suo giardino è tra le ville piu belle d'Italia"
         },
     ]
-   
+    //with create is just one element
+    //with bulkCreate is moreElements like arrays
+    await models.Cat.bulkCreate(catList)
     await models.PointOfInterest.bulkCreate(poiList)
 }

@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const { Sequelize, DataTypes } = require("sequelize")
+const { Sequelize, DataTypes, where } = require("sequelize")
 const initialize = require('./initialize').default
 app.use(express.json())
 
@@ -16,6 +16,7 @@ const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp"
 // })
 // Function that will initialize the connection to the database
 async function initializeDatabaseConnection() {
+    //Defining the struct of the tables in the db
     await database.authenticate()
     const Cat = database.define("cat", {
         name: DataTypes.STRING,
@@ -37,6 +38,7 @@ async function initializeDatabaseConnection() {
         name: DataTypes.STRING,
         city: DataTypes.STRING,
     })
+    //Definition of the reletionships between two tables
     Location.hasMany(Cat)
     Itinerary.hasMany(PointOfInterest)
     PointOfInterest.belongsTo(Itinerary)
@@ -69,6 +71,7 @@ const pageContentObject = {
 
 
 async function runMainApi() {
+    //Here we initialize te values of tables
     const models = await initializeDatabaseConnection()
     await initialize(models)
 
@@ -86,6 +89,8 @@ async function runMainApi() {
 
     // HTTP GET api that returns all the cats in our actual database
     app.get("/cats", async (req, res) => {
+        //const name = "Cat 1"
+        //const result = await models.Cat.findAll({ where: { name} })
         const result = await models.Cat.findAll()
         const filtered = []
         for (const element of result) {
@@ -130,6 +135,11 @@ async function runMainApi() {
     app.get('/itineraries/:id', async (req, res) => {
         const id = +req.params.id
         const result = await models.Itinerary.findOne({ where: { id } })
+        return res.json(result)
+    })
+    app.get('/dio/:id', async (req, res) => {
+        const itineraryId = +req.params.id
+        const result = await models.PointOfInterest.findAll({ where: {itineraryId} })
         return res.json(result)
     })
 
