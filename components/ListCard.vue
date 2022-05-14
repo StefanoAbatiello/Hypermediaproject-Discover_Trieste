@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'CategoryComponent',
+  name: 'ListCardComponent',
   props: {
     name: {
       type: String,

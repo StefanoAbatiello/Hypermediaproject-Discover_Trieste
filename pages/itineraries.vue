@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <h1 class="display-4">Itineraries page</h1>
       <div class="row mt-3">
-        <category
+        <list-card
           v-for="(it, itineraryIndex) of itineraryList"
           :id="it.id"
           :key="`itinerary-index-${itineraryIndex}`"
@@ -17,16 +17,11 @@
 </template>
 
 <script>
-import Category from '~/components/Category.vue'
+import ListCard from '~/components/ListCard.vue'
 export default {
-  name: 'ItineraryPage',
+  name: 'ItinerariesPage',
   components: {
-    Category,
-  },
-data() {
-    return {
-      // itinerariesList: []
-    }
+    ListCard
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
