@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarToggler">
+    <div id="navbarToggler" class="collapse navbar-collapse" >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -28,16 +28,6 @@
     </div>
   </nav>
 </template>
-
-<style scoped>
-.header {
-  background: orange;
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-</style>
 
 <script>
 export default {
@@ -57,17 +47,17 @@ export default {
           name: 'Events',
           path: '/events',
         },
-         {
+        {
+          name: 'Point of Interest',
+          path: '/pois',
+        },
+        {
           name: 'Itineraries',
           path: '/itineraries',
         },
          {
           name: 'Services',
           path: '/services',
-        },
-        {
-          name: 'Points of interest',
-          path: '/pois',
         },
          {
           name: 'About',
@@ -78,3 +68,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.header {
+  background: orange;
+}
+.logo {
+  color: white;
+  font-size: 32px;
+}
+</style>
+
+

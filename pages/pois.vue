@@ -1,15 +1,16 @@
 <template>
   <div class="page container mt-5">
-    <h1 class="display-4">Point of interest page</h1>
-      <div class="row mt-5">
-        <category
-          v-for="(poi, poiIndex) of poiList"
-          :id="poi.id"
-          :key="`itinerary-index-${poiIndex}`"
+    <h1 class="display-4">All the Points of Interest</h1><br>
+      <h5> there are all the PoIs:</h5>
+      <div class="row mt-3">
+        <poi
+          v-for="(it, itineraryIndex) of itineraryList"
+          :id="it.id"
+          :key="`itinerary-index-${itineraryIndex}`"
           class="col-sm-2 m-2"
-          :name="poi.name"
-          :img="poi.img"
-          :category="'poi'"
+          :name="it.name"
+          :img="it.img"
+          :category="'itinerary'"
         />
     </div>
   </div>
@@ -17,11 +18,11 @@
 </template>
 
 <script>
-import Category from '~/components/Category.vue'
+import Poi from '~/components/Poi.vue'
 export default {
-  name: 'PoisPage',
+  name: 'PoiPage',
   components: {
-    Category,
+    Poi
   },
 data() {
     return {
@@ -33,7 +34,7 @@ data() {
     // const { data } = await $axios.get('http://localhost:3000/api/itineraries')
     const { data } = await $axios.get('/api/pois')
     return {
-      poiList: data,
+      itineraryList: data,
     }
   },
 }
