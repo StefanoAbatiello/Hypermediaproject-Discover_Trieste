@@ -1,16 +1,5 @@
 <template>
   <div class="container-fluid px-5 mb-5">
-    <div class="row mt-3">
-      <card
-        v-for="(cat, catIndex) of catList"
-        :id="cat.id"
-        :key="`cat-index-${catIndex}`"
-        class="col-sm-2 m-2"
-        :name="cat.name"
-        :img="cat.img"
-        :breed="cat.breed"
-      />
-    </div>
     <div class="bg-primary text-white text-center">
       <h1>{{ name }}</h1>
     </div>
@@ -42,23 +31,18 @@
 </template>
 
 <script>
-import Card from '~/components/Card.vue'
 import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
-  components: {
-    Card,
-  },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
     
     return {
-      name: data.poi.name,
-      img: data.poi.img,
-      description: data.poi.description,
-      catList: data.cats,
+      name: data.name,
+      img: data.img,
+      description: data.description,
     }
   },
   data(){
