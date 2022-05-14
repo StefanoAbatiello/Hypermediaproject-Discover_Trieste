@@ -49,6 +49,26 @@ export default async (models) => {
             locationId: location1.id
         },
     ]
+    const eventList = [
+        {
+            name: "concert",
+            description: "Details about concert",
+            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
+            season: "winter",
+        },
+        {
+            name: "marathon",
+            description: "Details about marathon",
+            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
+            season: "winter",        },
+        {
+            name: "sagra della salsiccia",
+            description: "Details about sagra della salsiccia",
+            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
+            season: "summer",
+        },
+        
+    ]
     const itineraryList = [
         {
             name: "Venezia",
@@ -221,6 +241,7 @@ export default async (models) => {
     //with create is just one element
     //with bulkCreate is moreElements like arrays
     await models.Cat.bulkCreate(catList)
+    await models.Event.bulkCreate(eventList)
     await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
 

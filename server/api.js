@@ -24,6 +24,12 @@ async function initializeDatabaseConnection() {
         breed: DataTypes.STRING,
         img: DataTypes.STRING,
     })
+    const Event = database.define("event", {
+        name: DataTypes.STRING,
+        description: DataTypes.STRING,
+        img: DataTypes.STRING,
+        season: DataTypes.STRING,
+    })
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
         description: DataTypes.STRING,
@@ -59,6 +65,7 @@ async function initializeDatabaseConnection() {
     await database.sync({ force: true })
     return {
         Cat,
+        Event,
         Location,
         Itinerary,
         PointOfInterest,
@@ -119,6 +126,32 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
+    app.get("/events/:season", async (req, res) => {
+        const { season } = req.params
+        console.log(season)
+        const filtered = []
+        if (season === 'allYear') {
+            const result = await models.Event.findAll()
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        } else {
+            const result = await models.Event.findAll({where: { season }})
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        }
+        return res.json(filtered)
+    })
+
      // HTTP GET api that returns all the itineraries in our actual database
      app.get("/itineraries", async (req, res) => {
         const result = await models.Itinerary.findAll()
@@ -145,6 +178,12 @@ async function runMainApi() {
             })
         }
         return res.json(filtered)
+    })
+
+    app.get('/event/:id', async (req, res) => {
+        const id = +req.params.id
+        const result = await models.Event.findOne({ where: { id } })
+        return res.json(result)
     })
 
     app.get('/itineraries/:id', async (req, res) => {
