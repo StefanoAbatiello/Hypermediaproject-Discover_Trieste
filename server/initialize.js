@@ -93,8 +93,133 @@ export default async (models) => {
             description: "Famosissima per il suo giardino è tra le ville piu belle d'Italia"
         },
     ]
+
+    const servicesList = [
+        {
+            title: "Medical services",
+            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            description: "Here you can find all the pharmacies, hospital and clinics in the city ",
+        },    
+        {
+            title: "Hotel and B&B",
+            img: "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850__480.jpg",
+            description: "Here you can find the best hotels and B&Bs that this city offers!",
+            
+        },
+        {
+            title: "Restaurants",
+            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            description: "Here you can find the best restaurants to try during your stay",
+        }, 
+        {
+            title: "Cafes",
+            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
+        }, 
+        {
+            title: "Entertainment ",
+            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            description: "Here you can find the best activities in the city",
+        }, 
+        
+    ]   
+    const type0 = await models.ServiceType.create(servicesList[0])
+    const type1 = await models.ServiceType.create(servicesList[1])
+    const type2 = await models.ServiceType.create(servicesList[2])
+    const type3 = await models.ServiceType.create(servicesList[3])
+    const type4 = await models.ServiceType.create(servicesList[4])
+
+
+    const singleServiceList = [
+        {   
+            name: "farmacia1",
+            serviceTypeId: type0.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "farmacia2",
+            serviceTypeId: type0.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "farmacia3",
+            serviceTypeId: type0.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        },
+        {   
+            name: "hotel1",
+            serviceTypeId: type1.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "hotel2",
+            serviceTypeId: type1.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "hotel3",
+            serviceTypeId: type1.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        },
+        {   
+            name: "restaurant1",
+            serviceTypeId: type2.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "restaurant2",
+            serviceTypeId: type2.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        },
+        {   
+            name: "cafe1",
+            serviceTypeId: type3.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "cafe2",
+            serviceTypeId: type3.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        },
+        {   
+            name: "club",
+            serviceTypeId: type4.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        }, 
+        {   
+            name: "cinema",
+            serviceTypeId: type4.id,
+            address: "via blabla",
+            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+        
+        },
+    ]
     //with create is just one element
     //with bulkCreate is moreElements like arrays
     await models.Cat.bulkCreate(catList)
     await models.PointOfInterest.bulkCreate(poiList)
+    await models.SingleService.bulkCreate(singleServiceList)
+
 }

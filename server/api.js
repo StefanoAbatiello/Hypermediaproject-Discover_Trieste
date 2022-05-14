@@ -38,17 +38,32 @@ async function initializeDatabaseConnection() {
         name: DataTypes.STRING,
         city: DataTypes.STRING,
     })
+    const SingleService =database.define("singleService",{
+        name: DataTypes.STRING,
+        address: DataTypes.STRING,
+        info: DataTypes.STRING,
+    })
+    const ServiceType = database.define("serviceType", {
+        title: DataTypes.STRING,
+        description: DataTypes.STRING,
+        img: DataTypes.STRING,
+    })
     //Definition of the reletionships between two tables
-    Location.hasMany(Cat)
+    Location.hasMany(Cat)    
+    Cat.belongsTo(Location)
     Itinerary.hasMany(PointOfInterest)
     PointOfInterest.belongsTo(Itinerary)
-    Cat.belongsTo(Location)
+    ServiceType.hasMany(SingleService)
+    SingleService.belongsTo(ServiceType)
+   
     await database.sync({ force: true })
     return {
         Cat,
         Location,
         Itinerary,
-        PointOfInterest
+        PointOfInterest,
+        SingleService,
+        ServiceType
     }
 }
 
@@ -146,7 +161,45 @@ async function runMainApi() {
         return res.json(result)
     })
 
-    
+    app.get('/service/:id', async (req, res) => {
+        const id = +req.params.id
+        const serviceTypeId = +req.params.id
+
+        const result ={
+            type: await models.ServiceType.findOne({ where: { id }}),
+            services: await models.SingleService.findAll({ where: { serviceTypeId } })
+        }    
+        return res.json(result)
+    })
+
+    // app.get('/service/find/:id', async (req, res) => {
+    //     const serviceTypeId = +req.params.id
+    //     const result = await models.SingleService.findAll({ where: { serviceTypeId } })
+    //     const filtered = []
+    //     for (const element of result) {
+    //         filtered.push({
+    //             name: element.name,
+    //             address: element.address,
+    //             info: element.info,
+    //         })
+    //     }
+    //     return res.json(filtered)    
+    // })
+
+    app.get("/services", async (req, res) => {
+        const result = await models.ServiceType.findAll()
+        const filtered = []
+        // aggiungo gli elementi dell'oggetto che vado a recuperare dal db, in modo da recuperare solo i dettagli che mi servono e ridurre la pesantezza
+        for (const element of result) {
+            filtered.push({
+                title: element.title,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        return res.json(filtered)
+    })
+
 
     // HTTP POST api, that will push (and therefore create) a new element in
     // our actual database
