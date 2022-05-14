@@ -7,7 +7,7 @@
     ></div>
     <div class="category-body">
       <h5 class="category-title">{{ name }}</h5>
-      <nuxt-link :to="`/pois/${this.id}`">
+      <nuxt-link :to="`details/pois/${this.id}`">
         <div class="btn btn-primary btn-orange">See Details</div>
       </nuxt-link>
     </div>
