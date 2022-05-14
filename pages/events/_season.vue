@@ -2,7 +2,7 @@
   <div class="page container mt-5">
     <h1 class="display-4">Events</h1>
     <div class="row mt-3">
-      <category
+      <list-card
         v-for="(event, eventIndex) of eventList"
         :key="`event-index-${eventIndex}`"
         class="col-sm-2 m-2"
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import Category from '~/components/Category.vue'
+import ListCard from '~/components/ListCard.vue'
 export default {
   name: 'EventsPage',
   components: {
-    Category,
+    ListCard
   },
   data() {
     return {

@@ -13,25 +13,6 @@
   </div>
 </template>
 
-<style scoped>
-.event-menu {
-  border: 4px solid lightgray;
-}
-.event-menu:hover {
-  border: 2px solid orange;
-}
-.btn-orange {
-  background-color: orange;
-  border: 2px solid orange;
-}
-.event-menu-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-}
-</style>
-
 <script>
 export default {
   name: 'MenuCard',
@@ -56,3 +37,22 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.event-menu {
+  border: 4px solid lightgray;
+}
+.event-menu:hover {
+  border: 2px solid orange;
+}
+.btn-orange {
+  background-color: orange;
+  border: 2px solid orange;
+}
+.event-menu-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+}
+</style>

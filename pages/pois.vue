@@ -3,7 +3,7 @@
     <h1 class="display-4">All the Points of Interest</h1><br>
       <h5> there are all the PoIs:</h5>
       <div class="row mt-3">
-        <poi
+        <list-card
           v-for="(poi, poiIndex) of poiList"
           :id="poi.id"
           :key="`poi-index-${poiIndex}`"
@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import Poi from '~/components/Poi.vue'
+import ListCard from '~/components/ListCard.vue'
 export default {
-  name: 'PoiPage',
+  name: 'PoisPage',
   components: {
-    Poi
+    ListCard,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
