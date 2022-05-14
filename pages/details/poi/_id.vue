@@ -53,16 +53,13 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
-    const { cats } = await $axios.get('/api/cats')
-    return {
-      name: data.name,
-      img: data.img,
-      description: data.description,
-      catList: cats,
-    }
-  },
-  async asyncGatti({ route, $axios }) {
     
+    return {
+      name: data.poi.name,
+      img: data.poi.img,
+      description: data.poi.description,
+      catList: data.cats,
+    }
   },
   data(){
 

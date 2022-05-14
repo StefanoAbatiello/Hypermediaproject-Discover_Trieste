@@ -4,13 +4,13 @@
       <h5> there are all the PoIs:</h5>
       <div class="row mt-3">
         <poi
-          v-for="(it, itineraryIndex) of itineraryList"
-          :id="it.id"
-          :key="`itinerary-index-${itineraryIndex}`"
+          v-for="(poi, poiIndex) of poiList"
+          :id="poi.id"
+          :key="`poi-index-${poiIndex}`"
           class="col-sm-2 m-2"
-          :name="it.name"
-          :img="it.img"
-          :category="'itinerary'"
+          :name="poi.name"
+          :img="poi.img"
+          :category="'poi'"
         />
     </div>
   </div>
@@ -24,19 +24,19 @@ export default {
   components: {
     Poi
   },
-data() {
-    return {
-      // itinerariesList: []
-    }
-  },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
     // const { data } = await $axios.get('http://localhost:3000/api/itineraries')
     const { data } = await $axios.get('/api/pois')
     return {
-      itineraryList: data,
+      poiList: data,
     }
   },
+  data() {
+      return {
+        // itinerariesList: []
+      }
+    },
 }
 </script>
 
