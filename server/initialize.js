@@ -80,14 +80,44 @@ export default async (models) => {
             img: "https://st.depositphotos.com/1006880/5055/i/600/depositphotos_50556395-stock-photo-modern-city-buildings-in-the.jpg",
             description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
+        {
+            name: "Perugia",
+            img: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg",
+            description: "Il fascino dell'Umbria racchiuso in una sola città"
+        },
     ]
     const itinerary0 = await models.Itinerary.create(itineraryList[0])
     const itinerary1 = await models.Itinerary.create(itineraryList[1])
+    const itinerary2 = await models.Itinerary.create(itineraryList[2])
     const poiList = [
         {
-            name: "Basilica San Marco",
-            img: "https://images.placesonline.com/photos/424011111200302_Venezia_1232574946.jpg?quality=80&w=700",
-            itineraryId: itinerary0.id,
+            name: "Palazzo dei Priori",
+            img: "https://www.secretumbria.it/wp-content/uploads/2021/05/palazzo-dei-priori-perugia-facciata.jpg",
+            itineraryId: itinerary2.id,
+            description: "Questa è una descrizione per palazzo dei priori"
+        },
+        {
+            name: "Fontana Maggiore",
+            img: "https://online.scuola.zanichelli.it/artemondo-blog/wp-content/uploads/2018/08/perugia-3.jpg",
+            itineraryId: itinerary2.id,
+            description: "Questa è una descrizione per fontana maggiore"
+        },
+        {
+            name: "Pozzo etrusco",
+            img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Pozzo_etrusco-_passerella.jpg",
+            itineraryId: itinerary2.id,
+            description: "Questa è una descrizione per pozzo etrusco"
+        },
+        {
+            name: "Chiesa di San Michele Arcangelo",
+            img: "https://www.floreale.org/wp-content/uploads/2016/10/chiesa-di-san-michele-arcangelo-perugia.jpg",
+            itineraryId: itinerary2.id,
+            description: "Questa è una descrizione per fontana maggiore"
+        },
+        {
+            name: "Abbazia San Pietro",
+            img: "https://www.fondazioneagraria.it/wp-content/uploads/2015/07/san-pietro.jpg",
+            itineraryId: itinerary2.id,
             description: "The best church you can find in Venezia!"
         },
         {
@@ -130,17 +160,17 @@ export default async (models) => {
         },
         {
             title: "Restaurants",
-            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            img: "https://zipinventory.com/assets/images/topiccluster/10-restaurant-service-models-1607720498-5934-800x400.png",
             description: "Here you can find the best restaurants to try during your stay",
         }, 
         {
             title: "Cafes",
-            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
             description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
             title: "Entertainment ",
-            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
             description: "Here you can find the best activities in the city",
         }, 
         
@@ -150,7 +180,6 @@ export default async (models) => {
     const type2 = await models.ServiceType.create(servicesList[2])
     const type3 = await models.ServiceType.create(servicesList[3])
     const type4 = await models.ServiceType.create(servicesList[4])
-
 
     const singleServiceList = [
         {   
@@ -244,5 +273,4 @@ export default async (models) => {
     await models.Event.bulkCreate(eventList)
     await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
-
 }

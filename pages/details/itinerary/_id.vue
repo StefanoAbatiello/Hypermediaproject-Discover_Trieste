@@ -10,24 +10,23 @@
     </p>
     <div id="test" class="test mt-4 p-5 bg-primary text-white rounded">
       <h1>List of itinerary steps</h1>
-      <div class="col-1 ">
         <itinenary-step
           v-for="(poi, poiIndex) of poiList"
           :id="poi.id"
-          :key="`cat-index-${poiIndex}`"
+          :key="`poi-index-${poiIndex}`"
           :name="poi.name"
           :img="poi.img"
+          :description="poi.description"
           :category="'poi'"
         />
-      </div>
-      <button
+    </div>
+    <button
         type="button"
         class="btn btn-outline-secondary btn-lg px-4"
         @click="backToList"
         >
         Back to itineraries list
       </button>
-    </div>
   </div>
 </template>
 

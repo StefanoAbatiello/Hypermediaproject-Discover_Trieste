@@ -1,26 +1,33 @@
 <template>
-   <div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img :src="img" class="img-fluid rounded-start card-image">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{ name }}</h5>
-        <p class="card-text">{{ description }}</p>
-        <nuxt-link :to="`/details/${category}/${this.id}`">
-        <div class="btn btn-primary btn-blu">See More</div>
-      </nuxt-link>
+  <div class="card mb-3" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img :src="img" class="img-fluid rounded-start card-image">
+      </div>
+      <div class="col-md-4" style="width: auto">
+        <div class="card-body">
+          <h4 class="card-title">{{ name }}</h4>
+          <p class="card-text">{{ description }}</p>
+          <nuxt-link :to="`/details/${category}/${this.id}`">
+            <div class="btn btn-primary btn-blu">See more details... </div>
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
-
 
 <style scoped>
 .card {
   border: 4px solid lightgray;
+}
+.card-title{
+  color: black;
+  text-align: left;
+}
+.card-text{
+  color: black;
+  text-align: left;
 }
 .card:hover {
   border: 2px solid blue;
@@ -30,11 +37,11 @@
   border: 2px solid blue;
 }
 .card-image {
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
 }
 </style>
 

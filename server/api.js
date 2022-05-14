@@ -80,7 +80,7 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Homepage",
-        image: "https://fs.i3lab.group/hypermedia/images/index.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg",
         description: `questa è la home page del sito`
     },
     about: {
