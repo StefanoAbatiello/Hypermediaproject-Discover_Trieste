@@ -137,12 +137,6 @@ async function runMainApi() {
         const result = await models.Itinerary.findOne({ where: { id } })
         return res.json(result)
     })
-    app.get('/dio/:id', async (req, res) => {
-        const itineraryId = +req.params.id
-        const result = await models.PointOfInterest.findAll({ where: {itineraryId} })
-        return res.json(result)
-    })
-
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
         const result = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })

@@ -2,12 +2,13 @@
   <div class="container-fluid px-5 mb-5">
     <div class="row mt-3">
       <card
-        v-for="(poi, poiIndex) of poiList"
-        :id="poi.id"
-        :key="`cat-index-${poiIndex}`"
+        v-for="(cat, catIndex) of catList"
+        :id="cat.id"
+        :key="`cat-index-${catIndex}`"
         class="col-sm-2 m-2"
-        :name="poi.name"
-        :img="poi.img"
+        :name="cat.name"
+        :img="cat.img"
+        :breed="cat.breed"
       />
     </div>
     <div class="bg-primary text-white text-center">
@@ -41,20 +42,30 @@
 </template>
 
 <script>
+import Card from '~/components/Card.vue'
 import CommonMixin from '~/mixins/common'
 export default {
   name: 'DetailsPage',
+  components: {
+    Card,
+  },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
-    const { dio } = await $axios.get('/api/dio/1')
+    const { cats } = await $axios.get('/api/cats')
     return {
       name: data.name,
       img: data.img,
       description: data.description,
-      poiList: dio,
+      catList: cats,
     }
+  },
+  async asyncGatti({ route, $axios }) {
+    
+  },
+  data(){
+
   },
   head() {
     return {
@@ -62,9 +73,9 @@ export default {
     }
   },
   mounted() {
-    const date = new Date()
+    // const date = new Date()
     // Example on how to use mixinx
-    console.log(this.formatMyDate(date.toLocaleDateString()))
+    // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
     backToList() {
