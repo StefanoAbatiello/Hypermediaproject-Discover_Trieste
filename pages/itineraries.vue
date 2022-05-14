@@ -21,7 +21,7 @@ import Category from '~/components/Category.vue'
 export default {
   name: 'ItineraryPage',
   components: {
-    Category,
+    Category
   },
 data() {
     return {

@@ -53,10 +53,12 @@ export default async (models) => {
         {
             name: "Venezia",
             img: "https://www.dire.it/wp-content/uploads/2020/06/palazzi-colorati_casa_case_Sigma-Coatings-5-scaled.jpg",
+            description: "Viene a scoprire la città sull'acqua"
         },
         {
             name: "Roma",
             img: "https://st.depositphotos.com/1006880/5055/i/600/depositphotos_50556395-stock-photo-modern-city-buildings-in-the.jpg",
+            description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
     ]
     const itinerary0 = await models.Itinerary.create(itineraryList[0])

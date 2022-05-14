@@ -1,45 +1,53 @@
 <template>
-  <div class="container my-5">
-    <div
-      class="row p-4 pb-0 pe-lg-0 pt-lg-5 pb-lg-5 pe-lg-5 align-items-center rounded-3 border shadow-lg"
-    >
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
-        <b>Description:</b>
-        <p class="lead">
-          {{ description }}
-        </p>
-        <div
-          class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+  <div class="container-fluid px-5 mb-5">
+    <div class="bg-primary text-white text-center">
+      <h1>{{ name }}</h1>
+    </div>
+    <img :src="img" class="img-fluid mx-auto d-block" />
+    <b>Description:</b>
+    <p class="lead">
+        {{ description }}
+    </p>
+    <div id="test" class="test mt-4 p-5 bg-primary text-white rounded">
+      <h1>List of itinerary steps</h1>
+      <div class="col-1 ">
+        <itinenary-step
+          v-for="(poi, poiIndex) of poiList"
+          :id="poi.id"
+          :key="`cat-index-${poiIndex}`"
+          :name="poi.name"
+          :img="poi.img"
+          :category="'poi'"
+        />
+      </div>
+      <button
+        type="button"
+        class="btn btn-outline-secondary btn-lg px-4"
+        @click="backToList"
         >
-          <button
-            type="button"
-            class="btn btn-outline-secondary btn-lg px-4"
-            @click="backToList"
-          >
-            Back to itineraries list
-          </button>
-        </div>
-      </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3" :src="img" alt="" width="" />
-      </div>
+        Back to itineraries list
+      </button>
     </div>
   </div>
 </template>
 
 <script>
 import CommonMixin from '~/mixins/common'
+import ItinenaryStep from '~/components/ItinenaryStep.vue'
 export default {
   name: 'DetailsPage',
+  components: {
+    ItinenaryStep
+  },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/itineraries/' + id)
     return {
-      name: data.name,
-      img: data.img,
-      description: data.description,
+      name: data.itinerary.name,
+      img: data.itinerary.img,
+      description: data.itinerary.description,
+      poiList: data.relatedPois
     }
   },
   head(){
