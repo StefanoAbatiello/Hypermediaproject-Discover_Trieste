@@ -19,6 +19,13 @@
           >
             Back to Events
           </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            @click="back()"
+          >
+            Back to try
+          </button>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -56,6 +63,9 @@ export default {
   methods: {
     backToEvents(season) {
       this.$router.push('/events/'+ season)
+    },
+    back() {
+      this.$router.push('/events/allYear')
     },
   },
 }
