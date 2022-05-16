@@ -185,6 +185,10 @@ async function runMainApi() {
         const result = await models.Event.findOne({ where: { id } })
         return res.json(result)
     })
+    app.get('/event/len', async (req, res) => {
+        const len = (await models.PointOfInterest.findAll()).length
+        return res.json(len)
+    })
 
     app.get('/itineraries/:id', async (req, res) => {
         const id = +req.params.id
@@ -198,7 +202,11 @@ async function runMainApi() {
     
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
-        const result = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
+        const len = (await models.PointOfInterest.findAll()).length
+        const result = {
+            poi:await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] }),
+            len: len
+        }
         return res.json(result)
     })
 

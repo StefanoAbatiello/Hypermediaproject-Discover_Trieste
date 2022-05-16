@@ -34,11 +34,15 @@
       </p>
     </div>
     <ul class="pagination">
-        <li class="page-item"><a class="page-link" @click="next()">Previous</a></li>
-        <li class="page-item"><a class="page-link" @click="next(id)">Next</a></li>
+      <li class="page-item">
+        <a class="page-link" @click="previous(id, len)">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" @click="next(id, len)">Next</a>
+      </li>
     </ul>
     <script>
-      console.log({{id}});
+      console.log({{len}});
     </script>
   </div>
 </template>
@@ -52,10 +56,11 @@ export default {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
     return {
+      len: data.len,
       id,
-      name: data.name,
-      img: data.img,
-      description: data.description,
+      name: data.poi.name,
+      img: data.poi.img,
+      description: data.poi.description,
     }
   },
   data() {},
@@ -70,9 +75,21 @@ export default {
     // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
-    next(id){
-      const temp= parseInt(id) + 1;
-      this.$router.push('/details/poi/'+temp);
+    next(id, len) {
+      if (parseInt(id) === parseInt(len)) {
+        this.$router.push('/details/poi/1')
+      } else {
+        const temp = parseInt(id) + 1
+        this.$router.push('/details/poi/' + temp)
+      }
+    },
+    previous(id, len) {
+      if (parseInt(id) === 1) {
+        this.$router.push('/details/poi/' + len)
+      } else {
+        const temp = parseInt(id) - 1
+        this.$router.push('/details/poi/' + temp)
+      }
     },
     backToList() {
       this.$router.push('/pois')
