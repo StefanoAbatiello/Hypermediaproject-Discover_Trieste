@@ -61,6 +61,8 @@ async function initializeDatabaseConnection() {
     PointOfInterest.belongsTo(Itinerary)
     ServiceType.hasMany(SingleService)
     SingleService.belongsTo(ServiceType)
+    Event.belongsTo(PointOfInterest)
+    PointOfInterest.hasMany(Event)
    
     await database.sync({ force: true })
     return {
@@ -182,7 +184,8 @@ async function runMainApi() {
 
     app.get('/event/:id', async (req, res) => {
         const id = +req.params.id
-        const result = await models.Event.findOne({ where: { id } })
+        // const eventId = +req.params.id
+        const result = await models.Event.findOne({ where: { id }})
         return res.json(result)
     })
 
