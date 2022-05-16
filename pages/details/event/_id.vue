@@ -12,19 +12,26 @@
         <div
           class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
         >
-          <button
+          <button v-if="season === 'summer'"
             type="button"
             class="btn btn-outline-secondary btn-lg px-4"
             @click="backToEvents(season)"
           >
-            Back to Events
+            Back to summer events
+          </button>
+          <button v-else
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            @click="backToEvents(season)"
+          >
+            Back to winter events
           </button>
           <button
             type="button"
             class="btn btn-outline-secondary btn-lg px-4"
             @click="back()"
           >
-            Back to try
+            Back to all the events
           </button>
         </div>
       </div>
