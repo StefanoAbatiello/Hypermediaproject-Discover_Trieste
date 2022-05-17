@@ -4,33 +4,33 @@
       <h1>{{ name }}</h1>
     </div>
     <ul class="breadcrumb">
-      <li class="breadcrumb-item"><a @click="backToList()">allPoi</a></li>
-      <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
-      <li class="breadcrumb-item"><a href="#">Italy</a></li>
-      <li class="breadcrumb-item active">Rome</li>
+      <li class="breadcrumb-item"><a @click="backToList()">allPoi/</a></li>
     </ul>
     <img :src="img" class="img-fluid mx-auto d-block" />
+    <div><p>{{description}}</p></div>
     <div class="container-fluid m-0 p-0">
-      Info:<br />
-      <button class="prova m-0" value="prova" @click="accessibilityPrint()">
-        Accessibility
-      </button>
-      <button class="prova m-0" value="prova" @click="timePrint()">Time</button>
-      <button class="prova m-0" value="prova" @click="getPrint()">
-        How to get here
-      </button>
-      <button class="prova m-0" value="prova" @click="pricePrint()">
-        Prices
-      </button>
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" value="description" name="description" @click="accessibilityPrint(description.value())">Description</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" @click="accessibilityPrint()">Accessibility</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" @click="getPrint()">How to get here</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" @click="timePrint()">Time</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" @click="pricePrint()">Prices</a>
+        </li>
+      </ul>
     </div>
-    <div id="test" class="test mt-4 p-5 bg-primary text-white rounded">
-      <h1>Jumbotron Example</h1>
-      <br />
+    <div id="textBox" class="test mt-4 p-5 bg-primary text-white rounded">
+      <h1>{{name}}</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat...
+        {{description}}
       </p>
     </div>
     <ul class="pagination">
@@ -94,17 +94,23 @@ export default {
     backToList() {
       this.$router.push('/pois')
     },
+    print(context){
+      if (context === "description"){
+        document.getElementById('textBox').innerHTML = 'description'
+      }
+      // document.getElementById('textBox').innerHTML = {description}
+    },
     accessibilityPrint() {
-      document.getElementById('test').innerHTML = 'accessibility'
+      document.getElementById('textBox').innerHTML = 'accessibility'
     },
     timePrint() {
-      document.getElementById('test').innerHTML = 'time'
+      document.getElementById('textBox').innerHTML = 'time'
     },
     pricePrint() {
-      document.getElementById('test').innerHTML = 'prices'
+      document.getElementById('textBox').innerHTML = 'prices'
     },
     getPrint() {
-      document.getElementById('test').innerHTML = 'How to get here'
+      document.getElementById('textBox').innerHTML = 'How to get here'
     },
   },
 }
