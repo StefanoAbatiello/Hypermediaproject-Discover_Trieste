@@ -1,16 +1,22 @@
 <template>
-  <div class="card mb-3" >
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img :src="img" class="img-fluid rounded-start card-image">
-      </div>
-      <div class="col-md-4" style="width: auto">
-        <div class="card-body">
-          <h4 class="card-title">{{ name }}</h4>
-          <p class="card-text">{{ description }}</p>
-          <nuxt-link :to="`/details/${category}/${this.id}`">
-            <div class="btn btn-primary btn-blu">See more details... </div>
-          </nuxt-link>
+  <div class="container-fluid">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img :src="img" class="img rounded-start card-image" />
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h4 class="card-title">{{ name }}</h4>
+            <p class="card-text">
+              {{ description }} fvjhcvbjw dcncsdn fn dn j fdsn dn dfn sdmk nj
+              dfj fnio fn oisdfn fosn n nj snjnj n ofdn jn jnjin ij fdnj n fiujn
+              dfji nj fdncj n junaju njun
+            </p>
+            <nuxt-link :to="`/details/${category}/${this.id}`">
+              <div class="btn btn-primary btn-blu">See more details...</div>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -21,11 +27,11 @@
 .card {
   border: 4px solid lightgray;
 }
-.card-title{
+.card-title {
   color: black;
   text-align: left;
 }
-.card-text{
+.card-text {
   color: black;
   text-align: left;
 }

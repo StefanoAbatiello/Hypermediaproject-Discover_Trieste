@@ -3,6 +3,12 @@
     <div class="bg-primary text-white text-center">
       <h1>{{ name }}</h1>
     </div>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a @click="backToList()">allPoi</a></li>
+      <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+      <li class="breadcrumb-item"><a href="#">Italy</a></li>
+      <li class="breadcrumb-item active">Rome</li>
+    </ul>
     <img :src="img" class="img-fluid mx-auto d-block" />
     <div class="container-fluid m-0 p-0">
       Info:<br />
@@ -27,6 +33,17 @@
         commodo consequat...
       </p>
     </div>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" @click="previous(id, len)">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" @click="next(id, len)">Next</a>
+      </li>
+    </ul>
+    <script>
+      console.log({{len}});
+    </script>
   </div>
 </template>
 
@@ -38,16 +55,15 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
-    
     return {
-      name: data.name,
-      img: data.img,
-      description: data.description,
+      len: data.len,
+      id,
+      name: data.poi.name,
+      img: data.poi.img,
+      description: data.poi.description,
     }
   },
-  data(){
-
-  },
+  data() {},
   head() {
     return {
       title: this.name,
@@ -59,8 +75,24 @@ export default {
     // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
+    next(id, len) {
+      if (parseInt(id) === parseInt(len)) {
+        this.$router.push('/details/poi/1')
+      } else {
+        const temp = parseInt(id) + 1
+        this.$router.push('/details/poi/' + temp)
+      }
+    },
+    previous(id, len) {
+      if (parseInt(id) === 1) {
+        this.$router.push('/details/poi/' + len)
+      } else {
+        const temp = parseInt(id) - 1
+        this.$router.push('/details/poi/' + temp)
+      }
+    },
     backToList() {
-      this.$router.push('/itineraries')
+      this.$router.push('/pois')
     },
     accessibilityPrint() {
       document.getElementById('test').innerHTML = 'accessibility'

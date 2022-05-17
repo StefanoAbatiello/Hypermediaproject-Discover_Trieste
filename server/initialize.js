@@ -49,26 +49,9 @@ export default async (models) => {
             locationId: location1.id
         },
     ]
-    const eventList = [
-        {
-            name: "concert",
-            description: "Details about concert",
-            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
-            season: "winter",
-        },
-        {
-            name: "marathon",
-            description: "Details about marathon",
-            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
-            season: "winter",        },
-        {
-            name: "sagra della salsiccia",
-            description: "Details about sagra della salsiccia",
-            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
-            season: "summer",
-        },
+
         
-    ]
+
     const itineraryList = [
         {
             name: "Venezia",
@@ -145,8 +128,39 @@ export default async (models) => {
             description: "Famosissima per il suo giardino è tra le ville piu belle d'Italia"
         },
     ]
-
-    const servicesList = [
+    const poi0 = await models.PointOfInterest.create(poiList[0])
+    const poi1 = await models.PointOfInterest.create(poiList[1])
+    const poi2 = await models.PointOfInterest.create(poiList[2])
+    const poi3 = await models.PointOfInterest.create(poiList[3])
+    const poi4 = await models.PointOfInterest.create(poiList[4])
+    const poi5 = await models.PointOfInterest.create(poiList[5])
+    const poi6 = await models.PointOfInterest.create(poiList[6])
+    const poi7 = await models.PointOfInterest.create(poiList[7])
+    const poi8 = await models.PointOfInterest.create(poiList[8])
+    const eventList = [
+        {
+            name: "concert",
+            description: "Details about concert",
+            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
+            season: "winter",
+            poiId:poi0.id,
+        },
+        {
+            name: "marathon",
+            description: "Details about marathon",
+            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
+            season: "winter",  
+            poiId:poi0.id,
+        },
+        {
+            name: "sagra della salsiccia",
+            description: "Details about sagra della salsiccia",
+            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
+            season: "summer",
+            poiId:poi1.id,
+        }    
+    ]
+        const servicesList = [
         {
             name: "Medical services",
             img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
@@ -272,6 +286,6 @@ export default async (models) => {
     //with bulkCreate is moreElements like arrays
     await models.Cat.bulkCreate(catList)
     await models.Event.bulkCreate(eventList)
-    await models.PointOfInterest.bulkCreate(poiList)
+    //await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
 }
