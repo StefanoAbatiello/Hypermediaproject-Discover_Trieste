@@ -128,16 +128,11 @@ export default async (models) => {
         {
             name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
-            //img: "https://latuaattivita.it/adm/Images/contents/large/ann_vpr266_05.jpg",
             description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
             name: "Entertainment ",
-<<<<<<< HEAD
             img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
-=======
-            img: "https://images.xceed.me/clubs/covers/milk-club-torino-xceed-0705.jpg?w=600&fm=auto",
->>>>>>> 649eaf12108176f729989690bdf6bb0361c76db7
             description: "Here you can find the best activities in the city",
         }, 
         
