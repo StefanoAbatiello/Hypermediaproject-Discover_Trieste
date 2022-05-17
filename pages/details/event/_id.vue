@@ -5,10 +5,18 @@
     >
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
         <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
-        <b>Description:</b>
+        <div>
+          <b>Description:</b>
         <p class="lead">
           {{ description }}
-        </p>
+        </p><button
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            @click="goToPoi(poiId)"
+          >
+            See the location
+          </button></div>
+        
         <div
           class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
         >
@@ -54,6 +62,7 @@ export default {
       name: data.name,
       img: data.img,
       description: data.description,
+      poiId: data.poiId,
       season: data.season,
     }
   },
@@ -73,6 +82,9 @@ export default {
     },
     back() {
       this.$router.push('/events/allYear')
+    },
+    goToPoi(poiId) {
+      this.$router.push('/details/poi/'+ poiId)
     },
   },
 }

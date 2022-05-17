@@ -1,74 +1,5 @@
 //Here we put all the datas, according to the structure defined in api.js
-export default async (models) => {
-    const locationList = [
-        {
-            name: "Cat Paradise",
-            city: "Milan"
-        },
-        {
-            name: "Cat City",
-            city: "Rome"
-        }
-    ]
-    const location0 = await models.Location.create(locationList[0])
-    const location1 = await models.Location.create(locationList[1])
-    const catList = [
-        {
-            name: "Cat 1",
-            breed: "Siberian",
-            description: "Details about cat 1",
-            img: "https://fs.i3lab.group/hypermedia/cats/siberian.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 2",
-            breed: "Birman",
-            description: "Details about cat 2",
-            img: "https://fs.i3lab.group/hypermedia/cats/birman.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 3",
-            breed: "Bombay",
-            description: "Details about cat 3",
-            img: "https://fs.i3lab.group/hypermedia/cats/bombay.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 4",
-            breed: "Calico",
-            description: "Details about cat 4",
-            img: "https://fs.i3lab.group/hypermedia/cats/calico.jpg",
-            locationId: location1.id
-        },
-        {
-            name: "Cat 5",
-            breed: "Maine Coon",
-            description: "Details about cat 5",
-            img: "https://fs.i3lab.group/hypermedia/cats/maine-coon.jpg",
-            locationId: location1.id
-        },
-    ]
-    const eventList = [
-        {
-            name: "concert",
-            description: "Details about concert",
-            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
-            season: "winter",
-        },
-        {
-            name: "marathon",
-            description: "Details about marathon",
-            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
-            season: "winter",        },
-        {
-            name: "sagra della salsiccia",
-            description: "Details about sagra della salsiccia",
-            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
-            season: "summer",
-        },
-        
-    ]
+export default async (models) => { 
     const itineraryList = [
         {
             name: "Venezia",
@@ -145,31 +76,62 @@ export default async (models) => {
             description: "Famosissima per il suo giardino è tra le ville piu belle d'Italia"
         },
     ]
-
-    const servicesList = [
+    const poi0 = await models.PointOfInterest.create(poiList[0])
+    const poi1 = await models.PointOfInterest.create(poiList[1])
+    const poi2 = await models.PointOfInterest.create(poiList[2])
+    const poi3 = await models.PointOfInterest.create(poiList[3])
+    const poi4 = await models.PointOfInterest.create(poiList[4])
+    const poi5 = await models.PointOfInterest.create(poiList[5])
+    const poi6 = await models.PointOfInterest.create(poiList[6])
+    const poi7 = await models.PointOfInterest.create(poiList[7])
+    const poi8 = await models.PointOfInterest.create(poiList[8])
+    const eventList = [
         {
-            title: "Medical services",
+            name: "concert",
+            description: "Details about concert",
+            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
+            season: "winter",
+            poiId:poi0.id,
+        },
+        {
+            name: "marathon",
+            description: "Details about marathon",
+            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
+            season: "winter",  
+            poiId:poi0.id,
+        },
+        {
+            name: "sagra della salsiccia",
+            description: "Details about sagra della salsiccia",
+            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
+            season: "summer",
+            poiId:poi1.id,
+        }    
+    ]
+        const servicesList = [
+        {
+            name: "Medical services",
             img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
             description: "Here you can find all the pharmacies, hospital and clinics in the city ",
         },    
         {
-            title: "Hotel and B&B",
+            name: "Hotel and B&B",
             img: "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850__480.jpg",
             description: "Here you can find the best hotels and B&Bs that this city offers!",
             
         },
         {
-            title: "Restaurants",
+            name: "Restaurants",
             img: "https://zipinventory.com/assets/images/topiccluster/10-restaurant-service-models-1607720498-5934-800x400.png",
             description: "Here you can find the best restaurants to try during your stay",
         }, 
         {
-            title: "Cafes",
+            name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
             description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
-            title: "Entertainment ",
+            name: "Entertainment ",
             img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
             description: "Here you can find the best activities in the city",
         }, 
@@ -197,31 +159,31 @@ export default async (models) => {
         
         }, 
         {   
-            name: "farmacia3",
+            name: "hospital",
             serviceTypeId: type0.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "For emergencies the number to call is 112",
         
         },
         {   
             name: "hotel1",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         }, 
         {   
             name: "hotel2",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         }, 
         {   
             name: "hotel3",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         },
         {   
@@ -256,21 +218,20 @@ export default async (models) => {
             name: "club",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "open everyday from 8pm to 3am",
         
         }, 
         {   
             name: "cinema",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
         
         },
     ]
     //with create is just one element
     //with bulkCreate is moreElements like arrays
-    await models.Cat.bulkCreate(catList)
     await models.Event.bulkCreate(eventList)
-    await models.PointOfInterest.bulkCreate(poiList)
+    //await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
 }
