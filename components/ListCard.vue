@@ -1,10 +1,10 @@
 <template>
-  <div class="category" style="width: 18rem">
+  <div class="category" style="width: 23rem">
     <h4 class="category-title">{{ name }}</h4>
     <div class="category-body">
       <div class="category-img-top category-image" :style="{ 'background-image': 'url(' + img + ')' }"> </div>
       <nuxt-link :to="`/details/${category}/${id}`">
-        <div class="btn btn-primary btn-blu">See Details</div>
+        <div class="btn btn-primary btn-blu"> {{ name }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .category {
-  border: 4px solid darkblue;
+  border: 4px solid rgb(136, 24, 24);
 }
 .btn-blu {
   background-color: lightblue;

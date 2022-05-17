@@ -1,7 +1,7 @@
 <template>
   <div class="page container mt-5">
     <h1 class="display-4">Events</h1>
-    <div class="row mt-3">
+    <div class="row mt-3 row-line">
       <menu-card
         class="col-sm-2 m-2"
         :season="`summer`"
@@ -31,19 +31,12 @@ export default {
   components: {
     MenuCard,
   },
-  data() {
-    return {
-      // eventList: []
-    }
-  },
-  // Note: This happens on backend (server) side
-  // async asyncData({ $axios }) {
-    // const { data } = await $axios.get('http://localhost:3000/api/events')
-    // const { data } = await $axios.get('/api/allEvents')
-    // return {
-    //  eventList: data,
-    // }
-  // },
-
 }
 </script>
+
+<style scoped>
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+</style>

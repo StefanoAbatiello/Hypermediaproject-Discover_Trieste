@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-5 mb-5">
+  <div class="container-fluid px-5 mb-5 mt-3">
     <div class="bg-primary text-white text-center">
       <h1>{{ name }}</h1>
     </div>
@@ -53,11 +53,6 @@ export default {
     return {
       title: this.name
     }
-  },
-  mounted(){
-    const date = new Date()
-    // Example on how to use mixinx
-    console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
     backToList() {

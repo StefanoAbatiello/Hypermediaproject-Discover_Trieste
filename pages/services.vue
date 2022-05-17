@@ -1,7 +1,7 @@
 <template>
   <div class="page container mt-5">
     <h1 class="display-4">Services</h1><br>
-    <div class="row mt-3">
+    <div class="row mt-3 row-line">
       <list-card
         v-for="(services, servicesIndex) of servicesList"
         :id="services.id"
@@ -29,11 +29,12 @@ export default {
       servicesList: data,
     }
   },
-
-  // Note: This would happen on frontend (client) side
-  // async mounted() {
-  //   const { data } = await this.$axios.get('/api/cats')
-  //   this.catList = data
-  // },
 }
 </script>
+
+<style scoped>
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+</style>

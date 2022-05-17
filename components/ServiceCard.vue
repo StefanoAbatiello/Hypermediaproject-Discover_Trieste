@@ -13,22 +13,6 @@
   </div>
 </template>
 
-<style scoped>
-.card {
-  border: 2px solid darkblue;
-}
-.btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
-}
-.card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-}
-</style>
-
 <script>
 export default {
   name: 'ServiceCardComponent',
@@ -49,3 +33,19 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.card {
+  border: 2px solid darkblue;
+}
+.btn-blu {
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+}
+</style>

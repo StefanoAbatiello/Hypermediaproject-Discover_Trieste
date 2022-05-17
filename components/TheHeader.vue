@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
+    <div id="navbarToggler" class="collapse navbar-collapse links" >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -67,10 +67,13 @@ export default {
 
 <style scoped>
 .header {
-  background: lightcyan;
+  background: rgb(136, 24, 24);
 }
 .navbar-brand{
-  color: darkblue;
+  color: whitesmoke;
+}
+.links {
+  color: whitesmoke;
 }
 .logo {
   color: white;

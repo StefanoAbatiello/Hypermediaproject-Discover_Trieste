@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .event-menu {
-  border: 4px solid darkblue;
+  border: 4px solid rgb(136, 24, 24);
 }
 .btn-blu {
   background-color: lightblue;

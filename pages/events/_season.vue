@@ -4,9 +4,9 @@
     <div class="row mt-3">
       <list-card
         v-for="(event, eventIndex) of eventList"
+        :id="event.id"
         :key="`event-index-${eventIndex}`"
         class="col-sm-2 m-2"
-        :id="event.id"
         :category="`event`"
         :name="event.name"
         :img="event.img"
@@ -21,11 +21,6 @@ export default {
   name: 'EventsPage',
   components: {
     ListCard
-  },
-  data() {
-    return {
-      // eventList: []
-    }
   },
   // Note: This happens on backend (server) side
   async asyncData({ route,$axios }) {
