@@ -8,16 +8,12 @@
         :name="`Summer Event`"
         :img="`https://www.creativebloggingworld.com/wp-content/uploads/2021/07/Corporate-Summer-Event-Ideas-1024x768.jpg`"
       />
-    </div>
-    <div class="row mt-3">
       <menu-card
         class="col-sm-2 m-2"
         :season="`winter`"
         :name="`Winter Event`"
         :img="`https://www.lanottevola.com/wp-content/uploads/2018/11/La-Notte-Vola-Winter-edition-1024x589.jpg`"
       />
-    </div>
-    <div class="row mt-3">
       <menu-card
         class="col-sm-2 m-2"
         :season="`allYear`"
