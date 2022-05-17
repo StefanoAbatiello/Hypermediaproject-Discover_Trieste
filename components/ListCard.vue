@@ -1,8 +1,8 @@
 <template>
   <div class="rounded shadow p-3 category" style="width: 23rem" >
-     <h4 class="category-title">{{ name }}</h4>
+     <h4 class="category-title text-center">{{ name }}</h4>
     <div class="category-body">
-      <div class="category-img-top category-image" :style="{ 'background-image': 'url(' + img + ')' }"> 
+      <div class="category-img-top category-image rounded" :style="{ 'background-image': 'url(' + img + ')' }"> 
       </div>
       <nuxt-link :to="`/details/${category}/${id}`">
         <div class="btn btn-details mt-2 mb-1 text-white"> See details...</div>
@@ -43,10 +43,10 @@ export default {
 
 <style scoped>
 .category:hover {
-  border: 3px solid rgb(136, 24, 24);
+  border: 3px solid rgb(195, 75, 75);
 }
 .btn-details {
-  background-color: rgb(136, 24, 24);
+  background: rgb(195, 75, 75);
   display: block;
   margin: 0 auto;
   width: 145px;

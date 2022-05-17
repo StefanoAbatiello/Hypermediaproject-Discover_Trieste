@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
+  <div class="container-fluid px-5 mb-5 mt-4">
+    <div class="bg text-danger text-center">
       <h1>Types of service</h1>
     </div>
-    <div class="row mt-3 row-line">
+    <div class="row mt-4 row-line">
       <list-card
         v-for="(services, servicesIndex) of servicesList"
         :id="services.id"

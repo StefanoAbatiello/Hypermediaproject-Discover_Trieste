@@ -72,7 +72,7 @@ export default {
 
 <style scoped>
 .footer {
-  background: orange;
+  background: rgb(195, 75, 75);
 }
 .logo {
   color: white;
