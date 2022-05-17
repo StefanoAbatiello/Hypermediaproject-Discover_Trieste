@@ -128,11 +128,16 @@ export default async (models) => {
         {
             name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
+            //img: "https://latuaattivita.it/adm/Images/contents/large/ann_vpr266_05.jpg",
             description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
             name: "Entertainment ",
+<<<<<<< HEAD
             img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
+=======
+            img: "https://images.xceed.me/clubs/covers/milk-club-torino-xceed-0705.jpg?w=600&fm=auto",
+>>>>>>> 649eaf12108176f729989690bdf6bb0361c76db7
             description: "Here you can find the best activities in the city",
         }, 
         
@@ -159,31 +164,31 @@ export default async (models) => {
         
         }, 
         {   
-            name: "farmacia3",
+            name: "hospital",
             serviceTypeId: type0.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "For emergencies the number to call is 112",
         
         },
         {   
             name: "hotel1",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         }, 
         {   
             name: "hotel2",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         }, 
         {   
             name: "hotel3",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "reception open everyday  from 8am to 11pm",
         
         },
         {   
@@ -218,14 +223,14 @@ export default async (models) => {
             name: "club",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "open everyday from 8pm to 3am",
         
         }, 
         {   
             name: "cinema",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
         
         },
     ]

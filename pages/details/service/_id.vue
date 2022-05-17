@@ -4,7 +4,7 @@
       class="row p-4 pb-0 pe-lg-0 pt-lg-5 pb-lg-5 pe-lg-5 align-items-center rounded-3 border shadow-lg"
     >
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">{{ title }}</h1>
+        <h1 class="display-4 fw-bold lh-1">{{ name }}</h1>
         <b>Description:</b>
         <p class="lead">
           {{ description }}
@@ -49,7 +49,7 @@ export default {
     const { id } = route.params
     const { data } = await $axios.get('/api/service/'+id)
     return {
-      title: data.type.title,
+      title: data.type.name,
       description: data.type.description,
       serviceList: data.services,
     }
