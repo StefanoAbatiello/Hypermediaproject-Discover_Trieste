@@ -50,7 +50,7 @@ async function initializeDatabaseConnection() {
         info: DataTypes.STRING,
     })
     const ServiceType = database.define("serviceType", {
-        title: DataTypes.STRING,
+        name: DataTypes.STRING,
         description: DataTypes.STRING,
         img: DataTypes.STRING,
     })
@@ -233,7 +233,7 @@ async function runMainApi() {
         // aggiungo gli elementi dell'oggetto che vado a recuperare dal db, in modo da recuperare solo i dettagli che mi servono e ridurre la pesantezza
         for (const element of result) {
             filtered.push({
-                title: element.title,
+                name: element.name,
                 img: element.img,
                 id: element.id,
             })

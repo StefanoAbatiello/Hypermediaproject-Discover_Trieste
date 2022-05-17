@@ -148,29 +148,29 @@ export default async (models) => {
 
     const servicesList = [
         {
-            title: "Medical services",
+            name: "Medical services",
             img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
             description: "Here you can find all the pharmacies, hospital and clinics in the city ",
         },    
         {
-            title: "Hotel and B&B",
+            name: "Hotel and B&B",
             img: "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850__480.jpg",
             description: "Here you can find the best hotels and B&Bs that this city offers!",
             
         },
         {
-            title: "Restaurants",
+            name: "Restaurants",
             img: "https://zipinventory.com/assets/images/topiccluster/10-restaurant-service-models-1607720498-5934-800x400.png",
             description: "Here you can find the best restaurants to try during your stay",
         }, 
         {
-            title: "Cafes",
+            name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
             //img: "https://latuaattivita.it/adm/Images/contents/large/ann_vpr266_05.jpg",
             description: "if you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
-            title: "Entertainment ",
+            name: "Entertainment ",
             img: "https://images.xceed.me/clubs/covers/milk-club-torino-xceed-0705.jpg?w=600&fm=auto",
             description: "Here you can find the best activities in the city",
         }, 

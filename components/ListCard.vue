@@ -14,13 +14,13 @@
 </template>
 
 <style scoped>
-.catergory {
+.category {
   border: 4px solid lightgray;
 }
 .category:hover {
   border: 2px solid orange;
 }
-.btn-orange {
+.btn-blue {
   background-color: orange;
   border: 2px solid orange;
 }

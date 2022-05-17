@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.catergory {
+.category {
   border: 4px solid lightgray;
 }
 .category:hover {
