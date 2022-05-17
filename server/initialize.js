@@ -1,57 +1,5 @@
 //Here we put all the datas, according to the structure defined in api.js
-export default async (models) => {
-    const locationList = [
-        {
-            name: "Cat Paradise",
-            city: "Milan"
-        },
-        {
-            name: "Cat City",
-            city: "Rome"
-        }
-    ]
-    const location0 = await models.Location.create(locationList[0])
-    const location1 = await models.Location.create(locationList[1])
-    const catList = [
-        {
-            name: "Cat 1",
-            breed: "Siberian",
-            description: "Details about cat 1",
-            img: "https://fs.i3lab.group/hypermedia/cats/siberian.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 2",
-            breed: "Birman",
-            description: "Details about cat 2",
-            img: "https://fs.i3lab.group/hypermedia/cats/birman.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 3",
-            breed: "Bombay",
-            description: "Details about cat 3",
-            img: "https://fs.i3lab.group/hypermedia/cats/bombay.jpg",
-            locationId: location0.id
-        },
-        {
-            name: "Cat 4",
-            breed: "Calico",
-            description: "Details about cat 4",
-            img: "https://fs.i3lab.group/hypermedia/cats/calico.jpg",
-            locationId: location1.id
-        },
-        {
-            name: "Cat 5",
-            breed: "Maine Coon",
-            description: "Details about cat 5",
-            img: "https://fs.i3lab.group/hypermedia/cats/maine-coon.jpg",
-            locationId: location1.id
-        },
-    ]
-
-        
-
+export default async (models) => { 
     const itineraryList = [
         {
             name: "Venezia",
@@ -185,7 +133,7 @@ export default async (models) => {
         }, 
         {
             name: "Entertainment ",
-            img: "https://images.xceed.me/clubs/covers/milk-club-torino-xceed-0705.jpg?w=600&fm=auto",
+            img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
             description: "Here you can find the best activities in the city",
         }, 
         
@@ -296,7 +244,6 @@ export default async (models) => {
     ]
     //with create is just one element
     //with bulkCreate is moreElements like arrays
-    await models.Cat.bulkCreate(catList)
     await models.Event.bulkCreate(eventList)
     //await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)

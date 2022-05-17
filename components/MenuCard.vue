@@ -1,13 +1,13 @@
 <template>
-  <div class="event-menu" style="width: 18rem">
+  <div class="rounded shadow p-3 event-menu" style="width: 23rem">
+    <h4 class="event-menu-title">{{ name }}</h4>
     <div
       class="event-menu-img-top event-menu-image"
       :style="{ 'background-image': 'url(' + img + ')' }"
     ></div>
     <div class="event-menu-body">
-      <h5 class="event-menu-title">{{ name }}</h5>
-            <nuxt-link :to="`/events/${season}`">
-        <div class="btn btn-primary btn-orange">See More</div>
+      <nuxt-link :to="`/events/${season}`">
+        <div class="btn btn-primary btn-details mt-2 text-white">See details...</div>
       </nuxt-link>
     </div>
   </div>
@@ -39,20 +39,23 @@ export default {
 </script>
 
 <style scoped>
-.event-menu {
-  border: 4px solid lightgray;
-}
 .event-menu:hover {
-  border: 2px solid orange;
+  border: 3px solid rgb(136, 24, 24);
 }
-.btn-orange {
-  background-color: orange;
-  border: 2px solid orange;
+.btn-details {
+  background-color: rgb(136, 24, 24);
+  display: block;
+  margin: 0 auto;
+  width: 145px;
+}
+.event-menu-title{
+  text-align: center;
+  color: rgb(136, 24, 24);
 }
 .event-menu-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 160px;
+  height: 200px;
 }
 </style>

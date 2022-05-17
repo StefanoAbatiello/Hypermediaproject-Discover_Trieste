@@ -1,36 +1,15 @@
 <template>
-  <div class="category rounded" style="width: 18rem">
-    <div
-      class="category-img-top category-image mt-1 mb-1 rounded"
-      :style="{ 'background-image': 'url(' + img + ')' }"
-    ></div>
-    <div class="category-body text-center">
-      <h5 class="category-title ">{{ name }}</h5>
-      <nuxt-link :to="`/details/${category}/${this.id}`">
-        <div class="btn btn-primary btn-orange mb-1 ">See Details</div>
+  <div class="rounded shadow p-3 category" style="width: 23rem" >
+     <h4 class="category-title">{{ name }}</h4>
+    <div class="category-body">
+      <div class="category-img-top category-image" :style="{ 'background-image': 'url(' + img + ')' }"> 
+      </div>
+      <nuxt-link :to="`/details/${category}/${id}`">
+        <div class="btn btn-details mt-2 mb-1 text-white"> See details...</div>
       </nuxt-link>
     </div>
   </div>
 </template>
-
-<style scoped>
-.category {
-  border: 4px solid lightgray;
-}
-.category:hover {
-  border: 2px solid orange;
-}
-.btn-blue {
-  background-color: orange;
-  border: 2px solid orange;
-}
-.category-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-}
-</style>
 
 <script>
 export default {
@@ -60,3 +39,29 @@ export default {
   },
 }
 </script>
+
+
+<style scoped>
+.category:hover {
+  border: 3px solid rgb(136, 24, 24);
+}
+.btn-details {
+  background-color: rgb(136, 24, 24);
+  display: block;
+  margin: 0 auto;
+  width: 145px;
+}
+.category-title {
+  font-style: italic;
+  text-align: left;
+  color: rgb(136, 24, 24);
+  text-shadow: 45ch;
+}
+.category-image {
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+ 
+}
+</style>
+

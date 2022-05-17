@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
+    <div id="navbarToggler" class="collapse navbar-collapse links" >
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -38,10 +38,6 @@ export default {
         {
           name: 'Home',
           path: '/',
-        },
-        {
-          name: 'List',
-          path: '/list',
         },
         {
           name: 'Events',
@@ -71,7 +67,13 @@ export default {
 
 <style scoped>
 .header {
-  background: orange;
+  background: rgb(195, 75, 75);
+}
+.navbar-brand{
+  color: whitesmoke;
+}
+.nav-item {
+  color: whitesmoke;
 }
 .logo {
   color: white;

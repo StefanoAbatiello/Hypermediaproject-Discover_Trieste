@@ -20,25 +20,6 @@
  </div> 
 </template>
 
-<style scoped>
-.card {
-  border: 2px solid lightgray;
-}
-.card:hover {
-  border: 2px solid red;
-}
-.btn-orange {
-  background-color: red;
-  border: 2px solid red;
-}
-.card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-}
-</style>
-
 <script>
 export default {
   name: 'ServiceCardComponent',
@@ -63,3 +44,19 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.card {
+  border: 2px solid darkblue;
+}
+.btn-blu {
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+.card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 160px;
+}
+</style>

@@ -1,7 +1,9 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">Services</h1><br>
-    <div class="row mt-3">
+  <div class="container-fluid px-5 mb-5 mt-3">
+    <div class="bg-danger text-white text-left">
+      <h1>Types of service</h1>
+    </div>
+    <div class="row mt-3 row-line">
       <list-card
         v-for="(services, servicesIndex) of servicesList"
         :id="services.id"
@@ -24,17 +26,17 @@ export default {
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
-    // const { data } = await $axios.get('http://localhost:3000/api/cats')
     const { data } = await $axios.get('/api/services')
     return {
       servicesList: data,
     }
   },
-
-  // Note: This would happen on frontend (client) side
-  // async mounted() {
-  //   const { data } = await this.$axios.get('/api/cats')
-  //   this.catList = data
-  // },
 }
 </script>
+
+<style scoped>
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+</style>

@@ -18,12 +18,6 @@ const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp"
 async function initializeDatabaseConnection() {
     //Defining the struct of the tables in the db
     await database.authenticate()
-    const Cat = database.define("cat", {
-        name: DataTypes.STRING,
-        description: DataTypes.STRING,
-        breed: DataTypes.STRING,
-        img: DataTypes.STRING,
-    })
     const Event = database.define("event", {
         name: DataTypes.STRING,
         description: DataTypes.STRING,
@@ -40,10 +34,6 @@ async function initializeDatabaseConnection() {
         description: DataTypes.STRING,
         img: DataTypes.STRING,
     })
-    const Location  = database.define("location", {
-        name: DataTypes.STRING,
-        city: DataTypes.STRING,
-    })
     const SingleService =database.define("singleService",{
         name: DataTypes.STRING,
         address: DataTypes.STRING,
@@ -56,8 +46,6 @@ async function initializeDatabaseConnection() {
         img: DataTypes.STRING,
     })
     //Definition of the reletionships between two tables
-    Location.hasMany(Cat)    
-    Cat.belongsTo(Location)
     Itinerary.hasMany(PointOfInterest)
     PointOfInterest.belongsTo(Itinerary)
     ServiceType.hasMany(SingleService)
@@ -67,9 +55,7 @@ async function initializeDatabaseConnection() {
    
     await database.sync({ force: true })
     return {
-        Cat,
         Event,
-        Location,
         Itinerary,
         PointOfInterest,
         SingleService,
@@ -104,29 +90,6 @@ async function runMainApi() {
         const { topic } = req.params
         const result = pageContentObject[topic]
         return res.json(result)
-    })
-
-    app.get('/cats/:id', async (req, res) => {
-        const id = +req.params.id
-        const result = await models.Cat.findOne({ where: { id }, include: [{model: models.Location}] })
-        return res.json(result)
-    })
-
-    // HTTP GET api that returns all the cats in our actual database
-    app.get("/cats", async (req, res) => {
-        //const name = "Cat 1"
-        //const result = await models.Cat.findAll({ where: { name} })
-        const result = await models.Cat.findAll()
-        const filtered = []
-        for (const element of result) {
-            filtered.push({
-                name: element.name,
-                img: element.img,
-                breed: element.breed,
-                id: element.id,
-            })
-        }
-        return res.json(filtered)
     })
 
     app.get("/events/:season", async (req, res) => {
@@ -251,15 +214,6 @@ async function runMainApi() {
             })
         }
         return res.json(filtered)
-    })
-
-
-    // HTTP POST api, that will push (and therefore create) a new element in
-    // our actual database
-    app.post("/cats", async (req, res) => {
-        const { body } = req
-        await models.Cat.create(body);
-        return res.sendStatus(200)
     })
 
 }

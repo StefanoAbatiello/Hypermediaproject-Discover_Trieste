@@ -1,23 +1,21 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">Events</h1>
-    <div class="row mt-3">
+  <div class="border-top container-fluid mb-5">
+    <div class="bg-danger text-white text-left">
+      <h1>Events grouped by season</h1>
+    </div>
+    <div class="row mt-3 row-line">
       <menu-card
         class="col-sm-2 m-2"
         :season="`summer`"
         :name="`Summer Event`"
         :img="`https://www.creativebloggingworld.com/wp-content/uploads/2021/07/Corporate-Summer-Event-Ideas-1024x768.jpg`"
       />
-    </div>
-    <div class="row mt-3">
       <menu-card
         class="col-sm-2 m-2"
         :season="`winter`"
         :name="`Winter Event`"
         :img="`https://www.lanottevola.com/wp-content/uploads/2018/11/La-Notte-Vola-Winter-edition-1024x589.jpg`"
       />
-    </div>
-    <div class="row mt-3">
       <menu-card
         class="col-sm-2 m-2"
         :season="`allYear`"
@@ -35,19 +33,12 @@ export default {
   components: {
     MenuCard,
   },
-  data() {
-    return {
-      // eventList: []
-    }
-  },
-  // Note: This happens on backend (server) side
-  // async asyncData({ $axios }) {
-    // const { data } = await $axios.get('http://localhost:3000/api/events')
-    // const { data } = await $axios.get('/api/allEvents')
-    // return {
-    //  eventList: data,
-    // }
-  // },
-
 }
 </script>
+
+<style scoped>
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+</style>
