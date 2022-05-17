@@ -6,8 +6,8 @@
     ></div>
     <div class="event-menu-body">
       <h5 class="event-menu-title">{{ name }}</h5>
-            <nuxt-link :to="`/events/${season}`">
-        <div class="btn btn-primary btn-orange">See More</div>
+      <nuxt-link :to="`/events/${season}`">
+        <div class="btn btn-primary btn-blu">See More</div>
       </nuxt-link>
     </div>
   </div>
@@ -40,19 +40,16 @@ export default {
 
 <style scoped>
 .event-menu {
-  border: 4px solid lightgray;
+  border: 4px solid darkblue;
 }
-.event-menu:hover {
-  border: 2px solid orange;
-}
-.btn-orange {
-  background-color: orange;
-  border: 2px solid orange;
+.btn-blu {
+  background-color: lightblue;
+  border: 2px solid blue;
 }
 .event-menu-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 160px;
+  height: 200px;
 }
 </style>

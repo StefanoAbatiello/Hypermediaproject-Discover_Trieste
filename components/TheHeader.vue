@@ -40,10 +40,6 @@ export default {
           path: '/',
         },
         {
-          name: 'List',
-          path: '/list',
-        },
-        {
           name: 'Events',
           path: '/eventsMenu',
         },
@@ -71,7 +67,10 @@ export default {
 
 <style scoped>
 .header {
-  background: orange;
+  background: lightcyan;
+}
+.navbar-brand{
+  color: darkblue;
 }
 .logo {
   color: white;

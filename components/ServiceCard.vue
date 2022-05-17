@@ -15,14 +15,11 @@
 
 <style scoped>
 .card {
-  border: 2px solid lightgray;
+  border: 2px solid darkblue;
 }
-.card:hover {
-  border: 2px solid red;
-}
-.btn-orange {
-  background-color: red;
-  border: 2px solid red;
+.btn-blu {
+  background-color: lightblue;
+  border: 2px solid blue;
 }
 .card-image {
   background-position: center;
