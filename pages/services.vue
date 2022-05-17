@@ -2,30 +2,25 @@
   <div class="page container mt-5">
     <h1 class="display-4">Services page</h1>
     <div class="row mt-3">
-      <card2
+      <list-card
         v-for="(services, servicesIndex) of servicesList"
-        class="col-sm m-2"
-        :key="`services-index-${servicesIndex}`"
-        :category="'service'"
         :id="services.id"
-        :title="services.title"
+        :key="`services-index-${servicesIndex}`"
+        class="col-sm m-2"
+        :name="services.name"
         :img="services.img"
+        :category="'service'"
       />
     </div>
   </div>
 </template>
 
 <script>
-import Card2 from '~/components/Card2.vue'
+import ListCard from '~/components/ListCard.vue'
 export default {
   name: 'ServicesPage',
   components: {
-    Card2,
-  },
-  data() {
-    return {
-      // servicesList: []
-    }
+    ListCard,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {

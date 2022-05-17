@@ -1,34 +1,30 @@
-
 <template>
-  <div class="card2" style="width: 18rem">
+  <div class="category" style="width: 18rem">
     <div
-      class="card-img-top card-image"
+      class="category-img-top category-image"
       :style="{ 'background-image': 'url(' + img + ')' }"
     ></div>
-    <div class="card-body">
-      <h5 class="card-title">{{ name }}</h5>
-      <p class="card-text">
-        {{ description }}
-      </p>
+    <div class="category-body">
+      <h5 class="category-title">{{ name }}</h5>
       <nuxt-link :to="`/details/${category}/${this.id}`">
-        <div class="btn btn-primary btn-orange">See More</div>
+        <div class="btn btn-primary btn-orange">See Details</div>
       </nuxt-link>
     </div>
   </div>
 </template>
 
 <style scoped>
-.card {
-  border: 2px solid lightgray;
+.catergory {
+  border: 4px solid lightgray;
 }
-.card:hover {
+.category:hover {
   border: 2px solid orange;
 }
 .btn-orange {
   background-color: orange;
   border: 2px solid orange;
 }
-.card-image {
+.category-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,13 +34,9 @@
 
 <script>
 export default {
-  name: 'CardComponent2',
+  name: 'ListCardComponent',
   props: {
-    category:{
-      type: String,
-      required: true,
-    },
-    title: {
+    name: {
       type: String,
       required: true,
     },
@@ -52,11 +44,14 @@ export default {
       type: String,
       required: true,
     },
+    category: {
+      type: String,
+      required: true,
+    },
     id: {
       type: Number,
       required: true,
     },
-   
   },
   methods: {
     goToDetails() {

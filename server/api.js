@@ -24,6 +24,12 @@ async function initializeDatabaseConnection() {
         breed: DataTypes.STRING,
         img: DataTypes.STRING,
     })
+    const Event = database.define("event", {
+        name: DataTypes.STRING,
+        description: DataTypes.STRING,
+        img: DataTypes.STRING,
+        season: DataTypes.STRING,
+    })
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
         description: DataTypes.STRING,
@@ -59,6 +65,7 @@ async function initializeDatabaseConnection() {
     await database.sync({ force: true })
     return {
         Cat,
+        Event,
         Location,
         Itinerary,
         PointOfInterest,
@@ -73,7 +80,7 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Homepage",
-        image: "https://fs.i3lab.group/hypermedia/images/index.jpeg",
+        image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg",
         description: `questa è la home page del sito`
     },
     about: {
@@ -119,6 +126,32 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
+    app.get("/events/:season", async (req, res) => {
+        const { season } = req.params
+        console.log(season)
+        const filtered = []
+        if (season === 'allYear') {
+            const result = await models.Event.findAll()
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        } else {
+            const result = await models.Event.findAll({where: { season }})
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        }
+        return res.json(filtered)
+    })
+
      // HTTP GET api that returns all the itineraries in our actual database
      app.get("/itineraries", async (req, res) => {
         const result = await models.Itinerary.findAll()
@@ -147,17 +180,25 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
-    app.get('/itineraries/:id', async (req, res) => {
+    app.get('/event/:id', async (req, res) => {
         const id = +req.params.id
-        const result = await models.Itinerary.findOne({ where: { id } })
+        const result = await models.Event.findOne({ where: { id } })
         return res.json(result)
     })
+
+    app.get('/itineraries/:id', async (req, res) => {
+        const id = +req.params.id
+        const itineraryId = +req.params.id
+        const result = {
+            itinerary: await models.Itinerary.findOne({ where: { id } }),
+            relatedPois: await models.PointOfInterest.findAll({ where: { itineraryId } })
+        }
+        return res.json(result)
+    })
+    
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
-        const result = {
-            poi: await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] }),
-            cats: await models.Cat.findAll()
-        }
+        const result = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
         return res.json(result)
     })
 
