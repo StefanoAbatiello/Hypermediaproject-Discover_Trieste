@@ -1,13 +1,13 @@
 <template>
-  <div class="category" style="width: 18rem">
+  <div class="category rounded" style="width: 18rem">
     <div
-      class="category-img-top category-image"
+      class="category-img-top category-image mt-1 mb-1 rounded"
       :style="{ 'background-image': 'url(' + img + ')' }"
     ></div>
-    <div class="category-body">
-      <h5 class="category-title">{{ name }}</h5>
+    <div class="category-body text-center">
+      <h5 class="category-title ">{{ name }}</h5>
       <nuxt-link :to="`/details/${category}/${this.id}`">
-        <div class="btn btn-primary btn-orange">See Details</div>
+        <div class="btn btn-primary btn-orange mb-1 ">See Details</div>
       </nuxt-link>
     </div>
   </div>

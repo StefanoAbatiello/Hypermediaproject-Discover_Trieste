@@ -1,16 +1,23 @@
 
 <template>
-  <div class="serviceCard" style="width: auto">
-    <div class="card-body">
-      <h5 class="card-title">{{ name }}</h5>
-      <p class="card-text">
-        {{ address }}
-      </p>
-      <p class="card-text">
-        {{ info }}
-      </p>
-    </div>
-  </div>
+ <div class="serviceCard" style="width: auto">
+        <div class="card-body">
+         <h5 class="card-title text-danger" >{{ name }}</h5>
+         <div class=" d-flex justify-content-between ">
+                <img :src="img" class="img rounded card-image p-0 mr-0" />
+                <div class="card-text p-3 pt-0">   
+                <h5> Address:</h5>
+                <p>   
+                      {{ address }}
+                </p>
+                <h5> Useful info and timetable: </h5>
+                <p class="card-text ">
+                    {{ info }}
+                </p>
+                </div>
+         </div>
+        </div>
+ </div> 
 </template>
 
 <style scoped>
@@ -45,6 +52,10 @@ export default {
       required: true,
     },
     info: {
+      type: String,
+      required: true,
+    },
+     img: {
       type: String,
       required: true,
     },

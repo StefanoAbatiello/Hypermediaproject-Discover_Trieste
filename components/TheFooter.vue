@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light  px-3 header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light px-2 bottom footer">
+    <img src="https://w7.pngwing.com/pngs/434/398/png-transparent-a-c-perugia-calcio-afd-grifo-perugia-ristorante-rosticceria-grifo-griffin-sculture-logo-chicken-vertebrate.png" class="img rounded me-2" alt="Logo" style="width:60px;">
     <a class="navbar-brand" href="/">VisitPerugia</a>
     <button
       class="navbar-toggler"
@@ -14,9 +15,9 @@
     </button>
 
     <div id="navbarToggler" class="collapse navbar-collapse" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-auto mt-lg-0">
         <li
-          v-for="(navItem, navItemIndex) of headerList"
+          v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item"
         >
@@ -31,10 +32,10 @@
 
 <script>
 export default {
-  name: 'TheHeader',
+  name: 'TheFooter',
   data() {
     return {
-      headerList: [
+      footerList: [
         {
           name: 'Home',
           path: '/',
@@ -70,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.footer {
   background: orange;
 }
 .logo {
