@@ -4,7 +4,7 @@
     <div class="category-body">
       <div class="category-img-top category-image" :style="{ 'background-image': 'url(' + img + ')' }"> </div>
       <nuxt-link :to="`/details/${category}/${id}`">
-        <div class="btn btn-primary btn-blu"> {{ name }}</div>
+        <div class="btn btn-details mt-2 text-white"> See details...</div>
       </nuxt-link>
     </div>
   </div>
@@ -44,22 +44,25 @@ export default {
 .category {
   border: 4px solid rgb(136, 24, 24);
 }
-.btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
-  align-content: center;
+.btn-details {
+  background-color: rgb(220, 110, 110);
+  border: 2px solid rgb(136, 24, 24);
+  display: block;
+  margin: 0 auto;
+  width: 145px;
 }
 .category-title {
   font-style: italic;
   text-align: center;
-  color: darkblue;
-  text-shadow: 8px;
+  color: rgb(136, 24, 24);
 }
 .category-image {
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 </style>
 

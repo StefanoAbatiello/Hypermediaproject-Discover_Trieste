@@ -7,7 +7,7 @@
     <div class="event-menu-body">
       <h5 class="event-menu-title">{{ name }}</h5>
       <nuxt-link :to="`/events/${season}`">
-        <div class="btn btn-primary btn-blu">See More</div>
+        <div class="btn btn-primary btn-details mt-2 text-white">See details...</div>
       </nuxt-link>
     </div>
   </div>
@@ -42,9 +42,12 @@ export default {
 .event-menu {
   border: 4px solid rgb(136, 24, 24);
 }
-.btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
+.btn-details {
+  background-color: rgb(220, 110, 110);
+  border: 2px solid rgb(136, 24, 24);
+  display: block;
+  margin: 0 auto;
+  width: 145px;
 }
 .event-menu-image {
   background-position: center;

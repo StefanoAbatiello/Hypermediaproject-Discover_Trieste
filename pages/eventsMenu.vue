@@ -1,6 +1,8 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">Events</h1>
+  <div class="container-fluid px-5 mb-5 mt-3">
+    <div class="bg-danger text-white text-left">
+      <h1>Events grouped by season</h1>
+    </div>
     <div class="row mt-3 row-line">
       <menu-card
         class="col-sm-2 m-2"

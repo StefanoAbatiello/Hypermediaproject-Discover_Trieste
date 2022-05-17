@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-primary text-white text-center">
+    <div class="bg-danger text-white text-left">
       <h1>{{ name }}</h1>
     </div>
     <img :src="img" class="img-fluid mx-auto d-block" />

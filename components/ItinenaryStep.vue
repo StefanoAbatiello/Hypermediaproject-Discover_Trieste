@@ -11,8 +11,8 @@
             <p class="card-text">
               {{ description }}
             </p>
-            <nuxt-link :to="`/details/${category}/${this.id}`">
-              <div class="btn btn-primary btn-blu">See more details...</div>
+            <nuxt-link :to="`/details/${category}/${id}`">
+              <div class="btn btn-primary btn-details text-white">See more details...</div>
             </nuxt-link>
           </div>
         </div>
@@ -56,10 +56,10 @@ export default {
 
 <style scoped>
 .card {
-  border: 4px solid lightgray;
+  border: 4px solid rgb(136, 24, 24);
 }
 .card-title {
-  color: black;
+  color: rgb(136, 24, 24);
   text-align: left;
 }
 .card-text {
@@ -67,11 +67,14 @@ export default {
   text-align: left;
 }
 .card:hover {
-  border: 2px solid blue;
+  border: 2px solid red;
 }
-.btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
+.btn-details {
+  background-color: rgb(220, 110, 110);
+  border: 2px solid rgb(136, 24, 24);
+  display: block;
+  margin: 0 auto;
+  width: 145px;
 }
 .card-image {
   background-position: left;
