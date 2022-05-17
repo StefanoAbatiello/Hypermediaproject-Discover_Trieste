@@ -67,14 +67,11 @@ export default {
   text-align: left;
 }
 .card:hover {
-  border: 2px solid red;
+  border: 3px solid rgb(176, 176, 25);
 }
 .btn-details {
   background-color: rgb(220, 110, 110);
   border: 2px solid rgb(136, 24, 24);
-  display: block;
-  margin: 0 auto;
-  width: 145px;
 }
 .card-image {
   background-position: left;

@@ -18,7 +18,7 @@
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
-          class="nav-item text-white"
+          class="nav-item"
         >
           <nuxt-link :to="navItem.path" class="nav-link">
             {{ navItem.name }}

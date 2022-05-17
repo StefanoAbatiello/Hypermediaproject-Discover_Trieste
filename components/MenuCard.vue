@@ -1,11 +1,11 @@
 <template>
   <div class="event-menu" style="width: 18rem">
+    <h4 class="event-menu-title">{{ name }}</h4>
     <div
       class="event-menu-img-top event-menu-image"
       :style="{ 'background-image': 'url(' + img + ')' }"
     ></div>
     <div class="event-menu-body">
-      <h5 class="event-menu-title">{{ name }}</h5>
       <nuxt-link :to="`/events/${season}`">
         <div class="btn btn-primary btn-details mt-2 text-white">See details...</div>
       </nuxt-link>
@@ -48,6 +48,10 @@ export default {
   display: block;
   margin: 0 auto;
   width: 145px;
+}
+.event-menu-title{
+  text-align: center;
+  color: rgb(136, 24, 24);
 }
 .event-menu-image {
   background-position: center;

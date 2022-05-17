@@ -4,7 +4,7 @@
     <div class="category-body">
       <div class="category-img-top category-image" :style="{ 'background-image': 'url(' + img + ')' }"> </div>
       <nuxt-link :to="`/details/${category}/${id}`">
-        <div class="btn btn-details mt-2 text-white"> See details...</div>
+        <div class="btn btn-details mt-2 mb-1 text-white"> See details...</div>
       </nuxt-link>
     </div>
   </div>
