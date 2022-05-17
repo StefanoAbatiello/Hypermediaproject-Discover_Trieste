@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
+  <div class="border-top container-fluid mb-5">
     <div class="bg-danger text-white text-left">
       <h1>Events grouped by season</h1>
     </div>

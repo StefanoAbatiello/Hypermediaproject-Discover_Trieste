@@ -67,12 +67,12 @@ export default {
 
 <style scoped>
 .header {
-  background: rgb(136, 24, 24);
+  background: rgb(195, 75, 75);
 }
 .navbar-brand{
   color: whitesmoke;
 }
-.links {
+.nav-item {
   color: whitesmoke;
 }
 .logo {

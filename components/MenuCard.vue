@@ -1,5 +1,5 @@
 <template>
-  <div class="event-menu" style="width: 18rem">
+  <div class="rounded shadow p-3 event-menu" style="width: 23rem">
     <h4 class="event-menu-title">{{ name }}</h4>
     <div
       class="event-menu-img-top event-menu-image"
@@ -39,12 +39,11 @@ export default {
 </script>
 
 <style scoped>
-.event-menu {
-  border: 4px solid rgb(136, 24, 24);
+.event-menu:hover {
+  border: 3px solid rgb(136, 24, 24);
 }
 .btn-details {
-  background-color: rgb(220, 110, 110);
-  border: 2px solid rgb(136, 24, 24);
+  background-color: rgb(136, 24, 24);
   display: block;
   margin: 0 auto;
   width: 145px;

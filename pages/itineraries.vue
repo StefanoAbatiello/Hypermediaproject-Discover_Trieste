@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class=" bg-danger text-white text-left">
+  <div class="border-top container-fluid">
+    <div class="text-white text-left sign">
       <h1>Itineraries</h1>
     </div>
       <div class="row mt-3 row-line">
@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style scoped>
+.sign{
+  background: rgba(195, 75, 75, 0.841);
+}
 .row-line {
   display: flex;
   justify-content: center;

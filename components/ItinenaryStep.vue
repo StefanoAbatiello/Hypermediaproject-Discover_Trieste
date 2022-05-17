@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="card mb-3">
+    <div class="card mb-3 shadow p-3">
       <div class="row g-0">
         <div class="col-md-2">
           <img :src="img" class="img rounded-start card-image" />
@@ -55,8 +55,8 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  border: 4px solid rgb(136, 24, 24);
+.card:hover {
+  border: 3px solid rgb(136, 24, 24);
 }
 .card-title {
   color: rgb(136, 24, 24);
@@ -66,12 +66,8 @@ export default {
   color: black;
   text-align: left;
 }
-.card:hover {
-  border: 3px solid rgb(176, 176, 25);
-}
 .btn-details {
-  background-color: rgb(220, 110, 110);
-  border: 2px solid rgb(136, 24, 24);
+  background-color: rgb(136, 24, 24);
 }
 .card-image {
   background-position: left;
