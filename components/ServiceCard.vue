@@ -47,11 +47,11 @@ export default {
 
 <style scoped>
 .card {
-  border: 2px solid darkblue;
+  border: 2px solid rgb(195, 75, 75);
 }
 .btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
+  background-color: lightcoral;
+  border: 2px solid rgb(195, 75, 75);
 }
 .card-image {
   background-position: center;
