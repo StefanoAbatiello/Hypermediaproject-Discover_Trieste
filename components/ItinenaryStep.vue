@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="card mb-3 shadow p-3">
+    <div class="card mb-3 shadow-lg p-3">
       <div class="row g-0">
         <div class="col-md-2">
           <img :src="img" class="img rounded-start card-image" />

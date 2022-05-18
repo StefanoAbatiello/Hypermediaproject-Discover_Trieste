@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
-      <h1>Seasonal-x event</h1>
+  <div class="container-fluid px-0 mb-4 mt-1">
+    <div class="text-white text-left sign">
+      <h1 class="title">{{seasonName}} events list</h1>
     </div>
     <div class="row mt-3">
       <list-card
@@ -30,8 +30,17 @@ export default {
     const { data } = await $axios.get('/api/events/' + season)
     return {
       eventList: data,
+      seasonName: season,
     }
   },
-
 }
 </script>
+
+<style scoped>
+.title{
+  margin-left: 10px;
+}
+.sign{
+  background: rgb(195, 75, 75);
+}
+</style>

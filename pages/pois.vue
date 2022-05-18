@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
-      <h1>All the Points of Interest</h1>
+  <div class="container-fluid px-0 mb-4 mt-1">
+    <div class="text-white text-left sign">
+      <h1 class="title">All the Points of Interest</h1>
     </div>
       <div class="row mt-3 row-line">
         <list-card
@@ -45,5 +45,11 @@ export default {
 .row-line {
   display: flex;
   justify-content: center;
+}
+.sign{
+  background: rgb(195, 75, 75);
+}
+.title{
+  margin-left: 10px;
 }
 </style>
