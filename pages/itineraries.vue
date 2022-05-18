@@ -1,7 +1,7 @@
 <template>
-  <div class="border-top container-fluid">
+  <div class="container-fluid px-0 mt-1 mb-4">
     <div class="text-white text-left sign">
-      <h1>Itineraries</h1>
+      <h1 class="title">Itineraries</h1>
     </div>
       <div class="row mt-3 row-line">
         <list-card
@@ -38,10 +38,13 @@ export default {
 
 <style scoped>
 .sign{
-  background: rgba(195, 75, 75, 0.841);
+  background: rgb(195, 75, 75);
 }
 .row-line {
   display: flex;
   justify-content: center;
+}
+.title{
+  margin-left: 10px;
 }
 </style>

@@ -1,13 +1,8 @@
 <template>
-  <div class="rounded shadow p-3 event-menu" style="width: 23rem">
-    <h4 class="event-menu-title">{{ name }}</h4>
-    <div
-      class="event-menu-img-top event-menu-image"
-      :style="{ 'background-image': 'url(' + img + ')' }"
-    ></div>
-    <div class="event-menu-body">
+  <div class="rounded event-menu-img-top shadow-lg event-menu-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }">
+    <div class="btn-div">
       <nuxt-link :to="`/events/${season}`">
-        <div class="btn btn-primary btn-details mt-2 text-white">See details...</div>
+        <h4 class="event-menu-title mt-1">{{ name }}</h4>
       </nuxt-link>
     </div>
   </div>
@@ -39,23 +34,24 @@ export default {
 </script>
 
 <style scoped>
-.event-menu:hover {
-  border: 3px solid rgb(136, 24, 24);
+.event-menu-image:hover {
+  border: 3px solid rgba(192, 94, 94, 0.85);
 }
 .btn-details {
   background-color: rgb(136, 24, 24);
-  display: block;
-  margin: 0 auto;
-  width: 145px;
 }
 .event-menu-title{
-  text-align: center;
-  color: rgb(136, 24, 24);
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  position: relative;
+  top: 50px;
+  left: 50px
 }
 .event-menu-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
 }
 </style>

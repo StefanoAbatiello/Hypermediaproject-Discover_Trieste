@@ -1,11 +1,10 @@
 <template>
-  <div class="rounded shadow p-3 category" style="width: 23rem" >
-     <h4 class="category-title text-center">{{ name }}</h4>
+  <div class="rounded shadow  category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
+     
     <div class="category-body">
-      <div class="category-img-top category-image rounded" :style="{ 'background-image': 'url(' + img + ')' }"> 
-      </div>
+      <h4 class="category-title text-center">{{ name }}</h4>
       <nuxt-link :to="`/details/${category}/${id}`">
-        <div class="btn btn-details mt-2 mb-1 text-white"> See details...</div>
+        <div class="btn text-white btn-details"> See details...</div>
       </nuxt-link>
     </div>
   </div>
@@ -42,26 +41,27 @@ export default {
 
 
 <style scoped>
-.category:hover {
+.category-image:hover {
   border: 3px solid rgb(195, 75, 75);
 }
 .btn-details {
-  background: rgb(195, 75, 75);
-  display: block;
-  margin: 0 auto;
-  width: 145px;
+  background: rgba(225, 216, 216, 0.734);
+  text-shadow: 2px 2px 4px black;
+  position: relative;
+  left: 20px;
+  top: 160px;
 }
 .category-title {
   font-style: italic;
   text-align: left;
-  color: rgb(136, 24, 24);
-  text-shadow: 45ch;
+  color: white;
+  text-shadow: 3px 3px 4px black;
 }
 .category-image {
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
- 
+  height: 250px;
 }
 </style>
 

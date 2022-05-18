@@ -1,7 +1,7 @@
 <template>
-  <div class="border-top container-fluid mb-5">
-    <div class="bg-danger text-white text-left">
-      <h1>Events grouped by season</h1>
+  <div class="container-fluid px-0 mt-1 mb-4">
+    <div class="text-white text-left sign">
+      <h1 class="title">Events grouped by season</h1>
     </div>
     <div class="row mt-3 row-line">
       <menu-card
@@ -40,5 +40,11 @@ export default {
 .row-line {
   display: flex;
   justify-content: center;
+}
+.title{
+  margin-left: 10px;
+}
+.sign{
+  background: rgb(195, 75, 75);
 }
 </style>
