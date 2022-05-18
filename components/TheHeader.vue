@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light  px-3 header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark  px-3 header sticky-top">
     <a class="navbar-brand" href="/">VisitPerugia</a>
     <button
       class="navbar-toggler"
@@ -14,7 +14,7 @@
     </button>
 
     <div id="navbarToggler" class="collapse navbar-collapse links" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -78,6 +78,9 @@ export default {
 .logo {
   color: white;
   font-size: 32px;
+}
+.navbar-nav {
+  margin-left: auto;
 }
 </style>
 

@@ -1,21 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light px-2 bottom footer">
+  <nav class="navbar navbar-expand-lg navbar-light px-2 bottom footer ">
     <img src="https://w7.pngwing.com/pngs/434/398/png-transparent-a-c-perugia-calcio-afd-grifo-perugia-ristorante-rosticceria-grifo-griffin-sculture-logo-chicken-vertebrate.png" class="img rounded me-2" alt="Logo" style="width:60px;">
     <a class="navbar-brand" href="/">VisitPerugia</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarToggler"
-      aria-controls="navbarToggler"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
-      <ul class="navbar-nav mr-auto mt-auto mt-lg-0">
+    <div id="navbar" >
+      <ul class="navbar-nav mt-auto mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
@@ -77,6 +66,9 @@ export default {
 .logo {
   color: white;
   font-size: 32px;
+}
+.navbar-nav {
+  margin-left: auto;
 }
 </style>
 
