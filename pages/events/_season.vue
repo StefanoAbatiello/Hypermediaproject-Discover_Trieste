@@ -3,7 +3,7 @@
     <div class="text-white text-left sign">
       <h1 class="title">{{seasonName}} events list</h1>
     </div>
-    <div class="row mt-3">
+    <div class="row mt-3 row-line">
       <list-card
         v-for="(event, eventIndex) of eventList"
         :id="event.id"
@@ -39,6 +39,10 @@ export default {
 <style scoped>
 .title{
   margin-left: 10px;
+}
+.row-line {
+  display: flex;
+  justify-content: center;
 }
 .sign{
   background: rgb(195, 75, 75);
