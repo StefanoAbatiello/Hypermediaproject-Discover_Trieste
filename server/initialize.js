@@ -2,18 +2,18 @@
 export default async (models) => { 
     const itineraryList = [
         {
-            name: "Venezia",
-            img: "https://www.dire.it/wp-content/uploads/2020/06/palazzi-colorati_casa_case_Sigma-Coatings-5-scaled.jpg",
-            description: "Viene a scoprire la città sull'acqua"
+            name: "Tour tra le chiese perugine",
+            img: "https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg",
+            description: "Viene a scoprire le chiese della città"
         },
         {
-            name: "Roma",
-            img: "https://st.depositphotos.com/1006880/5055/i/600/depositphotos_50556395-stock-photo-modern-city-buildings-in-the.jpg",
+            name: "La Perugia sotterranea",
+            img: "https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg",
             description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
         {
-            name: "Perugia",
-            img: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg",
+            name: "Immergiti nel cuore di Perugia alla scoperta della città",
+            img: "https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg",
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },
     ]
@@ -22,58 +22,94 @@ export default async (models) => {
     const itinerary2 = await models.Itinerary.create(itineraryList[2])
     const poiList = [
         {
+            name: "Abbazia di San Pietro",
+            img: "https://www.floreale.org/wp-content/uploads/2016/09/san-pietro1.jpg",
+            itineraryId: itinerary0.id,
+            description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
+        },
+        {
             name: "Palazzo dei Priori",
             img: "https://www.secretumbria.it/wp-content/uploads/2021/05/palazzo-dei-priori-perugia-facciata.jpg",
             itineraryId: itinerary2.id,
             description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
         },
         {
-            name: "Fontana Maggiore",
-            img: "https://online.scuola.zanichelli.it/artemondo-blog/wp-content/uploads/2018/08/perugia-3.jpg",
-            itineraryId: itinerary2.id,
-            description: "Questa è una descrizione per fontana maggiore"
+            name: "Rocca Paolina",
+            img: "https://www.turismo.it/typo3temp/pics/814ae704a1.jpg",
+            itineraryId: itinerary1.id,
+            description: "Questa è una descrizione per il punto di interesse"
         },
         {
             name: "Pozzo etrusco",
             img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Pozzo_etrusco-_passerella.jpg",
-            itineraryId: itinerary2.id,
+            itineraryId: itinerary1.id,
             description: "Questa è una descrizione per pozzo etrusco"
         },
         {
-            name: "Chiesa di San Michele Arcangelo",
-            img: "https://www.floreale.org/wp-content/uploads/2016/10/chiesa-di-san-michele-arcangelo-perugia.jpg",
+            name: "Porta Santa Susanna",
+            img: " https://www.visitaperugia.it/wp-content/uploads/2019/02/03-03-10-01-porta-trasimena.jpg",
             itineraryId: itinerary2.id,
-            description: "Questa è una descrizione per fontana maggiore"
+            description: "Questa porta è dedicata ad una santa"
         },
         {
-            name: "Abbazia San Pietro",
-            img: "https://www.fondazioneagraria.it/wp-content/uploads/2015/07/san-pietro.jpg",
+            name: "Ipogeo dei Volumni",
+            img: "https://www.musei.umbria.beniculturali.it/wp-content/uploads/2018/04/fig-7.jpg",
+            itineraryId: itinerary1.id,
+            description: "Questa è una descrizione p"
+        },
+        {
+            name: "Fontana Maggiore",
+            img: "https://www.turismo.it/typo3temp/pics/fcb41a0141.jpg",
             itineraryId: itinerary2.id,
-            description: "The best church you can find in Venezia!"
+            description: "Fontana maggiore, la più bella del rione!"
         },
         {
-            name: "Campidoglio",
-            img: "https://i0.wp.com/www.hisour.com/wp-content/uploads/2020/06/Campidoglio-Square-Capitoline-Museums.jpg?fit=960%2C640&ssl=1&resize=1280%2C720",
-            itineraryId: itinerary1.id,
-            description: "The house of Mattarella"
+            name: "Porta Sole",
+            img: "http://www.studiumbri.it/wp-content/uploads/2016/12/Arco-dei-Gigli.jpg",
+            itineraryId: itinerary2.id,
+            description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
         {
-            name: "Colosseo",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg",
-            itineraryId: itinerary1.id,
-            description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
-        },
-        {
-            name: "Ponte Di Rialto",
-            img: "https://venicewiki.org/images/thumb/3/37/Rialto_e_gondola.jpg/450px-Rialto_e_gondola.jpg",
+            name: "Cattedrale di San Lorenzo",
+            img: "https://upload.wikimedia.org/wikipedia/commons/7/74/Catedral_de_perugia.jpg",
             itineraryId: itinerary0.id,
-            description: "Un ponticello carino che puoi vedere a Venezia"
+            description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia"
         },
         {
-            name: "Villa Borghese",
-            img: "https://www.romegardenhotel.com/visitaroma/wp-content/uploads/2019/01/villa-borghese-roma.jpg",
-            itineraryId: itinerary1.id,
-            description: "Famosissima per il suo giardino è tra le ville piu belle d'Italia"
+            name: "Arco Etrusco",
+            img: "https://www.exploring-umbria.com/wp-content/uploads/2019/05/PERUGIA-ARCO-ETRUSCO.jpeg",
+            itineraryId: itinerary0.id,
+            description: "Arco bianco che più bianco non c'è!"
+        },
+        {
+            name: "Porta Crucia",
+            img: " https://mapio.net/images-p/130075040.jpg",
+            itineraryId: itinerary0.id,
+            description: "Arco bianco che più bianco non c'è!"
+        },
+        {
+            name: "San Francesco al Prato",
+            img: "https://upload.wikimedia.org/wikipedia/commons/4/4f/09a.sfrancesco.JPG",
+            itineraryId: itinerary0.id,
+            description: "Famosissima chiesa di Perugia"
+        },
+        {
+            name: "Porta Marzia",
+            img: "https://www.ansa.it/webimages/img_700/2017/3/8/ee6ff0ce5f491b093cd77e258abf3b54.jpg",
+            itineraryId: itinerary2.id,
+            description: "Famosissima porta di Perugia"
+        },
+        {
+            name: "Chiesa di San Ercolano",
+            img: "https://www.floreale.org/wp-content/uploads/2016/09/SantErcolano1.jpg",
+            itineraryId: itinerary0.id,
+            description: "Famosissima chiesa di Perugia"
+        },
+        {
+            name: "Acquedotto medievale",
+            img: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Acquedotto_medievale_%28Perugia%29.jpg",
+            itineraryId: itinerary2.id,
+            description: "Acquedotto etrusco di Perugia"
         },
     ]
     const poi0 = await models.PointOfInterest.create(poiList[0])
@@ -85,28 +121,55 @@ export default async (models) => {
     const poi6 = await models.PointOfInterest.create(poiList[6])
     const poi7 = await models.PointOfInterest.create(poiList[7])
     const poi8 = await models.PointOfInterest.create(poiList[8])
+    const poi9 = await models.PointOfInterest.create(poiList[9])
+    const poi10 = await models.PointOfInterest.create(poiList[10])
+    const poi11 = await models.PointOfInterest.create(poiList[11])
+    const poi12 = await models.PointOfInterest.create(poiList[12])
+    const poi13 = await models.PointOfInterest.create(poiList[13])
+    const poi14 = await models.PointOfInterest.create(poiList[14])
     const eventList = [
         {
-            name: "concert",
+            name: "Umbria Jazz",
             description: "Details about concert",
-            img: "https://spazio13.org/wp-content/uploads/2020/06/concerti-milano-1200x900.jpg",
+            img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
             season: "winter",
             poiId:poi0.id,
         },
         {
-            name: "marathon",
+            name: "Eurochocolate",
             description: "Details about marathon",
-            img: "http://mezzamaratonascandicci.it/wp-content/uploads/2020/01/mezza-maratona-partenza.jpg",
+            img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
             season: "winter",  
             poiId:poi0.id,
         },
         {
-            name: "sagra della salsiccia",
-            description: "Details about sagra della salsiccia",
-            img: "https://searoundpress.com/wp-content/uploads/2016/09/Searound_Eventi_Salsiccia-e1477306494235.jpg",
+            name: "Festival Internazionale del Giornalismo",
+            description: "Details about ",
+            img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
+            season: "winter",  
+            poiId:poi0.id,
+        },
+        {
+            name: "MercaTezio",
+            description: "Mercato equosolidale che si svolge a Perugia in estate ",
+            img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
+            season: "summer",  
+            poiId:poi0.id,
+        },
+        {
+            name: "Umbria che Spacca",
+            description: "Details about ",
+            img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
             season: "summer",
             poiId:poi1.id,
-        }    
+        },   
+        {
+            name: "Festa di Sant'Antonio Abate",
+            description: "Details about this event ",
+            img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
+            season: "summer",
+            poiId:poi1.id,
+        }, 
     ]
         const servicesList = [
         {
