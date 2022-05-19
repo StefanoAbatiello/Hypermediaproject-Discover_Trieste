@@ -1,8 +1,9 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">All the Points of Interest</h1><br>
-      <h5> there are all the PoIs:</h5>
-      <div class="row mt-3">
+  <div class="container-fluid px-0 mb-4 mt-1">
+    <div class="text-white text-left sign">
+      <h1 class="title">All the Points of Interest</h1>
+    </div>
+      <div class="row mt-3 row-line">
         <list-card
           v-for="(poi, poiIndex) of poiList"
           :id="poi.id"
@@ -40,4 +41,15 @@ export default {
 }
 </script>
 
-
+<style scoped>
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+.sign{
+  background: rgb(195, 75, 75);
+}
+.title{
+  margin-left: 10px;
+}
+</style>

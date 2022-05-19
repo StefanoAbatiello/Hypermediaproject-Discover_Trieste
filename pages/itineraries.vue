@@ -1,7 +1,9 @@
 <template>
-  <div class="page container mt-5">
-    <h1 class="display-4">Itineraries page</h1>
-      <div class="row mt-3">
+  <div class="container-fluid px-0 mt-1 mb-4">
+    <div class="text-white text-left sign">
+      <h1 class="title">Itineraries</h1>
+    </div>
+      <div class="row mt-3 row-line">
         <list-card
           v-for="(it, itineraryIndex) of itineraryList"
           :id="it.id"
@@ -34,4 +36,15 @@ export default {
 }
 </script>
 
-
+<style scoped>
+.sign{
+  background: rgb(195, 75, 75);
+}
+.row-line {
+  display: flex;
+  justify-content: center;
+}
+.title{
+  margin-left: 10px;
+}
+</style>

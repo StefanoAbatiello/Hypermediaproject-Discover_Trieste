@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid px-5 mb-5">
-    <div class="bg-primary text-white text-center">
+  <div class="container-fluid px-5 mb-5 mt-3">
+    <div class="bg-danger text-white text-left">
       <h1>{{ name }}</h1>
     </div>
     <ul class="breadcrumb">
@@ -26,7 +26,7 @@
         </li>
       </ul>
     </div>
-    <div id="textBox" class="test mt-4 p-5 bg-primary text-white rounded">
+    <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
       <h1>{{name}}</h1>
       <p>
         {{description}}

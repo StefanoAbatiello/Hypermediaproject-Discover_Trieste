@@ -1,13 +1,8 @@
 <template>
-  <div class="event-menu" style="width: 18rem">
-    <div
-      class="event-menu-img-top event-menu-image"
-      :style="{ 'background-image': 'url(' + img + ')' }"
-    ></div>
-    <div class="event-menu-body">
-      <h5 class="event-menu-title">{{ name }}</h5>
+  <div class="rounded shadow  category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
+    <div class="category-body">
       <nuxt-link :to="`/events/${season}`">
-        <div class="btn btn-primary btn-blu">See More</div>
+        <div class="btn text-white btn-details"> {{ name }} </div>
       </nuxt-link>
     </div>
   </div>
@@ -39,17 +34,25 @@ export default {
 </script>
 
 <style scoped>
-.event-menu {
-  border: 4px solid darkblue;
+.category-image:hover {
+  border: 3px solid rgb(195, 75, 75);
+  opacity: 1;
 }
-.btn-blu {
-  background-color: lightblue;
-  border: 2px solid blue;
+.btn-details {
+  background: rgb(195, 75, 75);
+  text-shadow: 2px 2px 4px black;
+  opacity:1;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%,-50%);
 }
-.event-menu-image {
+.category-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 250px;
+  opacity: 0.6;
+  position: relative;
 }
 </style>

@@ -1,7 +1,14 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light px-3 header">
-    <a class="navbar-brand" href="/">VisitPerugia</a>
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 header sticky-top">
     <button
+      class="navbar-menu"
+      type="button"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
+    <a class="navbar-brand mr-auto" href="/">VisitPerugia</a>
+    <!-- <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -11,10 +18,10 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
 
-    <div id="navbarToggler" class="collapse navbar-collapse" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <div id="navbarToggler" class="collapse navbar-collapse links" >
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -67,14 +74,28 @@ export default {
 
 <style scoped>
 .header {
-  background: lightcyan;
+  background: rgb(195, 75, 75);
+}
+.logo-img{
+  height: 60px;
+  width: 60px;
+  background-color: white;
 }
 .navbar-brand{
-  color: darkblue;
+  color: whitesmoke;
+  font-size: 35px;
+  font-family: cursive  ;
+}
+.nav-item {
+  color: whitesmoke;
+  border-left: 1px dotted ;
 }
 .logo {
   color: white;
   font-size: 32px;
+}
+.navbar-nav {
+  margin-left: auto;
 }
 </style>
 
