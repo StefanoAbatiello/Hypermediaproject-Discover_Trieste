@@ -67,9 +67,9 @@ async function initializeDatabaseConnection() {
 
 const pageContentObject = {
     index: {
-        title: "Homepage",
+        title: "Perugia",
         image: "https://upload.wikimedia.org/wikipedia/commons/4/47/Perugia_panoramic.jpg",
-        description: `questa è la home page del sito`
+        description: `Perugia lovingly preserves precious traces of its bright historical periods. Today it is the administrative capital of the Umbria region, a major cultural and tourist destination and the prestigious home of the University of Studies for more than 700 years. The historic Academy of Fine Arts, the Music Conservatory and its University for Foreigners, with students from all over the world, define its distinct international vocation.`
     },
     about: {
         title: "About",

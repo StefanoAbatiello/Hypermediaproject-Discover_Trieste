@@ -7,7 +7,6 @@
       <li class="breadcrumb-item"><a @click="backToList()">allPoi/</a></li>
     </ul>
     <img :src="img" class="img-fluid mx-auto d-block" />
-    <div><p>{{description}}</p></div>
     <div class="container-fluid m-0 p-0">
       <ul class="nav nav-pills nav-justified">
         <li class="nav-item">
@@ -41,9 +40,6 @@
         <a class="page-link" @click="next(id, len)">Next</a>
       </li>
     </ul>
-    <script>
-      console.log({{len}});
-    </script>
   </div>
 </template>
 
