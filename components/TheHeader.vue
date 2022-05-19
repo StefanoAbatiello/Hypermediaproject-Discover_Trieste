@@ -3,11 +3,12 @@
     <button
       class="navbar-menu"
       type="button"
+      style="display: none"
     >
       <span class="navbar-toggler-icon"></span>
     </button> 
     <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
-    <a class="navbar-brand mr-auto" href="/">VisitPerugia</a>
+    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
     <!-- <button
       class="navbar-toggler"
       type="button"
@@ -82,13 +83,14 @@ export default {
   background-color: white;
 }
 .navbar-brand{
-  color: whitesmoke;
-  font-size: 35px;
-  font-family: cursive  ;
+  color: white;
+  font-size: 45px;
+  font-family: 'My Soul', cursive;
 }
 .nav-item {
-  color: whitesmoke;
-  border-left: 1px dotted ;
+  color: white;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
 }
 .logo {
   color: white;
