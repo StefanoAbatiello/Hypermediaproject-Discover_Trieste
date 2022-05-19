@@ -14,7 +14,7 @@
     <tab-card
           :access-info="`accessabilty informations are needed here`"
           :time-info="`this poi is always open`"
-          :directions="`rpint a map of the point of interest`"
+          :directions="`print a map of the point of interest`"
           :prices="`free ticket to visit this poi`"
     />
     <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">

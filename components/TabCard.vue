@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul id="myTab" class="nav nav-tabs" role="tablist">
+    <ul id="myTab" class="nav nav-tabs nav-justified" role="tablist">
       <li class="nav-item" role="presentation">
         <button
           id="tab"
