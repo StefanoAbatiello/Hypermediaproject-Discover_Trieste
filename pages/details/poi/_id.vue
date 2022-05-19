@@ -11,24 +11,14 @@
       <h1>{{title}}</h1>
       <p>{{description}}</p>
     </div>
-    <div class="container-fluid m-0 p-0">
-      <ul class="nav nav-pills nav-justified info" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" data-bs-toggle="pill" @click="accessibilityPrint()">Accessibility</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" @click="getPrint()">How to get here</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" @click="timePrint()">Time</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="pill" @click="pricePrint()">Prices</a>
-        </li>
-      </ul>
-    </div>
+    <tab-card
+          :access-info="`accessabilty informations are needed here`"
+          :time-info="`this poi is always open`"
+          :directions="`rpint a map of the point of interest`"
+          :prices="`free ticket to visit this poi`"
+    />
     <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
-      accessibility
+      Other informatons can be inserted here in a future
     </div>
     <ul class="pagination">
       <li class="page-item">
@@ -43,8 +33,12 @@
 
 <script>
 import CommonMixin from '~/mixins/common'
+import TabCard from '~/components/TabCard.vue'
 export default {
   name: 'DetailsPage',
+  components: {
+    TabCard,
+  },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
@@ -96,18 +90,6 @@ export default {
     },
     descriptionPrint(description) {
       document.getElementById('textBox').innerHTML = description
-    },
-    accessibilityPrint() {
-      document.getElementById('textBox').innerHTML = 'accessibility'
-    },
-    timePrint() {
-      document.getElementById('textBox').innerHTML = 'time'
-    },
-    pricePrint() {
-      document.getElementById('textBox').innerHTML = 'prices'
-    },
-    getPrint() {
-      document.getElementById('textBox').innerHTML = 'How to get here'
     },
   },
 }

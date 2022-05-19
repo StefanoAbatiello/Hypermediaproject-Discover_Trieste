@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
       <li class="nav-item" role="presentation">
         <button
-          class="nav-link active"
           id="tab"
+          class="nav-link active"
           data-bs-toggle="tab"
           data-bs-target="#accessibility"
           type="button"
@@ -15,8 +15,8 @@
       </li>
       <li class="nav-item" role="presentation">
         <button
-          class="nav-link"
           id="tab"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#time"
           type="button"
@@ -27,8 +27,8 @@
       </li>
       <li class="nav-item" role="presentation">
         <button
-          class="nav-link"
           id="tab"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#howToReach"
           type="button"
@@ -39,8 +39,8 @@
       </li>
       <li class="nav-item" role="presentation">
         <button
+          id="tab"  
           class="nav-link"
-          id="tab"
           data-bs-toggle="tab"
           data-bs-target="#prices"
           type="button"
@@ -50,22 +50,22 @@
         </button>
       </li>
     </ul>
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="accessibility" role="tabpanel">
+    <div id="myTabContent" class="tab-content">
+      <div id="accessibility" class="tab-pane fade show active" role="tabpanel">
         {{ accessInfo }}
       </div>
-      <div class="tab-pane fade" id="time" role="tabpanel">{{ timeInfo }}</div>
-      <div class="tab-pane fade" id="howToReach" role="tabpanel">
+      <div id="time" class="tab-pane fade" role="tabpanel">{{ timeInfo }}</div>
+      <div id="howToReach" class="tab-pane fade" role="tabpanel">
         {{ directions }}
       </div>
-      <div class="tab-pane fade" id="prices" role="tabpanel">{{ prices }}</div>
+      <div id="prices" class="tab-pane fade" role="tabpanel">{{ prices }}</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'tabComponent',
+  name: 'TabCardComponent',
   props: {
     accessInfo: {
       type: String,
@@ -108,7 +108,7 @@ export default {
 .tab-content .tab-pane {
   background-color: #FFF;
   color: black;
-  min-height: 200px;
+  min-height: 250px;
   height: auto;
 }
 </style>
