@@ -25,7 +25,7 @@ export default async (models) => {
             name: "Palazzo dei Priori",
             img: "https://www.secretumbria.it/wp-content/uploads/2021/05/palazzo-dei-priori-perugia-facciata.jpg",
             itineraryId: itinerary2.id,
-            description: "Questa è una descrizione per palazzo dei priori"
+            description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
         },
         {
             name: "Fontana Maggiore",

@@ -7,30 +7,28 @@
       <li class="breadcrumb-item"><a @click="backToList()">allPoi/</a></li>
     </ul>
     <img :src="img" class="img-fluid mx-auto d-block" />
+    <div>
+      <h1>{{title}}</h1>
+      <p>{{description}}</p>
+    </div>
     <div class="container-fluid m-0 p-0">
-      <ul class="nav nav-pills nav-justified">
+      <ul class="nav nav-pills nav-justified info" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" value="description" name="description" @click="accessibilityPrint(description.value())">Description</a>
+          <a class="nav-link active" data-bs-toggle="pill" @click="accessibilityPrint()">Accessibility</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" @click="accessibilityPrint()">Accessibility</a>
+          <a class="nav-link" data-bs-toggle="pill" @click="getPrint()">How to get here</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="getPrint()">How to get here</a>
+          <a class="nav-link" data-bs-toggle="pill" @click="timePrint()">Time</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" @click="timePrint()">Time</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" @click="pricePrint()">Prices</a>
+          <a class="nav-link" data-bs-toggle="pill" @click="pricePrint()">Prices</a>
         </li>
       </ul>
     </div>
     <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
-      <h1>{{name}}</h1>
-      <p>
-        {{description}}
-      </p>
+      accessibility
     </div>
     <ul class="pagination">
       <li class="page-item">
@@ -90,11 +88,14 @@ export default {
     backToList() {
       this.$router.push('/pois')
     },
-    print(context){
-      if (context === "description"){
+    print(context) {
+      if (context === 'description') {
         document.getElementById('textBox').innerHTML = 'description'
       }
       // document.getElementById('textBox').innerHTML = {description}
+    },
+    descriptionPrint(description) {
+      document.getElementById('textBox').innerHTML = description
     },
     accessibilityPrint() {
       document.getElementById('textBox').innerHTML = 'accessibility'

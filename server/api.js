@@ -20,18 +20,18 @@ async function initializeDatabaseConnection() {
     await database.authenticate()
     const Event = database.define("event", {
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         img: DataTypes.STRING,
         season: DataTypes.STRING,
     })
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         img: DataTypes.STRING,
     })
     const PointOfInterest = database.define("poi", {
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         img: DataTypes.STRING,
     })
     const SingleService =database.define("singleService",{
@@ -42,7 +42,7 @@ async function initializeDatabaseConnection() {
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,
-        description: DataTypes.STRING,
+        description: DataTypes.TEXT,
         img: DataTypes.STRING,
     })
     //Definition of the reletionships between two tables
