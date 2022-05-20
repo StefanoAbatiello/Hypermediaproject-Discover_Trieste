@@ -3,17 +3,17 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Tour tra le chiese perugine",
-            img: "https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg",
+            img: ["https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
             description: "Viene a scoprire le chiese della città"
         },
         {
             name: "La Perugia sotterranea",
-            img: "https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg",
+            img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
             description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
         {
             name: "Scopri il cuore di Perugia",
-            img: "https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg",
+            img: ["https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },
     ]

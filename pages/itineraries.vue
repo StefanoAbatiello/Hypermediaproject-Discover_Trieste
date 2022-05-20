@@ -10,7 +10,7 @@
         :key="`itinerary-index-${itineraryIndex}`"
         class="col-sm-2 m-2"
         :name="it.name"
-        :img="it.img"
+        :img="it.img[0]"
         :category="'itinerary'"
       />
     </div>
