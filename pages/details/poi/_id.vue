@@ -26,6 +26,9 @@
       <h1>{{ name }}</h1>
       <p>{{ description }}</p>
     </div>
+    <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
+      {{name}} is correlated with the following itinerary: <nuxt-link :to="`/details/itinerary/${itinerary.id}`"><div class="btn text-white btn-details"> <b>{{itinerary.name}}</b> </div></nuxt-link>
+    </div>
     <tab-card
       :access-info="`accessabilty informations are needed here`"
       :time-info="`this poi is always open`"
@@ -42,7 +45,8 @@
       <li class="page-item">
         <a class="page-link" @click="next(id, len)">Next</a>
       </li>
-    </ul>
+    </ul> 
+    <script>console.log({{ itinerary }})</script>
   </div>
 </template>
 
@@ -58,12 +62,15 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
+    // const { relatedItinerary } = await $axios.get('/itineraries/' + data.poi.itineraryId)
     return {
+      itinerary: data.poi.itinerary,
       len: data.len,
       id,
       name: data.poi.name,
       img: data.poi.img,
       description: data.poi.description,
+      data,
     }
   },
   data() {},
