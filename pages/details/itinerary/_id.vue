@@ -14,7 +14,7 @@
     </p>
     <div id="test" class="test mt-4 p-5 bg-danger text-white rounded">
       <h1>List of itinerary steps</h1>
-        <itinenary-step
+        <itinerary-step
           v-for="(poi, poiIndex) of poiList"
           :id="poi.id"
           :key="`poi-index-${poiIndex}`"
@@ -36,11 +36,11 @@
 
 <script>
 import CommonMixin from '~/mixins/common'
-import ItinenaryStep from '~/components/ItinenaryStep.vue'
+import ItineraryStep from '~/components/ItineraryStep.vue'
 export default {
   name: 'DetailsPage',
   components: {
-    ItinenaryStep
+    ItineraryStep
   },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {

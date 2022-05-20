@@ -23,6 +23,7 @@ async function initializeDatabaseConnection() {
         description: DataTypes.TEXT,
         img: DataTypes.STRING,
         season: DataTypes.STRING,
+        date: DataTypes.STRING,
     })
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
@@ -103,6 +104,7 @@ async function runMainApi() {
                 name: element.name,
                 img: element.img,
                 id: element.id,
+                date: element.date,
             })
         }
         } else {
@@ -112,6 +114,7 @@ async function runMainApi() {
                 name: element.name,
                 img: element.img,
                 id: element.id,
+                date: element.date,
             })
         }
         }

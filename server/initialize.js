@@ -133,6 +133,7 @@ export default async (models) => {
             description: "Details about concert",
             img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
             season: "winter",
+            date: " from a to b",
             poiId:poi0.id,
         },
         {
@@ -140,6 +141,7 @@ export default async (models) => {
             description: "Details about marathon",
             img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
             season: "winter",  
+            date: " from ac to b",
             poiId:poi0.id,
         },
         {
@@ -147,6 +149,7 @@ export default async (models) => {
             description: "Details about ",
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "winter",  
+            date: " from afg to b",
             poiId:poi0.id,
         },
         {
@@ -154,6 +157,7 @@ export default async (models) => {
             description: "Mercato equosolidale che si svolge a Perugia in estate ",
             img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
             season: "summer",  
+            date: " from agtd to b",
             poiId:poi0.id,
         },
         {
@@ -161,6 +165,7 @@ export default async (models) => {
             description: "Details about ",
             img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
             season: "summer",
+            date: " from a to bfghgfed",
             poiId:poi1.id,
         },   
         {
@@ -168,6 +173,7 @@ export default async (models) => {
             description: "Details about this event ",
             img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
             season: "summer",
+            date: " from a to bfffff",
             poiId:poi1.id,
         }, 
     ]
