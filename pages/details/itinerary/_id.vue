@@ -1,18 +1,27 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
-      <h1>{{ name }}</h1>
-      <ul class="breadcrumb">
+  <div class="container-fluid px-0 mb-4 mt-1">
+    <div class="text-white text-left sign">
+      <h1 class="title">{{ name }}</h1>
+      <ul class="ms-3 breadcrumb">
         <li class="breadcrumb-item text-white"><a @click="backToList()">All itineraries/</a></li>
       </ul>
     </div>
+    <button
+        type="button"
+        class="btn btn-lg mb-3 ms-2 btn-back"
+        @click="backToList"
+        >
+        Back to itineraries list
+    </button>
     
     <img :src="img" class="img-fluid mx-auto d-block" />
-    <b>Description:</b>
-    <p class="lead">
+    <div class="m-3 des-div">
+      <b> Description: </b>
+      <p class="lead">
         {{ description }}
-    </p>
-    <div id="test" class="test mt-4 p-5 bg-danger text-white rounded">
+       </p>
+    </div>
+    <div id="test" class="mt-3 p-5 text-white rounded test">
       <h1>List of itinerary steps</h1>
         <itinenary-step
           v-for="(poi, poiIndex) of poiList"
@@ -24,13 +33,6 @@
           :category="'poi'"
         />
     </div>
-    <button
-        type="button"
-        class="btn btn-outline-secondary btn-lg px-4"
-        @click="backToList"
-        >
-        Back to itineraries list
-      </button>
   </div>
 </template>
 
@@ -65,3 +67,19 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.sign{
+  background: rgb(195, 75, 75);
+}
+.title{
+  margin-left: 10px;
+}
+.test{
+  background: rgb(195, 75, 75);
+}
+.btn-back{
+  border-color: rgb(195, 75, 75);;
+  color: rgb(195, 75, 75);
+}
+</style>
