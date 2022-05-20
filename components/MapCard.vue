@@ -29,12 +29,10 @@ export default {
 </script>
 
 <style>
-html,
-body {
+html,body {
   margin: 2;
   padding: 2;
 }
-
 .MapCard {
   width: 1000px;
   height: 1000px;

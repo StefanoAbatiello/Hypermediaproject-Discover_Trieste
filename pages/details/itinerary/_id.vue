@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
+  <div class="container-fluid px-0 mb-5 mt-1">
+    <div class="text-white text-left sign">
       <h1>{{ name }}</h1>
       <ul class="breadcrumb">
         <li class="breadcrumb-item text-white"><a @click="backToList()">All itineraries/</a></li>
@@ -65,3 +65,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.sign{
+  background: rgb(195, 75, 75);
+}
+</style>

@@ -143,7 +143,7 @@ export default async (models) => {
             poiId:poi0.id,
         },
         {
-            name: "Festival Internazionale del Giornalismo",
+            name: "International Journalism Festival",
             description: "Details about ",
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "winter",  
