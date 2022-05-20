@@ -12,7 +12,7 @@
       <p>{{description}}</p>
     </div>
     <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
-      This pois is correlated with the following itinerary: <nuxt-link :to="`/details/itinerary/${itinerary.id}`"><div class="btn text-white btn-details"> <b>{{itinerary.name}}</b> </div></nuxt-link>
+      {{name}} is correlated with the following itinerary: <nuxt-link :to="`/details/itinerary/${itinerary.id}`"><div class="btn text-white btn-details"> <b>{{itinerary.name}}</b> </div></nuxt-link>
     </div>
     <tab-card
           :access-info="`accessabilty informations are needed here`"
