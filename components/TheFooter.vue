@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light px-2 bottom footer ">
-    <img src="https://w7.pngwing.com/pngs/434/398/png-transparent-a-c-perugia-calcio-afd-grifo-perugia-ristorante-rosticceria-grifo-griffin-sculture-logo-chicken-vertebrate.png" class="img rounded me-2" alt="Logo" style="width:60px;">
-    <a class="navbar-brand" href="/">VisitPerugia</a>
+  <nav class="navbar navbar-expand-lg navbar-dark px-3 bottom footer">
+    <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
+    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
 
-    <div id="navbar" >
-      <ul class="navbar-nav mt-auto mt-lg-0">
+    <div id="navbarToggler" >
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
@@ -26,32 +26,16 @@ export default {
     return {
       footerList: [
         {
-          name: 'Home',
-          path: '/',
+          name: 'Policy Cookies',
+          path: '/policy',
         },
         {
-          name: 'List',
-          path: '/list',
+          name: 'Contacts',
+          path: '/contacts',
         },
         {
-          name: 'Events',
-          path: '/eventsMenu',
-        },
-        {
-          name: 'Point of Interest',
-          path: '/pois',
-        },
-        {
-          name: 'Itineraries',
-          path: '/itineraries',
-        },
-         {
-          name: 'Services',
-          path: '/services',
-        },
-         {
-          name: 'About',
-          path: '/about',
+          name: 'Credits',
+          path: '/credits',
         },
       ],
     }
@@ -62,6 +46,21 @@ export default {
 <style scoped>
 .footer {
   background: rgb(195, 75, 75);
+}
+.logo-img{
+  height: 60px;
+  width: 60px;
+  background-color: white;
+}
+.navbar-brand{
+  color: white;
+  font-size: 45px;
+  font-family: 'My Soul', cursive;
+}
+.nav-item {
+  color: white;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
 }
 .logo {
   color: white;

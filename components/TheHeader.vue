@@ -22,7 +22,7 @@
     </button> -->
 
     <div id="navbarToggler" class="collapse navbar-collapse links" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
