@@ -7,8 +7,8 @@
       <li class="breadcrumb-item"><a @click="backToList()">allPoi/</a></li>
     </ul>
     <img :src="img" class="img-fluid mx-auto d-block" />
-    <div>
-      <h1>{{title}}</h1>
+    <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
+      <h1>{{name}}</h1>
       <p>{{description}}</p>
     </div>
     <tab-card
@@ -17,12 +17,12 @@
           :directions="`print a map of the point of interest`"
           :prices="`free ticket to visit this poi`"
     />
-    <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
-      Other informatons can be inserted here in a future
-    </div>
     <ul class="pagination">
       <li class="page-item">
         <a class="page-link" @click="previous(id, len)">Previous</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" @click="backToList()">Back to All Pois</a>
       </li>
       <li class="page-item">
         <a class="page-link" @click="next(id, len)">Next</a>
