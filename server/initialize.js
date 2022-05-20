@@ -12,7 +12,7 @@ export default async (models) => {
             description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
         {
-            name: "Immergiti nel cuore di Perugia alla scoperta della città",
+            name: "Scopri il cuore di Perugia",
             img: "https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg",
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },
@@ -65,7 +65,7 @@ export default async (models) => {
         },
         {
             name: "Porta Sole",
-            img: "http://www.studiumbri.it/wp-content/uploads/2016/12/Arco-dei-Gigli.jpg",
+            img: "https://upload.wikimedia.org/wikipedia/commons/d/da/Arco_di_via_Bontempi_Perugia.jpg",
             itineraryId: itinerary2.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
@@ -143,7 +143,7 @@ export default async (models) => {
             poiId:poi0.id,
         },
         {
-            name: "Festival Internazionale del Giornalismo",
+            name: "International Journalism Festival",
             description: "Details about ",
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "winter",  

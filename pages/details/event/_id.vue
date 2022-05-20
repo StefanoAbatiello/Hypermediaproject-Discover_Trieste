@@ -13,14 +13,14 @@
         </p>
         <button
           type="button"
-          class="btn btn-outline-secondary btn-lg px-4"
+          class="btn btn-lg px-4 mb-2 btn-poi"
           @click="goToPoi(poiId)"
         >
           See the location
         </button>
         <tab-card
-          :accessInfo="`col-sm-2 m-2`"
-          :timeInfo="`event`"
+          :access-info="`col-sm-2 m-2`"
+          :time-info="`event`"
           :directions="`event.name`"
           :prices="`event.img`"
         />
@@ -104,5 +104,9 @@ export default {
 .carousel-slide {
   height: 300px;
   width: 450px;
+}
+.btn-poi{
+  border-color: rgb(195, 75, 75);;
+  color: rgb(195, 75, 75);
 }
 </style>
