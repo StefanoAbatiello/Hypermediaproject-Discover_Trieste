@@ -13,13 +13,14 @@ export default {
       const geocoder = new google.maps.Geocoder();
       const map = new google.maps.Map(this.$el);
 
-      geocoder.geocode({ address: 'Austria' }, (results, status) => {
+      geocoder.geocode({ address: 'Perugia' }, (results, status) => {
         if (status !== 'OK' || !results[0]) {
           throw new Error(status);
         }
 
         map.setCenter(results[0].geometry.location);
         map.fitBounds(results[0].geometry.viewport);
+        map.setZoom(13);
       });
     } catch (error) {
       console.error(error);
@@ -37,6 +38,11 @@ body {
 
 .MapCard {
   width: 1000px;
-  height: 1000px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  border: 3px solid rgb(195, 75, 75);
+  border-radius: 5%;
 }
 </style>

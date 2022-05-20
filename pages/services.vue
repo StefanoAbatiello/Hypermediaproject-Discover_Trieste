@@ -14,18 +14,15 @@
         :category="'service'"
       />
     </div>
-    <div><map-card/></div>
   </div>
 </template>
 
 <script>
 import ListCard from '~/components/ListCard.vue'
-import MapCard from '~/components/MapCard.vue'
 export default {
   name: 'ServicesPage',
   components: {
     ListCard,
-    MapCard,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {

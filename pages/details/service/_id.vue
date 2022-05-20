@@ -31,7 +31,8 @@
           >
             Back to services
           </button>
-        </div>
+        </div>    
+        <div><map-card/></div>
     </div>
   </div>
 </template>
@@ -39,10 +40,12 @@
 <script>
 import CommonMixin from '~/mixins/common'
 import ServiceCard from '~/components/ServiceCard.vue'
+import MapCard from '~/components/MapCard.vue'
 export default {
   name: 'ServiceDetailsPage',
   components: {
     ServiceCard,
+        MapCard,
   },
   mixins: [CommonMixin],
 
