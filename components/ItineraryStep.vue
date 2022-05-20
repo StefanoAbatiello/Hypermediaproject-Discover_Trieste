@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid">
-    <div class="card mb-2 shadow-lg p-3">
-      <div class="row g-0">
-        <div class="col-md-2">
-          <img :src="img" class="img rounded-start card-image" />
+    <div class="card m-1 shadow-lg p-3">
+      <div class="row row-cols-2 justify-content-start">
+        <div class="col-md-auto">
+          <img :src="img" class="img rounded card-image" />
         </div>
-        <div class="col-md-10">
+        <div class="col ml-auto">
           <div class="card-body">
             <h4 class="card-title">{{ name }}</h4>
             <p class="card-text">
@@ -64,8 +64,8 @@ export default {
   text-align: left;
 }
 .card-body {
-  max-width: 400px;
-  margin-left: 5px;
+  width: auto;
+  margin-left: 3px;
 }
 .btn-details {
   background-color: rgb(136, 24, 24);
@@ -75,10 +75,7 @@ export default {
   opacity: 1;
 }
 .card-image {
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
   width: 200px;
+  height: 200px;
 }
 </style>

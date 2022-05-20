@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mt-1 mb-4">
-    <div class="text-white sign row">
+    <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ seasonName }} events list</h1>
         <ul class="ms-3 breadcrumb">
@@ -10,13 +10,13 @@
         </ul>
       </div>
 
-      <div class="col offset-md-6 align-self-end botton-cont">
+      <div class="col align-self-center botton-cont">
         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
           @click="backToEventsMenu()"
         >
-          Back to the events' Menu
+          See the events' Menu
         </button>
       </div>
     </div>
@@ -25,7 +25,7 @@
         v-for="(event, eventIndex) of eventList"
         :id="event.id"
         :key="`event-index-${eventIndex}`"
-        class="m-2 rounded-3"
+        class="rounded-3 step"
         :name="event.name"
         :img="event.img"
         :description="event.date"
@@ -71,14 +71,26 @@ export default {
   background: rgb(195, 75, 75);
 }
 .list {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 25px;
+}
+.step:hover {
+  border: 3px solid rgb(195, 75, 75);
+  opacity: 1;
+}
+.step {
+  opacity: 0.8;
 }
 .btn-back {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
 }
-.botton-cont{
-  align-items: center;
+.botton-cont {
+  position: relative;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mt-1 mb-4">
-    <div class="text-white sign row">
+    <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
@@ -10,7 +10,7 @@
           </li>
         </ul>
       </div>
-      <div class="col offset-md-7 align-self-end botton-cont">
+      <div class="col align-self-center botton-cont">
         <button
           v-if="season === 'summer'"
           type="button"
@@ -106,10 +106,14 @@ export default {
   color: rgb(195, 75, 75);
 }
 .btn-back {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%,-50%);
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
 }
 .botton-cont {
-  align-items: center;
+    position: relative;
 }
 </style>

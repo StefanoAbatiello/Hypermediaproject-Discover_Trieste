@@ -133,7 +133,7 @@ export default async (models) => {
             description: "Details about concert",
             img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
             season: "winter",
-            date: " from a to b",
+            date: " from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib",
             poiId:poi0.id,
         },
         {

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <div class="text-white sign row">
+    <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
@@ -10,7 +10,7 @@
         </ul>
       </div>
 
-      <div class="col offset-sm-1 align-self-end botton-cont">
+      <div class="col align-self-center botton-cont">
         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
@@ -93,17 +93,19 @@
         {{ description }}
       </p>
     </div>
-    <div id="test" class="mt-3 p-5 text-white rounded test">
+    <div id="backgr" class="mt-3 text-white rounded backgr">
       <h1>List of itinerary steps</h1>
-      <itinerary-step
-        v-for="(poi, poiIndex) of poiList"
-        :id="poi.id"
-        :key="`poi-index-${poiIndex}`"
-        :name="poi.name"
-        :img="poi.img"
-        :description="poi.description"
-        :category="'poi'"
-      />
+      <div class="list-fluid list">
+        <itinerary-step
+          v-for="(poi, poiIndex) of poiList"
+          :id="poi.id"
+          :key="`poi-index-${poiIndex}`"
+          :name="poi.name"
+          :img="poi.img"
+          :description="poi.description"
+          :category="'poi'"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -147,14 +149,22 @@ export default {
 .title {
   margin-left: 10px;
 }
-.test {
+.backgr {
   background: rgb(195, 75, 75);
 }
+.list {
+  margin-left: 8%;
+  margin-right: 8%;
+}
 .btn-back {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
 }
 .botton-cont {
-  align-items: right;
+  position: relative;
 }
 </style>

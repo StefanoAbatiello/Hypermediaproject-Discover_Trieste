@@ -1,21 +1,36 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <div class="text-white text-left sign">
-      <h1 class="title">{{ name }}</h1>
-      <ul class="ms-3 breadcrumb">
-      <li class="breadcrumb-item"><a @click="backToList()">AllPoi/</a></li>
-    </ul>
+    <div class="text-white sign row justify-content-between">
+      <div class="col">
+        <h1 class="title text-left">{{ name }}</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToList()">AllPoi/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col align-self-center botton-cont">
+        <button
+          type="button"
+          class="btn btn-lg mb-3 ms-2 btn-back text-white"
+          @click="backToList()"
+        >
+          See all the Point of Interest
+        </button>
+      </div>
     </div>
+
     <img :src="img" class="img-fluid mx-auto d-block" />
     <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
-      <h1>{{name}}</h1>
-      <p>{{description}}</p>
+      <h1>{{ name }}</h1>
+      <p>{{ description }}</p>
     </div>
     <tab-card
-          :access-info="`accessabilty informations are needed here`"
-          :time-info="`this poi is always open`"
-          :directions="`print a map of the point of interest`"
-          :prices="`free ticket to visit this poi`"
+      :access-info="`accessabilty informations are needed here`"
+      :time-info="`this poi is always open`"
+      :directions="`print a map of the point of interest`"
+      :prices="`free ticket to visit this poi`"
     />
     <ul class="pagination">
       <li class="page-item">
@@ -101,17 +116,28 @@ export default {
   width: 20%;
   height: auto;
 }
-.title{
+.title {
   margin-left: 10px;
 }
 .colonna {
   width: 200px;
   margin: 0;
 }
-.sign{
+.sign {
   background: rgb(195, 75, 75);
 }
 .test {
   border-style: solid;
+}
+.btn-back {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border-color: whitesmoke;
+  color: rgb(195, 75, 75);
+}
+.botton-cont {
+  position: relative;
 }
 </style>
