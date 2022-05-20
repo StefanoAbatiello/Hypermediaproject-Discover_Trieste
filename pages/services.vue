@@ -39,10 +39,10 @@ export default {
   display: flex;
   justify-content: center;
 }
-.title{
+.title {
   margin-left: 10px;
 }
-.sign{
+.sign {
   background: rgb(195, 75, 75);
 }
 </style>

@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-.main-page{
+.main-page {
   min-height: 100vh;
 }
 </style>

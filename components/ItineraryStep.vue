@@ -6,7 +6,7 @@
           <img :src="img" class="img rounded-start card-image" />
         </div>
         <div class="col-md-10">
-          <div class="card-body ">
+          <div class="card-body">
             <h4 class="card-title">{{ name }}</h4>
             <p class="card-text">
               {{ description }}
@@ -63,7 +63,7 @@ export default {
   color: black;
   text-align: left;
 }
-.card-body{
+.card-body {
   max-width: 400px;
   margin-left: 5px;
 }

@@ -3,19 +3,18 @@
     <div class="text-white text-left sign">
       <h1 class="title">All the Points of Interest</h1>
     </div>
-      <div class="row mt-3 row-line">
-        <list-card
-          v-for="(poi, poiIndex) of poiList"
-          :id="poi.id"
-          :key="`poi-index-${poiIndex}`"
-          class="col-sm-2 m-2"
-          :name="poi.name"
-          :img="poi.img"
-          :category="'poi'"
-        />
+    <div class="row mt-3 row-line">
+      <list-card
+        v-for="(poi, poiIndex) of poiList"
+        :id="poi.id"
+        :key="`poi-index-${poiIndex}`"
+        class="col-sm-2 m-2"
+        :name="poi.name"
+        :img="poi.img"
+        :category="'poi'"
+      />
     </div>
   </div>
-
 </template>
 
 <script>
@@ -34,10 +33,10 @@ export default {
     }
   },
   data() {
-      return {
-        // itinerariesList: []
-      }
-    },
+    return {
+      // itinerariesList: []
+    }
+  },
 }
 </script>
 
@@ -46,10 +45,10 @@ export default {
   display: flex;
   justify-content: center;
 }
-.sign{
+.sign {
   background: rgb(195, 75, 75);
 }
-.title{
+.title {
   margin-left: 10px;
 }
 </style>
