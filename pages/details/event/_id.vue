@@ -44,8 +44,8 @@
         See the location
       </button>
       <tab-card
-        :accessInfo="`col-sm-2 m-2`"
-        :timeInfo="`event`"
+        :access-info="`col-sm-2 m-2`"
+        :time-info="`event`"
         :directions="`event.name`"
         :prices="`event.img`"
       />
