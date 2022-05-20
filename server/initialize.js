@@ -12,7 +12,7 @@ export default async (models) => {
             description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
         },
         {
-            name: "Immergiti nel cuore di Perugia alla scoperta della città",
+            name: "Scopri il cuore di Perugia",
             img: "https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg",
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },

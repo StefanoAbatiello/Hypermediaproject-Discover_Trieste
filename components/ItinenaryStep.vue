@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <div class="card mb-3 shadow-lg p-3">
+    <div class="card mb-2 shadow-lg p-3">
       <div class="row g-0">
         <div class="col-md-2">
           <img :src="img" class="img rounded-start card-image" />
@@ -12,7 +12,7 @@
               {{ description }}
             </p>
             <nuxt-link :to="`/details/${category}/${id}`">
-              <div class="btn btn-primary btn-details text-white">See more details...</div>
+              <div class="btn text-white btn-details">See more details...</div>
             </nuxt-link>
           </div>
         </div>
@@ -55,9 +55,6 @@ export default {
 </script>
 
 <style scoped>
-.card:hover {
-  border: 3px solid rgb(136, 24, 24);
-}
 .card-title {
   color: rgb(136, 24, 24);
   text-align: left;
@@ -68,6 +65,10 @@ export default {
 }
 .btn-details {
   background-color: rgb(136, 24, 24);
+  opacity: 0.7;
+}
+.btn-details:hover {
+  opacity: 1;
 }
 .card-image {
   background-position: left;
