@@ -1,11 +1,11 @@
 <template>
-  <div class="container-fluid px-5 mb-5 mt-3">
-    <div class="bg-danger text-white text-left">
-      <h1>{{ name }}</h1>
-    </div>
-    <ul class="breadcrumb">
-      <li class="breadcrumb-item"><a @click="backToList()">allPoi/</a></li>
+  <div class="container-fluid px-0 mb-4 mt-1">
+    <div class="text-white text-left sign">
+      <h1 class="title">{{ name }}</h1>
+      <ul class="ms-3 breadcrumb">
+      <li class="breadcrumb-item"><a @click="backToList()">AllPoi/</a></li>
     </ul>
+    </div>
     <img :src="img" class="img-fluid mx-auto d-block" />
     <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
       <h1>{{name}}</h1>
@@ -101,9 +101,15 @@ export default {
   width: 20%;
   height: auto;
 }
+.title{
+  margin-left: 10px;
+}
 .colonna {
   width: 200px;
   margin: 0;
+}
+.sign{
+  background: rgb(195, 75, 75);
 }
 .test {
   border-style: solid;

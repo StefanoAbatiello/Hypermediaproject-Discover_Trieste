@@ -65,7 +65,7 @@ export default async (models) => {
         },
         {
             name: "Porta Sole",
-            img: "http://www.studiumbri.it/wp-content/uploads/2016/12/Arco-dei-Gigli.jpg",
+            img: "https://upload.wikimedia.org/wikipedia/commons/d/da/Arco_di_via_Bontempi_Perugia.jpg",
             itineraryId: itinerary2.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
