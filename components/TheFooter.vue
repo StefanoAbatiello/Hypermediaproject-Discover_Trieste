@@ -1,9 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark px-3 bottom footer">
-    <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
+    <img
+      src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
+      class="img rounded-circle mr-auto ms-2 logo-img"
+      alt="Logo"
+      style="width: 60px"
+    />
     <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
 
-    <div id="navbarToggler" >
+    <div id="navbarToggler">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of footerList"
@@ -47,12 +52,12 @@ export default {
 .footer {
   background: rgb(195, 75, 75);
 }
-.logo-img{
+.logo-img {
   height: 60px;
   width: 60px;
   background-color: white;
 }
-.navbar-brand{
+.navbar-brand {
   color: white;
   font-size: 45px;
   font-family: 'My Soul', cursive;

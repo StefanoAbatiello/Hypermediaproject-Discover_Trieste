@@ -1,8 +1,12 @@
 <template>
-  <div class="rounded shadow  category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
+  <div
+    class="rounded shadow category-image"
+    style="width: 23rem"
+    :style="{ 'background-image': 'url(' + img + ')' }"
+  >
     <div class="category-body">
       <nuxt-link :to="`/events/${season}`">
-        <div class="btn text-white btn-details"> {{ name }} </div>
+        <div class="btn text-white btn-details">{{ name }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -41,11 +45,11 @@ export default {
 .btn-details {
   background: rgb(195, 75, 75);
   text-shadow: 2px 2px 4px black;
-  opacity:1;
+  opacity: 1;
   position: absolute;
   left: 50%;
   top: 85%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .category-image {
   background-position: center;

@@ -39,7 +39,7 @@
       </li>
       <li class="nav-item" role="presentation">
         <button
-          id="tab"  
+          id="tab"
           class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#prices"
@@ -91,11 +91,11 @@ export default {
 .nav-tabs .nav-item .nav-link {
   background-color: rgb(195, 75, 75);
   opacity: 0.5;
-  color: #FFF;
+  color: #fff;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-  color: #FFF;
+  color: #fff;
   border: rgb(195, 75, 75);
   opacity: 1;
 }
@@ -106,7 +106,7 @@ export default {
 }
 
 .tab-content .tab-pane {
-  background-color: #FFF;
+  background-color: #fff;
   color: black;
   min-height: 250px;
   height: auto;
