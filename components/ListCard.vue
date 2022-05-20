@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded shadow  category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
+  <div class="rounded shadow category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
      
     <div class="category-body">
       <!-- <h4 class="category-title text-center">{{ name }}</h4> -->
@@ -38,7 +38,6 @@ export default {
   },
 }
 </script>
-
 
 <style scoped>
 .category-image:hover {

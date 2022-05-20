@@ -96,4 +96,8 @@ export default {
   height: 300px;
   width: 450px;
 }
+.btn-poi{
+  border-color: rgb(195, 75, 75);;
+  color: rgb(195, 75, 75);
+}
 </style>

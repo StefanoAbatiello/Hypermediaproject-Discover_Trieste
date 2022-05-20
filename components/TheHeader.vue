@@ -1,15 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark px-3 header sticky-top">
-    <button
-      class="navbar-menu"
-      type="button"
-      style="display: none"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button> 
     <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
     <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
-    <!-- <button
+     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -19,10 +12,9 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
-    </button> -->
-
+    </button>
     <div id="navbarToggler" class="collapse navbar-collapse links" >
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
