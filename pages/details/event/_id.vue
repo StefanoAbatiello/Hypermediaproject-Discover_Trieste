@@ -1,7 +1,35 @@
 <template>
-  <div class="container my-5">
-    <h1 class="display-4 fw-bold lh-1 text-danger text-center">{{ name }}</h1>
-    <div>
+  <div class="container-fluid px-0 mt-1 mb-4">
+    <div class="text-white sign row">
+      <div class="col">
+        <h1 class="title text-left">{{ name }}</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToEventsMenu()">eventsMenu/</a>
+            <a @click="backToEvents(season)">{{ season }}Events/</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col offset-md-7 align-self-end botton-cont">
+        <button
+          v-if="season === 'summer'"
+          type="button"
+          class="btn btn-lg mb-3 ms-2 btn-back text-white"
+          @click="backToEvents(season)"
+        >
+           See all summer events
+        </button>
+        <button
+          v-else
+          type="button"
+          class="btn btn-lg mb-3 ms-2 btn-back text-white"
+          @click="backToEvents(season)"
+        >
+          See all winter events
+        </button>
+      </div>
+    </div>
+    <div class="container px-0 mt-1 mb-4">
       <div class="image-event text-center">
         <img class="img rounded ms-2 mt-5" :src="img" />
       </div>
@@ -21,31 +49,6 @@
         :directions="`event.name`"
         :prices="`event.img`"
       />
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button
-          v-if="season === 'summer'"
-          type="button"
-          class="btn btn-outline-secondary btn-lg px-4"
-          @click="backToEvents(season)"
-        >
-          Back to summer events
-        </button>
-        <button
-          v-else
-          type="button"
-          class="btn btn-outline-secondary btn-lg px-4"
-          @click="backToEvents(season)"
-        >
-          Back to winter events
-        </button>
-        <button
-          type="button"
-          class="btn btn-outline-secondary btn-lg px-4"
-          @click="back()"
-        >
-          Back to all the events
-        </button>
-      </div>
     </div>
   </div>
 </template>
@@ -88,16 +91,25 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  margin-left: 10px;
+}
+.sign {
+  background: rgb(195, 75, 75);
+}
 .img {
   height: 300px;
   width: 450px;
 }
-.carousel-slide {
-  height: 300px;
-  width: 450px;
-}
-.btn-poi{
-  border-color: rgb(195, 75, 75);;
+.btn-poi {
+  border-color: rgb(195, 75, 75);
   color: rgb(195, 75, 75);
+}
+.btn-back {
+  border-color: whitesmoke;
+  color: rgb(195, 75, 75);
+}
+.botton-cont {
+  align-items: center;
 }
 </style>

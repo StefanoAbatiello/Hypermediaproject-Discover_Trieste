@@ -1,18 +1,25 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <div class="text-white text-left sign">
-      <h1 class="title">{{ name }}</h1>
-      <ul class="ms-3 breadcrumb">
-        <li class="breadcrumb-item text-white"><a @click="backToList()">All itineraries/</a></li>
-      </ul>
-    </div>
-    <button
-        type="button"
-        class="btn btn-lg mb-3 ms-2 btn-back"
-        @click="backToList"
+    <div class="text-white sign row">
+      <div class="col">
+        <h1 class="title text-left">{{name}}</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToList()">itineraries/</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col offset-sm-1 align-self-end botton-cont">
+        <button
+          type="button"
+          class="btn btn-lg mb-3 ms-2 btn-back text-white"
+          @click="backToList()"
         >
-        Back to itineraries list
-    </button>
+          See all the itineraries
+        </button>
+      </div>
+    </div>
     
     <img :src="img" class="img-fluid mx-auto d-block" />
     <div class="m-3 des-div">
@@ -78,8 +85,11 @@ export default {
 .test{
   background: rgb(195, 75, 75);
 }
-.btn-back{
-  border-color: rgb(195, 75, 75);;
+.btn-back {
+  border-color: whitesmoke;
   color: rgb(195, 75, 75);
+}
+.botton-cont{
+  align-items: right;
 }
 </style>

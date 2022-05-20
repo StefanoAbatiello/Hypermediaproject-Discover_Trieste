@@ -1,19 +1,38 @@
 <template>
-    <div class="container-fluid mt-4 p-5 text-white rounded">
-      <div class="text-white text-left sign">
-        <h1 class="title">{{ seasonName }} events list</h1>
+  <div class="container-fluid px-0 mt-1 mb-4">
+    <div class="text-white sign row">
+      <div class="col">
+        <h1 class="title text-left">{{ seasonName }} events list</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToEventsMenu()">eventsMenu/</a>
+          </li>
+        </ul>
       </div>
-        <itinerary-step
-          v-for="(event, eventIndex) of eventList"
-          :id="event.id"
-          :key="`event-index-${eventIndex}`"
-          class="m-2 rounded-3"
-          :name="event.name"
-          :img="event.img"
-          :description="event.date"
-          :category="`event`"
-        />
+
+      <div class="col offset-md-6 align-self-end botton-cont">
+        <button
+          type="button"
+          class="btn btn-lg mb-3 ms-2 btn-back text-white"
+          @click="backToEventsMenu()"
+        >
+          Back to the events' Menu
+        </button>
+      </div>
     </div>
+    <div class="list">
+      <itinerary-step
+        v-for="(event, eventIndex) of eventList"
+        :id="event.id"
+        :key="`event-index-${eventIndex}`"
+        class="m-2 rounded-3"
+        :name="event.name"
+        :img="event.img"
+        :description="event.date"
+        :category="`event`"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -32,6 +51,11 @@ export default {
       seasonName: season,
     }
   },
+  methods: {
+    backToEventsMenu() {
+      this.$router.push('/eventsMenu')
+    },
+  },
 }
 </script>
 
@@ -45,5 +69,16 @@ export default {
 }
 .sign {
   background: rgb(195, 75, 75);
+}
+.list {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.btn-back {
+  border-color: whitesmoke;
+  color: rgb(195, 75, 75);
+}
+.botton-cont{
+  align-items: center;
 }
 </style>
