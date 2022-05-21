@@ -97,7 +97,7 @@ async function runMainApi() {
         const { season } = req.params
         console.log(season)
         const filtered = []
-        if (season === 'allYear') {
+        if (season === 'All year') {
             const result = await models.Event.findAll()
         for (const element of result) {
             filtered.push({

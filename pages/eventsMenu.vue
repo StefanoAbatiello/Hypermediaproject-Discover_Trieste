@@ -6,20 +6,20 @@
     <div class="row mt-3 row-line">
       <menu-card
         class="col-sm-2 m-2"
-        :season="`summer`"
+        :season="`Summer`"
         :name="`Summer Event`"
         :img="`https://www.creativebloggingworld.com/wp-content/uploads/2021/07/Corporate-Summer-Event-Ideas-1024x768.jpg`"
       />
       <menu-card
         class="col-sm-2 m-2"
-        :season="`winter`"
+        :season="`Winter`"
         :name="`Winter Event`"
         :img="`https://www.lanottevola.com/wp-content/uploads/2018/11/La-Notte-Vola-Winter-edition-1024x589.jpg`"
       />
       <menu-card
         class="col-sm-2 m-2"
-        :season="`allYear`"
-        :name="`All Event of the year`"
+        :season="`All year`"
+        :name="`All events of the year`"
         :img="`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUrcKD15Ed83Cx64PgjjPfbWuV_1-WYEjaA&usqp=CAU`"
       />
     </div>

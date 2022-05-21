@@ -2,7 +2,7 @@
   <div class="container-fluid px-0 mt-1 mb-4">
     <div class="text-white sign row justify-content-between">
       <div class="col">
-        <h1 class="title text-left">{{ seasonName }} events list</h1>
+        <h1 class="title text-left">{{ seasonName }} events</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToEventsMenu()">eventsMenu/</a>

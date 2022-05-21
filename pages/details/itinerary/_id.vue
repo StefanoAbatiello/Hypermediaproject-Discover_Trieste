@@ -6,6 +6,7 @@
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToList()">itineraries/</a>
+            <a>{{name}}/</a>
           </li>
         </ul>
       </div>
@@ -16,7 +17,7 @@
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
           @click="backToList()"
         >
-          Back to itineraries list
+          See all itineraries
         </button>
       </div>
     </div>

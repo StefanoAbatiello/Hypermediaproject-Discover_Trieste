@@ -16,7 +16,7 @@
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
           @click="backToList()"
         >
-          See all the Point of Interest
+          See all Points of interest
         </button>
       </div>
     </div>
