@@ -2,7 +2,8 @@
   <div class="main-page">
     <the-header />
     <nuxt />
-    <the-footer />
+    <div class="push"></div>
+    <the-footer class="footer" />
   </div>
 </template>
 
@@ -19,7 +20,19 @@ export default {
 </script>
 
 <style scoped>
+html,
+body {
+  height: 100%;
+}
+
 .main-page {
-  min-height: 100vh;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -80px;
+}
+
+.footer,
+.push {
+  height: 80px;
 }
 </style>
