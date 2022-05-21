@@ -96,7 +96,6 @@ async function runMainApi() {
     // HTTP GET api that returns the events of a certain season
     app.get("/events/:season", async (req, res) => {
         const { season } = req.params
-        console.log(season)
         const filtered = []
         const result = await models.Event.findAll({where: { season }})
         for (const element of result) {
@@ -154,10 +153,10 @@ async function runMainApi() {
 
     app.get('/event/:id', async (req, res) => {
         const id = +req.params.id
-        // const eventId = +req.params.id
         const result = await models.Event.findOne({ where: { id }})
         return res.json(result)
     })
+
     app.get('/event/len', async (req, res) => {
         const len = (await models.PointOfInterest.findAll()).length
         return res.json(len)
@@ -180,17 +179,6 @@ async function runMainApi() {
             poi:await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] }),
             len: len
         }
-        return res.json(result)
-    })
-
-    app.get('/service/:id', async (req, res) => {
-        const id = +req.params.id
-        const serviceTypeId = +req.params.id
-
-        const result ={
-            type: await models.ServiceType.findOne({ where: { id }}),
-            services: await models.SingleService.findAll({ where: { serviceTypeId } })
-        }    
         return res.json(result)
     })
 
@@ -220,6 +208,16 @@ async function runMainApi() {
             })
         }
         return res.json(filtered)
+    })
+
+    app.get('/service/:id', async (req, res) => {
+        const id = +req.params.id
+        const serviceTypeId = +req.params.id
+        const result ={
+            type: await models.ServiceType.findOne({ where: { id }}),
+            services: await models.SingleService.findAll({ where: { serviceTypeId } })
+        }    
+        return res.json(result)
     })
 
 }
