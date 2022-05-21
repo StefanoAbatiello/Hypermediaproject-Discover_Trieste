@@ -5,18 +5,18 @@
         <h1 class="title text-left">{{ seasonName }} events</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
-            <a @click="backToEventsMenu()">eventsMenu/</a>
+            <a @click="backToEvents()">All events/</a>
+            <a>{{seasonName}} events</a>
           </li>
         </ul>
       </div>
-
       <div class="col align-self-center botton-cont">
         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToEventsMenu()"
+          @click="backToEvents()"
         >
-          See the events' Menu
+          See all events
         </button>
       </div>
     </div>
@@ -52,8 +52,8 @@ export default {
     }
   },
   methods: {
-    backToEventsMenu() {
-      this.$router.push('/eventsMenu')
+    backToEvents() {
+      this.$router.push('/events')
     },
   },
 }

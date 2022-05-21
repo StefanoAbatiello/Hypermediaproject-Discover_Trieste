@@ -5,7 +5,7 @@
     :style="{ 'background-image': 'url(' + img + ')' }"
   >
     <div class="category-body">
-      <nuxt-link :to="`/events/${season}`">
+      <nuxt-link :to="`/seasonal/${season}`">
         <div class="btn text-white btn-details">{{ name }}</div>
       </nuxt-link>
     </div>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'MenuCard',
+  name: 'SeasonCard',
   props: {
     name: {
       type: String,

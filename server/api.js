@@ -93,12 +93,12 @@ async function runMainApi() {
         return res.json(result)
     })
 
+    // HTTP GET api that returns the events of a certain season
     app.get("/events/:season", async (req, res) => {
         const { season } = req.params
         console.log(season)
         const filtered = []
-        if (season === 'All year') {
-            const result = await models.Event.findAll()
+        const result = await models.Event.findAll({where: { season }})
         for (const element of result) {
             filtered.push({
                 name: element.name,
@@ -106,24 +106,27 @@ async function runMainApi() {
                 id: element.id,
                 date: element.date,
             })
-        }
-        } else {
-            const result = await models.Event.findAll({where: { season }})
-        for (const element of result) {
-            filtered.push({
-                name: element.name,
-                img: element.img,
-                id: element.id,
-                date: element.date,
-            })
-        }
         }
         return res.json(filtered)
     })
 
-     // HTTP GET api that returns all the itineraries in our actual database
+     // HTTP GET api that returns all the itineraries
      app.get("/itineraries", async (req, res) => {
         const result = await models.Itinerary.findAll()
+        const filtered = []
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        return res.json(filtered)
+    })
+
+    // HTTP GET api that returns all the events in our actual database
+    app.get("/events", async (req, res) => {
+        const result = await models.Event.findAll()
         const filtered = []
         for (const element of result) {
             filtered.push({

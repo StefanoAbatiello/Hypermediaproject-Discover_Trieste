@@ -38,10 +38,6 @@ export default {
           name: 'Contacts',
           path: '/contacts',
         },
-        {
-          name: 'Credits',
-          path: '/credits',
-        },
       ],
     }
   },

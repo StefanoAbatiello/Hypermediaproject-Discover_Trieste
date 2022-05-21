@@ -26,7 +26,6 @@ export default {
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
-    // const { data } = await $axios.get('http://localhost:3000/api/itineraries')
     const { data } = await $axios.get('/api/itineraries')
     return {
       itineraryList: data,

@@ -41,7 +41,7 @@ export default {
         },
         {
           name: 'Events',
-          path: '/eventsMenu',
+          path: '/events',
         },
         {
           name: 'Point of Interest',

@@ -5,27 +5,19 @@
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
-            <a @click="backToEventsMenu()">eventsMenu/</a>
-            <a @click="backToEvents(season)">{{ season }}Events/</a>
+            <a @click="backToEvents()">All events/</a>
+            <a @click="backToSeasonEvents(season)">{{season}} events/</a>
+            <a>{{name}} </a>
           </li>
         </ul>
       </div>
       <div class="col align-self-center botton-cont">
-        <button
-          v-if="season === 'summer'"
+         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToEvents(season)"
+          @click="backToEvents()"
         >
-           See all summer events
-        </button>
-        <button
-          v-else
-          type="button"
-          class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToEvents(season)"
-        >
-          See all winter events
+          See all events
         </button>
       </div>
     </div>
@@ -77,11 +69,11 @@ export default {
     }
   },
   methods: {
-    backToEvents(season) {
-      this.$router.push('/events/' + season)
+    backToSeasonEvents(season) {
+      this.$router.push('/seasonal/' + season)
     },
-    back() {
-      this.$router.push('/events/allYear')
+    backToEvents() {
+      this.$router.push('/events/')
     },
     goToPoi(poiId) {
       this.$router.push('/details/poi/' + poiId)

@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <div class="text-white sign row justify-content-between">
+    <div class="row justify-content-between text-white sign">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
-            <a @click="backToList()">itineraries/</a>
-            <a>{{name}}/</a>
+            <a @click="backToItineraries()">itineraries/</a>
+            <a>{{ name }}/</a>
           </li>
         </ul>
       </div>
@@ -15,12 +15,13 @@
         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToList()"
+          @click="backToItineraries()"
         >
           See all itineraries
         </button>
       </div>
     </div>
+
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
       <!-- Indicators/dots -->
       <div class="carousel-indicators">
@@ -88,6 +89,7 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
+    
     <div class="m-3 des-div">
       <b> Description: </b>
       <p class="lead">
@@ -136,7 +138,7 @@ export default {
     }
   },
   methods: {
-    backToList() {
+    backToItineraries() {
       this.$router.push('/itineraries')
     },
   },

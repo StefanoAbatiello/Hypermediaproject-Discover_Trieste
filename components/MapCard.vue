@@ -17,7 +17,6 @@ export default {
         if (status !== 'OK' || !results[0]) {
           throw new Error(status);
         }
-
         map.setCenter(results[0].geometry.location);
         map.fitBounds(results[0].geometry.viewport);
         map.setZoom(13);
