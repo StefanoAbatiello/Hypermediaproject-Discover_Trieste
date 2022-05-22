@@ -174,13 +174,27 @@ async function runMainApi() {
     
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
-        const len = (await models.PointOfInterest.findAll()).length
+        const poi = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
+        const itineraryId = poi.itineraryId
+        const pois = await models.PointOfInterest.findAll({ where: { itineraryId} })
+        const relatedPois = []
+        for (const element of pois) {
+            if (element.id != id){
+                relatedPois.push({
+                    name: element.name,
+                    img: element.img,
+                    id: element.id,
+                })
+            }
+        }
         const result = {
-            poi:await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] }),
-            len: len
+            relatedPois,
+            poi,
+            len: (await models.PointOfInterest.findAll()).length
         }
         return res.json(result)
     })
+
 
     // app.get('/service/find/:id', async (req, res) => {
     //     const serviceTypeId = +req.params.id

@@ -48,25 +48,25 @@
         <div class="carousel-item active">
           <img
             :src="img[0]"
-            alt="Los Angeles"
             class="d-block"
-            style="width: 100%"
+            style="height: 23rem"
+          />
+          <nuxt-link :to="`/details/pois/${id}`">
+                <div class="btn text-white btn-details"> {{ name }} </div>
+          </nuxt-link>
+        </div>
+        <div class="carousel-item">
+          <img
+            :src="img[1]"
+            class="d-block"
+            style="style=height: 23rem"
           />
         </div>
         <div class="carousel-item">
           <img
             :src="img[1]"
-            alt="Chicago"
             class="d-block"
-            style="width: 100%"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            :src="img[1]"
-            alt="New York"
-            class="d-block"
-            style="width: 100%"
+            style="style=height: 23rem"
           />
         </div>
       </div>

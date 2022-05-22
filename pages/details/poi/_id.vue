@@ -26,15 +26,108 @@
       <h1>{{ name }}</h1>
       <p>{{ description }}</p>
     </div>
-    <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
-      {{name}} is correlated with the following itinerary: <nuxt-link :to="`/details/itinerary/${itinerary.id}`"><div class="btn text-white btn-details"> <b>{{itinerary.name}}</b> </div></nuxt-link>
-    </div>
+    
     <tab-card
       :access-info="`accessabilty informations are needed here`"
       :time-info="`this poi is always open`"
       :directions="`print a map of the point of interest`"
       :prices="`free ticket to visit this poi`"
     />
+
+    <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
+      {{ name }} is correlated with the following itinerary:
+      <nuxt-link :to="`/details/itinerary/${itinerary.id}`"
+        ><div class="btn text-white btn-details">
+          <b>{{ itinerary.name }}</b>
+        </div></nuxt-link
+      >
+    </div>
+
+    <!-- carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            :src="data.relatedPois[2].img"
+            alt="Los Angeles"
+            class="d-block h-50"
+            style="width: 100%"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <nuxt-link :to="`/details/poi/${data.relatedPois[2].id}`">
+              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[2].name }}</div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            :src="data.relatedPois[0].img"
+            alt="Chicago"
+            class="img-thumbnail"
+            style="width: 100%"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <nuxt-link :to="`/details/poi/${data.relatedPois[0].id}`">
+              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[0].name }}</div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            :src="data.relatedPois[1].img"
+            alt="New York"
+            class="d-block"
+            style="width: 100%"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <nuxt-link :to="`/details/poi/${data.relatedPois[1].id}`">
+              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[1].name }}</div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <!-- end carousel -->
+
     <ul class="pagination">
       <li class="page-item">
         <a class="page-link" @click="previous(id, len)">Previous</a>
@@ -45,8 +138,10 @@
       <li class="page-item">
         <a class="page-link" @click="next(id, len)">Next</a>
       </li>
-    </ul> 
-    <script>console.log({{ itinerary }})</script>
+    </ul>
+    <script>
+      console.log({{ data.relatedPois }})
+    </script>
   </div>
 </template>
 
@@ -62,6 +157,8 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
+    // const di = 1;
+    // const { it } = await $axios.get('/itineraries/' + di)
     // const { relatedItinerary } = await $axios.get('/itineraries/' + data.poi.itineraryId)
     return {
       itinerary: data.poi.itinerary,
@@ -103,15 +200,6 @@ export default {
     },
     backToList() {
       this.$router.push('/pois')
-    },
-    print(context) {
-      if (context === 'description') {
-        document.getElementById('textBox').innerHTML = 'description'
-      }
-      // document.getElementById('textBox').innerHTML = {description}
-    },
-    descriptionPrint(description) {
-      document.getElementById('textBox').innerHTML = description
     },
   },
 }
