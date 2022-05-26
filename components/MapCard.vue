@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import gmapsInit from '~/.nuxt/utils.js';
+import gmapsInit from '~/utils/maputils.js';
 
 export default {
   name: 'MapCard',
