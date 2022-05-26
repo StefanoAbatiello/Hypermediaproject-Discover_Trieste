@@ -5,8 +5,8 @@
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
-            <a @click="backToItineraries()">itineraries/</a>
-            <a>{{ name }}/</a>
+            <a @click="backToItineraries()">Itineraries/</a>
+            <a>{{ name }}</a>
           </li>
         </ul>
       </div>
@@ -48,25 +48,22 @@
         <div class="carousel-item active">
           <img
             :src="img[0]"
-            class="d-block"
-            style="height: 23rem"
+            class="mx-auto d-block"
+            style="height: 23rem;widht: 22rem"
           />
-          <nuxt-link :to="`/details/pois/${id}`">
-                <div class="btn text-white btn-details"> {{ name }} </div>
-          </nuxt-link>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item ">
           <img
             :src="img[1]"
-            class="d-block"
-            style="style=height: 23rem"
+            class="mx-auto d-block"
+            style="height: 23rem;widht: 22rem"
           />
         </div>
         <div class="carousel-item">
           <img
-            :src="img[1]"
-            class="d-block"
-            style="style=height: 23rem"
+            :src="img[2]"
+            class="mx-auto d-block"
+            style="height: 23rem;widht: 22rem"
           />
         </div>
       </div>
@@ -97,7 +94,7 @@
       </p>
     </div>
     <div id="backgr" class="mt-3 text-white rounded backgr">
-      <h1>List of itinerary steps</h1>
+      <h1 class="title">List of itinerary steps</h1>
       <div class="list-fluid list">
         <itinerary-step
           v-for="(poi, poiIndex) of poiList"
@@ -159,6 +156,9 @@ export default {
   margin-left: 8%;
   margin-right: 8%;
 }
+.carousel-inner > .item > img { 
+  margin: 0 auto; 
+} 
 .btn-back {
   position: absolute;
   right: 10%;
