@@ -30,7 +30,7 @@
       </p>
       <button
         type="button"
-        class="btn btn-outline-secondary btn-lg px-4"
+        class="btn btn-outline-secondary btn-lg px-4 mb-4"
         @click="goToPoi(poiId)"
       >
         See the location

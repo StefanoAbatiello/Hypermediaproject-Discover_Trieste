@@ -102,13 +102,11 @@ export default {
 
 .tab-content {
   border: 1px solid rgb(195, 75, 75);
-  padding: 15px;
+  height: 100px;
 }
 
 .tab-content .tab-pane {
   background-color: #fff;
   color: black;
-  min-height: 250px;
-  height: auto;
 }
 </style>

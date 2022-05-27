@@ -6,7 +6,7 @@
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToEvents()">All events/</a>
-            <a>{{seasonName}} events</a>
+            <a>{{ seasonName }} events</a>
           </li>
         </ul>
       </div>
@@ -20,27 +20,30 @@
         </button>
       </div>
     </div>
-    <div class="list">
-      <itinerary-step
-        v-for="(event, eventIndex) of eventList"
-        :id="event.id"
-        :key="`event-index-${eventIndex}`"
-        class="rounded-3 step"
-        :name="event.name"
-        :img="event.img"
-        :description="event.date"
-        :category="`event`"
-      />
+    <div>
+      <div class="row row-line list mt-3">
+        <events-card
+          v-for="(event, eventIndex) of eventList"
+          :id="event.id"
+          class="col"
+          :key="`event-index-${eventIndex}`"
+          :name="event.name"
+          :img="event.img"
+          :category="'event'"
+          :date="event.date"
+          :location="event.locName"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import ItineraryStep from '~/components/ItineraryStep.vue'
+import EventsCard from '~/components/EventsCard.vue'
 export default {
   name: 'EventsPage',
   components: {
-    ItineraryStep,
+    EventsCard,
   },
   // Note: This happens on backend (server) side
   async asyncData({ route, $axios }) {
@@ -71,16 +74,14 @@ export default {
   background: rgb(195, 75, 75);
 }
 .list {
-  margin-left: 8%;
+  margin-left: 12%;
   margin-right: 8%;
-  margin-top: 25px;
 }
-.step:hover {
-  border: 3px solid rgb(195, 75, 75);
-  opacity: 1;
-}
-.step {
-  opacity: 0.8;
+.btn-details {
+  background: white;
+  text-shadow: 4px 4px 4px rgb(195, 75, 75);
+  border: 2px solid rgb(195, 75, 75);
+  font-size: 15px;
 }
 .btn-back {
   position: absolute;
