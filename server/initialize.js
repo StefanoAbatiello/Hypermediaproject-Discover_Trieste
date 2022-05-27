@@ -34,7 +34,7 @@ export default async (models) => {
         },
         {
             name: "Rocca Paolina",
-            img: "https://www.turismo.it/typo3temp/pics/814ae704a1.jpg",
+            img: "https://api.viaggiart.com/resources/images/xl/list/image/173697-27ee75ca22b6ac81ad2a7c8215f76777-1581325965.jpg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
@@ -52,7 +52,7 @@ export default async (models) => {
         },
         {
             name: "Ipogeo dei Volumni",
-            img: "https://www.musei.umbria.beniculturali.it/wp-content/uploads/2018/04/fig-7.jpg",
+            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione p"
         },

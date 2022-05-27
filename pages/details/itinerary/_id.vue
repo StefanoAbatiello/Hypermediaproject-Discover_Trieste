@@ -5,7 +5,7 @@
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
-            <a @click="backToItineraries()">Itineraries/</a>
+            <a @click="backToItineraries()">All itineraries/</a>
             <a>{{ name }}</a>
           </li>
         </ul>
