@@ -53,12 +53,6 @@ export default {
   top: 85%;
   transform: translate(-50%,-50%);
 }
-/* .category-title {
-  font-style: italic;
-  text-align: left;
-  color: white;
-  text-shadow: 3px 3px 4px black;
-} */
 .category-image {
   background-position: center;
   background-repeat: no-repeat;

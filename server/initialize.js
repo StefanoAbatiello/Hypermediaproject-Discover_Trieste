@@ -3,17 +3,16 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Tour tra le chiese perugine",
-            img: ["https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
+            img: ["https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg","https://www.secretumbria.it/wp-content/uploads/2021/03/cattedrale-san-lorenzo-perugia-copertina.jpg","https://2.bp.blogspot.com/-4AOJUCjx3Ys/T4P_5m8D27I/AAAAAAAACic/aEYGjaGvdYQ/s1600/389768_313488005383472_100001668244914_730968_966872066_n.jpg"],
             description: "Viene a scoprire le chiese della città"
         },
         {
             name: "La Perugia sotterranea",
-            img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
-            description: "La città eterna ospita tra i piu importanti reperti del patrimonio dell'umanità"
+            img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
         },
         {
             name: "Scopri il cuore di Perugia",
-            img: ["https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg","https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg"],
+            img: ["https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg","https://www.umbriajournal.com/wp-content/uploads/2019/11/via-appia-centro-storico.jpg","https://www.stellaperugia.it/wp-content/uploads/2022/02/Articity-artigiani-centro-Perugia-1184x592-1-e1644497017360.jpg"],
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },
     ]
@@ -35,7 +34,7 @@ export default async (models) => {
         },
         {
             name: "Rocca Paolina",
-            img: "https://www.turismo.it/typo3temp/pics/814ae704a1.jpg",
+            img: "https://api.viaggiart.com/resources/images/xl/list/image/173697-27ee75ca22b6ac81ad2a7c8215f76777-1581325965.jpg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
@@ -53,7 +52,7 @@ export default async (models) => {
         },
         {
             name: "Ipogeo dei Volumni",
-            img: "https://www.musei.umbria.beniculturali.it/wp-content/uploads/2018/04/fig-7.jpg",
+            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione p"
         },
@@ -220,7 +219,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-        
+            mon:"8-12",
+            tue:"blabla",
+            wed:"bohboh",
+            thur:"yyyyy",
+            fri:"ueee",
+            sat:"ciao",
+            sun:"8-12",
         }, 
         {   
             name: "farmacia2",
@@ -228,7 +233,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hospital",
@@ -236,7 +247,13 @@ export default async (models) => {
             address: "via blabla",
             info: "For emergencies the number to call is 112",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "hotel1",
@@ -244,7 +261,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hotel2",
@@ -252,7 +275,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hotel3",
@@ -260,7 +289,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "restaurant1",
@@ -268,7 +303,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "restaurant2",
@@ -276,7 +317,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "cafe1",
@@ -284,7 +331,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "cafe2",
@@ -292,7 +345,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "club",
@@ -300,7 +359,13 @@ export default async (models) => {
             address: "via blabla",
             info: "open everyday from 8pm to 3am",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "cinema",
@@ -308,7 +373,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
     ]
     //with create is just one element
