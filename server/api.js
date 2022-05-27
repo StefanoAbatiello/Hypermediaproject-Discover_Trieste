@@ -40,13 +40,6 @@ async function initializeDatabaseConnection() {
         address: DataTypes.STRING,
         info: DataTypes.STRING,
         img: DataTypes.STRING,
-        mon:DataTypes.STRING,
-        tue:DataTypes.STRING,
-        wed:DataTypes.STRING,
-        thur:DataTypes.STRING,
-        fri:DataTypes.STRING,
-        sat:DataTypes.STRING,
-        sun:DataTypes.STRING,
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,
@@ -106,14 +99,11 @@ async function runMainApi() {
         const filtered = []
         const result = await models.Event.findAll({where: { season }})
         for (const element of result) {
-            const id=element.poiId
-            const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
                 img: element.img,
                 id: element.id,
                 date: element.date,
-                locName : location.name,
             })
         }
         return res.json(filtered)
@@ -138,14 +128,10 @@ async function runMainApi() {
         const result = await models.Event.findAll()
         const filtered = []
         for (const element of result) {
-            const id=element.poiId
-            const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
                 img: element.img,
                 id: element.id,
-                date: element.date,
-                locName : location.name,
             })
         }
         return res.json(filtered)
