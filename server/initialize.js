@@ -7,8 +7,9 @@ export default async (models) => {
             description: "Viene a scoprire le chiese della città"
         },
         {
-            name: "La Perugia sotterranea",
-            img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
+             name: "La Perugia sotterranea",
+             img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
+             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Scopri il cuore di Perugia",
@@ -39,6 +40,12 @@ export default async (models) => {
             description: "Questa è una descrizione per il punto di interesse"
         },
         {
+            name: "Ipogeo dei Volumni",
+            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
+            itineraryId: itinerary1.id,
+            description: "Questa è una descrizione p"
+        },
+        {
             name: "Pozzo etrusco",
             img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Pozzo_etrusco-_passerella.jpg",
             itineraryId: itinerary1.id,
@@ -51,10 +58,10 @@ export default async (models) => {
             description: "Questa porta è dedicata ad una santa"
         },
         {
-            name: "Ipogeo dei Volumni",
-            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
+            name: "Sala del Conclave",
+            img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
             itineraryId: itinerary1.id,
-            description: "Questa è una descrizione p"
+            description: "Questa è una descrizione per sala del conclave"
         },
         {
             name: "Fontana Maggiore",
@@ -212,7 +219,6 @@ export default async (models) => {
         {
             name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
-            //img: "https://latuaattivita.it/adm/Images/contents/large/ann_vpr266_05.jpg",
             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
