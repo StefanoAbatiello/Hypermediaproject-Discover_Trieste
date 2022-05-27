@@ -133,6 +133,7 @@ export default async (models) => {
     const poi12 = await models.PointOfInterest.create(poiList[12])
     const poi13 = await models.PointOfInterest.create(poiList[13])
     const poi14 = await models.PointOfInterest.create(poiList[14])
+    const poi15 = await models.PointOfInterest.create(poiList[15])
     const eventList = [
         {
             name: "Umbria Jazz",
@@ -142,6 +143,7 @@ export default async (models) => {
             date: " from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib",
             poiId:poi0.id,
         },
+        
         {
             name: "Eurochocolate",
             description: "Details about marathon",
@@ -157,6 +159,22 @@ export default async (models) => {
             season: "Winter",  
             date: " from afg to b",
             poiId:poi0.id,
+        },
+        {
+            name: "Urban Night Trail",
+            description: "Corsa podistica storica di Perugia",
+            img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
+            season: "Summer",
+            date: "dal 10/7 al 21/7",
+            poiId:poi3.id,
+        },
+        {
+            name: "Musica per i borghi",
+            description: "Details about concert",
+            img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
+            season: "Summer",
+            date: "dal 10/7 al 21/7",
+            poiId:poi3.id,
         },
         {
             name: "MercaTezio",
