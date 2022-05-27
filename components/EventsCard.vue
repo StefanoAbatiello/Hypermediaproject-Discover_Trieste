@@ -1,0 +1,101 @@
+<template>
+  <div class="container-fluid card">
+    <div class="card m-1 shadow-lg p-3">
+      <div class="row row-cols-2 justify-content-start">
+        <div class="col-md-auto align-self-center">
+          <img :src="img" class="img rounded card-image" />
+        </div>
+        <div class="col ml-auto">
+          <div class="card-body">
+            <h4 class="card-title">{{ name }}</h4>
+            <div class="card-text"></div>
+            <p>
+              {{ date }}
+            </p>
+            <p>
+              {{ location }}
+            </p>
+            <nuxt-link :to="`/details/${category}/${id}`">
+              <div class="btn text-white btn-details">See more details...</div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'EventsCard',
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+    img: {
+      type: String,
+      required: true,
+    },
+    category: {
+      type: String,
+      required: true,
+    },
+    date: {
+      type: String,
+      required: true,
+    },
+    id: {
+      type: Number,
+      required: true,
+    },
+    location: {
+      type:String,
+      required: true,
+    }
+  },
+  methods: {
+    goToDetails() {
+      this.$router.push(`/details/${this.id}`)
+    },
+  },
+}
+</script>
+
+<style scoped>
+.card{
+  min-width: 400px;
+  min-height: 230px;
+  height: auto;
+  border: transparent;
+  background-color: transparent;
+}
+.card-title {
+  color: rgb(136, 24, 24);
+  text-align: left;
+  font-size: 17px;
+  height: auto;
+}
+.card-text {
+  color: black;
+  text-align: left;
+  height: auto;
+}
+.card-body {
+  min-width: 200px;
+  width: auto;
+  height: auto;
+  margin-left: 1px;
+}
+.btn-details {
+  background-color: rgb(136, 24, 24);
+  opacity: 0.7;
+}
+.btn-details:hover {
+  opacity: 1;
+}
+.card-image {
+  width: 150px;
+  height: 150px;
+}
+</style>

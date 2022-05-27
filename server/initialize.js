@@ -133,7 +133,7 @@ export default async (models) => {
             description: "Details about concert",
             img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
             season: "Winter",
-            date: " from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib",
+            date: "dal 5/7 al 15/7",
             poiId:poi0.id,
         },
         {
@@ -141,7 +141,7 @@ export default async (models) => {
             description: "Details about marathon",
             img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
             season: "Winter",  
-            date: " from ac to b",
+            date: "dal 5/7 al 15/7",
             poiId:poi0.id,
         },
         {
@@ -149,7 +149,7 @@ export default async (models) => {
             description: "Details about ",
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "Winter",  
-            date: " from afg to b",
+            date: "dal 5/7 al 15/7",
             poiId:poi0.id,
         },
         {
@@ -157,7 +157,7 @@ export default async (models) => {
             description: "Mercato equosolidale che si svolge a Perugia in estate ",
             img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
             season: "Summer",  
-            date: " from agtd to b",
+            date: "dal 5/7 al 15/7",
             poiId:poi0.id,
         },
         {
@@ -165,7 +165,7 @@ export default async (models) => {
             description: "Details about ",
             img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
             season: "Summer",
-            date: " from a to bfghgfed",
+            date: "dal 5/7 al 15/7",
             poiId:poi1.id,
         },   
         {
@@ -173,7 +173,7 @@ export default async (models) => {
             description: "Details about this event ",
             img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
             season: "Summer",
-            date: " from a to bfffff",
+            date: "dal 5/7 al 15/7",
             poiId:poi1.id,
         }, 
     ]
