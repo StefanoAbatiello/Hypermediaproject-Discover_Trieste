@@ -3,7 +3,7 @@
      
     <div class="category-body">
       <!-- <h4 class="category-title text-center">{{ name }}</h4> -->
-      <nuxt-link :to="`/details/${category}/${id}`">
+      <nuxt-link :to="`/${category}/${id}`">
         <div class="btn text-white btn-details"> {{ name }} </div>
       </nuxt-link>
     </div>

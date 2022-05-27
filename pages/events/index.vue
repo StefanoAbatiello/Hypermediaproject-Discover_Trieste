@@ -24,7 +24,7 @@
         :key="`event-index-${eventIndex}`"
         :name="event.name"
         :img="event.img"
-        :category="'event'"
+        :category="'events'"
         :date="event.date"
         :location="event.locName"
       />

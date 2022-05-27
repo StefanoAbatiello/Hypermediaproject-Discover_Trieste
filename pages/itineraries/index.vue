@@ -11,7 +11,7 @@
         class="col-sm-2 m-2"
         :name="it.name"
         :img="it.img[0]"
-        :category="'itinerary'"
+        :category="'itineraries'"
       />
     </div>
   </div>

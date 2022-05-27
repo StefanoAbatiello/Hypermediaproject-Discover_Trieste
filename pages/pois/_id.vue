@@ -37,7 +37,7 @@
 
     <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
       {{ name }} is correlated with the following itinerary:
-      <nuxt-link :to="`/details/itinerary/${itinerary.id}`"
+      <nuxt-link :to="`/itineraries/${itinerary.id}`"
         ><div class="btn text-white btn-details">
           <b>{{ itinerary.name }}</b>
         </div></nuxt-link
@@ -75,7 +75,7 @@
             style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[2].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[2].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[2].name }}</div>
             </nuxt-link>
           </div>
@@ -87,7 +87,7 @@
             style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[0].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[0].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[0].name }}</div>
             </nuxt-link>
           </div>
@@ -99,7 +99,7 @@
             style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[1].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[1].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[1].name }}</div>
             </nuxt-link>
           </div>

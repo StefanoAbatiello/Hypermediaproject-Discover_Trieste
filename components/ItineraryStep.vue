@@ -11,7 +11,7 @@
             <p class="card-text">
               {{ description }}
             </p>
-            <nuxt-link :to="`/details/${category}/${id}`">
+            <nuxt-link :to="`/pois/${id}`">
               <div class="btn text-white btn-details">See more details...</div>
             </nuxt-link>
           </div>
@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     goToDetails() {
-      this.$router.push(`/details/${this.id}`)
+      this.$router.push(`/pois/${this.id}`)
     },
   },
 }

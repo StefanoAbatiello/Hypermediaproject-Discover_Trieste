@@ -76,7 +76,7 @@ export default {
       this.$router.push('/events/')
     },
     goToPoi(poiId) {
-      this.$router.push('/details/poi/' + poiId)
+      this.$router.push('/pois/' + poiId)
     },
   },
 }
