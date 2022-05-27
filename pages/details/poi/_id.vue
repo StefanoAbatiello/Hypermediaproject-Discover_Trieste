@@ -3,6 +3,12 @@
     <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToPois()">All pois/</a>
+            <a>{{name}} </a>
+          </li>
+        </ul>
       </div>
 
       <div class="col align-self-center botton-cont">
@@ -66,7 +72,7 @@
           <img
             :src="data.relatedPois[2].img"
             class="img-fluid mx-auto d-block"
-            style="height: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[2].id}`">
@@ -78,7 +84,7 @@
           <img
             :src="data.relatedPois[0].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[0].id}`">
@@ -90,7 +96,7 @@
           <img
             :src="data.relatedPois[1].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[1].id}`">
@@ -120,14 +126,7 @@
     </div>
     <!-- end carousel -->
 
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" @click="previous(id, len)">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" @click="next(id, len)">Next</a>
-      </li>
-    </ul>
+    
     <script>
       console.log({{ data.relatedPois }})
     </script>
@@ -171,24 +170,8 @@ export default {
     // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
-    next(id, len) {
-      if (parseInt(id) === parseInt(len)) {
-        this.$router.push('/details/poi/1')
-      } else {
-        const temp = parseInt(id) + 1
-        this.$router.push('/details/poi/' + temp)
-      }
-    },
-    previous(id, len) {
-      if (parseInt(id) === 1) {
-        this.$router.push('/details/poi/' + len)
-      } else {
-        const temp = parseInt(id) - 1
-        this.$router.push('/details/poi/' + temp)
-      }
-    },
-    backToList() {
-      this.$router.push('/pois')
+    backToPois() {
+      this.$router.push('/pois/')
     },
   },
 }
