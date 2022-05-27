@@ -23,100 +23,100 @@ export default async (models) => {
     const poiList = [
         {
             name: "Abbazia di San Pietro",
-            img: "https://www.floreale.org/wp-content/uploads/2016/09/san-pietro1.jpg",
+            img: "pois/abbaziaSanPietro.jpeg",
             itineraryId: itinerary0.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
             name: "Palazzo dei Priori",
-            img: "https://www.secretumbria.it/wp-content/uploads/2021/05/palazzo-dei-priori-perugia-facciata.jpg",
+            img: "pois/palazzoPriori.jpeg",
             itineraryId: itinerary2.id,
             description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
         },
         {
             name: "Rocca Paolina",
-            img: "https://api.viaggiart.com/resources/images/xl/list/image/173697-27ee75ca22b6ac81ad2a7c8215f76777-1581325965.jpg",
+            img: "pois/roccaPaolina.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
         {
             name: "Ipogeo dei Volumni",
-            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
+            img: "pois/ipogeoDeiVolumni.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione p"
         },
         {
             name: "Pozzo etrusco",
-            img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Pozzo_etrusco-_passerella.jpg",
+            img: "pois/pozzoEtrusco.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per pozzo etrusco"
         },
         {
             name: "Porta Santa Susanna",
-            img: " https://www.visitaperugia.it/wp-content/uploads/2019/02/03-03-10-01-porta-trasimena.jpg",
+            img: "pois/portaSusanna.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta è dedicata ad una santa"
         },
         {
-            name: "Sala del Conclave",
-            img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
-            itineraryId: itinerary1.id,
-            description: "Questa è una descrizione per sala del conclave"
-        },
-        {
             name: "Fontana Maggiore",
-            img: "https://www.turismo.it/typo3temp/pics/fcb41a0141.jpg",
+            img: "pois/fontanaMaggiore.jpeg",
             itineraryId: itinerary2.id,
             description: "Fontana maggiore, la più bella del rione!"
         },
         {
             name: "Porta Sole",
-            img: "https://upload.wikimedia.org/wikipedia/commons/d/da/Arco_di_via_Bontempi_Perugia.jpg",
+            img: "pois/portaSole.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
         {
             name: "Cattedrale di San Lorenzo",
-            img: "https://upload.wikimedia.org/wikipedia/commons/7/74/Catedral_de_perugia.jpg",
+            img: "pois/cattedraleSanLorenzo.jpeg",
             itineraryId: itinerary0.id,
             description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia"
         },
         {
             name: "Arco Etrusco",
-            img: "https://www.exploring-umbria.com/wp-content/uploads/2019/05/PERUGIA-ARCO-ETRUSCO.jpeg",
+            img: "pois/arcoEtrusco.jpeg",
             itineraryId: itinerary0.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
             name: "Porta Crucia",
-            img: " https://mapio.net/images-p/130075040.jpg",
+            img: "pois/portaCrucia.jpeg",
             itineraryId: itinerary0.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
             name: "San Francesco al Prato",
-            img: "https://upload.wikimedia.org/wikipedia/commons/4/4f/09a.sfrancesco.JPG",
+            img: "pois/sanFrancesco.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Porta Marzia",
-            img: "https://www.ansa.it/webimages/img_700/2017/3/8/ee6ff0ce5f491b093cd77e258abf3b54.jpg",
+            img: "pois/portaMarzia.jpeg",
             itineraryId: itinerary2.id,
             description: "Famosissima porta di Perugia"
         },
         {
             name: "Chiesa di San Ercolano",
-            img: "https://www.floreale.org/wp-content/uploads/2016/09/SantErcolano1.jpg",
+            img: "pois/sanErcolano.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Acquedotto medievale",
-            img: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Acquedotto_medievale_%28Perugia%29.jpg",
+            img: "pois/acquedottoMedievale.jpeg",
             itineraryId: itinerary2.id,
             description: "Acquedotto etrusco di Perugia"
         },
+         // {
+        //     name: "Sala del Conclave",
+        //     img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
+        //     itineraryId: itinerary1.id,
+        //     description: "Questa è una descrizione per sala del conclave"
+        // },
     ]
     const poi0 = await models.PointOfInterest.create(poiList[0])
     const poi1 = await models.PointOfInterest.create(poiList[1])
@@ -133,72 +133,67 @@ export default async (models) => {
     const poi12 = await models.PointOfInterest.create(poiList[12])
     const poi13 = await models.PointOfInterest.create(poiList[13])
     const poi14 = await models.PointOfInterest.create(poiList[14])
-    const poi15 = await models.PointOfInterest.create(poiList[15])
     const eventList = [
-        // {
-        //     name: "Umbria Jazz",
-        //     description: "Details about concert",
-        //     img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
-        //     season: "Winter",
-        //     date: "dal 10/7 al 21/7",
-        //     poiId:poi0.id,
-        // },
-
-        // {
-        //     name: "Eurochocolate",
-        //     description: "Details about marathon",
-        //     img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
-        //     season: "Winter",
-        //     date: "dal 10/7 al 21/7",
-        //     poiId:poi0.id,
-        // },
-        // {
-        //     name: "International Journalism Festival",
-        //     description: "Details about ",
-        //     img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
-        //     season: "Winter",
-        //     date: "dal 10/7 al 21/7",
-        //     poiId:poi0.id,
-        // },
-        // {
-        //     name: "Urban Night Trail",
-        //     description: "Corsa podistica storica di Perugia",
-        //     img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
-        //     season: "Summer",
-        //     date: "dal 10/7 al 21/7",
-        //     poiId:poi3.id,
-        // },
-        // {
-        //     name: "Musica per i borghi",
-        //     description: "Details about concert",
-        //     img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
-        //     season: "Summer",
-        //     date: "dal 10/7 al 21/7",
-        //     poiId:poi3.id,
-        // },
+         {
+             name: "Umbria Jazz",
+             description: "Details about concert",
+             img: "events/umbriaJazz.jpeg",
+             season: "Winter",
+             date: "dal 10/7 al 21/7",
+             poiId:poi0.id,
+         },
         {
-            name: "MercaTezio",
-            description: "Mercato equosolidale che si svolge a Perugia in estate ",
-            img: "scissors",
-            // img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
+             name: "Eurochocolate",
+             description: "Details about marathon",
+             img: "events/eurochocolate.jpeg",
+             season: "Winter",
+             date: "dal 10/7 al 21/7",
+             poiId:poi0.id,
+         },
+         {
+             name: "International Journalism Festival",
+             description: "Details about ",
+             img: "events/ijf22.jpeg",
+             season: "Winter",
+             date: "dal 10/7 al 21/7",
+             poiId:poi0.id,
+         },
+         {
+             name: "Festa di San Costanzo",
+             description: "Corsa podistica storica di Perugia",
+             img: "events/sanCostanzo.jpeg",
+             season: "Winter",
+             date: "dal 10/7 al 21/7",
+             poiId:poi3.id,
+         },
+         {
+             name: "Musica per i borghi",
+             description: "Details about concert",
+             img: "events/musicaBorghi.jpeg",
              season: "Summer",
+             date: "dal 10/7 al 21/7",
+             poiId:poi3.id,
+         },
+        {
+            name: "Perugia Flowers Show",
+            description: "alla ricerca dei fiori ",
+            img: "events/flowerShow.jpeg",
+            season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId:poi0.id,
         },
         {
             name: "Umbria che Spacca",
             description: "Details about ",
-            img: "scissors",
-            // img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
+            img: "events/umbriaCheSpacca.jpeg",
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId:poi1.id,
         },
         {
-            name: "Festa di Sant'Antonio Abate",
+            name: "Rally dell'Umbria",
             description: "Details about this event ",
-            img: "scissors",
-            // img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
+            img: "events/rallyUmbria.jpeg",
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId:poi1.id,
@@ -207,28 +202,28 @@ export default async (models) => {
         const servicesList = [
         {
             name: "Medical services",
-            img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
+            img: "services/medical.jpeg",
             description: "Here you can find all the pharmacies, hospital and clinics in the city ",
         },
         {
             name: "Hotel and B&B",
-            img: "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850__480.jpg",
+            img: "services/hotels.jpeg",
             description: "Here you can find the best hotels and B&Bs that this city offers!",
 
         },
         {
             name: "Restaurants",
-            img: "https://zipinventory.com/assets/images/topiccluster/10-restaurant-service-models-1607720498-5934-800x400.png",
+            img: "services/restaurants.jpeg",
             description: "Here you can find the best restaurants to try during your stay",
         },
-        {
-            name: "Cafes",
-            img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
-            description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
+         {
+             name: "Cafes",
+             img: "services/cafes.jpeg",
+             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         },
         {
-            name: "Entertainment ",
-            img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
+            name: "Entertainment",
+            img: "services/entertainment.jpeg",
             description: "Here you can find the best activities in the city",
         },
 

@@ -23,7 +23,7 @@
     </div>
     <div class="container px-0 mt-1 mb-4">
       <div class="image-event text-center">
-        <img class="img rounded ms-2 mt-5" :src="img" />
+        <img class="img rounded ms-2 mt-5" :src="require(`~/assets/${img}`)" />
       </div>
       <p class="lead">
         {{ description }}
