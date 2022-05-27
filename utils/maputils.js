@@ -1,5 +1,5 @@
-// https://markus.oberlehner.net/blog/using-the-google-maps-api-with-vue/
-//src/utils/gmaps.js
+// sito di riferimento: https://markus.oberlehner.net/blog/using-the-google-maps-api-with-vue/
+// src/utils/gmaps.js
 // Your personal API key.
 // Get it here: https://console.cloud.google.com/google/maps-apis
 const API_KEY = 'AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc';
