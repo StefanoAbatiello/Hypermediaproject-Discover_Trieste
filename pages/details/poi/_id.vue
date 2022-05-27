@@ -3,11 +3,6 @@
     <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
-        <ul class="ms-3 breadcrumb">
-          <li class="breadcrumb-item text-white">
-            <a @click="backToList()">AllPoi/</a>
-          </li>
-        </ul>
       </div>
 
       <div class="col align-self-center botton-cont">
@@ -26,7 +21,7 @@
       <h1>{{ name }}</h1>
       <p>{{ description }}</p>
     </div>
-    
+
     <tab-card
       :access-info="`accessabilty informations are needed here`"
       :time-info="`this poi is always open`"
@@ -66,13 +61,12 @@
       </div>
 
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div class="carousel-inner row w-100 mx-auto" role="listbox">
+        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
           <img
             :src="data.relatedPois[2].img"
-            alt="Los Angeles"
-            class="d-block h-50"
-            style="width: 100%"
+            class="img-fluid mx-auto d-block"
+            style="height: 23rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[2].id}`">
@@ -80,12 +74,11 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
           <img
             :src="data.relatedPois[0].img"
-            alt="Chicago"
-            class="img-thumbnail"
-            style="width: 100%"
+            class="img-fluid mx-auto d-block"
+            style="width: 23rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[0].id}`">
@@ -93,12 +86,11 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
           <img
             :src="data.relatedPois[1].img"
-            alt="New York"
-            class="d-block"
-            style="width: 100%"
+            class="img-fluid mx-auto d-block"
+            style="width: 23rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/details/poi/${data.relatedPois[1].id}`">
@@ -131,9 +123,6 @@
     <ul class="pagination">
       <li class="page-item">
         <a class="page-link" @click="previous(id, len)">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" @click="backToList()">Back to All Pois</a>
       </li>
       <li class="page-item">
         <a class="page-link" @click="next(id, len)">Next</a>
