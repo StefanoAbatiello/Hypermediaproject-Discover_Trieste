@@ -1,5 +1,4 @@
 <template>
-  <div class="container-fluid">
     <div class="m-1 shadow p-3 card">
       <div class="row row-cols-2 justify-content-start">
         <div class="col-md-auto align-self-center">
@@ -22,7 +21,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
