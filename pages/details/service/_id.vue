@@ -23,15 +23,13 @@
     </div>
 
     <div class="m-3 des-div">
-      <b> Description: </b>
-      <p class="lead">
+      <h2 class="lead">
         {{ description }}
-      </p>
+      </h2>
     </div>
-    <div class="row mt-3">
+    <div class="mt-3">
       <serviceCard
         v-for="(service, serviceIndex) of serviceList"
-        class="col-sm-2"
         :key="`service-index-${serviceIndex}`"
         :name="service.name"
         :address="service.address" 

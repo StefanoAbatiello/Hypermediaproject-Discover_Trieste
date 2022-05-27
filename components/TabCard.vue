@@ -87,7 +87,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .nav-tabs .nav-item .nav-link {
   background-color: rgb(195, 75, 75);
   opacity: 0.5;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tabTime">
     <ul id="myTab2" class="nav nav-tabs nav-justified" role="tablist">
       <li class="nav-item" role="presentation">
         <button
@@ -65,7 +65,7 @@
 
 <script>
 export default {
-  name: 'TabCardComponent2',
+  name: 'TabCardTimeComponent',
   props: {
     accessInfo: {
       type: String,
@@ -87,7 +87,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+.nav-tabs{
+  width: 100%;
+  /* max-width: 1000px; */
+}
+
 .nav-tabs .nav-item .nav-link {
   background-color: rgb(195, 75, 75);
   opacity: 0.5;
@@ -103,7 +109,9 @@ export default {
 .tab-content {
   border: 1px solid rgb(195, 75, 75);
   padding: 15px; 
-  height: 100px;
+  height: 150px;
+  width: 100%;
+  /* max-width: 1000px; */
 }
 
 .tab-content .tab-pane {
@@ -111,4 +119,7 @@ export default {
   color: black;
   height: 20px;
 } 
+.tabTime{
+  width: 100%;
+}
 </style>
