@@ -1,5 +1,5 @@
 //Here we put all the datas, according to the structure defined in api.js
-export default async (models) => { 
+export default async (models) => {
     const itineraryList = [
         {
             name: "Tour tra le chiese perugine",
@@ -135,101 +135,104 @@ export default async (models) => {
     const poi14 = await models.PointOfInterest.create(poiList[14])
     const poi15 = await models.PointOfInterest.create(poiList[15])
     const eventList = [
-        {
-            name: "Umbria Jazz",
-            description: "Details about concert",
-            img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
-            season: "Winter",
-            date: "dal 10/7 al 21/7",
-            poiId:poi0.id,
-        },
-        
-        {
-            name: "Eurochocolate",
-            description: "Details about marathon",
-            img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
-            season: "Winter",  
-            date: "dal 10/7 al 21/7",
-            poiId:poi0.id,
-        },
-        {
-            name: "International Journalism Festival",
-            description: "Details about ",
-            img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
-            season: "Winter",  
-            date: "dal 10/7 al 21/7",
-            poiId:poi0.id,
-        },
-        {
-            name: "Urban Night Trail",
-            description: "Corsa podistica storica di Perugia",
-            img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
-            season: "Summer",
-            date: "dal 10/7 al 21/7",
-            poiId:poi3.id,
-        },
-        {
-            name: "Musica per i borghi",
-            description: "Details about concert",
-            img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
-            season: "Summer",
-            date: "dal 10/7 al 21/7",
-            poiId:poi3.id,
-        },
+        // {
+        //     name: "Umbria Jazz",
+        //     description: "Details about concert",
+        //     img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
+        //     season: "Winter",
+        //     date: "dal 10/7 al 21/7",
+        //     poiId:poi0.id,
+        // },
+
+        // {
+        //     name: "Eurochocolate",
+        //     description: "Details about marathon",
+        //     img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
+        //     season: "Winter",
+        //     date: "dal 10/7 al 21/7",
+        //     poiId:poi0.id,
+        // },
+        // {
+        //     name: "International Journalism Festival",
+        //     description: "Details about ",
+        //     img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
+        //     season: "Winter",
+        //     date: "dal 10/7 al 21/7",
+        //     poiId:poi0.id,
+        // },
+        // {
+        //     name: "Urban Night Trail",
+        //     description: "Corsa podistica storica di Perugia",
+        //     img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
+        //     season: "Summer",
+        //     date: "dal 10/7 al 21/7",
+        //     poiId:poi3.id,
+        // },
+        // {
+        //     name: "Musica per i borghi",
+        //     description: "Details about concert",
+        //     img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
+        //     season: "Summer",
+        //     date: "dal 10/7 al 21/7",
+        //     poiId:poi3.id,
+        // },
         {
             name: "MercaTezio",
             description: "Mercato equosolidale che si svolge a Perugia in estate ",
-            img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
-            season: "Summer",  
+            img: "scissors",
+            // img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
+             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId:poi0.id,
         },
         {
             name: "Umbria che Spacca",
             description: "Details about ",
-            img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
+            img: "scissors",
+            // img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId:poi1.id,
-        },   
+        },
         {
             name: "Festa di Sant'Antonio Abate",
             description: "Details about this event ",
-            img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
+            img: "scissors",
+            // img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId:poi1.id,
-        }, 
+        },
     ]
         const servicesList = [
         {
             name: "Medical services",
             img: "https://www.assidai.it/wp-content/uploads/2019/05/diritto-salute-italia.jpg",
             description: "Here you can find all the pharmacies, hospital and clinics in the city ",
-        },    
+        },
         {
             name: "Hotel and B&B",
             img: "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850__480.jpg",
             description: "Here you can find the best hotels and B&Bs that this city offers!",
-            
+
         },
         {
             name: "Restaurants",
             img: "https://zipinventory.com/assets/images/topiccluster/10-restaurant-service-models-1607720498-5934-800x400.png",
             description: "Here you can find the best restaurants to try during your stay",
-        }, 
+        },
         {
             name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
-        }, 
+        },
         {
             name: "Entertainment ",
             img: "https://eventcheckbox.com/wp-content/uploads/2017/10/entertainment.jpg",
             description: "Here you can find the best activities in the city",
-        }, 
-        
-    ]   
+        },
+
+    ]
     const type0 = await models.ServiceType.create(servicesList[0])
     const type1 = await models.ServiceType.create(servicesList[1])
     const type2 = await models.ServiceType.create(servicesList[2])
@@ -237,16 +240,16 @@ export default async (models) => {
     const type4 = await models.ServiceType.create(servicesList[4])
 
     const singleServiceList = [
-        {   
+        {
             name: "farmacia1",
             serviceTypeId: type0.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            
-        }, 
-        {   
+
+        },
+        {
             name: "farmacia2",
             serviceTypeId: type0.id,
             address: "via blabla",
@@ -254,96 +257,96 @@ export default async (models) => {
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
 
-        }, 
-        {   
+        },
+        {
             name: "hospital",
             serviceTypeId: type0.id,
             address: "via blabla",
             description:"",
             time: "For emergencies the number to call is 112",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            
+
         },
-        {   
+        {
             name: "hotel1",
             serviceTypeId: type1.id,
             address: "via blabla",
             description:"",
             time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-           
-        }, 
-        {   
+
+        },
+        {
             name: "hotel2",
             serviceTypeId: type1.id,
             address: "via blabla",
             description:"",
             time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-          
-        }, 
-        {   
+
+        },
+        {
             name: "hotel3",
             serviceTypeId: type1.id,
             address: "via blabla",
             description:"",
             time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            
+
         },
-        {   
+        {
             name: "restaurant1",
             serviceTypeId: type2.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-           
-        }, 
-        {   
+
+        },
+        {
             name: "restaurant2",
             serviceTypeId: type2.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-          
+
         },
-        {   
+        {
             name: "cafe1",
             serviceTypeId: type3.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-           
-        }, 
-        {   
+
+        },
+        {
             name: "cafe2",
             serviceTypeId: type3.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-           
+
         },
-        {   
+        {
             name: "club",
             serviceTypeId: type4.id,
             address: "via blabla",
             description:"",
             time: "open everyday from 8pm to 3am",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-           
-        }, 
-        {   
+
+        },
+        {
             name: "cinema",
             serviceTypeId: type4.id,
             address: "via blabla",
             description:"",
             time: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-          
+
         },
     ]
     //with create is just one element
