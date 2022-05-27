@@ -6,11 +6,11 @@
           id="tab2"
           class="nav-link active"
           data-bs-toggle="tab"
-          data-bs-target="#accessibility2"
+          data-bs-target="#description"
           type="button"
           role="tab"
         >
-          Accessibility
+          Info
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -18,11 +18,11 @@
           id="tab2"
           class="nav-link"
           data-bs-toggle="tab"
-          data-bs-target="#time2"
+          data-bs-target="#time"
           type="button"
           role="tab"
         >
-          time
+          Time
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -30,35 +30,22 @@
           id="tab2"
           class="nav-link"
           data-bs-toggle="tab"
-          data-bs-target="#howToReach2"
+          data-bs-target="#address"
           type="button"
           role="tab"
         >
-          how to reach
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          id="tab2"
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#prices2"
-          type="button"
-          role="tab"
-        >
-          prices
+          Address
         </button>
       </li>
     </ul>
     <div id="myTabContent2" class="tab-content">
-      <div id="accessibility2" class="tab-pane fade show active" style="height: 50px" role="tabpanel">
-        {{ accessInfo }}
+      <div id="description" class="tab-pane fade show active" style="height: 50px" role="tabpanel">
+        {{ description }}
       </div>
-      <div id="time2" class="tab-pane fade" style="height: 50px" role="tabpanel">{{ timeInfo }}</div>
-      <div id="howToReach2" class="tab-pane fade" style="height: 50px" role="tabpanel">
-        {{ directions }}
+      <div id="time" class="tab-pane fade" style="height: 50px" role="tabpanel">{{ time }}</div>
+      <div id="address" class="tab-pane fade" style="height: 50px" role="tabpanel">
+        {{ address }}
       </div>
-      <div id="prices2" class="tab-pane fade" style="height: 50px" role="tabpanel">{{ prices }}</div> 
     </div>
   </div>
 </template>
@@ -67,19 +54,15 @@
 export default {
   name: 'TabCardTimeComponent',
   props: {
-    accessInfo: {
+    description: {
       type: String,
       required: true,
     },
-    timeInfo: {
+    time: {
       type: String,
       required: true,
     },
-    directions: {
-      type: String,
-      required: true,
-    },
-    prices: {
+    address: {
       type: String,
       required: true,
     },

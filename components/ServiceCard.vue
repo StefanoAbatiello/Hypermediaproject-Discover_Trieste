@@ -12,31 +12,16 @@
         <div class=" tab col-md-8 pt-5">
           <div class="card-text p-2 pt-3">
             <h5>Useful info:</h5>
-            <tab-card-time />
+            <tab-card-time 
+            :description="description"
+            :time="time"
+            :address="address"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- 
-  <div class="card-fluid" style="width: auto">
-    <div class="card-body">
-      <h3 class="card-title text-danger">{{ name }}</h3>
-      <h5>Address:</h5>
-          <p>
-            {{ address }}
-          </p>
-        <div class="d-flex justify-content-between">
-        <img :src="img" class="img rounded card-image p-0 mr-0" />
-        <div class="card-text-fluid p-4 pt-0">
-          <h5>Useful info:</h5>
-         <tab-card-time 
-        />
-        </div>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script>
@@ -55,7 +40,11 @@ export default {
       type: String,
       required: true,
     },
-    info: {
+    description:{
+      type: String,
+      required: true,
+    },
+    time: {
       type: String,
       required: true,
     },

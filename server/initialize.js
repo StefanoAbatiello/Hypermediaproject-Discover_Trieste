@@ -241,7 +241,8 @@ export default async (models) => {
             name: "farmacia1",
             serviceTypeId: type0.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
             
         }, 
@@ -249,7 +250,8 @@ export default async (models) => {
             name: "farmacia2",
             serviceTypeId: type0.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
 
         }, 
@@ -257,7 +259,8 @@ export default async (models) => {
             name: "hospital",
             serviceTypeId: type0.id,
             address: "via blabla",
-            info: "For emergencies the number to call is 112",
+            description:"",
+            time: "For emergencies the number to call is 112",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
             
         },
@@ -265,7 +268,8 @@ export default async (models) => {
             name: "hotel1",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "reception open everyday  from 8am to 11pm",
+            description:"",
+            time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
            
         }, 
@@ -273,7 +277,8 @@ export default async (models) => {
             name: "hotel2",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "reception open everyday  from 8am to 11pm",
+            description:"",
+            time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
           
         }, 
@@ -281,7 +286,8 @@ export default async (models) => {
             name: "hotel3",
             serviceTypeId: type1.id,
             address: "via blabla",
-            info: "reception open everyday  from 8am to 11pm",
+            description:"",
+            time: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
             
         },
@@ -289,7 +295,8 @@ export default async (models) => {
             name: "restaurant1",
             serviceTypeId: type2.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
            
         }, 
@@ -297,7 +304,8 @@ export default async (models) => {
             name: "restaurant2",
             serviceTypeId: type2.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
           
         },
@@ -305,7 +313,8 @@ export default async (models) => {
             name: "cafe1",
             serviceTypeId: type3.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
            
         }, 
@@ -313,7 +322,8 @@ export default async (models) => {
             name: "cafe2",
             serviceTypeId: type3.id,
             address: "via blabla",
-            info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
            
         },
@@ -321,7 +331,8 @@ export default async (models) => {
             name: "club",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "open everyday from 8pm to 3am",
+            description:"",
+            time: "open everyday from 8pm to 3am",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
            
         }, 
@@ -329,7 +340,8 @@ export default async (models) => {
             name: "cinema",
             serviceTypeId: type4.id,
             address: "via blabla",
-            info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
+            description:"",
+            time: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
           
         },

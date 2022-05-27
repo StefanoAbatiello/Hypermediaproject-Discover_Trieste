@@ -32,8 +32,9 @@
         v-for="(service, serviceIndex) of serviceList"
         :key="`service-index-${serviceIndex}`"
         :name="service.name"
-        :address="service.address" 
-        :info="service.info"
+        :address="service.address"
+        :description="service.description" 
+        :time="service.time"
         :img="service.img"
       />
     </div>
