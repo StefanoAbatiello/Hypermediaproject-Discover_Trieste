@@ -185,6 +185,8 @@ async function runMainApi() {
         const poi = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
         const itineraryId = poi.itineraryId
         const pois = await models.PointOfInterest.findAll({ where: { itineraryId} })
+        const poiId = id;
+        const relatedEvent = await models.Event.findOne({ where: { poiId } })
         const relatedPois = []
         for (const element of pois) {
             if (element.id != id){
@@ -198,7 +200,7 @@ async function runMainApi() {
         const result = {
             relatedPois,
             poi,
-            len: (await models.PointOfInterest.findAll()).length
+            relatedEvent,
         }
         return res.json(result)
     })

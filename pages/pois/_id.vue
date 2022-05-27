@@ -6,7 +6,7 @@
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToPois()">All pois/</a>
-            <a>{{name}} </a>
+            <a>{{ name }} </a>
           </li>
         </ul>
       </div>
@@ -42,6 +42,14 @@
           <b>{{ itinerary.name }}</b>
         </div></nuxt-link
       >
+      <div v-if="data.relatedEvent !== null">
+        and it is host of
+      <nuxt-link :to="`/events/${data.relatedEvent.id}`">
+        <div class="btn text-white btn-details">
+          <b >{{ data.relatedEvent.name }}</b>
+        </div></nuxt-link
+      >
+      </div>
     </div>
 
     <!-- carousel -->
@@ -72,11 +80,13 @@
           <img
             :src="data.relatedPois[2].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height:auto"
+            style="width: 23rem; height: auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[2].id}`">
-              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[2].name }}</div>
+              <div class="btn btn-danger text-white btn-lg">
+                {{ data.relatedPois[2].name }}
+              </div>
             </nuxt-link>
           </div>
         </div>
@@ -84,11 +94,13 @@
           <img
             :src="data.relatedPois[0].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height:auto"
+            style="width: 23rem; height: auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[0].id}`">
-              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[0].name }}</div>
+              <div class="btn btn-danger text-white btn-lg">
+                {{ data.relatedPois[0].name }}
+              </div>
             </nuxt-link>
           </div>
         </div>
@@ -96,11 +108,13 @@
           <img
             :src="data.relatedPois[1].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height:auto"
+            style="width: 23rem; height: auto"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[1].id}`">
-              <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[1].name }}</div>
+              <div class="btn btn-danger text-white btn-lg">
+                {{ data.relatedPois[1].name }}
+              </div>
             </nuxt-link>
           </div>
         </div>
@@ -126,9 +140,8 @@
     </div>
     <!-- end carousel -->
 
-    
     <script>
-      console.log({{ data.relatedPois }})
+      console.log({{ data }})
     </script>
   </div>
 </template>
@@ -150,7 +163,6 @@ export default {
     // const { relatedItinerary } = await $axios.get('/itineraries/' + data.poi.itineraryId)
     return {
       itinerary: data.poi.itinerary,
-      len: data.len,
       id,
       name: data.poi.name,
       img: data.poi.img,
