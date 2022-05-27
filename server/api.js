@@ -100,11 +100,14 @@ async function runMainApi() {
         const filtered = []
         const result = await models.Event.findAll({where: { season }})
         for (const element of result) {
+            const id=element.poiId
+            const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
                 img: element.img,
                 id: element.id,
                 date: element.date,
+                locName : location.name,
             })
         }
         return res.json(filtered)
@@ -129,10 +132,14 @@ async function runMainApi() {
         const result = await models.Event.findAll()
         const filtered = []
         for (const element of result) {
+            const id=element.poiId
+            const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
                 img: element.img,
                 id: element.id,
+                date: element.date,
+                locName : location.name,
             })
         }
         return res.json(filtered)

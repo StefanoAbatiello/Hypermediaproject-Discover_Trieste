@@ -14,7 +14,7 @@
             <p>
               {{ location }}
             </p>
-            <nuxt-link :to="`/details/${category}/${id}`">
+            <nuxt-link :to="`/${category}/${id}`">
               <div class="btn text-white btn-details">See more details...</div>
             </nuxt-link>
           </div>

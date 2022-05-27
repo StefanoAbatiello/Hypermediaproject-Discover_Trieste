@@ -41,15 +41,15 @@ export default {
         },
         {
           name: 'Events',
-          path: '/events',
+          path: '/events/',
         },
         {
           name: 'Point of Interest',
-          path: '/pois',
+          path: '/pois/',
         },
         {
           name: 'Itineraries',
-          path: '/itineraries',
+          path: '/itineraries/',
         },
          {
           name: 'Services',

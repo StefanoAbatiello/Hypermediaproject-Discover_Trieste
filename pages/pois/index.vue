@@ -11,7 +11,7 @@
         class="col-sm-2 m-2"
         :name="poi.name"
         :img="poi.img"
-        :category="'poi'"
+        :category="'pois'"
       />
     </div>
   </div>

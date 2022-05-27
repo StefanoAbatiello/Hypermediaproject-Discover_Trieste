@@ -11,7 +11,7 @@
         class="col-sm-2 m-2"
         :name="services.name"
         :img="services.img"
-        :category="'service'"
+        :category="'services'"
       />
     </div>
   </div>

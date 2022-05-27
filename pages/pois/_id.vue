@@ -3,6 +3,12 @@
     <div class="text-white sign row justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
+        <ul class="ms-3 breadcrumb">
+          <li class="breadcrumb-item text-white">
+            <a @click="backToPois()">All pois/</a>
+            <a>{{name}} </a>
+          </li>
+        </ul>
       </div>
 
       <div class="col align-self-center botton-cont">
@@ -31,7 +37,7 @@
 
     <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
       {{ name }} is correlated with the following itinerary:
-      <nuxt-link :to="`/details/itinerary/${itinerary.id}`"
+      <nuxt-link :to="`/itineraries/${itinerary.id}`"
         ><div class="btn text-white btn-details">
           <b>{{ itinerary.name }}</b>
         </div></nuxt-link
@@ -66,10 +72,10 @@
           <img
             :src="data.relatedPois[2].img"
             class="img-fluid mx-auto d-block"
-            style="height: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[2].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[2].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[2].name }}</div>
             </nuxt-link>
           </div>
@@ -78,10 +84,10 @@
           <img
             :src="data.relatedPois[0].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[0].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[0].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[0].name }}</div>
             </nuxt-link>
           </div>
@@ -90,10 +96,10 @@
           <img
             :src="data.relatedPois[1].img"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem"
+            style="width: 23rem; height:auto"
           />
           <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/details/poi/${data.relatedPois[1].id}`">
+            <nuxt-link :to="`/pois/${data.relatedPois[1].id}`">
               <div class="btn btn-danger text-white btn-lg">{{ data.relatedPois[1].name }}</div>
             </nuxt-link>
           </div>
@@ -120,14 +126,7 @@
     </div>
     <!-- end carousel -->
 
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" @click="previous(id, len)">Previous</a>
-      </li>
-      <li class="page-item">
-        <a class="page-link" @click="next(id, len)">Next</a>
-      </li>
-    </ul>
+    
     <script>
       console.log({{ data.relatedPois }})
     </script>
@@ -171,24 +170,8 @@ export default {
     // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
-    next(id, len) {
-      if (parseInt(id) === parseInt(len)) {
-        this.$router.push('/details/poi/1')
-      } else {
-        const temp = parseInt(id) + 1
-        this.$router.push('/details/poi/' + temp)
-      }
-    },
-    previous(id, len) {
-      if (parseInt(id) === 1) {
-        this.$router.push('/details/poi/' + len)
-      } else {
-        const temp = parseInt(id) - 1
-        this.$router.push('/details/poi/' + temp)
-      }
-    },
-    backToList() {
-      this.$router.push('/pois')
+    backToPois() {
+      this.$router.push('/pois/')
     },
   },
 }
