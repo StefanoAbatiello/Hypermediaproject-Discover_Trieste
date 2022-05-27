@@ -7,8 +7,9 @@ export default async (models) => {
             description: "Viene a scoprire le chiese della città"
         },
         {
-            name: "La Perugia sotterranea",
-            img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
+             name: "La Perugia sotterranea",
+             img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
+             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Scopri il cuore di Perugia",
@@ -39,6 +40,12 @@ export default async (models) => {
             description: "Questa è una descrizione per il punto di interesse"
         },
         {
+            name: "Ipogeo dei Volumni",
+            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
+            itineraryId: itinerary1.id,
+            description: "Questa è una descrizione p"
+        },
+        {
             name: "Pozzo etrusco",
             img: "https://upload.wikimedia.org/wikipedia/commons/2/23/Pozzo_etrusco-_passerella.jpg",
             itineraryId: itinerary1.id,
@@ -51,10 +58,10 @@ export default async (models) => {
             description: "Questa porta è dedicata ad una santa"
         },
         {
-            name: "Ipogeo dei Volumni",
-            img: "https://www.viaggiatricecuriosa.it/wp-content/uploads/2018/05/Ipogeo-volumni-urna-Arnth-velimnas-aules.jpg",
+            name: "Sala del Conclave",
+            img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
             itineraryId: itinerary1.id,
-            description: "Questa è una descrizione p"
+            description: "Questa è una descrizione per sala del conclave"
         },
         {
             name: "Fontana Maggiore",
@@ -132,55 +139,39 @@ export default async (models) => {
             description: "Details about concert",
             img: "https://www.umbriajazz.it/wp-content/uploads/2020/04/Umbria-Jazz-ArenaS.Giuliana-Varie-07140780.jpg",
             season: "Winter",
-            date: "dal 5/7 al 15/7",
+            date: " from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib from a to b ajbbali aufbslhbv iòsebflsjbdpi u Hiebfipubd òskejbfiu kebfiuag ib",
             poiId:poi0.id,
-        },
-        {
-            name: "Musica per i borghi",
-            description: "Details about concert",
-            img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
-            season: "Summer",
-            date: "dal 10/7 al 21/7",
-            poiId:poi3.id,
         },
         {
             name: "Eurochocolate",
             description: "Details about marathon",
             img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
             season: "Winter",  
-            date: "dal 5/7 al 15/7",
-            poiId:poi2.id,
+            date: " from ac to b",
+            poiId:poi0.id,
         },
         {
             name: "International Journalism Festival",
             description: "Details about ",
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "Winter",  
-            date: "dal 5/7 al 15/7",
-            poiId:poi5.id,
+            date: " from afg to b",
+            poiId:poi0.id,
         },
         {
             name: "MercaTezio",
             description: "Mercato equosolidale che si svolge a Perugia in estate ",
             img: "https://cdn.stayhappening.com/events5/banners/95788b32581d804b900e3fbb31ec1e5789c34a83de757e6b9a010628e15dad90-rimg-w526-h264-gmir.jpg?v=1620422073",
             season: "Summer",  
-            date: "dal 5/7 al 15/7",
+            date: " from agtd to b",
             poiId:poi0.id,
-        },
-        {
-            name: "Urban Night Trail",
-            description: "Corsa podistica storica di Perugia",
-            img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
-            season: "Summer",
-            date: "dal 10/7 al 21/7",
-            poiId:poi3.id,
         },
         {
             name: "Umbria che Spacca",
             description: "Details about ",
             img: "https://perugiacomunica.comune.perugia.it/wp-content/uploads/2022/02/UCS22Stampa.jpg",
             season: "Summer",
-            date: "dal 5/7 al 15/7",
+            date: " from a to bfghgfed",
             poiId:poi1.id,
         },   
         {
@@ -188,7 +179,7 @@ export default async (models) => {
             description: "Details about this event ",
             img: "https://www.umbriatourism.it/documents/20126/4764779/imgSantantonioAbate2022-1024x1024.jpg/1d131ac2-66a9-74bc-a2ff-3d51387a750f",
             season: "Summer",
-            date: "dal 5/7 al 15/7",
+            date: " from a to bfffff",
             poiId:poi1.id,
         }, 
     ]
@@ -212,7 +203,6 @@ export default async (models) => {
         {
             name: "Cafes",
             img: "https://saveatrain-12e85.kxcdn.com/blog/wp-content/uploads/2020/01/bar-vom-eingang-aus.jpg",
-            //img: "https://latuaattivita.it/adm/Images/contents/large/ann_vpr266_05.jpg",
             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         }, 
         {
@@ -235,13 +225,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"blabla",
-            wed:"bohboh",
-            thur:"yyyyy",
-            fri:"ueee",
-            sat:"ciao",
-            sun:"8-12",
+            
         }, 
         {   
             name: "farmacia2",
@@ -249,13 +233,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+
         }, 
         {   
             name: "hospital",
@@ -263,13 +241,7 @@ export default async (models) => {
             address: "via blabla",
             info: "For emergencies the number to call is 112",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+            
         },
         {   
             name: "hotel1",
@@ -277,13 +249,7 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+           
         }, 
         {   
             name: "hotel2",
@@ -291,13 +257,7 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+          
         }, 
         {   
             name: "hotel3",
@@ -305,13 +265,7 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+            
         },
         {   
             name: "restaurant1",
@@ -319,13 +273,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+           
         }, 
         {   
             name: "restaurant2",
@@ -333,13 +281,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+          
         },
         {   
             name: "cafe1",
@@ -347,13 +289,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+           
         }, 
         {   
             name: "cafe2",
@@ -361,13 +297,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+           
         },
         {   
             name: "club",
@@ -375,13 +305,7 @@ export default async (models) => {
             address: "via blabla",
             info: "open everyday from 8pm to 3am",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+           
         }, 
         {   
             name: "cinema",
@@ -389,13 +313,7 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-            mon:"8-12",
-            tue:"8-12",
-            wed:"8-12",
-            thur:"8-12",
-            fri:"8-12",
-            sat:"8-12",
-            sun:"8-12",
+          
         },
     ]
     //with create is just one element
