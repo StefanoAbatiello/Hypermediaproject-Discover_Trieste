@@ -7,20 +7,20 @@
       Filter by season:
       <div class="filter mb-1">
         <nuxt-link :to="`/seasonal/Summer`" class="col">
-          <div class="btn text-danger btn-details w-100">summer</div>
+          <div class="btn text-danger btn-details w-100"><b>summer</b></div>
         </nuxt-link>
       </div>
       <div class="filter mt-1">
         <nuxt-link :to="`/seasonal/Winter`" class="col">
-          <div class="btn text-danger btn-details w-100">winter</div>
+          <div class="btn text-danger btn-details w-100"><b>winter</b></div>
         </nuxt-link>
       </div>
     </div>
-    <div class="row row-line list">
+    <div class="row list justify-content-start">
       <events-card
         v-for="(event, eventIndex) of eventList"
         :id="event.id"
-        class="col"
+        class="col event"
         :key="`event-index-${eventIndex}`"
         :name="event.name"
         :img="event.img"
@@ -53,10 +53,6 @@ export default {
 .title {
   margin-left: 10px;
 }
-.row-line {
-  display: flex;
-  justify-content: center;
-}
 .sign {
   background: rgb(195, 75, 75);
 }
@@ -66,7 +62,6 @@ export default {
 }
 .btn-details {
   background: white;
-  text-shadow: 4px 4px 4px rgb(195, 75, 75);
   border: 2px solid rgb(195, 75, 75);
   font-size: 15px;
 }
@@ -80,5 +75,8 @@ export default {
 }
 .filter:hover {
   opacity: 1;
+}
+.event {
+  max-width: 430px;
 }
 </style>

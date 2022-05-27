@@ -40,13 +40,6 @@ async function initializeDatabaseConnection() {
         address: DataTypes.STRING,
         info: DataTypes.STRING,
         img: DataTypes.STRING,
-        mon:DataTypes.STRING,
-        tue:DataTypes.STRING,
-        wed:DataTypes.STRING,
-        thur:DataTypes.STRING,
-        fri:DataTypes.STRING,
-        sat:DataTypes.STRING,
-        sun:DataTypes.STRING,
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,

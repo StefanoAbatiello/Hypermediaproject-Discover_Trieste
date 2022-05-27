@@ -1,29 +1,42 @@
 <template>
-  <div class="serviceCard" style="width: auto">
-    <div class="card-body">
-      <h5 class="card-title text-danger">{{ name }}</h5>
-      <!-- <div class="d-flex justify-content-between"> -->
-        <img :src="img" class="img rounded card-image p-0 mr-0" />
-        <div class="card-text p-4 pt-0">
-          <h5>Address:</h5>
+  <div class="container-fluid mb-2">
+    <div class="card m-1 shadow ps-2 pe-2 pb-2">
+      <div class=" d-flex justify-content-between">
+        <div class=" card-body">
+          <h3 class="card-title text-danger">{{ name }}</h3>
           <p>
             {{ address }}
           </p>
-          <h5>Useful info and timetable:</h5>
+          <img :src="img" class="img rounded card-image p-0 mr-0" />
         </div>
-        <div> <tab-card-time 
-        :monday="mon"
-        :tuesday="tue"
-        :wednesday="wed"
-        :thursday="thur"
-        :friday="fri"
-        :saturday="sat"
-        :sunday="sun"
+        <div class=" tab col-md-8 pt-5">
+          <div class="card-text p-2 pt-3">
+            <h5>Useful info:</h5>
+            <tab-card-time />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+  <div class="card-fluid" style="width: auto">
+    <div class="card-body">
+      <h3 class="card-title text-danger">{{ name }}</h3>
+      <h5>Address:</h5>
+          <p>
+            {{ address }}
+          </p>
+        <div class="d-flex justify-content-between">
+        <img :src="img" class="img rounded card-image p-0 mr-0" />
+        <div class="card-text-fluid p-4 pt-0">
+          <h5>Useful info:</h5>
+         <tab-card-time 
         />
         </div>
       </div>
     </div>
-  <!-- </div> -->
+  </div> -->
 </template>
 
 <script>
@@ -34,7 +47,7 @@ export default {
     TabCardTime,
   },
   props: {
-   name: {
+    name: {
       type: String,
       required: true,
     },
@@ -55,17 +68,18 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  border: 2px solid rgb(195, 75, 75);
+.card-body{
+max-width: 400px;
 }
 .card-text{
-  width:400px;
+  width: 100%;
 }
 .card-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px;
+  max-height: 250px;
+  height: auto;
   border: 2px solid rgb(195, 75, 75);
+}  
+.card{
+  min-width: 640px;
 }
 </style>
