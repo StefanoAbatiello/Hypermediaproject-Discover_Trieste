@@ -40,6 +40,13 @@ async function initializeDatabaseConnection() {
         address: DataTypes.STRING,
         info: DataTypes.STRING,
         img: DataTypes.STRING,
+        mon:DataTypes.STRING,
+        tue:DataTypes.STRING,
+        wed:DataTypes.STRING,
+        thur:DataTypes.STRING,
+        fri:DataTypes.STRING,
+        sat:DataTypes.STRING,
+        sun:DataTypes.STRING,
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,
@@ -213,7 +220,6 @@ async function runMainApi() {
     app.get("/services", async (req, res) => {
         const result = await models.ServiceType.findAll()
         const filtered = []
-        // aggiungo gli elementi dell'oggetto che vado a recuperare dal db, in modo da recuperare solo i dettagli che mi servono e ridurre la pesantezza
         for (const element of result) {
             filtered.push({
                 name: element.name,

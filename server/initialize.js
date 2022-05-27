@@ -220,7 +220,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-        
+            mon:"8-12",
+            tue:"blabla",
+            wed:"bohboh",
+            thur:"yyyyy",
+            fri:"ueee",
+            sat:"ciao",
+            sun:"8-12",
         }, 
         {   
             name: "farmacia2",
@@ -228,7 +234,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hospital",
@@ -236,7 +248,13 @@ export default async (models) => {
             address: "via blabla",
             info: "For emergencies the number to call is 112",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "hotel1",
@@ -244,7 +262,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hotel2",
@@ -252,7 +276,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "hotel3",
@@ -260,7 +290,13 @@ export default async (models) => {
             address: "via blabla",
             info: "reception open everyday  from 8am to 11pm",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "restaurant1",
@@ -268,7 +304,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "restaurant2",
@@ -276,7 +318,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "cafe1",
@@ -284,7 +332,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "cafe2",
@@ -292,7 +346,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
         {   
             name: "club",
@@ -300,7 +360,13 @@ export default async (models) => {
             address: "via blabla",
             info: "open everyday from 8pm to 3am",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         }, 
         {   
             name: "cinema",
@@ -308,7 +374,13 @@ export default async (models) => {
             address: "via blabla",
             info: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
             img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            mon:"8-12",
+            tue:"8-12",
+            wed:"8-12",
+            thur:"8-12",
+            fri:"8-12",
+            sat:"8-12",
+            sun:"8-12",
         },
     ]
     //with create is just one element
