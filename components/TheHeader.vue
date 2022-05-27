@@ -53,7 +53,7 @@ export default {
         },
          {
           name: 'Services',
-          path: '/services',
+          path: '/services/',
         },
          {
           name: 'About',
