@@ -44,7 +44,7 @@
       </div>
 
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
+      <div class="carousel-inner mt-2">
         <div class="carousel-item active">
           <img
             :src="img[0]"
@@ -93,9 +93,9 @@
         {{ description }}
       </p>
     </div>
-    <div id="backgr" class="mt-3 text-white rounded backgr">
+    <div id="backgr" class="text-white rounded backgr">
       <h1 class="title">List of itinerary steps</h1>
-      <div class="list-fluid list">
+      <div class="list-fluid mt-1 list">
         <itinerary-step
           v-for="(poi, poiIndex) of poiList"
           :id="poi.id"

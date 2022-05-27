@@ -136,12 +136,20 @@ export default async (models) => {
             poiId:poi0.id,
         },
         {
+            name: "Musica per i borghi",
+            description: "Details about concert",
+            img: "https://www.musicaperiborghi.it/wp-content/uploads/2022/05/Elisa-Marsciano-18-Luglio.jpg",
+            season: "Summer",
+            date: "dal 10/7 al 21/7",
+            poiId:poi3.id,
+        },
+        {
             name: "Eurochocolate",
             description: "Details about marathon",
             img: "https://www.eurochocolate.com/perugia2022/assets/1920_perugia2022.jpg",
             season: "Winter",  
             date: "dal 5/7 al 15/7",
-            poiId:poi0.id,
+            poiId:poi2.id,
         },
         {
             name: "International Journalism Festival",
@@ -149,7 +157,7 @@ export default async (models) => {
             img: "https://www.visitaumbria.com/wp-content/uploads/2021/06/Internetional-Journalism-Festival-1.jpg",
             season: "Winter",  
             date: "dal 5/7 al 15/7",
-            poiId:poi0.id,
+            poiId:poi5.id,
         },
         {
             name: "MercaTezio",
@@ -158,6 +166,14 @@ export default async (models) => {
             season: "Summer",  
             date: "dal 5/7 al 15/7",
             poiId:poi0.id,
+        },
+        {
+            name: "Urban Night Trail",
+            description: "Corsa podistica storica di Perugia",
+            img: "https://citynews-perugiatoday.stgy.ovh/~media/horizontal-mid/62962969971768/perugia-urban-night-trail_repertorio-2.jpeg",
+            season: "Summer",
+            date: "dal 10/7 al 21/7",
+            poiId:poi3.id,
         },
         {
             name: "Umbria che Spacca",

@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid card">
-    <div class="card m-1 shadow-lg p-3">
+  <div class="container-fluid">
+    <div class="m-1 shadow p-3 card">
       <div class="row row-cols-2 justify-content-start">
         <div class="col-md-auto align-self-center">
           <img :src="img" class="img rounded card-image" />
@@ -69,6 +69,9 @@ export default {
   height: auto;
   border: transparent;
   background-color: transparent;
+}
+.card:hover {
+  border: 3px solid rgb(195, 75, 75);
 }
 .card-title {
   color: rgb(136, 24, 24);
