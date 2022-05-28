@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mb-4 mt-1">
+  <div class="container-fluid px-0 mb-4 mt-1 ">
 
     <div class="row justify-content-between text-white sign">
       <div class="col">
@@ -23,14 +23,15 @@
     </div>
 
     <div class="m-3 des-div">
-      <h2 class="lead">
+      <p class="description lead p-2">
         {{ description }}
-      </h2>
+      </p>
     </div>
     <div class="mt-3">
       <serviceCard
         v-for="(service, serviceIndex) of serviceList"
         :key="`service-index-${serviceIndex}`"
+        :id="service.id"
         :name="service.name"
         :address="service.address"
         :description="service.description" 
@@ -87,6 +88,10 @@ export default {
 }
 .title {
   margin-left: 10px;
+  font-size: 100px;
+}
+.description{
+  font-size: 30px;
 }
 .backgr {
   background: rgb(195, 75, 75);

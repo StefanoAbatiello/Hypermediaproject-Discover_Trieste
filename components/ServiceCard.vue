@@ -1,21 +1,18 @@
 <template>
   <div class="container-fluid mb-2">
-    <div class="card m-1 shadow ps-2 pe-2 pb-2">
-      <div class=" d-flex justify-content-between">
-        <div class=" card-body">
-          <h3 class="card-title text-danger">{{ name }}</h3>
-          <p>
-            {{ address }}
-          </p>
-          <img :src="img" class="img rounded card-image p-0 mr-0" />
+    <div class="card m-0 shadow pb-0">
+      <h2 class="card-title text-danger p-0">{{ name }}</h2>
+      <div class="row row-cols-2 d-flex justify-content-start p-0">
+        <div class="col-md-auto card-body ms-5">
+          <img :src="img" class="img-responsive rounded card-image p-0 m-0 " />
         </div>
-        <div class=" tab col-md-8 pt-5">
-          <div class="card-text p-2 pt-3">
-            <h5>Useful info:</h5>
-            <tab-card-time 
-            :description="description"
-            :time="time"
-            :address="address"
+        <div class="col-md-8 ps-3 pt-0 tab">
+          <div class="card-text flex p-0 ms-5 pb-3">
+            <tab-card-time
+              :id="id"
+              :description="description"
+              :time="time"
+              :address="address"
             />
           </div>
         </div>
@@ -36,11 +33,15 @@ export default {
       type: String,
       required: true,
     },
+    id: {
+      type: Number,
+      required: true,
+    },
     address: {
       type: String,
       required: true,
     },
-    description:{
+    description: {
       type: String,
       required: true,
     },
@@ -57,18 +58,28 @@ export default {
 </script>
 
 <style scoped>
-.card-body{
-max-width: 400px;
+.card {
+  min-width: 500px;
+  min-height: 300px;
 }
-.card-text{
+.card-body {
+  max-width: 400px;
+}
+.card-title {
+  font-size: 40px;
+  text-align: center;
+  margin-left: 5;
+  margin-right: 5;
+}
+.card-text {
   width: 100%;
+  margin: auto;
 }
 .card-image {
-  max-height: 250px;
+  min-height: 150px; 
+  /* min-width: 300px; */
   height: auto;
+  width: 100%;
   border: 2px solid rgb(195, 75, 75);
-}  
-.card{
-  min-width: 640px;
 }
 </style>
