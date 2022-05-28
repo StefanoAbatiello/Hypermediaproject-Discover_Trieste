@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mb-4 mt-1">
+  <div class="container-fluid px-0 mb-5 mt-1">
     <div class="text-white text-left sign">
       <h1 class="title">Types of service</h1>
     </div>
@@ -8,7 +8,7 @@
         v-for="(services, servicesIndex) of servicesList"
         :id="services.id"
         :key="`services-index-${servicesIndex}`"
-        class="col-sm-2 m-2"
+        class="col-sm-2 m-2 mb-5"
         :name="services.name"
         :img="services.img"
         :category="'services'"
@@ -41,6 +41,7 @@ export default {
 }
 .title {
   margin-left: 10px;
+  font-size: 70px;
 }
 .sign {
   background: rgb(195, 75, 75);
