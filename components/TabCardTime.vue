@@ -15,7 +15,7 @@
             >
               <span class="input-group-addon">
                 <img
-                  src="https://i.pinimg.com/474x/53/2f/ef/532fef63da082dd28bf1e0182653c861.jpg"
+                  src="../assets/services/info_black_24dp.svg"
                   class="icon-img img-responsive"
                 />
               </span>
@@ -32,7 +32,7 @@
             >
               <span class="input-group-addon">
                 <img
-                  src="https://banner2.cleanpng.com/20180604/kwx/kisspng-computer-icons-time-attendance-clocks-font-aweso-clock-icon-5b14c6364f6622.2216713915280881183252.jpg"
+                  src="../assets/services/schedule_black_24dp.svg"
                   class="icon-img img-responsive"
                 />
               </span>
@@ -49,7 +49,7 @@
             >
               <span class="input-group-addon">
                 <img
-                  src="https://image.similarpng.com/very-thumbnail/2021/01/Location-icon-design-on-transparent-background-PNG.png"
+                  src="../assets/services/place_black_24dp.svg"
                   class="icon-img img-responsive"
                 />
               </span>
