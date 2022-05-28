@@ -1,6 +1,5 @@
 <template>
-  <div class="rounded shadow category-image" style="width: 23rem" :style="{ 'background-image': 'url(~/assets/' + img + ')' }" >
-     
+  <div class="rounded shadow category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
     <div class="category-body">
       <nuxt-link :to="`/${category}/${id}`">
         <div class="btn text-white btn-details"> {{ name }} </div>

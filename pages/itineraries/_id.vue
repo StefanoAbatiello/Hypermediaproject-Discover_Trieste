@@ -136,7 +136,7 @@ export default {
   },
   methods: {
     backToItineraries() {
-      this.$router.push('/itineraries')
+      this.$router.push('/itineraries/')
     },
   },
 }
