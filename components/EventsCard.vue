@@ -2,7 +2,7 @@
     <div class="m-1 shadow p-3 card">
       <div class="row row-cols-2 justify-content-start">
         <div class="col-md-auto align-self-center">
-          <img :src="img" class="img rounded card-image" />
+          <img :src="require(`~/assets/${img}`)" class="img rounded card-image" />
         </div>
         <div class="col ml-auto">
           <div class="card-body">
