@@ -1,8 +1,10 @@
 <template>
-  <div class="main-page">
-    <the-header />
-    <nuxt />
-    <div class="push"></div>
+  <div class="page-container">
+    <div class="main-page">
+      <the-header />
+      <nuxt />
+      <!-- <div class="push"></div> -->
+    </div>
     <the-footer class="footer" />
   </div>
 </template>
@@ -20,19 +22,40 @@ export default {
 </script>
 
 <style scoped>
-html,
-body {
-  height: 100%;
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 .main-page {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto -80px;
+  padding-bottom: 5rem; /* altezza del footer */
 }
 
-.footer,
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem; /* altezza del footer */
+}
+/* html,
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-page {
+  flex: 1;
+} */
+
+/* .main-page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -80px;
+} */
+
+/* .footer,
 .push {
   height: 80px;
-}
+} */
 </style>
