@@ -1,5 +1,5 @@
 <template>
-    <div class="m-1 shadow p-3 card">
+    <div :id="`${season}`" class="m-1 shadow p-3 card" >
       <div class="row row-cols-2 justify-content-start">
         <div class="col-md-auto align-self-center">
           <img :src="require(`~/assets/${img}`)" class="img rounded card-image" />
@@ -50,6 +50,10 @@ export default {
     location: {
       type:String,
       required: true,
+    },
+    season: {
+      type: String,
+      required: true
     }
   },
   methods: {

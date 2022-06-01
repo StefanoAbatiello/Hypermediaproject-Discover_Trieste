@@ -3,7 +3,7 @@
     <div class="card m-1 shadow-lg p-3">
       <div class="row row-cols-2 justify-content-start">
         <div class="col-md-auto">
-          <img :src="img" class="img rounded card-image" />
+          <img :src="require(`~/assets/${img}`)" class="img rounded card-image" />
         </div>
         <div class="col ml-auto">
           <div class="card-body">
@@ -75,7 +75,7 @@ export default {
   opacity: 1;
 }
 .card-image {
-  width: 200px;
+  width: 320px;
   height: 200px;
 }
 </style>

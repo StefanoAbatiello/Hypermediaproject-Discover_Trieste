@@ -15,7 +15,7 @@
         <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToList()"
+          @click="backToPois()"
         >
           See all Points of interest
         </button>

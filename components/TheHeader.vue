@@ -1,8 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark px-3 header sticky-top">
-    <img src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg" class="img rounded-circle mr-auto ms-2 logo-img" alt="Logo" style="width:60px;">
+    <img
+      src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
+      class="img rounded-circle mr-auto ms-2 logo-img"
+      alt="Logo"
+      style="width: 60px"
+    />
     <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
-     <button
+    <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -13,12 +18,13 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div id="navbarToggler" class="collapse navbar-collapse links" >
+    <div id="navbarToggler" class="collapse navbar-collapse links">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item"
+          @click="closeMenu()"
         >
           <nuxt-link :to="navItem.path" class="nav-link">
             {{ navItem.name }}
@@ -51,16 +57,27 @@ export default {
           name: 'Itineraries',
           path: '/itineraries/',
         },
-         {
+        {
           name: 'Services',
           path: '/services/',
         },
-         {
+        {
           name: 'About',
           path: '/about',
         },
       ],
     }
+  },
+  methods: {
+    closeMenu() {
+      const menuShown = document
+        .getElementById('navbarToggler')
+        .classList.contains('show')
+      if (menuShown) {
+        const menuToggle = document.getElementsByClassName('navbar-toggler')[0]
+        menuToggle.click()
+      }
+    },
   },
 }
 </script>
@@ -69,12 +86,12 @@ export default {
 .header {
   background: rgb(195, 75, 75);
 }
-.logo-img{
+.logo-img {
   height: 60px;
   width: 60px;
   background-color: white;
 }
-.navbar-brand{
+.navbar-brand {
   color: white;
   font-size: 45px;
   font-family: 'My Soul', cursive;

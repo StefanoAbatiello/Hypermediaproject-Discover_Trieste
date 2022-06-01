@@ -1,12 +1,11 @@
 <template>
   <div class="container-fluid px-0 mt-1 mb-4">
-    <div class="text-white sign row justify-content-between">
+    <div class="text-white sign row-md justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToEvents()">All events/</a>
-            <a @click="backToSeasonEvents(season)">{{season}} events/</a>
             <a>{{name}} </a>
           </li>
         </ul>
@@ -69,9 +68,6 @@ export default {
     }
   },
   methods: {
-    backToSeasonEvents(season) {
-      this.$router.push('/seasonal/' + season)
-    },
     backToEvents() {
       this.$router.push('/events/')
     },

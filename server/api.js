@@ -140,6 +140,7 @@ async function runMainApi() {
                 id: element.id,
                 date: element.date,
                 locName : location.name,
+                season: element.season,
             })
         }
         return res.json(filtered)

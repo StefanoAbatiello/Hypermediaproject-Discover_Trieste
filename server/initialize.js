@@ -23,19 +23,19 @@ export default async (models) => {
     const poiList = [
         {
             name: "Abbazia di San Pietro",
-            img: "pois/abbaziaSanPietro.jpeg",
+            img: "~/assets/pois/abbaziaSanPietro.jpeg",
             itineraryId: itinerary0.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
             name: "Palazzo dei Priori",
-            img: "pois/palazzoPriori.jpeg",
+            img: "~/assets/pois/palazzoPriori.jpeg",
             itineraryId: itinerary2.id,
             description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
         },
         {
             name: "Rocca Paolina",
-            img: "pois/roccaPaolina.jpeg",
+            img: "~/assets/pois/roccaPaolina.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
@@ -47,13 +47,13 @@ export default async (models) => {
         },
         {
             name: "Pozzo etrusco",
-            img: "pois/pozzoEtrusco.jpeg",
+            img: "~/assets/pois/pozzoEtrusco.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per pozzo etrusco"
         },
         {
             name: "Porta Santa Susanna",
-            img: "pois/portaSusanna.jpeg",
+            img: "~/assets/pois/portaSusanna.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta è dedicata ad una santa"
         },
@@ -65,13 +65,13 @@ export default async (models) => {
         },
         {
             name: "Porta Sole",
-            img: "pois/portaSole.jpeg",
+            img: "~/assets/pois/portaSole.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
         {
             name: "Cattedrale di San Lorenzo",
-            img: "pois/cattedraleSanLorenzo.jpeg",
+            img: "~/assets/pois/cattedraleSanLorenzo.jpeg",
             itineraryId: itinerary0.id,
             description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia"
         },
@@ -83,40 +83,40 @@ export default async (models) => {
         },
         {
             name: "Porta Crucia",
-            img: "pois/portaCrucia.jpeg",
+            img: "~/assets/pois/portaCrucia.jpeg",
             itineraryId: itinerary0.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
             name: "San Francesco al Prato",
-            img: "pois/sanFrancesco.jpeg",
+            img: "~/assets/pois/sanFrancesco.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Porta Marzia",
-            img: "pois/portaMarzia.jpeg",
+            img: "~/assets/pois/portaMarzia.jpeg",
             itineraryId: itinerary2.id,
             description: "Famosissima porta di Perugia"
         },
         {
             name: "Chiesa di San Ercolano",
-            img: "pois/sanErcolano.jpeg",
+            img: "~/assets/pois/sanErcolano.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Acquedotto medievale",
-            img: "pois/acquedottoMedievale.jpeg",
+            img: "~/assets/pois/acquedottoMedievale.jpeg",
             itineraryId: itinerary2.id,
             description: "Acquedotto etrusco di Perugia"
         },
-         // {
-        //     name: "Sala del Conclave",
-        //     img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
-        //     itineraryId: itinerary1.id,
-        //     description: "Questa è una descrizione per sala del conclave"
-        // },
+        {
+            name: "Sala del Conclave",
+            img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
+            itineraryId: itinerary1.id,
+            description: "Questa è una descrizione per sala del conclave"
+        },
     ]
     const poi0 = await models.PointOfInterest.create(poiList[0])
     const poi1 = await models.PointOfInterest.create(poiList[1])
@@ -133,6 +133,7 @@ export default async (models) => {
     const poi12 = await models.PointOfInterest.create(poiList[12])
     const poi13 = await models.PointOfInterest.create(poiList[13])
     const poi14 = await models.PointOfInterest.create(poiList[14])
+    const poi15 = await models.PointOfInterest.create(poiList[15])
     const eventList = [
          {
              name: "Umbria Jazz",
