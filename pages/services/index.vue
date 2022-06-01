@@ -8,7 +8,7 @@
         v-for="(services, servicesIndex) of servicesList"
         :id="services.id"
         :key="`services-index-${servicesIndex}`"
-        class="col-sm-2 m-2 mb-5"
+        class="col-md-2 m-2 mb-5"
         :name="services.name"
         :img="services.img"
         :category="'services'"

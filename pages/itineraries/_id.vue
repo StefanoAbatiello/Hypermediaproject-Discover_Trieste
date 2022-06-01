@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <div class="row justify-content-between text-white sign">
+    <div class="row-md d-flex justify-content-between text-white sign">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">

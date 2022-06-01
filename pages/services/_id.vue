@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1 ">
-
-    <div class="row justify-content-between text-white sign">
+    <div class="row-md d-flex justify-content-between text-white sign">
       <div class="col">
         <h1 class="title text-left">{{ title }}</h1>
         <ul class="ms-3 breadcrumb">
@@ -27,7 +26,7 @@
         {{ description }}
       </p>
     </div>
-    <div class="mt-3">
+    <div class="row-md mt-3">
       <serviceCard
         v-for="(service, serviceIndex) of serviceList"
         :key="`service-index-${serviceIndex}`"
@@ -88,7 +87,7 @@ export default {
 }
 .title {
   margin-left: 10px;
-  font-size: 100px;
+  /* font-size: 100px; */
 }
 .description{
   font-size: 30px;

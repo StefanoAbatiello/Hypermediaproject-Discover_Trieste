@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid mb-2">
-    <div class="card m-0 shadow pb-0">
-      <div class="row row-cols-2 d-flex justify-content-start p-0">
+  <div class="container-fluid m-2">
+    <div class="card shadow pb-0 me-4 ms-2">
+      <div class="row-md d-flex justify-content-start p-0">
         <div class="col-md-7 ps-0 pt-0 tab">
           <h2 class="card-title text-danger p-3 pb-0 ps-5">{{ name }}</h2>
           <div class="card-text flex p-0 ms-5 pb-3">
@@ -13,8 +13,8 @@
             />
           </div>
         </div>
-        <div class="col-md-auto flex card-body ms-5">
-          <img :src="img" class="card-image img-fluid rounded  px-0 mt-3 m-0" />
+        <div class="col-md-4 ms-2 card-body">
+          <img :src="img" class="card-image rounded p-0 mt-3 m-0" />
         </div>
       </div>
     </div>
@@ -58,7 +58,6 @@ export default {
 </script>
 
 <style scoped>
-
 .card {
   min-width: 500px;
   min-height: 300px;
@@ -74,15 +73,13 @@ export default {
   width: 100%;
   margin: auto;
 }
-.card-body {
+/* .card-body {
   max-width: 500px;
-}
+} */
 .card-image {
-  min-height: 50px;
-  /* min-width: 300px; */
-  height: auto;
-  width: 100%;
+  /* min-height: 50px; */
+  /* max-width: 450px;  */
+  max-width: 100%;
   border: 2px solid rgb(195, 75, 75);
-  margin: auto;
 }
 </style>
