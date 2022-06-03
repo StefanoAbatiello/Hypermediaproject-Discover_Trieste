@@ -23,19 +23,19 @@ export default async (models) => {
     const poiList = [
         {
             name: "Abbazia di San Pietro",
-            img: "~/assets/pois/abbaziaSanPietro.jpeg",
+            img: "pois/abbaziaSanPietro.jpeg",
             itineraryId: itinerary0.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
             name: "Palazzo dei Priori",
-            img: "~/assets/pois/palazzoPriori.jpeg",
+            img: "pois/palazzoPriori.jpeg",
             itineraryId: itinerary2.id,
             description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
         },
         {
             name: "Rocca Paolina",
-            img: "~/assets/pois/roccaPaolina.jpeg",
+            img: "pois/roccaPaolina.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
@@ -47,13 +47,13 @@ export default async (models) => {
         },
         {
             name: "Pozzo etrusco",
-            img: "~/assets/pois/pozzoEtrusco.jpeg",
+            img: "pois/pozzoEtrusco.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per pozzo etrusco"
         },
         {
             name: "Porta Santa Susanna",
-            img: "~/assets/pois/portaSusanna.jpeg",
+            img: "pois/portaSusanna.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta è dedicata ad una santa"
         },
@@ -65,13 +65,13 @@ export default async (models) => {
         },
         {
             name: "Porta Sole",
-            img: "~/assets/pois/portaSole.jpeg",
+            img: "pois/portaSole.jpeg",
             itineraryId: itinerary2.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
         {
             name: "Cattedrale di San Lorenzo",
-            img: "~/assets/pois/cattedraleSanLorenzo.jpeg",
+            img: "pois/cattedraleSanLorenzo.jpeg",
             itineraryId: itinerary0.id,
             description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia"
         },
@@ -83,37 +83,37 @@ export default async (models) => {
         },
         {
             name: "Porta Crucia",
-            img: "~/assets/pois/portaCrucia.jpeg",
+            img: "pois/portaCrucia.jpeg",
             itineraryId: itinerary0.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
             name: "San Francesco al Prato",
-            img: "~/assets/pois/sanFrancesco.jpeg",
+            img: "pois/sanFrancesco.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Porta Marzia",
-            img: "~/assets/pois/portaMarzia.jpeg",
+            img: "pois/portaMarzia.jpeg",
             itineraryId: itinerary2.id,
             description: "Famosissima porta di Perugia"
         },
         {
             name: "Chiesa di San Ercolano",
-            img: "~/assets/pois/sanErcolano.jpeg",
+            img: "pois/sanErcolano.jpeg",
             itineraryId: itinerary0.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
             name: "Acquedotto medievale",
-            img: "~/assets/pois/acquedottoMedievale.jpeg",
+            img: "pois/acquedottoMedievale.jpeg",
             itineraryId: itinerary2.id,
             description: "Acquedotto etrusco di Perugia"
         },
         {
             name: "Sala del Conclave",
-            img: "https://media-cdn.tripadvisor.com/media/photo-s/17/5a/f8/81/img-20190425-110746-largejpg.jpg",
+            img: "pois/acquedottoMedievale.jpeg",
             itineraryId: itinerary1.id,
             description: "Questa è una descrizione per sala del conclave"
         },
@@ -242,7 +242,7 @@ export default async (models) => {
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            img: "services/medicals/ospedale.jpeg",
 
         },
         {
@@ -251,7 +251,7 @@ export default async (models) => {
             address: "via blabla",
             description:"",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            img: "services/medicals/ospedale.jpeg",
 
         },
         {
@@ -268,7 +268,7 @@ export default async (models) => {
             serviceTypeId: type0.id,
             address: "Via del Giochetto, 49",
             description:"Struttura sanitaria accreditata con la Regione Umbria per le seguenti discipline specialistiche: CHIRURGIA GENERALE, MEDICINA GENERALE, ORTOPEDIA, GINECOLOGIA, OTORINOLARINGOIATRIA, OCULISTICA.",
-            time: "Ufficio accettazione dal Lunedì al Venerdì dalle ore 08.00 alle ore 17.00, il Sabato dalle ore 08.00 alle 12.00",
+            // time: "Ufficio accettazione dal Lunedì al Venerdì dalle ore 08.00 alle ore 17.00, il Sabato dalle ore 08.00 alle 12.00",
             img: "services/medicals/portaSole.jpeg",
 
         },

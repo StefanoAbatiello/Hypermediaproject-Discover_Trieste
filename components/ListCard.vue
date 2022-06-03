@@ -1,5 +1,6 @@
 <template>
-  <div class="rounded shadow category-image" style="width: 23rem" :style="{ 'background-image': 'url(' + img + ')' }" >
+  <div class="has-bg-img rounded shadow category px-0" style="width: 23rem">
+    <img class="bg-img img-responsive " :src="require(`~/assets/${img}`)">
     <div class="category-body">
       <nuxt-link :to="`/${category}/${id}`">
         <div class="btn text-white btn-details"> {{ name }} </div>
@@ -38,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.category-image:hover {
+.category:hover {
   border: 3px solid rgb(195, 75, 75);
   opacity: 1;
 }
@@ -51,13 +52,17 @@ export default {
   top: 85%;
   transform: translate(-50%,-50%);
 }
-.category-image {
+.category {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
   opacity: 0.6;
   position: relative;
+}
+.bg-img{
+  width: 100%;
+  height: 100%;
 }
 </style>
 

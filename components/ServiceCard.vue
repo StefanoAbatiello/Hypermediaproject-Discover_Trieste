@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="col-md-4 ms-2 card-body">
-          <img :src="img" class="card-image rounded p-0 mt-3 m-0" />
+          <img :src="require(`~/assets/${img}`)" class="card-image rounded p-0 mt-3 m-0" />
         </div>
       </div>
     </div>
