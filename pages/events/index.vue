@@ -35,12 +35,12 @@
       </div>
     </div>
 
-    <div class="row list justify-content-start">
+    <div class="row list p-2 justify-content-center">
       <events-card
         v-for="(event, eventIndex) of eventList"
         :id="event.id"
         :key="`event-index-${eventIndex}`"
-        class="event"
+        class="event p-2"
         :name="event.name"
         :img="event.img"
         :category="'events'"
@@ -112,8 +112,8 @@ export default {
   background: rgb(195, 75, 75);
 }
 .list {
-  margin-left: 12%;
-  margin-right: 8%;
+  margin-left: 8%;
+  /* width: fit-content; */
 }
 .btn-details {
   background: white;
@@ -133,6 +133,8 @@ export default {
   opacity: 1;
 }
 .event {
-  max-width: 350px;
+  /* min-width: 350px;*/
+  width: 450px; 
+  /* width: fit-content; */
 }
 </style>
