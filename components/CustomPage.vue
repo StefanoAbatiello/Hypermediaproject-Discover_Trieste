@@ -2,7 +2,7 @@
   <div class="container mt-5">
     <div class="jumbotron">
       <h1 class="title">{{ title }}</h1>
-      <img :src="image" class="img-fluid mx-auto d-block" />
+      <img :src="require(`~/assets/${image[0]}`)" class="img-fluid mx-auto d-block images" />
       <hr class="my-4" />
       <p class="lead">{{ description }}</p>
     </div>
@@ -36,5 +36,9 @@ export default {
 }
 p {
   text-align: left;
+}
+.images{
+  width: 1000px;
+  height: 490px;
 }
 </style>
