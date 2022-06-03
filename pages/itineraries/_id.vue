@@ -47,21 +47,21 @@
       <div class="carousel-inner mt-2">
         <div class="carousel-item active">
           <img
-            :src="img[0]"
+            :src="require(`~/assets/${img[0]}`)"
             class="mx-auto d-block"
-            style="height: 23rem;widht: 22rem"
+            style="height: 22rem;widht: 25rem"
           />
         </div>
         <div class="carousel-item ">
           <img
-            :src="img[1]"
+            :src="require(`~/assets/${img[1]}`)"
             class="mx-auto d-block"
             style="height: 23rem;widht: 22rem"
           />
         </div>
         <div class="carousel-item">
           <img
-            :src="img[2]"
+            :src="require(`~/assets/${img[2]}`)"
             class="mx-auto d-block"
             style="height: 23rem;widht: 22rem"
           />
@@ -166,6 +166,10 @@ export default {
   transform: translate(0%, -50%);
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
+}
+.arrow{
+  color: rgb(195, 75, 75);
+  opacity: 1;
 }
 .botton-cont {
   position: relative;
