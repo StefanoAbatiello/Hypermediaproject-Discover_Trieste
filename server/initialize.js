@@ -3,17 +3,17 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Tour tra le chiese perugine",
-            img: ["https://www.viedellabellezza.it/wp-content/uploads/2018/03/cropped-head-1024.jpg","https://www.secretumbria.it/wp-content/uploads/2021/03/cattedrale-san-lorenzo-perugia-copertina.jpg","https://2.bp.blogspot.com/-4AOJUCjx3Ys/T4P_5m8D27I/AAAAAAAACic/aEYGjaGvdYQ/s1600/389768_313488005383472_100001668244914_730968_966872066_n.jpg"],
+            img: ["itineraries/churches/sanMichele.jpeg","itineraries/churches/sanBernardino.jpeg","itineraries/churches/insideChurch.jpeg"],
             description: "Viene a scoprire le chiese della città"
         },
         {
              name: "La Perugia sotterranea",
-             img: ["https://www.vaticannews.va/content/dam/vaticannews/multimedia/2020/07/15/MG_9230-1024x682aem.jpg/_jcr_content/renditions/cq5dam.thumbnail.cropped.1000.563.jpeg","https://www.touringclub.it/sites/default/files/styles/gallery_full/public/immagini_georiferite/perugia_roccapaolina.jpg?itok=tMj921PG","https://culturefor.files.wordpress.com/2019/02/img_7357.jpg"],
+             img: ["itineraries/undergound/undPer1.jpeg","itineraries/undergound/undPer2.jpeg","itineraries/undergound/undPer3.jpeg"],
              description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Scopri il cuore di Perugia",
-            img: ["https://tremetrisoprailcielo.net/wp-content/uploads/2019/02/piazza-iv-novembre-perugia-1.jpg","https://www.umbriajournal.com/wp-content/uploads/2019/11/via-appia-centro-storico.jpg","https://www.stellaperugia.it/wp-content/uploads/2022/02/Articity-artigiani-centro-Perugia-1184x592-1-e1644497017360.jpg"],
+            img: ["itineraries/heart/squarePer.jpeg","itineraries/heart/nightHeart.jpeg","itineraries/heart/skyView.jpeg"],
             description: "Il fascino dell'Umbria racchiuso in una sola città"
         },
     ]
