@@ -1,9 +1,13 @@
 <template>
   <div class="tabTime">
-    <div class=" d-flex justified-content-start ">
+    <div class="d-flex justified-content-start">
       <!-- <div class="col-1"> -->
-        <div>
-        <ul :id="`${id}`" class="nav flex-column nav-pills nav-justified pe-0 pt-4" role="tablist">
+      <div>
+        <ul
+          :id="`${id}`"
+          class="nav flex-column nav-pills nav-justified pe-0 pt-4"
+          role="tablist"
+        >
           <li class="nav-item" role="presentation">
             <button
               :id="`${id}`"
@@ -13,12 +17,7 @@
               type="button"
               role="tab"
             >
-              <span class="input-group-addon">
-                <img
-                  src="../assets/services/info_black_24dp.svg"
-                  class="icon-img img-responsive"
-                />
-              </span>
+              <span class="material-icons"> info </span>
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -30,12 +29,7 @@
               type="button"
               role="tab"
             >
-              <span class="input-group-addon">
-                <img
-                  src="../assets/services/schedule_black_24dp.svg"
-                  class="icon-img img-responsive"
-                />
-              </span>
+              <span class="material-icons"> schedule </span>
             </button>
           </li>
           <li class="nav-item" role="presentation">
@@ -47,12 +41,7 @@
               type="button"
               role="tab"
             >
-              <span class="input-group-addon">
-                <img
-                  src="../assets/services/place_black_24dp.svg"
-                  class="icon-img img-responsive"
-                />
-              </span>
+              <span class="material-icons"> place </span>
             </button>
           </li>
         </ul>
