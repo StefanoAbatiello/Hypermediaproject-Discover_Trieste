@@ -255,58 +255,78 @@ export default async (models) => {
 
         },
         {
-            name: "hospital",
+            name: "Ospedale Santa Maria della Misericordia",
             serviceTypeId: type0.id,
-            address: "via blabla",
-            description:"",
-            time: "For emergencies the number to call is 112",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            address: "S. Andrea delle Fratte",
+            description:"L'Azienda ospedalieara di Perugia - Ospedale 'Santa Maria della Misericordia' è l'ospedale unico e policlinico universitario di Perugia.",
+            time: "la segreteria degli ambulatori è aperta dal lunedì al venerdì dalle 8,00 alle 13,00, il martedì e giovedì pomeriggio dalle 14,30 alle 17,00; ambulatori chiusi sabato e giorni festivi",
+            img: "services/medicals/ospedale.jpeg",
 
         },
         {
-            name: "hotel1",
+            name: "Istituto Clinico Porta Sole",
+            serviceTypeId: type0.id,
+            address: "Via del Giochetto, 49",
+            description:"Struttura sanitaria accreditata con la Regione Umbria per le seguenti discipline specialistiche: CHIRURGIA GENERALE, MEDICINA GENERALE, ORTOPEDIA, GINECOLOGIA, OTORINOLARINGOIATRIA, OCULISTICA.",
+            time: "Ufficio accettazione dal Lunedì al Venerdì dalle ore 08.00 alle ore 17.00, il Sabato dalle ore 08.00 alle 12.00",
+            img: "services/medicals/portaSole.jpeg",
+
+        },
+        {
+            name: "Sangallo Palace Hotel",
+            serviceTypeId: type1.id,
+            address: "via Luigi Masi, 9",
+            description:"Elegante e raffinato hotel nel cuore culturale, dello shopping e del turismo di Perugia.",
+            time: "L'hotel ha una reception aperta 24/7",
+            img:"services/hotels/sangallo.jpeg"
+        },
+        {
+            name: "Borgo Dei Conti Resort",
+            serviceTypeId: type1.id,
+            address: "Strada Montepetriolo, 26",
+            description:"il Borgo Dei Conti Resort Relais & Chateaux occupa un palazzo fortificato del 17° secolo e vanta un centro benessere, una palestra, un ristorante umbro, WiFi e camere moderne ed eleganti.",
+            time: "L'hotel ha una reception aperta 24/7",
+            img:"services/hotels/borgoConti.jpeg"
+        },
+        {
+            name: "Sangallo Palace Hotel",
             serviceTypeId: type1.id,
             address: "via blabla",
             description:"",
             time: "reception open everyday  from 8am to 11pm",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            img:"services/hotels/sangallo.jpeg"
         },
         {
-            name: "hotel2",
+            name: "Sangallo Palace Hotel",
             serviceTypeId: type1.id,
             address: "via blabla",
             description:"",
             time: "reception open everyday  from 8am to 11pm",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            img:"services/hotels/sangallo.jpeg"
         },
         {
-            name: "hotel3",
-            serviceTypeId: type1.id,
-            address: "via blabla",
-            description:"",
-            time: "reception open everyday  from 8am to 11pm",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
-        },
-        {
-            name: "restaurant1",
+            name: "Osteria a Priori",
             serviceTypeId: type2.id,
-            address: "via blabla",
-            description:"",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            address: "Via dei Priori, 39",
+            description:"Un menu 100% umbro, ingredienti locali di piccoli produttori artigianali, dai formaggi ai legumi. Ma la regione qui è rappresentata benissimo anche nel bicchiere, tra vino e birra artigianale. Disponibilità e gentilezza in sala.",
+            time: "Dal lunedi al sabato Pranzo 12,30-14,30 Cena 19,30-22,00 Domenica chiuso per turno di riposo (ad eccezione di domenica 5 gennaio e della domenica di Pasqua) La prenotazione è sempre consigliata al fine di evitare spiacevoli indisponibilità di posto.",
+            img:"services/restaurants/osteriaPriori.jpeg"
         },
         {
-            name: "restaurant2",
+            name: "Civico 25",
             serviceTypeId: type2.id,
-            address: "via blabla",
-            description:"",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
-
+            address: "Via della Viola, 25 ",
+            description:"Un wine bar in pieno centro, sviluppato su due piani, con una cucina di tradizione che promuove le tante specialità regionali. Il rifugio ideale per chi ama i sapori sinceri e il buon vino.",
+            time:"tutti i giorni 19:00-02:00. Chiuso la domenica",            
+            img:"services/restaurants/civico25.jpeg"
+        },
+        {
+            name: "Stella",
+            serviceTypeId: type2.id,
+            address: "Via Narcisi, 47A",
+            description:"Materie prime del territorio, stagionalità, ricette umbre della tradizione costituiscono gli ingredienti dei piatti tipici umbri da Stella.",
+            time: "Lunedì-sabato aperti solo a cena. Domenica aperti solo a pranzo (ad eccezione dei mesi di luglio e agosto in cui siamo aperti solo a cena). Martedì chiuso per turno.",
+            img:"services/restaurants/stella.jpeg"
         },
         {
             name: "cafe1",
@@ -327,21 +347,30 @@ export default async (models) => {
 
         },
         {
-            name: "club",
+            name: "Gradisca Club",
             serviceTypeId: type4.id,
-            address: "via blabla",
-            description:"",
-            time: "open everyday from 8pm to 3am",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            address: "Strada Montalcino, 2",
+            description:"Il locale è composto da ben 7 sale di cui 5 invernali e 2 estive ed organizza serate ed eventi con generi musicali diversi.",
+            time: "Aperto venerdì e sabato dalle 21.30 alle 03.00",
+            img: "services/entertinments/gradisca.jpeg",
 
         },
         {
-            name: "cinema",
+            name: "Cinema Zenith",
             serviceTypeId: type4.id,
-            address: "via blabla",
+            address: "Via Benedetto Bonfigli, 11",
+            description:"La sala ha 216 poltrone distribuite su 18 file. E’ equipaggiata con un proiettore Sony 4k e con un impianto audio dolby surround.",
+            time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
+            img: "services/entertinments/zenith.jpeg",
+
+        },
+        {
+            name: "Teatro Morlacchi",
+            serviceTypeId: type4.id,
+            address: "Piazza Morlacchi, 13",
             description:"",
-            time: "lunedì: 16-22, martedì, mercoledì, giovedì, venerdì: 10-00, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
+            img: "services/entertinments/morlacchi.jpeg",
 
         },
     ]
