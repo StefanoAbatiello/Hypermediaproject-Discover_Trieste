@@ -49,21 +49,21 @@
           <img
             :src="require(`~/assets/${img[0]}`)"
             class="mx-auto d-block"
-            style="height: 22rem;widht: 25rem"
+            style="height: 22rem; widht: 25rem"
           />
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item">
           <img
             :src="require(`~/assets/${img[1]}`)"
             class="mx-auto d-block"
-            style="height: 23rem;widht: 22rem"
+            style="height: 23rem; widht: 22rem"
           />
         </div>
         <div class="carousel-item">
           <img
             :src="require(`~/assets/${img[2]}`)"
             class="mx-auto d-block"
-            style="height: 23rem;widht: 22rem"
+            style="height: 23rem; widht: 22rem"
           />
         </div>
       </div>
@@ -75,7 +75,7 @@
         data-bs-target="#demo"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon"></span>
+        <span class="material-icons"> arrow_back_ios </span>
       </button>
       <button
         class="carousel-control-next"
@@ -83,10 +83,10 @@
         data-bs-target="#demo"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon"></span>
+        <span class="material-icons"> arrow_forward_ios </span>
       </button>
     </div>
-    
+
     <div class="m-3 des-div">
       <b> Description: </b>
       <p class="lead">
@@ -156,9 +156,9 @@ export default {
   margin-left: 8%;
   margin-right: 8%;
 }
-.carousel-inner > .item > img { 
-  margin: 0 auto; 
-} 
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
 .btn-back {
   position: absolute;
   right: 10%;
@@ -167,7 +167,7 @@ export default {
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
 }
-.arrow{
+.arrow {
   color: rgb(195, 75, 75);
   opacity: 1;
 }
