@@ -4,7 +4,7 @@
       <div class="row-md d-flex justify-content-start p-0">
         <div class="col-md-7 ps-0 pt-0 tab">
           <h2 class="card-title text-danger p-3 pb-0 ps-5">{{ name }}</h2>
-          <div class="card-text flex p-0 ms-5 pb-3">
+          <div class="card-text flex p-1 ms-auto pb-3">
             <tab-card-time
               :id="id"
               :description="description"
@@ -13,8 +13,8 @@
             />
           </div>
         </div>
-        <div class="col-md-4 ms-2 card-body">
-          <img :src="require(`~/assets/${img}`)" class="card-image rounded p-0 mt-3 m-0" />
+        <div class="col-md-4 ms-2 card-body ">
+          <img :src="require(`~/assets/${img}`)" class="card-image img-responsive rounded p-0 mt-3 m-0" />
         </div>
       </div>
     </div>
@@ -81,5 +81,6 @@ export default {
   /* max-width: 450px;  */
   max-width: 100%;
   border: 2px solid rgb(195, 75, 75);
+  justify-content: space-between;
 }
 </style>
