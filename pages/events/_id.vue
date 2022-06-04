@@ -6,12 +6,12 @@
         <ul class="ms-3 breadcrumb">
           <li class="breadcrumb-item text-white">
             <a @click="backToEvents()">All events/</a>
-            <a>{{name}} </a>
+            <a>{{ name }} </a>
           </li>
         </ul>
       </div>
       <div class="col align-self-center botton-cont">
-         <button
+        <button
           type="button"
           class="btn btn-lg mb-3 ms-2 btn-back text-white"
           @click="backToEvents()"
@@ -27,13 +27,21 @@
       <p class="lead">
         {{ description }}
       </p>
-      <button
+      <!-- <button
         type="button"
         class="btn btn-outline-secondary btn-lg px-4 mb-4"
-        @click="goToPoi(poiId)"
+        @click="goToPoi(poi.id)"
       >
-        See the location
-      </button>
+        {{poi.name}}
+      </button> -->
+      <div id="textBox" class="test mt-4 mb-4 p-5 rounded">
+        {{ name }} take place at:
+        <nuxt-link :to="`/pois/${poi.id}`">
+          <div class="btn btn-details">
+            <b>{{ poi.name }}</b>
+          </div>
+        </nuxt-link>
+      </div>
       <tab-card
         :access-info="`col-sm-2 m-2`"
         :time-info="`event`"
@@ -58,8 +66,7 @@ export default {
       name: data.name,
       img: data.img,
       description: data.description,
-      poiId: data.poiId,
-      season: data.season,
+      poi: data.poi,
     }
   },
   head() {
@@ -97,11 +104,11 @@ export default {
   position: absolute;
   right: 10%;
   top: 50%;
-  transform: translate(0%,-50%);
+  transform: translate(0%, -50%);
   border-color: whitesmoke;
   color: rgb(195, 75, 75);
 }
 .botton-cont {
-    position: relative;
+  position: relative;
 }
 </style>
