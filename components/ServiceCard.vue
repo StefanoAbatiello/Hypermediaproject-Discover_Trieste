@@ -1,10 +1,10 @@
 <template>
   <div class="container-fluid m-2">
     <div class="card shadow pb-0 me-4 ms-2">
+      <h2 class="card-title text-danger p-3 pb-0 ps-5">{{ name }}</h2>
       <div class="row-md d-flex justify-content-start p-0">
-        <div class="col-md-7 ps-0 pt-0 tab">
-          <h2 class="card-title text-danger p-3 pb-0 ps-5">{{ name }}</h2>
-          <div class="card-text flex p-1 ms-auto pb-3">
+        <div class="col-md-7 ps-0 ms-2 me-0 pt-0 tab">
+          <div class="card-text p-1 pb-3">
             <tab-card-time
               :id="id"
               :description="description"
@@ -13,8 +13,11 @@
             />
           </div>
         </div>
-        <div class="col-md-4 ms-2 card-body ">
-          <img :src="require(`~/assets/${img}`)" class="card-image img-responsive rounded p-0 mt-3 m-0" />
+        <div class="col-md-4 ms-0 card-body">
+          <img
+            :src="require(`~/assets/${img}`)"
+            class="card-image img-responsive rounded p-0 mt-2 mb-5 m-0"
+          />
         </div>
       </div>
     </div>
@@ -59,7 +62,7 @@ export default {
 
 <style scoped>
 .card {
-  min-width: 500px;
+  min-width: 500px; 
   min-height: 300px;
 }
 .card-title {
@@ -67,11 +70,12 @@ export default {
   text-align: left;
   margin-left: 5;
   margin-right: 5;
-  max-width: 400px;
 }
 .card-text {
   width: 100%;
   margin: auto;
+  margin-right: 5;
+  min-width: 400px;
 }
 /* .card-body {
   max-width: 500px;
@@ -81,6 +85,5 @@ export default {
   /* max-width: 450px;  */
   max-width: 100%;
   border: 2px solid rgb(195, 75, 75);
-  justify-content: space-between;
 }
 </style>
