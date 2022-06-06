@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mt-1 mb-4">
-    <div class="text-white sign row-md justify-content-between">
+    <div class="text-white sign d-flex row-md justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
         <ul class="ms-3 breadcrumb">
@@ -25,7 +25,7 @@
         <img class="img rounded ms-2 mt-5" :src="require(`~/assets/${img}`)" />
       </div>
       <p class="lead">
-        {{ description }}
+        
       </p>
       <!-- <button
         type="button"
@@ -34,8 +34,8 @@
       >
         {{poi.name}}
       </button> -->
-      <div id="textBox" class="test mt-4 mb-4 p-5 rounded">
-        {{ name }} take place at:
+      <div id="textBox" class="test mt-4 mb-4 p-5 rounded textBox">
+        {{ description }}<br>{{ name }} take place at:
         <nuxt-link :to="`/pois/${poi.id}`">
           <div class="btn btn-details">
             <b>{{ poi.name }}</b>
@@ -43,10 +43,10 @@
         </nuxt-link>
       </div>
       <tab-card
-        :access-info="`col-sm-2 m-2`"
-        :time-info="`event`"
-        :directions="`event.name`"
-        :prices="`event.img`"
+        :access-info="accessInfo"
+        :time-info="timeInfo"
+        :directions="directions"
+        :prices="prices"
       />
     </div>
   </div>
@@ -67,6 +67,10 @@ export default {
       img: data.img,
       description: data.description,
       poi: data.poi,
+      accessInfo: data.accessInfo,
+      timeInfo: data.timeInfo,
+      directions: data.directions,
+      prices: data.prices,
     }
   },
   head() {
@@ -92,9 +96,16 @@ export default {
 .sign {
   background: rgb(195, 75, 75);
 }
+.textBox {
+  background: rgb(195, 75, 75);
+  color: whitesmoke;
+}
 .img {
-  height: 300px;
-  width: 450px;
+  height: auto;
+  width: 75%;
+}
+.btn-details{
+    color: whitesmoke;
 }
 .btn-poi {
   border-color: rgb(195, 75, 75);
