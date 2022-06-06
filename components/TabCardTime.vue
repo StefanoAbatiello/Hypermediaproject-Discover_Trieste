@@ -8,7 +8,7 @@
           class="nav flex-column nav-pills nav-justified pe-0 pt-4"
           role="tablist"
         >
-          <li class="nav-item" role="presentation">
+          <li class="nav-item icon-btn" role="presentation">
             <button
               :id="`${id}`"
               class="nav-link active"
@@ -17,10 +17,10 @@
               type="button"
               role="tab"
             >
-              <span class="material-icons"> info </span>
+              <span class="material-icons icon"> info </span>
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item icon-btn" role="presentation">
             <button
               :id="`${id}`"
               class="nav-link"
@@ -29,10 +29,10 @@
               type="button"
               role="tab"
             >
-              <span class="material-icons"> schedule </span>
+              <span class="material-icons icon"> schedule </span>
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item icon-btn" role="presentation">
             <button
               :id="`${id}`"
               class="nav-link"
@@ -41,13 +41,13 @@
               type="button"
               role="tab"
             >
-              <span class="material-icons"> place </span>
+              <span class="material-icons icon"> place </span>
             </button>
           </li>
         </ul>
       </div>
       <div class="col-10 pt-4 ps-0">
-        <div :id="`${id}`" class="tab-content">
+        <div :id="`${id}`" class="tab-content d-flex">
           <div
             :id="`description-${id}`"
             class="tab-pane fade show active"
@@ -115,11 +115,12 @@ export default {
   opacity: 0.5;
   color: #fff;
 }
-.icon-img {
-  width: 35px;
-  height: 35px;
+.icon-btn {
+  width: 70px;
+  height: 100px;
   background-color: rgb(195, 75, 75);
 }
+
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
   border: rgb(195, 75, 75);
@@ -129,9 +130,10 @@ export default {
 .tab-content {
   border: 1px solid rgb(195, 75, 75);
   padding: 15px;
-  max-height: 200px;
+  /* max-height: 200px; */
   width: 100%;
-  min-height: 150px;
+  height: auto;
+  min-height: 200px;
 }
 
 .tab-content .tab-pane {
