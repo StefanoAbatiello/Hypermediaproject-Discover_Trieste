@@ -22,20 +22,20 @@
       </div>
     </div>
 
-    <img :src="img" class="img-fluid mx-auto d-block" />
-    <div id="textBox" class="test mt-4 p-5 bg-danger text-white rounded">
+    <img :src="require(`~/assets/${img}`)" class="img-fluid mx-auto d-block my-4" />
+    <div id="textBox" class="test mt-4 p-5 text-white rounded">
       <h1>{{ name }}</h1>
       <p>{{ description }}</p>
     </div>
 
     <tab-card
-      :access-info="`accessabilty informations are needed here`"
+      :access-info="`accessibilty informations are needed here`"
       :time-info="`this poi is always open`"
       :directions="`print a map of the point of interest`"
       :prices="`free ticket to visit this poi`"
     />
 
-    <div id="textBox" class="test mt-4 mb-4 p-5 bg-danger text-white rounded">
+    <div id="textBox" class="test mt-4 mb-4 p-5 text-white rounded">
       {{ name }} is correlated with the following itinerary:
       <nuxt-link :to="`/itineraries/${itinerary.id}`"
         ><div class="btn text-white btn-details">
@@ -78,9 +78,9 @@
       <div class="carousel-inner row w-100 mx-auto" role="listbox">
         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
           <img
-            :src="data.relatedPois[2].img"
+            :src="require(`~/assets/${data.relatedPois[2].img}`)"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height: auto"
+            style="height: 23rem; widht: 22rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[2].id}`">
@@ -92,9 +92,9 @@
         </div>
         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
           <img
-            :src="data.relatedPois[0].img"
+            :src="require(`~/assets/${data.relatedPois[0].img}`)"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height: auto"
+            style="height: 23rem; widht: 22rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[0].id}`">
@@ -106,9 +106,9 @@
         </div>
         <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
           <img
-            :src="data.relatedPois[1].img"
+            :src="require(`~/assets/${data.relatedPois[1].img}`)"
             class="img-fluid mx-auto d-block"
-            style="width: 23rem; height: auto"
+            style="height: 23rem; widht: 22rem"
           />
           <div class="carousel-caption d-none d-md-block">
             <nuxt-link :to="`/pois/${data.relatedPois[1].id}`">
@@ -127,7 +127,7 @@
         data-bs-target="#demo"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon"></span>
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_back_ios </span>
       </button>
       <button
         class="carousel-control-next"
@@ -135,7 +135,7 @@
         data-bs-target="#demo"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon"></span>
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_forward_ios </span>
       </button>
     </div>
     <!-- end carousel -->
@@ -207,6 +207,7 @@ export default {
 }
 .test {
   border-style: solid;
+  background-color: rgb(195, 75, 75);
 }
 .btn-back {
   position: absolute;

@@ -75,7 +75,7 @@
         data-bs-target="#demo"
         data-bs-slide="prev"
       >
-        <span class="material-icons" style="color: black"> arrow_back_ios </span>
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_back_ios </span>
       </button>
       <button
         class="carousel-control-next pr-5"
@@ -83,7 +83,7 @@
         data-bs-target="#demo"
         data-bs-slide="next"
       >
-        <span class="material-icons" style="color: black"> arrow_forward_ios </span>
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_forward_ios </span>
       </button>
     </div>
 
