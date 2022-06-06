@@ -162,9 +162,10 @@ async function runMainApi() {
 
     app.get('/event/:id', async (req, res) => {
         const id = +req.params.id
-        const result = await models.Event.findOne({ where: { id }})
-        return res.json(result)
+        const event= await models.Event.findOne({ where: { id }, include: [{model: models.PointOfInterest}] })
+        return res.json(event)
     })
+
 
     app.get('/event/len', async (req, res) => {
         const len = (await models.PointOfInterest.findAll()).length
