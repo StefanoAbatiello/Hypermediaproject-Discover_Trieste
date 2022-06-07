@@ -10,7 +10,7 @@
           type="button"
           role="tab"
         >
-          Accessibility
+          <p><span class="material-icons icon"> accessibility_new </span> Accessibility</p>
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -22,7 +22,7 @@
           type="button"
           role="tab"
         >
-          time
+          <p><span class="material-icons icon"> schedule </span> time</p>
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -34,7 +34,7 @@
           type="button"
           role="tab"
         >
-          how to reach
+          <p><span class="material-icons icon"> navigation </span> how to reach</p>
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -46,7 +46,7 @@
           type="button"
           role="tab"
         >
-          prices
+          <p><span class="material-icons icon"> sell </span> prices</p>
         </button>
       </li>
     </ul>
@@ -68,19 +68,19 @@ export default {
   name: 'TabCardComponent',
   props: {
     accessInfo: {
-      type: String,
+      type: Text,
       required: true,
     },
     timeInfo: {
-      type: String,
+      type: Text,
       required: true,
     },
     directions: {
-      type: String,
+      type: Text,
       required: true,
     },
     prices: {
-      type: String,
+      type: Text,
       required: true,
     },
   },
@@ -92,6 +92,7 @@ export default {
   background-color: rgb(195, 75, 75);
   opacity: 0.5;
   color: #fff;
+  height: 50px; 
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -103,10 +104,15 @@ export default {
 .tab-content {
   border: 1px solid rgb(195, 75, 75);
   height: 100px;
-}
+  padding: 10px;
+  }
 
 .tab-content .tab-pane {
   background-color: #fff;
   color: black;
+}
+.icon{
+  vertical-align: bottom;
+  font-size: 18px ;
 }
 </style>
