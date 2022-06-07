@@ -1,64 +1,69 @@
 <template>
-  <div class="container-fluid px-0 mt-1 mb-4">
-    <div class="text-white text-left sign">
-      <h1 class="title">Events</h1>
-    </div>
-    <div class="filters">
-      Filter by season:
-      <div>
-        <button
-          id="Summer"
-          class="filter mb-1 w-100"
-          @click="filterSeason('Summer')"
-        >
-          <div class="btn text-danger btn-details w-100"><b>summer</b></div>
-        </button>
+  <div>
+    <header-carousel />
+    <div class="container-fluid px-0 mt-1 mb-4">
+      <div class="text-white text-left sign">
+        <h1 class="title">Events</h1>
       </div>
-      <div>
-        <button
-          id="Winter"
-          class="filter mb-1 w-100"
-          @click="filterSeason('Winter')"
-        >
-          <div class="btn text-danger btn-details w-100"><b>winter</b></div>
-        </button>
+      <div class="filters">
+        Filter by season:
+        <div>
+          <button
+            id="Summer"
+            class="filter mb-1 w-100"
+            @click="filterSeason('Summer')"
+          >
+            <div class="btn text-danger btn-details w-100"><b>summer</b></div>
+          </button>
+        </div>
+        <div>
+          <button
+            id="Winter"
+            class="filter mb-1 w-100"
+            @click="filterSeason('Winter')"
+          >
+            <div class="btn text-danger btn-details w-100"><b>winter</b></div>
+          </button>
+        </div>
+        <div>
+          <button
+            id="All"
+            class="filter mb-1 w-100"
+            @click="seeAll()"
+            style="display: none"
+          >
+            <div class="btn text-danger btn-details w-100"><b>see all</b></div>
+          </button>
+        </div>
       </div>
-      <div>
-        <button
-          id="All"
-          class="filter mb-1 w-100"
-          @click="seeAll()"
-          style="display:none"
-        >
-          <div class="btn text-danger btn-details w-100"><b>see all</b></div>
-        </button>
-      </div>
-    </div>
 
-    <div class="row list p-2 justify-content-center">
-      <events-card
-        v-for="(event, eventIndex) of eventList"
-        :id="event.id"
-        :key="`event-index-${eventIndex}`"
-        class="event p-2"
-        :name="event.name"
-        :img="event.img"
-        :category="'events'"
-        :date="event.date"
-        :location="event.locName"
-        :season="event.season"
-      />
+      <div class="row list p-2 justify-content-center">
+        <events-card
+          v-for="(event, eventIndex) of eventList"
+          :id="event.id"
+          :key="`event-index-${eventIndex}`"
+          class="event p-2"
+          :name="event.name"
+          :img="event.img"
+          :category="'events'"
+          :date="event.date"
+          :location="event.locName"
+          :season="event.season"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import HeaderCarousel from '~/components/HeaderCarousel.vue'
 import EventsCard from '~/components/EventsCard.vue'
 // import _seasonVue from '../seasonal/_season.vue'
 export default {
   name: 'EventsPage',
   components: {
     EventsCard,
+    HeaderCarousel,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
@@ -122,7 +127,7 @@ export default {
 }
 .filters {
   position: fixed;
-  top: 150px;
+  bottom: 100px;
   left: 10px;
 }
 .filter {
@@ -134,7 +139,7 @@ export default {
 }
 .event {
   /* min-width: 350px;*/
-  width: 450px; 
+  width: 450px;
   /* width: fit-content; */
 }
 </style>
