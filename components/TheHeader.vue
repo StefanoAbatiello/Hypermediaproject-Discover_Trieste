@@ -1,113 +1,124 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark px-3 header sticky-top">
-    <img
-      src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
-      class="img rounded-circle mr-auto ms-2 logo-img"
-      alt="Logo"
-      style="width: 60px"
-    />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarToggler"
-      aria-controls="navbarToggler"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="navbarToggler" class="collapse navbar-collapse links">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li
-          v-for="(navItem, navItemIndex) of headerList"
-          :key="`navItem${navItemIndex}`"
-          class="nav-item"
-          @click="closeMenu()"
-        >
-          <nuxt-link :to="navItem.path" class="nav-link">
-            {{ navItem.name }}
-          </nuxt-link>
-        </li>
-      </ul>
+ <div>
+ <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner mt-2">
+        <div class="carousel-item active">
+          <img
+            class="mx-auto d-block"
+            style="height: 22rem; widht: 25rem"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="mx-auto d-block"
+            style="height: 23rem; widht: 22rem"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="mx-auto d-block"
+            style="height: 23rem; widht: 22rem"
+          />
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev pl-5"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_back_ios </span>
+      </button>
+      <button
+        class="carousel-control-next pr-5"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_forward_ios </span>
+      </button>
     </div>
-  </nav>
+                  <nav-bar style="position: absolute"/>
+</div>
 </template>
 
 <script>
+import NavBar from '~/components/NavBar.vue'
 export default {
   name: 'TheHeader',
-  data() {
-    return {
-      headerList: [
-        {
-          name: 'Home',
-          path: '/',
-        },
-        {
-          name: 'Events',
-          path: '/events/',
-        },
-        {
-          name: 'Point of Interest',
-          path: '/pois/',
-        },
-        {
-          name: 'Itineraries',
-          path: '/itineraries/',
-        },
-        {
-          name: 'Services',
-          path: '/services/',
-        },
-        {
-          name: 'About',
-          path: '/about',
-        },
-      ],
-    }
-  },
-  methods: {
-    closeMenu() {
-      const menuShown = document
-        .getElementById('navbarToggler')
-        .classList.contains('show')
-      if (menuShown) {
-        const menuToggle = document.getElementsByClassName('navbar-toggler')[0]
-        menuToggle.click()
-      }
-    },
-  },
+  // Note: This happens on backend (server) side
+  components:{
+    NavBar
+  }
 }
 </script>
 
+
 <style scoped>
-.header {
-  background: rgb(195, 75, 75);
-}
-.logo-img {
-  height: 60px;
-  width: 60px;
-  background-color: white;
-}
-.navbar-brand {
-  color: white;
-  font-size: 45px;
-  font-family: 'My Soul', cursive;
-}
-.nav-item {
-  color: white;
-  font-size: 22px;
-  font-family: 'Poppins', sans-serif;
-}
-.logo {
-  color: white;
-  font-size: 32px;
-}
-.navbar-nav {
-  margin-left: auto;
-}
-</style>
+        /* Carousel styling */
+        #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100vh;
+  }
 
+  .carousel-item:nth-child(1) {
+    background-image: url('https://www.turismofvg.it/proxyvfs.axd/main,image_hd/r57547/milani_c1-162-2867-jpg?v=217533&ext=.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .carousel-item:nth-child(2) {
+    background-image: url('https://www.panorama.it/media-library/trieste.jpg?id=28227117&width=600&quality=85&coordinates=353%2C0%2C354%2C0&height=600');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .carousel-item:nth-child(3) {
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/trieste-cosa-vedere-oggetto-editoriale-800x600-1528231172.jpg?resize=480:*');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 
+  /* Height for devices larger than 576px */
+        @media (min-width: 992px) {
+          #introCarousel {
+            margin-top: -58.59px;
+          }
+          #introCarousel,
+          .carousel-inner,
+          .carousel-item,
+          .carousel-item.active {
+            height: 50vh;
+          }
+        }
+
+        .navbar .nav-link {
+          color: #fff !important;
+        }
+      </style>
