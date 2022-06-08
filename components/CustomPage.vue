@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .title {
   text-align: center;
-  text-emphasis-color: green;
+  color: royalblue;
 }
 p {
   text-align: left;

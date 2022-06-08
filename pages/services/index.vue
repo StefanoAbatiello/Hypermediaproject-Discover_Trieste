@@ -62,7 +62,7 @@ export default {
   background: rgb(39, 123, 250);
 }
 .image-header {
-  background-image: url('assets\homeImg\panorama1.jpeg');
+  background-image: url('assets\homeImg\trieste1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
