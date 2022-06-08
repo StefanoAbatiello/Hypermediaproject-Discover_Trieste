@@ -75,7 +75,7 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Trieste",
-        image: ["homeImg/panorama1.jpeg","homeImg/panorama2.jpeg","homeImg/streetView.jpeg"],
+        image: ["homeImg/trieste1.jpeg","homeImg/trieste2.jpeg","homeImg/trieste3.jpeg"],
         description: `Perugia lovingly preserves precious traces of its bright historical periods. Today it is the administrative capital of the Umbria region, a major cultural and tourist destination and the prestigious home of the University of Studies for more than 700 years. The historic Academy of Fine Arts, the Music Conservatory and its University for Foreigners, with students from all over the world, define its distinct international vocation.`
     },
     about: {

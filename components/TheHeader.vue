@@ -91,23 +91,23 @@ export default {
 .logo-img {
   height: 60px;
   width: 60px;
-  background-color: whitesmoke;
+  background-color: white;
 }
 .navbar-brand {
-  color: royalblue;
-  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  color: white;
+  /* text-shadow: -0.5px 0 royalblue, 0 0.5px royalblue, 0.5px 0 royalblue, 0 -0.5px royalblue;  */
   font-size: 45px;
   font-weight: 700;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: 600;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link{
-  color: royalblue;
-  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  color: white;
+  /* text-shadow: -0.5px 0 royalblue, 0 0.5px royalblue, 0.5px 0 royalblue, 0 -0.5px royalblue;  */
 }  
 .logo {
   color: white;
@@ -117,8 +117,8 @@ export default {
   margin-left: auto;
 }
 .navbar-toggler {
-  border: 1px solid royalblue;
-  margin-left: 50px;
+  border: 1px solid white;
+  margin-left: auto;
 }
 </style>
 

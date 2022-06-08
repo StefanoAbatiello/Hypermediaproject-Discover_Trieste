@@ -2,35 +2,37 @@
   <div>
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
       <!-- Indicators/dots -->
-      <div class="carousel-indicators">
+      <div class="carousel-indicators" >
         <button
           type="button"
           data-bs-target="#demo"
           data-bs-slide-to="0"
-          class="active"
+          class="active button"
         ></button>
         <button
           type="button"
           data-bs-target="#demo"
           data-bs-slide-to="1"
+          class=" button"
         ></button>
         <button
           type="button"
           data-bs-target="#demo"
           data-bs-slide-to="2"
+          class=" button"
         ></button>
       </div>
 
       <!-- The slideshow/carousel -->
       <div class="carousel-inner mt-2">
         <div class="has-bg-img carousel-item active" >
-          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[0]}`)"/>
+          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[0]}`)"/>
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[1]}`)"/>
+          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[1]}`)"/>
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[2]}`)"/>
+          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[2]}`)"/>
         </div>
       </div>
 
@@ -41,7 +43,7 @@
         data-bs-target="#demo"
         data-bs-slide="prev"
       >
-        <span class="material-icons" style="color: rgb(195, 75, 75)">
+        <span class="material-icons icon" style="color: royalblue">
           arrow_back_ios
         </span>
       </button>
@@ -51,7 +53,7 @@
         data-bs-target="#demo"
         data-bs-slide="next"
       >
-        <span class="material-icons" style="color: rgb(195, 75, 75)">
+        <span class="material-icons icon" style="color: royalblue">
           arrow_forward_ios
         </span>
       </button>
@@ -97,9 +99,14 @@ export default {
 .carousel-item.active {
   height: 100vh;
 }
-
+.button{
+  background-color: royalblue;
+}
+.icon{
+  font-size: 60px;
+}
 .carousel-item {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .carousel-item {
