@@ -106,6 +106,9 @@ export default {
   background: rgb(195, 75, 75);
   color: whitesmoke;
 }
+.carousel{
+  padding-top: 100px;
+}
 .img {
   height: auto;
   width: 75%;

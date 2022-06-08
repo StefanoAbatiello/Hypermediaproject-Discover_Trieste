@@ -21,7 +21,7 @@ async function initializeDatabaseConnection() {
     const Event = database.define("event", {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
-        img: DataTypes.STRING,
+        img: DataTypes.ARRAY(DataTypes.STRING),
         season: DataTypes.STRING,
         date: DataTypes.TEXT,
         accessInfo: DataTypes.TEXT,
@@ -74,7 +74,7 @@ async function initializeDatabaseConnection() {
 
 const pageContentObject = {
     index: {
-        title: "Perugia",
+        title: "Trieste",
         image: ["homeImg/panorama1.jpeg","homeImg/panorama2.jpeg","homeImg/streetView.jpeg"],
         description: `Perugia lovingly preserves precious traces of its bright historical periods. Today it is the administrative capital of the Umbria region, a major cultural and tourist destination and the prestigious home of the University of Studies for more than 700 years. The historic Academy of Fine Arts, the Music Conservatory and its University for Foreigners, with students from all over the world, define its distinct international vocation.`
     },
@@ -108,7 +108,7 @@ async function runMainApi() {
             const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
-                img: element.img,
+                img: element.img[0],
                 id: element.id,
                 date: element.date,
                 locName : location.name,
@@ -140,7 +140,7 @@ async function runMainApi() {
             const location= await models.PointOfInterest.findOne({where: {id}})
             filtered.push({
                 name: element.name,
-                img: element.img,
+                img: element.img[0],
                 id: element.id,
                 date: element.date,
                 locName : location.name,

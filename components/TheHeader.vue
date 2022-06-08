@@ -6,7 +6,7 @@
       alt="Logo"
       style="width: 60px"
     />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
+    <a class="navbar-brand ms-2 mr-auto" href="/">VisitTrieste</a>
     <button
       class="navbar-toggler"
       type="button"

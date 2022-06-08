@@ -13,7 +13,7 @@
       alt="Logo"
       style="width: 60px"
     />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
+    <a class="navbar-brand ms-2 mr-auto" href="/">VisitTrieste</a>
 
     <div class="collapse navbar-collapse links">
       <ul class="navbar-nav mt-2 row d-flex justify-content-start ">
