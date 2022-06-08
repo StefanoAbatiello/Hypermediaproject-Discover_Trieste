@@ -1,6 +1,7 @@
 <template>
   <div>
-      <header-carousel :title="''"/>
+      <header-carousel :title="''"
+      :images= "[`homeImg/panorama1.jpeg`,`homeImg/panorama2.jpeg`,`homeImg/streetView.jpeg`]"/>
       <custom-page :title="title" :image="image" :description="description" />
 </div>
 </template>
