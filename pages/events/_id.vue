@@ -1,5 +1,7 @@
 <template>
+  <div>
   <div class="container-fluid px-0 mt-1 mb-4">
+          <header-carousel class="carousel"/>
     <div class="text-white sign d-flex row-md justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
@@ -21,8 +23,8 @@
       </div>
     </div>
     <div class="container px-0 mt-1 mb-4">
-      <div class="image-event text-center">
-        <img class="img rounded ms-2 mt-5" :src="require(`~/assets/${img}`)" />
+      <!-- <div class="image-event text-center">
+        <img class="img rounded ms-2 mt-5" :src="require(`~/assets/${img}`)" /> -->
       </div>
       <p class="lead">
         
@@ -92,6 +94,9 @@ export default {
 <style scoped>
 .title {
   margin-left: 10px;
+}
+.carousel{
+  padding-top: 100px;
 }
 .sign {
   background: rgb(195, 75, 75);

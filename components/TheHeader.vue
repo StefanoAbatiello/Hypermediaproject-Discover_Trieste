@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark px-3 header sticky-top">
+  <nav class="navbar navbar-expand-lg px-3 header sticky-top">
     <img
       src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
       class="img rounded-circle mr-auto ms-2 logo-img"
@@ -16,7 +16,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="material-icons" style="color:blue"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -26,7 +26,7 @@
           class="nav-item"
           @click="closeMenu()"
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+          <nuxt-link :to="navItem.path" class="nav-link link">
             {{ navItem.name }}
           </nuxt-link>
         </li>
@@ -98,23 +98,31 @@ export default {
   background-color: whitesmoke;
 }
 .navbar-brand {
-  color: whitesmoke;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+  color: blue;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   font-size: 45px;
-  font-family: 'My Soul', cursive;
+  font-weight: 700;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
-  color: whitesmoke;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-  font-size: 22px;
-  font-family: 'Poppins', sans-serif;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  font-size: 20px;
+  font-weight: 600;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.link{
+  color: blue;
+}  
 .logo {
   color: white;
   font-size: 32px;
 }
 .navbar-nav {
-  margin-left: auto;
+  margin-left: 200px;
+}
+.navbar-toggler {
+  border: 1px solid blue;
+  margin-left: 50px;
 }
 </style>
 
