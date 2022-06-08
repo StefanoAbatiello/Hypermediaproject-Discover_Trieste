@@ -37,7 +37,7 @@ async function initializeDatabaseConnection() {
     const PointOfInterest = database.define("poi", {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
-        img: DataTypes.STRING,
+        img: DataTypes.ARRAY(DataTypes.STRING),
     })
     const SingleService =database.define("singleService",{
         name: DataTypes.STRING,
@@ -157,7 +157,7 @@ async function runMainApi() {
         for (const element of result) {
             filtered.push({
                 name: element.name,
-                img: element.img,
+                img: element.img[0],
                 id: element.id,
             })
         }
