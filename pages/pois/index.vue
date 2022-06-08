@@ -4,31 +4,29 @@
       <img style="height: 22rem; widht: 25rem" />
       <b class="title"> Points of Interest </b>
     </div>
-    <div class="container-fluid px-0 mb-4 mt-1">
-      <!-- <div class="text-white text-left sign">
-        <h1 class="title">All the Points of Interest</h1>
-      </div> -->
-      <div class="row mt-3 row-line">
-        <list-card
-          v-for="(poi, poiIndex) of poiList"
-          :id="poi.id"
-          :key="`poi-index-${poiIndex}`"
-          class="col-sm-2 m-2"
-          :name="poi.name"
-          :img="poi.img"
-          :category="'pois'"
-        />
+    <section class="poi-list">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <card-composed
+            v-for="(poi, poiIndex) of poiList"
+            :id="poi.id"
+            :key="`poi-index-${poiIndex}`"
+            :name="poi.name"
+            :img="poi.img"
+            :category="'pois'"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-import ListCard from '~/components/ListCard.vue'
+import CardComposed from '~/components/CardComposed.vue'
 export default {
   name: 'PoisPage',
   components: {
-    ListCard,
+    CardComposed,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
