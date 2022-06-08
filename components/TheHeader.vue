@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg px-3 header sticky-top">
+  <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
     <img
       src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
       class="img rounded-circle mr-auto ms-2 logo-img"
@@ -16,7 +16,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="material-icons" style="color:blue"> menu </span>
+      <span class="material-icons" style="color:lightblue"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -98,30 +98,30 @@ export default {
   background-color: whitesmoke;
 }
 .navbar-brand {
-  color: blue;
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  color: lightblue;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
   font-size: 45px;
   font-weight: 700;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link{
-  color: blue;
+  color: lightblue;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }  
 .logo {
   color: white;
   font-size: 32px;
 }
 .navbar-nav {
-  margin-left: 200px;
+  margin-left: auto;
 }
 .navbar-toggler {
-  border: 1px solid blue;
+  border: 1px solid lightblue;
   margin-left: 50px;
 }
 </style>

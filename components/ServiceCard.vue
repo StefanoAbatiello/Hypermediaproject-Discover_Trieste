@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid m-2">
     <div class="card shadow pb-0 me-4 ms-2">
-      <h2 class="card-title text-danger pt-4 pb-0 ps-3 pe-0">{{ name }}</h2>
+      <h2 class="card-title pt-4 pb-0 ps-3 pe-0">{{ name }}</h2>
       <div class="row-md d-flex justify-content-start p-0 m-0">
         <div class="col-md-7 ps-0 ms-2 me-0 pt-0 tab">
           <div class="card-text p-0 ps-2 pb-3 pt-3">
@@ -70,6 +70,7 @@ export default {
   text-align: left;
   margin-left: 5;
   margin-right: 5;
+  color: lightblue;
 }
 .card-text {
   width: 100%;
@@ -85,6 +86,6 @@ export default {
   width: 100%;
   max-width: 100%;
   /* min-width: 270px; */
-  border: 2px solid rgb(195, 75, 75);
+  border: 2px solid lightblue;
 }
 </style>

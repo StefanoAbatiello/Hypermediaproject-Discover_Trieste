@@ -40,11 +40,11 @@ export default {
 
 <style scoped>
 .category:hover {
-  border: 3px solid rgb(195, 75, 75);
+  border: 3px solid lightblue;
   opacity: 1;
 }
 .btn-details {
-  background: rgb(195, 75, 75);
+  background: lightblue;
   text-shadow: 2px 2px 4px black;
   opacity:1;
   position: absolute;

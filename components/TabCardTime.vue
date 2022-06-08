@@ -111,24 +111,24 @@ export default {
   max-height: 60px;
 }
 .nav-pills .nav-item .nav-link {
-  background-color: rgb(195, 75, 75);
+  background-color: lightblue;
   opacity: 0.5;
   color: #fff;
 }
 .icon-btn {
   width: 70px;
   height: 100px;
-  background-color: rgb(195, 75, 75);
+  background-color: lightblue;
 }
 
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
-  border: rgb(195, 75, 75);
+  border: lightblue;
   opacity: 1;
 }
 
 .tab-content {
-  border: 1px solid rgb(195, 75, 75);
+  border: 1px solid lightblue;
   padding: 15px;
   /* max-height: 200px; */
   width: 100%;

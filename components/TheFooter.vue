@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .footer {
-  background: rgb(195, 75, 75);
+  background: lightblue;
 }
 .logo-img {
   height: 60px;
@@ -62,12 +62,12 @@ export default {
 .navbar-brand {
   color: white;
   font-size: 45px;
-  font-family: 'My Soul', cursive;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
   color: white;
   font-size: 22px;
-  font-family: 'Poppins', sans-serif;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .logo {
   color: white;
