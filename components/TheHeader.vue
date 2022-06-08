@@ -6,7 +6,7 @@
       alt="Logo"
       style="width: 60px"
     />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitPerugia</a>
+    <a class="navbar-brand ms-2 mr-auto" href="/">VisitTrieste</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -16,7 +16,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="material-icons" style="color:lightblue"> menu </span>
+      <span class="material-icons" style="color:royalblue"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -94,7 +94,7 @@ export default {
   background-color: whitesmoke;
 }
 .navbar-brand {
-  color: lightblue;
+  color: royalblue;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
   font-size: 45px;
   font-weight: 700;
@@ -106,7 +106,7 @@ export default {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link{
-  color: lightblue;
+  color: royalblue;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }  
 .logo {
@@ -117,7 +117,7 @@ export default {
   margin-left: auto;
 }
 .navbar-toggler {
-  border: 1px solid lightblue;
+  border: 1px solid royalblue;
   margin-left: 50px;
 }
 </style>

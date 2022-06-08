@@ -194,7 +194,7 @@ export default {
 
 <style scoped>
 .prova {
-  background: lightblue;
+  background: lightskyblue;
   width: 20%;
   height: auto;
 }
@@ -204,6 +204,9 @@ export default {
 .colonna {
   width: 200px;
   margin: 0;
+}
+.carousel{
+  padding-top: 100px;
 }
 .sign {
   background: rgb(195, 75, 75);

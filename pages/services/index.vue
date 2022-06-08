@@ -59,7 +59,7 @@ export default {
   transform: translate(-50%, -50%);
 }
 .sign {
-  background: rgb(195, 75, 75);
+  background: rgb(39, 123, 250);
 }
 .image-header {
   background-image: url('assets\homeImg\panorama1.jpeg');

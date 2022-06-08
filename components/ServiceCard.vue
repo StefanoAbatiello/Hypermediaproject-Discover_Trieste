@@ -70,7 +70,7 @@ export default {
   text-align: left;
   margin-left: 5;
   margin-right: 5;
-  color: lightblue;
+  color: royalblue;
 }
 .card-text {
   width: 100%;
@@ -86,6 +86,6 @@ export default {
   width: 100%;
   max-width: 100%;
   /* min-width: 270px; */
-  border: 2px solid lightblue;
+  border: 2px solid royalblue;
 }
 </style>

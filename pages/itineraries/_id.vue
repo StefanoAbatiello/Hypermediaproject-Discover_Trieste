@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <header-carousel class="carousel"
+    <header-carousel class="carousel" 
           :images="img"/> 
     <div class="row-md d-flex justify-content-between text-white sign">
       <div class="col">
@@ -157,6 +157,9 @@ export default {
 .list {
   margin-left: 8%;
   margin-right: 8%;
+}
+.carousel{
+  padding-top: 100px;
 }
 .carousel-inner > .item > img {
   margin: 0 auto;

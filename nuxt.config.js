@@ -8,7 +8,7 @@ export default {
     }
   ],
   head: {
-    title: 'VisitPerugia',
+    title: 'VisitTrieste',
     htmlAttrs: {
       lang: 'en',
     },
