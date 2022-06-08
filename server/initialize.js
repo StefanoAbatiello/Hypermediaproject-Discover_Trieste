@@ -131,7 +131,7 @@ export default async (models) => {
         {
             name: "Umbria Jazz",
             description: "Details about concert",
-            img: "events/umbriaJazz.jpeg",
+            img: ["events/umbriaJazz.jpeg","events/umbriaJazz.jpeg","events/umbriaJazz.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
@@ -143,7 +143,7 @@ export default async (models) => {
         {
             name: "Eurochocolate",
             description: "Details about marathon",
-            img: "events/eurochocolate.jpeg",
+            img: ["events/eurochocolate.jpeg","events/eurochocolate.jpeg","events/eurochocolate.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
@@ -155,7 +155,7 @@ export default async (models) => {
         {
             name: "International Journalism Festival",
             description: "Details about ",
-            img: "events/ijf22.jpeg",
+            img: ["events/ijf22.jpeg","events/ijf22.jpeg","events/ijf22.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
@@ -167,7 +167,7 @@ export default async (models) => {
         {
             name: "Festa di San Costanzo",
             description: "Corsa podistica storica di Perugia",
-            img: "events/sanCostanzo.jpeg",
+            img: ["events/sanCostanzo.jpeg","events/sanCostanzo.jpeg","events/sanCostanzo.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi3.id,
@@ -179,7 +179,7 @@ export default async (models) => {
         {
             name: "Musica per i borghi",
             description: "Details about concert",
-            img: "events/musicaBorghi.jpeg",
+            img: ["events/musicaBorghi.jpeg","events/musicaBorghi.jpeg","events/musicaBorghi.jpeg"],
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId: poi3.id,
@@ -191,7 +191,7 @@ export default async (models) => {
         {
             name: "Perugia Flowers Show",
             description: "alla ricerca dei fiori ",
-            img: "events/flowerShow.jpeg",
+            img: ["events/flowerShow.jpeg","events/flowerShow.jpeg","events/flowerShow.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
@@ -203,7 +203,7 @@ export default async (models) => {
         {
             name: "Umbria che Spacca",
             description: "Details about ",
-            img: "events/umbriaCheSpacca.jpeg",
+            img: ["events/umbriaCheSpacca.jpeg","events/umbriaCheSpacca.jpeg","events/umbriaCheSpacca.jpeg"],
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId: poi1.id,
@@ -215,7 +215,7 @@ export default async (models) => {
         {
             name: "Rally dell'Umbria",
             description: "Details about this event ",
-            img: "events/rallyUmbria.jpeg",
+            img: ["events/rallyUmbria.jpeg","events/rallyUmbria.jpeg","events/rallyUmbria.jpeg"],
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId: poi1.id,
