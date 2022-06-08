@@ -2,63 +2,64 @@
   <div>
     <div class="image-header">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="title">
-      Events
-    </b>
+      <b class="title"> Events </b>
     </div>
-
-    <!-- <header-carousel :title="'Events'"/> -->
-    <div class="container-fluid px-0 mt-1 mb-4">
-      <!-- <div class="text-white text-left sign">
-        <h1 class="title"></h1>
-      </div> -->
-      <div class="filters">
+    <section class="filters">
+      <div class="container">
         Filter by season:
-        <div>
-          <button
-            id="Summer"
-            class="filter mb-1 w-100"
-            @click="filterSeason('Summer')"
-          >
-            <div class="btn text-danger btn-details w-100"><b>summer</b></div>
-          </button>
-        </div>
-        <div>
-          <button
-            id="Winter"
-            class="filter mb-1 w-100"
-            @click="filterSeason('Winter')"
-          >
-            <div class="btn text-danger btn-details w-100"><b>winter</b></div>
-          </button>
-        </div>
-        <div>
-          <button
-            id="All"
-            class="filter mb-1 w-100"
-            @click="seeAll()"
-            style="display: none"
-          >
-            <div class="btn text-danger btn-details w-100"><b>see all</b></div>
-          </button>
+        <div class="row row-cols-1">
+          <div class="col">
+            <button
+              id="Summer"
+              class="filter mb-1 w-100"
+              @click="filterSeason('Summer')"
+            >
+              <div class="btn text-danger btn-details w-100">
+                <b>summer</b>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="Winter"
+              class="filter mb-1 w-100"
+              @click="filterSeason('Winter')"
+            >
+              <div class="btn text-danger btn-details w-100"><b>winter</b></div>
+            </button>
+          </div>
+          <div class="col">
+            <button
+              id="All"
+              class="filter mb-1 w-100"
+              style="display: none"
+              @click="seeAll()"
+            >
+              <div class="btn text-danger btn-details w-100">
+                <b>see all</b>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
-
-      <div class="row list p-2 justify-content-center">
-        <events-card
-          v-for="(event, eventIndex) of eventList"
-          :id="event.id"
-          :key="`event-index-${eventIndex}`"
-          class="event p-2"
-          :name="event.name"
-          :img="event.img"
-          :category="'events'"
-          :date="event.date"
-          :location="event.locName"
-          :season="event.season"
-        />
+    </section>
+    <section class="event-list">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <events-card
+            v-for="(event, eventIndex) of eventList"
+            :id="event.id"
+            :key="`event-index-${eventIndex}`"
+            :name="event.name"
+            :img="event.img"
+            :category="'events'"
+            :date="event.date"
+            :location="event.locName"
+            :season="event.season"
+          />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -118,43 +119,22 @@ export default {
 
 <style scoped>
 .title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
-  color: whitesmoke; 
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: whitesmoke;
   font-family: 'My Soul', cursive;
   font-size: 70px;
   position: absolute;
-  top:200px;
+  top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }
 .sign {
   background: rgb(195, 75, 75);
 }
-.list {
-  margin-left: 8%;
-  /* width: fit-content; */
-}
 .btn-details {
   background: white;
   border: 2px solid rgb(195, 75, 75);
   font-size: 15px;
-}
-.filters {
-  position: fixed;
-  bottom: 100px;
-  left: 10px;
-}
-.filter {
-  opacity: 0.6;
-  border: transparent;
-}
-.filter:hover {
-  opacity: 1;
-}
-.event {
-  /* min-width: 350px;*/
-  width: 450px;
-  /* width: fit-content; */
 }
 .image-header {
   background-image: url('assets\homeImg\panorama1.jpeg');

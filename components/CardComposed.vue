@@ -9,7 +9,7 @@
       />
       <div class="card-body">
         <nuxt-link :to="`/${category}/${id}`">
-            <div class="btn"> {{ name }} </div>
+            <div class="btn allign-center "> <h6>{{ name }}</h6> </div>
         </nuxt-link>
       </div>
     </div>
