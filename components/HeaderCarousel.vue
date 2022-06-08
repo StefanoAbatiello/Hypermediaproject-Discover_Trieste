@@ -56,18 +56,36 @@
         </span>
       </button>
     </div>
+    <b class="title">
+      {{ title }}
+    </b>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HeaderCarousel',
-  // Note: This happens on backend (server) side
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
 }
 </script>
 
 
 <style scoped>
+.title {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  color: whitesmoke; 
+  font-family: 'My Soul', cursive;
+  font-size: 70px;
+  position: absolute;
+  top:200px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Carousel styling */
 #introCarousel,
 .carousel-inner,
@@ -76,8 +94,8 @@ export default {
   height: 100vh;
 }
 
-.carousel-item{
-  opacity:0.8;
+.carousel-item {
+  opacity: 0.8;
 }
 
 .carousel-item:nth-child(1) {

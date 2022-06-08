@@ -2,19 +2,19 @@
 export default async (models) => {
     const itineraryList = [
         {
-            name: "Tour tra le chiese perugine",
+            name: "Liberty Tour",
             img: ["itineraries/churches/sanMichele.jpeg", "itineraries/churches/sanBernardino.jpeg", "itineraries/churches/insideChurch.jpeg"],
-            description: "Viene a scoprire le chiese della città"
+            description: "Viene a scoprire i palazzi in stile liberty della città"
         },
         {
-            name: "La Perugia sotterranea",
+            name: "Trip in roman archeology",
             img: ["itineraries/undergound/undPer1.jpeg", "itineraries/undergound/undPer2.jpeg", "itineraries/undergound/undPer3.jpeg"],
             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
-            name: "Scopri il cuore di Perugia",
+            name: "Discover the most important chuches",
             img: ["itineraries/heart/squarePer.jpeg", "itineraries/heart/nightHeart.jpeg", "itineraries/heart/skyView.jpeg"],
-            description: "Il fascino dell'Umbria racchiuso in una sola città"
+            description: "Le chiese più belle di tutta Trieste"
         },
     ]
     const itinerary0 = await models.Itinerary.create(itineraryList[0])
@@ -22,100 +22,94 @@ export default async (models) => {
     const itinerary2 = await models.Itinerary.create(itineraryList[2])
     const poiList = [
         {
-            name: "Abbazia di San Pietro",
-            img: "pois/abbaziaSanPietro.jpeg",
+            name: "Casa De Stabile",
+            img: "pois/roman/bancaPraga.jpeg",
             itineraryId: itinerary0.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
-            name: "Palazzo dei Priori",
-            img: "pois/palazzoPriori.jpeg",
-            itineraryId: itinerary2.id,
-            description: "The Palazzo dei Priori or comunale is one of the best examples in Italy of public Palace of the età comunale (XI century)."
+            name: "Banca di Praga",
+            img: ["pois/liberty/bancaPraga.jpeg","pois/roman/banca2.jpeg","pois/roman/banca3.jpeg"],
+            itineraryId: itinerary0.id,
+            description: "questa è la descrizion e di un punto di interesse"
         },
         {
-            name: "Rocca Paolina",
-            img: "pois/roccaPaolina.jpeg",
-            itineraryId: itinerary1.id,
+            name: "Casa Terni",
+            img: ["pois/liberty/casaTerni.jpeg","pois/roman/casaTerni2.jpeg","pois/roman/casaTerni3.jpeg"],
+            itineraryId: itinerary0.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
         {
-            name: "Ipogeo dei Volumni",
-            img: "pois/ipogeoDeiVolumni.jpeg",
-            itineraryId: itinerary1.id,
+            name: "Palazzo Vivanti-Gilberti",
+            img: ["pois/liberty/palazzoVivanti.jpeg","pois/roman/palazzoVivanti2.jpeg","pois/roman/palazzoVivanti3.jpeg"],
+            itineraryId: itinerary0.id,
             description: "Questa è una descrizione p"
         },
         {
-            name: "Pozzo etrusco",
-            img: "pois/pozzoEtrusco.jpeg",
-            itineraryId: itinerary1.id,
+            name: "Salone Degli Incanti",
+            img: ["pois/liberty/saloneIncanti.jpeg","pois/liberty/salone2.jpeg","pois/liberty/salone3.jpeg"],
+            itineraryId: itinerary0.id,
             description: "Questa è una descrizione per pozzo etrusco"
         },
         {
-            name: "Porta Santa Susanna",
-            img: "pois/portaSusanna.jpeg",
-            itineraryId: itinerary2.id,
+            name: "Antiquarium",
+            img: ["pois/roman/antiquarium.jpeg","pois/roman/antiquarium2.jpeg","pois/roman/antiquarium3.jpeg"],
+            itineraryId: itinerary1.id,
             description: "Questa porta è dedicata ad una santa"
         },
         {
-            name: "Fontana Maggiore",
-            img: "pois/fontanaMaggiore.jpeg",
-            itineraryId: itinerary2.id,
+            name: "Arco Riccardo",
+            img: ["pois/roman/arcoRiccardo.jpeg","pois/roman/arco2.jpeg","pois/roman/arco3.jpeg"],
+            itineraryId: itinerary1.id,
             description: "Fontana maggiore, la più bella del rione!"
         },
         {
-            name: "Porta Sole",
-            img: "pois/portaSole.jpeg",
-            itineraryId: itinerary2.id,
+            name: "Castello San Giusto",
+            img: ["pois/roman/castelloGiusto.jpeg","pois/roman/castle2.jpeg","pois/roman/castle3.jpeg"],
+            itineraryId: itinerary1.id,
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro.."
         },
         {
-            name: "Cattedrale di San Lorenzo",
-            img: "pois/cattedraleSanLorenzo.jpeg",
-            itineraryId: itinerary0.id,
+            name: "Lapidario Tergestino",
+            img: ["pois/roman/lapidarioTergestino.jpeg","pois/roman/lapidario2.jpeg","pois/roman/lapidario3.jpeg"],
+            itineraryId: itinerary1.id,
             description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia"
         },
         {
-            name: "Arco Etrusco",
-            img: "pois/arcoEtrusco.jpeg",
-            itineraryId: itinerary0.id,
+            name: "Teatro Romano",
+            img: ["pois/roman/teatro.jpeg","pois/roman/teatro2.jpeg","pois/roman/teatro3.jpeg"],
+            itineraryId: itinerary1.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
-            name: "Porta Crucia",
-            img: "pois/portaCrucia.jpeg",
-            itineraryId: itinerary0.id,
+            name: "Cattedrale San Giusto",
+            img: ["pois/churches/sanGiusto.jpeg","pois/churches/insideSanGiusto.jpeg","pois/churches/sanGiusto2.jpeg"],
+            itineraryId: itinerary2.id,
             description: "Arco bianco che più bianco non c'è!"
         },
         {
-            name: "San Francesco al Prato",
-            img: "pois/sanFrancesco.jpeg",
-            itineraryId: itinerary0.id,
+            name: "Chiesa della Beata Vergine",
+            img: ["pois/churches/beataVergine.jpeg","pois/churches/insideBeataVergine.jpeg","pois/churches/beataVergine2.jpeg"],
+            itineraryId: itinerary2.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
-            name: "Porta Marzia",
-            img: "pois/portaMarzia.jpeg",
+            name: "Sinagoga di Trieste",
+            img: ["pois/churches/sinagoga.jpeg","pois/churches/insideSinagoga.jpeg","pois/churches/sinagoga2.jpeg"],
             itineraryId: itinerary2.id,
             description: "Famosissima porta di Perugia"
         },
         {
-            name: "Chiesa di San Ercolano",
-            img: "pois/sanErcolano.jpeg",
-            itineraryId: itinerary0.id,
+            name: "Chiesa Ortodossa di San Spiridione",
+            img: ["pois/churches/chiesaOrtodossa.jpeg","pois/churches/ortodossa2.jpeg","pois/churches/ortodossa3.jpeg"],
+            itineraryId: itinerary2.id,
             description: "Famosissima chiesa di Perugia"
         },
         {
-            name: "Acquedotto medievale",
-            img: "pois/acquedottoMedievale.jpeg",
+            name: "Chiesa di Nicolò Dei Greci",
+            img: ["pois/churches/nicoloGreci.jpeg","pois/churches/insideNicoloGreci.jpeg","pois/churches/sanGiusto2.jpeg"],
             itineraryId: itinerary2.id,
             description: "Acquedotto etrusco di Perugia"
-        },
-        {
-            name: "Sala del Conclave",
-            img: "pois/acquedottoMedievale.jpeg",
-            itineraryId: itinerary1.id,
-            description: "Questa è una descrizione per sala del conclave"
         },
     ]
     const poi0 = await models.PointOfInterest.create(poiList[0])
@@ -133,7 +127,6 @@ export default async (models) => {
     const poi12 = await models.PointOfInterest.create(poiList[12])
     const poi13 = await models.PointOfInterest.create(poiList[13])
     const poi14 = await models.PointOfInterest.create(poiList[14])
-    const poi15 = await models.PointOfInterest.create(poiList[15])
     const eventList = [
         {
             name: "Umbria Jazz",

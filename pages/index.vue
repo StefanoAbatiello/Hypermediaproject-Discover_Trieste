@@ -1,6 +1,6 @@
 <template>
   <div>
-      <header-carousel/>
+      <header-carousel :title="''"/>
       <custom-page :title="title" :image="image" :description="description" />
 </div>
 </template>
