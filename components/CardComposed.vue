@@ -1,11 +1,11 @@
 <template>
-  <div class="col">
+  <div class="col my-3">
     <div class="card">
       <img
-        class="card-img-top rounded-3"
+        class="card-img-top rounded-top"
         :src="require(`~/assets/${img}`)"
         alt="Card image"
-        style="width: 100%"
+        style="width: 100%; height:200px"
       />
       <div class="card-body">
         <nuxt-link :to="`/${category}/${id}`">
