@@ -198,7 +198,7 @@ async function runMainApi() {
             if (element.id != id){
                 relatedPois.push({
                     name: element.name,
-                    img: element.img,
+                    img: element.img[0],
                     id: element.id,
                 })
             }

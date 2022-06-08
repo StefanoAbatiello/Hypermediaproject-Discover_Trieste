@@ -29,19 +29,19 @@ export default async (models) => {
         },
         {
             name: "Banca di Praga",
-            img: ["pois/liberty/bancaPraga.jpeg","pois/roman/banca2.jpeg","pois/roman/banca3.jpeg"],
+            img: ["pois/liberty/bancaPraga.jpeg","pois/liberty/banca2.jpeg","pois/liberty/banca3.jpeg"],
             itineraryId: itinerary0.id,
             description: "questa è la descrizion e di un punto di interesse"
         },
         {
             name: "Casa Terni",
-            img: ["pois/liberty/casaTerni.jpeg","pois/roman/casaTerni2.jpeg","pois/roman/casaTerni3.jpeg"],
+            img: ["pois/liberty/casaTerni.jpeg","pois/liberty/casaTerni2.jpeg","pois/liberty/casaTerni3.jpeg"],
             itineraryId: itinerary0.id,
             description: "Questa è una descrizione per il punto di interesse"
         },
         {
             name: "Palazzo Vivanti-Gilberti",
-            img: ["pois/liberty/palazzoVivanti.jpeg","pois/roman/palazzoVivanti2.jpeg","pois/roman/palazzoVivanti3.jpeg"],
+            img: ["pois/liberty/palazzoVivanti.jpeg","pois/liberty/palazzoVivanti2.jpeg","pois/liberty/palazzoVivanti3.jpeg"],
             itineraryId: itinerary0.id,
             description: "Questa è una descrizione p"
         },

@@ -23,14 +23,14 @@
 
       <!-- The slideshow/carousel -->
       <div class="carousel-inner mt-2">
-        <div class="carousel-item active">
-          <img class="mx-auto d-block" style="height: 22rem; widht: 25rem" />
+        <div class="has-bg-img carousel-item active" >
+          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[0]}`)"/>
         </div>
-        <div class="carousel-item">
-          <img class="mx-auto d-block" style="height: 23rem; widht: 22rem" />
+        <div class="has-bg-img carousel-item">
+          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[1]}`)"/>
         </div>
-        <div class="carousel-item">
-          <img class="mx-auto d-block" style="height: 23rem; widht: 22rem" />
+        <div class="has-bg-img carousel-item">
+          <img class="bg-img img-responsive" style="height: 40rem" :src="require(`~/assets/${images[2]}`)"/>
         </div>
       </div>
 
@@ -70,6 +70,10 @@ export default {
       type: String,
       required: true,
     },
+    images: {
+      type: Array.String,
+      required: true,
+    },
   },
 }
 </script>
@@ -98,20 +102,7 @@ export default {
   opacity: 0.8;
 }
 
-.carousel-item:nth-child(1) {
-  background-image: url('assets\homeImg\panorama1.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(2) {
-  background-image: url('assets\homeImg\panorama2.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.carousel-item:nth-child(3) {
-  background-image: url('assets\homeImg\streetView.jpeg');
+.carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -128,6 +119,10 @@ export default {
   .carousel-item.active {
     height: 50vh;
   }
+}
+.bg-img{
+  width: 100%;
+  height: 100%;
 }
 
 .navbar .nav-link {

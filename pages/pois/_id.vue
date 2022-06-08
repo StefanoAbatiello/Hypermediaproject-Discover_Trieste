@@ -1,5 +1,8 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
+    <header-carousel class="carousel"
+    :images="img"
+    />
     <div class="text-white sign row-md d-flex justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
@@ -22,7 +25,7 @@
       </div>
     </div>
 
-    <img :src="require(`~/assets/${img}`)" class="img-fluid mx-auto d-block my-4" />
+    <!-- <img :src="require(`~/assets/${img[0]}`)" class="img-fluid mx-auto d-block my-4" /> -->
     <div id="textBox" class="test mt-4 p-5 text-white rounded">
       <h1>{{ name }}</h1>
       <p>{{ description }}</p>
