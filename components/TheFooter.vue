@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 .footer {
-  background: lightblue;
+  background: royalblue;
 }
 .logo-img {
   height: 60px;

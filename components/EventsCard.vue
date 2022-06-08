@@ -73,10 +73,10 @@ export default {
   background-color: transparent;
 }
 .card:hover {
-  border: 3px solid lightblue;
+  border: 3px solid royalblue;
 }
 .card-title {
-  color: lightblue;
+  color: royalblue;
   text-align: left;
   font-size: 17px;
   height: auto;
@@ -93,7 +93,7 @@ export default {
   margin-left: 1px;
 }
 .btn-details {
-  background-color: lightblue;
+  background-color: royalblue;
   opacity: 0.7;
 }
 .btn-details:hover {
