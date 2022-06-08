@@ -23,7 +23,7 @@ export default async (models) => {
     const poiList = [
         {
             name: "Casa De Stabile",
-            img: "pois/roman/bancaPraga.jpeg",
+            img: ["pois/liberty/casaDeStabile.jpeg","pois/liberty/casaDeStabile3.jpeg","pois/liberty/casaDeStabileOld.jpeg"],
             itineraryId: itinerary0.id,
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
@@ -88,12 +88,6 @@ export default async (models) => {
             description: "Arco bianco che più bianco non c'è!"
         },
         {
-            name: "Chiesa della Beata Vergine",
-            img: ["pois/churches/beataVergine.jpeg","pois/churches/insideBeataVergine.jpeg","pois/churches/beataVergine2.jpeg"],
-            itineraryId: itinerary2.id,
-            description: "Famosissima chiesa di Perugia"
-        },
-        {
             name: "Sinagoga di Trieste",
             img: ["pois/churches/sinagoga.jpeg","pois/churches/insideSinagoga.jpeg","pois/churches/sinagoga2.jpeg"],
             itineraryId: itinerary2.id,
@@ -107,9 +101,15 @@ export default async (models) => {
         },
         {
             name: "Chiesa di Nicolò Dei Greci",
-            img: ["pois/churches/nicoloGreci.jpeg","pois/churches/insideNicoloGreci.jpeg","pois/churches/sanGiusto2.jpeg"],
+            img: ["pois/churches/nicoloGreci.jpeg","pois/churches/insideNicoloGreci.jpeg","pois/churches/nicoloGreci2.jpeg"],
             itineraryId: itinerary2.id,
             description: "Acquedotto etrusco di Perugia"
+        },
+        {
+             name: "Chiesa della Beata Vergine",
+             img: ["pois/churches/beataVergine.png","pois/churches/insideBeataVergine.jpeg","pois/churches/beataVergine2.png"],
+             itineraryId: itinerary2.id,
+             description: "Famosissima chiesa di Perugia"
         },
     ]
     const poi0 = await models.PointOfInterest.create(poiList[0])
