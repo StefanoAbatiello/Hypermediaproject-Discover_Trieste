@@ -11,7 +11,7 @@
       </div>
       <div class="card-body">
         <nuxt-link :to="`/${category}/${id}`">
-            <div class="btn allign-center text"> <h6>{{ name }}</h6> </div>
+            <div class="btn align-center p-0 m-0 text" style="width:100%"> <p>{{ name }}</p> </div>
         </nuxt-link>
       </div>
     </div>
@@ -56,6 +56,7 @@ export default {
 .card:hover .card-body .text{
   color: royalblue;
   transform: scale(1.2);
+  font-weight: 500;
 }
 .card:hover .container .img{
   transform: scale(1.2);
