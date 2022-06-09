@@ -4,35 +4,27 @@
       <img style="height: 22rem; widht: 25rem" />
       <b class="title"> Events </b>
     </div>
-    <section class="filters">
-      <div class="container">
-        Filter by season:
-        <div class="row row-cols-1">
-          <div class="col">
+    <section class="container filters">
+        <div class="row justify-content-start">
+          <div class="col-md-2">
             <button
               id="Summer"
-              class="filter mb-1 w-100"
+              class="filter m-1 w-100"
               @click="filterSeason('Summer')"
             >
-              <!-- <div class="btn text-danger btn-details w-100"> -->
               <b>summer</b>
-              <!-- </div> -->
             </button>
           </div>
-          <div class="col">
+          <div class="col-md-2">
             <button
               id="Winter"
-              class="filter mb-1 w-100"
+              class="filter m-1 w-100"
               @click="filterSeason('Winter')"
             >
-              <!-- <div class="btn text-danger btn-details w-100"> -->
               <b>winter</b>
-              <!-- </div> -->
             </button>
           </div>
-          <div class="col"></div>
         </div>
-      </div>
     </section>
     <section class="event-list">
       <div class="container">
@@ -44,10 +36,10 @@
             :key="`event-index-${eventIndex}`"
             :name="event.name"
             :img="event.img"
-            :category="'events'"
             :date="event.date"
             :location="event.locName"
             :season="event.season"
+            :category="'events'"
           />
         </div>
       </div>
@@ -119,19 +111,16 @@ export default {
   transform: translate(-50%, -50%);
   /* -webkit-text-stroke: 1px black; */
 }
-.sign {
-  background: rgb(195, 75, 75);
+.filter:hover{
+  opacity: 1;
 }
-/* .btn-details {
-  background: white;
-  border: 2px solid rgb(195, 75, 75);
-  
-} */
 .filter {
-  font-size: 15px;
+  font-size: 1.5vw;
   border: 3px solid royalblue;
   color: royalblue;
   opacity: 0.5;
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px; 
 }
 .image-header {
   background-image: url('assets\homeImg\trieste2.jpeg');

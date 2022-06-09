@@ -58,9 +58,6 @@
         </span>
       </button>
     </div>
-    <b class="title">
-      {{ title }}
-    </b>
   </div>
 </template>
 
@@ -68,10 +65,6 @@
 export default {
   name: 'HeaderCarousel',
   props: {
-    title: {
-      type: String,
-      required: true,
-    },
     images: {
       type: Array.String,
       required: true,
@@ -86,16 +79,6 @@ export default {
 
 
 <style scoped>
-.title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
-  color: whitesmoke; 
-  font-family: 'My Soul', cursive;
-  font-size: 70px;
-  position: absolute;
-  top:200px;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
-}
 /* Carousel styling  */
 #introCarousel,
 .carousel-inner,

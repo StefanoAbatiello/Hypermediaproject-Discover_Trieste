@@ -1,59 +1,36 @@
 <template>
-  <div>
   <div class="container-fluid px-0 mt-1 mb-4">
-          <header-carousel class="carousel"
-          :images="img"
-          :height="35"
-          /> 
-    <div class="text-white sign d-flex row-md justify-content-between">
-      <div class="col">
-        <h1 class="title text-left">{{ name }}</h1>
-        <ul class="ms-3 breadcrumb">
-          <li class="breadcrumb-item text-white">
-            <a @click="backToEvents()">All events/</a>
-            <a>{{ name }} </a>
-          </li>
-        </ul>
-      </div>
-      <div class="col align-self-center botton-cont">
-        <button
-          type="button"
-          class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToEvents()"
-        >
-          See all events
-        </button>
-      </div>
-    </div>
-    <div class="container px-0 mt-1 mb-4">
-      <!-- <div class="image-event text-center">
-        <img class="img rounded ms-2 mt-5" :src="require(`~/assets/${img}`)" /> -->
-      </div>
-      <p class="lead">
-        
-      </p>
-      <!-- <button
-        type="button"
-        class="btn btn-outline-secondary btn-lg px-4 mb-4"
-        @click="goToPoi(poi.id)"
-      >
-        {{poi.name}}
-      </button> -->
-      <div id="textBox" class="test mt-4 mb-4 p-5 rounded textBox">
-        {{ description }}<br>{{ name }} take place at:
-        <nuxt-link :to="`/pois/${poi.id}`">
-          <div class="btn btn-details">
-            <b>{{ poi.name }}</b>
+    <header-carousel class="carousel" :images="img" :height="35" />
+    <section class="main-container">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-7">
+            <section class="main-text">
+              <nuxt-link to="/events">
+                <div class="btn">Events</div>
+              </nuxt-link>
+              <h1>{{ name }}</h1>
+              <p>{{ description }}</p>
+            </section>
+            <aside>
+              <div class="test mt-4 mb-4 p-5 textBox">
+                <nuxt-link :to="`/pois/${poi.id}`">
+                  <div class="btn btn-details">
+                    <b>{{ poi.name }}</b>
+                  </div>
+                </nuxt-link>
+              </div>
+            </aside>
           </div>
-        </nuxt-link>
+        </div>
+        <tab-card
+          :access-info="accessInfo"
+          :time-info="timeInfo"
+          :directions="directions"
+          :prices="prices"
+        />
       </div>
-      <tab-card
-        :access-info="accessInfo"
-        :time-info="timeInfo"
-        :directions="directions"
-        :prices="prices"
-      />
-    </div>
+    </section>
   </div>
 </template>
 
@@ -95,38 +72,37 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  margin-left: 10px;
-}
-.carousel{
+.carousel {
   padding-top: 100px;
   background-color: lightblue;
 }
-.sign {
-  background: rgb(195, 75, 75);
+.title {
+  margin-left: 30px;
+  font-size: 50px;
+}
+.breadcrumb-item {
+  margin-left: 30px;
+  font-size: 1vw;
 }
 .textBox {
-  background: rgb(195, 75, 75);
-  color: whitesmoke;
+  border-radius: 20px;
+  border: royalblue;
 }
-.img {
-  height: auto;
-  width: 75%;
-}
-.btn-details{
-    color: whitesmoke;
+
+.btn-details {
+  color: royalblue;
 }
 .btn-poi {
-  border-color: rgb(195, 75, 75);
-  color: rgb(195, 75, 75);
+  border-color: royalblue;
+  color: royalblue;
 }
 .btn-back {
   position: absolute;
   right: 10%;
   top: 50%;
   transform: translate(0%, -50%);
-  border-color: whitesmoke;
-  color: rgb(195, 75, 75);
+  border-color: royalblue;
+  color: royalblue;
 }
 .botton-cont {
   position: relative;

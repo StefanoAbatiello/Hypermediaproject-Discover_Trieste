@@ -45,13 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.row-line {
-  display: flex;
-  justify-content: center;
-}
-.sign {
-  background: rgb(195, 75, 75);
-}
 .title {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   color: whitesmoke; 

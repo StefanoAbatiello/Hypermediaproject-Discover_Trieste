@@ -1,26 +1,26 @@
 <template>
   <div :id="`${season}`" class="col my-3">
-    <div class="card" style="width:300px">
-      <div class="container m-0 p-0">
-      <img
-        class="card-img-top rounded-top img"
-        :src="require(`~/assets/${img}`)"
-        alt="Card image"
-        style="width: 100%; height: 200px"
-      />
-      </div>
-      <div class="card-body">
-        <nuxt-link :to="`/${category}/${id}`">
-          <h4 class="card-title">{{ name }}</h4>
-        </nuxt-link>
-        <div class="card-text"></div>
-        <p>
-          <span class="material-icons icon"> schedule </span> {{ date }}
-        </p>
-        <p>
-          <span class="material-icons icon"> navigation </span> {{ location }}
-        </p>
-      </div>
+    <div class="card">
+      <nuxt-link :to="`/${category}/${id}`">
+        <div class="container m-0 p-0">
+          <img
+            class="card-img-top img"
+            :src="require(`~/assets/${img}`)"
+            alt="Card image"
+            style="width: 100%; height: 200px"
+          />
+        </div>
+        <div class="btn card-body">
+          <p class="title">{{ name }}</p>
+          <p class="text">
+            <span class="material-icons icon"> schedule </span> {{ date }}
+          </p>
+          <p class="text">
+            <span class="material-icons icon"> navigation </span>
+            {{ location }}
+          </p>
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -67,31 +67,56 @@ export default {
 </script>
 
 <style scoped>
-.card-title {
-  color: royalblue;
-  text-align: left;
-  font-size: 17px;
-  height: auto;
-}
-.card .card-body .icon{
-  vertical-align: bottom;
-}
-.card:hover{
+.card:hover {
   opacity: 1;
   /* transform: scale(1.05); */
   position: relative;
 }
-.card:hover .card-body {
-  transform: scale(1.05);
-}
-.card:hover .card-body .icon{
+.card:hover .card-body .icon {
   color: royalblue;
-  font-size: 28px;
+  text-align: left;
+  transform: scale(1.1);
+  height: auto;
+  font-weight: 500;
 }
-.card:hover .container .img{
+.card:hover .card-body .title {
+  color: royalblue;
+  text-align: left;
+  transform: scale(1.1);
+  height: auto;
+  font-weight: 500;
+}
+.text {
+  text-align: left;
+  font-size: 15px;
+}
+.title {
+  text-align: left;
+  font-size: 18px;
+}
+.card:hover .container .img {
   transform: scale(1.2);
 }
 .card .container{
   overflow: hidden;
+  border-radius: 20px 20px 0px 0px; 
+}
+.card .container .img{
+  border-radius: 20px 20px 0px 0px; 
+}
+.card .card-body .icon {
+  vertical-align: bottom;
+}
+.card{
+  opacity: 0.9;
+  position: relative;
+  border-radius: 20px;
+}
+.card:hover .card-body {
+  transform: scale(1.05);
+}
+.card:hover .card-body .icon {
+  color: royalblue;
+  font-size: 28px;
 }
 </style>
