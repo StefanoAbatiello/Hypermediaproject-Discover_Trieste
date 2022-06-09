@@ -2,7 +2,9 @@
   <div>
   <div class="container-fluid px-0 mt-1 mb-4">
           <header-carousel class="carousel"
-          :images="img"/> 
+          :images="img"
+          :height="35"
+          /> 
     <div class="text-white sign d-flex row-md justify-content-between">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
@@ -98,6 +100,7 @@ export default {
 }
 .carousel{
   padding-top: 100px;
+  background-color: lightblue;
 }
 .sign {
   background: rgb(195, 75, 75);
@@ -105,9 +108,6 @@ export default {
 .textBox {
   background: rgb(195, 75, 75);
   color: whitesmoke;
-}
-.carousel{
-  padding-top: 100px;
 }
 .img {
   height: auto;

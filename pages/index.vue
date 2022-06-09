@@ -1,7 +1,9 @@
 <template>
   <div>
       <header-carousel class="carousel" :title="''"
-      :images= "[`homeImg/trieste10.jpeg`,`homeImg/trieste9.jpeg`,`homeImg/trieste12.jpeg`]"/>
+      :images= "[`homeImg/trieste10.jpeg`,`homeImg/trieste9.jpeg`,`homeImg/trieste12.jpeg`]"
+      :height="30"
+      />
       <b class="title text-fluid">
       Benvenuto a Trieste
     </b>

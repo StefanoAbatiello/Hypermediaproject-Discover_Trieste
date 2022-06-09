@@ -1,7 +1,9 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
     <header-carousel class="carousel" 
-          :images="img"/> 
+          :images="img"
+          :height="35"
+          /> 
     <div class="row-md d-flex justify-content-between text-white sign">
       <div class="col">
         <h1 class="title text-left">{{ name }}</h1>
@@ -160,6 +162,7 @@ export default {
 }
 .carousel{
   padding-top: 100px;
+  background-color: lightblue;
 }
 .carousel-inner > .item > img {
   margin: 0 auto;

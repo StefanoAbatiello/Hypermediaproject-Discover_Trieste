@@ -24,15 +24,15 @@
       </div>
 
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner mt-2">
-        <div class="has-bg-img carousel-item active" >
-          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[0]}`)"/>
+      <div class="carousel-inner mt-2" :style="`height:${height}rem`">
+        <div class="has-bg-img carousel-item active"  >
+          <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[0]}`)"/>
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[1]}`)"/>
+          <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[1]}`)"/>
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive" style="height: 30rem" :src="require(`~/assets/${images[2]}`)"/>
+          <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[2]}`)"/>
         </div>
       </div>
 
@@ -76,6 +76,10 @@ export default {
       type: Array.String,
       required: true,
     },
+    height:{
+      type: Number,
+      require:true,
+    }
   },
 }
 </script>
@@ -92,13 +96,14 @@ export default {
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }
-/* Carousel styling */
+/* Carousel styling  */
 #introCarousel,
 .carousel-inner,
 .carousel-item,
 .carousel-item.active {
-  height: 100vh;
-}
+  min-width: 100%;
+  height:100%; 
+} 
 .button{
   background-color: royalblue;
 }
@@ -124,7 +129,7 @@ export default {
   .carousel-inner,
   .carousel-item,
   .carousel-item.active {
-    height: 50vh;
+    height: 70vh;
   }
 }
 .bg-img{

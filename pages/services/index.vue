@@ -49,10 +49,10 @@ export default {
   max-width: 1850px;
 }
 .title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
-  color: rgb(39, 123, 250); 
-  font-family: 'My Soul', cursive;
-  font-size: 70px;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
+  color: whitesmoke; 
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 5vw;
   position: absolute;
   top:200px;
   margin-left: 50%;

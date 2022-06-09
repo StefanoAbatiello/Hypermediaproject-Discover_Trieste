@@ -2,6 +2,7 @@
   <div class="container-fluid px-0 mb-4 mt-1">
     <header-carousel class="carousel"
     :images="img"
+    :height="35"
     />
     <div class="text-white sign row-md d-flex justify-content-between">
       <div class="col">
@@ -207,6 +208,7 @@ export default {
 }
 .carousel{
   padding-top: 100px;
+  background-color: lightblue;
 }
 .sign {
   background: rgb(195, 75, 75);
