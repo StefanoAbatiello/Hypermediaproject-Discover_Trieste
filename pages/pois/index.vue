@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="image-header">
+    <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
       <b class="title"> Points of Interest </b>
     </div>
@@ -53,7 +53,7 @@ export default {
   background: rgb(195, 75, 75);
 }
 .title {
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   color: whitesmoke; 
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
@@ -61,11 +61,13 @@ export default {
   top:200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
+  /* -webkit-text-stroke: 1px black; */
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste1.jpeg');
+  background-image: url('assets\homeImg\trieste20.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  opacity: 0.9;
 }
 </style>

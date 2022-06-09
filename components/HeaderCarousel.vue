@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide mb-4" data-bs-ride="carousel">
       <!-- Indicators/dots -->
       <div class="carousel-indicators" >
         <button

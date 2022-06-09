@@ -95,7 +95,7 @@ export default {
 }
 .navbar-brand {
   color: white;
-  /* text-shadow: -0.5px 0 royalblue, 0 0.5px royalblue, 0.5px 0 royalblue, 0 -0.5px royalblue;  */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   font-size: 45px;
   font-weight: 700;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -107,7 +107,7 @@ export default {
 }
 .link{
   color: white;
-  /* text-shadow: -0.5px 0 royalblue, 0 0.5px royalblue, 0.5px 0 royalblue, 0 -0.5px royalblue;  */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
 }  
 .logo {
   color: white;

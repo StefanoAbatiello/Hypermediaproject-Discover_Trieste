@@ -43,10 +43,11 @@ export default {
   color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 5vw;
+  font-size: 7vw;
   position: absolute;
   top: 200px;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: 18%;
+  /* width: 100%; */
+  text-align: center;
 }
 </style>

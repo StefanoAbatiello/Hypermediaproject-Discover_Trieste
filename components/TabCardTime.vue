@@ -1,15 +1,8 @@
 <template>
-  <div class="tabTime">
-    <div class="d-flex justified-content-start">
-      <!-- <div class="col-1"> -->
-      <div>
-        <ul
-          :id="`${id}`"
-          class="nav flex-column nav-pills nav-justified pe-0 pt-4"
-          role="tablist"
-        >
-          <li class="nav-item icon-btn" role="presentation">
-            <button
+  <div>
+    <ul :id="`${id}`" class="nav nav-tabs nav-justified" role="tablist">
+      <li class="nav-item" role="presentation">
+       <button
               :id="`${id}`"
               class="nav-link active"
               data-bs-toggle="tab"
@@ -19,9 +12,9 @@
             >
               <span class="material-icons icon"> info </span>
             </button>
-          </li>
-          <li class="nav-item icon-btn" role="presentation">
-            <button
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
               :id="`${id}`"
               class="nav-link"
               data-bs-toggle="tab"
@@ -31,9 +24,9 @@
             >
               <span class="material-icons icon"> schedule </span>
             </button>
-          </li>
-          <li class="nav-item icon-btn" role="presentation">
-            <button
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
               :id="`${id}`"
               class="nav-link"
               data-bs-toggle="tab"
@@ -43,12 +36,22 @@
             >
               <span class="material-icons icon"> place </span>
             </button>
-          </li>
-        </ul>
-      </div>
-      <div class="col-10 pt-4 ps-0">
-        <div :id="`${id}`" class="tab-content d-flex">
-          <div
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          id="tab"
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#prices"
+          type="button"
+          role="tab"
+        >
+          <span class="material-icons icon"> sell </span>
+        </button>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content d-flex">
+       <div
             :id="`description-${id}`"
             class="tab-pane fade show active"
             style="height: 50px"
@@ -56,7 +59,7 @@
           >
             {{ description }}
           </div>
-          <div
+      <div
             :id="`time-${id}`"
             class="tab-pane fade"
             style="height: 50px"
@@ -64,7 +67,7 @@
           >
             {{ time }}
           </div>
-          <div
+      <div
             :id="`address-${id}`"
             class="tab-pane fade"
             style="height: 50px"
@@ -72,8 +75,8 @@
           >
             {{ address }}
           </div>
-        </div>
-      </div>
+    
+      <div id="prices" class="tab-pane fade" style="height: 50px" role="tabpanel">{{ prices }}</div>
     </div>
   </div>
 </template>
@@ -103,37 +106,42 @@ export default {
 </script>
 
 <style scoped>
-.nav-pills {
+.nav-tabs {
   width: 100%;
   /* max-width: 1000px; */
 }
-.nav-pills .nav-item {
+.nav-tabs .nav-item {
   max-height: 60px;
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
-.nav-pills .nav-item .nav-link {
-  background-color: royalblue;
-  opacity: 0.5;
-  color: #fff;
+.nav-tabs .nav-item .nav-link {
+  background-color: transparent;
+  opacity: 0.7;
+  border-radius: 20px;
 }
-.icon-btn {
+/* .icon-btn {
   width: 70px;
   height: 100px;
-  background-color: royalblue;
+  background-color: red;
+} */
+
+.icon {
+  color: royalblue;
 }
 
-.nav-pills .nav-item .nav-link.active {
-  color: #fff;
-  border: royalblue;
+.nav-tabs .nav-item .nav-link.active {
+  color: transparent;
+  border: transparent;
   opacity: 1;
 }
 
 .tab-content {
-  border: 1px solid royalblue;
   padding: 15px;
   /* max-height: 200px; */
   width: 100%;
   height: auto;
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .tab-content .tab-pane {
