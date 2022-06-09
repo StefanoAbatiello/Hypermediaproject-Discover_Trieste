@@ -35,16 +35,17 @@ export default {
 </script>
 
 <style scoped>
-.carousel{
+.carousel {
   opacity: 0.8;
 }
 .title {
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
-  color: whitesmoke; 
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
   position: absolute;
-  top:200px;
+  top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }

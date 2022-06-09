@@ -2,35 +2,31 @@
   <div>
     <div class="image-header">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="title">
-      Itineraries
-    </b>
+      <b class="title"> Itineraries </b>
     </div>
-    <div class="container-fluid px-0 mt-1 mb-4">
-      <!-- <div class="text-white text-left sign">
-        <h1 class="title">Itineraries</h1>
-      </div> -->
-      <div class="row mt-3 row-line">
-        <list-card
+    <section class="itinerary-list">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          <card-composed
           v-for="(it, itineraryIndex) of itineraryList"
           :id="it.id"
           :key="`itinerary-index-${itineraryIndex}`"
-          class="col-sm-2 m-2"
           :name="it.name"
           :img="it.img[0]"
           :category="'itineraries'"
         />
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
 <script>
-import ListCard from '~/components/ListCard.vue'
+import CardComposed from '~/components/CardComposed.vue'
 export default {
   name: 'ItinerariesPage',
   components: {
-    ListCard,
+    CardComposed,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
@@ -56,7 +52,7 @@ export default {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
   position: absolute;
-  top:200px;
+  top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }
