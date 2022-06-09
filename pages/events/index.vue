@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="image-header">
+    <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
       <b class="title"> Events </b>
     </div>
@@ -127,6 +127,7 @@ export default {
   top:200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-text-stroke: 1px black;
 }
 .sign {
   background: rgb(195, 75, 75);
@@ -137,9 +138,10 @@ export default {
   font-size: 15px;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste1.jpeg');
+  background-image: url('assets\homeImg\trieste2.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  opacity: 0.9;
 }
 </style>
