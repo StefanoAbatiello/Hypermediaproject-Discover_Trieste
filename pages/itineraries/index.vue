@@ -47,7 +47,7 @@ export default {
   justify-content: center;
 }
 .title {
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   color: whitesmoke; 
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
@@ -55,7 +55,7 @@ export default {
   top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-text-stroke: 1px black;
+  /* -webkit-text-stroke: 1px black; */
 }
 .image-header {
   background-image: url('assets\homeImg\trieste8.jpeg');

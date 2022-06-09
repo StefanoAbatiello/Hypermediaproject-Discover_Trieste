@@ -3,7 +3,7 @@
     <div class="card">
       <div class="container m-0 p-0">
       <img
-        class="card-img-top rounded-top p-0 img"
+        class="card-img-top p-0 img"
         :src="require(`~/assets/${img}`)"
         alt="Card image"
         style="width: 100%; height:200px"
@@ -63,9 +63,15 @@ export default {
 }
 .card .container{
   overflow: hidden;
+  border-radius: 20px 20px 0px 0px; 
 }
+.card .container .img{
+  border-radius: 20px 20px 0px 0px; 
+}
+
 .card{
   opacity: 0.9;
   position: relative;
+  border-radius: 20px;
 }
 </style>
