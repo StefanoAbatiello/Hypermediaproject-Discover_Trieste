@@ -14,9 +14,9 @@
               class="filter mb-1 w-100"
               @click="filterSeason('Summer')"
             >
-              <div class="btn text-danger btn-details w-100">
-                <b>summer</b>
-              </div>
+              <!-- <div class="btn text-danger btn-details w-100"> -->
+              <b>summer</b>
+              <!-- </div> -->
             </button>
           </div>
           <div class="col">
@@ -25,21 +25,12 @@
               class="filter mb-1 w-100"
               @click="filterSeason('Winter')"
             >
-              <div class="btn text-danger btn-details w-100"><b>winter</b></div>
+              <!-- <div class="btn text-danger btn-details w-100"> -->
+              <b>winter</b>
+              <!-- </div> -->
             </button>
           </div>
-          <div class="col">
-            <button
-              id="All"
-              class="filter mb-1 w-100"
-              style="display: none"
-              @click="seeAll()"
-            >
-              <div class="btn text-danger btn-details w-100">
-                <b>see all</b>
-              </div>
-            </button>
-          </div>
+          <div class="col"></div>
         </div>
       </div>
     </section>
@@ -49,6 +40,7 @@
           <events-card
             v-for="(event, eventIndex) of eventList"
             :id="event.id"
+            class="event"
             :key="`event-index-${eventIndex}`"
             :name="event.name"
             :img="event.img"
@@ -64,14 +56,11 @@
 </template>
 
 <script>
-// import HeaderCarousel from '~/components/HeaderCarousel.vue'
 import EventsCard from '~/components/EventsCard.vue'
-// import _seasonVue from '../seasonal/_season.vue'
 export default {
   name: 'EventsPage',
   components: {
     EventsCard,
-    // HeaderCarousel,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
@@ -82,6 +71,23 @@ export default {
   },
   methods: {
     filterSeason(season) {
+      const filters = document.getElementsByClassName('filter')
+      for (let i = 0; i < filters.length; i++) {
+        const filter = filters[i]
+        if (filter.id === season) {
+          if (filter.style.opacity === '0.5') {
+            this.seeSeason(season)
+            filter.style.opacity = '1'
+          } else {
+            this.seeAll()
+            filter.style.opacity = '0.5'
+          }
+        } else {
+          filter.style.opacity = '0.5'
+        }
+      }
+    },
+    seeSeason(season) {
       const events = document.getElementsByClassName('event')
       for (let i = 0; i < events.length; i++) {
         if (events[i].id === season) {
@@ -90,27 +96,11 @@ export default {
           events[i].style.display = 'none'
         }
       }
-      const filters = document.getElementsByClassName('filter')
-      for (let i = 0; i < filters.length; i++) {
-        if (filters[i].id === season) {
-          filters[i].style.display = 'none'
-        } else {
-          filters[i].style.display = ''
-        }
-      }
     },
     seeAll() {
       const events = document.getElementsByClassName('event')
       for (let i = 0; i < events.length; i++) {
         events[i].style.display = ''
-      }
-      const filters = document.getElementsByClassName('filter')
-      for (let i = 0; i < filters.length; i++) {
-        if (filters[i].id === 'All') {
-          filters[i].style.display = 'none'
-        } else {
-          filters[i].style.display = ''
-        }
       }
     },
   },
@@ -124,7 +114,7 @@ export default {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
   position: absolute;
-  top:200px;
+  top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
   /* -webkit-text-stroke: 1px black; */
@@ -132,10 +122,16 @@ export default {
 .sign {
   background: rgb(195, 75, 75);
 }
-.btn-details {
+/* .btn-details {
   background: white;
   border: 2px solid rgb(195, 75, 75);
+  
+} */
+.filter {
   font-size: 15px;
+  border: 3px solid royalblue;
+  color: royalblue;
+  opacity: 0.5;
 }
 .image-header {
   background-image: url('assets\homeImg\trieste2.jpeg');
