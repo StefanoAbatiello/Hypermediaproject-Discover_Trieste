@@ -1,12 +1,14 @@
 <template>
   <div :id="`${season}`" class="col my-3">
     <div class="card" style="width:300px">
+      <div class="container m-0 p-0">
       <img
-        class="card-img-top rounded-top"
+        class="card-img-top rounded-top img"
         :src="require(`~/assets/${img}`)"
         alt="Card image"
         style="width: 100%; height: 200px"
       />
+      </div>
       <div class="card-body">
         <nuxt-link :to="`/${category}/${id}`">
           <h4 class="card-title">{{ name }}</h4>
@@ -70,5 +72,26 @@ export default {
   text-align: left;
   font-size: 17px;
   height: auto;
+}
+.card .card-body .icon{
+  vertical-align: bottom;
+}
+.card:hover{
+  opacity: 1;
+  /* transform: scale(1.05); */
+  position: relative;
+}
+.card:hover .card-body {
+  transform: scale(1.05);
+}
+.card:hover .card-body .icon{
+  color: royalblue;
+  font-size: 28px;
+}
+.card:hover .container .img{
+  transform: scale(1.2);
+}
+.card .container{
+  overflow: hidden;
 }
 </style>
