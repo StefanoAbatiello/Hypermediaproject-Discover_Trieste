@@ -1,172 +1,129 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <header-carousel class="carousel"
-    :images="img"
-    :height="35"
-    />
-    <div class="text-white sign row-md d-flex justify-content-between">
-      <div class="col">
-        <h1 class="title text-left">{{ name }}</h1>
-        <ul class="ms-3 breadcrumb">
-          <li class="breadcrumb-item text-white">
-            <a @click="backToPois()">All pois/</a>
-            <a>{{ name }} </a>
-          </li>
-        </ul>
-      </div>
+    <header-carousel class="carousel" :images="img" :height="35" />
 
-      <div class="col align-self-center botton-cont">
-        <button
-          type="button"
-          class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToPois()"
-        >
-          See all Points of interest
-        </button>
-      </div>
-    </div>
-
-    <!-- <img :src="require(`~/assets/${img[0]}`)" class="img-fluid mx-auto d-block my-4" /> -->
-    <div id="textBox" class="test mt-4 p-5 text-white rounded">
-      <h1>{{ name }}</h1>
-      <p>{{ description }}</p>
-    </div>
-
-    <tab-card
-      :access-info="`accessibilty informations are needed here`"
-      :time-info="`this poi is always open`"
-      :directions="`print a map of the point of interest`"
-      :prices="`free ticket to visit this poi`"
-    />
-
-    <div id="textBox" class="test mt-4 mb-4 p-5 text-white rounded">
-      {{ name }} is correlated with the following itinerary:
-      <nuxt-link :to="`/itineraries/${itinerary.id}`"
-        ><div class="btn text-white btn-details">
-          <b>{{ itinerary.name }}</b>
-        </div></nuxt-link
-      >
-      <div v-if="data.relatedEvent !== null">
-        and it is host of
-      <nuxt-link :to="`/events/${data.relatedEvent.id}`">
-        <div class="btn text-white btn-details">
-          <b >{{ data.relatedEvent.name }}</b>
-        </div></nuxt-link
-      >
-      </div>
-    </div>
-
-    <!-- carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner row w-100 mx-auto" role="listbox">
-        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-          <img
-            :src="require(`~/assets/${data.relatedPois[2].img}`)"
-            class="img-fluid mx-auto d-block"
-            style="height: 23rem; widht: 22rem"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/pois/${data.relatedPois[2].id}`">
-              <div class="btn btn-danger text-white btn-lg">
-                {{ data.relatedPois[2].name }}
+    <section class="main-content">
+      <div class="container">
+        <div class="row justify-content-between">
+          <main class="col-md-7 mr-3">
+            <section class="main-text">
+              <nuxt-link to="/pois">Pois</nuxt-link>
+              <h1>{{ name }}</h1>
+              <div class="description-poi">
+                <p>
+                  Your gaze is lost among the many wonders that surround what is
+                  one of Procida's most beautiful beaches: on the right-hand
+                  side is the rocky ridge on which stand a few houses with
+                  typical island architecture, on the other is the small port of
+                  Corricella, a small nativity scene made up of colourful houses
+                  set between the rock and the hill on which Terra Murata
+                  stands, Procida's oldest nucleus. Opposite, the absolute
+                  protagonist is the azure blue sea.
+                </p>
+                <p>
+                  Your gaze is lost among the many wonders that surround what is
+                  one of Procida's most beautiful beaches: on the right-hand
+                  side is the rocky ridge on which stand a few houses with
+                  typical island architecture, on the other is the small port of
+                  Corricella, a small nativity scene made up of colourful houses
+                  set between the rock and the hill on which Terra Murata
+                  stands, Procida's oldest nucleus. Opposite, the absolute
+                  protagonist is the azure blue sea.
+                </p>
+                <p>
+                  Your gaze is lost among the many wonders that surround what is
+                  one of Procida's most beautiful beaches: on the right-hand
+                  side is the rocky ridge on which stand a few houses with
+                  typical island architecture, on the other is the small port of
+                  Corricella, a small nativity scene made up of colourful houses
+                  set between the rock and the hill on which Terra Murata
+                  stands, Procida's oldest nucleus. Opposite, the absolute
+                  protagonist is the azure blue sea.
+                </p>
               </div>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-          <img
-            :src="require(`~/assets/${data.relatedPois[0].img}`)"
-            class="img-fluid mx-auto d-block"
-            style="height: 23rem; widht: 22rem"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/pois/${data.relatedPois[0].id}`">
-              <div class="btn btn-danger text-white btn-lg">
-                {{ data.relatedPois[0].name }}
+              <div>
+                <tab-card
+                :access-info="`accessibilty informations are needed here`"
+                :time-info="`this poi is always open`"
+                :directions="`print a map of the point of interest`"
+                :prices="`free ticket to visit this poi`"
+              />
               </div>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-          <img
-            :src="require(`~/assets/${data.relatedPois[1].img}`)"
-            class="img-fluid mx-auto d-block"
-            style="height: 23rem; widht: 22rem"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <nuxt-link :to="`/pois/${data.relatedPois[1].id}`">
-              <div class="btn btn-danger text-white btn-lg">
-                {{ data.relatedPois[1].name }}
-              </div>
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
+            </section>
+          </main>
+          <aside class="col-md-5">
+            <div class="sticky-top">
+              <div class="row row-cols-1">
+                <div class="col pt-3">
+                  <h5>It is part of {{ itinerary.name }}</h5>
+                  <nuxt-link :to="`/itineraries/${itinerary.id}`">
+                    <img
+                      class="card-img"
+                      :src="require(`~/assets/${itineraryImage}`)"
+                      alt="Itinerary Image"
+                      style="width: 100%; height: auto"
+                      data-bs-toggle="tooltip"
+                      title="Click me to see more!"
+                    />
+                  </nuxt-link>
+                </div>
 
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_back_ios </span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_forward_ios </span>
-      </button>
-    </div>
-    <!-- end carousel -->
+                <div v-if="data.relatedEvent !== null">
+                  <div class="col pt-3">
+                    <h5>
+                      In {{ data.relatedEvent.season }} hosts
+                      {{ data.relatedEvent.name }}
+                    </h5>
+                    <nuxt-link :to="`/events/${data.relatedEvent.id}`">
+                      <img
+                        class="card-img"
+                        :src="require(`~/assets/${eventImage}`)"
+                        alt="Event Image"
+                        style="width: 100%; height: auto"
+                        data-bs-toggle="tooltip"
+                        title="Click me to see more!"
+                      />
+                    </nuxt-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <section class="map pt-5"><map-card></map-card></section>
+      </div>
+    </section>
 
     <script>
-      console.log({{ data }})
+      console.log({{ itineraryImage }})
     </script>
   </div>
 </template>
 
 <script>
 import CommonMixin from '~/mixins/common'
+import MapCard from '~/components/MapCard.vue'
 import TabCard from '~/components/TabCard.vue'
 export default {
   name: 'DetailsPage',
   components: {
     TabCard,
+    MapCard,
   },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
-    // const di = 1;
-    // const { it } = await $axios.get('/itineraries/' + di)
-    // const { relatedItinerary } = await $axios.get('/itineraries/' + data.poi.itineraryId)
+    let eventImage = null
+    if (data.relatedEvent == null) {
+      eventImage = null
+    } else {
+      eventImage = data.relatedEvent.img[0]
+    }
     return {
       itinerary: data.poi.itinerary,
+      itineraryImage: data.poi.itinerary.img[0],
+      eventImage,
       id,
       name: data.poi.name,
       img: data.poi.img,
@@ -206,7 +163,7 @@ export default {
   width: 200px;
   margin: 0;
 }
-.carousel{
+.carousel {
   padding-top: 100px;
   background-color: lightblue;
 }

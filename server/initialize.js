@@ -359,7 +359,7 @@ export default async (models) => {
             address: "via blabla",
             description: "",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            img: "services/cafes/caffè1.jpeg",
 
         },
         {
@@ -368,7 +368,7 @@ export default async (models) => {
             address: "via blabla",
             description: "",
             time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
-            img: "https://www.mark-up.it/wp-content/uploads/sites/3/2019/03/farmacia-2-696x390.jpg",
+            img: "services/cafes/caffè1.jpeg",
 
         },
         {
@@ -377,7 +377,7 @@ export default async (models) => {
             address: "Strada Montalcino, 2",
             description: "Il locale è composto da ben 7 sale di cui 5 invernali e 2 estive ed organizza serate ed eventi con generi musicali diversi.",
             time: "Aperto venerdì e sabato dalle 21.30 alle 03.00",
-            img: "services/entertinments/gradisca.jpeg",
+            img: "services/entertainments/gradisca.jpeg",
 
         },
         {
@@ -386,7 +386,7 @@ export default async (models) => {
             address: "Via Benedetto Bonfigli, 11",
             description: "La sala ha 216 poltrone distribuite su 18 file. E’ equipaggiata con un proiettore Sony 4k e con un impianto audio dolby surround.",
             time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
-            img: "services/entertinments/zenith.jpeg",
+            img: "services/entertainments/zenith.jpeg",
 
         },
         {
@@ -395,7 +395,7 @@ export default async (models) => {
             address: "Piazza Morlacchi, 13",
             description: "",
             time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
-            img: "services/entertinments/morlacchi.jpeg",
+            img: "services/entertainments/morlacchi.jpeg",
 
         },
     ]

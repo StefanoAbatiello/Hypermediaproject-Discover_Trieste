@@ -6,9 +6,9 @@
       Types of service
     </b>
     </div>
-    <section class="itinerary-list">
+    <section class="services-list">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3">
           <card-composed
           v-for="(services, servicesIndex) of servicesList"
           :id="services.id"
