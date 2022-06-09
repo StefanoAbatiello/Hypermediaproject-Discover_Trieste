@@ -1,19 +1,25 @@
 <template>
-  <div class="container-fluid px-0 mb-4 mt-1 ">
-    <div class="row-md d-flex justify-content-between text-white sign">
+  <div class="container-fluid px-0 mt-1 ">
+    <div class="image-header mb-3">
+      <img style="height: 22rem; widht: 25rem" />
+      <b class="header">
+      Types of service
+    </b>
+    </div>
+    <div class="row-md d-flex justify-content-between sign">
       <div class="col">
-        <h1 class="title text-left">{{ title }}</h1>
-        <ul class="ms-3 breadcrumb">
-          <li class="breadcrumb-item text-white">
+        <ul class="ms-4 breadcrumb">
+          <li class="breadcrumb-item ">
             <a @click="backToServices()">All types of services/</a>
             <a>{{ title }}/</a>
           </li>
         </ul>
+        <h1 class="title text-left">{{ title }}</h1>  
       </div>
       <div class="col align-self-center botton-cont">
         <button
           type="button"
-          class="btn btn-lg mb-3 ms-2 text-white btn-back"
+          class="btn btn-lg mb-3 ms-2 btn-back"
           @click="backToServices()"
         >
           See all service types
@@ -82,12 +88,31 @@ export default {
 </script>
 
 <style scoped>
-.sign {
-  background: rgb(195, 75, 75);
+
+.header{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+  color: whitesmoke; 
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 5vw;
+  position: absolute;
+  top:200px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  /* -webkit-text-stroke: 1px black; */
 }
+.image-header {
+  background-image: url('assets\homeImg\trieste22.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.9;
+}
+/* .sign {
+  background: rgb(195, 75, 75);
+} */
 .title {
-  margin-left: 10px;
-  /* font-size: 100px; */
+  margin-left: 30px;
+  font-size: 50px; 
 }
 .description{
   font-size: 30px;

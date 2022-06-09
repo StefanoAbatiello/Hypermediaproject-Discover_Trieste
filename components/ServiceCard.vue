@@ -1,9 +1,30 @@
 <template>
-  <div class="container-fluid m-2">
-    <div class="card shadow pb-0 me-4 ms-2">
+  <div class="container-fluid m-0">
+    <div class="card m-3" style="max-width: 100%;">
+  <div class="row no-gutters">
+     <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ name }}</h5>
+        <div class="card-text mt-3">
+       <tab-card-time
+              :id="id"
+              :description="description"
+              :time="time"
+              :address="address"
+            />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 ml-3 mt-5">
+      <img :src="require(`~/assets/${img}`)" class="card-img">
+    </div>
+   
+  </div>
+</div>
+    <!-- <div class="card pb-0 me-0 ms-0">
       <h2 class="card-title pt-4 pb-0 ps-3 pe-0">{{ name }}</h2>
-      <div class="row-md d-flex justify-content-start p-0 m-0">
-        <div class="col-md-7 ps-0 ms-2 me-0 pt-0 tab">
+      <div class="row-sm d-flex justify-content-start p-0 m-0">
+        <div class="col-sm-8 ps-0 ms-2 me-0 pt-0 tab">
           <div class="card-text p-0 ps-2 pb-3 pt-3">
             <tab-card-time
               :id="id"
@@ -13,24 +34,24 @@
             />
           </div>
         </div>
-        <div class="col-md-5 ms-0 card-body m-0 mt-0 mb-0 me-4">
+        <div class="col-sm-4 ms-3 card-body m-0 mt-0 mb-0 me-4">
           <img
             :src="require(`~/assets/${img}`)"
-            class="card-image img-responsive rounded pb-0 mb-4"
+            class="card-image img-responsive pb-0 mb-4"
           />
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import TabCardTime from '~/components/TabCardTime.vue'
+// import TabCardTime from '~/components/TabCardTime.vue'
 export default {
   name: 'ServiceCardComponent',
-  components: {
-    TabCardTime,
-  },
+  // components: {
+  //   TabCardTime,
+  // },
   props: {
     name: {
       type: String,
@@ -62,14 +83,18 @@ export default {
 
 <style scoped>
 .card {
-  min-width: 500px; 
+  min-width: 300px; 
   min-height: 300px;
+  border: transparent;
 }
 .card-title {
   font-size: 40px;
-  text-align: left;
+  text-align: center;
   margin-left: 5;
   margin-right: 5;
+  color: black;
+}
+.card:hover .card-title{
   color: royalblue;
 }
 .card-text {
@@ -81,11 +106,14 @@ export default {
 /* .card-body {
   max-width: 500px;
 } */
-.card-image {
+.card-img {
   /* min-height: 50px; */
   width: 100%;
-  max-width: 100%;
-  /* min-width: 270px; */
-  border: 2px solid royalblue;
+  max-height: 250px;
+  /* min-width: 100px; */
+  border-radius: 20px;
+}
+.card-img:hover{
+  transform: scale(1.05);
 }
 </style>
