@@ -19,7 +19,7 @@
       <span class="material-icons" style="color:royalblue"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -101,8 +101,9 @@ export default {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: 600;
+  text-align: right;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link{
@@ -115,10 +116,24 @@ export default {
 }
 .navbar-nav {
   margin-left: auto;
+  /* background-color: rgba(15, 15, 15, .2); */
 }
 .navbar-toggler {
-  border: 1px solid white;
+  border: 1px solid royalblue;
   margin-left: auto;
+}
+
+@media only screen and (max-width : 768px) {
+       .navbar-collapse .navbar-nav li a { 
+         background: rgba(15, 15, 15, .3);
+         padding-right: 10px;
+         width:100px; 
+         margin-left: auto;
+        }
+        .link{
+         text-shadow: none;
+         font-size: 20px;  
+        }
 }
 </style>
 
