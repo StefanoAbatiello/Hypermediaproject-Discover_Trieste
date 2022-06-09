@@ -34,14 +34,9 @@ html,body {
   padding: 2;
 }
 .MapCard {
-  /* width: 1000px;*/
-  height:400px; 
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  height:500px;
+  max-width: 100%;
   margin-top: 4px;
-  border: 3px solid rgb(195, 75, 75);
-  border-radius: 5%;
   position: relative;
 }
 </style>
