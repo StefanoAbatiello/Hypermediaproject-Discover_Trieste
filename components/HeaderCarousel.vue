@@ -13,13 +13,13 @@
           type="button"
           data-bs-target="#demo"
           data-bs-slide-to="1"
-          class=" button"
+          class="button"
         ></button>
         <button
           type="button"
           data-bs-target="#demo"
           data-bs-slide-to="2"
-          class=" button"
+          class="button"
         ></button>
       </div>
 
@@ -89,10 +89,12 @@ export default {
 } 
 .carousel-indicators {
   opacity: 1;
-  transform: scale(2.5);
 }
 .carousel-indicators .button{
   background-color: royalblue;
+  margin-right: 55px;
+  margin-left: 55px;
+  transform: scale(3.5);
 }
 .icon{
   font-size: 60px;

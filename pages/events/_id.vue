@@ -3,32 +3,48 @@
     <header-carousel class="carousel" :images="img" :height="35" />
     <section class="main-container">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-7">
+        <div class="row-md d-flex justify-content-between">
+          <main class="col-md-7 mr-3">
             <section class="main-text">
               <nuxt-link to="/events">
                 <div class="btn">Events</div>
               </nuxt-link>
               <h1>{{ name }}</h1>
-              <p>{{ description }}</p>
-            </section>
-            <aside>
-              <div class="test mt-4 mb-4 p-5 textBox">
-                <nuxt-link :to="`/pois/${poi.id}`">
-                  <div class="btn btn-details">
-                    <b>{{ poi.name }}</b>
-                  </div>
-                </nuxt-link>
+              <div>
+                <p>{{ description }}</p>
               </div>
-            </aside>
-          </div>
+              
+            </section>
+          </main>
+          <aside class="col-md-4">
+            <div class="sticky-top">
+              <diV class="row row-cols-1">
+                <div class="test mt-4 mb-4 textBox">
+                  <nuxt-link class="" :to="`/pois/${poi.id}`">
+                    <div class="btn btn-details mt-4 mb-2 ms-4" 
+                        alt="location link"
+                        data-bs-toggle="tooltip"
+                        title="Click me to see more!">
+                      <p>
+                        <span class="material-icons icon"> place </span>
+                        This event take place at:
+                      </p>
+                      <p class="location">{{ poi.name }}</p>
+                    </div>
+                  </nuxt-link>
+                </div>
+              </diV>
+            </div>
+          </aside>
         </div>
-        <tab-card
-          :access-info="accessInfo"
-          :time-info="timeInfo"
-          :directions="directions"
-          :prices="prices"
-        />
+        <div>
+                <tab-card
+                  :access-info="accessInfo"
+                  :time-info="timeInfo"
+                  :directions="directions"
+                  :prices="prices"
+                />
+              </div>
       </div>
     </section>
   </div>
@@ -78,7 +94,7 @@ export default {
 }
 .title {
   margin-left: 30px;
-  font-size: 50px;
+  font-size: 7vw;
 }
 .breadcrumb-item {
   margin-left: 30px;
@@ -86,25 +102,14 @@ export default {
 }
 .textBox {
   border-radius: 20px;
-  border: royalblue;
+  border: 2px solid lightblue;
+  font-size: 1vw;
 }
-
-.btn-details {
+.icon {
   color: royalblue;
 }
-.btn-poi {
-  border-color: royalblue;
-  color: royalblue;
-}
-.btn-back {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  border-color: royalblue;
-  color: royalblue;
-}
-.botton-cont {
-  position: relative;
+.location {
+  margin-left: 30px;
+  font-size: 1.5vw;
 }
 </style>

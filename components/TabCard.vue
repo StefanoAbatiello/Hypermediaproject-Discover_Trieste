@@ -50,7 +50,7 @@
         </button>
       </li>
     </ul>
-    <div id="myTabContent" class="tab-content">
+    <div id="myTabContent" class="tab-content d-flex">
       <div id="accessibility" class="tab-pane fade show active" role="tabpanel">
         {{ accessInfo }}
       </div>
@@ -89,20 +89,23 @@ export default {
 
 <style scoped>
 .nav-tabs .nav-item .nav-link {
-  background-color: rgb(195, 75, 75);
-  opacity: 0.5;
-  color: #fff;
-  height: 50px; 
+  background-color: transparent;
+  opacity: 0.7;
+  border-radius: 20px;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-  color: #fff;
-  border: rgb(195, 75, 75);
+  color: royalblue;
+  border: transparent;
   opacity: 1;
 }
-
+.nav-tabs .nav-item {
+  max-height: 60px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
 .tab-content {
-  border: 1px solid rgb(195, 75, 75);
+  /* border: 1px solid royalblue; */
   height: 100px;
   padding: 10px;
   }
