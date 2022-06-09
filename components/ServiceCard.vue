@@ -1,26 +1,29 @@
 <template>
   <div class="container-fluid m-0">
-    <div class="card m-3" style="max-width: 100%;">
-  <div class="row no-gutters">
-     <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{ name }}</h5>
-        <div class="card-text mt-3">
-       <tab-card-time
-              :id="id"
-              :description="description"
-              :time="time"
-              :address="address"
-            />
+    <div class="card m-0" style="max-width: 100%">
+      <div class="row no-gutters">
+        <div class="col-md-5 mt-4 mb-2">
+          <div class="container">
+            <img :src="require(`~/assets/${img}`)" class="card-img" />
+            <div class="text-block"> 
+             <h5>{{ name }}</h5>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-7 ml-3 mb-2">
+          <div class="card-body">
+            <div class="card-text mt-3">
+              <tab-card-time
+                :id="id"
+                :description="description"
+                :time="time"
+                :address="address"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4 ml-3 mt-5">
-      <img :src="require(`~/assets/${img}`)" class="card-img">
-    </div>
-   
-  </div>
-</div>
     <!-- <div class="card pb-0 me-0 ms-0">
       <h2 class="card-title pt-4 pb-0 ps-3 pe-0">{{ name }}</h2>
       <div class="row-sm d-flex justify-content-start p-0 m-0">
@@ -82,20 +85,28 @@ export default {
 </script>
 
 <style scoped>
+.text-block {
+  position: absolute;
+  top: 20px;
+  width: 70%;
+  left: 20px;
+  background-color: royalblue;
+  color: white;
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  border-radius: 0px 10px 10px 0px;
+}
 .card {
-  min-width: 300px; 
-  min-height: 300px;
+  /* min-width: 300px;
+  min-height: 300px; */
   border: transparent;
+  border-bottom: 1px solid royalblue;
 }
-.card-title {
-  font-size: 40px;
-  text-align: center;
-  margin-left: 5;
-  margin-right: 5;
-  color: black;
-}
-.card:hover .card-title{
-  color: royalblue;
+
+.container{
+  position:relative;
 }
 .card-text {
   width: 100%;
@@ -112,8 +123,5 @@ export default {
   max-height: 250px;
   /* min-width: 100px; */
   border-radius: 20px;
-}
-.card-img:hover{
-  transform: scale(1.05);
 }
 </style>

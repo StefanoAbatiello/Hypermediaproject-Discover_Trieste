@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="demo" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide mb-4 " data-bs-ride="carousel">
       <!-- Indicators/dots -->
       <div class="carousel-indicators" >
         <button
@@ -24,7 +24,7 @@
       </div>
 
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner mt-2" :style="`height:${height}rem`">
+      <div class="carousel-inner" :style="`height:${height}rem`">
         <div class="has-bg-img carousel-item active"  >
           <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[0]}`)"/>
         </div>
@@ -104,7 +104,11 @@ export default {
   min-width: 100%;
   height:100%; 
 } 
-.button{
+.carousel-indicators {
+  opacity: 1;
+  transform: scale(2.5);
+}
+.carousel-indicators .button{
   background-color: royalblue;
 }
 .icon{
