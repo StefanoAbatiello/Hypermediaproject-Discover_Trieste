@@ -1,12 +1,11 @@
 <template>
   <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
     <img
-      src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
+      :src="require(`~/assets/logo.png`)"
       class="img rounded-circle mr-auto ms-2 logo-img"
       alt="Logo"
-      style="width: 60px"
+      href="/"
     />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitTrieste</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -89,9 +88,8 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 60px;
-  width: 60px;
-  background-color: white;
+  height: 150px;
+  width: 370px;
 }
 .navbar-brand {
   color: white;
