@@ -37,7 +37,7 @@
       </div>
 
       <!-- Left and right controls/icons -->
-      <button
+      <!-- <button
         class="carousel-control-prev pl-5"
         type="button"
         data-bs-target="#demo"
@@ -56,7 +56,7 @@
         <span class="material-icons icon" style="color: royalblue">
           arrow_forward_ios
         </span>
-      </button>
+      </button> -->
     </div>
   </div>
 </template>
