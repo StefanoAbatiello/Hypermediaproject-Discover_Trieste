@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mt-1 mb-4">
+  <div class="container-fluid px-0 mb-4">
     <header-carousel class="carousel" :images="img" :height="35" />
     <section class="main-container">
       <div class="container">
@@ -90,7 +90,8 @@ export default {
 <style scoped>
 .carousel {
   padding-top: 100px;
-  background-color: lightblue;
+  background-color: rgb(65, 105, 225,.4);
+  border-radius: 0px 0px 40px 40px;
 }
 .title {
   margin-left: 30px;
@@ -111,5 +112,9 @@ export default {
 .location {
   margin-left: 30px;
   font-size: 1.5vw;
+}
+.textBox:hover{
+  background-color: rgb(65, 105, 225,.1);
+   border: 2px solid royalblue;
 }
 </style>
