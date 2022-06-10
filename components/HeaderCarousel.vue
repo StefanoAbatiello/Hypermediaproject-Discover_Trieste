@@ -86,6 +86,7 @@ export default {
 .carousel-item.active {
   min-width: 100%;
   height:100%; 
+  border-radius: 0px 0px 40px 40px;
 } 
 .carousel-indicators {
   opacity: 1;
@@ -101,9 +102,6 @@ export default {
 }
 .carousel-item {
   opacity: 1;
-}
-
-.carousel-item {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
