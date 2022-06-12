@@ -20,7 +20,7 @@ async function initializeDatabaseConnection() {
     await database.authenticate()
     const Event = database.define("event", {
         name: DataTypes.STRING,
-        description: DataTypes.TEXT,
+        description: DataTypes.ARRAY(DataTypes.TEXT),
         img: DataTypes.ARRAY(DataTypes.STRING),
         season: DataTypes.STRING,
         date: DataTypes.TEXT,
