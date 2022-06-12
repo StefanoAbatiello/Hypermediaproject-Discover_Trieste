@@ -7,8 +7,12 @@
         <div class="row justify-content-between">
           <main class="col-md-7 mr-3">
             <section class="main-text">
-              <nuxt-link to="/pois">Pois</nuxt-link>
+              <nuxt-link to="/pois"> <h6>Pois</h6> </nuxt-link>
               <h1>{{ name }}</h1>
+              <p>
+                <span class="material-icons"> place </span> via Golgi 26,
+                Trieste
+              </p>
               <div class="description-poi">
                 <p>
                   Your gaze is lost among the many wonders that surround what is
@@ -41,50 +45,84 @@
                   protagonist is the azure blue sea.
                 </p>
               </div>
-              <div>
-                <tab-card
-                :access-info="`accessibilty informations are needed here`"
-                :time-info="`this poi is always open`"
-                :directions="`print a map of the point of interest`"
-                :prices="`free ticket to visit this poi`"
-              />
+            </section>
+            <div class="interlinea" style="border-bottom-style: solid"></div>
+            <section>
+              <div class="container useful-information">
+                <h3>Useful Information</h3>
+                <div class="accesibility my-3">
+                  <h5>Accessibility</h5>
+                  
+                  <div class="info-box">
+                    <span class="material-icons">done</span>Ascensore<br>
+                    <span class="material-icons">done</span> Testo in Brile<br>
+                    <span class="material-icons">block</span>Audio guida<br>
+                  </div>
+                </div>
+                <div class="TimeTable my-3">
+                  <h5>TimeTable</h5>
+                  <div class="info-box">
+                    Mon: 10-19 <br />
+                    Tue: 10-19 <br />
+                    Wed: 10-19 <br />
+                    Thu: 10-19 <br />
+                    Fri: 10-19 <br />
+                    Sat: 15-23 <br />
+                    Sun: 15-23 <br />
+                  </div>
+                </div>
+                <div class="Prices my-3">
+                  <h5>Prices</h5>
+                  <div class="info-box">
+                    {{ name }} is accessible in different prices:
+                    <ul>
+                      <li>For over65 is free</li>
+                      <li>Fot students there is a discount of 20%</li>
+                      <li>The regular admission is 20€</li>
+                    </ul>
+                    <p>
+                      For more information about the tickets visit the following
+                      site: <a href="https://www.google.it">www.prova.it</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </section>
           </main>
           <aside class="col-md-5">
-            <div class="sticky-top">
-              <div class="row row-cols-1">
+            <div class="row row-cols-1">
+              <h2>Related Links</h2>
+              <div class="interlinea" style="border-bottom-style: solid"></div>
+              <div class="col pt-3">
+                <h5>It is part of {{ itinerary.name }}</h5>
+                <nuxt-link :to="`/itineraries/${itinerary.id}`">
+                  <img
+                    class="card-img"
+                    :src="require(`~/assets/${itineraryImage}`)"
+                    alt="Itinerary Image"
+                    style="width: 100%; height: auto"
+                    data-bs-toggle="tooltip"
+                    title="Click me to see more!"
+                  />
+                </nuxt-link>
+              </div>
+
+              <div v-if="data.relatedEvent !== null">
                 <div class="col pt-3">
-                  <h5>It is part of {{ itinerary.name }}</h5>
-                  <nuxt-link :to="`/itineraries/${itinerary.id}`">
+                  <h5>
+                    In {{ data.relatedEvent.season }} hosts
+                    {{ data.relatedEvent.name }}
+                  </h5>
+                  <nuxt-link :to="`/events/${data.relatedEvent.id}`">
                     <img
                       class="card-img"
-                      :src="require(`~/assets/${itineraryImage}`)"
-                      alt="Itinerary Image"
+                      :src="require(`~/assets/${eventImage}`)"
+                      alt="Event Image"
                       style="width: 100%; height: auto"
                       data-bs-toggle="tooltip"
                       title="Click me to see more!"
                     />
                   </nuxt-link>
-                </div>
-
-                <div v-if="data.relatedEvent !== null">
-                  <div class="col pt-3">
-                    <h5>
-                      In {{ data.relatedEvent.season }} hosts
-                      {{ data.relatedEvent.name }}
-                    </h5>
-                    <nuxt-link :to="`/events/${data.relatedEvent.id}`">
-                      <img
-                        class="card-img"
-                        :src="require(`~/assets/${eventImage}`)"
-                        alt="Event Image"
-                        style="width: 100%; height: auto"
-                        data-bs-toggle="tooltip"
-                        title="Click me to see more!"
-                      />
-                    </nuxt-link>
-                  </div>
                 </div>
               </div>
             </div>
@@ -103,11 +141,9 @@
 <script>
 import CommonMixin from '~/mixins/common'
 import MapCard from '~/components/MapCard.vue'
-import TabCard from '~/components/TabCard.vue'
 export default {
   name: 'DetailsPage',
   components: {
-    TabCard,
     MapCard,
   },
   mixins: [CommonMixin],
@@ -151,38 +187,9 @@ export default {
 </script>
 
 <style scoped>
-.prova {
-  background: lightskyblue;
-  width: 20%;
-  height: auto;
-}
-.title {
-  margin-left: 10px;
-}
-.colonna {
-  width: 200px;
-  margin: 0;
-}
-.carousel {
-  padding-top: 100px;
-  background-color: lightblue;
-}
-.sign {
-  background: rgb(195, 75, 75);
-}
-.test {
+.info-box {
   border-style: solid;
-  background-color: rgb(195, 75, 75);
-}
-.btn-back {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  border-color: whitesmoke;
-  color: rgb(195, 75, 75);
-}
-.botton-cont {
-  position: relative;
+  border-width: 0px 0px 0px 4px;
+  background-color: lightgrey;
 }
 </style>
