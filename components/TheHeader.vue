@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
     <img
       :src="require(`~/assets/logo.png`)"
-      class="img rounded-circle mr-auto ms-2 logo-img"
+      class="img mr-auto ms-2 logo-img"
       alt="Logo"
       href="/"
     />
@@ -88,7 +88,7 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 150px;
+  height: 135px;
   width: 370px;
 }
 .navbar-brand {

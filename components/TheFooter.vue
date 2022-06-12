@@ -9,7 +9,7 @@
   >
     <img
       :src="require(`~/assets/logo.png`)"
-      class="img rounded-circle mr-auto ms-2 logo-img"
+      class="img mr-auto ms-2 logo-img"
       alt="Logo"
       href="/"
     />
