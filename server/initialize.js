@@ -3,17 +3,17 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Liberty Tour",
-            img: ["itineraries/churches/sanMichele.jpeg", "itineraries/churches/sanBernardino.jpeg", "itineraries/churches/insideChurch.jpeg"],
+            img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
             description: "Viene a scoprire i palazzi in stile liberty della città"
         },
         {
             name: "Trip in roman archeology",
-            img: ["itineraries/undergound/undPer1.jpeg", "itineraries/undergound/undPer2.jpeg", "itineraries/undergound/undPer3.jpeg"],
+            img: ["pois/roman/antiquarium.jpeg", "pois/roman/lapidarioTergestino.jpeg", "pois/roman/teatro.jpeg"],
             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Discover the most important chuches",
-            img: ["itineraries/heart/squarePer.jpeg", "itineraries/heart/nightHeart.jpeg", "itineraries/heart/skyView.jpeg"],
+            img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             description: "Le chiese più belle di tutta Trieste"
         },
     ]

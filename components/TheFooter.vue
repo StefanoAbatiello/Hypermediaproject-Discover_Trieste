@@ -1,18 +1,14 @@
 <template>
   <nav
-    class="
-      navbar navbar-expand-lg navbar-dark
-      px-3
-      footer
-      justify-content-start
-    "
-  >
+    class="navbar navbar-expand-lg navbar-dark px-3 footer justify-content-start">
+    <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
       class="img mr-auto ms-2 logo-img"
       alt="Logo"
       href="/"
     />
+    </a>
     <div class="collapse navbar-collapse links">
       <ul class="navbar-nav mt-2 row d-flex justify-content-start">
         <li

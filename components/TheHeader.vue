@@ -1,11 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
+    <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
       class="img mr-auto ms-2 logo-img"
-      alt="Logo"
       href="/"
     />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
