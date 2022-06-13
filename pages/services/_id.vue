@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mt-1">
+  <div class="container-fluid px-0">
     <div class="image-header mb-3">
       <img style="height: 22rem; widht: 25rem" />
       <b class="header"> Types of service </b>
@@ -8,10 +8,11 @@
       <div class="container">
         <div class="row-md d-flex justify-content-between sign">
           <div class="col">
-            <nuxt-link :to="`/services`">
-              <div class="ms-0 text" style="width: 100%">
-                <h5>Types of services</h5>
-              </div>
+            <nuxt-link to="/events">
+              <h5 class="btn back-btn px-0">
+                <span class="material-icons px-0 back-icon">arrow_back_ios</span
+                >Type of services
+              </h5>
             </nuxt-link>
             <!-- <ul class="ms-4 breadcrumb">
           <li class="breadcrumb-item ">

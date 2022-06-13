@@ -4,14 +4,19 @@
     <section class="main-container">
       <div class="container">
         <div class="row-md d-flex justify-content-between">
-          <main class="col-md-7 mr-3">
+          <main class="col-md-7 col-sm-6">
             <section class="main-text">
               <nuxt-link to="/events">
-                  <h5 class="btn back-btn px-0"><span class="material-icons px-0 back-icon">arrow_back_ios</span>Events</h5>
+                <h5 class="btn back-btn px-0">
+                  <span class="material-icons px-0 back-icon"
+                    >arrow_back_ios</span
+                  >Events
+                </h5>
               </nuxt-link>
-              <h1 class="title">{{ name }}</h1>
+              <h1 class="mb-5 title">{{ name }}</h1>
               <div>
                 <p
+                  class="mt-3 description"
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
                 >
@@ -20,36 +25,45 @@
               </div>
             </section>
           </main>
-          <aside class="col-md-4">
+          <aside class="col-md-4 col-sm-4 aside">
             <div class="sticky-top">
               <diV class="row row-cols-1">
                 <nuxt-link class="" :to="`/pois/${poi.id}`">
-                  <div class="test mt-4 mb-4 textBox">
+                  <div class="test mt-5 mb-5 responsive text-box">
                     <div
-                      class="btn btn-details mt-4 mb-2 ms-4"
+                      class="btn btn-details mt-3 m-2"
                       alt="location link"
                       data-bs-toggle="tooltip"
                       title="Click me to see more!"
                     >
-                      <p>
+                      <p class="loc-script">
                         <span class="material-icons loc-icon"> place </span>
                         This event take place at:
                       </p>
-                      <p class="location">{{ poi.name }}</p>
+                      <!-- <p class="location">{{ poi.name }}</p> -->
+                      <div class="img-container px-2">
+                        <img
+                          :src="require(`~/assets/${poi.img[0]}`)"
+                          class="card-img mx-2 mb-1"
+                        />
+                        <div class="text-block">
+                          <h5>{{ poi.name }}</h5>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </nuxt-link>
+                <div>
+                  <tab-card class="mt-2"
+                    :access-info="accessInfo"
+                    :time-info="timeInfo"
+                    :directions="directions"
+                    :prices="prices"
+                  />
+                </div>
               </diV>
             </div>
           </aside>
-        </div>
-        <div>
-          <tab-card
-            :access-info="accessInfo"
-            :time-info="timeInfo"
-            :directions="directions"
-            :prices="prices"
-          />
         </div>
       </div>
     </section>
@@ -95,35 +109,64 @@ export default {
 
 <style scoped>
 .carousel {
-  padding-top: 100px;
-  background-color: rgb(65, 105, 225, 0.4);
-  border-radius: 0px 0px 40px 40px;
+  padding-top: 125px;
+  background-color: rgb(65, 105, 225);
 }
 .title {
   font-size: 4vw;
   color: royalblue;
 }
-.textBox {
+.aside {
+  min-width: 250px;
+}
+.text-box {
   border-radius: 20px;
   border: 2px solid lightblue;
-  font-size: 1vw;
+  overflow: hidden;
+  /* min-width: 250px; */
+}
+.loc-script {
+  font-size: 17px;
+  text-align: left;
 }
 .loc-icon {
   color: royalblue;
+  font-size: 25px;
 }
 /*.back-icon{
    vertical-align: middle;
    align-items: center; 
 }*/
-.back-btn{
+.back-btn {
   font-size: 1.5vw;
 }
-.location {
-  margin-left: 30px;
-  font-size: 1.5vw;
+.description{
+  font-size: 20px;
 }
-.textBox:hover {
+.text-box:hover {
   background-color: rgb(65, 105, 225, 0.1);
   border: 2px solid royalblue;
+}
+.card-img {
+  width: 100%;
+  height: auto;
+  min-width: 180px;
+  max-width: 400px;
+}
+.text-block {
+  position: absolute;
+  top: 20px;
+  width: 70%;
+  left: 12px;
+  background-color: rgb(65, 105, 225, 0.3);
+  color: white;
+  margin-left: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  border-radius: 0px 10px 10px 0px;
+}
+.img-container {
+  position: relative;
 }
 </style>
