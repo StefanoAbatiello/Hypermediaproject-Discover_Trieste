@@ -45,6 +45,7 @@ async function initializeDatabaseConnection() {
         description:DataTypes.STRING,
         time: DataTypes.STRING,
         img: DataTypes.STRING,
+        map: DataTypes.STRING,
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,

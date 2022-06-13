@@ -2,81 +2,79 @@
   <div>
     <ul :id="`${id}`" class="nav nav-tabs nav-justified" role="tablist">
       <li class="nav-item" role="presentation">
-       <button
-              :id="`${id}`"
-              class="nav-link active"
-              data-bs-toggle="tab"
-              :data-bs-target="`#description-${id}`"
-              type="button"
-              role="tab"
-            >
-              <span class="material-icons icon"> info </span>
-            </button>
-      </li>
-      <li class="nav-item" role="presentation">
         <button
-              :id="`${id}`"
-              class="nav-link"
-              data-bs-toggle="tab"
-              :data-bs-target="`#time-${id}`"
-              type="button"
-              role="tab"
-            >
-              <span class="material-icons icon"> schedule </span>
-            </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-              :id="`${id}`"
-              class="nav-link"
-              data-bs-toggle="tab"
-              :data-bs-target="`#address-${id}`"
-              type="button"
-              role="tab"
-            >
-              <span class="material-icons icon"> place </span>
-            </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          id="tab"
-          class="nav-link"
+          :id="`${id}`"
+          class="nav-link active"
           data-bs-toggle="tab"
-          data-bs-target="#prices"
+          :data-bs-target="`#description-${id}`"
           type="button"
           role="tab"
         >
-          <span class="material-icons icon"> sell </span>
+          <span class="material-icons icon"> info </span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          :id="`${id}`"
+          class="nav-link"
+          data-bs-toggle="tab"
+          :data-bs-target="`#time-${id}`"
+          type="button"
+          role="tab"
+        >
+          <span class="material-icons icon"> schedule </span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          :id="`${id}`"
+          class="nav-link"
+          data-bs-toggle="tab"
+          :data-bs-target="`#address-${id}`"
+          type="button"
+          role="tab"
+        >
+          <span class="material-icons icon"> place </span>
         </button>
       </li>
     </ul>
     <div id="myTabContent" class="tab-content d-flex">
-       <div
-            :id="`description-${id}`"
-            class="tab-pane fade show active"
-            style="height: 50px"
-            role="tabpanel"
-          >
-            {{ description }}
-          </div>
       <div
-            :id="`time-${id}`"
-            class="tab-pane fade"
-            style="height: 50px"
-            role="tabpanel"
-          >
-            {{ time }}
-          </div>
+        :id="`description-${id}`"
+        class="tab-pane fade show active"
+        style="height: 50px"
+        role="tabpanel"
+      >
+        {{ description }}
+      </div>
       <div
-            :id="`address-${id}`"
-            class="tab-pane fade"
-            style="height: 50px"
-            role="tabpanel"
+        :id="`time-${id}`"
+        class="tab-pane fade"
+        style="height: 50px"
+        role="tabpanel"
+      >
+        {{ time }}
+      </div>
+      <div
+        :id="`address-${id}`"
+        class="tab-pane fade"
+        style="height: 50px"
+        role="tabpanel"
+      >
+        <!-- {{ address }} -->
+        <div class="map rounded">
+          <iframe
+            width="450"
+            height="250"
+            frameborder="0"
+            style="border: 0"
+            referrerpolicy="no-referrer-when-downgrade"
+            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}&avoid=tolls|highways`"
+            allowfullscreen
           >
-            {{ address }}
-          </div>
-    
-      <div id="prices" class="tab-pane fade" style="height: 50px" role="tabpanel">{{ prices }}</div>
+          </iframe>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -101,6 +99,10 @@ export default {
       type: String,
       required: true,
     },
+    map:{
+      type: String,
+      required:true,
+    }
   },
 }
 </script>
@@ -152,5 +154,8 @@ export default {
 }
 .tabTime {
   width: 100%;
+}
+.map{
+margin-left: 100px;
 }
 </style>
