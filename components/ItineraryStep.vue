@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .card-title {
-  color: rgb(136, 24, 24);
+  color: royalblue;
   text-align: left;
 }
 .card-text {
@@ -68,8 +68,8 @@ export default {
   margin-left: 3px;
 }
 .btn-details {
-  background-color: rgb(136, 24, 24);
-  opacity: 0.7;
+  background-color: royalblue;
+  opacity: 0.6;
 }
 .btn-details:hover {
   opacity: 1;

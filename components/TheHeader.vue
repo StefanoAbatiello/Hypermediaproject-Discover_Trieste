@@ -1,11 +1,12 @@
 <template>
   <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
+    <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
-      class="img rounded-circle mr-auto ms-2 logo-img"
-      alt="Logo"
+      class="img mr-auto ms-2 logo-img"
       href="/"
     />
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -88,7 +89,7 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 150px;
+  height: 135px;
   width: 370px;
 }
 .navbar-brand {

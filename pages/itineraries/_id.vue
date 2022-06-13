@@ -1,116 +1,38 @@
 <template>
   <div class="container-fluid px-0 mb-4 mt-1">
-    <header-carousel class="carousel" 
-          :images="img"
-          :height="35"
-          /> 
-    <div class="row-md d-flex justify-content-between text-white sign">
-      <div class="col">
-        <h1 class="title text-left">{{ name }}</h1>
-        <ul class="ms-3 breadcrumb">
-          <li class="breadcrumb-item text-white">
-            <a @click="backToItineraries()">All itineraries/</a>
-            <a>{{ name }}</a>
-          </li>
-        </ul>
-      </div>
+    <header-carousel class="carousel" :images="img" :height="35" />
 
-      <div class="col align-self-center botton-cont">
-        <button
-          type="button"
-          class="btn btn-lg mb-3 ms-2 btn-back text-white"
-          @click="backToItineraries()"
-        >
-          See all itineraries
-        </button>
-      </div>
-    </div>
-
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-      </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner mt-2">
-        <div class="carousel-item active">
-          <img
-            :src="require(`~/assets/${img[0]}`)"
-            class="mx-auto d-block"
-            style="height: 22rem; widht: 25rem"
-          />
+    <section class="main-content">
+      <div class="container">
+        <div class="row justify-content-between">
+          <main class="col-md-7 mr-3">
+            <section class="main-text">
+              <nuxt-link to="/itineraries"> <h6>Itineraries</h6> </nuxt-link>
+              <h1>{{ name }}</h1>
+              <div class="description-poi">
+                <p>
+                  {{description}}
+                </p>
+              </div>
+            </section>
+          </main>
         </div>
-        <div class="carousel-item">
-          <img
-            :src="require(`~/assets/${img[1]}`)"
-            class="mx-auto d-block"
-            style="height: 23rem; widht: 22rem"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            :src="require(`~/assets/${img[2]}`)"
-            class="mx-auto d-block"
-            style="height: 23rem; widht: 22rem"
-          />
+        <div id="backgr" class="text-white rounded backgr">
+          <h1 class="title">List of itinerary steps</h1>
+          <div class="list-fluid mt-1 list">
+            <itinerary-step
+              v-for="(poi, poiIndex) of poiList"
+              :id="poi.id"
+              :key="`poi-index-${poiIndex}`"
+              :name="poi.name"
+              :img="poi.img[0]"
+              :description="poi.description"
+              :category="'poi'"
+            />
+          </div>
         </div>
       </div>
-
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev pl-5"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_back_ios </span>
-      </button>
-      <button
-        class="carousel-control-next pr-5"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="material-icons" style="color: rgb(195, 75, 75)"> arrow_forward_ios </span>
-      </button>
-    </div>
-
-    <div class="m-3 des-div">
-      <b> Description: </b>
-      <p class="lead">
-        {{ description }}
-      </p>
-    </div>
-    <div id="backgr" class="text-white rounded backgr">
-      <h1 class="title">List of itinerary steps</h1>
-      <div class="list-fluid mt-1 list">
-        <itinerary-step
-          v-for="(poi, poiIndex) of poiList"
-          :id="poi.id"
-          :key="`poi-index-${poiIndex}`"
-          :name="poi.name"
-          :img="poi.img[0]"
-          :description="poi.description"
-          :category="'poi'"
-        />
-      </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -154,13 +76,13 @@ export default {
   margin-left: 10px;
 }
 .backgr {
-  background: rgb(195, 75, 75);
+  background: royalblue;
 }
 .list {
   margin-left: 8%;
   margin-right: 8%;
 }
-.carousel{
+.carousel {
   padding-top: 100px;
   background-color: lightblue;
 }

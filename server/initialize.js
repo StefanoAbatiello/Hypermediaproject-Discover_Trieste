@@ -3,17 +3,17 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Liberty Tour",
-            img: ["itineraries/churches/sanMichele.jpeg", "itineraries/churches/sanBernardino.jpeg", "itineraries/churches/insideChurch.jpeg"],
+            img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
             description: "Viene a scoprire i palazzi in stile liberty della città"
         },
         {
             name: "Trip in roman archeology",
-            img: ["itineraries/undergound/undPer1.jpeg", "itineraries/undergound/undPer2.jpeg", "itineraries/undergound/undPer3.jpeg"],
+            img: ["pois/roman/antiquarium.jpeg", "pois/roman/lapidarioTergestino.jpeg", "pois/roman/teatro.jpeg"],
             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Discover the most important chuches",
-            img: ["itineraries/heart/squarePer.jpeg", "itineraries/heart/nightHeart.jpeg", "itineraries/heart/skyView.jpeg"],
+            img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             description: "Le chiese più belle di tutta Trieste"
         },
     ]
@@ -130,7 +130,7 @@ export default async (models) => {
     const eventList = [
         {
             name: "Umbria Jazz",
-            description: "Details about concert",
+            description: ["Details about concert"],
             img: ["events/umbriaJazz.jpeg","events/umbriaJazz.jpeg","events/umbriaJazz.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
@@ -142,7 +142,7 @@ export default async (models) => {
         },
         {
             name: "Eurochocolate",
-            description: "Details about marathon",
+            description: ["Details about marathon"],
             img: ["events/eurochocolate.jpeg","events/eurochocolate.jpeg","events/eurochocolate.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
@@ -154,7 +154,7 @@ export default async (models) => {
         },
         {
             name: "International Journalism Festival",
-            description: "Details about ",
+            description: ["Details about "],
             img: ["events/ijf22.jpeg","events/ijf22.jpeg","events/ijf22.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
@@ -166,7 +166,7 @@ export default async (models) => {
         },
         {
             name: "Festa di San Costanzo",
-            description: "Corsa podistica storica di Perugia",
+            description: ["Corsa podistica storica di Perugia"],
             img: ["events/sanCostanzo.jpeg","events/sanCostanzo.jpeg","events/sanCostanzo.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
@@ -177,20 +177,20 @@ export default async (models) => {
             prices: "event.img",
         },
         {
-            name: "Musica per i borghi",
-            description: "Details about concert",
-            img: ["events/musicaBorghi.jpeg","events/musicaBorghi.jpeg","events/musicaBorghi.jpeg"],
+            name: "Il Caos Dentro",
+            description: ["Il Caos Dentro racconta Frida Kahlo mettendo in evidenza tanto la temperie culturale e politica in cui la pittrice visse, quanto le sue fragilità e la sua forza. Soprattutto, mette in contatto l’emotività del visitatore con quella di Frida, grazie all’uso delle moderne tecnologie immersive che rafforzano le suggestioni e avvicinano i visitatori di ogni età a una donna e artista dalla grande forza attrattiva."," Il percorso espositivo al Salone degli Incanti di Trieste presenta il dipinto originale Piden aeroplanos y les dan alas de petate attribuito a Frida Kahlo e 15 riproduzioni di celebri autoritratti realizzati tra il1926 e il 1949 riprodotti con la sofisticata tecnologia modlight, che restituisce allo spettatore i dettagli della pittura a olio con impressionante realismo. "," Tra le opere originali, figurano anche sei litografie acquerellate dell’artista e marito Diego Rivera, provenienti dal collezioni private messicane, e un centinaio di scatti del fotografo colombiano Leo Matiz, in bianco e nero e a colori, provenienti dalla Fondazione Leo Matiz di Bogotà.","In mostra anche lettere e pagine di diario, oltre 40 emissioni filateliche (tra le quali l’emissione con il famoso Autoritratto con collana (1933), accanto a riproduzioni digitali di autoritratti e murales messicani, riproduzioni a grandezza reale di ambienti come la camera da letto, lo studio e il giardino di Frida Kahlo, e una sala cinema 10D ad alta tecnologia per una proiezione video multisensoriale."],
+            img: ["events/fridaKahlo/logo.jpeg","events/fridaKahlo/interno.jpeg","events/fridaKahlo/ingresso.jpeg"],
             season: "Summer",
-            date: "dal 10/7 al 21/7",
-            poiId: poi3.id,
-            accessInfo: "col-sm-2 m-2",
-            timeInfo: "even",
-            directions: "event.name",
-            prices: "event.img",
+            date: "Dal 12/3 al 23/7",
+            poiId: poi4.id,
+            accessInfo: "All'ingresso è presente una piccola scalinata affiancata da scivoli per superare il dislivello. All'interno la mostra è dislocata totalmente al pian terreno, dunque non vi sono dislivelli ed è accessibile a chiunque",
+            timeInfo: "Dal lunedì al venerdì: dalle 09.30 alle 20.00 | sabato, domenica e festivi: dalle 09.30 alle 21.00",
+            directions: "Il Salone degli Incanti si trova in prossimità della fermata bus Riva Nazario Sauro (Pescheria centrale) delle linee 8 e 9. Ampio parcheggio in prossimità del Salone degli Incanti per chidesidera raggiungerlo in auto",
+            prices: "Biglietti acquistabili su ticketone, al costo di €16,30 | coloro che pernotteranno almeno una notte nelle strutture alberghiere convenzionate, potranno visitare gratuitamente la mostra.",
         },
         {
             name: "Perugia Flowers Show",
-            description: "alla ricerca dei fiori ",
+            description: ["alla ricerca dei fiori "],
             img: ["events/flowerShow.jpeg","events/flowerShow.jpeg","events/flowerShow.jpeg"],
             season: "Winter",
             date: "dal 10/7 al 21/7",
@@ -202,7 +202,7 @@ export default async (models) => {
         },
         {
             name: "Umbria che Spacca",
-            description: "Details about ",
+            description: ["Details about "],
             img: ["events/umbriaCheSpacca.jpeg","events/umbriaCheSpacca.jpeg","events/umbriaCheSpacca.jpeg"],
             season: "Summer",
             date: "dal 10/7 al 21/7",
@@ -214,7 +214,7 @@ export default async (models) => {
         },
         {
             name: "Rally dell'Umbria",
-            description: "Details about this event ",
+            description: ["Details about this event "],
             img: ["events/rallyUmbria.jpeg","events/rallyUmbria.jpeg","events/rallyUmbria.jpeg"],
             season: "Summer",
             date: "dal 10/7 al 21/7",
