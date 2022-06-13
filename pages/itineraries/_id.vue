@@ -15,6 +15,18 @@
                 </p>
               </div>
             </section>
+             <div class="map rounded">
+          <iframe
+            width="1600vw"
+            height="700vw"
+            frameborder="0"
+            style="border: 0;"
+            referrerpolicy="no-referrer-when-downgrade"
+            :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=Salone+Incanto,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Casa+Terni,Trieste,Italy|Teatro+Romano,Trieste,Italy&avoid=tolls|highways&mode=walking`"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
           </main>
         </div>
         <div id="backgr" class="text-white rounded backgr">
@@ -69,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+.map{
+  transform: translate(-20%,0%);
+}
 .sign {
   background: rgb(195, 75, 75);
 }

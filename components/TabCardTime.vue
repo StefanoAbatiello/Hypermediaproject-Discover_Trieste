@@ -58,7 +58,7 @@
       <div
         :id="`address-${id}`"
         class="tab-pane fade"
-        style="height: 50px"
+        style="height: 50px; justify-content:center"
         role="tabpanel"
       >
         <!-- {{ address }} -->
@@ -69,7 +69,7 @@
             frameborder="0"
             style="border: 0"
             referrerpolicy="no-referrer-when-downgrade"
-            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}&avoid=tolls|highways`"
+            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}`"
             allowfullscreen
           >
           </iframe>
@@ -155,7 +155,7 @@ export default {
 .tabTime {
   width: 100%;
 }
-.map{
-margin-left: 100px;
-}
+/* .map{
+margin-left: 3vw;
+} */
 </style>
