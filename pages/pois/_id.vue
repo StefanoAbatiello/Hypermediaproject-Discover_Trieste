@@ -54,9 +54,9 @@
                   <h5>Accessibility</h5>
                   
                   <div class="info-box">
-                    <span class="material-icons">done</span>Ascensore<br>
-                    <span class="material-icons">done</span> Testo in Brile<br>
-                    <span class="material-icons">block</span>Audio guida<br>
+                    <span class="material-icons" style="color: green;">done</span>Ascensore<br>
+                    <span class="material-icons" style="color: green;">done</span> Testo in Brile<br>
+                    <span class="material-icons" style="color: red;">block</span>Audio guida<br>
                   </div>
                 </div>
                 <div class="TimeTable my-3">
@@ -191,5 +191,9 @@ export default {
   border-style: solid;
   border-width: 0px 0px 0px 4px;
   background-color: lightgrey;
+}
+.material-icons{
+  vertical-align: center;
+  font-size: 18px ;
 }
 </style>
