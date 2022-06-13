@@ -90,14 +90,17 @@ export default {
 <style scoped>
 .nav-tabs .nav-item .nav-link {
   background-color: transparent;
-  opacity: 0.7;
-  border-radius: 20px;
+  opacity: 0.9;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 1.2vw;
 }
 
 .nav-tabs .nav-item .nav-link.active {
   color: royalblue;
   border: transparent;
   opacity: 1;
+  font-size: 1.2vw;
+  background-color: rgb(65, 105, 225, 0.1);
 }
 .nav-tabs .nav-item {
   max-height: 60px;
@@ -109,13 +112,15 @@ export default {
   height: 100px;
   padding: 10px;
   }
-
+.nav-tabs{
+  border-bottom-color: royalblue;
+}
 .tab-content .tab-pane {
   background-color: #fff;
   color: black;
 }
 .icon{
   vertical-align: bottom;
-  font-size: 18px ;
+
 }
 </style>

@@ -1,32 +1,27 @@
 <template>
   <nav
-    class="
-      navbar navbar-expand-lg navbar-dark
-      px-3
-      footer
-      justify-content-start
-    "
-  >
+    class="navbar navbar-expand-lg navbar-dark px-3 footer justify-content-start">
+    <a href="/">
     <img
-      src="https://www.pseo.it/content/04_grafica/Loghi/grifone.jpg"
-      class="img rounded-circle mr-auto ms-2 logo-img"
+      :src="require(`~/assets/logo.png`)"
+      class="img mr-auto ms-2 logo-img"
       alt="Logo"
-      style="width: 60px"
+      href="/"
     />
-    <a class="navbar-brand ms-2 mr-auto" href="/">VisitTrieste</a>
-
+    </a>
     <div class="collapse navbar-collapse links">
-      <ul class="navbar-nav mt-2 row d-flex justify-content-start ">
-      <li
-        v-for="(navItem, navItemIndex) of footerList"
-        :key="`navItem${navItemIndex}`"
-        class="nav-item col-md-auto"
-      >
-        <nuxt-link :to="navItem.path" class="nav-link">
-          {{ navItem.name }}
-        </nuxt-link>
-      </li>
-    </ul></div>
+      <ul class="navbar-nav mt-2 row d-flex justify-content-start">
+        <li
+          v-for="(navItem, navItemIndex) of footerList"
+          :key="`navItem${navItemIndex}`"
+          class="nav-item col-md-auto"
+        >
+          <nuxt-link :to="navItem.path" class="nav-link">
+            {{ navItem.name }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
@@ -53,21 +48,24 @@ export default {
 <style scoped>
 .footer {
   background: royalblue;
+  position: absolute;
+  bottom: 0px;
 }
 .logo-img {
-  height: 60px;
-  width: 60px;
-  background-color: white;
+  height: 95px;
+  width: 300px;
 }
 .navbar-brand {
   color: white;
   font-size: 45px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
   color: white;
   font-size: 22px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .logo {
   color: white;
