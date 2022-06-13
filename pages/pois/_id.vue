@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mb-4 mt-1">
+  <div class="container-fluid px-0 mb-4">
     <header-carousel class="carousel" :images="img" :height="35" />
 
     <section class="main-content">
@@ -7,7 +7,13 @@
         <div class="row justify-content-between">
           <main class="col-md-7 mr-3">
             <section class="main-text">
-              <nuxt-link to="/pois"> <h6>Pois</h6> </nuxt-link>
+              <nuxt-link to="/events">
+                <h5 class="btn back-btn px-0">
+                  <span class="material-icons px-0 back-icon"
+                    >arrow_back_ios</span
+                  >Pois
+                </h5>
+              </nuxt-link>
               <h1>{{ name }}</h1>
               <p>
                 <span class="material-icons"> place </span> via Golgi 26,
@@ -187,6 +193,10 @@ export default {
 </script>
 
 <style scoped>
+.carousel {
+  padding-top: 125px;
+  background-color: rgb(65, 105, 225);
+}
 .info-box {
   border-style: solid;
   border-width: 0px 0px 0px 4px;

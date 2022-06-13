@@ -86,17 +86,16 @@ export default {
 .carousel-item.active {
   min-width: 100%;
   height:100%; 
-  border-radius: 0px 0px 40px 40px;
 } 
 .carousel-indicators {
   opacity: 1;
 }
-.carousel-indicators .button{
-  background-color: royalblue;
+/* .carousel-indicators .button{
+
   margin-right: 55px;
   margin-left: 55px;
-  transform: scale(3.5);
-}
+
+} */
 .icon{
   font-size: 60px;
 }
