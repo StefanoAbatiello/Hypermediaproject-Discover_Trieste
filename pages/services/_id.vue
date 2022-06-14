@@ -8,7 +8,7 @@
       <div class="container">
         <div class="row-md d-flex justify-content-between sign">
           <div class="col">
-            <nuxt-link to="/events">
+            <nuxt-link to="/services">
               <h5 class="btn back-btn px-0">
                 <span class="material-icons px-0 back-icon">arrow_back_ios</span
                 >Type of services
@@ -87,11 +87,11 @@ export default {
     // Example on hwo to use mixinx
     console.log(this.formatMyDate(date.toLocaleDateString()))
   },
-  methods: {
-    backToServices() {
-      this.$router.push('/services')
-    },
-  },
+  // methods: {
+  //   backToServices() {
+  //     this.$router.push('/services')
+  //   },
+  // },
 }
 </script>
 
