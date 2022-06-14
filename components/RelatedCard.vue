@@ -64,11 +64,13 @@ export default {
 .text {
   margin-top: 10px;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
+  
 }
 .icon {
   color: royalblue;
   font-size: 30px;
+  vertical-align: middle;
 }
 .card-img {
   width: 100%;
