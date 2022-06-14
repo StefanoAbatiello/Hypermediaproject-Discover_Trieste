@@ -1,7 +1,7 @@
 <template>
   <div>
-    <ul id="myTab" class="nav nav-tabs nav-justified" role="tablist">
-      <li class="nav-item" role="presentation">
+    <ul id="myTab" class="nav nav-tabs justify-content-between nav-justified" role="tablist">
+      <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
           class="nav-link active"
@@ -13,7 +13,7 @@
           <p><span class="material-icons icon"> accessibility_new </span></p>
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -25,7 +25,7 @@
           <p><span class="material-icons icon"> schedule </span></p>
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -37,7 +37,7 @@
           <p><span class="material-icons icon"> navigation </span></p>
         </button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -46,7 +46,7 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons ps-1 icon"> confirmation_number </span></p>
+          <p><span class="material-icons icon"> confirmation_number </span></p>
         </button>
       </li>
     </ul>
@@ -68,19 +68,19 @@ export default {
   name: 'TabCardComponent',
   props: {
     accessInfo: {
-      type: Text,
+      type: String,
       required: true,
     },
     timeInfo: {
-      type: Text,
+      type: String,
       required: true,
     },
     directions: {
-      type: Text,
+      type: String,
       required: true,
     },
     prices: {
-      type: Text,
+      type: String,
       required: true,
     },
   },
@@ -90,11 +90,12 @@ export default {
 <style scoped>
 .nav-tabs .nav-item .nav-link {
   background-color: transparent;
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border: transparent;
   opacity: 0.9;
   border-radius: 20px;
   font-size: 1.2vw;
+  
 }
 
 .nav-tabs .nav-item .nav-link.active .icon {
@@ -106,12 +107,15 @@ export default {
   border: transparent;
   opacity: 1;
   font-size: 1.2vw;
+  
   /* background-color: rgb(65, 105, 225, 0.3); */
 }
 .nav-tabs .nav-item {
   max-height: 60px;
   border-radius: 20px;
   margin-bottom: 5px;
+  align-content: center;
+  width: 75px;
 }
 .tab-content {
   /* border: 1px solid royalblue; */
@@ -120,6 +124,7 @@ export default {
 }
 .nav-tabs {
   border-bottom-color: royalblue;
+
 }
 .tab-content .tab-pane {
   background-color: #fff;
@@ -129,7 +134,8 @@ export default {
   vertical-align: middle;
   background-color: rgb(65, 105, 225, 0.7);
   border-radius: 60px;
-  font-size: 40px;
-  padding:5px;
+  font-size: 45px;
+  padding:3px;
+  margin-bottom: 2;
 }
 </style>
