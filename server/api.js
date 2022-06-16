@@ -24,10 +24,11 @@ async function initializeDatabaseConnection() {
         img: DataTypes.ARRAY(DataTypes.STRING),
         season: DataTypes.STRING,
         date: DataTypes.TEXT,
-        accessInfo: DataTypes.STRING,
-        timeInfo: DataTypes.STRING,
-        directions: DataTypes.STRING,
-        prices: DataTypes.STRING,
+        accessInfo: DataTypes.ARRAY(DataTypes.STRING),
+        timeInfo: DataTypes.ARRAY(DataTypes.STRING),
+        // directions: DataTypes.STRING,
+        prices: DataTypes.ARRAY(DataTypes.STRING),
+        website: DataTypes.ARRAY(DataTypes.STRING),
     })
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
@@ -39,6 +40,10 @@ async function initializeDatabaseConnection() {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
         img: DataTypes.ARRAY(DataTypes.STRING),
+        accessInfo: DataTypes.ARRAY(DataTypes.STRING),
+        timeInfo: DataTypes.ARRAY(DataTypes.STRING),
+        prices: DataTypes.ARRAY(DataTypes.STRING),
+        website: DataTypes.ARRAY(DataTypes.STRING),
     })
     const SingleService =database.define("singleService",{
         name: DataTypes.STRING,

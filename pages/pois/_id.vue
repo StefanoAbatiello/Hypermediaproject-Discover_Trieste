@@ -51,78 +51,14 @@
                   protagonist is the azure blue sea.
                 </p>
               </div>
-            </section>
-            <div class="interlinea" style="border-bottom-style: solid"></div>
-            <section class="useful-information">
-              <div class="accesibility my-3">
-                <h3>Accessibility</h3>
-                <div class="row info-box">
-                  <div class="icons col">
-                    <span class="mi material-icons" style="color: green"
-                      >done</span
-                    >Step-Free
-                  </div>
-                  <div class="icons col">
-                    <span class="mi material-icons" style="color: green"
-                      >done</span
-                    >Testo in Brile
-                  </div>
-                  <div class="icons col">
-                    <span class="mi material-icons" style="color: red"
-                      >block</span
-                    >Audio Description
-                  </div>
-                </div>
-              </div>
-              <div class="interlinea" style="border-bottom-style: solid"></div>
-              <div class="TimeTable my-3">
-                <h3>TimeTable</h3>
-                <div class="time-box">
-                  <div class="row">
-                    <div class="day col">Monday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Tuesday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Wednesday::</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Thursday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Friday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Saturday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                  <div class="row">
-                    <div class="day col">Sunday:</div>
-                    <div class="hour col">10-19</div>
-                  </div>
-                </div>
-              </div>
-              <div class="interlinea" style="border-bottom-style: solid"></div>
-              <div class="Prices my-3">
-                <h3>Prices</h3>
-                <div class="price-box">
-                  {{ name }} is accessible in different prices:
-                  <ul>
-                    <li>For over65 is free</li>
-                    <li>Fot students there is a discount of 20%</li>
-                    <li>The regular admission is 20€</li>
-                  </ul>
-                  <p>
-                    For more information about the tickets visit the following
-                    site: <a href="https://www.google.it">www.prova.it</a>
-                  </p>
-                </div>
+              <div class="interlinea">
+                <tab-card
+                    class="mt-3"
+                    :access-info="accessInfo"
+                    :time-info="timeInfo"
+                    :prices="prices"
+                    :website="website"
+                  />
               </div>
             </section>
           </main>
@@ -157,8 +93,16 @@
           </aside>
         </div>
 
-        <section class="map">
-          <div class="map rounded my-3"><map-card></map-card></div>
+        <section>
+          <div class="map rounded">
+          <iframe
+            referrerpolicy="no-referrer-when-downgrade"
+            frameborder="0"
+            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=MQ29%2B24`"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
         </section>
       </div>
     </section>
@@ -168,11 +112,11 @@
 <script>
 import CommonMixin from '~/mixins/common'
 import RelatedCard from '~/components/RelatedCard.vue'
-import MapCard from '~/components/MapCard.vue'
+import TabCard from '~/components/TabCard.vue'
 export default {
   name: 'DetailsPage',
   components: {
-    RelatedCard,MapCard
+    RelatedCard,TabCard
   },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
@@ -192,6 +136,10 @@ export default {
       name: data.poi.name,
       img: data.poi.img,
       description: data.poi.description,
+      accessInfo: data.poi.accessInfo,
+      timeInfo: data.poi.timeInfo,
+      prices: data.poi.prices,
+      website: data.poi.website,
       data,
     }
   },
@@ -246,5 +194,6 @@ export default {
   max-width: 100%;
   margin-top: 4px;
   position: relative;
+  border: 0;
 }
 </style>

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ul id="myTab" class="nav nav-tabs justify-content-between nav-justified" role="tablist">
+    <ul
+      id="myTab"
+      class="nav nav-tabs justify-content-between nav-justified"
+      role="tablist"
+    >
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
@@ -25,7 +29,7 @@
           <p><span class="material-icons icon"> schedule </span></p>
         </button>
       </li>
-      <li class="nav-item pe-0" role="presentation">
+      <!-- <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -36,7 +40,7 @@
         >
           <p><span class="material-icons icon"> navigation </span></p>
         </button>
-      </li>
+      </li> -->
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
@@ -52,13 +56,89 @@
     </ul>
     <div id="myTabContent" class="tab-content d-flex">
       <div id="accessibility" class="tab-pane fade show active" role="tabpanel">
-        {{ accessInfo }}
+        <div class="row info-box">
+          <div class="icons col">
+            <span class="mi material-icons" style="color: green">{{
+              accessInfo[0]
+            }}</span
+            >Step-Free
+          </div>
+          <div class="icons col">
+            <span class="mi material-icons" style="color: green">{{
+              accessInfo[1]
+            }}</span
+            >Testo in Brile
+          </div>
+          <div class="icons col">
+            <span class="mi material-icons" style="color: red">{{
+              accessInfo[2]
+            }}</span
+            >Audio Description
+          </div>
+        </div>
       </div>
-      <div id="time" class="tab-pane fade" role="tabpanel">{{ timeInfo }}</div>
-      <div id="howToReach" class="tab-pane fade" role="tabpanel">
+      <div
+        id="time"
+        class="tab-pane fade justify-content-between"
+        role="tabpanel"
+      >
+        <ul>
+          <li
+            v-for="(time, timeIndex) of timeInfo"
+            :key="`time-index-${timeIndex}`"
+          >
+            {{ time }}
+          </li>
+        </ul>
+        <div class="row">
+          <div class="day col">Monday:</div>
+          <div class="hour col">{{timeInfo[0]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Tuesday:</div>
+          <div class="hour col">{{timeInfo[1]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Wednesday:</div>
+          <div class="hour col">{{timeInfo[2]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Thursday:</div>
+          <div class="hour col">{{timeInfo[3]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Friday:</div>
+          <div class="hour col">{{timeInfo[4]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Saturday:</div>
+          <div class="hour col">{{timeInfo[5]}}</div>
+        </div>
+        <div class="row">
+          <div class="day col">Sunday:</div>
+          <div class="hour col">{{timeInfo[6]}}</div>
+        </div>
+      </div>
+      <!-- <div id="howToReach" class="tab-pane fade" role="tabpanel">
         {{ directions }}
+      </div> -->
+      <div id="prices" class="tab-pane fade" role="tabpanel">
+        It is accessible in different prices:
+        <ul>
+          <li
+            v-for="(price, priceIndex) of prices"
+            :key="`price-index-${priceIndex}`"
+          >
+            {{ price }}
+          </li>
+        </ul>
+        <div v-if="website !== null">
+          <p>
+            For more information about the tickets visit the following site:
+            <a :href="website[0]">{{website[1]}}</a>
+          </p>
+        </div>
       </div>
-      <div id="prices" class="tab-pane fade" role="tabpanel">{{ prices }}</div>
     </div>
   </div>
 </template>
@@ -68,21 +148,25 @@ export default {
   name: 'TabCardComponent',
   props: {
     accessInfo: {
-      type: String,
+      type: Array,
       required: true,
     },
     timeInfo: {
-      type: String,
+      type: Array,
       required: true,
     },
-    directions: {
-      type: String,
-      required: true,
-    },
+    // directions: {
+    //   type: String,
+    //   required: true,
+    // },
     prices: {
-      type: String,
+      type: Array,
       required: true,
     },
+    website:{
+      type: Array,
+      required: true,
+    }
   },
 }
 </script>
@@ -95,7 +179,6 @@ export default {
   opacity: 0.9;
   border-radius: 20px;
   font-size: 1.2vw;
-  
 }
 
 .nav-tabs .nav-item .nav-link.active .icon {
@@ -107,7 +190,7 @@ export default {
   border: transparent;
   opacity: 1;
   font-size: 1.2vw;
-  
+
   /* background-color: rgb(65, 105, 225, 0.3); */
 }
 .nav-tabs .nav-item {
@@ -124,7 +207,6 @@ export default {
 }
 .nav-tabs {
   border-bottom-color: royalblue;
-
 }
 .tab-content .tab-pane {
   background-color: #fff;
@@ -135,7 +217,8 @@ export default {
   background-color: rgb(65, 105, 225, 0.7);
   border-radius: 60px;
   font-size: 45px;
-  padding:3px;
+  padding: 3px;
   margin-bottom: 2;
 }
+
 </style>

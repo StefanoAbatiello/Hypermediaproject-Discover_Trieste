@@ -43,8 +43,8 @@
                     class="mt-3"
                     :access-info="accessInfo"
                     :time-info="timeInfo"
-                    :directions="directions"
                     :prices="prices"
+                    :website="website"
                   />
                 </div>
               </diV>
@@ -75,8 +75,9 @@ export default {
       poi: data.poi,
       accessInfo: data.accessInfo,
       timeInfo: data.timeInfo,
-      directions: data.directions,
+      // directions: data.directions,
       prices: data.prices,
+      website: data.website
     }
   },
   head() {
