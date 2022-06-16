@@ -89,8 +89,8 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 135px;
-  width: 370px;
+  height: 130px;
+  width: 380px;
 }
 .navbar-brand {
   color: white;

@@ -52,8 +52,8 @@ export default {
   bottom: 0px;
 }
 .logo-img {
-  height: 95px;
-  width: 300px;
+  height: 85px;
+  width: 310px;
 }
 .navbar-brand {
   color: white;
