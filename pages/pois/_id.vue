@@ -9,7 +9,7 @@
             <section class="main-text">
               <nuxt-link to="/pois">
                 <h5 class="btn back-btn px-0">
-                  <span class="material-icons px-0 back-icon"
+                  <span class="material-icons px-0"
                     >arrow_back_ios</span
                   >Pois
                 </h5>
@@ -135,7 +135,7 @@
                   :id="itinerary.id"
                   :name="itinerary.name"
                   :img="itineraryImage"
-                  category="itinerary"
+                  category="itineraries"
                   icon="route"
                   text="It is part of "
                 />
@@ -147,7 +147,7 @@
                     :id="data.relatedEvent.id"
                     :name="data.relatedEvent.name"
                     :img="eventImage"
-                    category="event"
+                    category="events"
                     icon="event"
                     text="It is part of "
                   />
@@ -162,10 +162,6 @@
         </section>
       </div>
     </section>
-
-    <script>
-      console.log({{ itineraryImage }})
-    </script>
   </div>
 </template>
 
