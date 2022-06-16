@@ -66,7 +66,7 @@
             <div class="row row-cols-1">
               <h2>Related Links</h2>
               <div class="interlinea" style="border-bottom-style: solid"></div>
-              <div class="aside col pt-3">
+              <div class="aside col pt-3 ms-5 mt-2">
                 <related-card
                   :id="itinerary.id"
                   :name="itinerary.name"
@@ -78,7 +78,7 @@
               </div>
 
               <div v-if="data.relatedEvent !== null">
-                <div class="aside col pt-3">
+                <div class="aside col pt-3 ms-5 mt-2">
                   <related-card
                     :id="data.relatedEvent.id"
                     :name="data.relatedEvent.name"
@@ -94,11 +94,13 @@
         </div>
 
         <section>
-          <div class="map rounded">
+          <div class="map rounded responsive mt-5 ">
           <iframe
+            width="100%"
+            height="600"
             referrerpolicy="no-referrer-when-downgrade"
             frameborder="0"
-            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=MQ29%2B24`"
+            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=Trieste,Italy`"
             allowfullscreen
           >
           </iframe>
@@ -189,11 +191,11 @@ export default {
 .aside {
   float: center;
 }
-.map{
-  height:500px;
-  max-width: 100%;
+/* .map{
+  height:1000;
+  width: 2000;
   margin-top: 4px;
-  position: relative;
+  position: relative; 
   border: 0;
-}
+} */
 </style>
