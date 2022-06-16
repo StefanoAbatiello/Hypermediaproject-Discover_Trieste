@@ -2,22 +2,23 @@
   <div class="container-fluid m-0">
     <div class="card m-0" style="max-width: 100%">
       <div class="row no-gutters">
-        <div class="col-md-5 mt-4 mb-2">
+        <div class="col-md-5 mt-4 m-0">
           <div class="container">
-            <img :src="require(`~/assets/${img}`)" class="card-img" />
-            <div class="text-block"> 
+            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" />
+            <div class="text-block mt-4"> 
              <h5>{{ name }}</h5>
             </div> 
           </div>
         </div>
         <div class="col-md-7 ml-3 mb-2">
           <div class="card-body">
-            <div class="card-text mt-3">
+            <div class="card-text mt-2">
               <tab-card-time
                 :id="id"
                 :description="description"
                 :time="time"
                 :address="address"
+                :map="map"
               />
             </div>
           </div>
@@ -80,6 +81,10 @@ export default {
       type: String,
       required: true,
     },
+    map:{
+      type:String,
+      required:true,
+    }
   },
 }
 </script>
@@ -92,15 +97,15 @@ export default {
   left: 20px;
   background-color: royalblue;
   color: white;
-  margin-left: 5px;
+  margin-left: 4px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;
   border-radius: 0px 10px 10px 0px;
 }
 .card {
-  /* min-width: 300px;
-  min-height: 300px; */
+  /* min-width: 300px;*/
+  min-height: 400px; 
   border: transparent;
   border-bottom: 1px solid royalblue;
 }
@@ -113,6 +118,8 @@ export default {
   margin: auto;
   margin-right: 5;
   min-width: 400px;
+  max-height: 400px;
+
 }
 /* .card-body {
   max-width: 500px;
@@ -120,7 +127,7 @@ export default {
 .card-img {
   /* min-height: 50px; */
   width: 100%;
-  max-height: 250px;
+  max-height: 300px;
   /* min-width: 100px; */
   border-radius: 20px;
 }

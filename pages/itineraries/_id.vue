@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mb-4 mt-1">
+  <div class="container-fluid px-0 mb-4">
     <header-carousel class="carousel" :images="img" :height="35" />
 
     <section class="main-content">
@@ -7,7 +7,13 @@
         <div class="row justify-content-between">
           <main class="col-md-7 mr-3">
             <section class="main-text">
-              <nuxt-link to="/itineraries"> <h6>Itineraries</h6> </nuxt-link>
+              <nuxt-link to="/events">
+                <h5 class="btn back-btn px-0">
+                  <span class="material-icons px-0 back-icon"
+                    >arrow_back_ios</span
+                  >itineraries
+                </h5>
+              </nuxt-link>
               <h1>{{ name }}</h1>
               <div class="description-poi">
                 <p>
@@ -15,6 +21,18 @@
                 </p>
               </div>
             </section>
+             <div class="map rounded">
+          <iframe
+            width="1600vw"
+            height="700vw"
+            frameborder="0"
+            style="border: 0;"
+            referrerpolicy="no-referrer-when-downgrade"
+            :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=Salone+Incanto,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Casa+Terni,Trieste,Italy|Teatro+Romano,Trieste,Italy&avoid=tolls|highways&mode=walking`"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
           </main>
         </div>
         <div id="backgr" class="text-white rounded backgr">
@@ -69,6 +87,9 @@ export default {
 </script>
 
 <style scoped>
+.map{
+  transform: translate(-20%,0%);
+}
 .sign {
   background: rgb(195, 75, 75);
 }
@@ -83,7 +104,7 @@ export default {
   margin-right: 8%;
 }
 .carousel {
-  padding-top: 100px;
+  padding-top: 125px;
   background-color: lightblue;
 }
 .carousel-inner > .item > img {

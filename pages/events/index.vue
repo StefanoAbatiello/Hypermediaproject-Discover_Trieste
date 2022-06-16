@@ -5,28 +5,28 @@
       <b class="title"> Events </b>
     </div>
     <section class="container filters">
-        <div class="row justify-content-start">
-          <div class="col-md-2">
-            <button
-              id="Summer"
-              class="filter m-1 w-100"
-              @click="filterSeason('Summer')"
-            >
-              <b>summer</b>
-            </button>
-          </div>
-          <div class="col-md-2">
-            <button
-              id="Winter"
-              class="filter m-1 w-100"
-              @click="filterSeason('Winter')"
-            >
-              <b>winter</b>
-            </button>
-          </div>
+      <div class="row justify-content-start">
+        <div class="col-sm-2">
+          <button
+            id="Summer"
+            class="filter m-1 w-100"
+            @click="filterSeason('Summer')"
+          >
+            <a>summer</a>
+          </button>
         </div>
+        <div class="col-sm-2">
+          <button
+            id="Winter"
+            class="filter m-1 w-100"
+            @click="filterSeason('Winter')"
+          >
+            <a>winter</a>
+          </button>
+        </div>
+      </div>
     </section>
-    <section class="event-list">
+    <section class="mt-3 event-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
           <events-card
@@ -67,15 +67,18 @@ export default {
       for (let i = 0; i < filters.length; i++) {
         const filter = filters[i]
         if (filter.id === season) {
-          if (filter.style.opacity === '0.5') {
+          if (filter.style.background === '') {
             this.seeSeason(season)
-            filter.style.opacity = '1'
+            filter.style.background = 'royalblue'
+            filter.style.color = 'white'
           } else {
             this.seeAll()
-            filter.style.opacity = '0.5'
+            filter.style.background = ''
+            filter.style.color = 'royalblue'
           }
         } else {
-          filter.style.opacity = '0.5'
+          filter.style.background = ''
+          filter.style.color = 'royalblue'
         }
       }
     },
@@ -101,26 +104,24 @@ export default {
 
 <style scoped>
 .title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-  color: whitesmoke; 
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
   position: absolute;
   top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  /* -webkit-text-stroke: 1px black; */
 }
-.filter:hover{
-  opacity: 1;
-}
+
 .filter {
   font-size: 1.5vw;
-  border: 3px solid royalblue;
+  background: white;
+  border: 1px solid royalblue;
   color: royalblue;
-  opacity: 0.5;
   overflow: hidden;
-  border-radius: 20px 20px 20px 20px; 
+  border-radius: 30px 30px 30px 30px;
 }
 .image-header {
   background-image: url('assets\homeImg\trieste2.jpeg');
