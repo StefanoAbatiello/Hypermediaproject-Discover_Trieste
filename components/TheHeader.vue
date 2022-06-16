@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md px-3 nav-fill w-100 header sticky-top">
+  <nav class="navbar navbar-expand-md px-3 pt-0 nav-fill w-100 header sticky-top">
     <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
@@ -89,8 +89,8 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 135px;
-  width: 370px;
+  height: 130px;
+  width: 380px;
 }
 .navbar-brand {
   color: white;

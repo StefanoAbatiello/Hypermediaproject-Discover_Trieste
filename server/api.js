@@ -32,6 +32,7 @@ async function initializeDatabaseConnection() {
     const Itinerary = database.define("itinerary", {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
+        map: DataTypes.STRING,
         img: DataTypes.ARRAY(DataTypes.STRING),
     })
     const PointOfInterest = database.define("poi", {

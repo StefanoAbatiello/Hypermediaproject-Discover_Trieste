@@ -7,7 +7,7 @@
         <div class="row justify-content-between">
           <main class="col-md-7 mr-3">
             <section class="main-text">
-              <nuxt-link to="/events">
+              <nuxt-link to="/itineraries">
                 <h5 class="btn back-btn px-0">
                   <span class="material-icons px-0 back-icon"
                     >arrow_back_ios</span
@@ -17,37 +17,34 @@
               <h1>{{ name }}</h1>
               <div class="description-poi">
                 <p>
-                  {{description}}
+                  {{ description }}
                 </p>
               </div>
             </section>
-             <div class="map rounded">
-          <iframe
-            width="1600vw"
-            height="700vw"
-            frameborder="0"
-            style="border: 0;"
-            referrerpolicy="no-referrer-when-downgrade"
-            :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=Salone+Incanto,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Casa+Terni,Trieste,Italy|Teatro+Romano,Trieste,Italy&avoid=tolls|highways&mode=walking`"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
+            <div class="map rounded">
+              <iframe
+                width="1300vw"
+                height="500vw"
+                frameborder="0"
+                style="border: 0"
+                referrerpolicy="no-referrer-when-downgrade"
+                :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=${map}`"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
           </main>
         </div>
-        <div id="backgr" class="text-white rounded backgr">
-          <h1 class="title">List of itinerary steps</h1>
-          <div class="list-fluid mt-1 list">
-            <itinerary-step
-              v-for="(poi, poiIndex) of poiList"
-              :id="poi.id"
-              :key="`poi-index-${poiIndex}`"
-              :name="poi.name"
-              :img="poi.img[0]"
-              :description="poi.description"
-              :category="'poi'"
-            />
-          </div>
+        <div class="list-fluid mt-1 list">
+          <itinerary-step
+            v-for="(poi, poiIndex) of poiList"
+            :id="poi.id"
+            :key="`poi-index-${poiIndex}`"
+            :name="poi.name"
+            :img="poi.img[0]"
+            :description="poi.description"
+            :category="'poi'"
+          />
         </div>
       </div>
     </section>
@@ -70,6 +67,7 @@ export default {
       name: data.itinerary.name,
       img: data.itinerary.img,
       description: data.itinerary.description,
+      map: data.itinerary.map,
       poiList: data.relatedPois,
     }
   },
@@ -87,9 +85,7 @@ export default {
 </script>
 
 <style scoped>
-.map{
-  transform: translate(-20%,0%);
-}
+
 .sign {
   background: rgb(195, 75, 75);
 }
@@ -100,12 +96,12 @@ export default {
   background: royalblue;
 }
 .list {
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 .carousel {
   padding-top: 125px;
-  background-color: lightblue;
+  background-color: rgb(65, 105, 225);
 }
 .carousel-inner > .item > img {
   margin: 0 auto;
