@@ -7,14 +7,14 @@
         <div class="row justify-content-between">
           <main class="col-md-7 mr-5">
             <section class="main-text">
-              <nuxt-link to="/pois">
-                <h5 class="btn back-btn px-0">
-                  <span class="material-icons px-0"
+              <nuxt-link class="breadcrumps" to="/pois">
+                <h5 class="btn back-btn px-0" style="color:royalblue">
+                  <span class="material-icons px-0" style="color:royalblue"
                     >arrow_back_ios</span
                   >Pois
                 </h5>
               </nuxt-link>
-              <h1>{{ name }}</h1>
+              <h1 class="title">{{ name }}</h1>
               <p>
                 <span class="place material-icons"> place </span> via Golgi 26,
                 Trieste
@@ -168,6 +168,10 @@ export default {
 .carousel {
   padding-top: 125px;
   background-color: rgb(65, 105, 225);
+}
+.title {
+  font-size: 4vw;
+  color: royalblue;
 }
 .material-icons {
   vertical-align: middle;
