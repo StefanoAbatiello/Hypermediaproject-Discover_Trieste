@@ -4,16 +4,19 @@ export default async (models) => {
         {
             name: "Liberty Tour",
             img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
+            map: "Casa+De+Stabile,Trieste,Italy&destination=Casa+Terni,Trieste,Italy&waypoints=Palazzo+Vivante,Trieste,Italy|Salone+Incanti,Trieste,Italy|Banca+Di+Praga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             description: "Il Liberty a Trieste fu uno stile che suscitò non poche polemiche e contestazioni, spesso più di carattere politico e ideologico che non artistico come per esempio l'inappellabile sentenza di Silvio Benco, noto esponente della cultura triestina di chiare tendenze irredentistiche.Il fogliame pendente di Casa Bartoli, le volte del Salone degli Incanti, il ricamo di Casa Terni-Smolars, le statue aggraziate del Cinema Eden - Ambascaitori - o della Casa del fauno: sono molti i dettagli che rischiano di restare negli occhi e nel cuore di coloro che decidono di percorrere questo affascinante itinerario."
         },
         {
             name: "Trip in roman archeology",
-            img: ["pois/roman/antiquarium.jpeg", "pois/roman/lapidarioTergestino.jpeg", "pois/roman/teatro.jpeg"],
+            img: ["pois/roman/teatro.jpeg", "pois/roman/lapidarioTergestino.jpeg","pois/roman/antiquarium.jpeg"],
+            map: "Teatro+Romano,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Arco+Riccardo,Trieste,Italy|Castello+Di+San+Giusto,Trieste,Italy|Lapidario+Tergestino,Trieste,Italy&avoid=tolls|highways&mode=walking",
             description: "Viene a scoprire la perugia sotterranea!"
         },
         {
             name: "Discover the most important chuches",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
+            map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives, the Austro-Germans, the English outposts and French, to the prosperous Jewish community."
         },
     ]
@@ -28,6 +31,18 @@ export default async (models) => {
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo"
         },
         {
+            name: "Palazzo Vivante",
+            img: ["pois/liberty/palazzoVivanti.jpeg", "pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg"],
+            itineraryId: itinerary0.id,
+            description: "Questa è una descrizione p"
+        },
+        {
+            name: "Salone Degli Incanti",
+            img: ["pois/liberty/saloneIncanti.jpeg", "pois/liberty/salone2.jpeg", "pois/liberty/salone3.jpeg"],
+            itineraryId: itinerary0.id,
+            description: "Questa è una descrizione per pozzo etrusco"
+        },
+        {
             name: "Banca di Praga",
             img: ["pois/liberty/bancaPraga.jpeg", "pois/liberty/banca2.jpeg", "pois/liberty/banca3.jpeg"],
             itineraryId: itinerary0.id,
@@ -38,18 +53,6 @@ export default async (models) => {
             img: ["pois/liberty/casaTerni.jpeg", "pois/liberty/casaTerni2.jpeg", "pois/liberty/casaTerni3.jpeg"],
             itineraryId: itinerary0.id,
             description: "Questa è una descrizione per il punto di interesse"
-        },
-        {
-            name: "Palazzo Vivanti-Gilberti",
-            img: ["pois/liberty/palazzoVivanti.jpeg", "pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg"],
-            itineraryId: itinerary0.id,
-            description: "Questa è una descrizione p"
-        },
-        {
-            name: "Salone Degli Incanti",
-            img: ["pois/liberty/saloneIncanti.jpeg", "pois/liberty/salone2.jpeg", "pois/liberty/salone3.jpeg"],
-            itineraryId: itinerary0.id,
-            description: "Questa è una descrizione per pozzo etrusco"
         },
         {
             name: "Antiquarium",
@@ -88,10 +91,10 @@ export default async (models) => {
             description: "Arco bianco che più bianco non c'è!"
         },
         {
-            name: "Sinagoga di Trieste",
-            img: ["pois/churches/sinagoga.jpeg", "pois/churches/insideSinagoga.jpeg", "pois/churches/sinagoga2.jpeg"],
+            name: "Chiesa di San Nicolò",
+            img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
             itineraryId: itinerary2.id,
-            description: "Famosissima porta di Perugia"
+            description: "Acquedotto etrusco di Perugia"
         },
         {
             name: "Chiesa Ortodossa di San Spiridione",
@@ -100,10 +103,10 @@ export default async (models) => {
             description: "Famosissima chiesa di Perugia"
         },
         {
-            name: "Chiesa di Nicolò Dei Greci",
-            img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
+            name: "Sinagoga di Trieste",
+            img: ["pois/churches/sinagoga.jpeg", "pois/churches/insideSinagoga.jpeg", "pois/churches/sinagoga2.jpeg"],
             itineraryId: itinerary2.id,
-            description: "Acquedotto etrusco di Perugia"
+            description: "Famosissima porta di Perugia"
         },
         {
             name: "Chiesa della Beata Vergine",

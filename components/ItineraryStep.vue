@@ -7,7 +7,7 @@
         </div>
         <div class="col ml-auto">
           <div class="card-body ms-4">
-            <h4 class="card-title">{{ name }}</h4>
+            <h3 class="card-title">{{ name }}</h3>
             <p class="card-text ">
               {{ description }}
             </p>
