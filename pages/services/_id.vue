@@ -121,7 +121,7 @@ export default {
 } */
 .title {
   margin-left: 0px;
-  font-size: 7vw;
+  font-size: 4vw;
 }
 .description {
   font-size: 2vw;

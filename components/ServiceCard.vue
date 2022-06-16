@@ -2,16 +2,16 @@
   <div class="container-fluid m-0">
     <div class="card m-0" style="max-width: 100%">
       <div class="row no-gutters">
-        <div class="col-md-5 mt-4 m-0">
-          <div class="container">
-            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" />
+        <div class="col-md-6 p-0">
+          <div class="container mt-4 p-0">
+            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0 " />
             <div class="text-block mt-4"> 
-             <h5>{{ name }}</h5>
+              {{ name }}
             </div> 
           </div>
         </div>
-        <div class="col-md-7 ml-3 mb-2">
-          <div class="card-body">
+        <div class="col-md-6 ml-0 mb-2 p-0">
+          <div class="card-body p-0 pt-5">
             <div class="card-text mt-2">
               <tab-card-time
                 :id="id"
@@ -74,7 +74,7 @@ export default {
       required: true,
     },
     time: {
-      type: String,
+      type: Array,
       required: true,
     },
     img: {
@@ -94,13 +94,15 @@ export default {
   position: absolute;
   top: 20px;
   width: 70%;
-  left: 20px;
-  background-color: royalblue;
+  height: 50px;
+  left: 0px;
+  background-color: rgb(65, 105, 225,0.7);
   color: white;
-  margin-left: 4px;
+  margin-left: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 2px;
+  padding-top: 0px;
+  font-size: 30px;
   border-radius: 0px 10px 10px 0px;
 }
 .card {
@@ -108,6 +110,7 @@ export default {
   min-height: 400px; 
   border: transparent;
   border-bottom: 1px solid royalblue;
+  border-radius: 0px;
 }
 
 .container{
