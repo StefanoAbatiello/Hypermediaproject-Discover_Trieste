@@ -9,7 +9,7 @@
         <div class="col-md-7 ml-4 ">
           <div class="card-body ps-3">
             <h3 class="card-title">{{ name }}</h3>
-            <p class="card-text">
+            <p class="card-text ">
               {{ description }}
             </p>
             <nuxt-link :to="`/pois/${id}`">
