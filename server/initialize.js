@@ -4,7 +4,7 @@ export default async (models) => {
         {
             name: "Liberty Tour",
             img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
-            description: "Viene a scoprire i palazzi in stile liberty della città"
+            description: "Il Liberty a Trieste fu uno stile che suscitò non poche polemiche e contestazioni, spesso più di carattere politico e ideologico che non artistico come per esempio l'inappellabile sentenza di Silvio Benco, noto esponente della cultura triestina di chiare tendenze irredentistiche.Il fogliame pendente di Casa Bartoli, le volte del Salone degli Incanti, il ricamo di Casa Terni-Smolars, le statue aggraziate del Cinema Eden - Ambascaitori - o della Casa del fauno: sono molti i dettagli che rischiano di restare negli occhi e nel cuore di coloro che decidono di percorrere questo affascinante itinerario."
         },
         {
             name: "Trip in roman archeology",
@@ -14,7 +14,7 @@ export default async (models) => {
         {
             name: "Discover the most important chuches",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
-            description: "Le chiese più belle di tutta Trieste"
+            description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives, the Austro-Germans, the English outposts and French, to the prosperous Jewish community."
         },
     ]
     const itinerary0 = await models.Itinerary.create(itineraryList[0])
