@@ -90,34 +90,6 @@
             {{ time }}
           </li>
         </ul>
-        <div class="row">
-          <div class="day col">Monday:</div>
-          <div class="hour col">{{timeInfo[0]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Tuesday:</div>
-          <div class="hour col">{{timeInfo[1]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Wednesday:</div>
-          <div class="hour col">{{timeInfo[2]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Thursday:</div>
-          <div class="hour col">{{timeInfo[3]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Friday:</div>
-          <div class="hour col">{{timeInfo[4]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Saturday:</div>
-          <div class="hour col">{{timeInfo[5]}}</div>
-        </div>
-        <div class="row">
-          <div class="day col">Sunday:</div>
-          <div class="hour col">{{timeInfo[6]}}</div>
-        </div>
       </div>
       <!-- <div id="howToReach" class="tab-pane fade" role="tabpanel">
         {{ directions }}
@@ -202,7 +174,7 @@ export default {
 }
 .tab-content {
   /* border: 1px solid royalblue; */
-  height: 100px;
+  height: 200px;
   padding: 10px;
 }
 .nav-tabs {
