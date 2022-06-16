@@ -1,12 +1,13 @@
 <template>
   <div class="container-fluid pb-2">
     <div class="card m-1 shadow-lg p-3">
-      <div class="row-md row-cols-2 d-flex justify-content-start">
-        <div class="col-md-auto">
-          <img :src="require(`~/assets/${img}`)" class="img rounded card-image" />
+
+      <div v-if="notEven(id)" class="row no-gutters d-flex justify-content-start">
+        <div class="col-md-5 m-0 p-0 mr-4">
+          <img :src="require(`~/assets/${img}`)" class="img responsive ms-3 card-image"/>
         </div>
-        <div class="col ml-auto">
-          <div class="card-body ms-4">
+        <div class="col-md-7 ml-4 ">
+          <div class="card-body ps-3">
             <h3 class="card-title">{{ name }}</h3>
             <p class="card-text ">
               {{ description }}
@@ -17,6 +18,24 @@
           </div>
         </div>
       </div>
+
+      <div v-else class="row no-gutters d-flex justify-content-end">
+        <div class="col-md-7 m-0 p-0">
+          <div class="card-body">
+            <h3 class="card-title">{{ name }}</h3>
+            <p class="card-text">
+              {{ description }}
+            </p>
+            <nuxt-link :to="`/pois/${id}`">
+              <div class="btn text-white btn-details">See more details...</div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="col-md-5 m-0 p-0 pe-3">
+          <img :src="require(`~/assets/${img}`)" class="img responsive me-3 card-image"/>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -50,6 +69,9 @@ export default {
     goToDetails() {
       this.$router.push(`/pois/${this.id}`)
     },
+    notEven(id) {
+      return !!(id%2)
+    },
   },
 }
 </script>
@@ -59,7 +81,7 @@ export default {
   color: royalblue;
   text-align: left;
 }
-.card-text {
+.card-text-sx {
   color: black;
   text-align: left;
 }
@@ -75,8 +97,12 @@ export default {
   opacity: 1;
 }
 .card-image {
-  width: 320px;
-  height: 200px;
- 
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  border-radius: 20px;
+}
+.card{
+  border-radius: 20px;
 }
 </style>

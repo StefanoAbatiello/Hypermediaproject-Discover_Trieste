@@ -4,38 +4,34 @@
 
     <section class="main-content">
       <div class="container">
-        <div class="row justify-content-between">
-          <main class="col-md-7 mr-3">
-            <section class="main-text">
-              <nuxt-link to="/itineraries">
-                <h5 class="btn back-btn px-0">
-                  <span class="material-icons px-0 back-icon"
-                    >arrow_back_ios</span
-                  >itineraries
-                </h5>
-              </nuxt-link>
-              <h1>{{ name }}</h1>
-              <div class="description-poi">
-                <p>
-                  {{ description }}
-                </p>
-              </div>
-            </section>
-            <div class="map rounded">
-              <iframe
-                width="1300vw"
-                height="500vw"
-                frameborder="0"
-                style="border: 0"
-                referrerpolicy="no-referrer-when-downgrade"
-                :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=${map}`"
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-          </main>
+        <section class="main-text">
+          <nuxt-link to="/itineraries">
+            <h5 class="btn back-btn px-0">
+              <span class="material-icons px-0 back-icon">arrow_back_ios</span
+              >Itineraries
+            </h5>
+          </nuxt-link>
+          <h1 class="mb-5 title">{{ name }}</h1>
+          <div class="description-it">
+            <p>
+              {{ description }}
+            </p>
+          </div>
+        </section>
+        <div class="map rounded">
+          <iframe
+            width="1300vw"
+            height="500vw"
+            frameborder="0"
+            style="border: 0"
+            referrerpolicy="no-referrer-when-downgrade"
+            :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=${map}`"
+            allowfullscreen
+          >
+          </iframe>
         </div>
-        <div class="list-fluid mt-1 list">
+
+        <div class="list-fluid mt-5 list">
           <itinerary-step
             v-for="(poi, poiIndex) of poiList"
             :id="poi.id"
@@ -85,19 +81,15 @@ export default {
 </script>
 
 <style scoped>
-
 .sign {
   background: rgb(195, 75, 75);
 }
 .title {
-  margin-left: 10px;
+  font-size: 4vw;
+  color: royalblue;
 }
 .backgr {
   background: royalblue;
-}
-.list {
-  margin-left: 4%;
-  margin-right: 4%;
 }
 .carousel {
   padding-top: 125px;
@@ -120,5 +112,8 @@ export default {
 }
 .botton-cont {
   position: relative;
+}
+.description-it {
+  width: 100%;
 }
 </style>

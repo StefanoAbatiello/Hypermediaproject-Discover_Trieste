@@ -353,40 +353,40 @@ export default async (models) => {
             name: "farmacia1",
             serviceTypeId: type0.id,
             address: "via blabla",
-            description: "",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "farmacia2",
             serviceTypeId: type0.id,
             address: "via blabla",
-            description: "",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "Ospedale Santa Maria della Misericordia",
             serviceTypeId: type0.id,
             address: "S. Andrea delle Fratte",
-            description: "L'Azienda ospedalieara di Perugia - Ospedale 'Santa Maria della Misericordia' è l'ospedale unico e policlinico universitario di Perugia.",
-            time: "la segreteria degli ambulatori è aperta dal lunedì al venerdì dalle 8,00 alle 13,00, il martedì e giovedì pomeriggio dalle 14,30 alle 17,00; ambulatori chiusi sabato e giorni festivi",
+            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "Istituto Clinico Porta Sole",
             serviceTypeId: type0.id,
             address: "Via del Giochetto, 49",
-            description: "Struttura sanitaria accreditata con la Regione Umbria per le seguenti discipline specialistiche: CHIRURGIA GENERALE, MEDICINA GENERALE, ORTOPEDIA, GINECOLOGIA, OTORINOLARINGOIATRIA, OCULISTICA.",
-            // time: "Ufficio accettazione dal Lunedì al Venerdì dalle ore 08.00 alle ore 17.00, il Sabato dalle ore 08.00 alle 12.00",
+            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/medicals/portaSole.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
@@ -394,9 +394,9 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "via Luigi Masi, 9",
             description: "Elegante e raffinato hotel nel cuore culturale, dello shopping e del turismo di Perugia.",
-            time: "L'hotel ha una reception aperta 24/7",
+            time: ["L'hotel ha una reception aperta 24/7"],
             img: "services/hotels/sangallo.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
@@ -404,9 +404,9 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "Strada Montepetriolo, 26",
             description: "il Borgo Dei Conti Resort Relais & Chateaux occupa un palazzo fortificato del 17° secolo e vanta un centro benessere, una palestra, un ristorante umbro, WiFi e camere moderne ed eleganti.",
-            time: "L'hotel ha una reception aperta 24/7",
+            time: ["L'hotel ha una reception aperta 24/7"],
             img: "services/hotels/borgoConti.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
@@ -414,9 +414,9 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "via blabla",
             description: "",
-            time: "reception open everyday  from 8am to 11pm",
+            time: ["reception open everyday  from 8am to 11pm"],
             img: "services/hotels/sangallo.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
@@ -424,39 +424,39 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "via blabla",
             description: "",
-            time: "reception open everyday  from 8am to 11pm",
+            time: ["reception open everyday  from 8am to 11pm"],
             img: "services/hotels/sangallo.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "Osteria a Priori",
             serviceTypeId: type2.id,
             address: "Via dei Priori, 39",
-            description: "Un menu 100% umbro, ingredienti locali di piccoli produttori artigianali, dai formaggi ai legumi. Ma la regione qui è rappresentata benissimo anche nel bicchiere, tra vino e birra artigianale. Disponibilità e gentilezza in sala.",
-            time: "Dal lunedi al sabato Pranzo 12,30-14,30 Cena 19,30-22,00 Domenica chiuso per turno di riposo (ad eccezione di domenica 5 gennaio e della domenica di Pasqua) La prenotazione è sempre consigliata al fine di evitare spiacevoli indisponibilità di posto.",
+            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/restaurants/osteriaPriori.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "Civico 25",
             serviceTypeId: type2.id,
             address: "Via della Viola, 25 ",
-            description: "Un wine bar in pieno centro, sviluppato su due piani, con una cucina di tradizione che promuove le tante specialità regionali. Il rifugio ideale per chi ama i sapori sinceri e il buon vino.",
-            time: "tutti i giorni 19:00-02:00. Chiuso la domenica",
+            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/restaurants/civico25.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
             name: "Stella",
             serviceTypeId: type2.id,
             address: "Via Narcisi, 47A",
-            description: "Materie prime del territorio, stagionalità, ricette umbre della tradizione costituiscono gli ingredienti dei piatti tipici umbri da Stella.",
-            time: "Lunedì-sabato aperti solo a cena. Domenica aperti solo a pranzo (ad eccezione dei mesi di luglio e agosto in cui siamo aperti solo a cena). Martedì chiuso per turno.",
+            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/restaurants/stella.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
         },
         {
@@ -464,9 +464,9 @@ export default async (models) => {
             serviceTypeId: type3.id,
             address: "via blabla",
             description: "",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/cafes/caffè1.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
 
         },
@@ -475,9 +475,9 @@ export default async (models) => {
             serviceTypeId: type3.id,
             address: "via blabla",
             description: "",
-            time: "lunedì: 8-12, martedì, mercoledì, giovedì, venerdì: 8-20, sabato e domenica chiusi",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/cafes/caffè1.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
 
         },
@@ -486,9 +486,9 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Strada Montalcino, 2",
             description: "Il locale è composto da ben 7 sale di cui 5 invernali e 2 estive ed organizza serate ed eventi con generi musicali diversi.",
-            time: "Aperto venerdì e sabato dalle 21.30 alle 03.00",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/entertainments/gradisca.jpeg",
-            map: ""
+            map: "Trieste,Italy"
 
 
         },
@@ -497,10 +497,9 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Via Benedetto Bonfigli, 11",
             description: "La sala ha 216 poltrone distribuite su 18 file. E’ equipaggiata con un proiettore Sony 4k e con un impianto audio dolby surround.",
-            time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/entertainments/zenith.jpeg",
-            map: ""
-
+            map: "Trieste,Italy"
 
         },
         {
@@ -508,10 +507,9 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Piazza Morlacchi, 13",
             description: "",
-            time: "Programmazioni tutti i giorni alle 18-18.30 e alle 21-21.30",
+            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
             img: "services/entertainments/morlacchi.jpeg",
-            map: ""
-
+            map: "Trieste,Italy"
 
         },
     ]
