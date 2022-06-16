@@ -61,10 +61,6 @@ export default {
           name: 'Services',
           path: '/services/',
         },
-        {
-          name: 'About',
-          path: '/about',
-        },
       ],
     }
   },

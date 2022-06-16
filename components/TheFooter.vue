@@ -1,16 +1,16 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-dark px-3 footer justify-content-start">
+    class="navbar navbar-expand-lg navbar-dark w-100 px-3 footer justify-content-start">
     <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
-      class="img mr-auto ms-2 logo-img"
+      class="img mr-auto responsive ms-2 logo-img"
       alt="Logo"
       href="/"
     />
     </a>
     <div class="collapse navbar-collapse links">
-      <ul class="navbar-nav mt-2 row d-flex justify-content-start">
+      <ul class="navbar-nav mt-2 d-flex">
         <li
           v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
@@ -32,12 +32,16 @@ export default {
     return {
       footerList: [
         {
-          name: 'Policy Cookies',
-          path: '/policy',
+          name: 'About',
+          path: '/about',
         },
         {
           name: 'Contacts',
           path: '/contacts',
+        },
+        {
+          name: 'Policy & Privacy',
+          path: '/policy',
         },
       ],
     }
@@ -52,8 +56,9 @@ export default {
   bottom: 0px;
 }
 .logo-img {
-  height: 85px;
-  width: 310px;
+  width: 100%;
+  height: auto;
+  max-height: 90px;
 }
 .navbar-brand {
   color: white;
