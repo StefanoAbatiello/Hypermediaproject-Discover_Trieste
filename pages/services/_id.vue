@@ -20,7 +20,7 @@
              <a>{{ title }}/</a> 
           </li>
         </ul> -->
-            <h1 class="title mt-3 text-left">{{ title }}</h1>
+            <h1 class="mb-5 title">{{ title }}</h1>
           </div>
           <!-- <div class="col align-self-center botton-cont">
         <button
@@ -116,12 +116,9 @@ export default {
   opacity: 0.9;
   padding-top: 100px;
 }
-/* .sign {
-  background: rgb(195, 75, 75);
-} */
 .title {
-  margin-left: 0px;
   font-size: 4vw;
+  color: royalblue;
 }
 .description {
   font-size: 2vw;

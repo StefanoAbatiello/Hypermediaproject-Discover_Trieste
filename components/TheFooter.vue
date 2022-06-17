@@ -33,15 +33,15 @@ export default {
       footerList: [
         {
           name: 'About',
-          path: '/about',
+          path: '/about/',
         },
         {
           name: 'Contacts',
-          path: '/contacts',
+          path: '/contacts/',
         },
         {
           name: 'Policy & Privacy',
-          path: '/policy',
+          path: '/policy/',
         },
       ],
     }

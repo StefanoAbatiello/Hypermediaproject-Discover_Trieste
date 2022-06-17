@@ -14,7 +14,7 @@
                   >Pois
                 </h5>
               </nuxt-link>
-              <h1 class="title">{{ name }}</h1>
+              <h1 class="mb-5 title">{{ name }}</h1>
               <p>
                 <span class="place material-icons"> place </span> via Golgi 26,
                 Trieste
