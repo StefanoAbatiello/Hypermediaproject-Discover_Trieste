@@ -8,7 +8,7 @@ export default {
     }
   ],
   head: {
-    title: 'VisitTrieste',
+    title: 'DiscoverTrieste',
     htmlAttrs: {
       lang: 'en',
     },

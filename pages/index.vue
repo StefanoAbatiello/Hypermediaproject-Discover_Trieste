@@ -4,9 +4,9 @@
       class="carousel"
       :title="''"
       :images="[
-        `homeImg/trieste10.jpeg`,
-        `homeImg/trieste9.jpeg`,
-        `homeImg/trieste12.jpeg`,
+        `homeImg/carHome1.jpeg`,
+        `homeImg/carHome2.jpeg`,
+        `homeImg/carHome3.jpeg`,
       ]"
       :height="30"
     />
@@ -14,12 +14,12 @@
     <custom-page :title="title" :image="image" :description="description" />
 
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mr-2">
         <home-card
           v-for="(item, itemIndex) of names"
           :id="item.id"
           :key="`item-index-${itemIndex}`"
-          :title="item.name"
+          :title="item"
           :img="backImgs[itemIndex]"
           :path="paths[itemIndex]"
         />

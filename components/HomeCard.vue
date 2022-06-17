@@ -1,17 +1,16 @@
 <template>
-  <div class="col my-3">
     <div class="has-bg-img card">
       <nuxt-link :to="`${path}`"
         ><img
-            class="bg-img p-0 img"
+            class="bg-img responsive img"
             :src="require(`~/assets/${img}`)"
-            alt="Card image"
             style="width: 100%; height: 400px"
           />
-          <p>{{ title }}</p>
+           <div class="text-block mt-4"> 
+              {{ title }}
+            </div> 
       </nuxt-link>
     </div>
-  </div>
 </template>
 
 <script>
@@ -35,6 +34,21 @@ export default {
 </script>
 
 <style scoped>
+.text-block {
+  position: absolute;
+  bottom: 25px;
+  width: 70%;
+  height: 50px;
+  left: 0px;
+  background-color: rgb(65, 105, 225,0.7);
+  color: white;
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0px;
+  font-size: 30px;
+  border-radius: 0px 10px 10px 0px;
+}
 .card:hover {
   opacity: 1;
   position: relative;
@@ -68,9 +82,10 @@ export default {
   vertical-align: bottom;
 }
 .card {
-  opacity: 0.9;
+  opacity: 0.85;
   position: relative;
   border-radius: 20px;
+  max-width: 300px;
 }
 .card:hover .card-body {
   transform: scale(1.05);
