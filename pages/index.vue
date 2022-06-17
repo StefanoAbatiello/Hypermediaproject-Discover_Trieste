@@ -1,23 +1,42 @@
 <template>
   <div>
-      <header-carousel class="carousel" :title="''"
-      :images= "[`homeImg/trieste10.jpeg`,`homeImg/trieste9.jpeg`,`homeImg/trieste12.jpeg`]"
+    <header-carousel
+      class="carousel"
+      :title="''"
+      :images="[
+        `homeImg/trieste10.jpeg`,
+        `homeImg/trieste9.jpeg`,
+        `homeImg/trieste12.jpeg`,
+      ]"
       :height="30"
-      />
-      <b class="title text-fluid">
-      Benvenuto a Trieste
-    </b>
-      <custom-page :title="title" :image="image" :description="description" />
-</div>
+    />
+    <b class="title text-fluid"> Benvenuto a Trieste </b>
+    <custom-page :title="title" :image="image" :description="description" />
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <home-card
+          v-for="(item, itemIndex) of names"
+          :id="item.id"
+          :key="`item-index-${itemIndex}`"
+          :title="item.name"
+          :img="backImgs[itemIndex]"
+          :path="paths[itemIndex]"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 import HeaderCarousel from '~/components/HeaderCarousel.vue'
+import HomeCard from '~/components/HomeCard.vue'
 import CustomPage from '~/components/CustomPage.vue'
 export default {
   name: 'IndexPage',
   components: {
     CustomPage,
+    HomeCard,
     HeaderCarousel,
   },
   async asyncData({ $axios }) {
@@ -25,10 +44,16 @@ export default {
     const title = data.title
     const image = data.image
     const description = data.description
+    const names = data.names
+    const paths = data.paths
+    const backImgs = data.cardImages
     return {
       title,
       description,
       image,
+      names,
+      paths,
+      backImgs,
     }
   },
 }
