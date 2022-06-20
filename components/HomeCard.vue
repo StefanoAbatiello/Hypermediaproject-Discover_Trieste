@@ -1,8 +1,8 @@
 <template>
-    <div class="has-bg-img card">
+    <div class="has-bg-img mb-5 mx-2 p-0 card">
       <nuxt-link :to="`${path}`"
         ><img
-            class="bg-img responsive img"
+            class="bg-img responsive rounded img"
             :src="require(`~/assets/${img}`)"
             style="width: 100%; height: 400px"
           />
@@ -71,9 +71,6 @@ export default {
   text-align: left;
   font-size: 18px;
 }
-.card:hover .container .img {
-  transform: scale(1.2);
-}
 .card .container {
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
@@ -84,7 +81,7 @@ export default {
 .card {
   opacity: 0.85;
   position: relative;
-  border-radius: 20px;
+  border-radius: 30px;
   max-width: 300px;
 }
 .card:hover .card-body {

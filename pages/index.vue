@@ -11,7 +11,7 @@
       :height="30"
     />
     <b class="title text-fluid"> Benvenuto a Trieste </b>
-    <custom-page :title="title" :image="image" :description="description" />
+    <custom-page :title="title" :image="image[0]" :description="description" />
 
     <div class="container">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mr-2">

@@ -38,7 +38,7 @@
             :key="`poi-index-${poiIndex}`"
             :name="poi.name"
             :img="poi.img[0]"
-            :description="poi.description"
+            :description="poi.stepDescription"
             :category="'poi'"
           />
         </div>
