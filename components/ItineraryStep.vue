@@ -92,6 +92,8 @@ export default {
 .btn-details {
   background-color: royalblue;
   opacity: 0.6;
+  position:absolute;
+  bottom: 30px;
 }
 .btn-details:hover {
   opacity: 1;

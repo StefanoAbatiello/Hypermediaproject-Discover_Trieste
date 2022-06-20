@@ -2,7 +2,7 @@
   <div class="container mt-5">
     <div class="jumbotron">
       <h1 class="title">{{ title }}</h1>
-      <img :src="require(`~/assets/${image[0]}`)" class="img-fluid mx-auto d-block images" />
+      <img :src="require(`~/assets/${image}`)" class="img-fluid mx-auto d-block images" />
       <hr class="my-4" />
       <p class="lead">{{ description }}</p>
     </div>

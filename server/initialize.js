@@ -2,22 +2,22 @@
 export default async (models) => {
     const itineraryList = [
         {
-            name: "Liberty Tour",
+            name: " Architectural Liberty tour",
             img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
             map: "Casa+De+Stabile,Trieste,Italy&destination=Casa+Terni,Trieste,Italy&waypoints=Palazzo+Vivante,Trieste,Italy|Salone+Incanti,Trieste,Italy|Banca+Di+Praga,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            description: "Il Liberty a Trieste fu uno stile che suscitò non poche polemiche e contestazioni, spesso più di carattere politico e ideologico che non artistico come per esempio l'inappellabile sentenza di Silvio Benco, noto esponente della cultura triestina di chiare tendenze irredentistiche.Il fogliame pendente di Casa Bartoli, le volte del Salone degli Incanti, il ricamo di Casa Terni-Smolars, le statue aggraziate del Cinema Eden - Ambascaitori - o della Casa del fauno: sono molti i dettagli che rischiano di restare negli occhi e nel cuore di coloro che decidono di percorrere questo affascinante itinerario."
+            description: "Liberty was a style that aroused more than a few controversies and objections, often having more of a political and ideological nature than an artistic one. An example is the final verdict of Silvio Benco, a well-known exponent of Trieste's culture who had clear irredentist tendencies.With the significant demographic changes and, more importantly, the incredible economic development of the city, the emerging middle class had new stylistic and construction needs. Liberty became the only decorative style that could be grafted onto Eclecticism, the previous trend that had heavily influenced the city."
         },
         {
-            name: "Trip in roman archeology",
+            name: "Dip into Roman archeology",
             img: ["pois/roman/teatro.jpeg", "pois/roman/lapidarioTergestino.jpeg","pois/roman/antiquarium.jpeg"],
             map: "Teatro+Romano,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Arco+Riccardo,Trieste,Italy|Castello+Di+San+Giusto,Trieste,Italy|Lapidario+Tergestino,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            description: "Viene a scoprire la perugia sotterranea!"
+            description: "The most ancient traces of the urban settlement of Trieste are considered to be the remains of the Roman colony of Tergeste, founded toward the middle of the 1st century B.C. and extending to the northwestern slope of the hill of San Giusto, overlooking the Adriatic Sea. The coast was farther back than it is now, and evidence of the harbor structures have been found along via del Teatro Romano and via Cavana: the wharves, built of sandstone slabs in the 1st and early 2nd century A.D., were in use at least until the 5th century. In 33-32 B.C. the city was enclosed by walls, which soon lost their defensive function and served for containment and terracing of the slope. The lay of the land conditioned urban organization from the outset, with the business district close to the harbor, a largely residential district on the hillside and the political, administrative and religious center at the top of the hill."
         },
         {
-            name: "Discover the most important chuches",
+            name: "Discover the most important churches",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives, the Austro-Germans, the English outposts and French, to the prosperous Jewish community."
+            description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives. Due to this influence, in Trieste there are a lot of multi-cultural churches which merge the ethics and the cultures of a big community!"
         },
     ]
     const itinerary0 = await models.Itinerary.create(itineraryList[0])
@@ -28,6 +28,7 @@ export default async (models) => {
             name: "Casa De Stabile",
             img: ["pois/liberty/casaDeStabile.jpeg", "pois/liberty/casaDeStabile3.jpeg", "pois/liberty/casaDeStabileOld.jpeg"],
             itineraryId: itinerary0.id,
+            stepDescription:"The tour starts on the corner between river Grumula and Belpoggio street, with an house built in 1907 and became a symbol of the Trieste architectural style.",
             description: "Nulla da aggiungere visto che è considerata come Meraviglia Del Mondo",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -36,9 +37,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Palazzo Vivante",
+            name: "Vivanti-Giberti Palace",
             img: ["pois/liberty/palazzoVivanti.jpeg", "pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg"],
             itineraryId: itinerary0.id,
+            stepDescription:"The next step is aniother Liberty palace cbuilt in the same period of the previous step. Here we can observe same difference between these two first houses in terms of facade and side prospets.",
             description: "Questa è una descrizione p",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -50,6 +52,7 @@ export default async (models) => {
             name: "Salone Degli Incanti",
             img: ["pois/liberty/saloneIncanti.jpeg", "pois/liberty/salone2.jpeg", "pois/liberty/salone3.jpeg"],
             itineraryId: itinerary0.id,
+            stepDescription:"This building is the Expositive Center of Modern and Contemporary Art, build in 1913 by Giorgio Polli: it's really interesting due to its innovative and functional construction both with its sinuose and aestethic magnificent",
             description: "Questa è una descrizione per pozzo etrusco",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -58,9 +61,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Banca di Praga",
+            name: "Bank of Prague",
             img: ["pois/liberty/bancaPraga.jpeg", "pois/liberty/banca2.jpeg", "pois/liberty/banca3.jpeg"],
             itineraryId: itinerary0.id,
+            stepDescription:"This palace is the result of a project realized by Josip Costaperaria and Osvaldo Poliva and represents a clear example of rationalism characterized by solid and compact volumes.",
             description: "questa è la descrizion e di un punto di interesse",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -72,6 +76,7 @@ export default async (models) => {
             name: "Casa Terni",
             img: ["pois/liberty/casaTerni.jpeg", "pois/liberty/casaTerni2.jpeg", "pois/liberty/casaTerni3.jpeg"],
             itineraryId: itinerary0.id,
+            stepDescription:"The tour ended in Via Dante Alighieri, with the building which represents one of the best modernist evidence of Romeo Despoli. The continuous alternate of elements sunken or projecting, columns and terraces, decorative pilasters and structural pilasters creates a game of chiaroscuros that animate the facade.",
             description: "Questa è una descrizione per il punto di interesse",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -83,6 +88,7 @@ export default async (models) => {
             name: "Antiquarium",
             img: ["pois/roman/antiquarium.jpeg", "pois/roman/antiquarium2.jpeg", "pois/roman/antiquarium3.jpeg"],
             itineraryId: itinerary1.id,
+            stepDescription:"",
             description: "Questa porta è dedicata ad una santa",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -91,9 +97,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Arco Riccardo",
+            name: "Arch of Riccardo",
             img: ["pois/roman/arcoRiccardo.jpeg", "pois/roman/arco2.jpeg", "pois/roman/arco3.jpeg"],
             itineraryId: itinerary1.id,
+            stepDescription:"",
             description: "Fontana maggiore, la più bella del rione!",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -102,9 +109,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Castello San Giusto",
+            name: "Castle of St. Justus",
             img: ["pois/roman/castelloGiusto.jpeg", "pois/roman/castle2.jpeg", "pois/roman/castle3.jpeg"],
             itineraryId: itinerary1.id,
+            stepDescription:"",
             description: "Questa porta perugina è stata citata nella DIvina Commedia dal sommo maestro..",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -116,6 +124,7 @@ export default async (models) => {
             name: "Lapidario Tergestino",
             img: ["pois/roman/lapidarioTergestino.jpeg", "pois/roman/lapidario2.jpeg", "pois/roman/lapidario3.jpeg"],
             itineraryId: itinerary1.id,
+            stepDescription:"",
             description: "Questa è una cattedrale spoglia e rudimentale nel centro di Perugia",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -124,9 +133,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Teatro Romano",
+            name: "Roman Theater",
             img: ["pois/roman/teatro.jpeg", "pois/roman/teatro2.jpeg", "pois/roman/teatro3.jpeg"],
             itineraryId: itinerary1.id,
+            stepDescription:"",
             description: "Arco bianco che più bianco non c'è!",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -135,9 +145,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Cattedrale San Giusto",
+            name: "Cathedral of St. Justus",
             img: ["pois/churches/sanGiusto.jpeg", "pois/churches/insideSanGiusto.jpeg", "pois/churches/sanGiusto2.jpeg"],
             itineraryId: itinerary2.id,
+            stepDescription:"",
             description: "Arco bianco che più bianco non c'è!",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -146,9 +157,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Chiesa di San Nicolò",
+            name: "Greek-Oriental Church of St. Nicolò",
             img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
             itineraryId: itinerary2.id,
+            stepDescription:"",
             description: "Acquedotto etrusco di Perugia",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -157,10 +169,11 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Chiesa Ortodossa di San Spiridione",
+            name: "Serbian-Orthodox Church of St. Spiridione",
             img: ["pois/churches/chiesaOrtodossa.jpeg", "pois/churches/ortodossa2.jpeg", "pois/churches/ortodossa3.jpeg"],
             itineraryId: itinerary2.id,
-            description: "Famosissima chiesa di Perugia",
+            stepDescription:"",
+            description: "la mette tabo",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
             // directions: "event.name",
@@ -168,9 +181,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Sinagoga di Trieste",
+            name: "Israelite Temple Synagogue",
             img: ["pois/churches/sinagoga.jpeg", "pois/churches/insideSinagoga.jpeg", "pois/churches/sinagoga2.jpeg"],
             itineraryId: itinerary2.id,
+            stepDescription:"",
             description: "Famosissima porta di Perugia",
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
@@ -179,9 +193,10 @@ export default async (models) => {
             website: ["https://www.google.it", "name_website" ],
         },
         {
-            name: "Chiesa della Beata Vergine",
+            name: "Sanctuary of St. Mary Major",
             img: ["pois/churches/beataVergine.png", "pois/churches/insideBeataVergine.jpeg", "pois/churches/beataVergine2.png"],
             itineraryId: itinerary2.id,
+            stepDescription:"",
             description: "Famosissima chiesa di Perugia",
             accessInfo: ["done","done","block"],
             timeInfo: ["Monday: 10-19", "Tuesday:10-19", "Wednesday: 10-19","Thursday: 10-19", "Friday: 10-19", "Saturday: 10-19", "Sunday: 10-19"], 
