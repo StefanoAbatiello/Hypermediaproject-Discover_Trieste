@@ -10,7 +10,7 @@
     />
     </a>
     <div class="collapse navbar-collapse links">
-      <ul class="navbar-nav mt-2 d-flex">
+      <ul class="navbar-nav mt-2">
         <li
           v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
@@ -57,24 +57,19 @@ export default {
 }
 .logo-img {
   width: 100%;
-  height: auto;
-  max-height: 90px;
+  height: 4.5rem;
 }
-.navbar-brand {
+/* .navbar-brand {
   color: white;
   font-size: 45px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+} */
 .nav-item {
   color: white;
   font-size: 22px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.logo {
-  color: white;
-  font-size: 32px;
 }
 .navbar-nav {
   min-width: 400px;

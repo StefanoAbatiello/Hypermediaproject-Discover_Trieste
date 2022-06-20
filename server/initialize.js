@@ -242,30 +242,32 @@ export default async (models) => {
                 "Nell’anno in cui tutto il mondo sportivo italiano sta tornando a vivere i grandi eventi con migliaia di spettatori, Trieste si unisce a questa ripartenza riabbracciando finalmente la sua storica mezza maratona, uno degli eventi più cari a tutti i podisti italiani. La Trieste Spring Run si ripropone a tutti gli agonisti e appassionati di corsa su strada, che hanno sempre amato l’evento lungo la costa giuliana, grazie ad un’organizzazione profondamente rinnovata alla cui guida c’è la società A.p.d. Miramar che unisce le forze con la A.S.D Trieste Atletica",
                 "La Trieste 21K è la corsa competitiva della Trieste Spring Run: una mezza maratona, gara tra le più entusiasmanti del calendario nazionale delle corse su strada. La partenza è prevista dalla piazza centrale di Aurisina: il percorso porterà i runner verso Sistiana per poi impegnare il lungomare triestino fino all’arrivo lungo le Rive di Trieste, all’altezza di Ponterosso.",
                 "Torna anche la Family Run più amata dai triestini con il tradizionale percorso dal Castello di Miramare alle Rive e con un nuovo arrivo all’altezza del canale di Ponterosso. 7 chilometri di gioia da condividere in famiglia, con gli amici e in gruppi organizzati, camminando, marciando, utilizzando pattini e roller, un evento aperto alle persone di tutte le età che punta all’inclusione sociale e all’educazione allo sport.",
-		        "La Corsa degli Eroi è una camminata in cosplay e/o in maschera per adulti e bambini la cui unica regola è essere mascherati e il cui obiettivo è celebrare gli eroi e le eroine della pandemia e le lotte affrontate negli ultimi due anni. La gara si svolgerà nel tardo pomeriggio di sabato 7 maggio, lungo le vie del centro della città, e coinvolgerà grandi e piccoli, atleti e amatori in un progetto di charity a favore di “Atleti anche noi”, il progetto di Trieste Atletica per la promozione dello sport per bambini e ragazzi con autismo e/o disabilità intellettivo-relazionali. L’iscrizione è aperta a tutti, compreso chi non prenderà parte agli eventi della TSR il giorno seguente.",
-		    ],
+                "La Corsa degli Eroi è una camminata in cosplay e/o in maschera per adulti e bambini la cui unica regola è essere mascherati e il cui obiettivo è celebrare gli eroi e le eroine della pandemia e le lotte affrontate negli ultimi due anni. La gara si svolgerà nel tardo pomeriggio di sabato 7 maggio, lungo le vie del centro della città, e coinvolgerà grandi e piccoli, atleti e amatori in un progetto di charity a favore di “Atleti anche noi”, il progetto di Trieste Atletica per la promozione dello sport per bambini e ragazzi con autismo e/o disabilità intellettivo-relazionali. L’iscrizione è aperta a tutti, compreso chi non prenderà parte agli eventi della TSR il giorno seguente.",
+            ],
             img: ["events/springRun/logo.jpeg", "events/springRun/targhetta.jpeg", "events/springRun/arrivo.jpeg"],
             season: "Summer",
             date: "dal 5/5 al 8/5",
             poiId: poi0.id,
-            accessInfo: ["done","block","block"],
-            timeInfo: ["May 5 at 10am: Trieste Spring Young", "May 7 at 5pm: La Corsa degli Eroi", "May 8 at 10am: Trieste Family Spring Run","May 8 at 10am: Trieste 21K", ], 
+            accessInfo: ["done", "block", "block"],
+            timeInfo: ["May 5 at 10am: Trieste Spring Young", "May 7 at 5pm: La Corsa degli Eroi", "May 8 at 10am: Trieste Family Spring Run", "May 8 at 10am: Trieste 21K",],
             // directions: "event.name",
             prices: ["Trieste 21K: iscrizione online di 30€ entro il 5 maggio", "Trieste Family Spring Run: iscrizione online 10€ per adulti e gratis per bambini fino a 5 annni entro il 7 maggio", "Trieste Spring Young: gratis per tutte i bambini e le bambine delle scuole di Trieste", "La Corsa degli Eroi:Iscrizione online con donazione libera devoluta a \"ATLETI ANCHE NOI\""],
-            website: ["https://triestespringrun.com", "www.triestespringrun.com" ],
+            website: ["https://triestespringrun.com", "www.triestespringrun.com"],
         },
         {
-            name: "Eurochocolate",
-            description: ["Details about marathon"],
-            img: ["events/eurochocolate.jpeg", "events/eurochocolate.jpeg", "events/eurochocolate.jpeg"],
+            name: "54^ Barcolana",
+            description: ["Per tutti gli appassionati di mare e di vela, per chi non vuol perdersi uno spettacolo unico al mondo, l'appuntamento si svolge a Trieste, ogni anno, la seconda domenica di ottobre. È la Barcolana, la regata velica internazionale giunta quest'anno alla 54a edizione: un magico mix di competizione agonistica e festa “pop” della vela che trasforma Trieste nella capitale europea della vela.",
+            "Barcolana non è solo la regata più grande del mondo, ma anche un fantastico contenitore che accoglie le diverse sfaccettature del mondo della vela. Dalla Barcolana Young, la due giorni dedicata alla classe Optimist, alla Barcolana Classic, la regata dedicata alle barche d’epoca, classiche e spirit of tradition; e ancora Barcolana Nuota, la Barcolana By Night, una regata che diventa spettacolo a pochi passi da terra e per finire la Coppa d'Autunno, .",
+        ],
+            img: ["events/barcolana/logo.jpeg", "events/barcolana/statua.jpeg", "events/barcolana/piazza.jpeg"],
             season: "Winter",
-            date: "dal 10/7 al 21/7",
-            poiId: poi0.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            date: "dal 1/10 al 9/10",
+            poiId: poi11.id,
+            accessInfo: ["done", "block", "done"],
+            timeInfo: ["October 1-2: Barcolana Young", "October 2: Barcolana Nuota", "October 8: Barcolana Classic", "October 8: Barcolana by Night", "October 9: Coppa d'Autunno"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.barcolana.it/", "www.barcolana.it"],
         },
         {
             name: "International Journalism Festival",
@@ -274,11 +276,11 @@ export default async (models) => {
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.google.it", "name_website"],
         },
         {
             name: "Festa di San Costanzo",
@@ -287,11 +289,11 @@ export default async (models) => {
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi3.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.google.it", "name_website"],
         },
         {
             name: "Il Caos Dentro",
@@ -303,11 +305,12 @@ export default async (models) => {
             season: "Summer",
             date: "Dal 12/3 al 23/7",
             poiId: poi4.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],},
+            website: ["https://www.google.it", "name_website"],
+        },
         {
             name: "Perugia Flowers Show",
             description: ["alla ricerca dei fiori "],
@@ -315,11 +318,11 @@ export default async (models) => {
             season: "Winter",
             date: "dal 10/7 al 21/7",
             poiId: poi0.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.google.it", "name_website"],
         },
         {
             name: "Umbria che Spacca",
@@ -328,11 +331,11 @@ export default async (models) => {
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId: poi1.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.google.it", "name_website"],
         },
         {
             name: "Rally dell'Umbria",
@@ -341,11 +344,11 @@ export default async (models) => {
             season: "Summer",
             date: "dal 10/7 al 21/7",
             poiId: poi1.id,
-            accessInfo: ["done","done","block"],
-            timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
+            accessInfo: ["done", "done", "block"],
+            timeInfo: ["10-19", "closed", "14-21", "10-19", "closed", "14-21", "closed"],
             // directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
-            website: ["https://www.google.it", "name_website" ],
+            website: ["https://www.google.it", "name_website"],
         },
     ]
     const servicesList = [
@@ -389,7 +392,7 @@ export default async (models) => {
             serviceTypeId: type0.id,
             address: "via blabla",
             description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
             map: "Trieste,Italy"
 
@@ -399,7 +402,7 @@ export default async (models) => {
             serviceTypeId: type0.id,
             address: "via blabla",
             description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
             map: "Trieste,Italy"
 
@@ -409,7 +412,7 @@ export default async (models) => {
             serviceTypeId: type0.id,
             address: "S. Andrea delle Fratte",
             description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
             map: "Trieste,Italy"
 
@@ -419,7 +422,7 @@ export default async (models) => {
             serviceTypeId: type0.id,
             address: "Via del Giochetto, 49",
             description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/portaSole.jpeg",
             map: "Trieste,Italy"
 
@@ -469,7 +472,7 @@ export default async (models) => {
             serviceTypeId: type2.id,
             address: "Via dei Priori, 39",
             description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/restaurants/osteriaPriori.jpeg",
             map: "Trieste,Italy"
 
@@ -479,7 +482,7 @@ export default async (models) => {
             serviceTypeId: type2.id,
             address: "Via della Viola, 25 ",
             description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/restaurants/civico25.jpeg",
             map: "Trieste,Italy"
 
@@ -489,7 +492,7 @@ export default async (models) => {
             serviceTypeId: type2.id,
             address: "Via Narcisi, 47A",
             description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/restaurants/stella.jpeg",
             map: "Trieste,Italy"
 
@@ -499,7 +502,7 @@ export default async (models) => {
             serviceTypeId: type3.id,
             address: "via blabla",
             description: "",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/cafes/caffè1.jpeg",
             map: "Trieste,Italy"
 
@@ -510,7 +513,7 @@ export default async (models) => {
             serviceTypeId: type3.id,
             address: "via blabla",
             description: "",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/cafes/caffè1.jpeg",
             map: "Trieste,Italy"
 
@@ -521,7 +524,7 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Strada Montalcino, 2",
             description: "Il locale è composto da ben 7 sale di cui 5 invernali e 2 estive ed organizza serate ed eventi con generi musicali diversi.",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/entertainments/gradisca.jpeg",
             map: "Trieste,Italy"
 
@@ -532,7 +535,7 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Via Benedetto Bonfigli, 11",
             description: "La sala ha 216 poltrone distribuite su 18 file. E’ equipaggiata con un proiettore Sony 4k e con un impianto audio dolby surround.",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/entertainments/zenith.jpeg",
             map: "Trieste,Italy"
 
@@ -542,7 +545,7 @@ export default async (models) => {
             serviceTypeId: type4.id,
             address: "Piazza Morlacchi, 13",
             description: "",
-            time: ["MONDAY: 8-12","TUESDAY: 8-12","WEDNESDAY: 8-12","THURSDAY: 8-12","FRIDAY: 8-12","SATURDAY: 8-12","SUNDAY: 8-12"],
+            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/entertainments/morlacchi.jpeg",
             map: "Trieste,Italy"
 
