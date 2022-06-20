@@ -35,7 +35,7 @@ export default async (models) => {
             directions: "Riva Grumula, 4, 34123 Trieste TS",
             prices: ["For over65 is free", "For students there the admission is free", "The regular admission is 5€"],
             website: ["https://www.catalogo.beniculturali.it/detail/ArchitecturalOrLandscapeHeritage/0600007571", "name_website" ],
-            map: "JQW5%2B3M Trieste, UTI Giuliana"
+            map: "Casa+De+Stabile,Trieste,Italy"
         },
         {
             name: "Vivanti-Giberti Palace",
@@ -152,7 +152,7 @@ export default async (models) => {
             directions: "event.name",
             prices: ["For over65 is free", "For students there is a discount of 20%", "The regular admission is 20€"],
             website: ["https://www.google.it", "name_website" ],
-            map: "JQW5%2B3M Trieste, UTI Giuliana"
+            map: "Antiquarium, Trieste, UTI Giuliana"
         },
         {
             name: "Cathedral of St. Justus",
