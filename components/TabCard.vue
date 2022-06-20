@@ -14,7 +14,7 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon"> accessibility_new </span></p>
+          <p><span class="material-icons icon tab-icon"> accessibility_new </span></p>
         </button>
       </li>
       <li class="nav-item pe-0" role="presentation">
@@ -26,7 +26,7 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon"> schedule </span></p>
+          <p><span class="material-icons icon tab-icon"> schedule </span></p>
         </button>
       </li>
       <!-- <li class="nav-item pe-0" role="presentation">
@@ -50,27 +50,27 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon"> confirmation_number </span></p>
+          <p><span class="material-icons icon tab-icon"> confirmation_number </span></p>
         </button>
       </li>
     </ul>
-    <div id="myTabContent" class="tab-content d-flex">
+    <div id="myTabContent" class="tab-content">
       <div id="accessibility" class="tab-pane fade show active" role="tabpanel">
-        <div class="row info-box">
+        <div class="row justify-content-between info-box">
           <div class="icons col">
-            <span class="mi material-icons" style="color: green">{{
+            <span class="icon access-icon material-icons" style="color: royalblue">{{
               accessInfo[0]
             }}</span
             >Step-Free
           </div>
           <div class="icons col">
-            <span class="mi material-icons" style="color: green">{{
+            <span class="icon access-icon material-icons" style="color: royalblue">{{
               accessInfo[1]
             }}</span
             >Testo in Brile
           </div>
           <div class="icons col">
-            <span class="mi material-icons" style="color: red">{{
+            <span class="icon access-icon material-icons" style="color: royalblue">{{
               accessInfo[2]
             }}</span
             >Audio Description
@@ -104,12 +104,10 @@
             {{ price }}
           </li>
         </ul>
-        <div v-if="website !== null">
-          <p>
+          <p v-if="website !== null">
             For more information about the tickets visit the following site:
             <a :href="website[0]">{{website[1]}}</a>
           </p>
-        </div>
       </div>
     </div>
   </div>
@@ -174,7 +172,8 @@ export default {
 }
 .tab-content {
   /* border: 1px solid royalblue; */
-  height: 200px;
+  min-height: 200px;
+  height: auto;
   padding: 10px;
 }
 .nav-tabs {
@@ -184,7 +183,10 @@ export default {
   background-color: #fff;
   color: black;
 }
-.icon {
+.access-icon{
+  vertical-align: bottom;
+}
+.tab-icon {
   vertical-align: middle;
   background-color: rgb(65, 105, 225, 0.7);
   border-radius: 60px;
@@ -192,5 +194,7 @@ export default {
   padding: 3px;
   margin-bottom: 2;
 }
-
+.info-box{
+  width: 100%;
+}
 </style>

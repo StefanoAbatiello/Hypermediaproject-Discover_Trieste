@@ -13,7 +13,10 @@
                   >Events
                 </h5>
               </nuxt-link>
-              <h1 class="mb-5 title">{{ name }}</h1>
+              <h1 class="title">{{ name }}</h1>
+              <h5 class="mb-5">
+                <span class="material-icons px-0 date-icon"> event </span> {{ date }}
+              </h5>
               <div>
                 <p
                   v-for="(text, textIndex) of description"
@@ -29,7 +32,7 @@
             <div class="sticky-top">
               <diV class="row row-cols-1">
                 <div class="ms-3 my-5">
-                  <related-card 
+                  <related-card
                     :id="poi.id"
                     :name="poi.name"
                     :img="poi.img[0]"
@@ -71,13 +74,14 @@ export default {
     return {
       name: data.name,
       img: data.img,
+      date: data.date,
       description: data.description,
       poi: data.poi,
       accessInfo: data.accessInfo,
       timeInfo: data.timeInfo,
       // directions: data.directions,
       prices: data.prices,
-      website: data.website
+      website: data.website,
     }
   },
   head() {
@@ -113,5 +117,8 @@ export default {
 }
 .description {
   font-size: 20px;
+}
+.date-icon{
+  vertical-align: middle;
 }
 </style>

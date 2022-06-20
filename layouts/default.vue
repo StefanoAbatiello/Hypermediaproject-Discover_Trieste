@@ -37,25 +37,4 @@ export default {
   width: 100%;
   height: 5rem; /* altezza del footer */
 }
-/* html,
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-.main-page {
-  flex: 1;
-} */
-
-/* .main-page {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -80px;
-} */
-
-/* .footer,
-.push {
-  height: 80px;
-} */
 </style>

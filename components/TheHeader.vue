@@ -16,7 +16,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="material-icons" style="color:royalblue"> menu </span>
+      <span class="material-icons" style="color:black"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
       <ul class="navbar-nav mt-2 mt-lg-0">
@@ -88,13 +88,13 @@ export default {
   height: 130px;
   width: 380px;
 }
-.navbar-brand {
+/* .navbar-brand {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   font-size: 45px;
   font-weight: 700;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+} */
 .nav-item {
   font-size: 2.5vw;
   font-weight: 600;
@@ -102,6 +102,7 @@ export default {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .link{
+  text-align: center; 
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
 }  
@@ -114,7 +115,7 @@ export default {
   /* background-color: rgba(15, 15, 15, .2); */
 }
 .navbar-toggler {
-  border: 1px solid royalblue;
+  border: 2px solid black;
   margin-left: auto;
 }
 
