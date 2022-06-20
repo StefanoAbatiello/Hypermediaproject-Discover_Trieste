@@ -16,40 +16,10 @@
               </nuxt-link>
               <h1 class="mb-5 title">{{ name }}</h1>
               <p>
-                <span class="place material-icons"> place </span> via Golgi 26,
-                Trieste
+                <span class="place material-icons"> place </span> {{data.poi.directions}}
               </p>
               <div class="description-poi">
-                <p>
-                  Your gaze is lost among the many wonders that surround what is
-                  one of Procida's most beautiful beaches: on the right-hand
-                  side is the rocky ridge on which stand a few houses with
-                  typical island architecture, on the other is the small port of
-                  Corricella, a small nativity scene made up of colourful houses
-                  set between the rock and the hill on which Terra Murata
-                  stands, Procida's oldest nucleus. Opposite, the absolute
-                  protagonist is the azure blue sea.
-                </p>
-                <p>
-                  Your gaze is lost among the many wonders that surround what is
-                  one of Procida's most beautiful beaches: on the right-hand
-                  side is the rocky ridge on which stand a few houses with
-                  typical island architecture, on the other is the small port of
-                  Corricella, a small nativity scene made up of colourful houses
-                  set between the rock and the hill on which Terra Murata
-                  stands, Procida's oldest nucleus. Opposite, the absolute
-                  protagonist is the azure blue sea.
-                </p>
-                <p>
-                  Your gaze is lost among the many wonders that surround what is
-                  one of Procida's most beautiful beaches: on the right-hand
-                  side is the rocky ridge on which stand a few houses with
-                  typical island architecture, on the other is the small port of
-                  Corricella, a small nativity scene made up of colourful houses
-                  set between the rock and the hill on which Terra Murata
-                  stands, Procida's oldest nucleus. Opposite, the absolute
-                  protagonist is the azure blue sea.
-                </p>
+                <p>{{data.poi.description}}</p>
               </div>
               <div class="interlinea">
                 <tab-card
@@ -100,7 +70,7 @@
             height="600"
             referrerpolicy="no-referrer-when-downgrade"
             frameborder="0"
-            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=Trieste,Italy`"
+            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${data.poi.map}`"
             allowfullscreen
           >
           </iframe>
