@@ -8,11 +8,11 @@
           <main class="col-md-7 mr-5">
             <section class="main-text">
               <nuxt-link class="breadcrumps" to="/pois">
-                <h5 class="btn back-btn px-0" style="color:royalblue">
-                  <span class="material-icons px-0" style="color:royalblue"
-                    >arrow_back_ios</span
-                  >Pois
-                </h5>
+                <div class="btn back-btn px-0">
+                <bc>
+                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
+                  Pois
+                </bc></div>
               </nuxt-link>
               <h1 class="mb-5 title">{{ name }}</h1>
               <p>

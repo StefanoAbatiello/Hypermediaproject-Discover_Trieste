@@ -28,6 +28,7 @@ export default {
 }
 
 .main-page {
+  font-family: 'Lato', sans-serif;
   padding-bottom: 5rem; /* altezza del footer */
 }
 

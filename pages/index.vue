@@ -2,7 +2,6 @@
   <div>
     <header-carousel
       class="carousel"
-      :title="''"
       :images="[
         `homeImg/carHome1.jpeg`,
         `homeImg/carHome2.jpeg`,
@@ -10,7 +9,7 @@
       ]"
       :height="30"
     />
-    <b class="title text-fluid"> Benvenuto a Trieste </b>
+    <ht> Benvenuto a Trieste </ht>
     <custom-page :title="title" :image="image[0]" :description="description" />
 
     <div class="container">
@@ -62,17 +61,5 @@ export default {
 <style scoped>
 .carousel {
   opacity: 0.8;
-}
-.title {
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
-  color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 7vw;
-  position: absolute;
-  top: 200px;
-  margin-left: 18%;
-  /* width: 100%; */
-  text-align: center;
 }
 </style>

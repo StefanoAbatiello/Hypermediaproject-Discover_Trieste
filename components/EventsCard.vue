@@ -11,7 +11,7 @@
           />
         </div>
         <div class="btn card-body">
-          <p class="title">{{ name }}</p>
+          <ch class="title">{{ name }}</ch>
           <p class="text">
             <span class="material-icons icon"> schedule </span> {{ date }}
           </p>
@@ -84,15 +84,14 @@ export default {
   text-align: left;
   transform: scale(1.1);
   height: auto;
-  font-weight: 500;
 }
 .text {
   text-align: left;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-weight: 400;
 }
 .title {
-  text-align: left;
-  font-size: 18px;
+  text-align: center;
 }
 .card:hover .container .img {
   transform: scale(1.2);
@@ -106,6 +105,9 @@ export default {
 }
 .card .card-body .icon {
   vertical-align: bottom;
+}
+.card-body{
+  width: 100%;
 }
 .card{
   opacity: 0.9;

@@ -2,7 +2,8 @@
   <div class="col my-3">
     <div class="card">
       <nuxt-link :to="`/${category}/${id}`"
-        ><div class="container m-0 p-0">
+>
+        <div class="container m-0 p-0">
           <img
             class="card-img-top p-0 img"
             :src="require(`~/assets/${img}`)"
@@ -12,7 +13,7 @@
         </div>
         <div class="card-body">
           <div class="btn align-center p-0 m-0 text" style="width: 100%">
-            <p>{{ name }}</p>
+            <ch>{{ name }}</ch>
           </div>
         </div>
       </nuxt-link>
@@ -58,7 +59,6 @@ export default {
 .card:hover .card-body .text {
   color: royalblue;
   transform: scale(1.2);
-  font-weight: 500;
 }
 .card:hover .container .img {
   transform: scale(1.2);
