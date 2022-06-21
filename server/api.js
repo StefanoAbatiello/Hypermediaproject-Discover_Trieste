@@ -38,7 +38,7 @@ async function initializeDatabaseConnection() {
     })
     const PointOfInterest = database.define("poi", {
         name: DataTypes.STRING,
-        description: DataTypes.TEXT,
+        description: DataTypes.ARRAY(DataTypes.TEXT),
         stepDescription: DataTypes.TEXT,
         img: DataTypes.ARRAY(DataTypes.STRING),
         accessInfo: DataTypes.ARRAY(DataTypes.STRING),

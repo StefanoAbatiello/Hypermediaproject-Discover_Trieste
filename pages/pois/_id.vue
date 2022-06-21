@@ -19,7 +19,12 @@
                 <span class="place material-icons"> place </span> {{data.poi.directions}}
               </p>
               <div class="description-poi">
-                <p>{{data.poi.description}}</p>
+                <p
+                  v-for="(text, textIndex) of description"
+                  :key="`text-index-${textIndex}`"
+                  class="mt-3 description"
+                >
+                {{text}}</p>
               </div>
               <div class="interlinea">
                 <tab-card
@@ -64,7 +69,7 @@
         </div>
 
         <section>
-          <div class="map rounded responsive mt-5 ">
+          <div class="map rounded responsive mt-3">
           <iframe
             width="100%"
             height="600"
@@ -165,11 +170,8 @@ export default {
 .aside {
   float: center;
 }
-/* .map{
-  height:1000;
-  width: 2000;
-  margin-top: 4px;
-  position: relative; 
-  border: 0;
-} */
+.description {
+  text-align: justify;
+  text-justify: inter-word;
+}
 </style>
