@@ -6,10 +6,11 @@
       <div class="container">
         <section class="main-text">
           <nuxt-link to="/itineraries">
-            <h5 class="btn back-btn px-0">
-              <span class="material-icons px-0 back-icon">arrow_back_ios</span
-              >Itineraries
-            </h5>
+            <div class="btn back-btn px-0">
+                <bc>
+                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
+                  Itineraries
+                </bc></div>
           </nuxt-link>
           <h1 class="mb-5 title">{{ name }}</h1>
           <div class="description-it">

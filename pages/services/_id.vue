@@ -9,10 +9,14 @@
         <div class="row-md d-flex justify-content-between sign">
           <div class="col">
             <nuxt-link to="/services">
-              <h5 class="btn back-btn px-0">
-                <span class="material-icons px-0 back-icon">arrow_back_ios</span
-                >Type of services
-              </h5>
+              <div class="btn back-btn px-0">
+                <bc>
+                  <span class="material-icons px-0 back-icon"
+                    >arrow_back_ios</span
+                  >
+                  Types of service
+                </bc>
+              </div>
             </nuxt-link>
             <!-- <ul class="ms-4 breadcrumb">
           <li class="breadcrumb-item ">

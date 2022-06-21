@@ -45,6 +45,8 @@ async function initializeDatabaseConnection() {
         timeInfo: DataTypes.ARRAY(DataTypes.STRING),
         prices: DataTypes.ARRAY(DataTypes.STRING),
         website: DataTypes.ARRAY(DataTypes.STRING),
+        directions: DataTypes.STRING,
+        map: DataTypes.STRING,
     })
     const SingleService =database.define("singleService",{
         name: DataTypes.STRING,

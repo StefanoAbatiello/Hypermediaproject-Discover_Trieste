@@ -7,15 +7,16 @@
           <main class="col-md-7 col-sm-6">
             <section class="main-text">
               <nuxt-link to="/events">
-                <h5 class="btn back-btn px-0">
-                  <span class="material-icons px-0 back-icon"
-                    >arrow_back_ios</span
-                  >Events
-                </h5>
+              <div class="btn back-btn px-0">
+                <bc>
+                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
+                  Events
+                </bc></div>
               </nuxt-link>
               <h1 class="title">{{ name }}</h1>
               <h5 class="mb-5">
-                <span class="material-icons px-0 date-icon"> event </span> {{ date }}
+                <span class="material-icons px-0 date-icon"> event </span>
+                {{ date }}
               </h5>
               <div>
                 <p
@@ -105,20 +106,20 @@ export default {
   padding-top: 125px;
   background-color: rgb(65, 105, 225);
 }
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
+
 .aside {
   min-width: 300px;
 }
-.back-btn {
+/* .back-btn {
   font-size: 1.5vw;
-}
+} */
 .description {
   font-size: 20px;
 }
-.date-icon{
+.date-icon {
+  vertical-align: middle;
+}
+.back-icon{
   vertical-align: middle;
 }
 </style>

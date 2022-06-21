@@ -2,7 +2,7 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="title"> Events </b>
+      <ht> Events </ht>
     </div>
     <section class="container filters">
       <div class="row justify-content-start">
@@ -103,18 +103,6 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 5vw;
-  position: absolute;
-  top: 200px;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .filter {
   font-size: 1.5vw;
   background: white;

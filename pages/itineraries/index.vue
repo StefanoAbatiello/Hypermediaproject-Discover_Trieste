@@ -2,7 +2,7 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="title"> Itineraries </b>
+      <ht> Itineraries </ht>
     </div>
     <section class="itinerary-list">
       <div class="container">
@@ -45,17 +45,6 @@ export default {
 .row-line {
   display: flex;
   justify-content: center;
-}
-.title {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-  color: whitesmoke; 
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 5vw;
-  position: absolute;
-  top: 200px;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
-  /* -webkit-text-stroke: 1px black; */
 }
 .image-header {
   background-image: url('assets\homeImg\trieste8.jpeg');

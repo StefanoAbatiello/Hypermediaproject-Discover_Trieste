@@ -2,9 +2,9 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="title">
+      <ht>
       Types of service
-    </b>
+    </ht>
     </div>
     <section class="services-list">
       <div class="container">
@@ -49,7 +49,6 @@ export default {
 .title {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   color: whitesmoke; 
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 5vw;
   position: absolute;
   top:200px;

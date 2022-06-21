@@ -106,7 +106,7 @@
         </ul>
           <p v-if="website !== null">
             For more information about the tickets visit the following site:
-            <a :href="website[0]">{{website[1]}}</a>
+            <a :href="website[0]" target="_blank">{{website[1]}}</a>
           </p>
       </div>
     </div>

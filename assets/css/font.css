@@ -1,0 +1,29 @@
+h1{
+    font-size: 4vw;
+    font-weight: 700;
+    color: royalblue;
+    font-style: italic;
+}
+ch{
+    font-size: 21px;
+    font-weight: 600;
+}
+bc{
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    font-size: 19px;
+    font-weight: 400;
+}
+ht{
+    font-size: 5vw;
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: whitesmoke;
+    position: absolute;
+    top: 200px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+}
