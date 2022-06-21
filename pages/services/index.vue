@@ -41,10 +41,20 @@ export default {
 </script>
 
 <style scoped>
-.row-line {
+/* .row-line {
   display: flex;
   justify-content: center;
   max-width: 1850px;
+} */
+.title {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+  color: whitesmoke; 
+  font-size: 5vw;
+  position: absolute;
+  top:200px;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  /* -webkit-text-stroke: 1px black; */
 }
 .sign {
   background: rgb(39, 123, 250);

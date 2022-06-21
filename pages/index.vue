@@ -11,9 +11,9 @@
     />
     <ht> Benvenuto a Trieste </ht>
     <custom-page :title="title" :image="image[0]" :description="description" />
-
+    <section class="services-list">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 mr-2">
+      <div class="row row-cols-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2">
         <home-card
           v-for="(item, itemIndex) of names"
           :id="item.id"
@@ -24,6 +24,7 @@
         />
       </div>
     </div>
+    </section>
   </div>
 </template>
 
@@ -62,4 +63,15 @@ export default {
 .carousel {
   opacity: 0.8;
 }
+.title {
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
+  color: whitesmoke;
+  font-size: 7vw;
+  position: absolute;
+  top: 200px;
+  margin-left: 18%;
+  /* width: 100%; */
+  text-align: center;
+}
+
 </style>
