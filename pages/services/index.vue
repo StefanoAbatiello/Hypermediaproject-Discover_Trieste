@@ -41,11 +41,11 @@ export default {
 </script>
 
 <style scoped>
-.row-line {
+/* .row-line {
   display: flex;
   justify-content: center;
   max-width: 1850px;
-}
+} */
 .title {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
   color: whitesmoke; 
