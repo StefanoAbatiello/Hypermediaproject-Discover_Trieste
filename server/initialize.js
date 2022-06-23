@@ -191,7 +191,7 @@ export default async (models) => {
             map: "Cattedrale+Di+San+Giusto"
         },
         {
-            name: "Greek-Oriental Church of St. Nicolò",
+            name: "Church of St. Nicolò",
             img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
             itineraryId: itinerary2.id,
             stepDescription:"",
@@ -207,7 +207,7 @@ export default async (models) => {
             map: "Chiesa+Greco+Ortodossa+di+San+Nicolò,Trieste,Italy"
         },
         {
-            name: "Serbian-Orthodox Church of St. Spiridione",
+            name: "Church of St. Spiridione",
             img: ["pois/churches/chiesaOrtodossa.jpeg", "pois/churches/ortodossa2.jpeg", "pois/churches/ortodossa3.jpeg"],
             itineraryId: itinerary2.id,
             stepDescription:"",
