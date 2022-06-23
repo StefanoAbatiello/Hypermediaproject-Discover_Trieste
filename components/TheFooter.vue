@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-dark w-100 px-3 footer justify-content-start">
+    class="navbar navbar-expand-lg navbar-expand-sm w-100 px-3 footer justify-content-start">
     <a href="/">
     <img
       :src="require(`~/assets/logo.png`)"
@@ -9,14 +9,14 @@
       href="/"
     />
     </a>
-    <div class="collapse navbar-collapse links">
+    <div class=" ms-4 navbar links">
       <ul class="navbar-nav mt-2">
         <li
           v-for="(navItem, navItemIndex) of footerList"
           :key="`navItem${navItemIndex}`"
           class="nav-item col-md-auto"
         >
-          <nuxt-link :to="navItem.path" class="nav-link">
+          <nuxt-link :to="navItem.path" class="nav-link link">
             {{ navItem.name }}
           </nuxt-link>
         </li>
@@ -57,7 +57,7 @@ export default {
 }
 .logo-img {
   width: 100%;
-  height: 4.5rem;
+  height: 3rem;
 }
 /* .navbar-brand {
   color: white;
@@ -66,14 +66,18 @@ export default {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } */
 .nav-item {
-  color: white;
-  font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: right;
 }
 .navbar-nav {
   min-width: 400px;
   width: auto;
+}
+.link{
+  text-align: center; 
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
 }
 </style>
 
