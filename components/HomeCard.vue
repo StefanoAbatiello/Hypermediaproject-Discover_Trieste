@@ -56,7 +56,7 @@ export default {
   width: 100%;
   height: 75px;
   left: 0px;
-  background-color: rgb(65, 105, 225, 0.7);
+  background-color: rgb(65, 105, 225, 0.75);
   color: white;
   margin-left: 0px;
   padding-left: 20px;
@@ -80,7 +80,7 @@ export default {
 .card:hover .card-body .title {
   color: royalblue;
   text-align: left;
-  transform: scale(1.1);
+  transform: scale(1.5);
   height: auto;
   font-weight: 500;
 }

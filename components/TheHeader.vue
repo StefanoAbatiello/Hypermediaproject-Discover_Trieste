@@ -19,7 +19,7 @@
       <span class="material-icons" style="color:black"> menu </span>
     </button>
     <div id="navbarToggler" class="collapse navbar-collapse links">
-      <ul class="navbar-nav mt-2 mt-lg-0">
+      <ul class="navbar-nav  mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -27,7 +27,7 @@
           @click="closeMenu()"
         >
           <nuxt-link :to="navItem.path" class="nav-link link">
-            {{ navItem.name }}
+            {{ navItem.name }}   |
           </nuxt-link>
         </li>
       </ul>
@@ -61,6 +61,10 @@ export default {
           name: 'Services',
           path: '/services/',
         },
+        {
+          name: 'About',
+          path: '/about/',
+        },
       ],
     }
   },
@@ -85,8 +89,8 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 130px;
-  width: 380px;
+  height: 100px;
+  width: 280px;
 }
 /* .navbar-brand {
   color: white;
@@ -103,12 +107,9 @@ export default {
 .link{
   text-align: center; 
   color: white;
+  font-size: 1.25rem;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
 }  
-.logo {
-  color: white;
-  font-size: 32px;
-}
 .navbar-nav {
   margin-left: auto;
   /* background-color: rgba(15, 15, 15, .2); */

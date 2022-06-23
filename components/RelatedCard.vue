@@ -83,7 +83,7 @@ export default {
   top: 20px;
   width: 70%;
   /* left: 12px; */
-  background-color: rgb(65, 105, 225, 0.3);
+  background-color: rgb(65, 105, 225, 0.75);
   color: white;
   /* margin-left: 4px; */
   padding-left: 20px;
