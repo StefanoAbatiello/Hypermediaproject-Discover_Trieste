@@ -10,9 +10,10 @@
       :height="30"
     />
     <ht> Benvenuto a Trieste </ht>
-    <custom-page :title="title" :image="image[0]" :description="description" />
+    
     <section class="services-list">
     <div class="container">
+      <p>Trieste è il Capoluogo di regione del Friuli-Venezia Giulia e capitale europea della cultura per il 2023. Lasciati meravigliare dalle sue bellezze che incantano miglioni di turisti ogni anno e immergiti nel cuore dellà città attraverso il sito.</p>          
       <div class="row row-cols-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2">
         <home-card
           v-for="(item, itemIndex) of names"
@@ -31,11 +32,9 @@
 <script>
 import HeaderCarousel from '~/components/HeaderCarousel.vue'
 import HomeCard from '~/components/HomeCard.vue'
-import CustomPage from '~/components/CustomPage.vue'
 export default {
   name: 'IndexPage',
   components: {
-    CustomPage,
     HomeCard,
     HeaderCarousel,
   },

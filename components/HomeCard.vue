@@ -54,14 +54,14 @@ export default {
   position: absolute;
   bottom: 25px;
   width: 100%;
-  height: 120px;
+  height: 75px;
   left: 0px;
   background-color: rgb(65, 105, 225, 0.7);
   color: white;
   margin-left: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 8px;
   font-size: 40px;
   text-align: center;
   border-radius: 0px 10px 10px 0px;
