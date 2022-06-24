@@ -29,13 +29,13 @@ export default {
 
 .main-page {
   font-family: 'Lato', sans-serif;
-  padding-bottom: 5rem; /* altezza del footer */
+  padding-bottom: 10rem; /* altezza del footer */
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem; /* altezza del footer */
+  height: 10rem; /* altezza del footer */
 }
 </style>

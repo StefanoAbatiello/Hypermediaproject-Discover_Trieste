@@ -24,7 +24,7 @@
       </div>
 
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner" :style="`height:${height}rem`">
+      <div class="carousel-inner container p-0" :style="`height:${height}rem`">
         <div class="has-bg-img carousel-item active"  >
           <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[0]}`)"/>
         </div>
@@ -34,6 +34,7 @@
         <div class="has-bg-img carousel-item">
           <img class="bg-img img-responsive" :style="`height:${height}rem`" :src="require(`~/assets/${images[2]}`)"/>
         </div>
+        <div class="overlay"></div>
       </div>
 
       <!-- Left and right controls/icons -->
@@ -104,6 +105,16 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0,0.15);
 }
 
 /* Height for devices larger than 576px */
