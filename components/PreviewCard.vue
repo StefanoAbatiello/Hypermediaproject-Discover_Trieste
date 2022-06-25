@@ -13,10 +13,10 @@
         <div class="btn card-body">
           <ch class="title">{{ name }}</ch>
           <p class="text">
-            <span class="material-icons icon"> schedule </span> {{ date }}
+            <span class="material-icons icon"> {{icons[0] }}</span> {{ date }}
           </p>
           <p class="text">
-            <span class="material-icons icon"> navigation </span>
+            <span class="material-icons icon"> {{icons[1]}} </span>
             {{ location }}
           </p>
         </div>
@@ -57,6 +57,10 @@ export default {
       type: String,
       required: true,
     },
+    icons:{
+      type: Array,
+      required:true,
+    }
   },
   methods: {
     goToDetails() {

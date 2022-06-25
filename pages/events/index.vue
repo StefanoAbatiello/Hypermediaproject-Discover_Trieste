@@ -29,17 +29,18 @@
     <section class="mt-3 event-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-          <events-card
+          <preview-card
             v-for="(event, eventIndex) of eventList"
             :id="event.id"
-            class="event"
             :key="`event-index-${eventIndex}`"
+            class="event"
             :name="event.name"
             :img="event.img"
             :date="event.date"
             :location="event.locName"
             :season="event.season"
             :category="'events'"
+            :icons="['schedule', 'navigation']"
           />
         </div>
       </div>
@@ -48,11 +49,11 @@
 </template>
 
 <script>
-import EventsCard from '~/components/EventsCard.vue'
+import PreviewCard from '~/components/PreviewCard.vue'
 export default {
   name: 'EventsPage',
   components: {
-    EventsCard,
+    PreviewCard,
   },
   // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
