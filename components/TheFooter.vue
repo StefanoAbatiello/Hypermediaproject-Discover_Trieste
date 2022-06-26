@@ -72,6 +72,7 @@ export default {
   margin-left: 10%;
   width: 80%;
   text-align: right;
+  color: white;
   /* border-top: 0.5px solid grey; */
 }
 .container {
@@ -81,7 +82,7 @@ export default {
 }
 .divider{
   width: 80%;
-  color: black;
+  color: white;
   margin-left: 50% ;
   transform: translate(-50%,0);
   margin-top: 0px;
