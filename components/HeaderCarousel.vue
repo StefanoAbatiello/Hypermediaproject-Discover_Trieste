@@ -91,12 +91,6 @@ export default {
 .carousel-indicators {
   opacity: 1;
 }
-/* .carousel-indicators .button{
-
-  margin-right: 55px;
-  margin-left: 55px;
-
-} */
 .icon{
   font-size: 60px;
 }

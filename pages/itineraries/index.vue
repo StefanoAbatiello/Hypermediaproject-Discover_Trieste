@@ -46,7 +46,7 @@ export default {
   justify-content: center;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste8.jpeg');
+  background-image: url('assets\homeImg\trieste10.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

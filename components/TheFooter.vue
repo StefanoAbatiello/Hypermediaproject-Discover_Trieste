@@ -5,28 +5,28 @@
         <a href="/">
           <img
             :src="require(`~/assets/logo.png`)"
-            class="img  responsive logo-img"
+            class="img responsive logo-img"
             alt="Logo"
             href="/"
           />
         </a>
       </div>
-      <div class=" col-lg-5 col-md-4 col-xs-3 px-0 my-4">
-        <div class="comune row justify-content-end">
-          <a class="logo-comune col-md-4 col-sm-3 p-0" href="https://www.comune.trieste.it/" target="_blank">
+      <div class="col-lg-5 col-md-4 col-xs-3 px-0 my-4 comune">
+        <a
+          href="https://www.comune.trieste.it/"
+          target="_blank"
+        >
           <img
             :src="require(`~/assets/logo-trieste.png`)"
             class="img trieste"
             alt="comune-logo"
-            style="height: 70px"
+            style="height: 100px"
           />
         </a>
-        <p class="col-md-8 col-sm-1 info">cell 353365468</p>
-        </div>
-        
+        <p class="col-md-8 col-sm-1 info">Tel. 04 06754850</p>
       </div>
     </div>
-    <hr class="divider">
+    <hr class="divider" />
     <div class="text-box">
       <p class="script">Made by ACSS</p>
     </div>
@@ -68,34 +68,38 @@ export default {
   width: 70%;
   height: 5rem;
 }
-.text-box{
+.text-box {
   margin-left: 10%;
   width: 80%;
   text-align: right;
   color: white;
   /* border-top: 0.5px solid grey; */
 }
+.comune{
+  position: absolute;
+  right: 20px;
+}
 .container {
   height: 7rem;
-  margin-left: 50% ;
-  transform: translate(-50%,0);
+  margin-left: 50%;
+  transform: translate(-50%, 0);
 }
-.divider{
+.divider {
   width: 80%;
   color: white;
-  margin-left: 50% ;
-  transform: translate(-50%,0);
-  margin-top: 0px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 45px;
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 770px) {
-  .info{
+  .info {
     visibility: hidden;
   }
 
- .comune{
+  .comune {
     width: 200px;
     margin-left: 0px;
-  } 
+  }
 }
 </style>
