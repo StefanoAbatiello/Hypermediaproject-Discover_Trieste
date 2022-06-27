@@ -4,17 +4,18 @@
 
       <div v-if="notEven(id)" class="row no-gutters d-flex justify-content-start">
         <div class="col-md-5 m-0 p-0 mr-4">
-          <img :src="require(`~/assets/${img}`)" class="img responsive ms-3 card-image"/>
+          <nuxt-link :to="`/pois/${id}`">
+              <img :src="require(`~/assets/${img}`)" class="img responsive ms-3 card-image"/>
+            </nuxt-link>
         </div>
         <div class="col-md-7 ml-4 ">
           <div class="card-body ps-3">
-            <h3 class="card-title">{{ name }}</h3>
+            <nuxt-link :to="`/pois/${id}`">
+              <h3 class="card-title">{{ name }}</h3>
+            </nuxt-link>
             <p class="card-text ">
               {{ description }}
             </p>
-            <nuxt-link :to="`/pois/${id}`">
-              <div class="btn text-white btn-details">See more details...</div>
-            </nuxt-link>
           </div>
         </div>
       </div>
@@ -22,17 +23,18 @@
       <div v-else class="row no-gutters d-flex justify-content-end">
         <div class="col-md-7 m-0 p-0">
           <div class="card-body">
-            <h3 class="card-title">{{ name }}</h3>
+            <nuxt-link :to="`/pois/${id}`">
+              <h3 class="card-title">{{ name }}</h3>
+            </nuxt-link>
             <p class="card-text">
               {{ description }}
             </p>
-            <nuxt-link :to="`/pois/${id}`">
-              <div class="btn text-white btn-details">See more details...</div>
-            </nuxt-link>
           </div>
         </div>
         <div class="col-md-5 m-0 p-0 pe-3">
-          <img :src="require(`~/assets/${img}`)" class="img responsive me-3 card-image"/>
+          <nuxt-link :to="`/pois/${id}`">
+              <img :src="require(`~/assets/${img}`)" class="img responsive me-3 card-image"/>
+            </nuxt-link>
         </div>
       </div>
 
@@ -88,15 +90,6 @@ export default {
 .card-body {
   width: auto;
   margin-left: 3px;
-}
-.btn-details {
-  background-color: royalblue;
-  opacity: 0.6;
-  position:absolute;
-  bottom: 30px;
-}
-.btn-details:hover {
-  opacity: 1;
 }
 .card-image {
   width: 100%;
