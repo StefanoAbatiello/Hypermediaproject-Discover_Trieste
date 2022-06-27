@@ -103,7 +103,7 @@ export default async (models) => {
             name: "Roman Theater",
             img: ["pois/roman/teatro.jpeg", "pois/roman/teatro2.jpeg", "pois/roman/teatro3.jpeg"],
             itineraryId: itinerary1.id,
-            stepDescription:"",
+            stepDescription:"This itinerary starts in one of the most ancient place of Trieste: the theater. Mnay years ago this place was the center of the Roman culture and entertainment. Let you suggest by this amazing place to start the itinerary on the right foot!",
             description: ["The Roman Theatre behind Piazza Unità d'Italia at the foot of the San Giusto hill is one of the most striking remains of ancient Roman Tergeste.",
             "The theatre (1st to 2nd century AD.) could accommodate up to 3,500 spectators, and was built almost entirely of masonry, except for the stage, which was made of wood.",
             "In 1814 Pietro Nobile inferred the theatre's existence from the name of a village built on its ruins, Rena Vecia (Old Arena), but it was brought to light only in 1938 following major work of demolition and urban regeneration.",
