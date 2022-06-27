@@ -34,6 +34,7 @@ async function initializeDatabaseConnection() {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
         map: DataTypes.STRING,
+        distances: DataTypes.ARRAY(DataTypes.STRING),
         img: DataTypes.ARRAY(DataTypes.STRING),
     })
     const PointOfInterest = database.define("poi", {
@@ -139,6 +140,7 @@ async function runMainApi() {
                 name: element.name,
                 img: element.img,
                 id: element.id,
+                distances : element.distances,
             })
         }
         return res.json(filtered)

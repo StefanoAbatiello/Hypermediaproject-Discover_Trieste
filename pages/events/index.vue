@@ -36,9 +36,8 @@
             class="event"
             :name="event.name"
             :img="event.img"
-            :date="event.date"
-            :location="event.locName"
             :season="event.season"
+            :texts="[event.date, event.locName]"
             :category="'events'"
             :icons="['schedule', 'navigation']"
           />
