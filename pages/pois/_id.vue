@@ -14,7 +14,7 @@
                   Pois
                 </h4></div>
               </nuxt-link>
-              <h1 class="mb-5 title">{{ name }}</h1>
+              <h2 class="mb-5 title">{{ name }}</h2>
               <p>
                 <span class="place material-icons"> place </span> {{data.poi.directions}}
               </p>
@@ -39,7 +39,7 @@
           </main>
           <aside class="col-md-5">
             <div class="row row-cols-1">
-              <h2>Related Links</h2>
+              <h5>Related Links</h5>
               <div class="interlinea" style="border-bottom-style: solid"></div>
               <div class="aside col pt-3 ms-5 mt-2">
                 <related-card
