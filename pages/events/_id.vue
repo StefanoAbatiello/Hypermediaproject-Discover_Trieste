@@ -8,12 +8,12 @@
             <section class="main-text">
               <nuxt-link to="/events">
               <div class="btn back-btn px-0">
-                <bc>
+                <h4>
                   <span class="material-icons px-0 back-icon">arrow_back_ios</span>
                   Events
-                </bc></div>
+                </h4></div>
               </nuxt-link>
-              <h1 class="title">{{ name }}</h1>
+              <h2 class="title">{{ name }}</h2>
               <h5 class="mb-5">
                 <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}

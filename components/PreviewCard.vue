@@ -11,7 +11,7 @@
           />
         </div>
         <div class="btn card-body">
-          <ch class="title">{{ name }}</ch>
+          <h3 class="title">{{ name }}</h3>
           <p class="text">
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
           </p>

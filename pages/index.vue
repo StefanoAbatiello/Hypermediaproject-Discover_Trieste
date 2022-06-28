@@ -9,8 +9,7 @@
       ]"
       :height="30"
     />
-    <ht> Welcome to Trieste </ht>
-
+    <h1> Welcome to Trieste </h1>
     <section class="services-list">
       <div class="container">
         <p>
