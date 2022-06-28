@@ -52,6 +52,9 @@ export default {
   width: 70%;
   height: 6rem;
 }
+.info{
+  color: white;
+}
 .logo-comune {
   height: 6rem;
 }

@@ -39,8 +39,6 @@
           </main>
           <aside class="col-md-5">
             <div class="row row-cols-1">
-              <h5>Related Links</h5>
-              <div class="interlinea" style="border-bottom-style: solid"></div>
               <div class="aside col pt-3 ms-5 mt-2">
                 <related-card
                   :id="itinerary.id"

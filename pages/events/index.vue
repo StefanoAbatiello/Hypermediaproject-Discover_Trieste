@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img style="height: 22rem; widht: 25rem" />
+      <img class="img-responsive img" style="height: 22rem; widht: 25rem" />
       <h1> Events </h1>
     </div>
     <section class="container filters">
@@ -112,7 +112,7 @@ export default {
   border-radius: 30px 30px 30px 30px;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste2.jpeg');
+  background-image: url('assets\homeImg\trieste30.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
