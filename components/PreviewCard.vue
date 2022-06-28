@@ -74,14 +74,12 @@ export default {
 }
 .card:hover .card-body .icon {
   color: royalblue;
-  text-align: left;
   transform: scale(1.1);
   height: auto;
   font-weight: 500;
 }
 .card:hover .card-body .title {
   color: royalblue;
-  text-align: left;
   transform: scale(1.1);
   height: auto;
 }

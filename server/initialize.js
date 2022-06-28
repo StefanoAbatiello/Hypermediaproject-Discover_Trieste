@@ -5,21 +5,21 @@ export default async (models) => {
             name: "Architectural Liberty tour",
             img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
             map: "Casa+De+Stabile,Trieste,Italy&destination=Casa+Terni,Trieste,Italy&waypoints=Palazzo+Vivante,Trieste,Italy|Salone+Incanti,Trieste,Italy|Banca+Di+Praga,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            distances: ["2,1 km", "6889 feet"],
+            distances: ["2,1 km", "2755 steps"],
             description: "Liberty was a style that aroused more than a few controversies and objections, often having more of a political and ideological nature than an artistic one. An example is the final verdict of Silvio Benco, a well-known exponent of Trieste's culture who had clear irredentist tendencies.With the significant demographic changes and, more importantly, the incredible economic development of the city, the emerging middle class had new stylistic and construction needs. Liberty became the only decorative style that could be grafted onto Eclecticism, the previous trend that had heavily influenced the city."
         },
         {
             name: "Dip into Roman archeology",
             img: ["pois/roman/teatro.jpeg", "pois/roman/lapidarioTergestino.jpeg","pois/roman/antiquarium.jpeg"],
             map: "Teatro+Romano,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Arco+Riccardo,Trieste,Italy|Castello+Di+San+Giusto,Trieste,Italy|Lapidario+Tergestino,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            distances: ["7,1 km", "23294 feet"],
+            distances: ["7,1 km", "9317 steps"],
             description: "The most ancient traces of the urban settlement of Trieste are considered to be the remains of the Roman colony of Tergeste, founded toward the middle of the 1st century B.C. and extending to the northwestern slope of the hill of San Giusto, overlooking the Adriatic Sea. The coast was farther back than it is now, and evidence of the harbor structures have been found along via del Teatro Romano and via Cavana: the wharves, built of sandstone slabs in the 1st and early 2nd century A.D., were in use at least until the 5th century. In 33-32 B.C. the city was enclosed by walls, which soon lost their defensive function and served for containment and terracing of the slope. The lay of the land conditioned urban organization from the outset, with the business district close to the harbor, a largely residential district on the hillside and the political, administrative and religious center at the top of the hill."
         },
         {
             name: "Discover the multireligious churches",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
-            distances: ["3 km", "9842 feet"],
+            distances: ["3 km", "3937 steps"],
             description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives. Due to this influence, in Trieste there are a lot of multi-cultural churches which merge the ethics and the cultures of a big community!"
         },
     ]
