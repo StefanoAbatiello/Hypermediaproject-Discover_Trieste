@@ -3,7 +3,6 @@
     <div class="main-page">
       <the-header />
       <nuxt />
-      <!-- <div class="push"></div> -->
     </div>
     <the-footer class="footer" />
   </div>
@@ -29,13 +28,13 @@ export default {
 
 .main-page {
   font-family: 'Lato', sans-serif;
-  padding-bottom: 5rem; /* altezza del footer */
+  padding-bottom: 13rem; /* altezza del footer */
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem; /* altezza del footer */
+  height: 13rem; /* altezza del footer */
 }
 </style>

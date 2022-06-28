@@ -13,11 +13,11 @@
         <div class="btn card-body">
           <ch class="title">{{ name }}</ch>
           <p class="text">
-            <span class="material-icons icon"> schedule </span> {{ date }}
+            <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
           </p>
           <p class="text">
-            <span class="material-icons icon"> navigation </span>
-            {{ location }}
+            <span class="material-icons icon"> {{icons[1]}} </span>
+            {{ texts[1] }}
           </p>
         </div>
       </nuxt-link>
@@ -41,22 +41,22 @@ export default {
       type: String,
       required: true,
     },
-    date: {
-      type: String,
-      required: true,
-    },
     id: {
       type: Number,
-      required: true,
-    },
-    location: {
-      type: String,
       required: true,
     },
     season: {
       type: String,
       required: true,
     },
+    texts:{
+      type: Array,
+      required:true,
+    },
+    icons:{
+      type: Array,
+      required:true,
+    }
   },
   methods: {
     goToDetails() {

@@ -105,6 +105,11 @@ export default {
     } else {
       eventImage = data.relatedEvent.img[0]
     }
+    const day=["Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    const timeInfo = []
+    for (let index = 0; index <7; index++) {
+      timeInfo.push({day: day[index], hour: data.poi.timeInfo[index]})      
+    }
     return {
       itinerary: data.poi.itinerary,
       itineraryImage: data.poi.itinerary.img[0],
@@ -114,7 +119,8 @@ export default {
       img: data.poi.img,
       description: data.poi.description,
       accessInfo: data.poi.accessInfo,
-      timeInfo: data.poi.timeInfo,
+      // timeInfo: data.poi.timeInfo,
+      timeInfo,
       prices: data.poi.prices,
       website: data.poi.website,
       data,

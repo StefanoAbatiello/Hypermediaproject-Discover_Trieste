@@ -1,32 +1,20 @@
 <template>
- <div class="col my-3">
+  <div class="col my-3">
     <div class="card">
-      <nuxt-link :to="`${path}`"
-        ><div class="container m-0 p-0">
+      <nuxt-link :to="`${path}`">
+        <div class="container m-0 p-0">
           <img
             class="card-img-top p-0 img"
             :src="require(`~/assets/${img}`)"
             alt="Card image"
-            style="width: 100%; height: 500px"
           />
-           <div class="text-block mt-4">
-        {{ title }}
-      </div>
+          <div class="text-block py-3">
+            {{ title }}
+          </div>
         </div>
       </nuxt-link>
     </div>
   </div>
-  <!-- <div class="has-bg-img mb-5 mx-2 p-0 card">
-    <nuxt-link :to="`${path}`">
-      <img
-        class="bg-img responsive img"
-        :src="require(`~/assets/${img}`)"
-      />
-      <div class="text-block mt-4">
-        {{ title }}
-      </div>
-    </nuxt-link>
-  </div> -->
 </template>
 
 <script>
@@ -61,8 +49,7 @@ export default {
   margin-left: 0px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 8px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   border-radius: 0px 10px 10px 0px;
 }
@@ -70,50 +57,17 @@ export default {
   opacity: 1;
   position: relative;
 }
-.card:hover .card-body .icon {
-  color: royalblue;
-  text-align: left;
-  transform: scale(1.1);
-  height: auto;
-  font-weight: 500;
-}
-.card:hover .card-body .title {
-  color: royalblue;
-  text-align: left;
-  transform: scale(1.5);
-  height: auto;
-  font-weight: 500;
-}
-.title {
-  text-align: left;
-  font-size: 18px;
-}
 .card {
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
-  /* width: 100%;
-  height: auto;
-  max-height: 400px; */
-}
-.card .card-body .icon {
-  vertical-align: bottom;
-}
-.card {
   opacity: 0.85;
   position: relative;
   border-radius: 30px;
-  max-width: 400px; 
-}
-.card:hover .card-body {
-  transform: scale(1.05);
-}
-.card:hover .card-body .icon {
-  color: royalblue;
-  font-size: 28px;
+  max-width: 400px;
 }
 .img {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 20px 20px 0px 0px;
 }
 </style>

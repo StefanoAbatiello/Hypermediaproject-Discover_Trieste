@@ -67,7 +67,7 @@
             <span class="icon access-icon material-icons" style="color: royalblue">{{
               accessInfo[1]
             }}</span
-            >Testo in Brile
+            >Flyers in Braille
           </div>
           <div class="icons col">
             <span class="icon access-icon material-icons" style="color: royalblue">{{
@@ -82,18 +82,11 @@
         class="tab-pane fade justify-content-between"
         role="tabpanel"
       >
-        <ul>
-          <li
-            v-for="(time, timeIndex) of timeInfo"
-            :key="`time-index-${timeIndex}`"
-          >
-            {{ time }}
-          </li>
-        </ul>
+        <div class="row" v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`">
+          <div class="col">{{time.day}}</div> <div class="col">{{time.hour}}</div>
+        </div>
+        
       </div>
-      <!-- <div id="howToReach" class="tab-pane fade" role="tabpanel">
-        {{ directions }}
-      </div> -->
       <div id="prices" class="tab-pane fade" role="tabpanel">
         It is accessible in different prices:
         <ul>
@@ -136,7 +129,7 @@ export default {
     website:{
       type: Array,
       required: true,
-    }
+    },
   },
 }
 </script>

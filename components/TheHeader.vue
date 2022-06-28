@@ -1,11 +1,13 @@
 <template>
-  <nav class="navbar navbar-expand-md px-3 pt-0 nav-fill w-100 header sticky-top">
+  <nav
+    class="navbar navbar-expand-md px-3 pt-0 nav-fill w-100 header sticky-top"
+  >
     <a href="/">
-    <img
-      :src="require(`~/assets/logo.png`)"
-      class="img mr-auto ms-2 logo-img"
-      href="/"
-    />
+      <img
+        :src="require(`~/assets/logo.png`)"
+        class="img mr-auto ms-2 logo-img"
+        href="/"
+      />
     </a>
     <button
       class="navbar-toggler"
@@ -16,10 +18,10 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="material-icons" style="color:black"> menu </span>
+      <span class="material-icons icon"> menu </span>
     </button>
-    <div id="navbarToggler" class="collapse navbar-collapse links">
-      <ul class="navbar-nav  mt-2 mt-lg-0">
+    <div id="navbarToggler" :class="{active:isActive}" @click="isActive = !isActive" class="button collapse navbar-collapse links">
+      <ul class="navbar-nav mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -27,7 +29,7 @@
           @click="closeMenu()"
         >
           <nuxt-link :to="navItem.path" class="nav-link link">
-            {{ navItem.name }}   |
+            {{ navItem.name }}
           </nuxt-link>
         </li>
       </ul>
@@ -40,6 +42,7 @@ export default {
   name: 'TheHeader',
   data() {
     return {
+      isActive:false,
       headerList: [
         {
           name: 'Home',
@@ -104,32 +107,43 @@ export default {
   font-weight: 600;
   text-align: right;
 }
-.link{
-  text-align: center; 
+.link {
+  text-align: center;
   color: white;
   font-size: 1.25rem;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-}  
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   */
+}
 .navbar-nav {
   margin-left: auto;
   /* background-color: rgba(15, 15, 15, .2); */
 }
 .navbar-toggler {
-  border: 2px solid black;
   margin-left: auto;
 }
 
-@media only screen and (max-width : 768px) {
-       .navbar-collapse .navbar-nav li a { 
-         background: rgba(15, 15, 15, .3);
-         padding-right: 10px;
-         width:100px; 
-         margin-left: auto;
-        }
-        .link{
-         text-shadow: none;
-         font-size: 20px;  
-        }
+.navbar-toggler:focus,
+.navbar-toggler.active,
+.icon:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-collapse .navbar-nav li a {
+    background: rgba(15, 15, 15, 0.3);
+    padding-right: 10px;
+    width: 100px;
+    margin-left: auto;
+  }
+  .link {
+    text-shadow: none;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 830px) and (min-width: 767px) {
+  .logo-img {
+  height: 100px;
+  width: 30vw;
+}
 }
 </style>
 

@@ -4,31 +4,30 @@
       <img style="height: 22rem; widht: 25rem" />
       <ht> Itineraries </ht>
     </div>
-    <section class="itinerary-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
-          <card-composed
-          v-for="(it, itineraryIndex) of itineraryList"
-          :id="it.id"
-          :key="`itinerary-index-${itineraryIndex}`"
-          :name="it.name"
-          :img="it.img[0]"
-          :category="'itineraries'"
-        />
+            <preview-card
+            v-for="(it, itineraryIndex) of itineraryList"
+            :id="it.id"
+            :key="`itinerary-index-${itineraryIndex}`"
+            :name="it.name"
+            :img="it.img[0]"
+            :category="'itineraries'"
+            :texts="[it.distances[0], it.distances[1]]"
+            :icons="['moving', 'directions_walk']"
+          />
         </div>
       </div>
-    </section>
   </div>
 </template>
 
 <script>
-import CardComposed from '~/components/CardComposed.vue'
+import PreviewCard from '~/components/PreviewCard.vue'
 export default {
   name: 'ItinerariesPage',
   components: {
-    CardComposed,
+    PreviewCard,
   },
-  // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/itineraries')
     return {
@@ -47,7 +46,7 @@ export default {
   justify-content: center;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste8.jpeg');
+  background-image: url('assets\homeImg\trieste10.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
