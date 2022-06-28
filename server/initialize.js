@@ -525,97 +525,144 @@ export default async (models) => {
 
         },
         {
-            name: "Ospedale Santa Maria della Misericordia",
+            name: "Parafarmacia Stazione",
             serviceTypeId: type0.id,
-            address: "S. Andrea delle Fratte",
+            address: "Piazza della Libertà 8, 34145 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
-                ],            
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/medicals/ospedale.jpeg",
-            map: "Trieste,Italy",
+                "Here you can find free sale and non-prescription medicines, drugs and products for veterinary use, homeopathic medicines, supplements, herbal medicines, and sanitary appliances.",
+                "Services:",
+                "- Food Intolerance Testing PAYMENT SERVICE, cost €35.00",
+                "- BioTrico Test PAID SERVICE 79.00€",
+                "- Fecal diagnostic tests PAID SERVICES (price upon request)",
+                "- Hair and scalp check-up FREE SERVICE",
+                "- Blood pressure measurement FREE SERVICE"
+            ],            
+            time: [
+                "MONDAY: 7:30 - 13:30 / 15:00 - 19:00", 
+                "TUESDAY: 7:30 - 13:30 / 15:00 - 19:00", 
+                "WEDNESDAY: 7:30 - 13:30 / 15:00 - 19:00", 
+                "THURSDAY: 7:30 - 13:30 / 15:00 - 19:00", 
+                "FRIDAY: 7:30 - 13:30 / 15:00 - 19:00", 
+                "SATURDAY: 8:30 - 12:30", 
+                "SUNDAY: CLOSED"
+                ],             
+                img: "services/medicals/parafarmStazione.jpeg",
+            map: "Parafarmacia+Alla+Stazione,Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: www.parafarmaciaallastazione.com",
+                "phone: +39 040 415277",
+                "email: info@parafarmaciaallastazione.com" 
                 ]
 
         },
         {
-            name: "Istituto Clinico Porta Sole",
+            name: "Ospedale Cattinara",
             serviceTypeId: type0.id,
-            address: "Via del Giochetto, 49",
+            address: "Strada di Fiume 447, 34149 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                "Cattinara Hospital is the main hospital facility that is part of the Julian Isontine University Health Authority. The hospital has been a Joint Commission International Academic Hospital accredited facility since 2008.", 
+                "Through the CUP service it is possible to book and/or pay for specialist and radiological examinations and services provided by the Azienda Sanitaria Universitaria Integrata di Trieste (ASUITs)"
                 ],            
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/medicals/portaSole.jpeg",
-            map: "Trieste,Italy",
+            time: [
+                "CUP booking hours:",
+                "MONDAY: 7:30 - 13:30", 
+                "TUESDAY: 7:30 - 13:30", 
+                "WEDNESDAY: 7:30 - 13:30", 
+                "THURSDAY: 7:30 - 13:30", 
+                "FRIDAY: 7:30 - 13:30", 
+                "SATURDAY: CLOSED", 
+                "SUNDAY: CLOSED"
+                ],              
+            img: "services/medicals/cattinara.jpeg",
+            map: "Ospedale+Cattinara,Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: asugi.sanita.fvg.it/it/presidi-ospedalieri/ospedale-cattinara/",
+                "phone: +39 040 3994843/ 0434 223522",
                 ]
 
         },
         {
-            name: "Sangallo Palace Hotel",
+            name: "Addicted to Paradise B&b",
             serviceTypeId: type1.id,
-            address: "via Luigi Masi, 9",
+            address: "Via Benvenuto Cellini 2, 34132 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
-                ],            
-            time: ["L'hotel ha una reception aperta 24/7"],
-            img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy",
+                "Located in Trieste, 800 meters from Piazza Unità d'Italia, Addicted to Paradise offers air-conditioned rooms and free WiFi throughout.",
+                "All accommodations have a flat-screen TV, private bathroom and kettle with tea and coffee.",
+                "Addicted to Paradise is 2.1 km from Trieste Port, 2.6 km from Lighthouse of Victory and 30 km from Trieste Airport.",
+                "- Non-smoking facility",
+                "- Wi-Fi",
+                "- No parking",
+                "- VIP check-in/check-out",
+                "- Pets not allowed",
+                "- Security",
+                "- Adults only",
+                "- Luggage storage",
+                "- Elevator"
+            ],            
+            time: ["Check-in: dalle 15:00 alle 22:00",
+                    "Check-out: dalle 08:00 alle 10:00"
+            ],
+            img: "services/hotels/paradise.jpeg",
+            map: "Addicted+to+Paradise, Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: www.booking.com/hotel/it/addicted-to-paradise.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl ",
+                "phone: +39 339 642 6799",
                 ]
 
         },
         {
-            name: "Borgo Dei Conti Resort",
+            name: "DOMO Trieste",
             serviceTypeId: type1.id,
-            address: "Strada Montepetriolo, 26",
+            address: "Via Mazzini, 33, 34121 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
-                ],            
-            time: ["L'hotel ha una reception aperta 24/7"],
-            img: "services/hotels/borgoConti.jpeg",
-            map: "Trieste,Italy",
+                "Located in Trieste, 400 meters from San Giusto Castle and 500 meters from Piazza Unità d'Italia, DOMO Trieste offers city views and free WiFi.",
+                "All air-conditioned, accommodations feature a fully equipped kitchenette with dining area, a flat-screen TV and a private bathroom with bidet, hairdryer and toiletries. Some accommodations include a seating area and/or a balcony.",
+                "Popular nearby sights include the Port of Trieste, the Roman Theater, and Kleine Berlin. Trieste Airport, the nearest, is located 30 km from DOMO Trieste.",
+                "Services:",
+                "- Non-smoking facility",
+                "- Wi-Fi",
+                "- Parking",
+                "- Pets allowed",
+                "- Security"
+            ],            
+            time: ["Check-in: dalle 15:30 alle 18:00",
+                "Check-out: fino alle 11:00"
+            ],
+            img: "services/hotels/DOMO.jpeg",
+            map: "DOMO+Trieste, Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: www.booking.com/hotel/it/domo-trieste.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl",
+                "phone: +39 040 982 0426" 
                 ]
 
         },
         {
-            name: "Sangallo Palace Hotel",
+            name: "CA’MILLA Luxury Apartments",
             serviceTypeId: type1.id,
-            address: "via blabla",
+            address: "Via Cesare Beccaria 4, 34133 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
-                ],            
-            time: ["reception open everyday  from 8am to 11pm"],
-            img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy",
+                "Located in Trieste, near the Port, Piazza Unità d'Italia and San Giusto Castle, CA'MILLA Luxury Apartments Trieste offers free WiFi.",
+                "The air-conditioned accommodations include a washing machine, a safe, a living room, a flat-screen TV, a kitchen with a dishwasher and microwave, and a private bathroom with a hairdryer and toiletries. They all include a seating area and a dining area.",
+                "In the area you will find renowned sights such as the Kleine Berlin, Trieste's Roman Theater, and the Revoltella Museum. Trieste Airport, the nearest airport, is 30 km from CA'MILLA Luxury Apartments Trieste.",         
+                "Services:",
+                "- Non-smoking facility",
+                "- Wi-Fi",
+                "- Parking",
+                "- Cot available on request ( € 5,00 extra per night)",
+                "- Soundproofed rooms",
+                " End-of-stay cleaning (compulsory 25,00 €)",
+                "- Pets not allowed",
+                "- Security"
+            ],
+            time: ["Check-in: dalle 15:00 alle 23:30",
+                "Check-out: dalle 08.30 alle 11:00"
+            ],            
+            img: "services/hotels/camilla.jpeg",
+            map: "CA'MILLA+Luxury+Apartments,Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: https://camilla-apartments.com/en/home-en/",
+                "phone: +39 347 0885289",
+                "email: info@camilla-apartments.com" 
                 ]
 
         },
