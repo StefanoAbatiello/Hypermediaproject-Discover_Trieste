@@ -180,7 +180,7 @@ export default async (models) => {
             name: "Cathedral of St. Justus",
             img: ["pois/churches/sanGiusto.jpeg", "pois/churches/insideSanGiusto.jpeg", "pois/churches/sanGiusto2.jpeg"],
             itineraryId: itinerary2.id,
-            stepDescription:"The multireligious tour in Trieste starts on the St. Julius' hill, in an early Christian basilica which cointainssome Roman remains in the current floor.",
+            stepDescription:"The multireligious tour in Trieste starts on the St. Julius' hill, in an early Christian basilica which cointains some Roman remains in the current floor.",
             description: ["The Cathedral of San Giusto stands on the hill of the same name, in the heart of the ancient Roman city of Tergeste. Initially, towards the middle of the fifth century, an Early Christian basilica featuring a nave and two aisles, a presbytery with an apse, and mosaic flooring, was built where the capitolium (temple) once stood.",
             "During the ninth century, two sacred buildings were built. The first was a cathedral smaller than the previous, dedicated to the Assumption of the Blessed Virgin Mary, with a nave, two aisles and three apses, while the second was the Sacellum (Shrine) of San Giusto. The remaining central apses of the two buildings were later covered with precious mosaics, the first depicting the Virgin Mary enthroned, and the second an inspiring Christ, Saint Justus and Saint Servulus.",
             "In the fourteenth century, the cathedral and sacellum were merged into a single building by demolishing the right aisle of the cathedral and the left aisle of the sacellum to create the nave of the current Cathedral of San Giusto.",
