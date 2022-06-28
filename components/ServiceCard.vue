@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid m-0">
-    <div class="card m-0" style="max-width: 100%">
+    <div class="card m-0 pb-5" style="width: 100%">
       <div class="row no-gutters">
         <div class="col-md-6 p-0">
           <div class="container mt-4 p-0">
@@ -12,13 +12,14 @@
         </div>
         <div class="col-md-6 ml-0 mb-2 p-0">
           <div class="card-body p-0 pt-5">
-            <div class="card-text mt-2">
+            <div class="card-text mt-0 ms-4">
               <tab-card-time
                 :id="id"
                 :description="description"
                 :time="time"
                 :address="address"
                 :map="map"
+                :info="info"
               />
             </div>
           </div>
@@ -70,7 +71,7 @@ export default {
       required: true,
     },
     description: {
-      type: String,
+      type: Array,
       required: true,
     },
     time: {
@@ -83,6 +84,10 @@ export default {
     },
     map:{
       type:String,
+      required:true,
+    },
+    info:{
+      type:Array,
       required:true,
     }
   },
@@ -130,7 +135,7 @@ export default {
 .card-img {
   /* min-height: 50px; */
   width: 100%;
-  max-height: 300px;
+  max-height: 350px;
   /* min-width: 100px; */
   border-radius: 20px;
 }

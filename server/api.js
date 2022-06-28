@@ -51,10 +51,11 @@ async function initializeDatabaseConnection() {
     const SingleService =database.define("singleService",{
         name: DataTypes.STRING,
         address: DataTypes.STRING,
-        description:DataTypes.TEXT,
+        description:DataTypes.ARRAY(DataTypes.TEXT),
         time: DataTypes.ARRAY(DataTypes.STRING),
         img: DataTypes.STRING,
         map: DataTypes.STRING,
+        info: DataTypes.ARRAY(DataTypes.STRING)
     })
     const ServiceType = database.define("serviceType", {
         name: DataTypes.STRING,

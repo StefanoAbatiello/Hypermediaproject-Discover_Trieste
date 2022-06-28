@@ -1,12 +1,12 @@
 <template>
-  <div class="d-flex justified-content-start">
+  <div class="justified-content-start">
     <div>
-      <!-- <ul :id="`${id}`" class="nav nav-tabs nav-justified" role="tablist"> -->
-      <ul
+      <ul :id="`${id}`" class="nav nav-tabs justify-content-between nav-justified" role="tablist"> 
+      <!-- <ul
         :id="`${id}`"
         class="nav flex-column nav-pills nav-justified ps-0 pe-0 pt-4"
         role="tablist"
-      >
+      > -->
         <li class="nav-item" role="presentation">
           <button
             :id="`${id}`"
@@ -43,19 +43,39 @@
             <span class="material-icons icon"> place </span>
           </button>
         </li>
+        <li class="nav-item" role="presentation">
+          <button
+            :id="`${id}`"
+            class="nav-link"
+            data-bs-toggle="tab"
+            :data-bs-target="`#info-${id}`"
+            type="button"
+            role="tab"
+          >
+            <span class="material-icons icon"> info </span>
+          </button>
+        </li>
       </ul>
-      </div>
-      <!-- <div id="myTabContent" class="tab-content d-flex"> -->
-      <div class="col-10 pt-3 ps-0">
-        <div :id="`${id}`" class="tab-content d-flex">
+      <!-- </div> -->
+      <div id="myTabContent" class="tab-content d-flex"> 
+      <!-- <div class="col-10 pt-3 ps-0">
+        <div :id="`${id}`" class="tab-content d-flex"> -->
           <div
             :id="`description-${id}`"
             class="tab-pane fade show active"
             style="height: 50px"
             role="tabpanel"
           >
-            {{ description }}
-          </div>
+          <div>
+              <p
+                v-for="(text, textIndex) of description"
+                :key="`text-index-${textIndex}`"
+                class="mt-0 description"
+              >
+                {{ text }}
+              </p>
+            </div>          
+            </div>
           <div
             :id="`time-${id}`"
             class="tab-pane fade"
@@ -81,7 +101,7 @@
             <!-- {{ address }} -->
             <div class="map rounded">
               <iframe
-                width="450"
+                width="700"
                 height="250"
                 frameborder="0"
                 style="border: 0"
@@ -92,8 +112,24 @@
               </iframe>
             </div>
           </div>
+          <div
+            :id="`info-${id}`"
+            class="tab-pane fade show"
+            style="height: 50px"
+            role="tabpanel"
+          >
+          <div>
+              <p
+                v-for="(text, textIndex) of info"
+                :key="`text-index-${textIndex}`"
+                class="mt-0 description"
+              >
+                {{ text }}
+              </p>
+          </div>          
+          </div>
         </div>
-      </div>
+       </div> 
     </div>
 </template>
 
@@ -106,7 +142,7 @@ export default {
       required: true,
     },
     description: {
-      type: String,
+      type: Array,
       required: true,
     },
     time: {
@@ -121,6 +157,10 @@ export default {
       type: String,
       required: true,
     },
+    info:{
+      type: Array,
+      required: true,
+    }
   },
 }
 </script>
@@ -139,7 +179,8 @@ export default {
   margin-bottom: 5px;
 } */
 
-.nav-pills .nav-item {
+/* .nav-pills .nav-item { */
+.nav-tabs .nav-item {
   max-height: 60px;
   border-radius: 20px;
   margin-bottom: 5px;
@@ -151,7 +192,8 @@ export default {
   opacity: 0.7;
   border-radius: 20px;
 } */
-.nav-pills .nav-item .nav-link {
+/* .nav-pills .nav-item .nav-link { */
+.nav-tabs .nav-item .nav-link {
   background-color: transparent;
   color: rgb(255, 255, 255);
   border: transparent;
@@ -176,7 +218,8 @@ export default {
   opacity: 1;
 } */
 
-.nav-pills .nav-item .nav-link.active {
+/* .nav-pills .nav-item .nav-link.active { */
+.nav-tabs .nav-item .nav-link.active {
   color: white;
   border: transparent;
   opacity: 1;
@@ -184,17 +227,19 @@ export default {
 
   /* background-color: rgb(65, 105, 225, 0.3); */
 }
-.nav-pills .nav-item .nav-link.active .icon {
+/* .nav-pills .nav-item .nav-link.active .icon { */
+.nav-tabs .nav-item .nav-link.active .icon {
   background-color: royalblue;
 }
 
 .tab-content {
   padding: 15px;
-  padding-top: 0px;
+  padding-top: 20px;
   /* max-height: 200px; */
   width: 100%;
   height: auto;
-  min-height: 300px;
+  min-height: 250px;
+  overflow: auto;
   /* background-color: lightblue; */
 }
 

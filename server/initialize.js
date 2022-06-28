@@ -405,7 +405,7 @@ export default async (models) => {
         },
         {
             name: "Cafes",
-            img: "services/cafes.jpeg",
+            img: "services/cafes/caffè.jpeg",
             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         },
         {
@@ -423,167 +423,384 @@ export default async (models) => {
 
     const singleServiceList = [
         {
-            name: "farmacia1",
+            name: "Farmacia al Cammello",
             serviceTypeId: type0.id,
-            address: "via blabla",
-            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/medicals/ospedale.jpeg",
-            map: "Trieste,Italy"
+            address: "viale XX Settembre 6, 34126 Trieste",
+            description: [
+                "The pharmacy performs the following services:",
+                "- Blood pressure measurement (for a fee)",
+                "- Online booking of specialist visits and examinations from 8:30 a.m. to 12:30 p.m.",
+                "- Self-analysis service (cholesterol and triglycerides measurement).",
+                "In this pharmacy you will find the breastfeeding and diaper changing corner." 
+            ],           
+            time: [
+                "MONDAY: 8:30 - 19:30", 
+                "TUESDAY: 8:30 - 19:30", 
+                "WEDNESDAY: 8:30 - 19:30", 
+                "THURSDAY: 8:30 - 19:30", 
+                "FRIDAY: 8:30 - 19:30", 
+                "SATURDAY: 8:30 - 12:30", 
+                "SUNDAY: CLOSED"
+                ],                 
+            img: "services/medicals/cammello.jpeg",
+            map: "Farmacia+al+Cammello,Trieste,Italy",
+            info:[
+                "website: www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cammello-13448 ",
+                "phone: +39 040 371377",
+                "email: farmacam@comune.trieste.it" 
+                ]
 
         },
         {
-            name: "farmacia2",
+            name: "Farmacia al Cedro",
             serviceTypeId: type0.id,
-            address: "via blabla",
-            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/medicals/ospedale.jpeg",
-            map: "Trieste,Italy"
+            address: "Piazza Oberdan 2, 34133 Trieste",
+            description: [
+                "The pharmacy performs the following services:",
+                "- Weight measurement (for a fee)",
+                "- Online booking of specialist visits and examinations from 8:30 a.m. to 12:30 p.m.",
+                "- Sale of oxygen cylinders.",
+                "This pharmacy has some deals on masks and veterinary products" 
+            ],            
+            time: [
+                "MONDAY: 8:30 - 13:00 / 16:00 - 19:30", 
+                "TUESDAY: 8:30 - 13:00 / 16:00 - 19:30", 
+                "WEDNESDAY: 8:30 - 13:00 / 16:00 - 19:30", 
+                "THURSDAY: 8:30 - 13:00 / 16:00 - 19:30", 
+                "FRIDAY: 8:30 - 13:00 / 16:00 - 19:30", 
+                "SATURDAY: 8:30 - 12:30", 
+                "SUNDAY: CLOSED"
+                ],             
+                img: "services/medicals/cedro.jpeg",
+            map: "Farmacia+Cedro,Trieste,Italy",
+            info:[
+                "website: www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cedro-13446 ",
+                "phone: +39 040 364928",
+                "email: farmacedro@comune.trieste.it" 
+                ]
 
         },
         {
             name: "Ospedale Santa Maria della Misericordia",
             serviceTypeId: type0.id,
             address: "S. Andrea delle Fratte",
-            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],            
             time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/ospedale.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
             name: "Istituto Clinico Porta Sole",
             serviceTypeId: type0.id,
             address: "Via del Giochetto, 49",
-            description: "Giunta alla terza generazione, la Farmacia Neri, situata nel centro storico di Trieste, nel cuore della zona pedonale, si è trasformata negli anni in un vero e proprio punto dedicato al benessere. Proiettati all’ innovazione, siamo sempre attenti ad ogni novità nel campo della salute, del benessere e della bellezza, coniugando disponibilità e professionalità. Il nostro personale in continuo aggiornamento,",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],            
             time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
             img: "services/medicals/portaSole.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
             name: "Sangallo Palace Hotel",
             serviceTypeId: type1.id,
             address: "via Luigi Masi, 9",
-            description: "Elegante e raffinato hotel nel cuore culturale, dello shopping e del turismo di Perugia.",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],            
             time: ["L'hotel ha una reception aperta 24/7"],
             img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
             name: "Borgo Dei Conti Resort",
             serviceTypeId: type1.id,
             address: "Strada Montepetriolo, 26",
-            description: "il Borgo Dei Conti Resort Relais & Chateaux occupa un palazzo fortificato del 17° secolo e vanta un centro benessere, una palestra, un ristorante umbro, WiFi e camere moderne ed eleganti.",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],            
             time: ["L'hotel ha una reception aperta 24/7"],
             img: "services/hotels/borgoConti.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
             name: "Sangallo Palace Hotel",
             serviceTypeId: type1.id,
             address: "via blabla",
-            description: "",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],            
             time: ["reception open everyday  from 8am to 11pm"],
             img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
             name: "Sangallo Palace Hotel",
             serviceTypeId: type1.id,
             address: "via blabla",
-            description: "",
+            description: [
+                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+                ],
             time: ["reception open everyday  from 8am to 11pm"],
             img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy"
+            map: "Trieste,Italy",
+            info:[
+                "website: www.caffetommaseo.it ",
+                "phone: +39 040 362666",
+                "email: info@caffetommaseo.it" 
+                ]
 
         },
         {
-            name: "Osteria a Priori",
+            name: "Vecio Buffet Marascutti",
             serviceTypeId: type2.id,
-            address: "Via dei Priori, 39",
-            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/restaurants/osteriaPriori.jpeg",
-            map: "Trieste,Italy"
+            address: "via Battisti 2/b, 34100 Trieste",
+            description: ["Since 1914, Buffet Marascutti has been one of the landmarks for the people of Trieste and for those who want to feel, while eating, centuries of history.",
+            "Among the dishes offered at the Marascutti Buffet many are of Austrian origin. The menu is rich, but always respectful of the tradition.",
+            "Definitely try the hot ham crusted with horseradish, the bread and ham dumplings, the jota and the mixed boiled meat dish, and in summer even the fish! For the super sweet tooth excellent homemade desserts. Good wine labels from the region along with a good selection of beers."
+            ],
+            time: [
+                "MONDAY: 12:00-15:00/ 19:00-22:00", 
+                "TUESDAY: CLOSED", 
+                "WEDNESDAY: 12:00-15:00/ 19:00-22:00", 
+                "THURSDAY: 12:00-15:00/ 19:00-22:00", 
+                "FRIDAY: 12:00-15:00/ 19:00-22:00", 
+                "SATURDAY: 12:00-15:00/ 19:00-22:00", 
+                "SUNDAY: 12:00-15:00/ 19:00-22:00"
+                ],            
+            img: "services/restaurants/marascutti.jpeg",
+            map: "Vecio+Buffet+Marascutti,Trieste,Italy",
+            info:[
+                "website: http://www.buffetmarascutti.it",
+                "phone: +39 040 633719 / 389 6595444",
+                "email: info@buffetmarascutti.it" 
+                ]
 
         },
         {
-            name: "Civico 25",
+            name: "Osteria Marise",
             serviceTypeId: type2.id,
-            address: "Via della Viola, 25 ",
-            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/restaurants/civico25.jpeg",
-            map: "Trieste,Italy"
+            address: "Via Felice Venezian 11/F,34124 Trieste ",
+            description: [
+                "Marise is a small Trieste osteria located right in the heart of the old city, in the Cavana area, just a few steps from the beautiful Piazza Unità d'Italia. It is since 2010, the year the osteria opened, that Gianfranco and Monica have been trying to create a family atmosphere by offering dishes of typical local gastronomy and more.",
+                "Even though the menu they have is not extremely wide, it is possible to find various fish and meat dishes, as well as some vegetarian proposals. All this can be consumed in a warm and cozy atmosphere, with attention to detail to make you feel like at home, with the unfailing presence of a good glass of local wine."
+            ],            
+            time: [
+                "MONDAY: 12:00-14:30/ 19:00-22:30", 
+                "TUESDAY: 12:00-14:30/ 19:00-22:30", 
+                "WEDNESDAY: CLOSED", 
+                "THURSDAY: CLOSED", 
+                "FRIDAY: 12:00-14:30/ 19:00-22:30", 
+                "SATURDAY: 12:00-14:30/ 19:00-22:30", 
+                "SUNDAY: 12:00-14:30/ 19:00-22:30"
+            ],             
+            img: "services/restaurants/marise.jpeg",
+            map: "Osteria+Marise,Trieste,Italy",
+            info:[
+                "website: www.osteriamarise.it",
+                "phone: +39 040 3229149",
+                "email: info@osteriamarise.it" 
+            ]
 
         },
         {
-            name: "Stella",
+            name: "Buffet da Pepi",
             serviceTypeId: type2.id,
-            address: "Via Narcisi, 47A",
-            description: "Proprio nei pressi della bellissima piazza Unità d'Italia, un piccolo locale dai toni caldamente rustici e dall'atmosfera signorile dove si propone una cucina soprattutto di mare caratterizzata da uno stile personale fatto di colori, accostamenti con verdure e aromi, materie prime ben selezionate. Frequentato da tutti, triestini e non, una prenotazione è sempre consigliata vista l'esiguità della capienza.",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/restaurants/stella.jpeg",
-            map: "Trieste,Italy"
+            address: "Via Cassa di Risparmio 3, 34121 Trieste",
+            description: [
+                "The unique cuisine of Buffet da Pepi is rooted in the Austro-Hungarian tradition, which has come intact to this day using the original technique of cooking pork in a cauldron, a local variant of boiled meat in broth. ",
+                "You can therefore be delighted by the incomparable mixed platter, which will give you the opportunity to taste all their specialties together. Or, if you are in a hurry, a quick and tasty porzin (porcina, spiced pork neck) sandwich, seasoned and flavored with mustard and kren (fresh grated horseradish)."
+            ],            
+            time: [
+                "MONDAY: 08.30-22.00", 
+                "TUESDAY: 08.30-22.00", 
+                "WEDNESDAY: 08.30-22.00", 
+                "THURSDAY: 08.30-22.00", 
+                "FRIDAY: 08.30-22.00", 
+                "SATURDAY: 08.30-22.00", 
+                "SUNDAY: 10.00-16.00"
+            ],             
+            img: "services/restaurants/pepi.jpeg",
+            map: "Buffet+da+Pepi,Trieste,Italy",
+            info:[
+                "website: www.buffetdapepi.it",
+                "phone: +39 040 366858",
+                "email: info@buffetdapepi.it" 
+                ]
 
         },
         {
-            name: "cafe1",
+            name: "Caffè Tommaseo",
             serviceTypeId: type3.id,
-            address: "via blabla",
-            description: "",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/cafes/caffè1.jpeg",
-            map: "Trieste,Italy"
-
+            address: "Piazza Nicolò Tommaseo, 4, 34122 Trieste",
+            description: [
+            "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
+            "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
+            "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
+            ],
+            time: [
+            "MONDAY: 9:00-22:30", 
+            "TUESDAY: 9:00-22:30", 
+            "WEDNESDAY: 9:00-22:30", 
+            "THURSDAY: 9:00-22:30", 
+            "FRIDAY: 9:00-22:30", 
+            "SATURDAY: 9:00-22:30", 
+            "SUNDAY: 9:00-22:30"
+            ],
+            img: "services/cafes/caffè_tommaseo.jpeg",
+            map: "Caffè+Tommaseo,Trieste,Italy",
+            info:[
+            "website: www.caffetommaseo.it ",
+            "phone: +39 040 362666",
+            "email: info@caffetommaseo.it" 
+            ]
 
         },
         {
-            name: "cafe2",
+            name: "Antico Caffè San Marco",
             serviceTypeId: type3.id,
-            address: "via blabla",
-            description: "",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/cafes/caffè1.jpeg",
-            map: "Trieste,Italy"
+            address: "via Battisti 18/A, 34125 Trieste",
+            description: [
+                "Caffè San Marco, one of Trieste's best-known historic cafes, was opened in 1914 at 18 Via Battisti. The café preserves its charm intact and is awarded the prestigious distinction of 'historical café of Italy'",                
+                "As soon as you walk through the front door, you are immediately enraptured by a magical atmosphere: the Art Nouveau furnishings, the brass chandeliers hanging from the high ceilings covered with bronze-colored coffee leaves, the red Verona marble tables, the large mirrors on the walls where images of the original paintings are reflected.",                
+                "The cafè offers a pastry shop, cafeteria, breakfast, restaurant service and a library",
+                "There are many concerts, meetings, presentations, reviews and events held at the café both during the week and on weekends."                
+            ],
+            time: [
+            "MONDAY: 8:30-23:00", 
+            "TUESDAY: 8:30-23:00", 
+            "WEDNESDAY: 8:30-23:00", 
+            "THURSDAY: 8:30-23:00", 
+            "FRIDAY: 8:30-23:00", 
+            "SATURDAY: 8:30-23:45", 
+            "SUNDAY: 9:00-21:00"
+            ],
+            img: "services/cafes/caffè_san_marco.jpeg",
+            map: "Antico+Caffè+San+Marco,Trieste,Italy",
+            info:[
+            "website: www.caffesanmarco.com",
+            "phone: +39 040 2035357",
+            "email: info@caffesanmarco.com"
+        ]
 
 
         },
         {
-            name: "Gradisca Club",
+            name: "Molo 4 Club",
             serviceTypeId: type4.id,
-            address: "Strada Montalcino, 2",
-            description: "Il locale è composto da ben 7 sale di cui 5 invernali e 2 estive ed organizza serate ed eventi con generi musicali diversi.",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/entertainments/gradisca.jpeg",
-            map: "Trieste,Italy"
-
-
+            address: "Corso Camillo Benso Conte di Cavour 3, 34132 Trieste",
+            description: [
+            "One of the top advantages of city living is the opportunity to experience ultra-fun attractions.", 
+            "Molo4 is a spot to hoof it all night. Either you are a devoted dancer or a beginner, take a break from the real world and enjoy the period of release on the fantastic terrace by the sea.",
+            "The club is one of the most loved by the locals and is highly advisable by the visitors."
+            ],
+            time:[
+            "MONDAY: CLOSED", 
+            "TUESDAY: CLOSED", 
+            "WEDNESDAY: 22:00-04:00", 
+            "THURSDAY: CLOSED", 
+            "FRIDAY: 22:00-04:00", 
+            "SATURDAY: 22:00-04:00", 
+            "SUNDAY: CLOSED"
+            ],            
+            img: "services/entertainments/molo4.jpeg",
+            map: "Molo+4,Trieste,Italy",
+            info:[
+                "website: www.facebook.com/AnubiMolo4",
+                "email: anubitrieste@libero.it"
+            ]
         },
         {
-            name: "Cinema Zenith",
+            name: "The Space Cinema",
             serviceTypeId: type4.id,
-            address: "Via Benedetto Bonfigli, 11",
-            description: "La sala ha 216 poltrone distribuite su 18 file. E’ equipaggiata con un proiettore Sony 4k e con un impianto audio dolby surround.",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/entertainments/zenith.jpeg",
-            map: "Trieste,Italy"
-
+            address: "Via Italo Svevo, 14, 34144 Trieste",
+            description:[
+                "The Space Cinema Trieste offers 7 theaters, all equipped with Digital Dolby Surround technology, comfortable and spacious seats, including VIP.  There is also a food court, where you can find soft drinks and cafeteria, popcorn, snacks, candy and more.", 
+                "You can enjoy all the latest releases, including in original language or 3D. Experience a world of entertainment with Extra events: opera, ballet, concerts, documentaries and theater."
+            ],
+            time:[
+            "MONDAY: 15:30-23:00", 
+            "TUESDAY: 15:30-23:00", 
+            "WEDNESDAY: 15:30-23:00", 
+            "THURSDAY: 16:00-23:00", 
+            "FRIDAY: 16:00-23:00", 
+            "SATURDAY: 16:00-01:00", 
+            "SUNDAY: 16:00-00:00"
+            ],
+            img: "services/entertainments/space_cinema.jpeg",
+            map: "The+Space+Cinema,Trieste,Italy",
+            info:[
+                "website: https://www.thespacecinema.it/i-nostri-cinema/trieste/al-cinema",
+                "phone: +39 892111",
+            ]
         },
         {
-            name: "Teatro Morlacchi",
+            name: "Teatro Verdi",
             serviceTypeId: type4.id,
-            address: "Piazza Morlacchi, 13",
-            description: "",
-            time: ["MONDAY: 8-12", "TUESDAY: 8-12", "WEDNESDAY: 8-12", "THURSDAY: 8-12", "FRIDAY: 8-12", "SATURDAY: 8-12", "SUNDAY: 8-12"],
-            img: "services/entertainments/morlacchi.jpeg",
-            map: "Trieste,Italy"
-
+            address: "Piazza Giuseppe Verdi, 34121 Trieste",
+            description: ["The Teatro Verdi, which originated as the Teatro Nuovo, is one of the oldest opera houses in operation. The Giuseppe Verdi Opera Theater Foundation of Trieste carries out a busy year-round activity through an Opera and Ballet season, a rich season of symphonic and chamber music.", 
+            "The entire program is available on their website."
+            ],
+            time:[
+                "Ticket office:",
+                "MONDAY: 15:30-23:00", 
+                "TUESDAY: 09:00-16:00", 
+                "WEDNESDAY: 09:00-16:00", 
+                "THURSDAY: 09:00-16:00", 
+                "FRIDAY: 09:00-16:00", 
+                "SATURDAY: 09:00-16:00", 
+                "SUNDAY: 09:00-13:30"
+                ],
+            img: "services/entertainments/teatro_verdi.jpeg",
+            map: "Teatro+Verdi,Trieste,Italy",
+            info:[
+                "website: www.teatroverdi-trieste.com/en/",
+                "phone: +39 040 6722298 / 040 6722299",
+                "email: boxoffice@teatroverdi-trieste.com or info@teatroverdi-trieste.com"
+            ]
         },
     ]
     //with create is just one element

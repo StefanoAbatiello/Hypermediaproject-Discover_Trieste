@@ -53,6 +53,7 @@
             :time="service.time"
             :img="service.img"
             :map="service.map"
+            :info="service.info"
           />
         </div>
       </div>
