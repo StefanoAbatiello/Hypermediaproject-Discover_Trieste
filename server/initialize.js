@@ -2,7 +2,7 @@
 export default async (models) => {
     const itineraryList = [
         {
-            name: " Architectural Liberty tour",
+            name: "Architectural Liberty tour",
             img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
             map: "Casa+De+Stabile,Trieste,Italy&destination=Casa+Terni,Trieste,Italy&waypoints=Palazzo+Vivante,Trieste,Italy|Salone+Incanti,Trieste,Italy|Banca+Di+Praga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["2,1 km", "6889 feet"],
@@ -16,7 +16,7 @@ export default async (models) => {
             description: "The most ancient traces of the urban settlement of Trieste are considered to be the remains of the Roman colony of Tergeste, founded toward the middle of the 1st century B.C. and extending to the northwestern slope of the hill of San Giusto, overlooking the Adriatic Sea. The coast was farther back than it is now, and evidence of the harbor structures have been found along via del Teatro Romano and via Cavana: the wharves, built of sandstone slabs in the 1st and early 2nd century A.D., were in use at least until the 5th century. In 33-32 B.C. the city was enclosed by walls, which soon lost their defensive function and served for containment and terracing of the slope. The lay of the land conditioned urban organization from the outset, with the business district close to the harbor, a largely residential district on the hillside and the political, administrative and religious center at the top of the hill."
         },
         {
-            name: "Discover the most important churches",
+            name: "Discover the multireligious churches",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["3 km", "9842 feet"],
@@ -180,7 +180,7 @@ export default async (models) => {
             name: "Cathedral of St. Justus",
             img: ["pois/churches/sanGiusto.jpeg", "pois/churches/insideSanGiusto.jpeg", "pois/churches/sanGiusto2.jpeg"],
             itineraryId: itinerary2.id,
-            stepDescription:"",
+            stepDescription:"The multireligious tour in Trieste starts on the St. Julius' hill, in an early Christian basilica which cointains some Roman remains in the current floor.",
             description: ["The Cathedral of San Giusto stands on the hill of the same name, in the heart of the ancient Roman city of Tergeste. Initially, towards the middle of the fifth century, an Early Christian basilica featuring a nave and two aisles, a presbytery with an apse, and mosaic flooring, was built where the capitolium (temple) once stood.",
             "During the ninth century, two sacred buildings were built. The first was a cathedral smaller than the previous, dedicated to the Assumption of the Blessed Virgin Mary, with a nave, two aisles and three apses, while the second was the Sacellum (Shrine) of San Giusto. The remaining central apses of the two buildings were later covered with precious mosaics, the first depicting the Virgin Mary enthroned, and the second an inspiring Christ, Saint Justus and Saint Servulus.",
             "In the fourteenth century, the cathedral and sacellum were merged into a single building by demolishing the right aisle of the cathedral and the left aisle of the sacellum to create the nave of the current Cathedral of San Giusto.",
@@ -197,7 +197,7 @@ export default async (models) => {
             name: "Church of St. Nicolò",
             img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
             itineraryId: itinerary2.id,
-            stepDescription:"",
+            stepDescription:"The tour continues on the banks, near Canal Grande, where we can observe most important church of Trieste, dedicated to St. Nicolò patron of seafarers and shipowners.",
             description: ["Built on the seafront in the first half of the eighteenth century, it was not by chance that the Greek Orthodox church was dedicated to Saint Nicholas, the patron saint of sailors, ship owners and all those involved in maritime trade, and to the Holy Trinity.",
             "The Greek community was one of the most active in making the city of Trieste an important commercial hub.",
             "The Greek Orthodox Church, where the first mass was held on 18 February 1787, features a basilica floor plan having a nave without aisles. The interior features gilded wood icons and paintings with gilt backgrounds or silver rizas.",
@@ -213,7 +213,7 @@ export default async (models) => {
             name: "Church of St. Spiridione",
             img: ["pois/churches/chiesaOrtodossa.jpeg", "pois/churches/ortodossa2.jpeg", "pois/churches/ortodossa3.jpeg"],
             itineraryId: itinerary2.id,
-            stepDescription:"",
+            stepDescription:"The next step is a church in pure Byzantine style, characterized by white stone with red marble columns (from Verona) rises on the canal with its very imponent and large dome.  ",
             description: ["The work of architect Carlo Maciachini (1869), it stands on the site of the pre-existing Church of San Spiridione from 1753.",
             "Much of the information known about the Serbs of Trieste in this period comes from the attempts of Trieste's Serbs to document their numbers and their social and economic standing in order to justify their request for a permanent Serbian priest. At one point in 1769 the Serbs reminded the empress of their wealth and suggested that another city might be more amenable for their trade. Only then did Maria Theresa issue the Triestine Serbs the right to have an 'Illyrian' (Serbian) priest. The first permanent Serbian priest in Trieste was Haralampije Mamula from Ogulin in the western Military Frontier. He served from 1771 until his death in 1790.",
             "The architectural complex, located in the Borgo Teresiano near the Grand Canal, reflects a Byzantine taste and is characterised by a dome that is higher than the four bell towers, blue hemispherical domes and extensive mosaic decorations embellishing the exterior walls. Nine large statues by the Milanese sculptor Emilio Bisi (1850-1920) adorn the façade.",
@@ -229,7 +229,7 @@ export default async (models) => {
             name: "Israelite Temple Synagogue",
             img: ["pois/churches/sinagoga.jpeg", "pois/churches/insideSinagoga.jpeg", "pois/churches/sinagoga3.jpeg"],
             itineraryId: itinerary2.id,
-            stepDescription:"",
+            stepDescription:"The tour continue on the west of the city, in order to let you observe one of the biggest Israelite church in Europe. This church is the main point for culture and religion among the different ethnicities since the 90s.",
             description: ["The Trieste Synagogue was built in 1908-12 to the plans of Ruggero Berlam, in collaboration with his son Arduino, replacing four earlier smaller synagogues.",
             "The Jewish temple in Trieste is one of the largest in Europe. In fact, when it was built, the Jewish community in Trieste had more than 5,000 members and played an important role in the city's economic and cultural life. The community had grown to 6,000 members by 1938, but after the proclamation of the Racial Laws by Mussolini (in Unità di Italia Square, no less, in 1938) and the German occupation in 1943, the Nazis began harsh roundups and persecutions. In fact, the only concentration camp in Italy was built at the Risiera di San Sabba (San Sabba Rice Mill), and 710 Jews were deported from the city. At the end of the war, in 1945, only 2,300 Jews remained in Trieste. Today, the Jewish community has approximately 700 members.",
             "But the Jewish community has very deep roots. The oldest official document that mentions a Jewish settlement in Trieste, albeit a small one, is dated 1236 and consists of a notary act that mentions the Jew Daniel David of Trieste, who spent 500 marks to fight thieves on the Karst plateau.",
@@ -245,7 +245,7 @@ export default async (models) => {
             name: "Sanctuary of St. Mary Major",
             img: ["pois/churches/beataVergine.png", "pois/churches/insideBeataVergine.jpeg", "pois/churches/beataVergine2.png"],
             itineraryId: itinerary2.id,
-            stepDescription:"",
+            stepDescription:"The tour ends in the Roman ancient zone, in the center of Trieste with a Jesuits church built around the XVII century in honor of the Madonna.",
             description: ["The Sanctuary of Santa Maria Maggiore rises majestically alongside the small Romanesque church of San Silvestro. The church was built between 1627 and 1682 by the Jesuits, who arrived in Trieste in the early years of the century.",
             "It was not completed until much later. In fact the façade was not finished until the beginning of the eighteenth century, apparently to plans by the famous architect Brother Andrea Pozzo. In 1849 a cholera epidemic broke out in Trieste, claiming many lives in just a few months. During this terrible plight, the city placed its faith in the protection of Our Lady of Health and on 21 November gathered together for a procession at the Jesuit church, where the bishop held a solemn pontifical high mass.",
             "Since then, each year on the Feast of the Presentation of Mary in the Temple, commonly known as Our Lady of Health, large numbers of residents congregate at the sanctuary to participate in liturgies in her honour. The devotion to Our Lady is promoted primarily by the Confraternita della Madonna della Salute (Brotherhood of Our Lady of Health), founded in 1827.",
