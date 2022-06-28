@@ -82,7 +82,7 @@
         class="tab-pane fade justify-content-between"
         role="tabpanel"
       >
-        <div class="row" v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`">
+        <div v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`" class="row">
           <div class="col"></div><div class="col">{{time.day}}</div> <div class="col">{{time.hour}}</div><div class="col"></div>
         </div>
         
