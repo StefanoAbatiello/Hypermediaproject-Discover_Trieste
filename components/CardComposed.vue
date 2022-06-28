@@ -13,7 +13,7 @@
         </div>
         <div class="card-body">
           <div class="btn align-center p-0 m-0 text" style="width: 100%">
-            <ch>{{ name }}</ch>
+            <h3>{{ name }}</h3>
           </div>
         </div>
       </nuxt-link>
