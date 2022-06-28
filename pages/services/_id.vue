@@ -2,7 +2,7 @@
   <div class="container-fluid px-0">
     <div class="image-header mb-3">
       <img style="height: 22rem; widht: 25rem" />
-      <b class="header"> Types of service </b>
+      <h1 class="header"> Types of service </h1>
     </div>
     <section class="main-content">
       <div class="container">
@@ -10,12 +10,12 @@
           <div class="col">
             <nuxt-link to="/services">
               <div class="btn back-btn px-0">
-                <bc>
+                <h4>
                   <span class="material-icons px-0 back-icon"
                     >arrow_back_ios</span
                   >
                   Types of service
-                </bc>
+                </h4>
               </div>
             </nuxt-link>
             <!-- <ul class="ms-4 breadcrumb">
@@ -24,17 +24,8 @@
              <a>{{ title }}/</a> 
           </li>
         </ul> -->
-            <h1 class="mb-5 title">{{ title }}</h1>
+            <h2 class="mb-5 title">{{ title }}</h2>
           </div>
-          <!-- <div class="col align-self-center botton-cont">
-        <button
-          type="button"
-          class="btn btn-lg mb-3 ms-2 btn-back"
-          @click="backToServices()"
-        >
-          See all service types
-        </button>
-      </div> -->
         </div>
 
         <div class="m-0 des-div">
@@ -45,8 +36,8 @@
         <div class="row-md mt-3">
           <serviceCard
             v-for="(service, serviceIndex) of serviceList"
-            :key="`service-index-${serviceIndex}`"
             :id="service.id"
+            :key="`service-index-${serviceIndex}`"
             :name="service.name"
             :address="service.address"
             :description="service.description"
@@ -86,17 +77,7 @@ export default {
     return {
       title: this.name,
     }
-  },
-  mounted() {
-    const date = new Date()
-    // Example on hwo to use mixinx
-    console.log(this.formatMyDate(date.toLocaleDateString()))
-  },
-  // methods: {
-  //   backToServices() {
-  //     this.$router.push('/services')
-  //   },
-  // },
+  }
 }
 </script>
 

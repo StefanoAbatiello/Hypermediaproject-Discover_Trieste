@@ -2,7 +2,7 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <ht> Itineraries </ht>
+      <h1> Itineraries </h1>
     </div>
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 ">

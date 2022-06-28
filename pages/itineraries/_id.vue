@@ -7,12 +7,12 @@
         <section class="main-text">
           <nuxt-link to="/itineraries">
             <div class="btn back-btn px-0">
-                <bc>
+                <h4>
                   <span class="material-icons px-0 back-icon">arrow_back_ios</span>
                   Itineraries
-                </bc></div>
+                </h4></div>
           </nuxt-link>
-          <h1 class="mb-5 title">{{ name }}</h1>
+          <h2 class="mb-5 title">{{ name }} </h2>
           <div class="description-it">
             <p>
               {{ description }}

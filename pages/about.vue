@@ -9,7 +9,7 @@
       ]"
       :height="30"
     />
-    <ht> About Trieste </ht>
+    <h1> About Trieste </h1>
     <div class="container">
       <p>
         The city of Trieste is located in northeastern Italy, bordering

@@ -2,7 +2,7 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <ht> Events </ht>
+      <h1> Events </h1>
     </div>
     <section class="container filters">
       <div class="row justify-content-start">

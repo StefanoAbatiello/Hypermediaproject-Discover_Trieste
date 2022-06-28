@@ -2,9 +2,9 @@
   <div>
     <div class="image-header mb-5">
       <img style="height: 22rem; widht: 25rem" />
-      <ht>
+      <h1>
       Types of service
-    </ht>
+    </h1>
     </div>
     <section class="services-list">
       <div class="container">
