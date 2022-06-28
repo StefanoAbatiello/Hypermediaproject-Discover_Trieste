@@ -1,18 +1,18 @@
 <template>
   <div class="container-fluid m-0">
-    <div class="card m-0 pb-5" style="width: 100%">
-      <div class="row no-gutters">
+    <div class="card m-0 pb-3 px-3" style="width: 100%">
+      <div class="row gx-5">
         <div class="col-md-6 p-0">
           <div class="container mt-4 p-0">
-            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0 " />
+            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" />
             <div class="text-block mt-4"> 
               {{ name }}
             </div> 
           </div>
         </div>
-        <div class="col-md-6 ml-0 mb-2 p-0">
+        <div class="col-md-6 mb-2 p-0">
           <div class="card-body p-0 pt-5">
-            <div class="card-text mt-0 ms-4">
+            <div class="card-text mt-0 ps-2">
               <tab-card-time
                 :id="id"
                 :description="description"

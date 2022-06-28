@@ -52,7 +52,7 @@
             type="button"
             role="tab"
           >
-            <span class="material-icons icon"> info </span>
+            <span class="material-icons icon"> phone </span>
           </button>
         </li>
       </ul>
@@ -101,7 +101,7 @@
             <!-- {{ address }} -->
             <div class="map rounded">
               <iframe
-                width="700"
+                width="600"
                 height="250"
                 frameborder="0"
                 style="border: 0"
@@ -233,12 +233,12 @@ export default {
 }
 
 .tab-content {
-  padding: 15px;
+  padding: 20px;
   padding-top: 20px;
   /* max-height: 200px; */
   width: 100%;
   height: auto;
-  min-height: 250px;
+  min-height: 280px;
   overflow: auto;
   /* background-color: lightblue; */
 }
