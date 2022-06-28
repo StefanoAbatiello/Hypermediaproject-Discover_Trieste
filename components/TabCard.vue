@@ -83,7 +83,7 @@
         role="tabpanel"
       >
         <div class="row" v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`">
-          <div class="col">{{time.day}}</div> <div class="col">{{time.hour}}</div>
+          <div class="col"></div><div class="col">{{time.day}}</div> <div class="col">{{time.hour}}</div><div class="col"></div>
         </div>
         
       </div>
