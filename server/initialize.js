@@ -599,8 +599,8 @@ export default async (models) => {
                 "- Luggage storage",
                 "- Elevator"
             ],            
-            time: ["Check-in: dalle 15:00 alle 22:00",
-                    "Check-out: dalle 08:00 alle 10:00"
+            time: ["Check-in: from 15:00 till 22:00",
+                    "Check-out: from 08:00 till 10:00"
             ],
             img: "services/hotels/paradise.jpeg",
             map: "Addicted+to+Paradise, Trieste,Italy",
@@ -625,8 +625,8 @@ export default async (models) => {
                 "- Pets allowed",
                 "- Security"
             ],            
-            time: ["Check-in: dalle 15:30 alle 18:00",
-                "Check-out: fino alle 11:00"
+            time: ["Check-in: from 15:30 till 18:00",
+                "Check-out: until 11:00"
             ],
             img: "services/hotels/DOMO.jpeg",
             map: "DOMO+Trieste, Trieste,Italy",
@@ -654,8 +654,8 @@ export default async (models) => {
                 "- Pets not allowed",
                 "- Security"
             ],
-            time: ["Check-in: dalle 15:00 alle 23:30",
-                "Check-out: dalle 08.30 alle 11:00"
+            time: ["Check-in: from 15:00 till 23:30",
+                "Check-out: from 08.30 till 11:00"
             ],            
             img: "services/hotels/camilla.jpeg",
             map: "CA'MILLA+Luxury+Apartments,Trieste,Italy",
@@ -667,21 +667,29 @@ export default async (models) => {
 
         },
         {
-            name: "Sangallo Palace Hotel",
+            name: "DoubleTree By Hilton Trieste",
             serviceTypeId: type1.id,
-            address: "via blabla",
+            address: "Piazza della Repubblica 1, 34122 Trieste",
             description: [
-                "Café Tommaseo is the oldest café still in operation in the city of Trieste. Opened in 1830, the café was one of the centers of Trieste's irredentist movement and is still a gathering place for Trieste's merchants, artists and intellectuals. It is part of Italy's historic cafes.",
-                "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
-                "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
-                ],
-            time: ["reception open everyday  from 8am to 11pm"],
-            img: "services/hotels/sangallo.jpeg",
-            map: "Trieste,Italy",
+                "Located in Trieste, 1.4 km from San Giusto Castle, Doubletree By Hilton Trieste offers a restaurant, private parking, a bar and a shared lounge. Awarded 4 stars, the hotel boasts a concierge service and tour desk. A 24-hour front desk, airport transfer service, room service and free WiFi throughout the building are also available.",
+                "Rooms at the hotel are equipped with air conditioning, a work desk, kettle, minibar, safe, flat-screen TV and private bathroom with bidet. Accommodations also include a closet and coffee maker. Guests at the DoubleTree By Hilton Trieste can enjoy a continental or buffet breakfast. The wellness area includes a spa center and sauna.",
+                "Popular points of interest nearby the Doubletree By Hilton Trieste include Piazza Unità d'Italia, Trieste's Roman Theater and Kleine Berlin. The nearest airport is Trieste Airport, 34 km away.",
+                "Services:",
+                "- Non-smoking facility",
+                "- Wi-Fi",
+                "- Parking",
+                "- Pets allowed",
+                "- Security"
+            ],   
+            time: ["Check-in:  from 15:00",
+                "Check-out: until 12:00"
+            ],             
+            img: "services/hotels/hilton.jpeg",
+            map: "DoubleTree+By+Hilton, Trieste,Italy",
             info:[
-                "website: www.caffetommaseo.it ",
-                "phone: +39 040 362666",
-                "email: info@caffetommaseo.it" 
+                "website: https://www.hiltonhotels.it/italia/doubletree-by-hilton-trieste/",
+                "phone: +39 040 9712950",
+                "email: TRSDT_RES@hilton.com" 
                 ]
 
         },
