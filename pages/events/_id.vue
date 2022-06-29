@@ -33,28 +33,26 @@
             </section>
           </main>
           <aside class="col-lg-4">
-            <div class="sticky-top">
-              <diV class="row">
-                <div class="ms-3 my-5">
-                  <related-card
-                    :id="poi.id"
-                    :name="poi.name"
-                    :img="poi.img[0]"
-                    category="pois"
-                    icon="place"
-                    text="This event take place at:"
-                  />
-                </div>
-                <div>
-                  <tab-card
-                    class="mt-3"
-                    :access-info="accessInfo"
-                    :time-info="timeInfo"
-                    :prices="prices"
-                    :website="website"
-                  />
-                </div>
-              </diV>
+            <div class="sticky-top row justify-content-between pt-1 column">
+              <div class="my-5 col-lg-12 col-md-5 col-sm-12 col-xs-12 location">
+                <related-card
+                  :id="poi.id"
+                  class="location-card"
+                  :name="poi.name"
+                  :img="poi.img[0]"
+                  category="pois"
+                  icon="place"
+                  text="This event take place at:"
+                />
+              </div>
+              <div class="mt-3 col-lg-12 col-md-7 col-sm-12 col-xs-12 tab">
+                <tab-card
+                  :access-info="accessInfo"
+                  :time-info="timeInfo"
+                  :prices="prices"
+                  :website="website"
+                />
+              </div>
             </div>
           </aside>
         </div>
@@ -83,7 +81,6 @@ export default {
       poi: data.poi,
       accessInfo: data.accessInfo,
       timeInfo: data.timeInfo,
-      // directions: data.directions,
       prices: data.prices,
       website: data.website,
     }
@@ -109,9 +106,10 @@ export default {
   padding-top: 125px;
   background-color: rgb(65, 105, 225);
 }
-/* .aside {
-  min-width: 300px;
-} */
+.location{
+  display: flex;
+  justify-content: center;
+}
 .description {
   font-size: 20px;
 }
