@@ -19,10 +19,10 @@
             </p>
           </div>
         </section>
-        <div class="map rounded">
+        <div class="map rounded responsive">
           <iframe
-            width="1300vw"
-            height="500vw"
+            width="100%"
+            height="600"
             frameborder="0"
             style="border: 0"
             referrerpolicy="no-referrer-when-downgrade"

@@ -10,10 +10,10 @@
         </div>
         <div class="col-md-7 ml-4 ">
           <div class="card-body ps-3">
-            <nuxt-link :to="`/pois/${id}`">
+            <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
               <h3 class="card-title">{{ name }}</h3>
             </nuxt-link>
-            <p class="card-text ">
+            <p class="card-text">
               {{ description }}
             </p>
           </div>
@@ -23,7 +23,7 @@
       <div v-else class="row no-gutters d-flex justify-content-end">
         <div class="col-md-7 m-0 p-0">
           <div class="card-body">
-            <nuxt-link :to="`/pois/${id}`">
+            <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
               <h3 class="card-title">{{ name }}</h3>
             </nuxt-link>
             <p class="card-text">
@@ -83,9 +83,9 @@ export default {
   color: royalblue;
   text-align: left;
 }
-.card-text-sx {
-  color: black;
-  text-align: left;
+.h3{
+  font-size: 24px;
+  font-weight: 700;
 }
 .card-body {
   width: auto;
