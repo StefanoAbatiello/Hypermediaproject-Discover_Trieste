@@ -8,7 +8,7 @@
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
-          class="nav-link active"
+          class="nav-link "
           data-bs-toggle="tab"
           data-bs-target="#accessibility"
           type="button"
@@ -20,7 +20,7 @@
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
-          class="nav-link"
+          class="nav-link active"
           data-bs-toggle="tab"
           data-bs-target="#time"
           type="button"
@@ -55,7 +55,7 @@
       </li>
     </ul>
     <div id="myTabContent" class="tab-content">
-      <div id="accessibility" class="tab-pane fade show active" role="tabpanel">
+      <div id="accessibility" class="tab-pane fade" role="tabpanel">
         <div class="row justify-content-between info-box">
           <div class="icons col">
             <span class="icon access-icon material-icons" style="color: royalblue">{{
@@ -79,7 +79,7 @@
       </div>
       <div
         id="time"
-        class="tab-pane fade justify-content-between"
+        class="tab-pane  show active fade justify-content-between"
         role="tabpanel"
       >
         <div v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`" class="row">

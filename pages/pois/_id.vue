@@ -17,7 +17,7 @@
                   </h4>
                 </div>
               </nuxt-link>
-              <h2 class="mb-5 title">{{ name }}</h2>
+              <h2 class="mb-3 title">{{ name }}</h2>
               <p>
                 <span class="place material-icons"> place </span>
                 {{ data.poi.directions }}
@@ -44,7 +44,7 @@
           </main>
           <aside class="col-lg-4">
             <div class="row">
-              <div class="aside col pt-3 ms-5 mt-2">
+              <div class="my-3 col-12 location">
                 <related-card
                   :id="itinerary.id"
                   :name="itinerary.name"
@@ -56,7 +56,7 @@
               </div>
 
               <div v-if="data.relatedEvent !== null">
-                <div class="aside col pt-3 ms-5 mt-2">
+                <div class="col-12 location">
                   <related-card
                     :id="data.relatedEvent.id"
                     :name="data.relatedEvent.name"
@@ -191,5 +191,9 @@ export default {
 .description {
   text-align: justify;
   text-justify: inter-word;
+}
+.location{
+  display: flex;
+  justify-content: center;
 }
 </style>

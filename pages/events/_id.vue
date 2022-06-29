@@ -16,7 +16,7 @@
                   </h4>
                 </div>
               </nuxt-link>
-              <h2 class="mb-5 title">{{ name }}</h2>
+              <h2 class="mb-3 title">{{ name }}</h2>
               <h5>
                 <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}
