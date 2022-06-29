@@ -5,40 +5,45 @@
     <section class="main-content">
       <div class="container">
         <div class="row justify-content-between">
-          <main class="col-md-7 mr-5">
+          <main class="col-lg-7">
             <section class="main-text">
               <nuxt-link class="breadcrumps" to="/pois">
                 <div class="btn back-btn px-0">
-                <h4>
-                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
-                  Pois
-                </h4></div>
+                  <h4>
+                    <span class="material-icons px-0 back-icon"
+                      >arrow_back_ios</span
+                    >
+                    Pois
+                  </h4>
+                </div>
               </nuxt-link>
               <h2 class="mb-5 title">{{ name }}</h2>
               <p>
-                <span class="place material-icons"> place </span> {{data.poi.directions}}
+                <span class="place material-icons"> place </span>
+                {{ data.poi.directions }}
               </p>
-              <div class="description-poi">
+              <div class="mt-5 description-poi">
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
                   class="mt-3 description"
                 >
-                {{text}}</p>
+                  {{ text }}
+                </p>
               </div>
               <div class="interlinea">
                 <tab-card
-                    class="mt-3"
-                    :access-info="accessInfo"
-                    :time-info="timeInfo"
-                    :prices="prices"
-                    :website="website"
-                  />
+                  class="mt-3"
+                  :access-info="accessInfo"
+                  :time-info="timeInfo"
+                  :prices="prices"
+                  :website="website"
+                />
               </div>
             </section>
           </main>
-          <aside class="col-md-5">
-            <div class="row row-cols-1">
+          <aside class="col-lg-4">
+            <div class="row">
               <div class="aside col pt-3 ms-5 mt-2">
                 <related-card
                   :id="itinerary.id"
@@ -68,16 +73,16 @@
 
         <section>
           <div class="map rounded responsive mt-3">
-          <iframe
-            width="100%"
-            height="600"
-            referrerpolicy="no-referrer-when-downgrade"
-            frameborder="0"
-            :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${data.poi.map}`"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
+            <iframe
+              width="100%"
+              height="600"
+              referrerpolicy="no-referrer-when-downgrade"
+              frameborder="0"
+              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${data.poi.map}`"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
         </section>
       </div>
     </section>
@@ -91,7 +96,8 @@ import TabCard from '~/components/TabCard.vue'
 export default {
   name: 'DetailsPage',
   components: {
-    RelatedCard,TabCard
+    RelatedCard,
+    TabCard,
   },
   mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
@@ -103,10 +109,18 @@ export default {
     } else {
       eventImage = data.relatedEvent.img[0]
     }
-    const day=["Monday", "Tuesday","Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    const day = [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ]
     const timeInfo = []
-    for (let index = 0; index <7; index++) {
-      timeInfo.push({day: day[index], hour: data.poi.timeInfo[index]})      
+    for (let index = 0; index < 7; index++) {
+      timeInfo.push({ day: day[index], hour: data.poi.timeInfo[index] })
     }
     return {
       itinerary: data.poi.itinerary,

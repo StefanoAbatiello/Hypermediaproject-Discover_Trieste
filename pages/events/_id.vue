@@ -3,22 +3,25 @@
     <header-carousel class="carousel" :images="img" :height="35" />
     <section class="main-container">
       <div class="container">
-        <div class="row-md d-flex justify-content-between">
-          <main class="col-md-7 col-sm-6">
+        <div class="row justify-content-between">
+          <main class="col-lg-7">
             <section class="main-text">
               <nuxt-link to="/events">
-              <div class="btn back-btn px-0">
-                <h4>
-                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
-                  Events
-                </h4></div>
+                <div class="btn back-btn px-0">
+                  <h4>
+                    <span class="material-icons px-0 back-icon"
+                      >arrow_back_ios</span
+                    >
+                    Events
+                  </h4>
+                </div>
               </nuxt-link>
-              <h2 class="title">{{ name }}</h2>
-              <h5 class="mb-5">
+              <h2 class="mb-5 title">{{ name }}</h2>
+              <h5>
                 <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}
               </h5>
-              <div>
+              <div class="mt-5 description-events">
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
@@ -29,9 +32,9 @@
               </div>
             </section>
           </main>
-          <aside class="col-md-4 col-sm-4 aside">
+          <aside class="col-lg-4">
             <div class="sticky-top">
-              <diV class="row row-cols-1">
+              <diV class="row">
                 <div class="ms-3 my-5">
                   <related-card
                     :id="poi.id"
@@ -106,12 +109,8 @@ export default {
   padding-top: 125px;
   background-color: rgb(65, 105, 225);
 }
-
-.aside {
+/* .aside {
   min-width: 300px;
-}
-/* .back-btn {
-  font-size: 1.5vw;
 } */
 .description {
   font-size: 20px;
@@ -119,7 +118,7 @@ export default {
 .date-icon {
   vertical-align: middle;
 }
-.back-icon{
+.back-icon {
   vertical-align: middle;
 }
 </style>
