@@ -8,7 +8,7 @@
     </div>
     <section class="services-list">
       <div class="container">
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 justify-content-center">
           <card-composed
           v-for="(services, servicesIndex) of servicesList"
           :id="services.id"

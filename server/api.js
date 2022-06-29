@@ -87,11 +87,11 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Trieste",
-        image: ["homeImg/carHome1.jpeg","homeImg/carHome2.jpeg","homeImg/carHome3.jpeg"],
+        image: ["homeImg/carHome1.jpeg","homeImg/trieste33.jpeg","homeImg/carHome3.jpeg"],
         description: `Trieste lovingly preserves precious traces of its bright historical periods. Today it is the administrative capital of the Umbria region, a major cultural and tourist destination and the prestigious home of the University of Studies for more than 700 years. The historic Academy of Fine Arts, the Music Conservatory and its University for Foreigners, with students from all over the world, define its distinct international vocation.`,
-        paths: ["/pois/","/itineraries/","/events/","/services/","/About","/contacts"],
-        cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryHome.jpeg","homeImg/eventsHome.jpeg", "homeImg/servicesCard.jpeg","homeImg/poisCard.jpeg","homeImg/contactsHome.jpeg"],
-        names: ["Points of interest","Itineraries","Events","Services","About Trieste","Useful contacts"],
+        paths: ["/pois/","/itineraries/","/events/","/services/","/About"],
+        cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryHome.jpeg","homeImg/eventsHome.jpeg", "homeImg/servicesCard.jpeg","homeImg/poisCard.jpeg"],
+        names: ["Points of interest","Itineraries","Events","Services","About Trieste"],
     },
     about: {
         title: "About",

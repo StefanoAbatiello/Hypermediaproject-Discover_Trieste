@@ -4,12 +4,12 @@
       class="carousel"
       :images="[
         `homeImg/carHome1.jpeg`,
-        `homeImg/carHome2.jpeg`,
+        `homeImg/trieste33.jpeg`,
         `homeImg/carHome3.jpeg`,
       ]"
-      :height="30"
+      :height="40"
     />
-    <h1> Welcome to Trieste </h1>
+    <h1 class="title"> Welcome to Trieste </h1>
     <section class="services-list">
       <div class="container">
         <p>
@@ -19,9 +19,9 @@
           cuore dellà città attraverso il sito.
         </p>
         <div
-          class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2"
+          class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2 justify-content-center"
         >
-          <home-card
+          <home-card 
             v-for="(item, itemIndex) of names"
             :id="item.id"
             :key="`item-index-${itemIndex}`"
@@ -69,13 +69,7 @@ export default {
   opacity: 0.8;
 }
 .title {
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  */
-  color: whitesmoke;
-  font-size: 7vw;
-  position: absolute;
-  top: 200px;
-  margin-left: 18%;
-  /* width: 100%; */
   text-align: center;
-}
+  transform: translate(-45%,35%);
+  }
 </style>

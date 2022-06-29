@@ -7,7 +7,6 @@
             :src="require(`~/assets/logo.png`)"
             class="img responsive logo-sito"
             alt="Logo"
-            href="/"
           />
         </a>
       </div>
@@ -52,6 +51,9 @@ export default {
   width: 70%;
   height: 6rem;
 }
+.info{
+  color: white;
+}
 .logo-comune {
   height: 6rem;
 }
@@ -60,14 +62,15 @@ export default {
   color: white;
   margin-left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 45px;
-  margin-bottom: 0px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 .text-box {
   margin-left: 10%;
   width: 80%;
   text-align: right;
   color: white;
+  margin-bottom: 10px;
 }
 /* @media only screen and (max-width: 770px) {
   .info {
