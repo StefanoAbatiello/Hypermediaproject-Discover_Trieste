@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div id="demo" class="carousel slide mb-4 " data-bs-ride="carousel">
+    <div id="demo" class="carousel slide mb-4" data-bs-ride="carousel">
       <!-- Indicators/dots -->
-      <div class="carousel-indicators" >
+      <div class="carousel-indicators">
         <button
           type="button"
           data-bs-target="#demo"
@@ -25,16 +25,27 @@
 
       <!-- The slideshow/carousel -->
       <div class="carousel-inner container p-0" :style="`height:${height}rem`">
-        <div class="has-bg-img carousel-item active"  >
-          <img class="bg-img img-responsive"  :src="require(`~/assets/${images[0]}`)"/>
+        <div class="has-bg-img carousel-item active">
+          <img
+            class="bg-img img-responsive"
+            :src="require(`~/assets/${images[0]}`)"
+          />
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive"  :src="require(`~/assets/${images[1]}`)"/>
+          <img
+            class="bg-img img-responsive"
+            :src="require(`~/assets/${images[1]}`)"
+          />
         </div>
         <div class="has-bg-img carousel-item">
-          <img class="bg-img img-responsive"  :src="require(`~/assets/${images[2]}`)"/>
+          <img
+            class="bg-img img-responsive"
+            :src="require(`~/assets/${images[2]}`)"
+          />
         </div>
-        <div class="overlay"></div>
+        <div class="overlay">
+          <h1>{{title}}</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -48,10 +59,15 @@ export default {
       type: Array.String,
       required: true,
     },
-    height:{
+    title: {
+      type: String,
+      require: false,
+      default: '',
+    },
+    height: {
       type: Number,
-      require:true,
-    }
+      require: true,
+    },
   },
 }
 </script>
@@ -64,12 +80,12 @@ export default {
 .carousel-item,
 .carousel-item.active {
   min-width: 100%;
-  height:100%; 
-} 
+  height: 100%;
+}
 .carousel-indicators {
   opacity: 1;
 }
-.icon{
+.icon {
   font-size: 60px;
 }
 .carousel-item {
@@ -77,15 +93,17 @@ export default {
   background-size: cover;
   background-position: center center;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
+  text-align: center;
+  vertical-align: middle;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0,0,0,0.15);
+  background-color: rgb(0, 0, 0, 0.15);
 }
 
 /* Height for devices larger than 576px */
@@ -93,11 +111,11 @@ export default {
   #introCarousel {
     margin-top: -58.59px;
   }
-  .carousel{
+  .carousel {
     height: 50vh;
     margin-bottom: 140px;
   }
-  .overlay{
+  .overlay {
     height: 50vh;
   }
   #introCarousel,
@@ -107,7 +125,7 @@ export default {
     height: 50vh;
   }
 }
-.bg-img{
+.bg-img {
   width: 100%;
   height: 100%;
 }

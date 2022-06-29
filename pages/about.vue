@@ -2,14 +2,10 @@
   <div class="mb-4">
     <header-carousel
       class="carousel"
-      :images="[
-        `homeImg/about3.jpeg`,
-        `homeImg/about1.jpeg`,
-        `homeImg/about2.jpeg`,
-      ]"
+      :images="image"
       :height="30"
+      :title="`About Trieste`"
     />
-    <h1> About Trieste </h1>
     <div class="container">
       <p>
         The city of Trieste is located in northeastern Italy, bordering
@@ -50,7 +46,7 @@ export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/about')
     const title = data.title
-    const image = data.image
+    const image = data.images
     const description = data.description
     return {
       title,

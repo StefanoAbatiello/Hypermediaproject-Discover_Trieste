@@ -2,14 +2,10 @@
   <div>
     <header-carousel
       class="carousel"
-      :images="[
-        `homeImg/carHome1.jpeg`,
-        `homeImg/trieste33.jpeg`,
-        `homeImg/carHome3.jpeg`,
-      ]"
+      :images="image"
       :height="40"
+      :title="`Welcome to Trieste`"
     />
-    <h1 class="title"> Welcome to Trieste </h1>
     <section class="services-list">
       <div class="container">
         <p>
@@ -47,7 +43,7 @@ export default {
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/index')
     const title = data.title
-    const image = data.image
+    const image = data.images
     const description = data.description
     const names = data.names
     const paths = data.paths
