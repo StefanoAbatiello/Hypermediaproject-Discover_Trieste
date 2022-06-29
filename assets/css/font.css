@@ -10,7 +10,7 @@ h1{
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: whitesmoke;
     position: absolute;
-    top: 200px;
+    top: 15rem;
     margin-left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -27,4 +27,9 @@ h3{
 h4{
     font-size: 20px;
     font-weight: 600;
+}
+@media (max-width: 992px){
+    h1{
+        font-size: 6vw;
+    }
 }

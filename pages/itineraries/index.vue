@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img style="height: 22rem; widht: 25rem" />
+      <img style="height: 30rem" />
       <h1> Itineraries </h1>
     </div>
       <div class="container">

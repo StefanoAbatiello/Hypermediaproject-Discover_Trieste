@@ -3,7 +3,6 @@
     <header-carousel
       class="carousel"
       :images="image"
-      :height="40"
       :title="`Welcome to Trieste`"
     />
     <section class="services-list">
@@ -60,12 +59,4 @@ export default {
 }
 </script>
 
-<style scoped>
-.carousel {
-  opacity: 0.8;
-}
-.title {
-  text-align: center;
-  transform: translate(-45%,35%);
-  }
-</style>
+

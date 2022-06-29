@@ -3,7 +3,6 @@
     <header-carousel
       class="carousel"
       :images="image"
-      :height="30"
       :title="`About Trieste`"
     />
     <div class="container">

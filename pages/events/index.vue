@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img-responsive img" style="height: 22rem; widht: 25rem" />
+      <img class="img-responsive img" style="height: 30rem" />
       <h1> Events </h1>
     </div>
     <section class="container filters">

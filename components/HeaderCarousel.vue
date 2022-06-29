@@ -1,52 +1,55 @@
 <template>
-  <div>
-    <div id="demo" class="carousel slide mb-4" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active button"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-          class="button"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-          class="button"
-        ></button>
+  <div
+    id="carouselExampleCaptions"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img
+          :src="require(`~/assets/${images[0]}`)"
+          class="d-block w-100"
+          alt="..."
+        />
       </div>
-
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner container p-0" :style="`height:${height}rem`">
-        <div class="has-bg-img carousel-item active">
-          <img
-            class="bg-img img-responsive"
-            :src="require(`~/assets/${images[0]}`)"
-          />
-        </div>
-        <div class="has-bg-img carousel-item">
-          <img
-            class="bg-img img-responsive"
-            :src="require(`~/assets/${images[1]}`)"
-          />
-        </div>
-        <div class="has-bg-img carousel-item">
-          <img
-            class="bg-img img-responsive"
-            :src="require(`~/assets/${images[2]}`)"
-          />
-        </div>
-        <div class="overlay">
-          <h1>{{title}}</h1>
-        </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          :src="require(`~/assets/${images[1]}`)"
+          class="d-block w-100"
+          alt="..."
+        />
       </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          :src="require(`~/assets/${images[2]}`)"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
+      <div class="overlay"></div>
+      <h1 class="title">{{ title }}</h1>
     </div>
   </div>
 </template>
@@ -74,63 +77,23 @@ export default {
 
 
 <style scoped>
-/* Carousel styling  */
-#introCarousel,
-.carousel-inner,
-.carousel-item,
-.carousel-item.active {
-  min-width: 100%;
-  height: 100%;
+.carousel {
+  height: 30rem;
 }
-.carousel-indicators {
-  opacity: 1;
+.carousel-inner {
+  height: 30rem;
 }
-.icon {
-  font-size: 60px;
-}
-.carousel-item {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+img {
+  height: 30rem;
 }
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
-  text-align: center;
-  vertical-align: middle;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.15);
-}
-
-/* Height for devices larger than 576px */
-@media (max-width: 992px) {
-  #introCarousel {
-    margin-top: -58.59px;
-  }
-  .carousel {
-    height: 50vh;
-    margin-bottom: 140px;
-  }
-  .overlay {
-    height: 50vh;
-  }
-  #introCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: 50vh;
-  }
-}
-.bg-img {
-  width: 100%;
-  height: 100%;
-}
-
-.navbar .nav-link {
-  color: #fff !important;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4">
-    <header-carousel class="carousel" :images="img" :height="35" />
+    <header-carousel class="carousel" :images="img"/>
 
     <section class="main-content">
       <div class="container">
@@ -158,10 +158,6 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
-  padding-top: 125px;
-  background-color: rgb(65, 105, 225);
-}
 .title {
   font-size: 4vw;
   color: royalblue;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img style="height: 22rem; widht: 25rem" />
+      <img style="height: 30rem" />
       <h1> Points of Interest </h1>
     </div>
     <section class="poi-list">

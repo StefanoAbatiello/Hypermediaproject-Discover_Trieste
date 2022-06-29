@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4">
-    <header-carousel class="carousel" :images="img" :height="35" />
+    <header-carousel class="carousel" :images="img"/>
 
     <section class="main-content">
       <div class="container">
@@ -82,37 +82,12 @@ export default {
 </script>
 
 <style scoped>
-.sign {
-  background: rgb(195, 75, 75);
-}
 .title {
   font-size: 4vw;
   color: royalblue;
 }
 .backgr {
   background: royalblue;
-}
-.carousel {
-  padding-top: 125px;
-  background-color: rgb(65, 105, 225);
-}
-.carousel-inner > .item > img {
-  margin: 0 auto;
-}
-.btn-back {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  border-color: whitesmoke;
-  color: rgb(195, 75, 75);
-}
-.arrow {
-  color: rgb(195, 75, 75);
-  opacity: 1;
-}
-.botton-cont {
-  position: relative;
 }
 .description-it {
   width: 100%;

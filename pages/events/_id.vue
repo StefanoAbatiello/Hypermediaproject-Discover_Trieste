@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid px-0 mb-4">
-    <header-carousel class="carousel" :images="img" :height="35" />
+    <header-carousel class="carousel" :images="img"/>
     <section class="main-container">
       <div class="container">
         <div class="row justify-content-between">
@@ -9,7 +9,7 @@
               <nuxt-link to="/events">
                 <div class="btn back-btn px-0">
                   <h4>
-                    <span class="material-icons px-0 back-icon"
+                    <span class="material-icons px-0 icon"
                       >arrow_back_ios</span
                     >
                     Events
@@ -18,7 +18,7 @@
               </nuxt-link>
               <h2 class="mb-3 title">{{ name }}</h2>
               <h5>
-                <span class="material-icons px-0 date-icon"> event </span>
+                <span class="material-icons px-0 icon"> event </span>
                 {{ date }}
               </h5>
               <div class="mt-5 description-events">
@@ -102,10 +102,6 @@ export default {
 </script>
 
 <style scoped>
-.carousel {
-  padding-top: 125px;
-  background-color: rgb(65, 105, 225);
-}
 .location{
   display: flex;
   justify-content: center;
@@ -113,10 +109,7 @@ export default {
 .description {
   font-size: 20px;
 }
-.date-icon {
-  vertical-align: middle;
-}
-.back-icon {
+.icon {
   vertical-align: middle;
 }
 </style>
