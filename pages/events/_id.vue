@@ -73,6 +73,10 @@ export default {
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/event/' + id)
+    const timeInfo=[]
+    for (let i=0;i<data.timeInfo.length;i=i+2) {
+      timeInfo.push({ day: data.timeInfo[i], hour: data.timeInfo[i+1] })
+    }
     return {
       name: data.name,
       img: data.img,
@@ -80,7 +84,7 @@ export default {
       description: data.description,
       poi: data.poi,
       accessInfo: data.accessInfo,
-      timeInfo: data.timeInfo,
+      timeInfo,
       prices: data.prices,
       website: data.website,
     }
