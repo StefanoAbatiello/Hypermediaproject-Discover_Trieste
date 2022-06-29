@@ -2,25 +2,12 @@
   <div class="container-fluid pb-2">
     <div class="card m-1 shadow-lg p-3">
 
-      <div v-if="notEven(id)" class="row no-gutters d-flex justify-content-start">
-        <div class="col-md-5 m-0 p-0 mr-4">
+      <div v-if="notEven(id)" class="row no-gutters d-flex px-3 py-2 justify-content-start">
+        <div class="col-md-5 m-0 p-0">
           <nuxt-link :to="`/pois/${id}`">
-              <img :src="require(`~/assets/${img}`)" class="img responsive ms-3 card-image"/>
+              <img :src="require(`~/assets/${img}`)" class="img responsive card-image"/>
             </nuxt-link>
         </div>
-        <div class="col-md-7 ml-4 ">
-          <div class="card-body ps-3">
-            <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
-              <h3 class="card-title">{{ name }}</h3>
-            </nuxt-link>
-            <p class="card-text">
-              {{ description }}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div v-else class="row no-gutters d-flex justify-content-end">
         <div class="col-md-7 m-0 p-0">
           <div class="card-body">
             <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
@@ -31,9 +18,22 @@
             </p>
           </div>
         </div>
-        <div class="col-md-5 m-0 p-0 pe-3">
+      </div>
+
+      <div v-else class="row no-gutters d-flex px-3 py-2 justify-content-end">
+        <div class="col-md-7 m-0 p-0">
+          <div class="card-body">
+            <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
+              <h3 class="card-title">{{ name }}</h3>
+            </nuxt-link>
+            <p class="card-text">
+              {{ description }}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5 m-0 p-0">
           <nuxt-link :to="`/pois/${id}`">
-              <img :src="require(`~/assets/${img}`)" class="img responsive me-3 card-image"/>
+              <img :src="require(`~/assets/${img}`)" class="img responsive card-image"/>
             </nuxt-link>
         </div>
       </div>
