@@ -111,9 +111,9 @@ export default {
   border-radius: 30px 30px 30px 30px;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste30.jpeg');
+  background-image: url('assets\events\copertina.jpeg');
   background-size: cover;
   background-position: center center;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 </style>
