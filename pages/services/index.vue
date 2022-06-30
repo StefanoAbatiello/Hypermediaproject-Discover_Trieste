@@ -8,7 +8,7 @@
     </div>
     <section class="services-list">
       <div class="container">
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 justify-content-center">
+        <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 justify-content-center">
           <preview-card
           v-for="(services, servicesIndex) of servicesList"
           :id="services.id"

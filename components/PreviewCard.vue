@@ -115,6 +115,7 @@ export default {
   opacity: 0.9;
   position: relative;
   border-radius: 20px;
+  max-width: 400px;
 }
 .card:hover .card-body {
   transform: scale(1.05);
