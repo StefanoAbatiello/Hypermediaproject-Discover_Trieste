@@ -8,8 +8,8 @@
     </div>
     <section class="services-list">
       <div class="container">
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 justify-content-center">
-          <card-composed
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 justify-content-center">
+          <preview-card
           v-for="(services, servicesIndex) of servicesList"
           :id="services.id"
           :key="`services-index-${servicesIndex}`"
@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import CardComposed from '~/components/CardComposed.vue'
+import PreviewCard from '~/components/PreviewCard.vue'
 export default {
   name: 'ServicesPage',
   components: {
-    CardComposed,
+    PreviewCard,
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/services')

@@ -7,7 +7,7 @@
     <section class="poi-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-          <card-composed
+          <preview-card
             v-for="(poi, poiIndex) of poiList"
             :id="poi.id"
             :key="`poi-index-${poiIndex}`"
@@ -22,11 +22,11 @@
 </template>
 
 <script>
-import CardComposed from '~/components/CardComposed.vue'
+import PreviewCard from '~/components/PreviewCard.vue'
 export default {
   name: 'PoisPage',
   components: {
-    CardComposed,
+    PreviewCard,
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/pois')

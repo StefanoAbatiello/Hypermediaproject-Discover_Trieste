@@ -12,13 +12,16 @@
         </div>
         <div class="btn card-body">
           <h3 class="title">{{ name }}</h3>
-          <p class="text">
+          <div v-if="category==='itineraries' || category==='events'">
+          <p class="text" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
           </p>
           <p class="text">
-            <span class="material-icons icon"> {{icons[1]}} </span>
+            <span class="material-icons icon" > 
+            {{icons[1]}} </span>
             {{ texts[1] }}
           </p>
+          </div>
         </div>
       </nuxt-link>
     </div>
@@ -47,15 +50,18 @@ export default {
     },
     season: {
       type: String,
-      required: true,
+      required: false,
+      default: '',
     },
     texts:{
       type: Array,
-      required:true,
+      required:false,
+      default:() => [] ,
     },
     icons:{
       type: Array,
-      required:true,
+      required:false,
+      default:() => [] ,
     }
   },
   methods: {
@@ -69,7 +75,6 @@ export default {
 <style scoped>
 .card:hover {
   opacity: 1;
-  /* transform: scale(1.05); */
   position: relative;
 }
 .card:hover .card-body .icon {
@@ -80,12 +85,11 @@ export default {
 }
 .card:hover .card-body .title {
   color: royalblue;
-  transform: scale(1.1);
+  transform: scale(1.05);
   height: auto;
 }
 .text {
   text-align: left;
-  /* font-size: 15px; */
   font-weight: 400;
 }
 .title {
