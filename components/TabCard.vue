@@ -8,13 +8,17 @@
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
-          class="nav-link "
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#accessibility"
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon tab-icon"> accessibility_new </span></p>
+          <p>
+            <span class="material-icons icon tab-icon">
+              accessibility_new
+            </span>
+          </p>
         </button>
       </li>
       <li class="nav-item pe-0" role="presentation">
@@ -29,18 +33,6 @@
           <p><span class="material-icons icon tab-icon"> schedule </span></p>
         </button>
       </li>
-      <!-- <li class="nav-item pe-0" role="presentation">
-        <button
-          id="tab"
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#howToReach"
-          type="button"
-          role="tab"
-        >
-          <p><span class="material-icons icon"> navigation </span></p>
-        </button>
-      </li> -->
       <li class="nav-item pe-0" role="presentation">
         <button
           id="tab"
@@ -50,7 +42,11 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon tab-icon"> confirmation_number </span></p>
+          <p>
+            <span class="material-icons icon tab-icon">
+              confirmation_number
+            </span>
+          </p>
         </button>
       </li>
     </ul>
@@ -58,34 +54,42 @@
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
         <div class="row justify-content-between info-box">
           <div class="icons col">
-            <span class="icon access-icon material-icons" style="color: royalblue">{{
-              accessInfo[0]
-            }}</span
+            <span
+              class="icon access-icon material-icons"
+              style="color: royalblue"
+              >{{ accessInfo[0] }}</span
             >Step-Free
           </div>
           <div class="icons col">
-            <span class="icon access-icon material-icons" style="color: royalblue">{{
-              accessInfo[1]
-            }}</span
+            <span
+              class="icon access-icon material-icons"
+              style="color: royalblue"
+              >{{ accessInfo[1] }}</span
             >Flyers in Braille
           </div>
           <div class="icons col">
-            <span class="icon access-icon material-icons" style="color: royalblue">{{
-              accessInfo[2]
-            }}</span
+            <span
+              class="icon access-icon material-icons"
+              style="color: royalblue"
+              >{{ accessInfo[2] }}</span
             >Audio Description
           </div>
         </div>
       </div>
       <div
         id="time"
-        class="tab-pane  show active fade justify-content-between"
+        class="tab-pane show active fade justify-content-between"
         role="tabpanel"
       >
-        <div v-for="(time, timeIndex) of timeInfo" :key="`time-index-${timeIndex}`" class="row">
-          <div class="col"></div><div class="col">{{time.day}}</div> <div class="col">{{time.hour}}</div><div class="col"></div>
+        <div
+          v-for="(time, timeIndex) of timeInfo"
+          :key="`time-index-${timeIndex}`"
+          class="row justify-content-center"
+        >
+          
+          <div class="col-6 text-center">{{ time.day }}</div>
+          <div class="col-6 text-center">{{ time.hour }}</div>
         </div>
-        
       </div>
       <div id="prices" class="tab-pane fade" role="tabpanel">
         It is accessible in different prices:
@@ -97,10 +101,10 @@
             {{ price }}
           </li>
         </ul>
-          <div v-if="website !== null">
-            For more information about the tickets visit the following site:
-            <a :href="website[0]" target="_blank">{{website[1]}}</a>
-          </div>
+        <div v-if="website !== null">
+          For more information about the tickets visit the following site:
+          <a :href="website[0]" target="_blank">{{ website[1] }}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -118,15 +122,11 @@ export default {
       type: Array,
       required: true,
     },
-    // directions: {
-    //   type: String,
-    //   required: true,
-    // },
     prices: {
       type: Array,
       required: true,
     },
-    website:{
+    website: {
       type: Array,
       required: true,
     },
@@ -153,8 +153,6 @@ export default {
   border: transparent;
   opacity: 1;
   font-size: 1.2vw;
-
-  /* background-color: rgb(65, 105, 225, 0.3); */
 }
 .nav-tabs .nav-item {
   max-height: 60px;
@@ -164,7 +162,6 @@ export default {
   width: 75px;
 }
 .tab-content {
-  /* border: 1px solid royalblue; */
   min-height: 200px;
   height: auto;
   padding: 10px;
@@ -176,7 +173,7 @@ export default {
   background-color: #fff;
   color: black;
 }
-.access-icon{
+.access-icon {
   vertical-align: bottom;
 }
 .tab-icon {
@@ -187,7 +184,7 @@ export default {
   padding: 3px;
   margin-bottom: 2;
 }
-.info-box{
+.info-box {
   width: 100%;
 }
 </style>
