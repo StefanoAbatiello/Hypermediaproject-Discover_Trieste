@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid px-0">
     <div class="mb-3" >
-      <img class="image-header" style="height: 30rem; widht: 25rem" :src="require(`~/assets/${img}`)"/>
+      <img class="image-header" style="height: 30rem" :src="require(`~/assets/${img}`)"/>
     </div>
     <section class="main-content">
       <div class="container">
@@ -17,12 +17,6 @@
                 </h4>
               </div>
             </nuxt-link>
-            <!-- <ul class="ms-4 breadcrumb">
-          <li class="breadcrumb-item ">
-            <a @click="backToServices()">Types of services</a>
-             <a>{{ title }}/</a> 
-          </li>
-        </ul> -->
             <h2 class="mb-5 title">{{ title }}</h2>
           </div>
         </div>
@@ -54,12 +48,10 @@
 <script>
 import CommonMixin from '~/mixins/common'
 import ServiceCard from '~/components/ServiceCard.vue'
-// import MapCard from '~/components/MapCard.vue'
 export default {
   name: 'ServiceDetailsPage',
   components: {
     ServiceCard,
-    // MapCard,
   },
   mixins: [CommonMixin],
 
@@ -92,16 +84,10 @@ export default {
   top: 200px;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  /* -webkit-text-stroke: 1px black; */
 }
 .image-header {
-  /* background-image: url('assets\homeImg\trieste22.jpeg'); */
-  background-repeat: no-repeat;
-  size: cover;
-  position: center center;
   opacity: 0.9;
   width: 100%;
-  height: 600px;
 }
 .title {
   font-size: 4vw;

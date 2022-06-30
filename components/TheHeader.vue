@@ -95,27 +95,18 @@ export default {
   height: 100px;
   width: 280px;
 }
-/* .navbar-brand {
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
-  font-size: 45px;
-  font-weight: 700;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
+
 .nav-item {
-  font-size: 2vw;
   font-weight: 600;
   text-align: right;
 }
 .link {
   text-align: center;
   color: white;
-  font-size: 1.25rem;
-  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;   */
+  font-size: 1.5rem;
 }
 .navbar-nav {
   margin-left: auto;
-  /* background-color: rgba(15, 15, 15, .2); */
 }
 .navbar-toggler {
   margin-left: auto;
@@ -139,10 +130,16 @@ export default {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 830px) and (min-width: 767px) {
+@media only screen and (max-width: 900px) and (min-width: 767px) {
   .logo-img {
   height: 100px;
   width: 30vw;
+}
+.nav-item{
+  text-align: left;
+}
+.link{
+  font-size: 1.25rem;
 }
 }
 </style>

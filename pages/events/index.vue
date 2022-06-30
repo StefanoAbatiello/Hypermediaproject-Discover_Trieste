@@ -54,7 +54,6 @@ export default {
   components: {
     PreviewCard,
   },
-  // Note: This happens on backend (server) side
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/events')
     return {
@@ -113,7 +112,6 @@ export default {
 }
 .image-header {
   background-image: url('assets\homeImg\trieste30.jpeg');
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   opacity: 0.9;
