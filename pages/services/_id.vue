@@ -1,8 +1,7 @@
 <template>
   <div class="container-fluid px-0">
-    <div class="image-header mb-3">
-      <img style="height: 22rem; widht: 25rem" />
-      <h1 class="header"> Types of service </h1>
+    <div class="mb-3" >
+      <img class="image-header" style="height: 30rem; widht: 25rem" :src="require(`~/assets/${img}`)"/>
     </div>
     <section class="main-content">
       <div class="container">
@@ -70,6 +69,7 @@ export default {
     return {
       title: data.type.name,
       description: data.type.description,
+      img: data.type.img,
       serviceList: data.services,
     }
   },
@@ -95,12 +95,13 @@ export default {
   /* -webkit-text-stroke: 1px black; */
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste22.jpeg');
+  /* background-image: url('assets\homeImg\trieste22.jpeg'); */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  size: cover;
+  position: center center;
   opacity: 0.9;
-  padding-top: 100px;
+  width: 100%;
+  height: 600px;
 }
 .title {
   font-size: 4vw;
@@ -108,17 +109,6 @@ export default {
 }
 .description {
   font-size: 2vw;
-}
-.backgr {
-  background: rgb(195, 75, 75);
-}
-.btn-back {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translate(0%, -50%);
-  border-color: whitesmoke;
-  color: rgb(195, 75, 75);
 }
 .botton-cont {
   position: relative;
