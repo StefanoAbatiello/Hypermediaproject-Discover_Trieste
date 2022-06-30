@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 mb-4">
+  <div>
     <header-carousel class="carousel" :images="img"/>
     <section class="main-container">
       <div class="container">
