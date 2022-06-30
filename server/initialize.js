@@ -449,7 +449,7 @@ export default async (models) => {
         },
         {
             name: "Cafes",
-            img: "services/cafes/caffè.jpeg",
+            img: "services/caffè.jpeg",
             description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
         },
         {
