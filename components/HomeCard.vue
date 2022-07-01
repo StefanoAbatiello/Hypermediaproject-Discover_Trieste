@@ -51,7 +51,6 @@ export default {
   padding-right: 20px;
   font-size: 30px;
   text-align: center;
-  border-radius: 0px 10px 10px 0px;
 }
 .card:hover {
   opacity: 1;
@@ -63,11 +62,10 @@ export default {
   opacity: 0.85;
   position: relative;
   border-radius: 30px;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
 }
 .img-container{
-  width: 400px;
+  width: 100%;
   height: 400px;
 }
 .img-container .img {
