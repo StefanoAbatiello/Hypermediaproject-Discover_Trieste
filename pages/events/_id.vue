@@ -9,7 +9,7 @@
               <nuxt-link to="/events">
                 <div class="btn back-btn px-0">
                   <h4>
-                    <span class="material-icons px-0 icon"
+                    <span class="material-icons px-0 back-icon"
                       >arrow_back_ios</span
                     >
                     Events
@@ -18,7 +18,7 @@
               </nuxt-link>
               <h2 class="mb-3 title">{{ name }}</h2>
               <h5>
-                <span class="material-icons px-0 icon"> event </span>
+                <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}
               </h5>
               <div class="mt-5 description-events">
@@ -110,7 +110,10 @@ export default {
   display: flex;
   justify-content: center;
 }
-.icon {
+.material-icons {
   vertical-align: middle;
+}
+.date-icon{
+  color: royalblue;
 }
 </style>

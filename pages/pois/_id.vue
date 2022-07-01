@@ -1,7 +1,6 @@
 <template>
   <div>
-    <header-carousel class="carousel" :images="img"/>
-
+    <header-carousel class="carousel" :images="img" />
     <section class="main-content">
       <div class="container">
         <div class="row justify-content-between">
@@ -160,27 +159,11 @@ export default {
 <style scoped>
 .material-icons {
   vertical-align: middle;
-  font-size: 18px;
 }
 .place {
   color: royalblue;
 }
-.mi {
-  font-size: 30pt;
-}
-.icons {
-  font-size: 15pt;
-}
-.interlinea {
-  border-color: royalblue;
-}
-.hour {
-  text-align: left;
-}
-.aside {
-  float: center;
-}
-.location{
+.location {
   display: flex;
   justify-content: center;
 }

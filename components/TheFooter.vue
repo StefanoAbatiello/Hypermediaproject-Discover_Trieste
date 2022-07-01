@@ -68,7 +68,6 @@ export default {
 .text-box {
   margin-left: 10%;
   width: 80%;
-  text-align: right;
   color: white;
   margin-bottom: 10px;
 }
