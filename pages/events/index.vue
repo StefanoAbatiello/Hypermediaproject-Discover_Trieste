@@ -6,22 +6,14 @@
       <h1>Events</h1>
     </div>
     <section class="container filters">
-      <div class="row justify-content-start">
-        <div class="col-sm-2">
-          <button
-            id="Summer"
-            class="filter m-1 w-100"
-            @click="filterSeason('Summer')"
-          >
+      <div class="row row-cols-4 justify-content-start">
+        <div class="col-sm-4 col-lg-3">
+          <button id="Summer" class="filter m-1 w-100" @click="filterSeason('Summer')" >
             <a>summer</a>
           </button>
         </div>
-        <div class="col-sm-2">
-          <button
-            id="Winter"
-            class="filter m-1 w-100"
-            @click="filterSeason('Winter')"
-          >
+        <div class="col-sm-4 col-lg-3">
+          <button id="Winter" class="filter m-1 w-100" @click="filterSeason('Winter')" >
             <a>winter</a>
           </button>
         </div>
@@ -34,7 +26,7 @@
             v-for="(event, eventIndex) of eventList"
             :id="event.id"
             :key="`event-index-${eventIndex}`"
-            class="event"
+            class="col"
             :name="event.name"
             :img="event.img"
             :season="event.season"
@@ -104,7 +96,7 @@ export default {
 
 <style scoped>
 .filter {
-  font-size: 1.5vw;
+  font-size: 20px;
   background: white;
   border: 1px solid royalblue;
   color: royalblue;

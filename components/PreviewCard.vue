@@ -13,10 +13,10 @@
         <div class="btn card-body">
           <h3 class="title text-center">{{ name }}</h3>
           <div v-if="category==='itineraries' || category==='events'">
-          <p class="text-left" >
+          <p class="text-start" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
           </p>
-          <p class="text-left">
+          <p class="text-start">
             <span class="material-icons icon" > 
             {{icons[1]}} </span>
             {{ texts[1] }}
