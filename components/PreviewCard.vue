@@ -64,11 +64,6 @@ export default {
       default:() => [] ,
     }
   },
-  methods: {
-    goToDetails() {
-      this.$router.push(`/details/${this.id}`)
-    },
-  },
 }
 </script>
 
