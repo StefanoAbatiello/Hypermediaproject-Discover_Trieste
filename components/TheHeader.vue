@@ -23,8 +23,8 @@
     <div
       id="navbarToggler"
       :class="{ active: isActive }"
-      @click="isActive = !isActive"
       class="button collapse navbar-collapse links"
+      @click="isActive = !isActive"
     >
       <ul class="navbar-nav mt-2 mt-lg-0">
         <li
@@ -100,7 +100,6 @@ export default {
   height: 100px;
   width: 280px;
 }
-
 .nav-item {
   text-align: right;
 }

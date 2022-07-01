@@ -72,14 +72,4 @@ export default {
   color: white;
   margin-bottom: 10px;
 }
-/* @media only screen and (max-width: 770px) {
-  .info {
-    visibility: hidden;
-  }
-
-  .comune {
-    width: 200px;
-    margin-left: 0px;
-  }
-} */
 </style>

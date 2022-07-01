@@ -1,7 +1,7 @@
 <template>
   <nuxt-link class="p-0" :to="`/${category}/${id}`">
     <div class="btn m-0 p-0 responsive text-box">
-      <p class="text p-0">
+      <p class="text-center mt-2 p-0">
         <span class="material-icons icon"> {{ icon }} </span>
         {{ text }}
       </p>
@@ -61,12 +61,6 @@ export default {
   min-width: 200px;
   max-width: 400px;
 }
-.text {
-  margin-top: 10px;
-  font-size: 20px;
-  text-align: center;
-  
-}
 .icon {
   color: royalblue;
   font-size: 30px;
@@ -82,10 +76,8 @@ export default {
   position: absolute;
   top: 20px;
   width: 70%;
-  /* left: 12px; */
   background-color: rgb(65, 105, 225, 0.75);
   color: white;
-  /* margin-left: 4px; */
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 2px;

@@ -11,12 +11,12 @@
           />
         </div>
         <div class="btn card-body">
-          <h3 class="title">{{ name }}</h3>
+          <h3 class="title text-center">{{ name }}</h3>
           <div v-if="category==='itineraries' || category==='events'">
-          <p class="text" >
+          <p class="text-left" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
           </p>
-          <p class="text">
+          <p class="text-left">
             <span class="material-icons icon" > 
             {{icons[1]}} </span>
             {{ texts[1] }}
@@ -88,13 +88,7 @@ export default {
   transform: scale(1.05);
   height: auto;
 }
-.text {
-  text-align: left;
-  font-weight: 400;
-}
-.title {
-  text-align: center;
-}
+
 .card:hover .container .img {
   transform: scale(1.2);
 }

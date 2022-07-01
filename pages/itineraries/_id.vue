@@ -15,7 +15,7 @@
               </h4>
             </div>
           </nuxt-link>
-          <h2 class="mb-5 title">{{ name }}</h2>
+          <h2 class="mb-5">{{ name }}</h2>
           <div class="description-it">
             <p>
               {{ description }}
@@ -85,10 +85,6 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
 .backgr {
   background: royalblue;
 }

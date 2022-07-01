@@ -25,7 +25,7 @@
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
-                  class="mt-3 description"
+                  class="mt-3"
                 >
                   {{ text }}
                 </p>
@@ -109,9 +109,6 @@ export default {
 .location{
   display: flex;
   justify-content: center;
-}
-.description {
-  font-size: 20px;
 }
 .icon {
   vertical-align: middle;

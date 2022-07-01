@@ -17,7 +17,7 @@
                   </h4>
                 </div>
               </nuxt-link>
-              <h2 class="mb-3 title">{{ name }}</h2>
+              <h2 class="mb-3">{{ name }}</h2>
               <p>
                 <span class="place material-icons"> place </span>
                 {{ data.poi.directions }}
@@ -26,7 +26,7 @@
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
-                  class="mt-3 description"
+                  class="mt-3"
                 >
                   {{ text }}
                 </p>
@@ -158,10 +158,6 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
 .material-icons {
   vertical-align: middle;
   font-size: 18px;
@@ -183,10 +179,6 @@ export default {
 }
 .aside {
   float: center;
-}
-.description {
-  text-align: justify;
-  text-justify: inter-word;
 }
 .location{
   display: flex;
