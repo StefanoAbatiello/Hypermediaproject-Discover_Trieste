@@ -135,7 +135,7 @@ export default {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 900px) and (min-width: 767px) {
+@media only screen and (max-width: 992px) and (min-width: 767px) {
   .logo-img {
     height: 100px;
     width: 30vw;
@@ -144,7 +144,7 @@ export default {
     text-align: left;
   }
   .link {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }
 </style>
