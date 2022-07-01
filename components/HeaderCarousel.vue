@@ -26,21 +26,21 @@
       <div class="carousel-item active" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[0]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="first-img"
         />
       </div>
       <div class="carousel-item" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[1]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="second-img"
         />
       </div>
       <div class="carousel-item" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[2]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="third-img"
         />
       </div>
@@ -48,7 +48,7 @@
       <h1 class="title">{{ title }}</h1>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
@@ -91,5 +91,19 @@ img {
   height: 100%;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.15);
+}
+@media (max-width: 992px){
+  .carousel {
+  height: 20rem;
+}
+.carousel-inner {
+  height: 20rem;
+}
+img {
+  height: 20rem;
+}
+h1{
+  top: 8rem;
+}
 }
 </style>

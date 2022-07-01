@@ -10,7 +10,7 @@
           />
         </a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 px-0 comune">
+      <div class="col-lg-3 col-md-4 col-sm-5 px-0 comune">
         <a href="https://www.comune.trieste.it/" target="_blank">
           <img
             :src="require(`~/assets/logo-trieste.png`)"
@@ -18,7 +18,7 @@
             alt="comune-logo"
           />
         </a>
-        <p class="info">Tel. 04 06754850</p>
+        <p class="info text-start">Tel. 04 06754850</p>
       </div>
     </div>
     <hr class="divider" />

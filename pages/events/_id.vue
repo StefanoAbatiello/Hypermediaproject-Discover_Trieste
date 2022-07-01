@@ -33,7 +33,7 @@
             </section>
           </main>
           <aside class="col-lg-4">
-            <div class="sticky-top row justify-content-between pt-1 column">
+            <div class="sticky-top row justify-content-between pt-1 info">
               <div class="my-5 col-lg-12 col-md-5 col-sm-12 col-xs-12 location">
                 <related-card
                   :id="poi.id"

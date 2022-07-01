@@ -7,14 +7,6 @@ app.use(express.json())
 // Development
 const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
 
-// Production (use this code when deploying to production in Heroku)
-// const pg = require('pg')
-// pg.defaults.ssl = true
-// const database = new Sequelize(process.env.DATABASE_URL, {
-//   ssl: true,
-//   dialectOptions: { ssl: { require: true, rejectUnauthorized: false } },
-// })
-// Function that will initialize the connection to the database
 async function initializeDatabaseConnection() {
     //Defining the struct of the tables in the db
     await database.authenticate()
@@ -26,7 +18,6 @@ async function initializeDatabaseConnection() {
         date: DataTypes.TEXT,
         accessInfo: DataTypes.ARRAY(DataTypes.STRING),
         timeInfo: DataTypes.ARRAY(DataTypes.STRING),
-        // directions: DataTypes.STRING,
         prices: DataTypes.ARRAY(DataTypes.STRING),
         website: DataTypes.ARRAY(DataTypes.STRING),
     })
@@ -112,25 +103,6 @@ async function runMainApi() {
         return res.json(result)
     })
 
-    // HTTP GET api that returns the events of a certain season
-    app.get("/events/:season", async (req, res) => {
-        const { season } = req.params
-        const filtered = []
-        const result = await models.Event.findAll({where: { season }})
-        for (const element of result) {
-            const id=element.poiId
-            const location= await models.PointOfInterest.findOne({where: {id}})
-            filtered.push({
-                name: element.name,
-                img: element.img[0],
-                id: element.id,
-                date: element.date,
-                locName : location.name,
-            })
-        }
-        return res.json(filtered)
-    })
-
      // HTTP GET api that returns all the itineraries
      app.get("/itineraries", async (req, res) => {
         const result = await models.Itinerary.findAll()
@@ -146,7 +118,7 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
-    // HTTP GET api that returns all the events in our actual database
+    // HTTP GET api that returns all the events
     app.get("/events", async (req, res) => {
         const result = await models.Event.findAll()
         const filtered = []
@@ -165,7 +137,7 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
-     // HTTP GET api that returns all the itineraries in our actual database
+     // HTTP GET api that returns all the pois
      app.get("/pois", async (req, res) => {
         const result = await models.PointOfInterest.findAll()
         const filtered = []
@@ -179,18 +151,28 @@ async function runMainApi() {
         return res.json(filtered)
     })
 
+    // HTTP GET api that returns all the type of services
+    app.get("/services", async (req, res) => {
+        const result = await models.ServiceType.findAll()
+        const filtered = []
+        for (const element of result) {
+            filtered.push({
+                name: element.name,
+                img: element.img,
+                id: element.id,
+            })
+        }
+        return res.json(filtered)
+    })
+
+    // HTTP GET api that returns requested event 
     app.get('/event/:id', async (req, res) => {
         const id = +req.params.id
         const event= await models.Event.findOne({ where: { id }, include: [{model: models.PointOfInterest}] })
         return res.json(event)
     })
 
-
-    app.get('/event/len', async (req, res) => {
-        const len = (await models.PointOfInterest.findAll()).length
-        return res.json(len)
-    })
-
+    // HTTP GET api that returns requested itinerary 
     app.get('/itineraries/:id', async (req, res) => {
         const id = +req.params.id
         const itineraryId = +req.params.id
@@ -201,6 +183,7 @@ async function runMainApi() {
         return res.json(result)
     })
     
+    // HTTP GET api that returns requested PoI
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
         const poi = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
@@ -226,34 +209,7 @@ async function runMainApi() {
         return res.json(result)
     })
 
-
-    // app.get('/service/find/:id', async (req, res) => {
-    //     const serviceTypeId = +req.params.id
-    //     const result = await models.SingleService.findAll({ where: { serviceTypeId } })
-    //     const filtered = []
-    //     for (const element of result) {
-    //         filtered.push({
-    //             name: element.name,
-    //             address: element.address,
-    //             info: element.info,
-    //         })
-    //     }
-    //     return res.json(filtered)    
-    // })
-
-    app.get("/services", async (req, res) => {
-        const result = await models.ServiceType.findAll()
-        const filtered = []
-        for (const element of result) {
-            filtered.push({
-                name: element.name,
-                img: element.img,
-                id: element.id,
-            })
-        }
-        return res.json(filtered)
-    })
-
+    // HTTP GET api that returns requested type of service
     app.get('/service/:id', async (req, res) => {
         const id = +req.params.id
         const serviceTypeId = +req.params.id

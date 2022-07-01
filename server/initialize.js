@@ -902,9 +902,6 @@ export default async (models) => {
             ]
         },
     ]
-    //with create is just one element
-    //with bulkCreate is moreElements like arrays
     await models.Event.bulkCreate(eventList)
-    //await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
 }

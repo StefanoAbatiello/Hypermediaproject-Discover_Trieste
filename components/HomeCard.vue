@@ -54,7 +54,6 @@ export default {
 }
 .card:hover {
   opacity: 1;
-  position: relative;
 }
 .card {
   overflow: hidden;

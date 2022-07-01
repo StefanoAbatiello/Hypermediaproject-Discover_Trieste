@@ -7,7 +7,7 @@
     </div>
     <section class="poi-list">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
           <preview-card
             v-for="(poi, poiIndex) of poiList"
             :id="poi.id"

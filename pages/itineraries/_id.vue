@@ -52,14 +52,12 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 import ItineraryStep from '~/components/ItineraryStep.vue'
 export default {
   name: 'DetailsPage',
   components: {
     ItineraryStep,
   },
-  mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/itineraries/' + id)
@@ -75,11 +73,6 @@ export default {
     return {
       title: this.name,
     }
-  },
-  methods: {
-    backToItineraries() {
-      this.$router.push('/itineraries/')
-    },
   },
 }
 </script>

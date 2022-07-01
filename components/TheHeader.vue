@@ -4,7 +4,7 @@
   >
     <a href="/">
       <img
-        :src="require(`~/assets/logo.png`)"
+        :src="require(`~/assets/logo/Risorsa 5.png`)"
         class="img mr-auto ms-2 logo-img"
         href="/"
       />
@@ -98,7 +98,7 @@ export default {
 }
 .logo-img {
   height: 100px;
-  width: 280px;
+  width: 300px;
 }
 .nav-item {
   text-align: right;

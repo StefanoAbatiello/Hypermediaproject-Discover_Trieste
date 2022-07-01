@@ -39,10 +39,6 @@ export default {
 </script>
 
 <style scoped>
-.row-line {
-  display: flex;
-  justify-content: center;
-}
 .image-header {
   height: 30rem;
 }
