@@ -1,8 +1,9 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img-responsive img" style="height: 30rem" />
-      <h1> Events </h1>
+      <img class="img" :src="require(`~/assets/events/copertina.jpeg`)" />
+      <div class="overlay"></div>
+      <h1>Events</h1>
     </div>
     <section class="container filters">
       <div class="row justify-content-start">
@@ -111,9 +112,21 @@ export default {
   border-radius: 30px 30px 30px 30px;
 }
 .image-header {
-  background-image: url('assets\events\copertina.jpeg');
-  background-size: cover;
-  background-position: center center;
-  /* opacity: 0.9; */
+  height: 30rem;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.15);
 }
 </style>

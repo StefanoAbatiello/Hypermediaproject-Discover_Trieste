@@ -2,9 +2,9 @@
   <div class="col my-3">
     <div class="card">
       <nuxt-link :to="`${path}`">
-        <div class="container m-0 p-0">
+        <div class="container img-container m-0 p-0">
           <img
-            class="card-img-top p-0 img"
+            class="p-0 img"
             :src="require(`~/assets/${img}`)"
             alt="Card image"
           />
@@ -63,11 +63,16 @@ export default {
   opacity: 0.85;
   position: relative;
   border-radius: 30px;
-  max-width: 400px;
-}
-.img {
-  width: 120%;
+  width: 400px;
   height: 400px;
-  border-radius: 20px 20px 0px 0px;
+}
+.img-container{
+  width: 400px;
+  height: 400px;
+}
+.img-container .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

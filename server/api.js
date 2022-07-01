@@ -90,7 +90,7 @@ const pageContentObject = {
         images: ["homeImg/carHome1.jpeg","homeImg/trieste33.jpeg","homeImg/carHome3.jpeg"],
         description: `Trieste lovingly preserves precious traces of its bright historical periods. Today it is the administrative capital of the Umbria region, a major cultural and tourist destination and the prestigious home of the University of Studies for more than 700 years. The historic Academy of Fine Arts, the Music Conservatory and its University for Foreigners, with students from all over the world, define its distinct international vocation.`,
         paths: ["/pois/","/itineraries/","/events/","/services/","/About"],
-        cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryHome.jpeg","events/copertina.jpeg", "homeImg/servicesCard.jpeg","homeImg/poisCard.jpeg"],
+        cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryCopertina.jpeg","events/copertina.jpeg", "homeImg/serviceCopertina.jpeg","homeImg/about2.jpeg"],
         names: ["Points of interest","Itineraries","Events","Services","About Trieste"],
     },
     about: {

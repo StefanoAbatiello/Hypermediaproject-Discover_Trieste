@@ -9,7 +9,7 @@
             </nuxt-link>
         </div>
         <div class="col-md-7 m-0 p-0">
-          <div class="card-body">
+          <div class="card-body1 ps-3 p-0">
             <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
               <h3 class="card-title">{{ name }}</h3>
             </nuxt-link>
@@ -22,7 +22,7 @@
 
       <div v-else class="row no-gutters d-flex px-3 py-2 justify-content-end">
         <div class="col-md-7 m-0 p-0">
-          <div class="card-body">
+          <div class="card-body2 pe-3 p-0">
             <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
               <h3 class="card-title">{{ name }}</h3>
             </nuxt-link>
@@ -81,15 +81,18 @@ export default {
 <style scoped>
 .card-title {
   color: royalblue;
-  text-align: left;
-}
-.h3{
+  width: 100%;
   font-size: 24px;
-  font-weight: 700;
+  text-align: center;
 }
-.card-body {
+.card-text{
+  text-align: center;
+}
+.card-body1,
+.card-body2 {
   width: auto;
   margin-left: 3px;
+  margin-top: 50px;
 }
 .card-image {
   width: 100%;
@@ -99,5 +102,15 @@ export default {
 }
 .card{
   border-radius: 20px;
+}
+@media (max-width:992px) {
+  .card-body1{
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .card-body2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
 </style>

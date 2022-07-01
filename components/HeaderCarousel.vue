@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="carousel"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button
         type="button"
@@ -73,6 +69,10 @@ export default {
 
 
 <style scoped>
+.title{
+  width: 100%;
+  text-align: center;
+}
 .carousel {
   height: 30rem;
 }
@@ -90,6 +90,6 @@ img {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.15);
 }
 </style>

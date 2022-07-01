@@ -20,7 +20,12 @@
     >
       <span class="material-icons icon"> menu </span>
     </button>
-    <div id="navbarToggler" :class="{active:isActive}" @click="isActive = !isActive" class="button collapse navbar-collapse links">
+    <div
+      id="navbarToggler"
+      :class="{ active: isActive }"
+      @click="isActive = !isActive"
+      class="button collapse navbar-collapse links"
+    >
       <ul class="navbar-nav mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -42,7 +47,7 @@ export default {
   name: 'TheHeader',
   data() {
     return {
-      isActive:false,
+      isActive: false,
       headerList: [
         {
           name: 'Home',
@@ -97,13 +102,14 @@ export default {
 }
 
 .nav-item {
-  font-weight: 600;
   text-align: right;
 }
 .link {
+  text-shadow: -0.6px 0 black, 0 0.6px black, 0.6px 0 black, 0 -0.6px black;
   text-align: center;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .navbar-nav {
   margin-left: auto;
@@ -132,15 +138,15 @@ export default {
 }
 @media only screen and (max-width: 900px) and (min-width: 767px) {
   .logo-img {
-  height: 100px;
-  width: 30vw;
-}
-.nav-item{
-  text-align: left;
-}
-.link{
-  font-size: 1.25rem;
-}
+    height: 100px;
+    width: 30vw;
+  }
+  .nav-item {
+    text-align: left;
+  }
+  .link {
+    font-size: 1.25rem;
+  }
 }
 </style>
 
