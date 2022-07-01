@@ -7,15 +7,14 @@
     />
     <section class="services-list">
       <div class="container">
-        <p>
-          Trieste è il Capoluogo di regione del Friuli-Venezia Giulia e capitale
-          europea della cultura per il 2023. Lasciati meravigliare dalle sue
-          bellezze che incantano miglioni di turisti ogni anno e immergiti nel
-          cuore dellà città attraverso il sito.
+        <p class="mt-4">
+          Trieste is the regional capital of Friuli-Venezia Giulia and European capital of culture for 2023. 
+          Let yourself be amazed by its beauties that enchant millions of tourists every year and immerse yourself in the heart of the city through the site:
+          analyze points of interest one by one or let you inspire by our itineraries, join the best events of the city collecting all the userful information regarding them or simply find the service you need in the dedicated section!
+          Have a nive discovering session!
         </p>
-        <div
-          class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2 justify-content-center"
-        >
+        <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mr-2 justify-content-center">
           <home-card 
             v-for="(item, itemIndex) of names"
             :id="item.id"
@@ -24,6 +23,7 @@
             :img="backImgs[itemIndex]"
             :path="paths[itemIndex]"
           />
+        </div>
         </div>
       </div>
     </section>
