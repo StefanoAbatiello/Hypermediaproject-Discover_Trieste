@@ -5,7 +5,13 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
+// const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
+const pg = require('pg')
+pg.defaults.ssl=true
+const database = new Sequelize(process.env.DATABASE_URL,{
+    ssl: true,
+    dialectOptions: { ssl: { require: true, rejectUnauthorized: false} },
+})
 
 async function initializeDatabaseConnection() {
     //Defining the struct of the tables in the db
