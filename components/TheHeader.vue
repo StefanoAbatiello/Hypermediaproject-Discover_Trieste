@@ -7,6 +7,7 @@
         :src="require(`~/assets/logo/Risorsa 5.png`)"
         class="img mr-auto ms-2 logo-img"
         href="/"
+        alt="logo to home"
       />
     </a>
     <button
@@ -49,10 +50,6 @@ export default {
     return {
       isActive: false,
       headerList: [
-        {
-          name: 'Home',
-          path: '/',
-        },
         {
           name: 'Events',
           path: '/events/',
@@ -108,9 +105,9 @@ export default {
   text-align: right;
 }
 .link {
-  text-shadow: -0.6px 0 black, 0 0.6px black, 0.6px 0 black, 0 -0.6px black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
-  color: white;
+  color: whitesmoke;
   font-size: 1.6rem;
   font-weight: 700;
 }

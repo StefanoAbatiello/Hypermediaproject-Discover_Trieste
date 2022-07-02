@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/eventCopertina.jpeg`)" />
+      <img class="img" :src="require(`~/assets/homeImg/eventCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Events</h1>
     </div>

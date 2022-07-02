@@ -135,6 +135,13 @@ export default {
   head() {
     return {
       title: this.name,
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'here you can find all the point of interest of Trieste',
+        }
+      ]
     }
   },
   methods: {

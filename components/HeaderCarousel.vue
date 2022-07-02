@@ -45,7 +45,6 @@
         />
       </div>
       <div class="overlay"></div>
-      <h1 class="title">{{ title }}</h1>
     </div>
   </div>
 </template> 
@@ -58,21 +57,12 @@ export default {
       type: Array.String,
       required: true,
     },
-    title: {
-      type: String,
-      require: false,
-      default: '',
-    },
   },
 }
 </script>
 
 
 <style scoped>
-.title{
-  width: 100%;
-  text-align: center;
-}
 .carousel {
   height: 30rem;
 }
@@ -90,7 +80,7 @@ img {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.15);
+  background-color: rgb(0, 0, 0, 0.3);
 }
 @media (max-width: 992px){
   .carousel {
@@ -101,9 +91,6 @@ img {
 }
 img {
   height: 20rem;
-}
-h1{
-  top: 8rem;
 }
 }
 </style>

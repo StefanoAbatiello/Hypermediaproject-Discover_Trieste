@@ -6,21 +6,21 @@
           <img
             class="card-img-top img"
             :src="require(`~/assets/${img}`)"
-            alt="Card image"
+            alt=""
             style="width: 100%; height: 200px"
           />
         </div>
         <div class="btn card-body">
           <h3 class="title text-center">{{ name }}</h3>
           <div v-if="category==='itineraries' || category==='events'">
-          <p class="text-start" >
+          <h5 class="text-start" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
-          </p>
-          <p class="text-start">
+          </h5>
+          <h4 class="text-start">
             <span class="material-icons icon" > 
             {{icons[1]}} </span>
             {{ texts[1] }}
-          </p>
+          </h4>
           </div>
         </div>
       </nuxt-link>

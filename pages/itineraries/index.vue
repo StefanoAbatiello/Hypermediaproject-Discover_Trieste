@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/itineraryCopertina.jpeg`)" />
+      <img class="img" :src="require(`~/assets/homeImg/itineraryCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Itineraries</h1>
     </div>

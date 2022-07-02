@@ -6,7 +6,7 @@
           <img
             :src="require(`~/assets/logo.png`)"
             class="img responsive logo-sito"
-            alt="Logo"
+            alt="logo to home"
           />
         </a>
       </div>
@@ -15,14 +15,14 @@
           <img
             :src="require(`~/assets/logo-trieste.png`)"
             class="img logo-comune"
-            alt="comune-logo"
+            alt="logo to comune"
           />
         </a>
       </div>
     </div>
     <hr class="divider" />
     <div class="text-box">
-      <p class="script">Made by ACSS</p>
+      <h4 class="script">Made by ACSS</h4>
     </div>
   </div>
 </template>

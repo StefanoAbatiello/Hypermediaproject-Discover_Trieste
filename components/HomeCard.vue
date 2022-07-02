@@ -6,7 +6,7 @@
           <img
             class="p-0 img"
             :src="require(`~/assets/${img}`)"
-            alt="Card image"
+            :alt="alt"
           />
           <div class="text-block py-3">
             {{ title }}
@@ -33,6 +33,10 @@ export default {
       type: String,
       required: true,
     },
+    alt:{
+      type: String,
+      required: true,
+    }
   },
 }
 </script>

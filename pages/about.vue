@@ -3,8 +3,8 @@
     <header-carousel
       class="carousel"
       :images="image"
-      :title="`About Trieste`"
     />
+    <h1 class="title">About Trieste</h1>
     <div class="container">
       <p class="mt-4">
         The city of Trieste is located in northeastern Italy, bordering
@@ -13,7 +13,7 @@
         Gulf of Trieste, a shallow bay of the Adriatic Sea, it serves as an
         important seaport in the region.
       </p>
-      <img class="map" :src="require(`~/assets/homeImg/ancientMap.jpeg`)" />
+      <img class="map" :src="require(`~/assets/homeImg/ancientMap.jpeg`)" alt="ancient map"/>
       <p class="mt-3">
         Trieste's population is an ethnic mix of its neighbouring regions and
         countries: Venice, Austria and Slovenia. The dominant local Venetian
@@ -30,7 +30,7 @@
         and sports without the drawbacks that affect larger Italian cities such
         as heavy traffic jams, smog, and delinquency.
       </p>
-      <img class="panorama" :src="require(`~/assets/homeImg/panorama.jpeg`)" />
+      <img class="panorama" :src="require(`~/assets/homeImg/panorama.jpeg`)" alt ="view"/>
     </div>
   </div>
 </template>
@@ -63,5 +63,14 @@ img {
   margin-left: 50%;
   transform: translate(-50%, 0);
   border-radius: 10px 10px 10px 10px;
+}
+.title {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  h1 {
+    top: 8rem;
+  }
 }
 </style>

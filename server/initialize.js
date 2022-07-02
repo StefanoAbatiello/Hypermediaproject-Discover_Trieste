@@ -242,7 +242,7 @@ export default async (models) => {
             map: "Sinagoga+di+Trieste,Trieste,Italy"
         },
         {
-            name: "Sanctuary of St. Mary Major",
+            name: "Sanctuary of St. Mary",
             img: ["pois/churches/beataVergine.png", "pois/churches/insideBeataVergine.jpeg", "pois/churches/beataVergine2.png"],
             itineraryId: itinerary2.id,
             stepDescription:"The tour ends in the Roman ancient zone, in the center of Trieste with a Jesuits church built around the XVII century in honor of the Madonna.",

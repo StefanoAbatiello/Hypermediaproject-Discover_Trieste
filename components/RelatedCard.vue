@@ -1,12 +1,12 @@
 <template>
   <nuxt-link class="p-0" :to="`/${category}/${id}`">
     <div class="btn m-0 p-0 responsive text-box">
-      <p class="text-center mt-2 p-0">
+      <h5 class="text-center mt-2 p-0">
         <span class="material-icons icon"> {{ icon }} </span>
         {{ text }}
-      </p>
+      </h5>
       <div class="img-container p-0">
-        <img :src="require(`~/assets/${img}`)" class="card-img" />
+        <img :src="require(`~/assets/${img}`)" class="card-img" alt=""/>
         <div class="text-block">
           <h5>{{ name }}</h5>
         </div>
