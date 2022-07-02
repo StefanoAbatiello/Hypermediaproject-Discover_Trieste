@@ -434,28 +434,28 @@ export default async (models) => {
         {
             name: "Medical services",
             img: "services/medical.jpeg",
-            description: "Here you can find all the pharmacies, hospital and clinics in the city ",
+            description: "Sometimes it happen to not feel well and if it happens while you are in Trieste, here there is a list to find out info about the main hospital, pharmacies and other useful places for your health.",
         },
         {
             name: "Hotel and B&B",
             img: "services/hotels.jpeg",
-            description: "Here you can find the best hotels and B&Bs that this city offers!",
+            description: "You want to visit Trieste, but still don't know where to sleep? This page is what you are looking for! From B&bs to luxurious hotels, here you can choose what fits you the best and organize a fantastic stay in Trieste",
 
         },
         {
             name: "Restaurants",
             img: "services/restaurants.jpeg",
-            description: "Here you can find the best restaurants to try during your stay",
+            description: "You cannot visit Trieste without tasting the typical cousine. To fully experience Trieste, here there are the best places to try out the typical dishes of the city and discover the history of Trieste through the delicious food ",
         },
         {
             name: "Cafes",
             img: "services/caffè.jpeg",
-            description: "If you don't know where to go for breakfast or a simple break, here you can find some good cafes with delicious pastries and drinks",
+            description: "For a typical Italian breakfast, for a snack while visiting the city, for a drink with friends, these places will make you feel at home and you will be able to try all the deliciousness that Trieste as to offer: pastries, drinks, coffee in historical caffès of the city",
         },
         {
             name: "Entertainment",
             img: "services/entertainment.jpeg",
-            description: "Here you can find the best activities in the city",
+            description: "If you don't know what to do during your nights in Trieste, we have some suggestions for you. If you just want to relax or dance all night long, we are sure this list will help you make the most out of your stay in Trieste",
         },
 
     ]
@@ -469,7 +469,7 @@ export default async (models) => {
         {
             name: "Farmacia al Cammello",
             serviceTypeId: type0.id,
-            address: "viale XX Settembre 6, 34126 Trieste",
+            address: "Viale XX Settembre 6, 34126 Trieste",
             description: [
                 "The pharmacy performs the following services:",
                 "- Blood pressure measurement (for a fee)",
@@ -478,20 +478,20 @@ export default async (models) => {
                 "In this pharmacy you will find the breastfeeding and diaper changing corner." 
             ],           
             time: [
-                "MONDAY: 8:30 - 19:30", 
-                "TUESDAY: 8:30 - 19:30", 
-                "WEDNESDAY: 8:30 - 19:30", 
-                "THURSDAY: 8:30 - 19:30", 
-                "FRIDAY: 8:30 - 19:30", 
-                "SATURDAY: 8:30 - 12:30", 
-                "SUNDAY: CLOSED"
+                "8:30 - 19:30", 
+                "8:30 - 19:30", 
+                "8:30 - 19:30", 
+                "8:30 - 19:30", 
+                "8:30 - 19:30", 
+                "8:30 - 12:30", 
+                "closed"
                 ],                 
             img: "services/medicals/cammello.jpeg",
             map: "Farmacia+al+Cammello,Trieste,Italy",
             info:[
-                "website: www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cammello-13448 ",
-                "phone: +39 040 371377",
-                "email: farmacam@comune.trieste.it" 
+                "https://www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cammello-13448",                
+                "Phone: +39 040 371377",
+                "Email: farmacam@comune.trieste.it" 
                 ]
 
         },
@@ -507,20 +507,20 @@ export default async (models) => {
                 "This pharmacy has some deals on masks and veterinary products" 
             ],            
             time: [
-                "MONDAY: 8:30 - 13:00 / 16:00 - 19:30", 
-                "TUESDAY: 8:30 - 13:00 / 16:00 - 19:30", 
-                "WEDNESDAY: 8:30 - 13:00 / 16:00 - 19:30", 
-                "THURSDAY: 8:30 - 13:00 / 16:00 - 19:30", 
-                "FRIDAY: 8:30 - 13:00 / 16:00 - 19:30", 
-                "SATURDAY: 8:30 - 12:30", 
-                "SUNDAY: CLOSED"
+                "8:30 - 13:00 / 16:00 - 19:30", 
+                "8:30 - 13:00 / 16:00 - 19:30", 
+                "8:30 - 13:00 / 16:00 - 19:30", 
+                "8:30 - 13:00 / 16:00 - 19:30", 
+                "8:30 - 13:00 / 16:00 - 19:30", 
+                "8:30 - 12:30", 
+                "closed"
                 ],             
                 img: "services/medicals/cedro.jpeg",
             map: "Farmacia+Cedro,Trieste,Italy",
             info:[
-                "website: www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cedro-13446 ",
-                "phone: +39 040 364928",
-                "email: farmacedro@comune.trieste.it" 
+                "https://www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cedro-13446 ",
+                "Phone: +39 040 364928",
+                "Email: farmacedro@comune.trieste.it" 
                 ]
 
         },
@@ -538,20 +538,20 @@ export default async (models) => {
                 "- Blood pressure measurement FREE SERVICE"
             ],            
             time: [
-                "MONDAY: 7:30 - 13:30 / 15:00 - 19:00", 
-                "TUESDAY: 7:30 - 13:30 / 15:00 - 19:00", 
-                "WEDNESDAY: 7:30 - 13:30 / 15:00 - 19:00", 
-                "THURSDAY: 7:30 - 13:30 / 15:00 - 19:00", 
-                "FRIDAY: 7:30 - 13:30 / 15:00 - 19:00", 
-                "SATURDAY: 8:30 - 12:30", 
-                "SUNDAY: CLOSED"
+                "7:30 - 13:30 / 15:00 - 19:00", 
+                "7:30 - 13:30 / 15:00 - 19:00", 
+                "7:30 - 13:30 / 15:00 - 19:00", 
+                "7:30 - 13:30 / 15:00 - 19:00", 
+                "7:30 - 13:30 / 15:00 - 19:00", 
+                "8:30 - 12:30", 
+                "closed"
                 ],             
                 img: "services/medicals/parafarmStazione.jpeg",
             map: "Parafarmacia+Alla+Stazione,Trieste,Italy",
             info:[
-                "website: www.parafarmaciaallastazione.com",
-                "phone: +39 040 415277",
-                "email: info@parafarmaciaallastazione.com" 
+                "https://www.parafarmaciaallastazione.com/",
+                "Phone: +39 040 415277",
+                "Email: info@parafarmaciaallastazione.com" 
                 ]
 
         },
@@ -564,20 +564,20 @@ export default async (models) => {
                 "Through the CUP service it is possible to book and/or pay for specialist and radiological examinations and services provided by the Azienda Sanitaria Universitaria Integrata di Trieste (ASUITs)"
                 ],            
             time: [
-                "CUP booking hours:",
-                "MONDAY: 7:30 - 13:30", 
-                "TUESDAY: 7:30 - 13:30", 
-                "WEDNESDAY: 7:30 - 13:30", 
-                "THURSDAY: 7:30 - 13:30", 
-                "FRIDAY: 7:30 - 13:30", 
-                "SATURDAY: CLOSED", 
-                "SUNDAY: CLOSED"
+                // "CUP booking hours:",
+                "CUP booking 7:30 - 13:30", 
+                "CUP booking 7:30 - 13:30", 
+                "CUP booking 7:30 - 13:30", 
+                "CUP booking 7:30 - 13:30", 
+                "CUP booking 7:30 - 13:30", 
+                "closed", 
+                "closed"
                 ],              
             img: "services/medicals/cattinara.jpeg",
             map: "Ospedale+Cattinara,Trieste,Italy",
             info:[
-                "website: asugi.sanita.fvg.it/it/presidi-ospedalieri/ospedale-cattinara/",
-                "phone: +39 040 3994843/ 0434 223522",
+                "https://asugi.sanita.fvg.it/it/presidi-ospedalieri/ospedale-cattinara/",
+                "Phone: +39 040 3994843/ 0434 223522",
                 ]
 
         },
@@ -586,7 +586,7 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "Via Benvenuto Cellini 2, 34132 Trieste",
             description: [
-                "Located in Trieste, 800 meters from Piazza Unità d'Italia, Addicted to Paradise offers air-conditioned rooms and free WiFi throughout.",
+                "800 meters from Piazza Unità d'Italia, Addicted to Paradise offers air-conditioned rooms and free WiFi throughout.",
                 "All accommodations have a flat-screen TV, private bathroom and kettle with tea and coffee.",
                 "Addicted to Paradise is 2.1 km from Trieste Port, 2.6 km from Lighthouse of Victory and 30 km from Trieste Airport.",
                 "- Non-smoking facility",
@@ -605,8 +605,8 @@ export default async (models) => {
             img: "services/hotels/paradise.jpeg",
             map: "Addicted+to+Paradise, Trieste,Italy",
             info:[
-                "website: www.booking.com/hotel/it/addicted-to-paradise.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl ",
-                "phone: +39 339 642 6799",
+                "https://www.booking.com/hotel/it/addicted-to-paradise.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2%E2%82%AC30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=cfacbdacac584a3ef339677f74297fd0&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1656763179;srpvid=8e625454557f005b;type=total;ucfs=1&#hotelTmpl",                
+                "Phone: +39 339 642 6799",
                 ]
 
         },
@@ -615,7 +615,7 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "Via Mazzini, 33, 34121 Trieste",
             description: [
-                "Located in Trieste, 400 meters from San Giusto Castle and 500 meters from Piazza Unità d'Italia, DOMO Trieste offers city views and free WiFi.",
+                "400 meters from San Giusto Castle and 500 meters from Piazza Unità d'Italia, DOMO Trieste offers city views and free WiFi.",
                 "All air-conditioned, accommodations feature a fully equipped kitchenette with dining area, a flat-screen TV and a private bathroom with bidet, hairdryer and toiletries. Some accommodations include a seating area and/or a balcony.",
                 "Popular nearby sights include the Port of Trieste, the Roman Theater, and Kleine Berlin. Trieste Airport, the nearest, is located 30 km from DOMO Trieste.",
                 "Services:",
@@ -626,13 +626,13 @@ export default async (models) => {
                 "- Security"
             ],            
             time: ["Check-in: from 15:30 till 18:00",
-                "Check-out: until 11:00"
+                    "Check-out: until 11:00"
             ],
             img: "services/hotels/DOMO.jpeg",
             map: "DOMO+Trieste, Trieste,Italy",
             info:[
-                "website: www.booking.com/hotel/it/domo-trieste.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl",
-                "phone: +39 040 982 0426" 
+                "https://www.booking.com/hotel/it/domo-trieste.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl",
+                "Phone: +39 040 982 0426" 
                 ]
 
         },
@@ -641,7 +641,7 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "Via Cesare Beccaria 4, 34133 Trieste",
             description: [
-                "Located in Trieste, near the Port, Piazza Unità d'Italia and San Giusto Castle, CA'MILLA Luxury Apartments Trieste offers free WiFi.",
+                "Near the Port, Piazza Unità d'Italia and San Giusto Castle, CA'MILLA Luxury Apartments Trieste offers free WiFi.",
                 "The air-conditioned accommodations include a washing machine, a safe, a living room, a flat-screen TV, a kitchen with a dishwasher and microwave, and a private bathroom with a hairdryer and toiletries. They all include a seating area and a dining area.",
                 "In the area you will find renowned sights such as the Kleine Berlin, Trieste's Roman Theater, and the Revoltella Museum. Trieste Airport, the nearest airport, is 30 km from CA'MILLA Luxury Apartments Trieste.",         
                 "Services:",
@@ -660,9 +660,9 @@ export default async (models) => {
             img: "services/hotels/camilla.jpeg",
             map: "CA'MILLA+Luxury+Apartments,Trieste,Italy",
             info:[
-                "website: https://camilla-apartments.com/en/home-en/",
-                "phone: +39 347 0885289",
-                "email: info@camilla-apartments.com" 
+                "https://camilla-apartments.com/en/home-en/",
+                "Phone: +39 347 0885289",
+                "Email: info@camilla-apartments.com" 
                 ]
 
         },
@@ -671,7 +671,7 @@ export default async (models) => {
             serviceTypeId: type1.id,
             address: "Piazza della Repubblica 1, 34122 Trieste",
             description: [
-                "Located in Trieste, 1.4 km from San Giusto Castle, Doubletree By Hilton Trieste offers a restaurant, private parking, a bar and a shared lounge. Awarded 4 stars, the hotel boasts a concierge service and tour desk. A 24-hour front desk, airport transfer service, room service and free WiFi throughout the building are also available.",
+                "1.4 km from San Giusto Castle, Doubletree By Hilton Trieste offers a restaurant, private parking, a bar and a shared lounge. Awarded 4 stars, the hotel boasts a concierge service and tour desk. A 24-hour front desk, airport transfer service, room service and free WiFi throughout the building are also available.",
                 "Rooms at the hotel are equipped with air conditioning, a work desk, kettle, minibar, safe, flat-screen TV and private bathroom with bidet. Accommodations also include a closet and coffee maker. Guests at the DoubleTree By Hilton Trieste can enjoy a continental or buffet breakfast. The wellness area includes a spa center and sauna.",
                 "Popular points of interest nearby the Doubletree By Hilton Trieste include Piazza Unità d'Italia, Trieste's Roman Theater and Kleine Berlin. The nearest airport is Trieste Airport, 34 km away.",
                 "Services:",
@@ -687,35 +687,35 @@ export default async (models) => {
             img: "services/hotels/hilton.jpeg",
             map: "DoubleTree+By+Hilton, Trieste,Italy",
             info:[
-                "website: https://www.hiltonhotels.it/italia/doubletree-by-hilton-trieste/",
-                "phone: +39 040 9712950",
-                "email: TRSDT_RES@hilton.com" 
+                "https://www.hiltonhotels.it/italia/doubletree-by-hilton-trieste/",
+                "Phone: +39 040 9712950",
+                "Email: TRSDT_RES@hilton.com" 
                 ]
 
         },
         {
             name: "Vecio Buffet Marascutti",
             serviceTypeId: type2.id,
-            address: "via Battisti 2/b, 34100 Trieste",
+            address: "Via Battisti 2/b, 34100 Trieste",
             description: ["Since 1914, Buffet Marascutti has been one of the landmarks for the people of Trieste and for those who want to feel, while eating, centuries of history.",
             "Among the dishes offered at the Marascutti Buffet many are of Austrian origin. The menu is rich, but always respectful of the tradition.",
             "Definitely try the hot ham crusted with horseradish, the bread and ham dumplings, the jota and the mixed boiled meat dish, and in summer even the fish! For the super sweet tooth excellent homemade desserts. Good wine labels from the region along with a good selection of beers."
             ],
             time: [
-                "MONDAY: 12:00-15:00/ 19:00-22:00", 
-                "TUESDAY: CLOSED", 
-                "WEDNESDAY: 12:00-15:00/ 19:00-22:00", 
-                "THURSDAY: 12:00-15:00/ 19:00-22:00", 
-                "FRIDAY: 12:00-15:00/ 19:00-22:00", 
-                "SATURDAY: 12:00-15:00/ 19:00-22:00", 
-                "SUNDAY: 12:00-15:00/ 19:00-22:00"
+                "12:00-15:00/ 19:00-22:00", 
+                "CLOSED", 
+                "12:00-15:00/ 19:00-22:00", 
+                "12:00-15:00/ 19:00-22:00", 
+                "12:00-15:00/ 19:00-22:00", 
+                "12:00-15:00/ 19:00-22:00", 
+                "12:00-15:00/ 19:00-22:00"
                 ],            
             img: "services/restaurants/marascutti.jpeg",
             map: "Vecio+Buffet+Marascutti,Trieste,Italy",
             info:[
-                "website: http://www.buffetmarascutti.it",
-                "phone: +39 040 633719 / 389 6595444",
-                "email: info@buffetmarascutti.it" 
+                "http://www.buffetmarascutti.it",
+                "Phone: +39 040 633719 / 389 6595444",
+                "Email: info@buffetmarascutti.it" 
                 ]
 
         },
@@ -728,20 +728,20 @@ export default async (models) => {
                 "Even though the menu they have is not extremely wide, it is possible to find various fish and meat dishes, as well as some vegetarian proposals. All this can be consumed in a warm and cozy atmosphere, with attention to detail to make you feel like at home, with the unfailing presence of a good glass of local wine."
             ],            
             time: [
-                "MONDAY: 12:00-14:30/ 19:00-22:30", 
-                "TUESDAY: 12:00-14:30/ 19:00-22:30", 
-                "WEDNESDAY: CLOSED", 
-                "THURSDAY: CLOSED", 
-                "FRIDAY: 12:00-14:30/ 19:00-22:30", 
-                "SATURDAY: 12:00-14:30/ 19:00-22:30", 
-                "SUNDAY: 12:00-14:30/ 19:00-22:30"
+                "12:00-14:30/ 19:00-22:30", 
+                "12:00-14:30/ 19:00-22:30", 
+                "closed", 
+                "closed", 
+                "12:00-14:30/ 19:00-22:30", 
+                "12:00-14:30/ 19:00-22:30", 
+                "12:00-14:30/ 19:00-22:30"
             ],             
             img: "services/restaurants/marise.jpeg",
             map: "Osteria+Marise,Trieste,Italy",
             info:[
-                "website: www.osteriamarise.it",
-                "phone: +39 040 3229149",
-                "email: info@osteriamarise.it" 
+                "https://www.osteriamarise.it",
+                "Phone: +39 040 3229149",
+                "Email: info@osteriamarise.it" 
             ]
 
         },
@@ -754,20 +754,20 @@ export default async (models) => {
                 "You can therefore be delighted by the incomparable mixed platter, which will give you the opportunity to taste all their specialties together. Or, if you are in a hurry, a quick and tasty porzin (porcina, spiced pork neck) sandwich, seasoned and flavored with mustard and kren (fresh grated horseradish)."
             ],            
             time: [
-                "MONDAY: 08.30-22.00", 
-                "TUESDAY: 08.30-22.00", 
-                "WEDNESDAY: 08.30-22.00", 
-                "THURSDAY: 08.30-22.00", 
-                "FRIDAY: 08.30-22.00", 
-                "SATURDAY: 08.30-22.00", 
-                "SUNDAY: 10.00-16.00"
+                "08.30-22.00", 
+                "08.30-22.00", 
+                "08.30-22.00", 
+                "08.30-22.00", 
+                "08.30-22.00", 
+                "08.30-22.00", 
+                "10.00-16.00"
             ],             
             img: "services/restaurants/pepi.jpeg",
             map: "Buffet+da+Pepi,Trieste,Italy",
             info:[
-                "website: www.buffetdapepi.it",
-                "phone: +39 040 366858",
-                "email: info@buffetdapepi.it" 
+                "http://www.buffetdapepi.it",
+                "Phone: +39 040 366858",
+                "Email: info@buffetdapepi.it" 
                 ]
 
         },
@@ -781,27 +781,27 @@ export default async (models) => {
             "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
             ],
             time: [
-            "MONDAY: 9:00-22:30", 
-            "TUESDAY: 9:00-22:30", 
-            "WEDNESDAY: 9:00-22:30", 
-            "THURSDAY: 9:00-22:30", 
-            "FRIDAY: 9:00-22:30", 
-            "SATURDAY: 9:00-22:30", 
-            "SUNDAY: 9:00-22:30"
+            "9:00-22:30", 
+            "9:00-22:30", 
+            "9:00-22:30", 
+            "9:00-22:30", 
+            "9:00-22:30", 
+            "9:00-22:30", 
+            "9:00-22:30"
             ],
             img: "services/cafes/caffè_tommaseo.jpeg",
             map: "Caffè+Tommaseo,Trieste,Italy",
             info:[
-            "website: www.caffetommaseo.it ",
-            "phone: +39 040 362666",
-            "email: info@caffetommaseo.it" 
+            "https://www.caffetommaseo.it ",
+            "Phone: +39 040 362666",
+            "Email: info@caffetommaseo.it" 
             ]
 
         },
         {
             name: "Antico Caffè San Marco",
             serviceTypeId: type3.id,
-            address: "via Battisti 18/A, 34125 Trieste",
+            address: "Via Battisti 18/A, 34125 Trieste",
             description: [
                 "Caffè San Marco, one of Trieste's best-known historic cafes, was opened in 1914 at 18 Via Battisti. The café preserves its charm intact and is awarded the prestigious distinction of 'historical café of Italy'",                
                 "As soon as you walk through the front door, you are immediately enraptured by a magical atmosphere: the Art Nouveau furnishings, the brass chandeliers hanging from the high ceilings covered with bronze-colored coffee leaves, the red Verona marble tables, the large mirrors on the walls where images of the original paintings are reflected.",                
@@ -809,20 +809,20 @@ export default async (models) => {
                 "There are many concerts, meetings, presentations, reviews and events held at the café both during the week and on weekends."                
             ],
             time: [
-            "MONDAY: 8:30-23:00", 
-            "TUESDAY: 8:30-23:00", 
-            "WEDNESDAY: 8:30-23:00", 
-            "THURSDAY: 8:30-23:00", 
-            "FRIDAY: 8:30-23:00", 
-            "SATURDAY: 8:30-23:45", 
-            "SUNDAY: 9:00-21:00"
+            "8:30-23:00", 
+            "8:30-23:00", 
+            "8:30-23:00", 
+            "8:30-23:00", 
+            "8:30-23:00", 
+            "8:30-23:45", 
+            "9:00-21:00"
             ],
             img: "services/cafes/caffè_san_marco.jpeg",
             map: "Antico+Caffè+San+Marco,Trieste,Italy",
             info:[
-            "website: www.caffesanmarco.com",
-            "phone: +39 040 2035357",
-            "email: info@caffesanmarco.com"
+            "http://www.caffesanmarco.com",
+            "Phone: +39 040 2035357",
+            "Email: info@caffesanmarco.com"
         ]
 
 
@@ -837,19 +837,19 @@ export default async (models) => {
             "The club is one of the most loved by the locals and is highly advisable by the visitors."
             ],
             time:[
-            "MONDAY: CLOSED", 
-            "TUESDAY: CLOSED", 
-            "WEDNESDAY: 22:00-04:00", 
-            "THURSDAY: CLOSED", 
-            "FRIDAY: 22:00-04:00", 
-            "SATURDAY: 22:00-04:00", 
-            "SUNDAY: CLOSED"
+            "closed", 
+            "closed", 
+            "22:00-04:00", 
+            "closed", 
+            "22:00-04:00", 
+            "22:00-04:00", 
+            "closed"
             ],            
             img: "services/entertainments/molo4.jpeg",
             map: "Molo+4,Trieste,Italy",
             info:[
-                "website: www.facebook.com/AnubiMolo4",
-                "email: anubitrieste@libero.it"
+                "https://www.facebook.com/AnubiMolo4",
+                "Email: anubitrieste@libero.it"
             ]
         },
         {
@@ -861,19 +861,19 @@ export default async (models) => {
                 "You can enjoy all the latest releases, including in original language or 3D. Experience a world of entertainment with Extra events: opera, ballet, concerts, documentaries and theater."
             ],
             time:[
-            "MONDAY: 15:30-23:00", 
-            "TUESDAY: 15:30-23:00", 
-            "WEDNESDAY: 15:30-23:00", 
-            "THURSDAY: 16:00-23:00", 
-            "FRIDAY: 16:00-23:00", 
-            "SATURDAY: 16:00-01:00", 
-            "SUNDAY: 16:00-00:00"
+            "15:30-23:00", 
+            "15:30-23:00", 
+            "15:30-23:00", 
+            "16:00-23:00", 
+            "16:00-23:00", 
+            "16:00-01:00", 
+            "16:00-00:00"
             ],
             img: "services/entertainments/space_cinema.jpeg",
             map: "The+Space+Cinema,Trieste,Italy",
             info:[
-                "website: https://www.thespacecinema.it/i-nostri-cinema/trieste/al-cinema",
-                "phone: +39 892111",
+                "https://www.thespacecinema.it/i-nostri-cinema/trieste/al-cinema",
+                "Phone: +39 892111",
             ]
         },
         {
@@ -884,21 +884,21 @@ export default async (models) => {
             "The entire program is available on their website."
             ],
             time:[
-                "Ticket office:",
-                "MONDAY: 15:30-23:00", 
-                "TUESDAY: 09:00-16:00", 
-                "WEDNESDAY: 09:00-16:00", 
-                "THURSDAY: 09:00-16:00", 
-                "FRIDAY: 09:00-16:00", 
-                "SATURDAY: 09:00-16:00", 
-                "SUNDAY: 09:00-13:30"
+                // "Ticket office:",
+                "ticket office 15:30-23:00", 
+                "ticket office 09:00-16:00", 
+                "ticket office 09:00-16:00", 
+                "ticket office 09:00-16:00", 
+                "ticket office 09:00-16:00", 
+                "ticket office 09:00-16:00", 
+                "ticket office 09:00-13:30"
                 ],
             img: "services/entertainments/teatro_verdi.jpeg",
             map: "Teatro+Verdi,Trieste,Italy",
             info:[
-                "website: www.teatroverdi-trieste.com/en/",
-                "phone: +39 040 6722298 / 040 6722299",
-                "email: boxoffice@teatroverdi-trieste.com or info@teatroverdi-trieste.com"
+                "http://www.teatroverdi-trieste.com/en/",
+                "Phone: +39 040 6722298 / 040 6722299",
+                "Email: boxoffice@teatroverdi-trieste.com or info@teatroverdi-trieste.com"
             ]
         },
     ]

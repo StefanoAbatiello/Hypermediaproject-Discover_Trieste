@@ -15,7 +15,10 @@
             <div class="card-text mt-0 ps-2">
               <tab-card-time
                 :id="id"
+                :name="name"
+                :service-type-id="serviceTypeId"
                 :description="description"
+                :time-info="timeInfo"
                 :time="time"
                 :address="address"
                 :map="map"
@@ -66,6 +69,10 @@ export default {
       type: Number,
       required: true,
     },
+    serviceTypeId:{
+      type: Number,
+      required: true,
+    },
     address: {
       type: String,
       required: true,
@@ -89,8 +96,25 @@ export default {
     info:{
       type:Array,
       required:true,
-    }
+    },
   },
+  data(){
+  const day = [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ];
+  const timeInfo = []
+    for (let index = 0; index < 7; index++) {
+    timeInfo.push({ day: day[index], hour: this.time[index] })
+    }
+    return {timeInfo}
+  },
+  
 }
 </script>
 
@@ -101,13 +125,13 @@ export default {
   width: 70%;
   height: 50px;
   left: 0px;
-  background-color: rgb(65, 105, 225,0.7);
+  background-color: rgb(65, 105, 225,0.7); 
   color: white;
   margin-left: 0px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 0px;
-  font-size: 30px;
+  font-size: 2vw;
   border-radius: 0px 10px 10px 0px;
 }
 .card {
@@ -139,4 +163,9 @@ export default {
   /* min-width: 100px; */
   border-radius: 20px;
 }
+@media (max-width: 762px){
+    .text-block{
+        font-size: 4vw;
+    }
+}   
 </style>

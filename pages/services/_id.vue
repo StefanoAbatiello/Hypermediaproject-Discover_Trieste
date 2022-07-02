@@ -30,6 +30,7 @@
           <serviceCard
             v-for="(service, serviceIndex) of serviceList"
             :id="service.id"
+            :service-type-id="service.serviceTypeId"
             :key="`service-index-${serviceIndex}`"
             :name="service.name"
             :address="service.address"
@@ -46,15 +47,12 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 import ServiceCard from '~/components/ServiceCard.vue'
 export default {
   name: 'ServiceDetailsPage',
   components: {
     ServiceCard,
   },
-  mixins: [CommonMixin],
-
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/service/' + id)
@@ -95,13 +93,6 @@ export default {
 .image-header {
   opacity: 0.9;
   width: 100%;
-}
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
-.description {
-  font-size: 2vw;
 }
 .botton-cont {
   position: relative;
