@@ -1,7 +1,9 @@
 <template>
+<!-- Component used to create the header of the page -->
   <nav
     class="navbar navbar-expand-md px-3 pt-0 nav-fill w-100 header sticky-top"
   >
+  <!-- Logo of the page that is all a link to the homePage -->
     <a href="/">
       <img
         :src="require(`~/assets/page-logo.png`)"
@@ -9,6 +11,7 @@
         alt="logo to home"
       />
     </a>
+    <!-- Menu icon for small screens -->
     <button
       class="navbar-toggler"
       type="button"
@@ -26,7 +29,9 @@
       class="button collapse navbar-collapse links"
       @click="isActive = !isActive"
     >
+    <!-- List of all the link to the section of the page -->
       <ul class="navbar-nav mt-2 mt-lg-0">
+        <!-- single element of the list -->
         <li
           v-for="(navItem, navItemIndex) of headerList"
           :key="`navItem${navItemIndex}`"
@@ -77,6 +82,7 @@ export default {
     }
   },
   methods: {
+    // If the icon menù is shown, when a link is clicked the menu-window is closed
     closeMenu() {
       const menuShown = document
         .getElementById('navbarToggler')

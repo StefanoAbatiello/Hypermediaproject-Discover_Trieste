@@ -1,10 +1,13 @@
 <template>
+  <!-- Component used to display the information in a single Poi/Event -->
   <div>
+    <!-- All the icons of the section are displayed -->
     <ul
       id="myTab"
       class="nav nav-tabs justify-content-between nav-justified"
       role="tablist"
     >
+    <!-- accessibility icon -->
       <li class="nav-item" role="presentation">
         <button
           id="tab"
@@ -17,6 +20,7 @@
           <span class="material-icons tab-icon"> accessibility_new </span>
         </button>
       </li>
+      <!-- Opening Time Icon -->
       <li class="nav-item" role="presentation">
         <button
           id="tab"
@@ -29,6 +33,7 @@
           <span class="material-icons tab-icon"> schedule </span>
         </button>
       </li>
+      <!-- Tickets icon -->
       <li class="nav-item" role="presentation">
         <button
           id="tab"
@@ -42,6 +47,7 @@
         </button>
       </li>
     </ul>
+    <!-- Contents of accessibility -->
     <div id="myTabContent" class="tab-content">
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
         <div class="row justify-content-between">
@@ -59,6 +65,7 @@
           </div>
         </div>
       </div>
+      <!-- Content of Opening Time -->
       <div id="time" class="tab-pane fade show active" role="tabpanel">
         <div
           v-for="(time, timeIndex) of timeInfo"
@@ -69,6 +76,7 @@
           <div class="col-6 text text-center">{{ time.hour }}</div>
         </div>
       </div>
+      <!-- Content of Tickets price -->
       <div id="prices" class="tab-pane text fade" role="tabpanel">
         It is accessible in different prices:
         <ul>
@@ -79,6 +87,7 @@
             {{ price }}
           </li>
         </ul>
+        <!-- show the link to the website of the content -->
         <div v-if="website !== null">
           For more information about the tickets visit:
           <a :href="website[0]" target="_blank">{{ website[1] }}</a>

@@ -1,11 +1,15 @@
 <template>
+<!-- HomePage of the Website -->
   <div>
+    <!-- Header images -->
     <header-carousel
       class="carousel"
       :images="image"
     />
+    <!-- Title -->
     <h1 class="title">Welcome to Trieste</h1>
     <section class="services-list">
+      <!-- Short Description of Trieste -->
       <div class="container">
         <p class="mt-4">
           Trieste is the regional capital of Friuli-Venezia Giulia and European
@@ -13,10 +17,11 @@
           that enchant millions of tourists every year and immerse yourself in
           the heart of the city through the site: analyze points of interest one
           by one or let you inspire by our itineraries, join the best events of
-          the city collecting all the userful information regarding them or
+          the city collecting all the useful information regarding them or
           simply find the service you need in the dedicated section! Have a nive
           discovering session!
         </p>
+        <!-- List of alle the section of the page -->
         <div class="container">
           <div
             class="
@@ -25,6 +30,7 @@
               justify-content-center
             "
           >
+          <!-- Single Card -->
             <home-card
               v-for="(item, itemIndex) of names"
               :id="item.id"

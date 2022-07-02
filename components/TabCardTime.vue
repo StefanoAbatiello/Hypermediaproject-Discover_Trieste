@@ -1,16 +1,14 @@
 <template>
+  <!-- Component used to display the information in TypeOfServices -->
   <div class="justified-content-start">
     <div>
+      <!-- Showing the icon of info -->
       <ul
         :id="`${id}`"
         class="nav nav-tabs justify-content-between nav-justified"
         role="tablist"
       >
-        <!-- <ul
-        :id="`${id}`"
-        class="nav flex-column nav-pills nav-justified ps-0 pe-0 pt-4"
-        role="tablist"
-      > -->
+      <!-- icon for the general info -->
         <li class="nav-item" role="presentation">
           <button
             :id="`${id}`"
@@ -23,6 +21,7 @@
             <span class="material-icons icon"> info </span>
           </button>
         </li>
+        <!-- icon for the opening time -->
         <li class="nav-item" role="presentation">
           <button
             :id="`${id}`"
@@ -35,6 +34,7 @@
             <span class="material-icons icon"> schedule </span>
           </button>
         </li>
+        <!-- Icon for the map -->
         <li class="nav-item" role="presentation">
           <button
             :id="`${id}`"
@@ -47,6 +47,7 @@
             <span class="material-icons icon"> place </span>
           </button>
         </li>
+        <!-- icon for the contact section -->
         <li class="nav-item" role="presentation">
           <button
             :id="`${id}`"
@@ -60,10 +61,8 @@
           </button>
         </li>
       </ul>
-      <!-- </div> -->
+      <!-- content of the general info -->
       <div id="myTabContent" class="tab-content d-flex">
-        <!-- <div class="col-10 pt-3 ps-0">
-        <div :id="`${id}`" class="tab-content d-flex"> -->
         <div
           :id="`description-${id}`"
           class="tab-pane fade show active"
@@ -83,6 +82,7 @@
             </div>
           </div>
         </div>
+        <!-- Content of the opening time -->
         <div
           :id="`time-${id}`"
           class="tab-pane fade"
@@ -109,6 +109,7 @@
             </div>
           </div>
         </div>
+        <!-- Showing the map -->
         <div
           :id="`address-${id}`"
           class="tab-pane fade"
@@ -128,6 +129,7 @@
             </iframe>
           </div>
         </div>
+        <!-- Contents of contact info -->
         <div
           :id="`info-${id}`"
           class="tab-pane fade show"

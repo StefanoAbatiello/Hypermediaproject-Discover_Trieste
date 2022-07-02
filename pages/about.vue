@@ -1,11 +1,16 @@
 <template>
+<!-- Page to Describe some important information about Trieste -->
   <div class="mb-4">
+    <!-- header image -->
     <header-carousel
       class="carousel"
       :images="image"
     />
+    <!-- title -->
     <h1 class="title">About Trieste</h1>
+    <!-- Content of the Page -->
     <div class="container">
+      <!-- Single Paragraph -->
       <p class="mt-4">
         The city of Trieste is located in northeastern Italy, bordering
         Slovenia, and is the capital of the autonomous region Friuli-Venezia
@@ -14,6 +19,7 @@
         important seaport in the region.
       </p>
       <img class="map" :src="require(`~/assets/homeImg/ancientMap.jpeg`)" alt="ancient map"/>
+      <!-- Single Paragraph -->
       <p class="mt-3">
         Trieste's population is an ethnic mix of its neighbouring regions and
         countries: Venice, Austria and Slovenia. The dominant local Venetian
@@ -23,6 +29,7 @@
         Venetian and Slovene languages are considered autochthonous to the area.
         There are also a small number of German language speakers.
       </p>
+      <!-- Single Paragraph -->
       <p class="mt-2">
         Geographically,Trieste enjoys a unique and beautiful natural location as
         it is surrounded by the Carsic hills and the Adriatic Sea. The quality

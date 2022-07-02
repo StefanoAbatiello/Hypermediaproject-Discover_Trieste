@@ -1,11 +1,15 @@
 <template>
+<!-- page of the single event -->
   <div>
+    <!-- a carousel of images related to the event is shown -->
     <header-carousel class="carousel" :images="img"/>
+    <!-- main section of the event -->
     <section class="main-container">
       <div class="container">
         <div class="row justify-content-between">
           <main class="col-lg-7">
             <section class="main-text">
+              <!-- breadcrumps -->
               <nuxt-link to="/events">
                 <div class="btn back-btn px-0">
                   <h4>
@@ -16,11 +20,14 @@
                   </h4>
                 </div>
               </nuxt-link>
+              <!-- title -->
               <h2 class="mb-3 title">{{ name }}</h2>
+              <!-- Date of the event -->
               <h5>
                 <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}
               </h5>
+              <!-- Description of the event -->
               <div class="mt-5 description-events">
                 <p
                   v-for="(text, textIndex) of description"
@@ -32,7 +39,9 @@
               </div>
             </section>
           </main>
+          <!-- contents in the aside secection -->
           <aside class="col-lg-4">
+            <!-- related poi with the event -->
             <div class="sticky-top row justify-content-between pt-1 info">
               <div class="my-5 col-lg-12 col-md-5 col-sm-12 col-xs-12 location">
                 <related-card
@@ -45,6 +54,7 @@
                   text="This event take place at:"
                 />
               </div>
+              <!-- additional informations of event -->
               <div class="mt-3 col-lg-12 col-md-7 col-sm-12 col-xs-12 tab">
                 <tab-card
                   :access-info="accessInfo"
@@ -100,14 +110,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    backToEvents() {
-      this.$router.push('/events/')
-    },
-    goToPoi(poiId) {
-      this.$router.push('/pois/' + poiId)
-    },
   },
 }
 </script>

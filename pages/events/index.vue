@@ -1,10 +1,12 @@
 <template>
   <div>
+    <!-- Image to display in the header part of the page -->
     <div class="image-header mb-5">
       <img class="img" :src="require(`~/assets/homeImg/eventCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Events</h1>
     </div>
+    <!-- filters section -->
     <section class="container filters">
       <div class="row row-cols-4 justify-content-start">
         <div class="col-sm-4 col-lg-3">
@@ -19,6 +21,7 @@
         </div>
       </div>
     </section>
+    <!-- Part to display the cards of all events -->
     <section class="mt-3 event-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
@@ -54,6 +57,7 @@ export default {
     }
   },
   methods: {
+    // Method to handle the content of the displayed filters
     filterSeason(season) {
       const filters = document.getElementsByClassName('filter')
       for (let i = 0; i < filters.length; i++) {
@@ -74,6 +78,7 @@ export default {
         }
       }
     },
+    // method to display all the events in the selected season
     seeSeason(season) {
       const events = document.getElementsByClassName('event')
       for (let i = 0; i < events.length; i++) {
@@ -84,6 +89,7 @@ export default {
         }
       }
     },
+    // Method to display all the events, when a filter is applied
     seeAll() {
       const events = document.getElementsByClassName('event')
       for (let i = 0; i < events.length; i++) {

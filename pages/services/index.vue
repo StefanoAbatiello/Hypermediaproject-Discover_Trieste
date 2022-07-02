@@ -1,9 +1,12 @@
 <template>
+<!-- Page to display all the type of services available -->
   <div>
+    <!-- header image -->
     <div class="image-header mb-5">
       <img class="img" :src="require(`~/assets/homeImg/serviceCopertina.jpeg`)" alt="background"/>
       <h1 class="title">Types of service</h1>
     </div>
+    <!-- List of all type of services available -->
     <section class="services-list">
       <div class="container">
         <div
@@ -12,6 +15,7 @@
             justify-content-center
           "
         >
+        <!-- Single type of Service -->
           <preview-card
             v-for="(services, servicesIndex) of servicesList"
             :id="services.id"

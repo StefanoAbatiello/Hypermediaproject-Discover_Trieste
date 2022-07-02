@@ -1,12 +1,16 @@
 <template>
+<!-- Page to display all itineraries available -->
   <div>
+    <!-- Header of the page -->
     <div class="image-header mb-5">
       <img class="img" :src="require(`~/assets/homeImg/itineraryCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Itineraries</h1>
     </div>
+    <!-- List of all the itineraries available -->
     <div class="container">
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+        <!-- preview of the single itinerary -->
         <preview-card
           v-for="(it, itineraryIndex) of itineraryList"
           :id="it.id"

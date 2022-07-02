@@ -1,12 +1,18 @@
 <template>
+ <!-- component used to didplay the related card in a single event/poi -->
+ <!-- all the card is clickable --> 
   <nuxt-link class="p-0" :to="`/${category}/${id}`">
     <div class="btn m-0 p-0 responsive text-box">
+      <!-- Title of the card -->
       <h5 class="text-center mt-2 p-0">
+        <!-- icon to display with the title -->
         <span class="material-icons icon"> {{ icon }} </span>
         {{ text }}
       </h5>
+      <!-- image to display in the card -->
       <div class="img-container p-0">
         <img :src="require(`~/assets/${img}`)" class="card-img" alt=""/>
+        <!-- text to display above the image -->
         <div class="text-block">
           <h5>{{ name }}</h5>
         </div>

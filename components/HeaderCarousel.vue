@@ -1,5 +1,7 @@
 <template>
+  <!-- This component is used to insert the carousel in the top part of some pages -->
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Part to display the button to switch from one photo to another -->
     <div class="carousel-indicators">
       <button
         type="button"
@@ -22,6 +24,7 @@
         aria-label="Slide 3"
       ></button>
     </div>
+    <!-- Part to load the photos in the carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3500">
         <img

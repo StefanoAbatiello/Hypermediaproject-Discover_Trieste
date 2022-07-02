@@ -1,13 +1,17 @@
 <template>
+  <!-- Component used to insert the card to switch the section from the homepage -->
   <div class="col my-3">
     <div class="card">
+      <!-- the entire card is clickable -->
       <nuxt-link :to="`${path}`">
         <div class="container img-container m-0 p-0">
+          <!-- image to show in the card -->
           <img
             class="p-0 img"
             :src="require(`~/assets/${img}`)"
             :alt="alt"
           />
+          <!-- Text to display in the card -->
           <div class="text-block py-3">
             {{ title }}
           </div>

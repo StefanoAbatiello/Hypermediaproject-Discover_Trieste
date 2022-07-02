@@ -1,13 +1,17 @@
 <template>
+<!-- page to display all the pois available -->
   <div>
+    <!-- header image of the page -->
     <div class="image-header mb-5">
       <img class="img" :src="require(`~/assets/homeImg/trieste20.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Points of Interest</h1>
     </div>
+    <!-- List of all the pois -->
     <section class="poi-list">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+          <!-- Single Poi of the list -->
           <preview-card
             v-for="(poi, poiIndex) of poiList"
             :id="poi.id"

@@ -1,18 +1,26 @@
 <template>
+<!-- Component used to display the single step in a single itinerary -->
   <div class="container-fluid pb-2">
     <div class="card m-1 shadow-lg p-3">
+      <!-- link to the correlated poi of the step --> 
       <nuxt-link :to="`/pois/${id}`" style="text-decoration: none">
+        <!-- Based on its number, a step is displayed left or right. Odd numbers are displayed left, even ones right -->
+
+        <!-- Odd steps -->
         <div
           v-if="notEven(id)"
           class="row no-gutters d-flex px-3 py-2 justify-content-start"
         >
+
           <div class="col-md-5 m-0 p-0">
+            <!-- Step image --> 
             <img
               :src="require(`~/assets/${img}`)"
               class="img responsive card-image"
               alt=""
             />
           </div>
+          <!-- Text to display inside the step -->
           <div class="col-md-7 m-0 p-0">
             <div class="card-body1 ps-3 p-0">
               <h3 class="card-title">{{ name }}</h3>
@@ -23,7 +31,9 @@
           </div>
         </div>
 
+        <!-- even steps -->
         <div v-else class="row no-gutters d-flex px-3 py-2 justify-content-end">
+          <!-- Text to display inside the step -->
           <div class="col-md-7 m-0 p-0">
             <div class="card-body2 pe-3 p-0">
               <h3 class="card-title">{{ name }}</h3>
@@ -33,6 +43,7 @@
             </div>
           </div>
           <div class="col-md-5 m-0 p-0">
+            <!-- Step image -->
             <img
               :src="require(`~/assets/${img}`)"
               class="img responsive card-image"

@@ -1,12 +1,16 @@
 <template>
+<!-- page to display a Type of Service -->
   <div>
+    <!-- Header image -->
     <div class="image-header mb-3" >
       <img class="img" style="height: 30rem" :src="require(`~/assets/${img}`)" alt="background"/>
     </div>
+    <!-- main section -->
     <section class="main-content">
       <div class="container">
         <div class="row-md d-flex justify-content-between sign">
           <div class="col">
+            <!-- Breadcrumps -->
             <nuxt-link to="/services">
               <div class="btn back-btn px-0">
                 <h4>
@@ -17,16 +21,20 @@
                 </h4>
               </div>
             </nuxt-link>
+            <!-- title -->
             <h2 class="mb-5 title">{{ title }}</h2>
           </div>
         </div>
 
+        <!-- Short description of the service -->
         <div class="m-0 des-div">
           <p class="description lead ps-0 p-2">
             {{ description }}
           </p>
         </div>
+        <!-- List of all the same service -->
         <div class="row-md mt-3">
+          <!-- single service -->
           <serviceCard
             v-for="(service, serviceIndex) of serviceList"
             :id="service.id"

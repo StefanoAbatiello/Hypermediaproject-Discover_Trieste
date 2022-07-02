@@ -1,15 +1,19 @@
 <template>
+  <!-- component used to display one service in a dedicated typeOfService page -->
   <div class="container-fluid m-0">
     <div class="card m-0 pb-3 px-3" style="width: 100%">
       <div class="row gx-5">
         <div class="col-md-6 p-0">
           <div class="container mt-4 p-0">
+            <!-- image to display -->
             <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" alt=""/>
+            <!-- text to display above the image -->
             <div class="text-block mt-4"> 
               {{ name }}
             </div> 
           </div>
         </div>
+        <!-- here is called the tab-card-time component to display the info of a service -->
         <div class="col-md-6 mb-2 p-0">
           <div class="card-body p-0 pt-5">
             <div class="card-text mt-0 ps-2">

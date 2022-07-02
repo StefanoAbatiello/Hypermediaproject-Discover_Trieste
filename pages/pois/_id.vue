@@ -1,11 +1,15 @@
 <template>
+<!-- Page to describe a single POI -->
   <div>
+    <!-- Header images -->
     <header-carousel class="carousel" :images="img" />
+    <!-- Main part of the page -->
     <section class="main-content">
       <div class="container">
         <div class="row justify-content-between">
           <main class="col-lg-7">
             <section class="main-text">
+              <!-- Breadcrumps -->
               <nuxt-link class="breadcrumps" to="/pois">
                 <div class="btn back-btn px-0">
                   <h4>
@@ -16,11 +20,14 @@
                   </h4>
                 </div>
               </nuxt-link>
+              <!-- Title -->
               <h2 class="mb-3 title">{{ name }}</h2>
+              <!-- Address of the POI -->
               <p>
                 <span class="material-icons px-0 place-icon"> place </span>
                 {{ data.poi.directions }}
               </p>
+              <!-- Description of the POI -->
               <div class="mt-5 description-poi">
                 <p
                   v-for="(text, textIndex) of description"
@@ -30,6 +37,7 @@
                   {{ text }}
                 </p>
               </div>
+              <!-- Additional information of the POI -->
               <div class="mt-3 tab">
                 <tab-card
                   :access-info="accessInfo"
@@ -40,7 +48,9 @@
               </div>
             </section>
           </main>
+          <!-- aside contents of the page -->
           <aside class="col-lg-4">
+            <!-- Display the related Itinerary, the POI is part of that itinerary -->
             <div class="row">
               <div class="my-3 col-12 related-links">
                 <related-card
@@ -53,6 +63,7 @@
                   text="It is part of "
                 />
               </div>
+              <!-- If a POI hosts an event it will be shown below the related itinerary -->
               <div v-if="data.relatedEvent!==null" class="col-12 related-link" >
                 <related-card
                   :id="data.relatedEvent.id"
@@ -68,6 +79,7 @@
           </aside>
         </div>
 
+        <!-- Map with the location of the poi -->
         <section>
           <div class="map rounded responsive mt-3">
             <iframe
@@ -143,11 +155,6 @@ export default {
         }
       ]
     }
-  },
-  methods: {
-    backToPois() {
-      this.$router.push('/pois/')
-    },
   },
 }
 </script>

@@ -1,8 +1,12 @@
 <template>
+  <!-- component used to display the single card in index page of POIs, events, Typeof Services and Itineraries -->
+  <!-- season is an attribute used only by events to determine the season of an event -->
   <div :id="`${season}`" class="col my-3">
     <div class="card">
+      <!-- Here there is the link to the related single page -->
       <nuxt-link :to="`/${category}/${id}`">
         <div class="container m-0 p-0">
+          <!-- Image to show in the card -->
           <img
             class="card-img-top img"
             :src="require(`~/assets/${img}`)"
@@ -10,8 +14,11 @@
             style="width: 100%; height: 200px"
           />
         </div>
+        <!-- text to display in the preview -->
         <div class="btn card-body">
+          <!-- title of the card -->
           <h3 class="title text-center">{{ name }}</h3>
+          <!-- only for itineraries or events there are icons to show additional info -->
           <div v-if="category==='itineraries' || category==='events'">
           <h5 class="text-start" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}

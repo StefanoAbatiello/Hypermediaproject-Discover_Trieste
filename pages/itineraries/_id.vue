@@ -1,10 +1,13 @@
 <template>
+<!-- Page to describe a single itinerary -->
   <div>
+    <!-- images to display in the header of the page -->
     <header-carousel class="carousel" :images="img" />
-
+    <!-- main part of the event -->
     <section class="main-content">
       <div class="container">
         <section class="main-text">
+          <!-- Breadcrumps -->
           <nuxt-link to="/itineraries">
             <div class="btn back-btn px-0">
               <h4>
@@ -15,13 +18,16 @@
               </h4>
             </div>
           </nuxt-link>
+          <!-- Title -->
           <h2 class="mb-5">{{ name }}</h2>
+          <!-- Description of the itinerary -->
           <div class="description-it">
             <p>
               {{ description }}
             </p>
           </div>
         </section>
+        <!-- Map with the steps of the itinerary -->
         <section>
           <div class="map rounded responsive mt-3">
             <iframe
@@ -35,6 +41,7 @@
             </iframe>
           </div>
         </section>
+        <!-- Cards to show the steps of the itinerary -->
         <div class="list-fluid mt-5 list">
           <itinerary-step
             v-for="(poi, poiIndex) of poiList"
