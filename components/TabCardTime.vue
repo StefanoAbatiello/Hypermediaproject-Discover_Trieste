@@ -1,8 +1,12 @@
 <template>
   <div class="justified-content-start">
     <div>
-      <ul :id="`${id}`" class="nav nav-tabs justify-content-between nav-justified" role="tablist"> 
-      <!-- <ul
+      <ul
+        :id="`${id}`"
+        class="nav nav-tabs justify-content-between nav-justified"
+        role="tablist"
+      >
+        <!-- <ul
         :id="`${id}`"
         class="nav flex-column nav-pills nav-justified ps-0 pe-0 pt-4"
         role="tablist"
@@ -57,91 +61,111 @@
         </li>
       </ul>
       <!-- </div> -->
-      <div id="myTabContent" class="tab-content d-flex"> 
-      <!-- <div class="col-10 pt-3 ps-0">
+      <div id="myTabContent" class="tab-content d-flex">
+        <!-- <div class="col-10 pt-3 ps-0">
         <div :id="`${id}`" class="tab-content d-flex"> -->
-          <div
-            :id="`description-${id}`"
-            class="tab-pane fade show active"
-            style="height: 50px"
-            role="tabpanel"
-          >
+        <div
+          :id="`description-${id}`"
+          class="tab-pane fade show active"
+          style="height: 50px"
+          role="tabpanel"
+        >
           <div>
-              <p
-                v-for="(text, textIndex) of description"
-                :key="`text-index-${textIndex}`"
-                class="mt-0 description"
-              >
-                {{ text }}
-              </p>
-            </div>          
-            </div>
-          <div
-            :id="`time-${id}`"
-            class="tab-pane fade"
-            style="height: 50px"
-            role="tabpanel"
-          >
-            <div>
-              <p
-                v-for="(text, textIndex) of time"
-                :key="`text-index-${textIndex}`"
-                class="mt-0 description"
-              >
-                {{ text }}
-              </p>
-            </div>
-          </div>
-          <div
-            :id="`address-${id}`"
-            class="tab-pane fade"
-            style="height: 50px; justify-content: center"
-            role="tabpanel"
-          >
-            <!-- {{ address }} -->
-            <div class="map rounded">
-              <iframe
-                width="600"
-                height="250"
-                frameborder="0"
-                style="border: 0"
-                referrerpolicy="no-referrer-when-downgrade"
-                :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}`"
-                allowfullscreen
-              >
-              </iframe>
-            </div>
-          </div>
-          <div
-            :id="`info-${id}`"
-            class="tab-pane fade show"
-            style="height: 50px"
-            role="tabpanel"
-          >
-          <div>
-              <p
-                v-for="(text, textIndex) of info"
-                :key="`text-index-${textIndex}`"
-                class="mt-0 description"
-              >
-                {{ text }}
-              </p>
-          </div>          
+            <p>
+              <span class="place material-icons"> place </span> {{ address }}
+            </p>
+            <p
+              v-for="(text, textIndex) of description"
+              :key="`text-index-${textIndex}`"
+              class="mt-0 description"
+            >
+              {{ text }}
+            </p>
           </div>
         </div>
-       </div> 
+        <div
+          :id="`time-${id}`"
+          class="tab-pane fade"
+          style="height: 50px"
+          role="tabpanel"
+        >
+          <div v-if="serviceTypeId === 1">
+            <div
+              v-for="(t, tIndex) of timeInfo"
+              :key="`time-index-${tIndex}`"
+              class="mt-0 row justify-content-center"
+            >
+              <p class="col-6 text-center">{{ t.day }}</p>
+              <p class="col-6 text-center">{{ t.hour }}</p>
+            </div>
+          </div>
+          <div v-else>
+            <p
+              v-for="(t2, t2Index) of time"
+              :key="`time-index-${t2Index}`"
+              class="mt-0 description"
+            >
+              {{ t2 }}
+            </p>
+          </div>
+        </div>
+        <div
+          :id="`address-${id}`"
+          class="tab-pane fade"
+          style="height: 50px; justify-content: center"
+          role="tabpanel"
+        >
+          <div class="map rounded">
+            <iframe
+              width="600"
+              height="250"
+              frameborder="0"
+              style="border: 0"
+              referrerpolicy="no-referrer-when-downgrade"
+              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}`"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+        <div
+          :id="`info-${id}`"
+          class="tab-pane fade show"
+          style="height: 50px"
+          role="tabpanel"
+        >
+          <div>
+            <p>Click and visit the website of <a :href="info[0]" target="_blank">{{ name}}</a></p>
+            <p> {{ info[1] }} </p>
+            <p v-if="info[3]!==null"> {{ info[2] }} </p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'TabCardTimeComponent',
   props: {
+    name:{
+      type:String,
+      required:true,
+    },
     id: {
       type: Number,
       required: true,
     },
     description: {
+      type: Array,
+      required: true,
+    },
+    serviceTypeId:{
+      type: Number,
+      required:true,
+    },
+    timeInfo: {
       type: Array,
       required: true,
     },
@@ -157,29 +181,18 @@ export default {
       type: String,
       required: true,
     },
-    info:{
+    info: {
       type: Array,
       required: true,
-    }
+    },
   },
 }
 </script>
 
 <style scoped>
-/* .nav-tabs {
-  width: 100%;
-  --max-width: 1000px; --
-} */
 .nav-pills {
   border-bottom-color: royalblue;
 }
-/* .nav-tabs .nav-item {
-  max-height: 60px;
-  border-radius: 20px;
-  margin-bottom: 5px;
-} */
-
-/* .nav-pills .nav-item { */
 .nav-tabs .nav-item {
   max-height: 60px;
   border-radius: 20px;
@@ -187,12 +200,6 @@ export default {
   align-content: center;
   width: 75px;
 }
-/* .nav-tabs .nav-item .nav-link {
-  background-color: transparent;
-  opacity: 0.7;
-  border-radius: 20px;
-} */
-/* .nav-pills .nav-item .nav-link { */
 .nav-tabs .nav-item .nav-link {
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -201,9 +208,6 @@ export default {
   border-radius: 20px;
   font-size: 1.2vw;
 }
-/* .icon {
-  color: royalblue;
-} */
 .icon {
   vertical-align: middle;
   background-color: rgb(65, 105, 225, 0.7);
@@ -212,45 +216,33 @@ export default {
   padding: 3px;
   margin-bottom: 2;
 }
-/* .nav-tabs .nav-item .nav-link.active {
-  color: transparent;
-  border: transparent;
-  opacity: 1;
-} */
-
-/* .nav-pills .nav-item .nav-link.active { */
+.place {
+  color: royalblue;
+  vertical-align: middle;
+  font-size: 30px;
+  padding-bottom: 4px;
+}
 .nav-tabs .nav-item .nav-link.active {
   color: white;
   border: transparent;
   opacity: 1;
   font-size: 1.2vw;
-
-  /* background-color: rgb(65, 105, 225, 0.3); */
 }
-/* .nav-pills .nav-item .nav-link.active .icon { */
 .nav-tabs .nav-item .nav-link.active .icon {
   background-color: royalblue;
 }
-
 .tab-content {
   padding: 20px;
   padding-top: 20px;
-  /* max-height: 200px; */
   width: 100%;
   height: auto;
   min-height: 280px;
   overflow: auto;
-  /* background-color: lightblue; */
 }
-
 .tab-content .tab-pane {
-  /* background-color: lightblue; */
   color: black;
   height: auto;
   padding-bottom: 2;
+  width: 100%;
 }
-
-/* .map{
-margin-left: 3vw;
-} */
 </style>
