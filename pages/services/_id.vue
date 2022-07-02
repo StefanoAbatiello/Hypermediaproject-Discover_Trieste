@@ -29,8 +29,8 @@
         <div class="row-md mt-3">
           <serviceCard
             v-for="(service, serviceIndex) of serviceList"
-            :key="`service-index-${serviceIndex}`"
             :id="service.id"
+            :key="`service-index-${serviceIndex}`"
             :service-type-id="service.serviceTypeId"
             :name="service.name"
             :address="service.address"
