@@ -4,7 +4,7 @@
       <div class="col-lg-5 col-md-6 col-sm-7 px-0">
         <a href="/">
           <img
-            :src="require(`~/assets/logo.png`)"
+            :src="require(`~/assets/page-logo.png`)"
             class="img responsive logo-sito"
             alt="logo to home"
           />
@@ -47,7 +47,7 @@ export default {
   transform: translate(-50%, 0);
 }
 .logo-sito {
-  width: 70%;
+  width: 50%;
   height: 6rem;
 }
 .info{
@@ -57,7 +57,7 @@ export default {
   height: 6rem;
 }
 .divider {
-  width: 90%;
+  width: 75%;
   color: white;
   margin-left: 50%;
   transform: translate(-50%, 0);
