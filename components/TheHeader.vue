@@ -73,6 +73,10 @@ export default {
           name: 'About',
           path: '/about/',
         },
+        {
+          name: 'Contacs Us',
+          path: '/contacts/',
+        },
       ],
     }
   },
