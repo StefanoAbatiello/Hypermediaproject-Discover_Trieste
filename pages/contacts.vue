@@ -7,17 +7,11 @@
     </div>
     <div class="container">
       <p class="mt-4">
-       Here you can find some useful contacts
+       Do you need more information about Trieste? Here you can find some useful contacts and links in order to deep explore some city aspects 
       </p>
-      <p class="mt-3">
-        Trieste's population is an ethnic mix of its neighbouring regions and
-        countries: Venice, Austria and Slovenia. The dominant local Venetian
-        dialect of Trieste is called Triestine (in Italian "Triestino"). This
-        dialect and the official Italian language are spoken in the city centre
-        while Slovene is spoken in several of the immediate suburbs. The
-        Venetian and Slovene languages are considered autochthonous to the area.
-        There are also a small number of German language speakers.
-      </p>
+      <b>Touristic information</b>
+      
+      <b>University contacts</b>
       <p class="mt-2">
         Geographically,Trieste enjoys a unique and beautiful natural location as
         it is surrounded by the Carsic hills and the Adriatic Sea. The quality
