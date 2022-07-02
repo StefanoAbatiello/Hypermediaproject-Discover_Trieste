@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/serviceCopertina.jpeg`)" alt="backgrounds"/>
+      <img class="img" :src="require(`~/assets/homeImg/serviceCopertina.jpeg`)" alt="background"/>
       <h1 class="title">Types of service</h1>
     </div>
     <section class="services-list">

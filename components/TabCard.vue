@@ -45,15 +45,15 @@
     <div id="myTabContent" class="tab-content">
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
         <div class="row justify-content-between">
-          <div class="col">
+          <div class="col text">
             <span class="material-icons access-icon">{{ accessInfo[0] }}</span
             >Step-Free
           </div>
-          <div class="col">
+          <div class="col text">
             <span class="material-icons access-icon">{{ accessInfo[1] }}</span
             >Flyers in Braille
           </div>
-          <div class="info col">
+          <div class="info col text">
             <span class="material-icons access-icon">{{ accessInfo[2] }}</span
             >Audio Description
           </div>
@@ -65,11 +65,11 @@
           :key="`time-index-${timeIndex}`"
           class="row justify-content-center"
         >
-          <div class="col-6 text-center">{{ time.day }}</div>
-          <div class="col-6 text-center">{{ time.hour }}</div>
+          <div class="col-6 text text-center">{{ time.day }}</div>
+          <div class="col-6 text text-center">{{ time.hour }}</div>
         </div>
       </div>
-      <div id="prices" class="tab-pane fade" role="tabpanel">
+      <div id="prices" class="tab-pane text fade" role="tabpanel">
         It is accessible in different prices:
         <ul>
           <li
@@ -143,5 +143,9 @@ export default {
 .access-icon {
   vertical-align: bottom;
   color: royalblue;
+}
+.text{
+  font-size: 22px;
+  font-weight: 400;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid px-0">
-    <div class="mb-3" >
-      <img class="image-header" style="height: 30rem" :src="require(`~/assets/${img}`)"/>
+  <div>
+    <div class="image-header mb-3" >
+      <img class="img" style="height: 30rem" :src="require(`~/assets/${img}`)" alt="background"/>
     </div>
     <section class="main-content">
       <div class="container">
@@ -91,10 +91,11 @@ export default {
   transform: translate(-50%, -50%);
 }
 .image-header {
-  opacity: 0.9;
-  width: 100%;
+  height: 30rem;
 }
-.botton-cont {
-  position: relative;
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

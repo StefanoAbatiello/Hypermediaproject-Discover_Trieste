@@ -4,7 +4,7 @@
       <div class="row gx-5">
         <div class="col-md-6 p-0">
           <div class="container mt-4 p-0">
-            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" />
+            <img :src="require(`~/assets/${img}`)" class="card-img mt-4 p-0" alt=""/>
             <div class="text-block mt-4"> 
               {{ name }}
             </div> 
@@ -29,27 +29,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="card pb-0 me-0 ms-0">
-      <h2 class="card-title pt-4 pb-0 ps-3 pe-0">{{ name }}</h2>
-      <div class="row-sm d-flex justify-content-start p-0 m-0">
-        <div class="col-sm-8 ps-0 ms-2 me-0 pt-0 tab">
-          <div class="card-text p-0 ps-2 pb-3 pt-3">
-            <tab-card-time
-              :id="id"
-              :description="description"
-              :time="time"
-              :address="address"
-            />
-          </div>
-        </div>
-        <div class="col-sm-4 ms-3 card-body m-0 mt-0 mb-0 me-4">
-          <img
-            :src="require(`~/assets/${img}`)"
-            class="card-image img-responsive pb-0 mb-4"
-          />
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 

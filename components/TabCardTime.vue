@@ -70,17 +70,17 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div>
-            <p>
+          <div class="text">
+            <h5 class="mb-0">
               <span class="place material-icons"> place </span> {{ address }}
-            </p>
-            <p
+            </h5>
+            <div
               v-for="(text, textIndex) of description"
               :key="`text-index-${textIndex}`"
               class="mt-0 description"
             >
               {{ text }}
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -89,24 +89,24 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div v-if="serviceTypeId === 1">
+          <div v-if="serviceTypeId === 1" class="text">
             <div
               v-for="(t, tIndex) of timeInfo"
               :key="`time-index-${tIndex}`"
               class="mt-0 row justify-content-center"
             >
-              <p class="col-6 text-center">{{ t.day }}</p>
-              <p class="col-6 text-center">{{ t.hour }}</p>
+              <div class="col-6 text-center">{{ t.day }}</div>
+              <div class="col-6 text-center">{{ t.hour }}</div>
             </div>
           </div>
-          <div v-else>
-            <p
+          <div v-else class="text">
+            <div
               v-for="(t2, t2Index) of time"
               :key="`time-index-${t2Index}`"
               class="mt-0 description"
             >
               {{ t2 }}
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -134,10 +134,10 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div>
-            <p>Click and visit the website of <a :href="info[0]" target="_blank">{{ name}}</a></p>
-            <p> {{ info[1] }} </p>
-            <p v-if="info[3]!==null"> {{ info[2] }} </p>
+          <div class="text">
+            <h5>Click and visit the website of <a :href="info[0]" target="_blank">{{ name}}</a></h5>
+            <h5> {{ info[1] }} </h5>
+            <h5 v-if="info[2]!=null"> {{ info[2] }} </h5>
           </div>
         </div>
       </div>
@@ -244,5 +244,9 @@ export default {
   height: auto;
   padding-bottom: 2;
   width: 100%;
+}
+.text{
+  font-size: 20px;
+  font-weight: 400;
 }
 </style>

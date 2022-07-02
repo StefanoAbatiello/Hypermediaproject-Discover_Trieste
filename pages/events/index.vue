@@ -26,7 +26,7 @@
             v-for="(event, eventIndex) of eventList"
             :id="event.id"
             :key="`event-index-${eventIndex}`"
-            class="col"
+            class="event"
             :name="event.name"
             :img="event.img"
             :season="event.season"
