@@ -6,7 +6,6 @@
       <img
         :src="require(`~/assets/page-logo.png`)"
         class="img mr-auto ms-2 mt-4 logo-img"
-        href="/"
         alt="logo to home"
       />
     </a>

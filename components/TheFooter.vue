@@ -47,8 +47,8 @@ export default {
   transform: translate(-50%, 0);
 }
 .logo-sito {
-  width: 50%;
-  height: 6rem;
+  height: 100px;
+  width: 300px;
 }
 .info{
   color: white;
@@ -57,7 +57,7 @@ export default {
   height: 6rem;
 }
 .divider {
-  width: 75%;
+  width: 90%;
   color: white;
   margin-left: 50%;
   transform: translate(-50%, 0);
