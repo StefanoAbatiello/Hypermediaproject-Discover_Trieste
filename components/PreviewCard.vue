@@ -70,20 +70,16 @@ export default {
 <style scoped>
 .card:hover {
   opacity: 1;
-  position: relative;
 }
 .card:hover .card-body .icon {
   color: royalblue;
   transform: scale(1.1);
-  height: auto;
   font-weight: 500;
 }
 .card:hover .card-body .title {
   color: royalblue;
   transform: scale(1.05);
-  height: auto;
 }
-
 .card:hover .container .img {
   transform: scale(1.2);
 }
@@ -91,11 +87,8 @@ export default {
   overflow: hidden;
   border-radius: 20px 20px 0px 0px; 
 }
-.card .container .img{
-  border-radius: 20px 20px 0px 0px; 
-}
 .card .card-body .icon {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .card-body{
   width: 100%;
