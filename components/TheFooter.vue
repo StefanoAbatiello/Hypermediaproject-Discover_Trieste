@@ -18,7 +18,6 @@
             alt="comune-logo"
           />
         </a>
-        <p class="info text-start">Tel. 04 06754850</p>
       </div>
     </div>
     <hr class="divider" />
