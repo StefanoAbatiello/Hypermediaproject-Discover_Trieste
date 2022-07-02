@@ -9,16 +9,37 @@
       <p class="mt-4">
        Do you need more information about Trieste? Here you can find some useful contacts and links in order to deep explore some city aspects 
       </p>
-      <b>Touristic information</b>
+      <div>
+        <b>Touristic information</b>
+        <p>website:
+          <a href="https://www.discover-trieste.it/" target="_blank">www.discover-trieste.it</a>
+        </p>
+        <p>e-mail: info.trieste@promoturismo.fvg.it</p>
+      </div>
+
+      <div>
+        <b>University contacts</b>
+        <p>website:
+          <a href="https://www.units.it/" target="_blank">www.units.it</a> 
+        </p>
+        <p>e-mail: scpolitiche.studenti@amm.units.it</p>
+      </div>
       
-      <b>University contacts</b>
-      <p class="mt-2">
-        Geographically,Trieste enjoys a unique and beautiful natural location as
-        it is surrounded by the Carsic hills and the Adriatic Sea. The quality
-        of life is high, and one's leisure time can be spent in tourism, culture
-        and sports without the drawbacks that affect larger Italian cities such
-        as heavy traffic jams, smog, and delinquency.
-      </p>
+      <div>
+        <b>Municipality contacts</b>
+        <p>website:
+          <a href="https://www.comune.trieste.it/" target="_blank">www.comune.trieste.it</a> 
+        </p>
+        <p>e-mail: comune.trieste@certgov.fvg.it</p>
+      </div>
+
+        <div>
+        <b>Emergency contacts</b>
+        <p>Ambulance: 118</p>
+        <p>Triage of Cattinara Hospital: 040 399 4563</p>
+        <p>Police station: 040 303 0661</p>
+        <p>Firefighters station: 040 378 9911</p>
+      </div>
     </div>
   </div>
 </template>
@@ -48,5 +69,10 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+b{
+  font-size: 24px;
+  font-weight: 700;
 }
 </style>
