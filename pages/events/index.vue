@@ -9,12 +9,12 @@
       <div class="row row-cols-4 justify-content-start">
         <div class="col-sm-4 col-lg-3">
           <button id="Summer" class="filter m-1 w-100" @click="filterSeason('Summer')" >
-            <a>summer</a>
+            summer
           </button>
         </div>
         <div class="col-sm-4 col-lg-3">
           <button id="Winter" class="filter m-1 w-100" @click="filterSeason('Winter')" >
-            <a>winter</a>
+            winter
           </button>
         </div>
       </div>
