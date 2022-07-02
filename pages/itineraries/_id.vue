@@ -1,37 +1,40 @@
 <template>
   <div>
-    <header-carousel class="carousel" :images="img"/>
+    <header-carousel class="carousel" :images="img" />
 
     <section class="main-content">
       <div class="container">
         <section class="main-text">
           <nuxt-link to="/itineraries">
             <div class="btn back-btn px-0">
-                <h4>
-                  <span class="material-icons px-0 back-icon">arrow_back_ios</span>
-                  Itineraries
-                </h4></div>
+              <h4>
+                <span class="material-icons px-0 back-icon"
+                  >arrow_back_ios</span
+                >
+                Itineraries
+              </h4>
+            </div>
           </nuxt-link>
-          <h2 class="mb-5 title">{{ name }} </h2>
+          <h2 class="mb-5">{{ name }}</h2>
           <div class="description-it">
             <p>
               {{ description }}
             </p>
           </div>
         </section>
-        <div class="map rounded responsive">
-          <iframe
-            width="100%"
-            height="600"
-            frameborder="0"
-            style="border: 0"
-            referrerpolicy="no-referrer-when-downgrade"
-            :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=${map}`"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-
+        <section>
+          <div class="map rounded responsive mt-3">
+            <iframe
+              width="100%"
+              height="600"
+              referrerpolicy="no-referrer-when-downgrade"
+              frameborder="0"
+              :src="`https://www.google.com/maps/embed/v1/directions?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&origin=${map}`"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </section>
         <div class="list-fluid mt-5 list">
           <itinerary-step
             v-for="(poi, poiIndex) of poiList"
@@ -49,14 +52,12 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 import ItineraryStep from '~/components/ItineraryStep.vue'
 export default {
   name: 'DetailsPage',
   components: {
     ItineraryStep,
   },
-  mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/itineraries/' + id)
@@ -71,21 +72,19 @@ export default {
   head() {
     return {
       title: this.name,
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'here you can find all the suggested itineraries to visit Trieste',
+        }
+      ]
     }
-  },
-  methods: {
-    backToItineraries() {
-      this.$router.push('/itineraries/')
-    },
   },
 }
 </script>
 
 <style scoped>
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
 .backgr {
   background: royalblue;
 }

@@ -1,19 +1,14 @@
 <template>
-  <div class="mb-4">
-    <header-carousel
-      class="carousel"
-      :images="image"
-    />
-    <h1 class="title">About Trieste</h1>
+  <div >
+    <div class="image-header mb-5">
+      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.jpeg`)" alt="background"/>
+      <div class="overlay"></div>
+      <h1>Contact Us</h1>
+    </div>
     <div class="container">
       <p class="mt-4">
-        The city of Trieste is located in northeastern Italy, bordering
-        Slovenia, and is the capital of the autonomous region Friuli-Venezia
-        Giulia and Trieste province. Since it is situated at the head of the
-        Gulf of Trieste, a shallow bay of the Adriatic Sea, it serves as an
-        important seaport in the region.
+       Here you can find some useful contacts
       </p>
-      <img class="map" :src="require(`~/assets/homeImg/ancientMap.jpeg`)" alt="ancient map"/>
       <p class="mt-3">
         Trieste's population is an ethnic mix of its neighbouring regions and
         countries: Venice, Austria and Slovenia. The dominant local Venetian
@@ -30,18 +25,13 @@
         and sports without the drawbacks that affect larger Italian cities such
         as heavy traffic jams, smog, and delinquency.
       </p>
-      <img class="panorama" :src="require(`~/assets/homeImg/panorama.jpeg`)" alt ="view"/>
     </div>
   </div>
 </template>
 
 <script>
-import HeaderCarousel from '~/components/HeaderCarousel.vue'
 export default {
   name: 'AboutPage',
-  components: {
-    HeaderCarousel,
-  },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/about')
     const title = data.title
@@ -57,20 +47,12 @@ export default {
 </script>
 
 <style scoped>
-img {
-  height: 24rem;
-  width: 30rem;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
-  border-radius: 10px 10px 10px 10px;
+.image-header {
+  height: 30rem;
 }
-.title {
+.img {
   width: 100%;
-  text-align: center;
-}
-@media (max-width: 992px) {
-  h1 {
-    top: 8rem;
-  }
+  height: 100%;
+  object-fit: cover;
 }
 </style>

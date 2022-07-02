@@ -1,39 +1,32 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img class="img-responsive img" style="height: 30rem" />
-      <h1> Events </h1>
+      <img class="img" :src="require(`~/assets/homeImg/eventCopertina.jpeg`)" alt="background"/>
+      <div class="overlay"></div>
+      <h1>Events</h1>
     </div>
     <section class="container filters">
-      <div class="row justify-content-start">
-        <div class="col-sm-2">
-          <button
-            id="Summer"
-            class="filter m-1 w-100"
-            @click="filterSeason('Summer')"
-          >
-            <a>summer</a>
+      <div class="row row-cols-4 justify-content-start">
+        <div class="col-sm-4 col-lg-3">
+          <button id="Summer" class="filter m-1 w-100" @click="filterSeason('Summer')" >
+            summer
           </button>
         </div>
-        <div class="col-sm-2">
-          <button
-            id="Winter"
-            class="filter m-1 w-100"
-            @click="filterSeason('Winter')"
-          >
-            <a>winter</a>
+        <div class="col-sm-4 col-lg-3">
+          <button id="Winter" class="filter m-1 w-100" @click="filterSeason('Winter')" >
+            winter
           </button>
         </div>
       </div>
     </section>
     <section class="mt-3 event-list">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
           <preview-card
             v-for="(event, eventIndex) of eventList"
             :id="event.id"
             :key="`event-index-${eventIndex}`"
-            class="event"
+            class="col"
             :name="event.name"
             :img="event.img"
             :season="event.season"
@@ -103,7 +96,7 @@ export default {
 
 <style scoped>
 .filter {
-  font-size: 1.5vw;
+  font-size: 20px;
   background: white;
   border: 1px solid royalblue;
   color: royalblue;
@@ -111,9 +104,21 @@ export default {
   border-radius: 30px 30px 30px 30px;
 }
 .image-header {
-  background-image: url('assets\homeImg\trieste30.jpeg');
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.9;
+  height: 30rem;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.15);
 }
 </style>

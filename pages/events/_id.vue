@@ -9,7 +9,7 @@
               <nuxt-link to="/events">
                 <div class="btn back-btn px-0">
                   <h4>
-                    <span class="material-icons px-0 icon"
+                    <span class="material-icons px-0 back-icon"
                       >arrow_back_ios</span
                     >
                     Events
@@ -18,14 +18,14 @@
               </nuxt-link>
               <h2 class="mb-3 title">{{ name }}</h2>
               <h5>
-                <span class="material-icons px-0 icon"> event </span>
+                <span class="material-icons px-0 date-icon"> event </span>
                 {{ date }}
               </h5>
               <div class="mt-5 description-events">
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
-                  class="mt-3 description"
+                  class="mt-3"
                 >
                   {{ text }}
                 </p>
@@ -33,7 +33,7 @@
             </section>
           </main>
           <aside class="col-lg-4">
-            <div class="sticky-top row justify-content-between pt-1 column">
+            <div class="sticky-top row justify-content-between pt-1 info">
               <div class="my-5 col-lg-12 col-md-5 col-sm-12 col-xs-12 location">
                 <related-card
                   :id="poi.id"
@@ -92,6 +92,13 @@ export default {
   head() {
     return {
       title: this.name,
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'here you can find all the events which take place in Trieste',
+        }
+      ]
     }
   },
   methods: {
@@ -110,10 +117,10 @@ export default {
   display: flex;
   justify-content: center;
 }
-.description {
-  font-size: 20px;
-}
-.icon {
+.material-icons {
   vertical-align: middle;
+}
+.date-icon{
+  color: royalblue;
 }
 </style>

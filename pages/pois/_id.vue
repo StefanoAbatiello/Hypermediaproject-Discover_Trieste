@@ -1,7 +1,6 @@
 <template>
   <div>
-    <header-carousel class="carousel" :images="img"/>
-
+    <header-carousel class="carousel" :images="img" />
     <section class="main-content">
       <div class="container">
         <div class="row justify-content-between">
@@ -19,21 +18,20 @@
               </nuxt-link>
               <h2 class="mb-3 title">{{ name }}</h2>
               <p>
-                <span class="place material-icons"> place </span>
+                <span class="material-icons px-0 place-icon"> place </span>
                 {{ data.poi.directions }}
               </p>
               <div class="mt-5 description-poi">
                 <p
                   v-for="(text, textIndex) of description"
                   :key="`text-index-${textIndex}`"
-                  class="mt-3 description"
+                  class="mt-3"
                 >
                   {{ text }}
                 </p>
               </div>
-              <div class="interlinea">
+              <div class="mt-3 tab">
                 <tab-card
-                  class="mt-3"
                   :access-info="accessInfo"
                   :time-info="timeInfo"
                   :prices="prices"
@@ -44,9 +42,10 @@
           </main>
           <aside class="col-lg-4">
             <div class="row">
-              <div class="my-3 col-12 location">
+              <div class="my-3 col-12 related-links">
                 <related-card
                   :id="itinerary.id"
+                  class="itinerary"
                   :name="itinerary.name"
                   :img="itineraryImage"
                   category="itineraries"
@@ -54,18 +53,16 @@
                   text="It is part of "
                 />
               </div>
-
-              <div v-if="data.relatedEvent !== null">
-                <div class="col-12 location">
-                  <related-card
-                    :id="data.relatedEvent.id"
-                    :name="data.relatedEvent.name"
-                    :img="eventImage"
-                    category="events"
-                    icon="event"
-                    text="It is part of "
-                  />
-                </div>
+              <div v-if="data.relatedEvent!==null" class="col-12 related-link" >
+                <related-card
+                  :id="data.relatedEvent.id"
+                  class="eventy"
+                  :name="data.relatedEvent.name"
+                  :img="eventImage"
+                  category="events"
+                  icon="event"
+                  text="Will hosts "
+                />
               </div>
             </div>
           </aside>
@@ -90,7 +87,6 @@
 </template>
 
 <script>
-import CommonMixin from '~/mixins/common'
 import RelatedCard from '~/components/RelatedCard.vue'
 import TabCard from '~/components/TabCard.vue'
 export default {
@@ -99,7 +95,6 @@ export default {
     RelatedCard,
     TabCard,
   },
-  mixins: [CommonMixin],
   async asyncData({ route, $axios }) {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
@@ -131,23 +126,23 @@ export default {
       img: data.poi.img,
       description: data.poi.description,
       accessInfo: data.poi.accessInfo,
-      // timeInfo: data.poi.timeInfo,
       timeInfo,
       prices: data.poi.prices,
       website: data.poi.website,
       data,
     }
   },
-  data() {},
   head() {
     return {
       title: this.name,
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'here you can find all the point of interest of Trieste',
+        }
+      ]
     }
-  },
-  mounted() {
-    // const date = new Date()
-    // Example on how to use mixinx
-    // console.log(this.formatMyDate(date.toLocaleDateString()))
   },
   methods: {
     backToPois() {
@@ -158,37 +153,13 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  font-size: 4vw;
-  color: royalblue;
-}
 .material-icons {
   vertical-align: middle;
-  font-size: 18px;
 }
-.place {
+.place-icon {
   color: royalblue;
 }
-.mi {
-  font-size: 30pt;
-}
-.icons {
-  font-size: 15pt;
-}
-.interlinea {
-  border-color: royalblue;
-}
-.hour {
-  text-align: left;
-}
-.aside {
-  float: center;
-}
-.description {
-  text-align: justify;
-  text-justify: inter-word;
-}
-.location{
+.related-link {
   display: flex;
   justify-content: center;
 }

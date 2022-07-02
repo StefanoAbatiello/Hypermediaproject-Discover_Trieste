@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="carousel"
-    class="carousel slide"
-    data-bs-ride="carousel"
-  >
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button
         type="button"
@@ -30,29 +26,28 @@
       <div class="carousel-item active" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[0]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="first-img"
         />
       </div>
       <div class="carousel-item" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[1]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="second-img"
         />
       </div>
       <div class="carousel-item" data-bs-interval="3500">
         <img
           :src="require(`~/assets/${images[2]}`)"
-          class="d-block w-100"
+          class="d-block w-100 img"
           alt="third-img"
         />
       </div>
       <div class="overlay"></div>
-      <h1 class="title">{{ title }}</h1>
     </div>
   </div>
-</template>
+</template> 
 
 <script>
 export default {
@@ -61,11 +56,6 @@ export default {
     images: {
       type: Array.String,
       required: true,
-    },
-    title: {
-      type: String,
-      require: false,
-      default: '',
     },
   },
 }
@@ -91,5 +81,16 @@ img {
   height: 100%;
   width: 100%;
   background-color: rgb(0, 0, 0, 0.3);
+}
+@media (max-width: 992px){
+  .carousel {
+  height: 20rem;
+}
+.carousel-inner {
+  height: 20rem;
+}
+img {
+  height: 20rem;
+}
 }
 </style>

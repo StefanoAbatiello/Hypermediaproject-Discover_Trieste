@@ -16,7 +16,7 @@ export default async (models) => {
             description: "The most ancient traces of the urban settlement of Trieste are considered to be the remains of the Roman colony of Tergeste, founded toward the middle of the 1st century B.C. and extending to the northwestern slope of the hill of San Giusto, overlooking the Adriatic Sea. The coast was farther back than it is now, and evidence of the harbor structures have been found along via del Teatro Romano and via Cavana: the wharves, built of sandstone slabs in the 1st and early 2nd century A.D., were in use at least until the 5th century. In 33-32 B.C. the city was enclosed by walls, which soon lost their defensive function and served for containment and terracing of the slope. The lay of the land conditioned urban organization from the outset, with the business district close to the harbor, a largely residential district on the hillside and the political, administrative and religious center at the top of the hill."
         },
         {
-            name: "Discover the multireligious churches",
+            name: "Multireligious churches tour",
             img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
             map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["3 km", "3937 steps"],
@@ -43,7 +43,7 @@ export default async (models) => {
         },
         {
             name: "Viviani-Giberti Palace",
-            img: ["pois/liberty/palazzoVivanti.jpeg", "pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg"],
+            img: ["pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg", "pois/liberty/palazzoVivanti.jpeg"],
             itineraryId: itinerary0.id,
             stepDescription:"The next step is an other Liberty palace built in the same period of the previous step. Here we can observe same difference between these two first houses in terms of facade and side prospets.",
             description: ["Palazzo Viviani Giberti is the only large Trieste Liberty building to be signed off by an Italian architect, Giuseppe Sommaruga. Inaugurated on Christmas Day in 1907 as the Teatro filodrammatico. It later became the Cinema Eden, and now, albeit with another name, remains a cinema.",
@@ -71,7 +71,7 @@ export default async (models) => {
         },
         {
             name: "Bank of Prague",
-            img: ["pois/liberty/bancaPraga.jpeg", "pois/liberty/banca2.jpeg", "pois/liberty/banca3.jpeg"],
+            img: ["pois/liberty/banca2.jpeg", "pois/liberty/banca3.jpeg","pois/liberty/bancaPraga.jpeg"],
             itineraryId: itinerary0.id,
             stepDescription:"This palace is the result of a project realized by Josip Costaperaria and Osvaldo Poliva and represents a clear example of rationalism characterized by solid and compact volumes.",
             description: ["In 1911, the municipal administration of Trieste decided to demolish some buildings in order to widen Via Ponterosso (today Via Roma), an important artery between the old and new parts of the city, due to the large amount of vehicular traffic that made it difficult for pedestrians to pass. New plots of land were thus created, one of which was purchased by the Bank of Prague (Živnostenská banka pro Čechy in Moravu), which erected a building there to house its headquarters, offices and housing. The project was developed by architects Josip Costaperaria and Osvald Polívka.",
@@ -80,7 +80,7 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["10-19", "closed", "14-21","10-19", "closed", "14-21", "closed"], 
             directions: "Via Roma, 7, 34121 Trieste TS",
-            prices: ["You don't need to buy a ticket the entrance is free"],
+            prices: ["You don't need to buy a ticket the entrance is free","The first friday of the month there is a free guided tour"],
             website: ["https://www.triestemetro.eu/poi/46", "www.triestemetro.eu" ],
             map: "Banca+Di+Praga,Trieste,Italy"
         },
@@ -95,7 +95,7 @@ export default async (models) => {
             accessInfo: ["done","block","block"],
             timeInfo: ["00-24", "00-24", "00-24","00-24", "00-24", "00-24", "00-24"], 
             directions: "Via Dante Alighieri, 6, 34122 Trieste TS",
-            prices: ["You don't need to buy a ticket the entrance is free"],
+            prices: ["You don't need to buy a ticket the entrance is free", "The last Monday of the month there is a free guided tour"],
             website: ["https://www.culturalheritageonline.com/location-1819_Terni-Smolars-House.php", "www.culturalheritageonline.com" ],
             map: "Casa+Terni,Trieste,Italy"
         },
@@ -189,7 +189,7 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["closed", "closed", "closed","10-19", "closed", "10-19", "10-19"], 
             directions: "P.za della Cattedrale, 3, 34131 Trieste TS",
-            prices: ["The admission is free for all"],
+            prices: ["The admission is free for all", "You can make a small donation to support the local comunity"],
             website: ["https://www.discover-trieste.it/en/15593/Cathedral-of-San-Giusto", "www.discover-trieste.it" ],
             map: "Cattedrale+Di+San+Giusto"
         },
@@ -205,7 +205,7 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["closed", "closed", "closed","10-19", "closed", "10-19", "10-19"], 
             directions: "Piazza Niccolo Tommaseo, 34121 Trieste TS",
-            prices: ["The admission is free for all"],
+            prices: ["The admission is free for all", "You can make a small donation to support the local comunity"],
             website: ["https://www.discover-trieste.it/en/15591/Greek-Orthodox-Church-of-San-Nicolo", "www.discover-trieste.it" ],
             map: "Chiesa+Greco+Ortodossa+di+San+Nicolò,Trieste,Italy"
         },
@@ -221,7 +221,7 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["closed", "closed", "closed","10-19", "closed", "10-19", "10-19"], 
             directions: "Via Spiridione, 9, 34122 Trieste TS",
-            prices: ["The admission is free for all"],
+            prices: ["The admission is free for all", "You can make a small donation to support the local comunity"],
             website: ["https://en.wikipedia.org/wiki/Saint_Spyridon_Church,_Trieste", "www.wikipedia.org" ],
             map: "Tempio+serbo-ortodosso+della+Santissima+Trinità+e+di+San Spiridione,Trieste,Italy"
         },
@@ -237,12 +237,12 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["closed", "closed", "closed","10-19", "closed", "10-19", "10-19"], 
             directions: "Via S. Francesco D'Assisi, 19, 34133 Trieste TS",
-            prices: ["The admission is free for all"],
+            prices: ["The admission is free for all", "You can make a small donation to support the local comunity"],
             website: ["https://www.discover-trieste.it/en/15598/Jewish-Synagogue", "www.discover-trieste.it" ],
             map: "Sinagoga+di+Trieste,Trieste,Italy"
         },
         {
-            name: "Sanctuary of St. Mary Major",
+            name: "Sanctuary of St. Mary",
             img: ["pois/churches/beataVergine.png", "pois/churches/insideBeataVergine.jpeg", "pois/churches/beataVergine2.png"],
             itineraryId: itinerary2.id,
             stepDescription:"The tour ends in the Roman ancient zone, in the center of Trieste with a Jesuits church built around the XVII century in honor of the Madonna.",
@@ -253,7 +253,7 @@ export default async (models) => {
             accessInfo: ["done","done","block"],
             timeInfo: ["closed", "closed", "closed","10-19", "closed", "10-19", "10-19"], 
             directions: "Via del Collegio, 6, 34121 Trieste TS",
-            prices: ["The admission is free for all"],
+            prices: ["The admission is free for all", "You can make a small donation to support the local comunity"],
             website: ["https://www.discover-trieste.it/en/15587/Sanctuary-of-Santa-Maria-Maggiore", "www.discover-trieste.ite" ],
             map: "Chiesa+Parrocchiale+di+S.Maria+Maggiore,Trieste,Italy"
         },
@@ -902,9 +902,6 @@ export default async (models) => {
             ]
         },
     ]
-    //with create is just one element
-    //with bulkCreate is moreElements like arrays
     await models.Event.bulkCreate(eventList)
-    //await models.PointOfInterest.bulkCreate(poiList)
     await models.SingleService.bulkCreate(singleServiceList)
 }

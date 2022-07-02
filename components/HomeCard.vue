@@ -2,11 +2,11 @@
   <div class="col my-3">
     <div class="card">
       <nuxt-link :to="`${path}`">
-        <div class="container m-0 p-0">
+        <div class="container img-container m-0 p-0">
           <img
-            class="card-img-top p-0 img"
+            class="p-0 img"
             :src="require(`~/assets/${img}`)"
-            alt="Card image"
+            :alt="alt"
           />
           <div class="text-block py-3">
             {{ title }}
@@ -33,6 +33,10 @@ export default {
       type: String,
       required: true,
     },
+    alt:{
+      type: String,
+      required: true,
+    }
   },
 }
 </script>
@@ -51,11 +55,9 @@ export default {
   padding-right: 20px;
   font-size: 30px;
   text-align: center;
-  border-radius: 0px 10px 10px 0px;
 }
 .card:hover {
   opacity: 1;
-  position: relative;
 }
 .card {
   overflow: hidden;
@@ -65,9 +67,13 @@ export default {
   border-radius: 30px;
   max-width: 400px;
 }
-.img {
+.img-container{
   width: 100%;
   height: 400px;
-  border-radius: 20px 20px 0px 0px;
+}
+.img-container .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

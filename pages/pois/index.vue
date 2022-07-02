@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="image-header mb-5">
-      <img style="height: 30rem" />
-      <h1> Points of Interest </h1>
+      <img class="img" :src="require(`~/assets/homeImg/trieste20.jpeg`)" alt="background"/>
+      <div class="overlay"></div>
+      <h1>Points of Interest</h1>
     </div>
     <section class="poi-list">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
           <preview-card
             v-for="(poi, poiIndex) of poiList"
             :id="poi.id"
@@ -39,9 +40,21 @@ export default {
 
 <style scoped>
 .image-header {
-  background-image: url('assets\homeImg\trieste20.jpeg');
-  background-size: cover;
-  background-position: center center; 
-  opacity: 0.9;
+  height: 30rem;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.15);
 }
 </style>

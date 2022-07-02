@@ -5,7 +5,7 @@
       class="nav nav-tabs justify-content-between nav-justified"
       role="tablist"
     >
-      <li class="nav-item pe-0" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -14,14 +14,10 @@
           type="button"
           role="tab"
         >
-          <p>
-            <span class="material-icons icon tab-icon">
-              accessibility_new
-            </span>
-          </p>
+          <span class="material-icons tab-icon"> accessibility_new </span>
         </button>
       </li>
-      <li class="nav-item pe-0" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
           id="tab"
           class="nav-link active"
@@ -30,10 +26,10 @@
           type="button"
           role="tab"
         >
-          <p><span class="material-icons icon tab-icon"> schedule </span></p>
+          <span class="material-icons tab-icon"> schedule </span>
         </button>
       </li>
-      <li class="nav-item pe-0" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
           id="tab"
           class="nav-link"
@@ -42,51 +38,33 @@
           type="button"
           role="tab"
         >
-          <p>
-            <span class="material-icons icon tab-icon">
-              confirmation_number
-            </span>
-          </p>
+          <span class="material-icons tab-icon"> confirmation_number </span>
         </button>
       </li>
     </ul>
     <div id="myTabContent" class="tab-content">
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
-        <div class="row justify-content-between info-box">
-          <div class="icons col">
-            <span
-              class="icon access-icon material-icons"
-              style="color: royalblue"
-              >{{ accessInfo[0] }}</span
+        <div class="row justify-content-between">
+          <div class="col">
+            <span class="material-icons access-icon">{{ accessInfo[0] }}</span
             >Step-Free
           </div>
-          <div class="icons col">
-            <span
-              class="icon access-icon material-icons"
-              style="color: royalblue"
-              >{{ accessInfo[1] }}</span
+          <div class="col">
+            <span class="material-icons access-icon">{{ accessInfo[1] }}</span
             >Flyers in Braille
           </div>
-          <div class="icons col">
-            <span
-              class="icon access-icon material-icons"
-              style="color: royalblue"
-              >{{ accessInfo[2] }}</span
+          <div class="info col">
+            <span class="material-icons access-icon">{{ accessInfo[2] }}</span
             >Audio Description
           </div>
         </div>
       </div>
-      <div
-        id="time"
-        class="tab-pane show active fade justify-content-between"
-        role="tabpanel"
-      >
+      <div id="time" class="tab-pane fade show active" role="tabpanel">
         <div
           v-for="(time, timeIndex) of timeInfo"
           :key="`time-index-${timeIndex}`"
           class="row justify-content-center"
         >
-          
           <div class="col-6 text-center">{{ time.day }}</div>
           <div class="col-6 text-center">{{ time.hour }}</div>
         </div>
@@ -102,7 +80,7 @@
           </li>
         </ul>
         <div v-if="website !== null">
-          For more information about the tickets visit the following site:
+          For more information about the tickets visit:
           <a :href="website[0]" target="_blank">{{ website[1] }}</a>
         </div>
       </div>
@@ -135,56 +113,35 @@ export default {
 </script>
 
 <style scoped>
+.nav-tabs {
+  border-bottom-color: royalblue;
+}
 .nav-tabs .nav-item .nav-link {
   background-color: transparent;
   color: rgb(255, 255, 255);
   border: transparent;
-  opacity: 0.9;
+  opacity: 0.7;
   border-radius: 20px;
   font-size: 1.2vw;
 }
-
-.nav-tabs .nav-item .nav-link.active .icon {
-  background-color: royalblue;
-}
-
 .nav-tabs .nav-item .nav-link.active {
-  color: white;
-  border: transparent;
   opacity: 1;
-  font-size: 1.2vw;
 }
-.nav-tabs .nav-item {
-  max-height: 60px;
-  border-radius: 20px;
-  margin-bottom: 5px;
-  align-content: center;
-  width: 75px;
+.tab-icon {
+  vertical-align: middle;
+  background-color: royalblue;
+  border-radius: 60px;
+  font-size: 45px;
+  padding: 3px;
+  margin-bottom: 2;
 }
 .tab-content {
   min-height: 200px;
   height: auto;
   padding: 10px;
 }
-.nav-tabs {
-  border-bottom-color: royalblue;
-}
-.tab-content .tab-pane {
-  background-color: #fff;
-  color: black;
-}
 .access-icon {
   vertical-align: bottom;
-}
-.tab-icon {
-  vertical-align: middle;
-  background-color: rgb(65, 105, 225, 0.7);
-  border-radius: 60px;
-  font-size: 45px;
-  padding: 3px;
-  margin-bottom: 2;
-}
-.info-box {
-  width: 100%;
+  color: royalblue;
 }
 </style>

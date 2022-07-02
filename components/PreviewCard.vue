@@ -6,21 +6,21 @@
           <img
             class="card-img-top img"
             :src="require(`~/assets/${img}`)"
-            alt="Card image"
+            alt=""
             style="width: 100%; height: 200px"
           />
         </div>
         <div class="btn card-body">
-          <h3 class="title">{{ name }}</h3>
+          <h3 class="title text-center">{{ name }}</h3>
           <div v-if="category==='itineraries' || category==='events'">
-          <p class="text" >
+          <h5 class="text-start" >
             <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
-          </p>
-          <p class="text">
+          </h5>
+          <h4 class="text-start">
             <span class="material-icons icon" > 
             {{icons[1]}} </span>
             {{ texts[1] }}
-          </p>
+          </h4>
           </div>
         </div>
       </nuxt-link>
@@ -64,36 +64,21 @@ export default {
       default:() => [] ,
     }
   },
-  methods: {
-    goToDetails() {
-      this.$router.push(`/details/${this.id}`)
-    },
-  },
 }
 </script>
 
 <style scoped>
 .card:hover {
   opacity: 1;
-  position: relative;
 }
 .card:hover .card-body .icon {
   color: royalblue;
   transform: scale(1.1);
-  height: auto;
   font-weight: 500;
 }
 .card:hover .card-body .title {
   color: royalblue;
   transform: scale(1.05);
-  height: auto;
-}
-.text {
-  text-align: left;
-  font-weight: 400;
-}
-.title {
-  text-align: center;
 }
 .card:hover .container .img {
   transform: scale(1.2);
@@ -102,11 +87,8 @@ export default {
   overflow: hidden;
   border-radius: 20px 20px 0px 0px; 
 }
-.card .container .img{
-  border-radius: 20px 20px 0px 0px; 
-}
 .card .card-body .icon {
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 .card-body{
   width: 100%;

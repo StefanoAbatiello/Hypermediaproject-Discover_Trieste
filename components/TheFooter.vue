@@ -6,24 +6,23 @@
           <img
             :src="require(`~/assets/logo.png`)"
             class="img responsive logo-sito"
-            alt="Logo"
+            alt="logo to home"
           />
         </a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 px-0 comune">
+      <div class="col-lg-3 col-md-4 col-sm-5 px-0 comune">
         <a href="https://www.comune.trieste.it/" target="_blank">
           <img
             :src="require(`~/assets/logo-trieste.png`)"
             class="img logo-comune"
-            alt="comune-logo"
+            alt="logo to comune"
           />
         </a>
-        <p class="info">Tel. 04 06754850</p>
       </div>
     </div>
     <hr class="divider" />
     <div class="text-box">
-      <p class="script">Made by ACSS</p>
+      <h4 class="script">Made by ACSS</h4>
     </div>
   </div>
 </template>
@@ -68,18 +67,7 @@ export default {
 .text-box {
   margin-left: 10%;
   width: 80%;
-  text-align: right;
   color: white;
   margin-bottom: 10px;
 }
-/* @media only screen and (max-width: 770px) {
-  .info {
-    visibility: hidden;
-  }
-
-  .comune {
-    width: 200px;
-    margin-left: 0px;
-  }
-} */
 </style>

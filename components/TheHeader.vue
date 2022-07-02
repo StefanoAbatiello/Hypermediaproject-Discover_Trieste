@@ -4,9 +4,10 @@
   >
     <a href="/">
       <img
-        :src="require(`~/assets/logo.png`)"
+        :src="require(`~/assets/logo/Risorsa 5.png`)"
         class="img mr-auto ms-2 logo-img"
         href="/"
+        alt="logo to home"
       />
     </a>
     <button
@@ -20,7 +21,12 @@
     >
       <span class="material-icons icon"> menu </span>
     </button>
-    <div id="navbarToggler" :class="{active:isActive}" @click="isActive = !isActive" class="button collapse navbar-collapse links">
+    <div
+      id="navbarToggler"
+      :class="{ active: isActive }"
+      class="button collapse navbar-collapse links"
+      @click="isActive = !isActive"
+    >
       <ul class="navbar-nav mt-2 mt-lg-0">
         <li
           v-for="(navItem, navItemIndex) of headerList"
@@ -42,12 +48,8 @@ export default {
   name: 'TheHeader',
   data() {
     return {
-      isActive:false,
+      isActive: false,
       headerList: [
-        {
-          name: 'Home',
-          path: '/',
-        },
         {
           name: 'Events',
           path: '/events/',
@@ -67,6 +69,10 @@ export default {
         {
           name: 'About',
           path: '/about/',
+        },
+        {
+          name: 'Contacs Us',
+          path: '/contacts/',
         },
       ],
     }
@@ -93,17 +99,17 @@ export default {
 }
 .logo-img {
   height: 100px;
-  width: 280px;
+  width: 300px;
 }
-
 .nav-item {
-  font-weight: 600;
   text-align: right;
 }
 .link {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
-  color: white;
-  font-size: 1.5rem;
+  color: whitesmoke;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .navbar-nav {
   margin-left: auto;
@@ -130,17 +136,17 @@ export default {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 900px) and (min-width: 767px) {
+@media only screen and (max-width: 992px) and (min-width: 767px) {
   .logo-img {
-  height: 100px;
-  width: 30vw;
-}
-.nav-item{
-  text-align: left;
-}
-.link{
-  font-size: 1.25rem;
-}
+    height: 100px;
+    width: 30vw;
+  }
+  .nav-item {
+    text-align: left;
+  }
+  .link {
+    font-size: 1.15rem;
+  }
 }
 </style>
 
