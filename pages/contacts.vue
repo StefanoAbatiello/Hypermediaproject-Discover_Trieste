@@ -1,10 +1,10 @@
 <template>
-  <div class="mb-4">
-    <header-carousel
-      class="carousel"
-      :images="image"
-      :title="`Contact Us`"
-    />
+  <div >
+    <div class="image-header mb-5">
+      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.jpeg`)" />
+      <div class="overlay"></div>
+      <h1>Contact Us</h1>
+    </div>
     <div class="container">
       <p class="mt-4">
        Here you can find some useful contacts
@@ -30,12 +30,8 @@
 </template>
 
 <script>
-import HeaderCarousel from '~/components/HeaderCarousel.vue'
 export default {
   name: 'AboutPage',
-  components: {
-    HeaderCarousel,
-  },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/about')
     const title = data.title
@@ -51,11 +47,12 @@ export default {
 </script>
 
 <style scoped>
-img {
-  height: 24rem;
-  width: 30rem;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
-  border-radius: 10px 10px 10px 10px;
+.image-header {
+  height: 30rem;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
