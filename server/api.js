@@ -89,6 +89,9 @@ const pageContentObject = {
         cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryCopertina.jpeg","homeImg/eventCopertina.jpeg", "homeImg/serviceCopertina.jpeg","homeImg/about2.jpeg","homeImg/contactCopertina.jpeg"],
         names: ["Points of interest","Itineraries","Events","Services","About Trieste","Contact Us"],
     },
+    about: {
+        images:[`homeImg/about3.jpeg`,`homeImg/about1.jpeg`,`homeImg/about2.jpeg`],
+    },
 }
 
 

@@ -116,13 +116,21 @@ export default {
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/about')
-    const title = data.title
     const image = data.images
-    const description = data.description
     return {
-      title,
       description,
-      image,
+    }
+  },
+  head() {
+    return {
+      title: 'About Trieste',
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'A short description of the city and its history',
+        }
+      ]
     }
   },
 }
