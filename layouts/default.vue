@@ -38,6 +38,5 @@ export default {
   bottom: 0;
   width: 100%;
   height: 13rem;
-  margin-bottom: 13rem;
 }
 </style>
