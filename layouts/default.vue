@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <div class="main-page">
-      <the-header class="header"/>
+      <the-header class="header" />
       <nuxt />
     </div>
     <the-footer class="footer" />
@@ -23,14 +23,14 @@ export default {
 <style scoped>
 .page-container {
   position: relative;
-  min-height: 120vh;
+  min-height: 100vh;
 }
-.header{
+.header {
   height: 6rem;
 }
 .main-page {
   font-family: 'Lato', sans-serif;
-  padding-bottom: 13rem; 
+  padding-bottom: 13rem;
 }
 
 .footer {

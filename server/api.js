@@ -91,9 +91,7 @@ const pageContentObject = {
         names: ["Points of interest","Itineraries","Events","Services","About Trieste","Contact Us"],
     },
     about: {
-        title: "About",
         images:[`homeImg/about3.jpeg`,`homeImg/about1.jpeg`,`homeImg/about2.jpeg`],
-        description: `Science and scientific research has always played a key role in Trieste and has led, through the years, to the creation of several United Nations organizations dedicated to fostering science and scientific research. It is known as Italy's Town of Science and hosts each year many important scientific events.`
     },
 }
 

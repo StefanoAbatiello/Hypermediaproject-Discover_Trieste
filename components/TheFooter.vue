@@ -41,7 +41,6 @@ export default {
 
 <style scoped>
 .footer {
-  height: 100px;
   background: royalblue;
   position: absolute;
   bottom: 0px;
@@ -51,6 +50,7 @@ export default {
   width: 90%;
   margin-left: 50%;
   transform: translate(-50%, 0);
+  /* background: royalblue; */
 }
 .logo-sito {
   width: 50%;

@@ -62,6 +62,18 @@ export default {
       image,
     }
   },
+  head() {
+    return {
+      title: contacts,
+      meta: [
+        {
+          hid:'description',
+          name:'description',
+          content:'here you can find all Trieste\'s useful contacts',
+        }
+      ]
+    }
+  },
 }
 </script>
 

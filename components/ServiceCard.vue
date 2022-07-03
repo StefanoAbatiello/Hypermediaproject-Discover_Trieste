@@ -136,14 +136,9 @@ export default {
   max-height: 400px;
 
 }
-/* .card-body {
-  max-width: 500px;
-} */
 .card-img {
-  /* min-height: 50px; */
   width: 100%;
   max-height: 350px;
-  /* min-width: 100px; */
   border-radius: 20px;
 }
 @media (max-width: 762px){
