@@ -72,7 +72,7 @@
                   :img="eventImage"
                   category="events"
                   icon="event"
-                  text="Will hosts "
+                  text="It will hosts "
                 />
               </div>
             </div>
