@@ -140,6 +140,7 @@ export default {
   width: 100%;
   max-height: 350px;
   border-radius: 20px;
+  overflow: hidden;
 }
 @media (max-width: 762px){
     .text-block{
