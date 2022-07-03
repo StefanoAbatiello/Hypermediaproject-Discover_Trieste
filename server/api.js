@@ -190,10 +190,7 @@ async function runMainApi() {
     app.get('/pois/:id', async (req, res) => {
         const id = +req.params.id
         const poi = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
-        const itineraryId = poi.itineraryId
-        const pois = await models.PointOfInterest.findAll({ where: { itineraryId} })
         const relatedEvent = await models.Event.findOne({ where: { id } })
-        const relatedPois = []
         const result = {
             poi,
             relatedEvent,

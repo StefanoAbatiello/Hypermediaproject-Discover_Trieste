@@ -65,10 +65,11 @@
                   text="It is part of "
                 />
               </div>
-              <!-- If a POI hosts an event it will be shown below the related itinerary -->
+              <!-- If a POI hosts an event it will be shown below the related itinerary  -->
               <div v-if="relatedEventName!==null" class="col-12 related-link" >
                 <related-card
                   :id="relatedEventId"
+                  :key="`poi-index-${eventIndex}`"
                   class="eventy"
                   :name="relatedEventName"
                   :img="eventImage"
@@ -97,6 +98,7 @@
         </section>
       </div>
     </section>
+    <script>console.log({{relatedEvent}})</script>
   </div>
 </template>
 
