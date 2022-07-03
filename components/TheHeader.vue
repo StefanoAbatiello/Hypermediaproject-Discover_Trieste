@@ -100,7 +100,7 @@ export default {
 .header {
   background: transparent;
   position: absolute;
-  top: 0px;
+  top: 20px;
 }
 .logo-img {
   height: auto;
@@ -121,6 +121,10 @@ export default {
 }
 .navbar-toggler {
   margin-left: auto;
+}
+
+.navbar-toggler .icon{
+  color: whitesmoke;
 }
 
 .navbar-toggler:focus,
