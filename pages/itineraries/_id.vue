@@ -1,5 +1,5 @@
 <template>
-<!-- Page to describe a single itinerary -->
+  <!-- Page to describe a single itinerary -->
   <div>
     <!-- images to display in the header of the page -->
     <header-carousel class="carousel" :images="img" />
@@ -19,12 +19,24 @@
             </div>
           </nuxt-link>
           <!-- Title -->
-          <h2 class="mb-5">{{ name }}</h2>
-          <!-- Description of the itinerary -->
-          <div class="description-it">
-            <p>
-              {{ description }}
+          <h2 class="mb-4">{{ name }}</h2>
+          <div class="row justify-content-start">
+            <p class="col-auto">
+              <span class="material-icons px-0 place-icon"> moving </span>
+              {{ km }}
             </p>
+            <p class="col-auto">
+              <span class="material-icons px-0 place-icon">
+                directions_walk
+              </span>
+              {{ steps }}
+            </p>
+            <!-- Description of the itinerary -->
+            <div class="mt-3 description-it">
+              <p>
+                {{ description }}
+              </p>
+            </div>
           </div>
         </section>
         <!-- Map with the steps of the itinerary -->
@@ -74,6 +86,8 @@ export default {
       description: data.itinerary.description,
       map: data.itinerary.map,
       poiList: data.relatedPois,
+      km: data.itinerary.distances[0],
+      steps: data.itinerary.distances[1],
     }
   },
   head() {
@@ -81,11 +95,12 @@ export default {
       title: this.name,
       meta: [
         {
-          hid:'description',
-          name:'description',
-          content:'here you can find all the suggested itineraries to visit Trieste',
-        }
-      ]
+          hid: 'description',
+          name: 'description',
+          content:
+            'here you can find all the suggested itineraries to visit Trieste',
+        },
+      ],
     }
   },
 }

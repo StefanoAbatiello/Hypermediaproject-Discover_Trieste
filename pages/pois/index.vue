@@ -3,7 +3,7 @@
   <div>
     <!-- header image of the page -->
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/trieste20.jpeg`)" alt="background"/>
+      <img class="img" :src="require(`~/assets/homeImg/poiCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Points of Interest</h1>
     </div>

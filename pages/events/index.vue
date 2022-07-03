@@ -35,7 +35,7 @@
             :season="event.season"
             :texts="[event.date, event.locName]"
             :category="'events'"
-            :icons="['schedule', 'navigation']"
+            :icons="['event', 'navigation']"
           />
         </div>
       </div>

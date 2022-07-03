@@ -52,7 +52,7 @@
           <aside class="col-lg-4">
             <!-- Display the related Itinerary, the POI is part of that itinerary -->
             <div class="row">
-              <div class="my-3 col-12 related-links">
+              <div class="my-3 col-12 related-link">
                 <related-card
                   :id="itinerary.id"
                   class="itinerary"

@@ -84,9 +84,9 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Trieste",
-        images: ["homeImg/carHome3.jpeg","homeImg/trieste3.jpeg","homeImg/trieste30.jpeg"],
+        images: ["homeImg/carHome3.jpeg","homeImg/carHome2.jpeg","homeImg/carHome1.jpeg"],
         paths: ["/pois/","/itineraries/","/events/","/services/","/about/","/contacts/"],
-        cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryCopertina.jpeg","homeImg/eventCopertina.jpeg", "homeImg/serviceCopertina.jpeg","about/about2.jpeg","homeImg/contactCopertina.jpeg"],
+        cardImages: ["homeImg/poiCopertina.jpeg","homeImg/itineraryCopertina.jpeg","homeImg/eventCopertina.jpeg", "homeImg/serviceCopertina.jpeg","about/about2.jpeg","homeImg/contactCopertina.jpeg"],
         names: ["Points of interest","Itineraries","Events","Services","About Trieste","Contact Us"],
     },
     about: {

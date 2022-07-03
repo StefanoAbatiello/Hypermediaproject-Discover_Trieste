@@ -24,10 +24,10 @@
               <span class="material-icons icon"> {{ icons[0] }}</span>
               {{ texts[0] }}
             </h5>
-            <h4 class="text-start">
+            <h5 class="text-start">
               <span class="material-icons icon"> {{ icons[1] }} </span>
               {{ texts[1] }}
-            </h4>
+            </h5>
           </div>
         </div>
       </nuxt-link>
