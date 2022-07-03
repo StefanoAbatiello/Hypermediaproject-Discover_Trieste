@@ -83,7 +83,7 @@ export default {
 }
 @media (max-width: 992px) {
   h1 {
-    top: 7rem;
+    top: 9rem;
   }
 }
 </style>
