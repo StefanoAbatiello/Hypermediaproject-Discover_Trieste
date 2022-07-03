@@ -56,9 +56,6 @@ export default {
   width: 50%;
   height: 6rem;
 }
-.info {
-  color: white;
-}
 .logo-comune {
   height: 6rem;
 }
@@ -75,5 +72,14 @@ export default {
   width: 80%;
   color: white;
   margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .logo-sito {
+  width: 60%;
+  height: 5rem;
+}
+.logo-comune {
+  height: 5rem;
+}
 }
 </style>
