@@ -50,11 +50,12 @@
     <!-- Contents of accessibility -->
     <div id="myTabContent" class="tab-content">
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
-        <div class="row justify-content-between">
+        <!-- the col props is used to define the number column needed -->
+        <div :class="`row row-cols-${col} justify-content-between`">
           <div class="col text">
             <span class="material-icons access-icon">{{ accessInfo[0] }}</span
             >Step-Free
-          </div>
+          </div> 
           <div class="col text">
             <span class="material-icons access-icon">{{ accessInfo[1] }}</span
             >Flyers in Braille
@@ -117,6 +118,10 @@ export default {
       type: Array,
       required: true,
     },
+    col:{
+      type: Number,
+      required: true,
+    },
   },
 }
 </script>
@@ -150,7 +155,7 @@ export default {
   padding: 10px;
 }
 .access-icon {
-  vertical-align: bottom;
+  vertical-align: middle;
   color: royalblue;
 }
 .text{
