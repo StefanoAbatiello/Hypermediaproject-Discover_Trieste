@@ -7,7 +7,7 @@
         <!-- link to the homePage -->
         <nuxt-link to="/">
           <img
-            :src="require(`~/assets/page-logo.webp`)"
+            :src="require(`~/assets/page-logo.png`)"
             class="img responsive logo-sito"
             alt="logo to home"
           />
@@ -18,7 +18,7 @@
         <!-- Link to the municipality of trieste -->
         <a href="https://www.comune.trieste.it/" target="_blank">
           <img
-            :src="require(`~/assets/logo-trieste.webp`)"
+            :src="require(`~/assets/logo-trieste.png`)"
             class="img logo-comune"
             alt="logo to comune"
           />

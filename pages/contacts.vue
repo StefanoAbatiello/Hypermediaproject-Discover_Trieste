@@ -3,7 +3,7 @@
   <div >
     <!-- Header of the Page -->
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.webp`)" alt="background"/>
+      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.jpeg`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Contact Us</h1>
     </div>
@@ -51,20 +51,9 @@
 <script>
 export default {
   name: 'AboutPage',
-  async asyncData({ $axios }) {
-    const { data } = await $axios.get('/api/page-info/about')
-    const title = data.title
-    const image = data.images
-    const description = data.description
-    return {
-      title,
-      description,
-      image,
-    }
-  },
   head() {
     return {
-      title: contacts,
+      title: "contacts",
       meta: [
         {
           hid:'description',

@@ -17,7 +17,7 @@
       </p>
       <img
         class="map"
-        :src="require(`~/assets/about/ancientMap.webp`)"
+        :src="require(`~/assets/about/ancientMap.jpeg`)"
         alt="ancient map"
       />
       <!-- Single Paragraph -->
@@ -40,7 +40,7 @@
       </p>
       <img
         class="panorama"
-        :src="require(`~/assets/about/panorama.webp`)"
+        :src="require(`~/assets/about/panorama.jpeg`)"
         alt="view"
       />
       <p class="mt-3">
