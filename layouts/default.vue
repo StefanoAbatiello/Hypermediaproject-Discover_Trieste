@@ -23,20 +23,20 @@ export default {
 <style scoped>
 .page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 .header{
   height: 6rem;
 }
 .main-page {
   font-family: 'Lato', sans-serif;
-  padding-bottom: 25rem; 
+  padding-bottom: 13rem; 
 }
 
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 25rem;
+  height: 13rem;
 }
 </style>
