@@ -192,20 +192,9 @@ async function runMainApi() {
         const poi = await models.PointOfInterest.findOne({ where: { id }, include: [{model: models.Itinerary}] })
         const itineraryId = poi.itineraryId
         const pois = await models.PointOfInterest.findAll({ where: { itineraryId} })
-        const poiId = id;
-        const relatedEvent = await models.Event.findOne({ where: { poiId } })
+        const relatedEvent = await models.Event.findOne({ where: { id } })
         const relatedPois = []
-        for (const element of pois) {
-            if (element.id != id){
-                relatedPois.push({
-                    name: element.name,
-                    img: element.img[0],
-                    id: element.id,
-                })
-            }
-        }
         const result = {
-            relatedPois,
             poi,
             relatedEvent,
         }

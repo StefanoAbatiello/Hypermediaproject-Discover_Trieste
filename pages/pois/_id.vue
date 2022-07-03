@@ -25,7 +25,7 @@
               <!-- Address of the POI -->
               <p>
                 <span class="material-icons px-0 place-icon"> place </span>
-                {{ data.poi.directions }}
+                {{ directions }}
               </p>
               <!-- Description of the POI -->
               <div class="mt-5 description-poi">
@@ -64,11 +64,11 @@
                 />
               </div>
               <!-- If a POI hosts an event it will be shown below the related itinerary -->
-              <div v-if="data.relatedEvent!==null" class="col-12 related-link" >
+              <div v-if="relatedEventName!==null" class="col-12 related-link" >
                 <related-card
-                  :id="data.relatedEvent.id"
+                  :id="relatedEventId"
                   class="eventy"
-                  :name="data.relatedEvent.name"
+                  :name="relatedEventName"
                   :img="eventImage"
                   category="events"
                   icon="event"
@@ -87,7 +87,7 @@
               height="600"
               referrerpolicy="no-referrer-when-downgrade"
               frameborder="0"
-              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${data.poi.map}`"
+              :src="`https://www.google.com/maps/embed/v1/place?key=AIzaSyADzK4sxJZO_98ynJdb3WaW0e1CrcZjJcc&q=${map}`"
               allowfullscreen
             >
             </iframe>
@@ -111,10 +111,12 @@ export default {
     const { id } = route.params
     const { data } = await $axios.get('/api/pois/' + id)
     let eventImage = null
-    if (data.relatedEvent == null) {
-      eventImage = null
-    } else {
+    let relatedEventId = 0
+    let relatedEventName = null
+    if (data.relatedEvent != null) {
       eventImage = data.relatedEvent.img[0]
+      relatedEventId = data.relatedEvent.id
+      relatedEventName = data.relatedEvent.name
     }
     const day = [
       'Monday',
@@ -133,6 +135,8 @@ export default {
       itinerary: data.poi.itinerary,
       itineraryImage: data.poi.itinerary.img[0],
       eventImage,
+      relatedEventId,
+      relatedEventName,
       id,
       name: data.poi.name,
       img: data.poi.img,
@@ -141,7 +145,8 @@ export default {
       timeInfo,
       prices: data.poi.prices,
       website: data.poi.website,
-      data,
+      map:data.poi.map,
+      directions: data.poi.directions,
     }
   },
   head() {
