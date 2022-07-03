@@ -21,7 +21,7 @@
         alt="ancient map"
       />
       <!-- Single Paragraph -->
-      <p class="mt-3">
+      <p class="mt-4">
         Trieste's population is an ethnic mix of its neighbouring regions and
         countries: Venice, Austria and Slovenia. The dominant local Venetian
         dialect of Trieste is called Triestine (in Italian "Triestino"). This
