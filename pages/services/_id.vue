@@ -87,17 +87,6 @@ export default {
 </script>
 
 <style scoped>
-.header {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  color: whitesmoke;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 5vw;
-  position: absolute;
-  top: 200px;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
-}
 .image-header {
   height: 30rem;
 }
@@ -105,5 +94,15 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 </style>
