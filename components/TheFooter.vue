@@ -53,10 +53,10 @@ export default {
   transform: translate(-50%, 0);
 }
 .logo-sito {
-  height: 100px;
-  width: 300px;
+  width: 50%;
+  height: 6rem;
 }
-.info{
+.info {
   color: white;
 }
 .logo-comune {

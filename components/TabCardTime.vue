@@ -89,7 +89,7 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div v-if="serviceTypeId === 1" class="text">
+          <div v-if="serviceTypeId != 2" class="text">
             <div
               v-for="(t, tIndex) of timeInfo"
               :key="`time-index-${tIndex}`"
