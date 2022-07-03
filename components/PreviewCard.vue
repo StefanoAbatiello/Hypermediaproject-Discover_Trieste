@@ -19,15 +19,15 @@
           <!-- title of the card -->
           <h3 class="title text-center">{{ name }}</h3>
           <!-- only for itineraries or events there are icons to show additional info -->
-          <div v-if="category==='itineraries' || category==='events'">
-          <h5 class="text-start" >
-            <span class="material-icons icon"> {{icons[0] }}</span> {{ texts[0] }}
-          </h5>
-          <h4 class="text-start">
-            <span class="material-icons icon" > 
-            {{icons[1]}} </span>
-            {{ texts[1] }}
-          </h4>
+          <div v-if="category === 'itineraries' || category === 'events'">
+            <h5 class="text-start">
+              <span class="material-icons icon"> {{ icons[0] }}</span>
+              {{ texts[0] }}
+            </h5>
+            <h4 class="text-start">
+              <span class="material-icons icon"> {{ icons[1] }} </span>
+              {{ texts[1] }}
+            </h4>
           </div>
         </div>
       </nuxt-link>
@@ -60,16 +60,16 @@ export default {
       required: false,
       default: '',
     },
-    texts:{
+    texts: {
       type: Array,
-      required:false,
-      default:() => [] ,
+      required: false,
+      default: () => [],
     },
-    icons:{
+    icons: {
       type: Array,
-      required:false,
-      default:() => [] ,
-    }
+      required: false,
+      default: () => [],
+    },
   },
 }
 </script>
@@ -77,30 +77,34 @@ export default {
 <style scoped>
 .card:hover {
   opacity: 1;
+  transition: 0.2s ease;
 }
 .card:hover .card-body .icon {
   color: royalblue;
   transform: scale(1.1);
   font-weight: 500;
+  transition: 0.2s ease;
 }
 .card:hover .card-body .title {
   color: royalblue;
   transform: scale(1.05);
+  transition: 0.2s ease;
 }
 .card:hover .container .img {
   transform: scale(1.2);
+  transition: 0.2s ease;
 }
-.card .container{
+.card .container {
   overflow: hidden;
-  border-radius: 20px 20px 0px 0px; 
+  border-radius: 20px 20px 0px 0px;
 }
 .card .card-body .icon {
   vertical-align: middle;
 }
-.card-body{
+.card-body {
   width: 100%;
 }
-.card{
+.card {
   opacity: 0.9;
   position: relative;
   border-radius: 20px;
