@@ -59,6 +59,6 @@ export default {
   right: 0;
   height: 30rem;
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.15);
+  background-color: rgb(0, 0, 0, 0.3);
 }
 </style>
