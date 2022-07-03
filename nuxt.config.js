@@ -24,7 +24,7 @@ export default {
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900;0,900&display=swap" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap" },
     ],
     script: [
       { src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" }
