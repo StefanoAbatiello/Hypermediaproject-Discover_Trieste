@@ -54,13 +54,15 @@
                   text="This event takes place at:"
                 />
               </div>
-              <!-- additional informations of event -->
+              <!-- additional informations of the event -->
+              <!-- we pass also 1 as number of column to display access-info properly -->
               <div class="mt-3 col-lg-12 col-md-7 col-sm-12 col-xs-12 tab">
                 <tab-card
                   :access-info="accessInfo"
                   :time-info="timeInfo"
                   :prices="prices"
                   :website="website"
+                  :col="1"
                 />
               </div>
             </div>

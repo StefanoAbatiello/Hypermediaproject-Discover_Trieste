@@ -38,12 +38,14 @@
                 </p>
               </div>
               <!-- Additional information of the POI -->
+              <!-- we pass also 3 as number of column to display access-info properly -->
               <div class="mt-3 tab">
                 <tab-card
                   :access-info="accessInfo"
                   :time-info="timeInfo"
                   :prices="prices"
                   :website="website"
+                  :col="3"
                 />
               </div>
             </section>
