@@ -477,7 +477,7 @@ export default async (models) => {
                 "- Self-analysis service (cholesterol and triglycerides measurement).",
                 "In this pharmacy you will find the breastfeeding and diaper changing corner." 
             ],           
-            time: [
+            timeInfo: [
                 "8:30 - 19:30", 
                 "8:30 - 19:30", 
                 "8:30 - 19:30", 
@@ -506,7 +506,7 @@ export default async (models) => {
                 "- Sale of oxygen cylinders.",
                 "This pharmacy has some deals on masks and veterinary products" 
             ],            
-            time: [
+            timeInfo: [
                 "8:30 - 13:00 / 16:00 - 19:30", 
                 "8:30 - 13:00 / 16:00 - 19:30", 
                 "8:30 - 13:00 / 16:00 - 19:30", 
@@ -537,7 +537,7 @@ export default async (models) => {
                 "- Hair and scalp check-up FREE SERVICE",
                 "- Blood pressure measurement FREE SERVICE"
             ],            
-            time: [
+            timeInfo: [
                 "7:30 - 13:30 / 15:00 - 19:00", 
                 "7:30 - 13:30 / 15:00 - 19:00", 
                 "7:30 - 13:30 / 15:00 - 19:00", 
@@ -563,8 +563,7 @@ export default async (models) => {
                 "Cattinara Hospital is the main hospital facility that is part of the Julian Isontine University Health Authority. The hospital has been a Joint Commission International Academic Hospital accredited facility since 2008.", 
                 "Through the CUP service it is possible to book and/or pay for specialist and radiological examinations and services provided by the Azienda Sanitaria Universitaria Integrata di Trieste (ASUITs)"
                 ],            
-            time: [
-                // "CUP booking hours:",
+            timeInfo: [
                 "CUP booking 7:30 - 13:30", 
                 "CUP booking 7:30 - 13:30", 
                 "CUP booking 7:30 - 13:30", 
@@ -599,7 +598,7 @@ export default async (models) => {
                 "- Luggage storage",
                 "- Elevator"
             ],            
-            time: ["Check-in: from 15:00 till 22:00",
+            timeInfo: ["Check-in: from 15:00 till 22:00",
                     "Check-out: from 08:00 till 10:00"
             ],
             img: "services/hotels/paradise.jpeg",
@@ -625,7 +624,7 @@ export default async (models) => {
                 "- Pets allowed",
                 "- Security"
             ],            
-            time: ["Check-in: from 15:30 till 18:00",
+            timeInfo: ["Check-in: from 15:30 till 18:00",
                     "Check-out: until 11:00"
             ],
             img: "services/hotels/DOMO.jpeg",
@@ -654,7 +653,7 @@ export default async (models) => {
                 "- Pets not allowed",
                 "- Security"
             ],
-            time: ["Check-in: from 15:00 till 23:30",
+            timeInfo: ["Check-in: from 15:00 till 23:30",
                 "Check-out: from 08.30 till 11:00"
             ],            
             img: "services/hotels/camilla.jpeg",
@@ -681,7 +680,7 @@ export default async (models) => {
                 "- Pets allowed",
                 "- Security"
             ],   
-            time: ["Check-in:  from 15:00",
+            timeInfo: ["Check-in:  from 15:00",
                 "Check-out: until 12:00"
             ],             
             img: "services/hotels/hilton.jpeg",
@@ -701,7 +700,7 @@ export default async (models) => {
             "Among the dishes offered at the Marascutti Buffet many are of Austrian origin. The menu is rich, but always respectful of the tradition.",
             "Definitely try the hot ham crusted with horseradish, the bread and ham dumplings, the jota and the mixed boiled meat dish, and in summer even the fish! For the super sweet tooth excellent homemade desserts. Good wine labels from the region along with a good selection of beers."
             ],
-            time: [
+            timeInfo: [
                 "12:00-15:00/ 19:00-22:00", 
                 "CLOSED", 
                 "12:00-15:00/ 19:00-22:00", 
@@ -727,7 +726,7 @@ export default async (models) => {
                 "Marise is a small Trieste osteria located right in the heart of the old city, in the Cavana area, just a few steps from the beautiful Piazza Unità d'Italia. It is since 2010, the year the osteria opened, that Gianfranco and Monica have been trying to create a family atmosphere by offering dishes of typical local gastronomy and more.",
                 "Even though the menu they have is not extremely wide, it is possible to find various fish and meat dishes, as well as some vegetarian proposals. All this can be consumed in a warm and cozy atmosphere, with attention to detail to make you feel like at home, with the unfailing presence of a good glass of local wine."
             ],            
-            time: [
+            timeInfo: [
                 "12:00-14:30/ 19:00-22:30", 
                 "12:00-14:30/ 19:00-22:30", 
                 "closed", 
@@ -753,7 +752,7 @@ export default async (models) => {
                 "The unique cuisine of Buffet da Pepi is rooted in the Austro-Hungarian tradition, which has come intact to this day using the original technique of cooking pork in a cauldron, a local variant of boiled meat in broth. ",
                 "You can therefore be delighted by the incomparable mixed platter, which will give you the opportunity to taste all their specialties together. Or, if you are in a hurry, a quick and tasty porzin (porcina, spiced pork neck) sandwich, seasoned and flavored with mustard and kren (fresh grated horseradish)."
             ],            
-            time: [
+            timeInfo: [
                 "08.30-22.00", 
                 "08.30-22.00", 
                 "08.30-22.00", 
@@ -780,7 +779,7 @@ export default async (models) => {
             "The Tommaseo is characterized by a reserved and elegant décor, along the lines of Viennese clubs. It is possible to admire its spaces as they used to be: through its main entrance one reaches an elegant cream-colored lounge, with neoclassical-style decor.",
             "The venue offers a Pastry Shop, Cafeteria, Breakfast, Buffet, Restaurant, American Bar specializing in Tropical Cocktails and Long Drinks. Live music performances are offered in the evenings from Thursday to Saturday and Concertini every Sunday morning from 11 a.m. to 1:30 p.m. Art Exhibitions are also organized."
             ],
-            time: [
+            timeInfo: [
             "9:00-22:30", 
             "9:00-22:30", 
             "9:00-22:30", 
@@ -808,7 +807,7 @@ export default async (models) => {
                 "The cafè offers a pastry shop, cafeteria, breakfast, restaurant service and a library",
                 "There are many concerts, meetings, presentations, reviews and events held at the café both during the week and on weekends."                
             ],
-            time: [
+            timeInfo: [
             "8:30-23:00", 
             "8:30-23:00", 
             "8:30-23:00", 
@@ -836,7 +835,7 @@ export default async (models) => {
             "Molo4 is a spot to hoof it all night. Either you are a devoted dancer or a beginner, take a break from the real world and enjoy the period of release on the fantastic terrace by the sea.",
             "The club is one of the most loved by the locals and is highly advisable by the visitors."
             ],
-            time:[
+            timeInfo:[
             "closed", 
             "closed", 
             "22:00-04:00", 
@@ -860,7 +859,7 @@ export default async (models) => {
                 "The Space Cinema Trieste offers 7 theaters, all equipped with Digital Dolby Surround technology, comfortable and spacious seats, including VIP.  There is also a food court, where you can find soft drinks and cafeteria, popcorn, snacks, candy and more.", 
                 "You can enjoy all the latest releases, including in original language or 3D. Experience a world of entertainment with Extra events: opera, ballet, concerts, documentaries and theater."
             ],
-            time:[
+            timeInfo:[
             "15:30-23:00", 
             "15:30-23:00", 
             "15:30-23:00", 
@@ -883,8 +882,7 @@ export default async (models) => {
             description: ["The Teatro Verdi, which originated as the Teatro Nuovo, is one of the oldest opera houses in operation. The Giuseppe Verdi Opera Theater Foundation of Trieste carries out a busy year-round activity through an Opera and Ballet season, a rich season of symphonic and chamber music.", 
             "The entire program is available on their website."
             ],
-            time:[
-                // "Ticket office:",
+            timeInfo:[
                 "ticket office 15:30-23:00", 
                 "ticket office 09:00-16:00", 
                 "ticket office 09:00-16:00", 

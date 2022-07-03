@@ -43,7 +43,7 @@
             :name="service.name"
             :address="service.address"
             :description="service.description"
-            :time="service.time"
+            :time="service.timeInfo"
             :img="service.img"
             :map="service.map"
             :info="service.info"
