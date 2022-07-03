@@ -58,15 +58,11 @@ export default {
   },
   async asyncData({ $axios }) {
     const { data } = await $axios.get('/api/page-info/index')
-    const title = data.title
     const image = data.images
-    const description = data.description
     const names = data.names
     const paths = data.paths
     const backImgs = data.cardImages
     return {
-      title,
-      description,
       image,
       names,
       paths,
