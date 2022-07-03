@@ -3,8 +3,8 @@
     <div class="main-page">
       <the-header class="header"/>
       <nuxt />
+      <the-footer class="footer" />
     </div>
-    <the-footer class="footer" />
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
 }
 .main-page {
   font-family: 'Lato', sans-serif;
-  padding-bottom: 13rem; 
+  /* padding-bottom: 13rem;  */
 }
 
 .footer {
