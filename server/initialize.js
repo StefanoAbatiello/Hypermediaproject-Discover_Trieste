@@ -433,28 +433,33 @@ export default async (models) => {
     const servicesList = [
         {
             name: "Medical services",
-            img: "services/medicalCard.webp",
+            img: "services/medical.webp",
+            imgCard: "services/medicalCard.webp",
             description: "Sometimes it happen to not feel well and if it happens while you are in Trieste, here there is a list to find out info about the main hospital, pharmacies and other useful places for your health.",
         },
         {
             name: "Hotel and B&B",
-            img: "services/hotelsCard.webp",
+            img: "services/hotels.webp",
+            imgCard: "services/hotelsCard.webp",
             description: "You want to visit Trieste, but still don't know where to sleep? This page is what you are looking for! From B&bs to luxurious hotels, here you can choose what fits you the best and organize a fantastic stay in Trieste",
 
         },
         {
             name: "Restaurants",
-            img: "services/restaurantsCard.webp",
+            img: "services/restaurants.webp",
+            imgCard: "services/restaurantsCard.webp",
             description: "You cannot visit Trieste without tasting the typical cousine. To fully experience Trieste, here there are the best places to try out the typical dishes of the city and discover the history of Trieste through the delicious food ",
         },
         {
             name: "Cafes",
-            img: "services/caffèCard.webp",
+            img: "services/caffè.webp",
+            imgCard: "services/caffèCard.webp",
             description: "For a typical Italian breakfast, for a snack while visiting the city, for a drink with friends, these places will make you feel at home and you will be able to try all the deliciousness that Trieste as to offer: pastries, drinks, coffee in historical caffès of the city",
         },
         {
             name: "Entertainment",
-            img: "services/entertainmentCard.webp",
+            img: "services/entertainment.webp",
+            imgCard: "services/entertainmentCard.webp",
             description: "If you don't know what to do during your nights in Trieste, we have some suggestions for you. If you just want to relax or dance all night long, we are sure this list will help you make the most out of your stay in Trieste",
         },
 

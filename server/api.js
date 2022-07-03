@@ -59,6 +59,7 @@ async function initializeDatabaseConnection() {
         name: DataTypes.STRING,
         description: DataTypes.TEXT,
         img: DataTypes.STRING,
+        imgCard: DataTypes.STRING,
     })
     //Definition of the reletionships between two tables
     Itinerary.hasMany(PointOfInterest)
@@ -161,7 +162,7 @@ async function runMainApi() {
         for (const element of result) {
             filtered.push({
                 name: element.name,
-                img: element.img,
+                img: element.imgCard,
                 id: element.id,
             })
         }
