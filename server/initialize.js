@@ -486,7 +486,7 @@ export default async (models) => {
                 "8:30 - 12:30", 
                 "closed"
                 ],                 
-            img: "services/medicals/cammello.jpeg",
+            img: "services/medicals/cammello.webp",
             map: "Farmacia+al+Cammello,Trieste,Italy",
             info:[
                 "https://www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cammello-13448",                
@@ -515,7 +515,7 @@ export default async (models) => {
                 "8:30 - 12:30", 
                 "closed"
                 ],             
-                img: "services/medicals/cedro.jpeg",
+                img: "services/medicals/cedro.webp",
             map: "Farmacia+Cedro,Trieste,Italy",
             info:[
                 "https://www.comune.trieste.it/it/sociale-10345/farmacie-comunali-13332/farmacia-comunale-al-cedro-13446 ",
@@ -546,7 +546,7 @@ export default async (models) => {
                 "8:30 - 12:30", 
                 "closed"
                 ],             
-                img: "services/medicals/parafarmStazione.jpeg",
+                img: "services/medicals/parafarmStazione.webp",
             map: "Parafarmacia+Alla+Stazione,Trieste,Italy",
             info:[
                 "https://www.parafarmaciaallastazione.com/",
@@ -572,7 +572,7 @@ export default async (models) => {
                 "closed", 
                 "closed"
                 ],              
-            img: "services/medicals/cattinara.jpeg",
+            img: "services/medicals/cattinara.webp",
             map: "Ospedale+Cattinara,Trieste,Italy",
             info:[
                 "https://asugi.sanita.fvg.it/it/presidi-ospedalieri/ospedale-cattinara/",
@@ -601,7 +601,7 @@ export default async (models) => {
             timeInfo: ["Check-in: from 15:00 till 22:00",
                     "Check-out: from 08:00 till 10:00"
             ],
-            img: "services/hotels/paradise.jpeg",
+            img: "services/hotels/paradise.webp",
             map: "Addicted+to+Paradise, Trieste,Italy",
             info:[
                 "https://www.booking.com/hotel/it/addicted-to-paradise.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2%E2%82%AC30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=cfacbdacac584a3ef339677f74297fd0&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1656763179;srpvid=8e625454557f005b;type=total;ucfs=1&#hotelTmpl",                
@@ -627,7 +627,7 @@ export default async (models) => {
             timeInfo: ["Check-in: from 15:30 till 18:00",
                     "Check-out: until 11:00"
             ],
-            img: "services/hotels/DOMO.jpeg",
+            img: "services/hotels/DOMO.webp",
             map: "DOMO+Trieste, Trieste,Italy",
             info:[
                 "https://www.booking.com/hotel/it/domo-trieste.it.html?aid=303945&label=trieste-GHW42veeBvqGTJwjDMhX6AS387551541816%3Apl%3Ata%3Ap1240%3Ap2€30%3Aac%3Aap%3Aneg%3Afi%3Atikwd-5152014741%3Alp1008358%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YasQqy722txixmRxsiY7aeU&sid=3b9a027e65f796d4797989dc886f2c7a&dest_id=-131346;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=7;hpos=7;nflt=class%3D4;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=bayesian_review_score;srepoch=1656420276;srpvid=03ec5990527e037c;type=total;ucfs=1&#hotelTmpl",
@@ -656,7 +656,7 @@ export default async (models) => {
             timeInfo: ["Check-in: from 15:00 till 23:30",
                 "Check-out: from 08.30 till 11:00"
             ],            
-            img: "services/hotels/camilla.jpeg",
+            img: "services/hotels/camilla.webp",
             map: "CA'MILLA+Luxury+Apartments,Trieste,Italy",
             info:[
                 "https://camilla-apartments.com/en/home-en/",
@@ -683,7 +683,7 @@ export default async (models) => {
             timeInfo: ["Check-in:  from 15:00",
                 "Check-out: until 12:00"
             ],             
-            img: "services/hotels/hilton.jpeg",
+            img: "services/hotels/hilton.webp",
             map: "DoubleTree+By+Hilton, Trieste,Italy",
             info:[
                 "https://www.hiltonhotels.it/italia/doubletree-by-hilton-trieste/",
@@ -709,7 +709,7 @@ export default async (models) => {
                 "12:00-15:00/ 19:00-22:00", 
                 "12:00-15:00/ 19:00-22:00"
                 ],            
-            img: "services/restaurants/marascutti.jpeg",
+            img: "services/restaurants/marascutti.webp",
             map: "Vecio+Buffet+Marascutti,Trieste,Italy",
             info:[
                 "http://www.buffetmarascutti.it",
@@ -735,7 +735,7 @@ export default async (models) => {
                 "12:00-14:30/ 19:00-22:30", 
                 "12:00-14:30/ 19:00-22:30"
             ],             
-            img: "services/restaurants/marise.jpeg",
+            img: "services/restaurants/marise.webp",
             map: "Osteria+Marise,Trieste,Italy",
             info:[
                 "https://www.osteriamarise.it",
@@ -761,7 +761,7 @@ export default async (models) => {
                 "08.30-22.00", 
                 "10.00-16.00"
             ],             
-            img: "services/restaurants/pepi.jpeg",
+            img: "services/restaurants/pepi.webp",
             map: "Buffet+da+Pepi,Trieste,Italy",
             info:[
                 "http://www.buffetdapepi.it",
@@ -788,7 +788,7 @@ export default async (models) => {
             "9:00-22:30", 
             "9:00-22:30"
             ],
-            img: "services/cafes/caffè_tommaseo.jpeg",
+            img: "services/cafes/caffè_tommaseo.webp",
             map: "Caffè+Tommaseo,Trieste,Italy",
             info:[
             "https://www.caffetommaseo.it ",
@@ -816,7 +816,7 @@ export default async (models) => {
             "8:30-23:45", 
             "9:00-21:00"
             ],
-            img: "services/cafes/caffè_san_marco.jpeg",
+            img: "services/cafes/caffè_san_marco.webp",
             map: "Antico+Caffè+San+Marco,Trieste,Italy",
             info:[
             "http://www.caffesanmarco.com",
@@ -844,7 +844,7 @@ export default async (models) => {
             "22:00-04:00", 
             "closed"
             ],            
-            img: "services/entertainments/molo4.jpeg",
+            img: "services/entertainments/molo4.webp",
             map: "Molo+4,Trieste,Italy",
             info:[
                 "https://www.facebook.com/AnubiMolo4",
@@ -868,7 +868,7 @@ export default async (models) => {
             "16:00-01:00", 
             "16:00-00:00"
             ],
-            img: "services/entertainments/space_cinema.jpeg",
+            img: "services/entertainments/space_cinema.webp",
             map: "The+Space+Cinema,Trieste,Italy",
             info:[
                 "https://www.thespacecinema.it/i-nostri-cinema/trieste/al-cinema",
@@ -891,7 +891,7 @@ export default async (models) => {
                 "ticket office 09:00-16:00", 
                 "ticket office 09:00-13:30"
                 ],
-            img: "services/entertainments/teatro_verdi.jpeg",
+            img: "services/entertainments/teatro_verdi.webp",
             map: "Teatro+Verdi,Trieste,Italy",
             info:[
                 "http://www.teatroverdi-trieste.com/en/",
