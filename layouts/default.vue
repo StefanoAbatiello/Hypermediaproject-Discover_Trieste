@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 .header{
   height: 6rem;
