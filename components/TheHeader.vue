@@ -103,8 +103,8 @@ export default {
   top: 0px;
 }
 .logo-img {
-  height: 100px;
-  width: 300px;
+  height: auto;
+  width: 20vw;
 }
 .nav-item {
   text-align: right;
@@ -140,12 +140,12 @@ export default {
     text-shadow: none;
     font-size: 20px;
   }
+  .logo-img {
+    height: auto;
+    width: 154px;
+  }
 }
 @media only screen and (max-width: 992px) and (min-width: 767px) {
-  .logo-img {
-    height: 100px;
-    width: 30vw;
-  }
   .nav-item {
     text-align: left;
   }

@@ -5,13 +5,13 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-// const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
-const pg = require('pg')
-pg.defaults.ssl=true
-const database = new Sequelize(process.env.DATABASE_URL,{
-    ssl: true,
-    dialectOptions: { ssl: { require: true, rejectUnauthorized: false} },
-})
+const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
+// const pg = require('pg')
+// pg.defaults.ssl=true
+// const database = new Sequelize(process.env.DATABASE_URL,{
+//     ssl: true,
+//     dialectOptions: { ssl: { require: true, rejectUnauthorized: false} },
+// })
 
 async function initializeDatabaseConnection() {
     //Defining the struct of the tables in the db
@@ -84,7 +84,7 @@ async function initializeDatabaseConnection() {
 const pageContentObject = {
     index: {
         title: "Trieste",
-        images: ["about/about3.jpeg","homeImg/trieste3.jpeg","homeImg/trieste32.jpeg"],
+        images: ["homeImg/carHome3.jpeg","homeImg/trieste3.jpeg","homeImg/trieste30.jpeg"],
         paths: ["/pois/","/itineraries/","/events/","/services/","/about/","/contacts/"],
         cardImages: ["homeImg/trieste20.jpeg","homeImg/itineraryCopertina.jpeg","homeImg/eventCopertina.jpeg", "homeImg/serviceCopertina.jpeg","about/about2.jpeg","homeImg/contactCopertina.jpeg"],
         names: ["Points of interest","Itineraries","Events","Services","About Trieste","Contact Us"],
