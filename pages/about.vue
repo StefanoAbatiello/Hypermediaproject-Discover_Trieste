@@ -17,7 +17,7 @@
       </p>
       <img
         class="map"
-        :src="require(`~/assets/homeImg/ancientMap.jpeg`)"
+        :src="require(`~/assets/about/ancientMap.jpeg`)"
         alt="ancient map"
       />
       <!-- Single Paragraph -->
@@ -40,7 +40,7 @@
       </p>
       <img
         class="panorama"
-        :src="require(`~/assets/homeImg/panorama.jpeg`)"
+        :src="require(`~/assets/about/panorama.jpeg`)"
         alt="view"
       />
       <p class="mt-3">
@@ -118,7 +118,7 @@ export default {
     const { data } = await $axios.get('/api/page-info/about')
     const image = data.images
     return {
-      description,
+      image,
     }
   },
   head() {

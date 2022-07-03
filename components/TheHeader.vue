@@ -59,7 +59,7 @@ export default {
           path: '/events/',
         },
         {
-          name: 'Point of Interest',
+          name: 'Points of Interest',
           path: '/pois/',
         },
         {
@@ -75,7 +75,7 @@ export default {
           path: '/about/',
         },
         {
-          name: 'Contacs Us',
+          name: 'Contacts',
           path: '/contacts/',
         },
       ],

@@ -51,7 +51,7 @@
                   :img="poi.img[0]"
                   category="pois"
                   icon="place"
-                  text="This event take place at:"
+                  text="This event takes place at:"
                 />
               </div>
               <!-- additional informations of event -->
