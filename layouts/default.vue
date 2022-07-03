@@ -3,8 +3,8 @@
     <div class="main-page">
       <the-header class="header" />
       <nuxt />
-      <the-footer class="footer" />
     </div>
+    <the-footer class="footer" />
   </div>
 </template>
 
