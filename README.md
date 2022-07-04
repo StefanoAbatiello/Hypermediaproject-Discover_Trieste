@@ -27,15 +27,15 @@ Here is given the ER-Diagram to have an high-level view of the entities we decid
 In this project we have used Vue and Nuxt as frameworks.
 ### Nuxt
 We exploit the potentialities of Nuxt, mostly used to write the backend, as follows:
-– Project structure well
--divided in category to work in a organized manner during the deployment
-– asyncData function allowed us to easily retrieve data from the database
-– Nuxt-link exploit to route the user trough the different pages
+* Project structure well
+* Divided in category to work in a organized manner during the deployment
+* AsyncData function allowed us to easily retrieve data from the database
+* Nuxt-link exploit to route the user trough the different pages
 ### Vue
 We exploit the potentialities of Vue, used to write the frontend, as follows:
-– Modularity and reusability allow to create components and taking advantage of them to create reusable code structures
-– Logical statements used in the components (i.e. v-if, v-for,...) allowed us to create dynamic components
-– Apply styling directly on the page/component helps to develop pages layout in an easy way
+* Modularity and reusability allow to create components and taking advantage of them to create reusable code structures
+* Logical statements used in the components (i.e. v-if, v-for,...) allowed us to create dynamic components
+* Apply styling directly on the page/component helps to develop pages layout in an easy way
 
 ## Build Setup
 To test the website in localhost (without the server), you need to remove the comment in line 60 and comment the line 61 in nuxt.config.js and then remove the comment in line 8 and comment from line 9 to line 14 in api.js; at this point, type the following line commands in the terminal of the project:
