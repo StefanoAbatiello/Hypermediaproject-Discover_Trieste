@@ -117,4 +117,7 @@ export default {
   color: royalblue;
   font-size: 28px;
 }
+h5{
+  font-size: 20px;
+}
 </style>
