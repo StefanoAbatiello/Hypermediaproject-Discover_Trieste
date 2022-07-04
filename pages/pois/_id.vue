@@ -84,7 +84,7 @@
 
         <!-- Map with the location of the poi -->
         <section>
-          <div class="map rounded responsive mt-3">
+          <div class="map rounded responsive mt-3 mb-3">
             <iframe
               width="100%"
               height="600"
