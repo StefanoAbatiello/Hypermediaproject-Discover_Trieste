@@ -1,7 +1,7 @@
 <template>
   <!-- component used to display one service in a dedicated typeOfService page -->
   <div class="container-fluid m-0">
-    <div class="card m-0 pb-3 px-3" style="width: 100%">
+    <div class="card m-0 pb-3 px-3">
       <div class="row gx-5">
         <div class="col-md-6 p-0">
           <div class="container mt-4 p-0">
@@ -17,7 +17,7 @@
         <div class="col-md-6 mb-2 p-0">
           <div class="card-body p-0 pt-5">
             <div class="card-text mt-0 ps-2">
-              <tab-card-time
+              <tab-card-services
                 :id="id"
                 :name="name"
                 :service-type-id="serviceTypeId"
@@ -37,12 +37,12 @@
 </template>
 
 <script>
-// import TabCardTime from '~/components/TabCardTime.vue'
+import TabCardServices from '~/components/TabCardServices.vue'
 export default {
   name: 'ServiceCardComponent',
-  // components: {
-  //   TabCardTime,
-  // },
+  components: {
+     TabCardServices,
+  },
   props: {
     name: {
       type: String,
@@ -118,13 +118,12 @@ export default {
   border-radius: 0px 10px 10px 0px;
 }
 .card {
-  /* min-width: 300px;*/
+  width: 100%;  
   min-height: 400px; 
   border: transparent;
   border-bottom: 1px solid royalblue;
   border-radius: 0px;
 }
-
 .container{
   position:relative;
 }
@@ -134,7 +133,6 @@ export default {
   margin-right: 5;
   min-width: 400px;
   max-height: 400px;
-
 }
 .card-img {
   width: 100%;

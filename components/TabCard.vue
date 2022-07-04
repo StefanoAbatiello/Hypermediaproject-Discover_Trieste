@@ -52,18 +52,18 @@
       <div id="accessibility" class="tab-pane fade" role="tabpanel">
         <!-- the col props is used to define the number column needed -->
         <div :class="`row row-cols-${col} justify-content-between`">
-          <div class="col text">
+          <h5 class="col ">
             <span class="material-icons access-icon">{{ accessInfo[0] }}</span
-            >Step-Free
-          </div> 
-          <div class="col text">
+            > Step-Free
+          </h5> 
+          <h5 class="col ">
             <span class="material-icons access-icon">{{ accessInfo[1] }}</span
             >Flyers in Braille
-          </div>
-          <div class="info col text">
+          </h5>
+          <h5 class="info col ">
             <span class="material-icons access-icon">{{ accessInfo[2] }}</span
             >Audio Description
-          </div>
+          </h5>
         </div>
       </div>
       <!-- Content of Opening Time -->
@@ -73,26 +73,26 @@
           :key="`time-index-${timeIndex}`"
           class="row justify-content-center"
         >
-          <div class="col-6 text text-center">{{ time.day }}</div>
-          <div class="col-6 text text-center">{{ time.hour }}</div>
+          <h5 class="col-6 text-center">{{ time.day }}</h5>
+          <h5 class="col-6 text-center">{{ time.hour }}</h5>
         </div>
       </div>
       <!-- Content of Tickets price -->
-      <div id="prices" class="tab-pane text fade" role="tabpanel">
-        It is accessible in different prices:
+      <div id="prices" class="tab-pane fade" role="tabpanel">
+        <h5>It is accessible in different prices:</h5>
         <ul>
           <li
             v-for="(price, priceIndex) of prices"
             :key="`price-index-${priceIndex}`"
           >
-            {{ price }}
+          <h5>  {{ price }}</h5>
           </li>
         </ul>
         <!-- show the link to the website of the content -->
-        <div v-if="website !== null">
+        <h5 v-if="website !== null">
           For more information about the tickets visit:
           <a :href="website[0]" target="_blank">{{ website[1] }}</a>
-        </div>
+        </h5>
       </div>
     </div>
   </div>
@@ -158,8 +158,5 @@ export default {
   vertical-align: middle;
   color: royalblue;
 }
-.text{
-  font-size: 22px;
-  font-weight: 400;
-}
+
 </style>
