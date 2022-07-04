@@ -69,7 +69,7 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div class="text">
+          <div>
             <h5 class="mb-0">
               <span class="place material-icons"> place </span> {{ address }}
             </h5>
@@ -78,7 +78,7 @@
               :key="`text-index-${textIndex}`"
               class="mt-0 description"
             >
-              {{ text }}
+            <h5>  {{ text }}</h5>
             </div>
           </div>
         </div>
@@ -89,23 +89,23 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div v-if="serviceTypeId != 2" class="text">
+          <div v-if="serviceTypeId != 2">
             <div
               v-for="(t, tIndex) of timeInfo"
               :key="`time-index-${tIndex}`"
               class="mt-0 row justify-content-center"
             >
-              <div class="col-6 text-center">{{ t.day }}</div>
-              <div class="col-6 text-center">{{ t.hour }}</div>
+              <h5 class="col-6 text-center">{{ t.day }}</h5>
+              <h5 class="col-6 text-center">{{ t.hour }}</h5>
             </div>
           </div>
-          <div v-else class="text">
+          <div v-else>
             <div
               v-for="(t2, t2Index) of time"
               :key="`time-index-${t2Index}`"
               class="mt-0 description"
             >
-              {{ t2 }}
+            <h5>  {{ t2 }} </h5>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@
           style="height: 50px"
           role="tabpanel"
         >
-          <div class="text">
+          <div>
             <h5>Click and visit the website of <a :href="info[0]" target="_blank">{{ name}}</a></h5>
             <h5> {{ info[1] }} </h5>
             <h5 v-if="info[2]!=null"> {{ info[2] }} </h5>
@@ -149,7 +149,7 @@
 
 <script>
 export default {
-  name: 'TabCardTimeComponent',
+  name: 'TabCardServicesComponent',
   props: {
     name:{
       type:String,
@@ -247,8 +247,5 @@ export default {
   padding-bottom: 2;
   width: 100%;
 }
-.text{
-  font-size: 20px;
-  font-weight: 400;
-}
+
 </style>

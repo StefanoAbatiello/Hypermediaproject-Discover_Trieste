@@ -3,21 +3,21 @@ export default async (models) => {
     const itineraryList = [
         {
             name: "Architectural Liberty tour",
-            img: ["pois/liberty/casaTerni2.jpeg", "pois/liberty/casaDeStabileOld.jpeg", "pois/liberty/banca2.jpeg"],
+            img: ["pois/liberty/casaTerni2.webp", "pois/liberty/casaDeStabileOld.webp", "pois/liberty/banca2.webp"],
             map: "Casa+De+Stabile,Trieste,Italy&destination=Casa+Terni,Trieste,Italy&waypoints=Palazzo+Vivante,Trieste,Italy|Salone+Incanti,Trieste,Italy|Banca+Di+Praga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["2,1 km", "2755 steps"],
             description: "Liberty was a style that aroused more than a few controversies and objections, often having more of a political and ideological nature than an artistic one. An example is the final verdict of Silvio Benco, a well-known exponent of Trieste's culture who had clear irredentist tendencies.With the significant demographic changes and, more importantly, the incredible economic development of the city, the emerging middle class had new stylistic and construction needs. Liberty became the only decorative style that could be grafted onto Eclecticism, the previous trend that had heavily influenced the city."
         },
         {
             name: "Dip into Roman archeology",
-            img: ["pois/roman/teatro.jpeg", "pois/roman/lapidarioTergestino.jpeg","pois/roman/antiquarium.jpeg"],
+            img: ["pois/roman/teatro.webp", "pois/roman/lapidarioTergestino.webp","pois/roman/antiquarium.webp"],
             map: "Teatro+Romano,Trieste,Italy&destination=Antiquarium,Trieste,Italy&waypoints=Arco+Riccardo,Trieste,Italy|Castello+Di+San+Giusto,Trieste,Italy|Lapidario+Tergestino,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["7,1 km", "9317 steps"],
             description: "The most ancient traces of the urban settlement of Trieste are considered to be the remains of the Roman colony of Tergeste, founded toward the middle of the 1st century B.C. and extending to the northwestern slope of the hill of San Giusto, overlooking the Adriatic Sea. The coast was farther back than it is now, and evidence of the harbor structures have been found along via del Teatro Romano and via Cavana: the wharves, built of sandstone slabs in the 1st and early 2nd century A.D., were in use at least until the 5th century. In 33-32 B.C. the city was enclosed by walls, which soon lost their defensive function and served for containment and terracing of the slope. The lay of the land conditioned urban organization from the outset, with the business district close to the harbor, a largely residential district on the hillside and the political, administrative and religious center at the top of the hill."
         },
         {
             name: "Multireligious churches tour",
-            img: ["pois/churches/insideNicoloGreci.jpeg", "pois/churches/chiesaOrtodossa.jpeg", "pois/churches/sanGiusto.jpeg"],
+            img: ["pois/churches/insideNicoloGreci.webp", "pois/churches/chiesaOrtodossa.webp", "pois/churches/sanGiusto.webp"],
             map: "Cattedrale+San+Giusto,Trieste,Italy&destination=Chiesa+Della+Beata+Vergine,Trieste,Italy&waypoints=Chiesa+Di+Nicolo+Dei+Greci,Trieste,Italy|Chiesa+ortodossa,Trieste,Italy|Sinagoga,Trieste,Italy&avoid=tolls|highways&mode=walking",
             distances: ["3 km", "3937 steps"],
             description: "The various ethnic-religious communities flocked to Trieste during the 19th century, attracted by the prosperity of the free port: Greeks, Serbs, Armenians, Albanians, Turks joined the Italian and Slovenian natives. Due to this influence, in Trieste there are a lot of multi-cultural churches which merge the ethics and the cultures of a big community!"
@@ -29,7 +29,7 @@ export default async (models) => {
     const poiList = [
         {
             name: "Casa De Stabile",
-            img: ["pois/liberty/casaDeStabile.jpeg", "pois/liberty/casaDeStabile3.jpeg", "pois/liberty/casaDeStabileOld.jpeg"],
+            img: ["pois/liberty/casaDeStabile.webp", "pois/liberty/casaDeStabile3.webp", "pois/liberty/casaDeStabileOld.webp"],
             itineraryId: itinerary0.id,
             stepDescription:"The tour starts on the corner between river Grumula and Belpoggio street, with an house built in 1907 and became a symbol of the Trieste architectural style.",
             description: ["The corner of the house is dominated by the erker, the protruding window that Ernesto de Stabile requested in 1906 from Max Fabiani, the designer of both the building and furnishings, so he could enjoy the spectacle of the sea and his yacht moored at the nearby sailing club from the top floor.",
@@ -43,7 +43,7 @@ export default async (models) => {
         },
         {
             name: "Viviani-Giberti Palace",
-            img: ["pois/liberty/palazzoVivanti2.jpeg", "pois/liberty/palazzoVivanti3.jpeg", "pois/liberty/palazzoVivanti.jpeg"],
+            img: ["pois/liberty/palazzoVivanti2.webp", "pois/liberty/palazzoVivanti3.webp", "pois/liberty/palazzoVivanti.webp"],
             itineraryId: itinerary0.id,
             stepDescription:"The next step is an other Liberty palace built in the same period of the previous step. Here we can observe same difference between these two first houses in terms of facade and side prospets.",
             description: ["Palazzo Viviani Giberti is the only large Trieste Liberty building to be signed off by an Italian architect, Giuseppe Sommaruga. Inaugurated on Christmas Day in 1907 as the Teatro filodrammatico. It later became the Cinema Eden, and now, albeit with another name, remains a cinema.",
@@ -57,7 +57,7 @@ export default async (models) => {
         },
         {
             name: "Salone Degli Incanti",
-            img: ["pois/liberty/saloneIncanti.jpeg", "pois/liberty/salone2.jpeg", "pois/liberty/salone3.jpeg"],
+            img: ["pois/liberty/saloneIncanti.webp", "pois/liberty/salone2.webp", "pois/liberty/salone3.webp"],
             itineraryId: itinerary0.id,
             stepDescription:"This building is the Expositive Center of Modern and Contemporary Art, build in 1913 by Giorgio Polli: it's really interesting due to its innovative and functional construction both with its sinuose and aestethic magnificent",
             description: ["The magnificent salone degli incanti is the heart of the exhibition centre for contemporary and modern art better known as “ex pescheria centrale” and located in riva nazario sauro.",
@@ -71,7 +71,7 @@ export default async (models) => {
         },
         {
             name: "Bank of Prague",
-            img: ["pois/liberty/banca2.jpeg", "pois/liberty/banca3.jpeg","pois/liberty/bancaPraga.jpeg"],
+            img: ["pois/liberty/banca2.webp", "pois/liberty/banca3.webp","pois/liberty/bancaPraga.webp"],
             itineraryId: itinerary0.id,
             stepDescription:"This palace is the result of a project realized by Josip Costaperaria and Osvaldo Poliva and represents a clear example of rationalism characterized by solid and compact volumes.",
             description: ["In 1911, the municipal administration of Trieste decided to demolish some buildings in order to widen Via Ponterosso (today Via Roma), an important artery between the old and new parts of the city, due to the large amount of vehicular traffic that made it difficult for pedestrians to pass. New plots of land were thus created, one of which was purchased by the Bank of Prague (Živnostenská banka pro Čechy in Moravu), which erected a building there to house its headquarters, offices and housing. The project was developed by architects Josip Costaperaria and Osvald Polívka.",
@@ -86,7 +86,7 @@ export default async (models) => {
         },
         {
             name: "Casa Terni",
-            img: ["pois/liberty/casaTerni.jpeg", "pois/liberty/casaTerni2.jpeg", "pois/liberty/casaTerni3.jpeg"],
+            img: ["pois/liberty/casaTerni.webp", "pois/liberty/casaTerni2.webp", "pois/liberty/casaTerni3.webp"],
             itineraryId: itinerary0.id,
             stepDescription:"The tour ended in Via Dante Alighieri, with the building which represents one of the best modernist evidence of Romeo Despoli. The continuous alternate of elements sunken or projecting, columns and terraces, decorative pilasters and structural pilasters creates a game of chiaroscuros that animate the facade.",
             description: ["The palace was designed in 1906 by architect Romeo Depaoli, commissioned by knight Augusto Terni. The building took its current name following the opening on the ground floor of the Smolars stationery shop, founded by Costanza Carniel Smolars. In 1970, the palace underwent a renovation of the interior designed by architects Giampaolo Batoli and Claudio Visintini. Between 1994 and 1995, Enrico Colosimo was responsible for the cleaning and restoration of the stonework on the façades on Via San Nicolò and Via Dante Alighieri.",
@@ -101,7 +101,7 @@ export default async (models) => {
         },
         {
             name: "Roman Theater",
-            img: ["pois/roman/teatro.jpeg", "pois/roman/teatro2.jpeg", "pois/roman/teatro3.jpeg"],
+            img: ["pois/roman/teatro.webp", "pois/roman/teatro2.webp", "pois/roman/teatro3.webp"],
             itineraryId: itinerary1.id,
             stepDescription:"This itinerary starts in one of the most ancient place of Trieste: the theater. Mnay years ago this place was the center of the Roman culture and entertainment. Let you suggest by this amazing place to start the itinerary on the right foot!",
             description: ["The Roman Theatre behind Piazza Unità d'Italia at the foot of the San Giusto hill is one of the most striking remains of ancient Roman Tergeste.",
@@ -117,7 +117,7 @@ export default async (models) => {
         },
         {
             name: "Arch of Riccardo",
-            img: ["pois/roman/arco.jpeg", "pois/roman/arco2.jpeg", "pois/roman/arco3.jpeg"],
+            img: ["pois/roman/arco.webp", "pois/roman/arco2.webp", "pois/roman/arco3.webp"],
             itineraryId: itinerary1.id,
             stepDescription:"The trip continues with the Roman gate, which is an important sign of reconstruction of the city. It was a passage through the city walls built by Augustus in 33-32 B.C., after they had lost their defensive function.",
             description: ["Probably dating from the 1st century AD, the Arch of Riccardo, in the heart of old Trieste, is a Roman gate in the ancient walls of Tergeste that were built by Augustus in 33 BC.",
@@ -131,7 +131,7 @@ export default async (models) => {
         },
         {
             name: "Castle of St. Justus",
-            img: ["pois/roman/castelloGiusto.jpeg", "pois/roman/castle2.jpeg", "pois/roman/castle3.jpg"],
+            img: ["pois/roman/castelloGiusto.webp", "pois/roman/castle2.webp", "pois/roman/castle3.jpg"],
             itineraryId: itinerary1.id,
             stepDescription:"Now we are moving towards the hill, to visit one of the most representative places of the city: the castle. Inside the castle is possible to visit also the armory, the walls and the museum.",
             description: ["In the prehistoric age on the hill of San Giusto there was a castelliere (fortified borough), which in the Roman age became an important urban centre. The fortress, built by the Venetians in the Middle Ages, was pulled down in the 14th century by will of the Patriarch of Aquileia and, in 1470 only, it was rebuilt by Friedrich II of Habsburg; the square tower and the two-storey building, which today houses the Castle Museum, date back to this period.",
@@ -148,7 +148,7 @@ export default async (models) => {
         },
         {
             name: "Lapidario Tergestino",
-            img: ["pois/roman/lapidarioTergestino.jpeg", "pois/roman/lapidario2.jpeg", "pois/roman/lapidario3.jpeg"],
+            img: ["pois/roman/lapidarioTergestino.webp", "pois/roman/lapidario2.webp", "pois/roman/lapidario3.webp"],
             itineraryId: itinerary1.id,
             stepDescription:"In the under ground of Bastione Lallo, we'll find a big collection of ancient monuments (around hundred units) coming from the Capitoline area, from sacred buildings, from the Theater and from the necropolis.",
             description: ["The sixteenth century Lalio Bastion of San Giusto Castle houses the Lapidario Tergestino, which has 130 inscriptions and sculptures illustrating the story of Roman Tergeste and its monuments, religious buildings, theatre and necropolis.",
@@ -162,7 +162,7 @@ export default async (models) => {
         },
         {
             name: "Antiquarium",
-            img: ["pois/roman/antiquarium.jpeg", "pois/roman/antiquarium2.jpeg", "pois/roman/antiquarium3.jpeg"],
+            img: ["pois/roman/antiquarium.webp", "pois/roman/antiquarium2.webp", "pois/roman/antiquarium3.webp"],
             itineraryId: itinerary1.id,
             stepDescription:"The archeological tour ends under the ground in Via Donota: here there are the ancient rests of many Roman buildings of the Ist century A.D. In order to reach this place, is suggested to use the car or the bus, due to its far positioning with respect to the previous step!",
             description: ["The Antiquarium was created following discoveries in the 1980s-84 to coincide with the first restoration work in the Cittavecchia, Donota area: the remains of a domus/sepolcrete and Roman city walls were discovered. Therefore, what was found was highlighted, some showcases of objects, to which others from the later excavation above Via Barbacan were added. The explanatory panels also explain something about the Roman theatre, the sculptures of which, however, are in the Terestine Lapidarium at the castle.",
@@ -178,7 +178,7 @@ export default async (models) => {
         },
         {
             name: "Cathedral of St. Justus",
-            img: ["pois/churches/sanGiusto.jpeg", "pois/churches/insideSanGiusto.jpeg", "pois/churches/sanGiusto2.jpeg"],
+            img: ["pois/churches/sanGiusto.webp", "pois/churches/insideSanGiusto.webp", "pois/churches/sanGiusto2.webp"],
             itineraryId: itinerary2.id,
             stepDescription:"The multireligious tour in Trieste starts on the St. Julius' hill, in an early Christian basilica which cointains some Roman remains in the current floor.",
             description: ["The Cathedral of San Giusto stands on the hill of the same name, in the heart of the ancient Roman city of Tergeste. Initially, towards the middle of the fifth century, an Early Christian basilica featuring a nave and two aisles, a presbytery with an apse, and mosaic flooring, was built where the capitolium (temple) once stood.",
@@ -195,7 +195,7 @@ export default async (models) => {
         },
         {
             name: "Church of St. Nicolò",
-            img: ["pois/churches/nicoloGreci.jpeg", "pois/churches/insideNicoloGreci.jpeg", "pois/churches/nicoloGreci2.jpeg"],
+            img: ["pois/churches/nicoloGreci.webp", "pois/churches/insideNicoloGreci.webp", "pois/churches/nicoloGreci2.webp"],
             itineraryId: itinerary2.id,
             stepDescription:"The tour continues on the banks, near Canal Grande, where we can observe most important church of Trieste, dedicated to St. Nicolò patron of seafarers and shipowners.",
             description: ["Built on the seafront in the first half of the eighteenth century, it was not by chance that the Greek Orthodox church was dedicated to Saint Nicholas, the patron saint of sailors, ship owners and all those involved in maritime trade, and to the Holy Trinity.",
@@ -211,7 +211,7 @@ export default async (models) => {
         },
         {
             name: "Church of St. Spiridione",
-            img: ["pois/churches/chiesaOrtodossa.jpeg", "pois/churches/ortodossa2.jpeg", "pois/churches/ortodossa3.jpeg"],
+            img: ["pois/churches/chiesaOrtodossa.webp", "pois/churches/ortodossa2.webp", "pois/churches/ortodossa3.webp"],
             itineraryId: itinerary2.id,
             stepDescription:"The next step is a church in pure Byzantine style, characterized by white stone with red marble columns (from Verona) rises on the canal with its very imponent and large dome.  ",
             description: ["The work of architect Carlo Maciachini (1869), it stands on the site of the pre-existing Church of San Spiridione from 1753.",
@@ -227,7 +227,7 @@ export default async (models) => {
         },
         {
             name: "Israelite Temple Synagogue",
-            img: ["pois/churches/sinagoga.jpeg", "pois/churches/insideSinagoga.jpeg", "pois/churches/sinagoga3.jpeg"],
+            img: ["pois/churches/sinagoga.webp", "pois/churches/insideSinagoga.webp", "pois/churches/sinagoga3.webp"],
             itineraryId: itinerary2.id,
             stepDescription:"The tour continue on the west of the city, in order to let you observe one of the biggest Israelite church in Europe. This church is the main point for culture and religion among the different ethnicities since the 90s.",
             description: ["The Trieste Synagogue was built in 1908-12 to the plans of Ruggero Berlam, in collaboration with his son Arduino, replacing four earlier smaller synagogues.",
@@ -243,7 +243,7 @@ export default async (models) => {
         },
         {
             name: "Sanctuary of St. Mary",
-            img: ["pois/churches/beataVergine.png", "pois/churches/insideBeataVergine.jpeg", "pois/churches/beataVergine2.png"],
+            img: ["pois/churches/beataVergine.webp", "pois/churches/insideBeataVergine.webp", "pois/churches/beataVergine2.webp"],
             itineraryId: itinerary2.id,
             stepDescription:"The tour ends in the Roman ancient zone, in the center of Trieste with a Jesuits church built around the XVII century in honor of the Madonna.",
             description: ["The Sanctuary of Santa Maria Maggiore rises majestically alongside the small Romanesque church of San Silvestro. The church was built between 1627 and 1682 by the Jesuits, who arrived in Trieste in the early years of the century.",
@@ -283,7 +283,7 @@ export default async (models) => {
                 "Trieste Spring Young is a party dedicated to the little ones, to the boys and girls of the Trieste elementary and middle schools, ready to get involved in an event designed and structured for them.",
                 "The Race of Heroes is a walk in cosplay and / or masquerade for adults and children whose only rule is to be masked and whose goal is  to celebrate the heroes and heroines of the pandemic and the struggles faced in the last two years.The competition will take place in the late afternoon of Saturday 7 May, along the streets of the city center, and will involve young and old, athletes and amateurs in a charity project in favor of \"ATLETI ANCHE NOI\", the Trieste Atletica project for the promotion of sport for children and young people with autism and / or intellectual-relational disabilities. Registration is open to everyone, including those who will not take part in the TSR events the following day.",
             ],
-            img: ["events/springRun/logo.png", "events/springRun/targhetta.jpeg", "events/springRun/arrivo.jpeg"],
+            img: ["events/springRun/logo.webp", "events/springRun/targhetta.webp", "events/springRun/arrivo.webp"],
             season: "Summer",
             date: "from 5/5 to 8/5",
             poiId: poi6.id,
@@ -298,7 +298,7 @@ export default async (models) => {
             "Barcolana is not only the largest regatta in the world, but also a fantastic container that welcomes the different facets of the world of sailing. From the Barcolana Young, the two days dedicated to the Optimist class, to the Barcolana Classic, the regatta dedicated to vintage, classic and spirit of tradition boats; and again Barcolana Nuota, Barcolana Fun and the Barcolana By Night, a regatta that becomes a show just a few steps from the ground and eventually the Autumn Cup.",
             "In the days preceding the event, temporary stores are lined up on land to host the sponsors of the regatta, products and services for boating, the crews: it is the “Barcolana Village”. The fascinating Piazza Unità d'Italia, the largest square in Europe open to the sea, is transformed in the evening into a parterre dedicated to entertainment and shows. A few steps from the moored boats and the Maritime Station, stories of the sea, tradition and seafaring culture involve the public. In this section you will find all the information to experience the great Barcolana party. From the Village to exhibitions, from shows to meeting opportunities: we are waiting for you in Trieste starting from 1st October!",
         ],
-            img: ["events/barcolana/logo.jpeg", "events/barcolana/statua.jpeg", "events/barcolana/piazza.jpeg"],
+            img: ["events/barcolana/logo.webp", "events/barcolana/statua.webp", "events/barcolana/piazza.webp"],
             season: "Winter",
             date: "from 1/10 to 9/10",
             poiId: poi11.id,
@@ -314,7 +314,7 @@ export default async (models) => {
             "The most famous square in Trieste is filled with pinwheels for an extraordinary glance. This year the pinwheels are colored yellow and blue in solidarity with the Ukrainian people. And we hope that the winds of peace will soon take the place of the winds of war. Come and photograph yourself and share your shots using the hashtag #boramata.",
             "Find out what we have prepared for you this year. Good wind!",
         ],
-            img: ["events/boramata/logo.jpeg", "events/boramata/girandola.jpeg", "events/boramata/piazza.jpeg"],
+            img: ["events/boramata/logo.webp", "events/boramata/girandola.webp", "events/boramata/piazza.webp"],
             season: "Summer",
             date: "from 03/06 to 05/06",
             poiId: poi0.id,
@@ -329,7 +329,7 @@ export default async (models) => {
             "The exhibition focuses above all on the heritage of the Peindre en Normandie Collection - one of the most representative collections of the Impressionist period - tell of the exchanges, comparisons and collaborations between the greatest artists of the time who - immersed in a dazzling nature with intense colors and sparkling panoramas - gave Normandy the emblematic image of happiness of painting.",
             "Furthermore, on the occasion of the exhibition on the Impressionists, it is also possible to visit with a single entrance ticket the stupendous Museo Revoltella, a modern art gallery in Trieste that boasts a prestigious collection: starting from the very rich legacy of the homonymous baron Pasquale Revoltella - who made it his home until 1869 - to reach the most recent acquisitions with works by great artists such as Fattori, De Nittis, Sironi, Carrà, De Chirico, Fontana, Pomodoro, Hayez and many other important exponents of modern and contemporary art.",
         ],
-            img: ["events/impressionisti/locandina.png", "events/impressionisti/stanza.png", "events/impressionisti/quadro.png"],
+            img: ["events/impressionisti/locandina.webp", "events/impressionisti/stanza.webp", "events/impressionisti/quadro.webp"],
             season: "Winter",
             date: "from 04/1 to 07/4",
             poiId: poi1.id,
@@ -344,7 +344,7 @@ export default async (models) => {
             "After the extraordinary success of the summer tour throughout Italy, Gianna Nannini returns to the stage with the piano and sound design of the German musician Christian Lhor.",
             "Soft and strong, sweetness and energy, are the two souls of the rocker who in recent years has conquered the stages of all Europe with her unique stage presence and a very direct approach. The tour in the most beautiful theaters in Italy is an unmissable opportunity to listen to the rocker's most loved songs in a new artistic expression.",            
         ],
-            img: ["events/Nannini/logo.jpeg", "events/Nannini/pianoforte.jpeg", "events/Nannini/platea.jpeg"],
+            img: ["events/Nannini/logo.webp", "events/Nannini/pianoforte.webp", "events/Nannini/platea.webp"],
             season: "Winter",
             date: "22nd of November",
             poiId: poi5.id,
@@ -359,7 +359,7 @@ export default async (models) => {
             "The exhibition itinerary at the Salone degli Incanti in Trieste features the original painting Piden aeroplanos y les dan alas de petate attributed to Frida Kahlo and 15 reproductions of famous self-portraits made between1926 and 1949 reproduced with sophisticated modlight technology, which restores the viewer to the details of the oil painting with impressive realism. ",
             "Original works also include six watercolor lithographs by the artist and husband Diego Rivera, from private Mexican collections, and a hundred black-and-white and color shots by Colombian photographer Leo Matiz from the Leo Matiz Foundation in Bogota. ", "Also on display are letters and diary pages, more than 40 philatelic issues (including the issue featuring the famous Self-Portrait with Necklace (1933), alongside digital reproductions of Mexican self-portraits and murals, life-size reproductions of environments such as Frida Kahlo's bedroom, studio and garden, and a high-tech 10D cinema room for multi-sensory video projection.",
         ],
-            img: ["events/fridaKahlo/logo.jpeg", "events/fridaKahlo/interno.jpeg", "events/fridaKahlo/ingresso.jpeg"],
+            img: ["events/fridaKahlo/logo.webp", "events/fridaKahlo/interno.webp", "events/fridaKahlo/ingresso.webp"],
             season: "Summer",
             date: "from 12/3 to 23/7",
             poiId: poi2.id,
@@ -374,7 +374,7 @@ export default async (models) => {
             "The actor and director Francesco Gusmitta with the extraordinary participation of the voice of the great actor Giuseppe Pambieri addresses the texts of international authors Tagore- Albert Einstein- Friedrich Nietzsche - Simon Weil - Mons. Rafffaele Nogaro -Sandro Veronesi - Umberto Galimberti and Patrizio Ranieri Ciu among the musical notes of the famous orchestra fil (m) harmonica of Mossa APS conducted by Maestro Fabio Persoglia who introduces memorable musical reasons by E. Morricone, J. Williams H. Mancini and N . Rain.",
             "The show, which will last one hour, is the occasion of a tacit and sublime circumstance of request for help and intercession for a miracle of Peace inside and outside of us. in one of the saddest and darkest periods of our history.",
         ],
-            img: ["events/pace/logo.jpeg", "events/pace/speaker.jpeg", "pois/churches/beataVergine.png",],
+            img: ["events/pace/logo.webp", "events/pace/speaker.webp", "pois/churches/beataVergine.webp",],
             season: "Summer",
             date: "12th of June",
             poiId: poi14.id,
@@ -389,7 +389,7 @@ export default async (models) => {
             "Among the guests, well-known names in the field, such as Mario Fusco (RedHat), Java Champion and co-author of the book \"Modern Java In Action\" published by Manning who is entrusted with the keynote, Andres Almiray (Oracle), Java Champion and longtime Java / Groovy developer who will talk about microservices and data exchange with databases, and Heather Vancura (Oracle / JCP), program director of the Java Community Process who will talk about how decisions are made about new Java developments and how to contribute to those decisions. Then there will be Peter Palaga (RedHat), Nate Schutta (VMware) and Jakub Pilimon (VMware), other well-known names, who will talk about two frameworks widely used in the Java world, Spring and Quarkus.",
             "We will also talk about Chaos Engineering with Margherita Bonetto (AWS), Kubernetes and Istio with Sergii Bishyr (Hazelcast), Explainable AI with Irene Ferfoglia, and how to effectively migrate legacy code with Marco Denisi (Klarna). He will also not miss the opportunity to discuss with Kelly Jille (Order) about the importance of mentorship. Voxxed Days Trieste will therefore be an international event that plans to attract developers from the Triveneto and neighboring countries, thanks to the presence of international and local speakers and the use of English as the official language of the event.",
         ],
-            img: ["events/Voxxed/logo.jpeg", "events/Voxxed/platea.png", "events/Voxxed/tizio.jpeg"],
+            img: ["events/Voxxed/logo.webp", "events/Voxxed/platea.webp", "events/Voxxed/tizio.webp"],
             season: "Winter",
             date: "26th of November",
             poiId: poi4.id,
@@ -405,7 +405,7 @@ export default async (models) => {
             "Also a member of the regional astronomical poetry group \"From the Cosmos to the Word\" will participate.", 
             "The pianist Andrea Virtuoso will conclude the morning with a short program of classical and modern music on topics related to the topic of the event.",
         ],
-            img: ["events/Hack/logo.jpeg", "events/Hack/cannocchiale.jpeg", "events/Hack/spazio.jpeg"],
+            img: ["events/Hack/logo.webp", "events/Hack/cannocchiale.webp", "events/Hack/spazio.webp"],
             season: "Summer",
             date: "12th of June",
             poiId: poi0.id,
@@ -420,7 +420,7 @@ export default async (models) => {
             "Contemporary composer, traditional musician or rock star, he didn't have to choose, he combined everything to invent music that is both universal and absolutely his own.",
             "Bregovic carries within himself the melting pot that characterized all his work \“I am from Sarajevo, I was born on a frontier: the only one where Orthodox, Catholics, Jews and Muslims met. My dad is Catholic, my mom is Orthodox, my wife is Muslim. And I also feel a bit of a gypsy, perhaps because for my father, a colonel in the army, it was unacceptable for me to be a musician - a gypsy profession - as he used to say\""        
         ],
-            img: ["events/Bregovic/logo.jpeg", "events/Bregovic/palco.jpeg", "events/Bregovic/primopiano.jpeg"],
+            img: ["events/Bregovic/logo.webp", "events/Bregovic/palco.webp", "events/Bregovic/primopiano.webp"],
             season: "Summer",
             date: "23th of July",
             poiId: poi7.id,
@@ -433,28 +433,33 @@ export default async (models) => {
     const servicesList = [
         {
             name: "Medical services",
-            img: "services/medicalCard.webp",
+            img: "services/medical.webp",
+            imgCard: "services/medicalCard.webp",
             description: "Sometimes it happen to not feel well and if it happens while you are in Trieste, here there is a list to find out info about the main hospital, pharmacies and other useful places for your health.",
         },
         {
             name: "Hotel and B&B",
-            img: "services/hotelsCard.webp",
+            img: "services/hotels.webp",
+            imgCard: "services/hotelsCard.webp",
             description: "You want to visit Trieste, but still don't know where to sleep? This page is what you are looking for! From B&bs to luxurious hotels, here you can choose what fits you the best and organize a fantastic stay in Trieste",
 
         },
         {
             name: "Restaurants",
-            img: "services/restaurantsCard.webp",
+            img: "services/restaurants.webp",
+            imgCard: "services/restaurantsCard.webp",
             description: "You cannot visit Trieste without tasting the typical cousine. To fully experience Trieste, here there are the best places to try out the typical dishes of the city and discover the history of Trieste through the delicious food ",
         },
         {
             name: "Cafes",
-            img: "services/caffèCard.webp",
+            img: "services/caffè.webp",
+            imgCard: "services/caffèCard.webp",
             description: "For a typical Italian breakfast, for a snack while visiting the city, for a drink with friends, these places will make you feel at home and you will be able to try all the deliciousness that Trieste as to offer: pastries, drinks, coffee in historical caffès of the city",
         },
         {
             name: "Entertainment",
-            img: "services/entertainmentCard.webp",
+            img: "services/entertainment.webp",
+            imgCard: "services/entertainmentCard.webp",
             description: "If you don't know what to do during your nights in Trieste, we have some suggestions for you. If you just want to relax or dance all night long, we are sure this list will help you make the most out of your stay in Trieste",
         },
 

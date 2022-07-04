@@ -3,7 +3,7 @@
   <div >
     <!-- Header of the Page -->
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.jpeg`)" alt="background"/>
+      <img class="img" :src="require(`~/assets/homeImg/contactCopertina.webp`)" alt="background"/>
       <div class="overlay"></div>
       <h1>Contact Us</h1>
     </div>

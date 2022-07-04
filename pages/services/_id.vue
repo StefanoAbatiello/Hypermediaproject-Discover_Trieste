@@ -4,6 +4,7 @@
     <!-- Header image -->
     <div class="image-header mb-3" >
       <img class="img" style="height: 30rem" :src="require(`~/assets/${img}`)" alt="background"/>
+    <div class="overlay"></div>
     </div>
     <!-- main section -->
     <section class="main-content">
