@@ -58,7 +58,7 @@
         Giusto.
       </p>
       <img
-        class="panorama"
+        class="castellieri"
         :src="require(`~/assets/about/castellieri.webp`)"
         alt="view"
       />
@@ -82,7 +82,7 @@
         uniqueness once it was released from the Central European context.
       </p>
       <img
-        class="panorama"
+        class="trieste19th"
         :src="require(`~/assets/about/trieste19th.webp`)"
         alt="view"
       />
@@ -100,7 +100,7 @@
         hinterland were definitively returned to Italy.
       </p>
       <img
-        class="panorama"
+        class="yugoslavia"
         :src="require(`~/assets/about/yugoslavia.webp`)"
         alt="view"
       />
