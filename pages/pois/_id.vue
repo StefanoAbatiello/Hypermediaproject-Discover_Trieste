@@ -97,7 +97,6 @@
         </section>
       </div>
     </section>
-    <script>console.log({{relatedEvent}})</script>
   </div>
 </template>
 
