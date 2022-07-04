@@ -131,7 +131,7 @@ export default async (models) => {
         },
         {
             name: "Castle of St. Justus",
-            img: ["pois/roman/castelloGiusto.webp", "pois/roman/castle2.webp", "pois/roman/castle3.jpg"],
+            img: ["pois/roman/castelloGiusto.webp", "pois/roman/castle2.webp", "pois/roman/castle3.webp"],
             itineraryId: itinerary1.id,
             stepDescription:"Now we are moving towards the hill, to visit one of the most representative places of the city: the castle. Inside the castle is possible to visit also the armory, the walls and the museum.",
             description: ["In the prehistoric age on the hill of San Giusto there was a castelliere (fortified borough), which in the Roman age became an important urban centre. The fortress, built by the Venetians in the Middle Ages, was pulled down in the 14th century by will of the Patriarch of Aquileia and, in 1470 only, it was rebuilt by Friedrich II of Habsburg; the square tower and the two-storey building, which today houses the Castle Museum, date back to this period.",
