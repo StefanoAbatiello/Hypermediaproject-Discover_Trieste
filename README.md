@@ -6,11 +6,13 @@ Services, Pois, Itineraries and Events structure in the website follows more or 
 Starting from the index page, the user have a general view on all the "group of topics" pages and can decide to detailed explore one of them clicking on the preview. At this point the user can visit the "kind of topic" page where he finds detailed info and eventually links to other correlated pages.
 All the "group of topic"  pages that can be found in the homepage are reachable at any time while browsing the website thanks to a menu on the header and the logo (which is a link to the homepage and it's clickable also from the footer).
 
-You can find the official documentation at this link: add link.. 
+You can find the official documentation at this link:[__documentation__](https://github.com/stefanotaborelli/ACSS/blob/main/DesignDocument/latex/DesignProject.pdf)
 
 ## Database design
 In order to retrieve information for dynamical pages, we design a database containing all the "topics" data.
 Here is given the ER-Diagram to have an high-level view of the entities we decided to store in the database and the relationships among them.
+
+![alt text](https://github.com/stefanotaborelli/ACSS/blob/main/DesignDocument/latex/assets/Tables/ER-Diagram.png)
 
 ## Best practice adopted
 In this project we have used Vue and Nuxt as frameworks.
