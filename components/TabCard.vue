@@ -89,10 +89,12 @@
           </li>
         </ul>
         <!-- show the link to the website of the content -->
-        <h5 v-if="website !== null">
+        <div v-if="website[0] != '' ">
+        <h5>
           For more information about the tickets visit:
           <a :href="website[0]" target="_blank">{{ website[1] }}</a>
         </h5>
+        </div>
       </div>
     </div>
   </div>
