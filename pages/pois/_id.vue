@@ -69,7 +69,6 @@
               <div v-if="relatedEventName!==null" class="col-12 related-link" >
                 <related-card
                   :id="relatedEventId"
-                  :key="`poi-index-${eventIndex}`"
                   class="eventy"
                   :name="relatedEventName"
                   :img="eventImage"
