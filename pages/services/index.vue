@@ -3,7 +3,7 @@
   <div>
     <!-- header image -->
     <div class="image-header mb-5">
-      <img class="img" :src="require(`~/assets/homeImg/serviceCopertina.jpeg`)" alt="background"/>
+      <img class="img" :src="require(`~/assets/homeImg/serviceCopertina.webp`)" alt="background"/>
       <h1 class="title">Types of service</h1>
     </div>
     <!-- List of all type of services available -->
