@@ -75,7 +75,16 @@ export default {
   height: 100%;
   object-fit: cover;
 }
-
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.3);
+}
 b{
   font-size: 24px;
   font-weight: 700;

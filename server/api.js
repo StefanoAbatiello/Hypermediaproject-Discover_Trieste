@@ -5,13 +5,13 @@ const initialize = require('./initialize').default
 app.use(express.json())
 
 // Development
-const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
-// const pg = require('pg')
-// pg.defaults.ssl=true
-// const database = new Sequelize(process.env.DATABASE_URL,{
-//     ssl: true,
-//     dialectOptions: { ssl: { require: true, rejectUnauthorized: false} },
-// })
+// const database = new Sequelize("postgres://postgres:postgres@localhost:5432/hyp")
+const pg = require('pg')
+pg.defaults.ssl=true
+const database = new Sequelize(process.env.DATABASE_URL,{
+    ssl: true,
+    dialectOptions: { ssl: { require: true, rejectUnauthorized: false} },
+})
 
 async function initializeDatabaseConnection() {
     //Defining the struct of the tables in the db
@@ -87,7 +87,7 @@ const pageContentObject = {
         title: "Trieste",
         images: ["homeImg/carHome3.webp","homeImg/carHome2.webp","homeImg/carHome1.webp"],
         paths: ["/pois/","/itineraries/","/events/","/services/","/about/","/contacts/"],
-        cardImages: ["homeImg/poiCopertina.webp","homeImg/itineraryCopertina.webp","homeImg/eventCopertina.webp", "homeImg/serviceCopertina.webp","about/about2.webp","homeImg/contactCopertina.webp"],
+        cardImages: ["homeImg/poiCopertina.webp","homeImg/itineraryCopertina.webp","homeImg/eventCopertina.webp", "homeImg/serviceCopertina.webp","about/about2.webp","homeImg/contactCard.webp"],
         names: ["Points of interest","Itineraries","Events","Services","About Trieste","Contact Us"],
     },
     about: {
