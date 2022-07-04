@@ -75,7 +75,7 @@ export default {
           path: '/about/',
         },
         {
-          name: 'Contacts',
+          name: 'Contact Us',
           path: '/contacts/',
         },
       ],
